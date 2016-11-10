@@ -1,0 +1,131 @@
+<resources>
+    <string name="app_name">Rainbow Six Partner</string>
+
+    <string name="takemap">Select a map</string>
+
+    <string name="bank">Bank</string>
+        <string name="bank_cam_s1">(1F) Lobby</string>
+        <string name="bank_cam_s2">(1F) Office Hallway</string>
+        <string name="bank_cam_s3">(2F) Skylight stairwell</string>
+        <string name="bank_cam_s4">(B) Vault Lobby</string>
+        <string name="bank_cam_s5">(EXT) Plaza</string>
+        <string name="bank_cam_s6">(EXT) Garage Ramp</string>
+        <string name="bank_cam_s7">(EXT) Back Alley</string>
+
+    <string name="chalet">Chalet</string>
+        <string name="chalet_cam_s1">(2F) Bedroom Hallway</string>
+        <string name="chalet_cam_s2">(2F) Fireplace Hallway</string>
+        <string name="chalet_cam_s3">(1F) Library Stairs</string>
+        <string name="chalet_cam_s4">(B) Snowmobile Garage</string>
+        <string name="chalet_cam_s5">(EXT) Frontyard</string>
+        <string name="chalet_cam_s6">(EXT) Backyard</string>
+
+
+    <string name="clubhouse">Club House</string>
+        <string name="clubhouse_cam_s1">(2F) Bedroom Hallway</string>
+        <string name="clubhouse_cam_s2">(1F) Bar</string>
+        <string name="clubhouse_cam_s3">(1F) Garage</string>
+        <string name="clubhouse_cam_s4">(B) Basement Hallway</string>
+        <string name="clubhouse_cam_s5">(EXT) VIP Parking</string>
+        <string name="clubhouse_cam_s6">(EXT) Graffiti Area</string>
+        <string name="clubhouse_cam_s7">(EXT) Kennels</string>
+
+
+    <string name="consulate">Consulate</string>
+        <string name="consulate_cam_s1">(2F) Consul Front Desk</string>
+        <string name="consulate_cam_s2">(1F) Main Stairs</string>
+        <string name="consulate_cam_s3">(1F) Visa Office</string>
+        <string name="consulate_cam_s4">(EXT) Front Door</string>
+        <string name="consulate_cam_s5">(B) Locker Hallway</string>
+        <string name="consulate_cam_s6">(B) Garage</string>
+        <string name="consulate_cam_s7">(EXT) Front Alley</string>
+        <string name="consulate_cam_s8">(EXT) Garage Way</string>
+
+    <string name="favela">Favela</string>
+        <string name="favela_cam_s1">(3F) Back Stairs</string>
+        <string name="favela_cam_s2">(3F) Main Stairs</string>
+        <string name="favela_cam_s3">(1F) Laundry Room</string>
+        <string name="favela_cam_s4">(1F) Stair Hall</string>
+        <string name="favela_cam_s5">(EXT) School Alley</string>
+        <string name="favela_cam_s6">(EXT) Street</string>
+        <string name="favela_cam_s7">(EXT) Back Alley</string>
+
+
+    <string name="hereford">Hereford Base</string>
+        <string name="hereford_cam_s1">(EXT) Roof Top</string>
+        <string name="hereford_cam_s2">(2F) Corridor</string>
+        <string name="hereford_cam_s3">(1F) Corridor 1</string>
+        <string name="hereford_cam_s4">(B) Lockers</string>
+        <string name="hereford_cam_s5">(EXT) Shooting Range</string>
+        <string name="hereford_cam_s6">(EXT) Forklift Area</string>
+
+
+    <string name="kafedostoyevsky">Kafe Dostoyevsky</string>
+        <string name="kafedostoyevsky_cam_s1">(3F) Cocktail Lounge</string>
+        <string name="kafedostoyevsky_cam_s2">(2F) Reading Room</string>
+        <string name="kafedostoyevsky_cam_s3">(1F) Cold Room Corridor</string>
+        <string name="kafedostoyevsky_cam_s4">(1F) Bakery</string>
+        <string name="kafedostoyevsky_cam_s5">(EXT) West Main Street</string>
+        <string name="kafedostoyevsky_cam_s6">(EXT) Park Alley</string>
+
+
+    <string name="house">House</string>
+        <string name="house_cam_s1">(EXT) Front Porch Top</string>
+        <string name="house_cam_s2">(1F) Kitchen</string>
+        <string name="house_cam_s3">(B) Training Room</string>
+        <string name="house_cam_s4">(B) Garage</string>
+        <string name="house_cam_s5">(EXT) Frontyard</string>
+        <string name="house_cam_s6">(EXT) Garden</string>
+
+
+    <string name="kanal">Kanal</string>
+        <string name="kanal_cam_s1">(CC3F) Control Room Hallway</string>
+        <string name="kanal_cam_s2">(CC2F) Maps Office Hallway</string>
+        <string name="kanal_cam_s3">(CG2F) Coast Guard Hallway</string>
+        <string name="kanal_cam_s4">(CG1F) Boat Supplies Hallway</string>
+        <string name="kanal_cam_s5">(EXT) Front Lawn</string>
+        <string name="kanal_cam_s6">(EXT) Lockgate</string>
+        <string name="kanal_cam_s7">(EXT) Construction Site</string>
+
+
+    <string name="plane">Presidential Plane</string>
+        <string name="plane_cam_s1">(3F) Cabin Staff</string>
+        <string name="plane_cam_s2">(2F) Front Hallway</string>
+        <string name="plane_cam_s3">(2F) Press Section A</string>
+        <string name="plane_cam_s4">(1F) Luggage Hold</string>
+        <string name="plane_cam_s5">(1F) Cargo Hold</string>
+
+
+    <string name="border">Border</string>
+        <string name="border_cam_s1">(2F) East Stairs</string>
+        <string name="border_cam_s2">(2F) Main Hallway</string>
+        <string name="border_cam_s3">(1F) Main Lobby</string>
+        <string name="border_cam_s4">(1F) Exit Hallway</string>
+        <string name="border_cam_s5">(EXT) Parking Lot Ent.</string>
+        <string name="border_cam_s6">(EXT) Crash Scene</string>
+        <string name="border_cam_s7">(EXT) Parking Lot Alley</string>
+
+
+    <string name="oregon">Oregon</string>
+        <string name="oregon_cam_s1">(2F) Armory Corridor</string>
+        <string name="oregon_cam_s2">(1F) Lobby</string>
+        <string name="oregon_cam_s3">(1F) Dinning Hall Corridor</string>
+        <string name="oregon_cam_s4">(1F) Rear Stage</string>
+        <string name="oregon_cam_s5">(EXT) Junkyard</string>
+        <string name="oregon_cam_s6">(EXT) Parking</string>
+        <string name="oregon_cam_s7">(EXT) Construction Site</string>
+
+
+    <string name="yacht">Yacht</string>
+        <string name="yacht_cam_s1">(4F) Helipad Entrance</string>
+        <string name="yacht_cam_s2">(3F) Bedroom Hallway</string>
+        <string name="yacht_cam_s3">(3F) Lounge</string>
+        <string name="yacht_cam_s4">(2F) Front Stairs</string>
+        <string name="yacht_cam_s5">(2F) Back Stairs</string>
+        <string name="yacht_cam_s6">(1F) Engine Hallway</string>
+        <string name="yacht_cam_s7">(EXT) Front Deck</string>
+        <string name="yacht_cam_s8">(EXT) Spa Deck</string>
+
+    <string name="destroyPhrase">%d remaining</string>
+    <string name="destroyed">DESTROYED</string>
+</resources>

@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1"
+    android:background="@color/white"
+    android:gravity="bottom">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView3"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="30sp" />
+
+    <SurfaceView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/surfaceView"
+        android:layout_above="@+id/imgbandit"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <SurfaceView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/surfaceView2"
+        android:layout_above="@+id/imgkapkan"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimaryDark" />
+
+    <SurfaceView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/surfaceView3"
+        android:layout_above="@+id/imgjager"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:background="@color/colorPrimaryDark" />
+
+    <SurfaceView
+        android:layout_height="wrap_content"
+        android:id="@+id/surfaceView4"
+        android:layout_width="10dp"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/surfaceView2" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bandit"
+        android:id="@+id/imgbandit"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingTop="5dp"
+        android:layout_below="@+id/surfaceView3" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/jager"
+        android:id="@+id/imgjager"
+        android:layout_marginRight="107dp"
+        android:layout_marginEnd="107dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imgkapkan"
+        android:src="@drawable/kapkan"
+        android:paddingTop="10dp"
+        android:layout_above="@+id/surfaceView3"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:paddingBottom="3dp" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/mute"
+        android:id="@+id/imgmute"
+        android:layout_below="@+id/surfaceView2"
+        android:layout_alignLeft="@+id/imgjager"
+        android:layout_alignStart="@+id/imgjager"
+        android:layout_marginTop="11dp"
+        android:contentDescription="" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/gadgetvalkyrie"
+        android:id="@+id/imgvalkyrie2"
+        android:layout_above="@+id/surfaceView2"
+        android:layout_toLeftOf="@+id/buttonDMute"
+        android:layout_toStartOf="@+id/buttonDMute"
+        android:layout_marginBottom="8dp" />
+
+    <ImageButton
+        android:src="@drawable/twitch"
+        android:id="@+id/buttonDValkyrie"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_above="@+id/surfaceView2"
+        android:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:src="@drawable/twitch"
+        android:id="@+id/buttonDMute"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewMute"
+        android:layout_alignRight="@+id/textViewMute"
+        android:layout_alignEnd="@+id/textViewMute" />
+
+    <ImageButton
+        android:src="@drawable/twitch"
+        android:id="@+id/buttonDBandit"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewBandit"
+        android:layout_alignRight="@+id/textViewBandit"
+        android:layout_alignEnd="@+id/textViewBandit" />
+
+    <ImageButton
+        android:src="@drawable/twitch"
+        android:id="@+id/buttonDJager"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/textViewJager"
+        android:layout_alignRight="@+id/textViewJager"
+        android:layout_alignEnd="@+id/textViewJager" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imgmute"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="19dp"
+        android:layout_marginEnd="19dp"
+        android:id="@+id/textViewMute"
+        android:textColor="@android:color/black"
+        android:textAlignment="center" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="9dp"
+        android:id="@+id/textViewBandit"
+        android:textColor="@android:color/black"
+        android:layout_below="@+id/surfaceView"
+        android:layout_alignRight="@+id/buttonDKapkan"
+        android:layout_alignEnd="@+id/buttonDKapkan"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewJager"
+        android:textColor="@android:color/black"
+        android:layout_alignBaseline="@+id/textViewBandit"
+        android:layout_alignBottom="@+id/textViewBandit"
+        android:layout_alignRight="@+id/buttonDMute"
+        android:layout_alignEnd="@+id/buttonDMute"
+        android:textAlignment="center" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewValkyrie"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/imgvalkyrie2"
+        android:layout_centerHorizontal="true" />
+
+    <SurfaceView
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:id="@+id/surfaceView6"
+        android:background="@color/colorPrimaryDark"
+        android:layout_alignTop="@+id/imgvalkyrie"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/valkyrie"
+        android:id="@+id/imgvalkyrie"
+        android:layout_marginRight="10dp"
+        android:layout_marginEnd="10dp"
+        android:adjustViewBounds="true"
+        android:layout_above="@+id/imgkapkan"
+        android:layout_alignRight="@+id/buttonDKapkan"
+        android:layout_alignEnd="@+id/buttonDKapkan" />
+
+    <ImageButton
+        android:src="@drawable/twitch"
+        android:id="@+id/buttonDKapkan"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_marginRight="9dp"
+        android:layout_marginEnd="9dp"
+        android:layout_below="@+id/textViewKapkan"
+        android:layout_toLeftOf="@+id/buttonDValkyrie"
+        android:layout_toStartOf="@+id/buttonDValkyrie" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:id="@+id/recyclerViewMap"
+        android:layout_below="@+id/textView3"
+        android:orientation="horizontal"
+        android:layout_height="185dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewKapkan"
+        android:textColor="@android:color/black"
+        android:textAlignment="center"
+        android:layout_alignTop="@+id/imgmute"
+        android:layout_alignRight="@+id/buttonDKapkan"
+        android:layout_alignEnd="@+id/buttonDKapkan" />
+
+
+</RelativeLayout>
