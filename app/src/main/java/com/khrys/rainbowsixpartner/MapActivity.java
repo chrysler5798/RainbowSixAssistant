@@ -38,7 +38,9 @@ public class MapActivity extends Activity implements View.OnClickListener {
         setContentView(R.layout.activity_map);
 
         ActionBar actionBar = getActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         map = getIntent().getStringExtra("nommap");
         int mapID = getIntent().getIntExtra("pos", 0);
@@ -280,7 +282,8 @@ public class MapActivity extends Activity implements View.OnClickListener {
         rv.setAdapter(new ListAdapterMap(pics,poscam));
         rv.setLayoutManager(LayoutM);
 
-        TextView txtMap = (TextView) findViewById(R.id.textView3);
+
+        TextView txtMap = (TextView) findViewById(R.id.textViewMapName);
 
         txtValkyrie = (TextView) findViewById(R.id.textViewValkyrie);
         txtBandit = (TextView) findViewById(R.id.textViewBandit);
@@ -374,11 +377,7 @@ public class MapActivity extends Activity implements View.OnClickListener {
     }
 
     protected boolean check0(int gadget){
-        if(gadget != 1){
-            return true;
-        } else {
-            return false;
-        }
+        return gadget != 1;
     }
 
     public boolean onOptionsItemSelected(MenuItem item){

@@ -2,10 +2,13 @@ package com.khrys.rainbowsixpartner;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
+import android.os.SystemClock;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -19,12 +22,12 @@ import java.util.List;
  * RainbowSixPartner
  */
 
-public class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder> {
+class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder> {
 
-    List<Integer> pics;
-    List<Integer> poscam;
+    private List<Integer> pics;
+    private List<Integer> poscam;
 
-    public ListAdapterMap(ArrayList<Integer> pics, ArrayList<Integer> poscam){
+    ListAdapterMap(ArrayList<Integer> pics, ArrayList<Integer> poscam){
         this.pics = pics;
         this.poscam = poscam;
     }
@@ -52,14 +55,17 @@ public class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHo
     }
 
 
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    @SuppressWarnings("deprecation")
+    class MyViewHolder extends RecyclerView.ViewHolder {
 
         private final ImageView image;
         private final TextView txtpos;
-        public ImageButton buttontwitch, buttonzoom;
+        private final ImageButton buttontwitch, buttonzoom;
         private final Context context;
+        private long mLastClickTime = 0;
 
-        public MyViewHolder(final View itemView) {
+         MyViewHolder(final View itemView)
+         {
             super(itemView);
 
             image = (ImageView) itemView.findViewById(R.id.imgmap2);
@@ -69,12 +75,25 @@ public class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHo
 
             context = itemView.getContext();
 
+             int width1;
+             WindowManager windowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
+             if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
+                 //Do some stuff
+                 width1 = windowManager.getDefaultDisplay().getWidth()/2;
+             } else {
+                 width1 = windowManager.getDefaultDisplay().getWidth();
+             }
+             itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.MATCH_PARENT));
+
             buttontwitch.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     int position = getAdapterPosition();
+                    if (SystemClock.elapsedRealtime() - mLastClickTime < 1000){
+                        return;
+                    }
+                    mLastClickTime = SystemClock.elapsedRealtime();
                     removeAt(position);
-                    buttontwitch.setEnabled(false);
                 }
             });
 
@@ -88,18 +107,18 @@ public class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHo
          });
         }
 
-        public void display(Integer idimg, Integer idtxt){
+        void display(Integer idimg, Integer idtxt){
             image.setImageResource(idimg);
             image.setTag(idimg);
             txtpos.setText(idtxt);
         }
 
-        public void removeAt(int position) {
-                poscam.remove(position);
-                pics.remove(position);
-                notifyItemRemoved(position);
-                notifyItemRangeChanged(position, poscam.size());
-                notifyItemRangeChanged(position, pics.size());
+        void removeAt(int position) {
+            poscam.remove(position);
+            pics.remove(position);
+            notifyItemRemoved(position);
+            notifyItemRangeChanged(position, poscam.size());
+            notifyItemRangeChanged(position, pics.size());
         }
     }
 }

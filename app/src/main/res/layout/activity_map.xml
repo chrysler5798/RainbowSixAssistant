@@ -9,7 +9,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView3"
+        android:id="@+id/textViewMapName"
         android:textAlignment="center"
         android:textColor="@android:color/black"
         android:textSize="30sp" />
@@ -229,9 +229,10 @@
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:id="@+id/recyclerViewMap"
-        android:layout_below="@+id/textView3"
+        android:layout_below="@+id/textViewMapName"
         android:orientation="horizontal"
-        android:layout_height="185dp" />
+        android:layout_height="185dp"
+        android:layout_above="@+id/surfaceView6" />
 
     <TextView
         android:layout_width="wrap_content"

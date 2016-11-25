@@ -8,7 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
-import android.widget.ListAdapter;
 import android.widget.TextView;
 import java.util.Arrays;
 import java.util.List;
@@ -19,7 +18,7 @@ import java.util.List;
  * RainbowSixPartner
  */
 
-public class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewHolder> {
+class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewHolder> {
 
 
         private final List<Pair<Integer, Integer>> maps = Arrays.asList(
@@ -57,16 +56,14 @@ public class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.
             holder.display(pair);
         }
 
-        public class MyViewHolder extends RecyclerView.ViewHolder {
+        class MyViewHolder extends RecyclerView.ViewHolder {
 
             private final TextView name;
             private final ImageView image;
 
             private final Context context;
 
-            private Pair<Integer, Integer> currentPair;
-
-            public MyViewHolder(final View itemView) {
+             MyViewHolder(final View itemView) {
                 super(itemView);
 
                 context = itemView.getContext();
@@ -86,8 +83,7 @@ public class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.
                 });
             }
 
-            public void display(Pair<Integer, Integer> pair) {
-                currentPair = pair;
+            void display(Pair<Integer, Integer> pair) {
                 name.setText(pair.first);
                 image.setImageResource(pair.second);
             }

@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical" android:layout_width="wrap_content"
+    android:orientation="vertical"
     android:weightSum="1"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
 
-    <RelativeLayout
+    <TextView
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="wrap_content"
+        android:id="@+id/textPosCam"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="@string/bank_cam_s1"
+        android:layout_marginBottom="15dp" />
 
-        <ImageView
+    <ImageView
             android:src="@drawable/bank_cam_1"
             android:id="@+id/imgmap2"
             android:layout_height="wrap_content"
@@ -17,43 +23,30 @@
             android:layout_width="wrap_content"
             android:paddingLeft="10dp"
             android:paddingRight="10dp"
-            android:layout_below="@+id/textPosCam"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+        android:contentDescription="@string/image_bank_1" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/textPosCam"
-            android:textAlignment="center"
-            android:textColor="@android:color/black"
-            android:textSize="18sp"
-            android:text="@string/bank_cam_s1"
-            android:layout_alignParentTop="true"
-            android:layout_centerHorizontal="true" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
 
         <ImageButton
             android:src="@drawable/twitch"
             android:id="@+id/twitchButtonCam"
             android:layout_height="50dp"
-            android:layout_width="50dp"
-            android:layout_alignBottom="@+id/imgmap2"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentEnd="true"
-            android:layout_marginRight="10dp"
-            android:layout_marginEnd="16dp" />
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:contentDescription="@string/twitch_drone_image" />
 
         <ImageButton
-            android:src="@android:drawable/ic_menu_search"
-            android:id="@+id/zoomButtonCam"
-            android:layout_height="50dp"
-            android:layout_width="50dp"
-            android:layout_alignBottom="@+id/imgmap2"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginLeft="10dp"
-            android:layout_marginStart="16dp" />
-
-    </RelativeLayout>
+                android:src="@android:drawable/ic_menu_search"
+                android:id="@+id/zoomButtonCam"
+                android:layout_height="50dp"
+                android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/zoom_icon" />
+    </LinearLayout>
 
 </LinearLayout>

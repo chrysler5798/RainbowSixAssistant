@@ -128,4 +128,10 @@
 
     <string name="destroyPhrase">%d remaining</string>
     <string name="destroyed">DESTROYED</string>
+
+
+    <!--IMAGE CONTENT DESCRIPTION-->
+    <string name="twitch_drone_image">Twitch Drone Image</string>
+    <string name="image_bank_1">Image Bank 1</string>
+    <string name="zoom_icon">Zoom Icon</string>
 </resources>

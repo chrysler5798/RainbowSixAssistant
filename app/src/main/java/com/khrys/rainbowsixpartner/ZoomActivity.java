@@ -22,7 +22,9 @@ public class ZoomActivity extends AppCompatActivity{
         setContentView(R.layout.activity_zoom);
 
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setDisplayHomeAsUpEnabled(true);
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         image = (ImageView) findViewById(R.id.imageViewZoom);
 
