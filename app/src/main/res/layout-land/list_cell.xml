@@ -11,13 +11,12 @@
     <ImageView
         android:id="@+id/imgmap"
         android:layout_width="wrap_content"
-        android:layout_height="146dp"
+        android:layout_height="wrap_content"
         android:layout_gravity="center_horizontal"
         android:lines="1"
         android:ellipsize="end"
         android:src="@drawable/mapbank"
         tools:text="Description"
-        android:layout_weight="0.14"
         android:contentDescription="@string/cellimg" />
 
     <TextView

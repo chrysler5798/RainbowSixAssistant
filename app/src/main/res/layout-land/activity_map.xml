@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="horizontal" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white">
+    android:background="@color/white"
+    android:baselineAligned="false">
 
     <LinearLayout
         android:orientation="vertical"
@@ -23,10 +23,7 @@
             android:layout_width="match_parent"
             android:id="@+id/recyclerViewMap"
             android:orientation="horizontal"
-            android:layout_height="match_parent"
-            android:layout_below="@+id/textViewMapName"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true" />
+            android:layout_height="match_parent"/>
     </LinearLayout>
 
     <LinearLayout
@@ -37,7 +34,7 @@
         <SurfaceView
             android:layout_width="10dp"
             android:layout_height="match_parent"
-            android:background="@color/colorPrimaryDark" />
+            android:background="@color/colorPrimaryDark"/>
     </LinearLayout>
 
     <TableLayout
@@ -59,20 +56,20 @@
                 android:layout_height="match_parent"
                 android:id="@+id/imgvalkyrie"
                 android:adjustViewBounds="true"
-                android:layout_weight="1" />
+                android:layout_weight="1"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textViewValkyrie"
                 android:textColor="@android:color/black"
-                android:textAlignment="center" />
+                android:textAlignment="center"/>
 
             <ImageButton
                 android:src="@drawable/twitch"
                 android:id="@+id/buttonDValkyrie"
                 android:layout_width="50dp"
-                android:layout_height="50dp" />
+                android:layout_height="50dp"/>
 
             <ImageView
                 android:layout_width="0dp"
@@ -80,7 +77,7 @@
                 android:id="@+id/imgvalkyrie2"
                 android:adjustViewBounds="true"
                 android:layout_weight="1"
-                android:layout_height="70dp" />
+                android:layout_height="70dp"/>
 
         </TableRow>
 
@@ -92,7 +89,7 @@
                 android:layout_height="10dp"
                 android:layout_width="match_parent"
                 android:background="@color/colorPrimaryDark"
-                android:layout_weight="1" />
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow
@@ -105,32 +102,32 @@
                 android:src="@drawable/kapkan"
                 android:id="@+id/imgkapkan"
                 android:adjustViewBounds="true"
-                android:layout_width="wrap_content" />
+                android:layout_width="wrap_content"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textViewKapkan"
                 android:textColor="@android:color/black"
-                android:textAlignment="center" />
+                android:textAlignment="center"/>
 
             <ImageButton
                 android:src="@drawable/twitch"
                 android:id="@+id/buttonDKapkan"
                 android:layout_width="50dp"
-                android:layout_height="50dp" />
+                android:layout_height="50dp"/>
 
         </TableRow>
 
         <TableRow
             android:layout_width="wrap_content"
-            android:layout_height="10dp" >
+            android:layout_height="10dp">
 
             <SurfaceView
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:background="@color/colorPrimaryDark"
-                android:layout_weight="1" />
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow
@@ -143,20 +140,20 @@
                 android:src="@drawable/mute"
                 android:id="@+id/imgmute"
                 android:adjustViewBounds="true"
-                android:layout_width="wrap_content" />
+                android:layout_width="wrap_content"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textViewMute"
                 android:textColor="@android:color/black"
-                android:textAlignment="center" />
+                android:textAlignment="center"/>
 
             <ImageButton
                 android:src="@drawable/twitch"
                 android:id="@+id/buttonDMute"
                 android:layout_width="50dp"
-                android:layout_height="50dp" />
+                android:layout_height="50dp"/>
 
         </TableRow>
 
@@ -168,7 +165,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:background="@color/colorPrimaryDark"
-                android:layout_weight="1" />
+                android:layout_weight="1"/>
 
         </TableRow>
 
@@ -182,22 +179,21 @@
                 android:layout_height="50dp"
                 android:src="@drawable/bandit"
                 android:id="@+id/imgbandit"
-                android:adjustViewBounds="true"
-                android:layout_alignBottom="@+id/buttonDJager" />
+                android:adjustViewBounds="true"/>
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:id="@+id/textViewBandit"
                 android:textColor="@android:color/black"
-                android:textAlignment="center" />
+                android:textAlignment="center"/>
 
             <ImageButton
                 android:src="@drawable/twitch"
                 android:id="@+id/buttonDBandit"
                 android:layout_width="50dp"
                 android:layout_height="50dp"
-                android:layout_centerVertical="true" />
+                android:layout_centerVertical="true"/>
         </TableRow>
 
         <TableRow
@@ -208,7 +204,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="10dp"
                 android:background="@color/colorPrimaryDark"
-                android:layout_weight="1" />
+                android:layout_weight="1"/>
         </TableRow>
 
         <TableRow
@@ -221,22 +217,20 @@
                 android:layout_height="50dp"
                 android:src="@drawable/jager"
                 android:id="@+id/imgjager"
-                android:adjustViewBounds="true"
-                android:layout_below="@+id/textViewBandit" />
+                android:adjustViewBounds="true"/>
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/textViewJager"
                 android:textColor="@android:color/black"
-                android:textAlignment="center"
-                android:layout_alignParentBottom="true" />
+                android:textAlignment="center"/>
 
             <ImageButton
                 android:src="@drawable/twitch"
                 android:id="@+id/buttonDJager"
                 android:layout_width="50dp"
-                android:layout_height="50dp" />
+                android:layout_height="50dp"/>
 
         </TableRow>
 

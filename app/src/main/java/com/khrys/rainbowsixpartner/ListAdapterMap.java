@@ -78,7 +78,6 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder> {
              int width1;
              WindowManager windowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
              if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
-                 //Do some stuff
                  width1 = windowManager.getDefaultDisplay().getWidth()/2;
              } else {
                  width1 = windowManager.getDefaultDisplay().getWidth();
@@ -100,9 +99,9 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder> {
             buttonzoom.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
-                    Intent thisintent = new Intent(context,ZoomActivity.class);
-                    thisintent.putExtra("imgid",(Integer) image.getTag());
-                   context.startActivity(thisintent);
+                    Intent zoomintent = new Intent(context,ZoomActivity.class);
+                    zoomintent.putExtra("imgid",(Integer) image.getTag());
+                   context.startActivity(zoomintent);
                 }
          });
         }

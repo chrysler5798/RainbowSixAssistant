@@ -126,6 +126,16 @@
         <string name="yacht_cam_s7">(EXT) Front Deck</string>
         <string name="yacht_cam_s8">(EXT) Spa Deck</string>
 
+
+    <string name="skyscraper">Skyscraper</string>
+        <string name="skyscraper_cam_s1">(2F) Hallway</string>
+        <string name="skyscraper_cam_s2">(1F) Restaurant</string>
+        <string name="skyscraper_cam_s3">(2F) House stairs</string>
+        <string name="skyscraper_cam_s4">(1F) House lobby</string>
+        <string name="skyscraper_cam_s5">(EXT) West garden</string>
+        <string name="skyscraper_cam_s6">(EXT) East garden</string>
+        <string name="skyscraper_cam_s7">(EXT) Ventilation units</string>
+
     <string name="destroyPhrase">%d remaining</string>
     <string name="destroyed">DESTROYED</string>
 
@@ -134,4 +144,6 @@
     <string name="twitch_drone_image">Twitch Drone Image</string>
     <string name="image_bank_1">Image Bank 1</string>
     <string name="zoom_icon">Zoom Icon</string>
+    <string name="zoomedimg">Zoomed Image</string>
+    <string name="cellimg">Cell Image</string>
 </resources>

@@ -2,11 +2,13 @@ package com.khrys.rainbowsixpartner;
 
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.support.v7.widget.RecyclerView;
 import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
 import java.util.Arrays;
@@ -34,7 +36,8 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
                 Pair.create(R.string.plane, R.drawable.mapplane),
                 Pair.create(R.string.favela, R.drawable.mapfavela),
                 Pair.create(R.string.border, R.drawable.mapborder),
-                Pair.create(R.string.yacht, R.drawable.mapyacht)
+                Pair.create(R.string.yacht, R.drawable.mapyacht),
+                Pair.create(R.string.skyscraper, R.drawable.mapskyscraper)
         );
 
 
@@ -67,6 +70,13 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
                 super(itemView);
 
                 context = itemView.getContext();
+
+                 int width1;
+                 WindowManager windowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
+                 if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
+                     width1 = windowManager.getDefaultDisplay().getWidth();
+                     itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.MATCH_PARENT));
+                 }
 
                 name = ((TextView) itemView.findViewById(R.id.map));
                 image = ((ImageView) itemView.findViewById(R.id.imgmap));

@@ -275,6 +275,25 @@ public class MapActivity extends Activity implements View.OnClickListener {
                 poscam.add(R.string.yacht_cam_s7);
                 poscam.add(R.string.yacht_cam_s8);
                 break;
+
+            case 13:
+                pics.add(R.drawable.skyscraper_cam_1);
+                pics.add(R.drawable.skyscraper_cam_2);
+                pics.add(R.drawable.skyscraper_cam_3);
+                pics.add(R.drawable.skyscraper_cam_4);
+                pics.add(R.drawable.skyscraper_cam_5);
+                pics.add(R.drawable.skyscraper_cam_6);
+                pics.add(R.drawable.skyscraper_cam_7);
+
+                poscam.add(R.string.skyscraper_cam_s1);
+                poscam.add(R.string.skyscraper_cam_s2);
+                poscam.add(R.string.skyscraper_cam_s3);
+                poscam.add(R.string.skyscraper_cam_s4);
+                poscam.add(R.string.skyscraper_cam_s5);
+                poscam.add(R.string.skyscraper_cam_s6);
+                poscam.add(R.string.skyscraper_cam_s7);
+                break;
+
         }
 
         rv = (RecyclerView) findViewById(R.id.recyclerViewMap);

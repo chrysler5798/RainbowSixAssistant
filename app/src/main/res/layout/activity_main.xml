@@ -13,13 +13,11 @@
         android:text="@string/takemap"
         android:textAlignment="center"
         android:textColor="@color/white"
-        android:textSize="36sp" />
+        android:textSize="36sp"/>
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/recyclerView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:clipToPadding="false" />
+        android:clipToPadding="false"/>
 </LinearLayout>
