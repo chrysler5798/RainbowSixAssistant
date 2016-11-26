@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.khrys.rainbowsixpartner">
+    package="com.khrys.r6spartner">
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,7 @@
 
         <!-- Splash screen -->
         <activity
-            android:name=".SplashActivity"
+            android:name="com.khrys.r6spartner.SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,7 +22,7 @@
 
         <!-- Main activity -->
         <activity
-            android:name=".MainActivity"
+            android:name="com.khrys.r6spartner.MainActivity"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,12 +31,12 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".MapActivity"
+            android:name="com.khrys.r6spartner.MapActivity"
             android:label="@string/app_name">
         </activity>
 
         <activity
-            android:name=".ZoomActivity"
+            android:name="com.khrys.r6spartner.ZoomActivity"
             android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden"
             android:theme="@style/Theme.AppCompat">

@@ -1,4 +1,4 @@
-package com.khrys.rainbowsixpartner;
+package com.khrys.r6spartner;
 
 /**
  * Created by Chrysler on 10/1/2016.

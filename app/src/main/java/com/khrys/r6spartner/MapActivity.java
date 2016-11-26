@@ -1,4 +1,4 @@
-package com.khrys.rainbowsixpartner;
+package com.khrys.r6spartner;
 
 import android.app.ActionBar;
 import android.app.Activity;

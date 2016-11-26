@@ -1,4 +1,4 @@
-package com.khrys.rainbowsixpartner;
+package com.khrys.r6spartner;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
