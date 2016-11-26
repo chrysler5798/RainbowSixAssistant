@@ -116,4 +116,5 @@
     <string name="skyscraper_cam_s6">(EXT) Jardin Est</string>
     <string name="skyscraper_cam_s7">(EXT) Unités de ventilation</string>
     <string name="zoomedimg">Image zoomée</string>
+    <string name="cellimg">" Image Cellule"</string>
 </resources>
