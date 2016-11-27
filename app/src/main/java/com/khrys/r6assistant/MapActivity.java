@@ -1,13 +1,12 @@
-package com.khrys.r6spartner;
+package com.khrys.r6assistant;
 
 import android.app.ActionBar;
-import android.app.Activity;
+import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.ImageButton;
 import android.widget.TextView;
 import java.util.ArrayList;
 
@@ -18,22 +17,19 @@ import java.util.ArrayList;
  * RainbowSixPartner
  */
 
-public class MapActivity extends Activity implements View.OnClickListener {
+public class MapActivity extends AppCompatActivity
+{
+    int type = 1;
 
-    TextView txtValkyrie, txtBandit,txtMute,txtJager,txtKapkan;
-
-    ImageButton buttonValkyrie,buttonBandit,buttonMute,buttonJager,buttonKapkan;
-
-    int gadgetV = 3, gadgetB = 3, gadgetM = 4, gadgetJ = 3, gadgetK = 3;
-
-    String txtV, txtB, txtM, txtJ, txtK, map;
+    String map;
 
     RecyclerView rv;
 
     LinearLayoutManager LayoutM;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_map);
 
@@ -297,110 +293,28 @@ public class MapActivity extends Activity implements View.OnClickListener {
         }
 
         rv = (RecyclerView) findViewById(R.id.recyclerViewMap);
-        LayoutM = new LinearLayoutManager(MapActivity.this, LinearLayoutManager.HORIZONTAL, false);
-        rv.setAdapter(new ListAdapterMap(pics,poscam));
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
+            LayoutM = new LinearLayoutManager(MapActivity.this, LinearLayoutManager.HORIZONTAL, false);
+        } else {
+            LayoutM = new LinearLayoutManager(MapActivity.this);
+        }
+        rv.setAdapter(new ListAdapterMap(pics,poscam, type));
         rv.setLayoutManager(LayoutM);
 
-
         TextView txtMap = (TextView) findViewById(R.id.textViewMapName);
-
-        txtValkyrie = (TextView) findViewById(R.id.textViewValkyrie);
-        txtBandit = (TextView) findViewById(R.id.textViewBandit);
-        txtMute = (TextView) findViewById(R.id.textViewMute);
-        txtJager = (TextView) findViewById(R.id.textViewJager);
-        txtKapkan = (TextView) findViewById(R.id.textViewKapkan);
-
-
-        txtV = String.format(getResources().getString(R.string.destroyPhrase), gadgetV);
-        txtValkyrie.setText(txtV);
-
-        txtB = String.format(getResources().getString(R.string.destroyPhrase), gadgetB);
-        txtBandit.setText(txtB);
-
-        txtM = String.format(getResources().getString(R.string.destroyPhrase), gadgetM);
-        txtMute.setText(txtM);
-
-        txtJ = String.format(getResources().getString(R.string.destroyPhrase), gadgetJ);
-        txtJager.setText(txtJ);
-
-        txtK = String.format(getResources().getString(R.string.destroyPhrase), gadgetK);
-        txtKapkan.setText(txtK);
-
-
-        buttonValkyrie = (ImageButton) findViewById(R.id.buttonDValkyrie);
-        buttonBandit = (ImageButton) findViewById(R.id.buttonDBandit);
-        buttonMute = (ImageButton) findViewById(R.id.buttonDMute);
-        buttonJager = (ImageButton) findViewById(R.id.buttonDJager);
-        buttonKapkan = (ImageButton) findViewById(R.id.buttonDKapkan);
-
-        buttonBandit.setOnClickListener(this);
-        buttonJager.setOnClickListener(this);
-        buttonMute.setOnClickListener(this);
-        buttonValkyrie.setOnClickListener(this);
-        buttonKapkan.setOnClickListener(this);
-
         txtMap.setText(map);
 
+        TextView txtNbCam = (TextView) findViewById(R.id.textViewNbCam);
+        String txtCam = String.format(getResources().getString(R.string.cameraPhrase), pics.size());
+        txtNbCam.setText(txtCam);
+
     }
 
-    @Override
-    public void onClick(View v)
+
+    public boolean onOptionsItemSelected(MenuItem item)
     {
-        switch (v.getId())
+        switch (item.getItemId())
         {
-            case(R.id.buttonDValkyrie):
-                if(check0(gadgetV)){
-                    txtV = String.format(getResources().getString(R.string.destroyPhrase), --gadgetV);
-                    txtValkyrie.setText(txtV);
-                } else {
-                    txtValkyrie.setText(R.string.destroyed);
-                }
-                break;
-
-            case(R.id.buttonDBandit):
-                if(check0(gadgetB)){
-                    txtB = String.format(getResources().getString(R.string.destroyPhrase), --gadgetB);
-                    txtBandit.setText(txtB);
-                } else {
-                    txtBandit.setText(R.string.destroyed);
-                }
-                break;
-
-            case(R.id.buttonDJager):
-                if(check0(gadgetJ)) {
-                    txtJ = String.format(getResources().getString(R.string.destroyPhrase), --gadgetJ);
-                    txtJager.setText(txtJ);
-                } else {
-                    txtJager.setText(R.string.destroyed);
-                }
-                break;
-
-            case(R.id.buttonDKapkan):
-                if(check0(gadgetK)) {
-                    txtK = String.format(getResources().getString(R.string.destroyPhrase), --gadgetK);
-                    txtKapkan.setText(txtK);
-                } else {
-                    txtKapkan.setText(R.string.destroyed);
-                }
-                break;
-
-            case(R.id.buttonDMute):
-                if(check0(gadgetM)) {
-                    txtM = String.format(getResources().getString(R.string.destroyPhrase), --gadgetM);
-                    txtMute.setText(txtM);
-                } else {
-                    txtMute.setText(R.string.destroyed);
-                }
-                break;
-        }
-    }
-
-    protected boolean check0(int gadget){
-        return gadget != 1;
-    }
-
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()) {
             case android.R.id.home:
 
                 this.finish();

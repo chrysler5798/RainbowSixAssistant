@@ -1,4 +1,4 @@
-package com.khrys.r6spartner;
+package com.khrys.r6assistant;
 
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;

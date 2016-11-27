@@ -117,4 +117,10 @@
     <string name="skyscraper_cam_s7">(EXT) Unités de ventilation</string>
     <string name="zoomedimg">Image zoomée</string>
     <string name="cellimg">" Image Cellule"</string>
+    <string name="banner_image">Image bannière</string>
+    <string name="cameras">Caméras</string>
+    <string name="soon">Bientôt…</string>
+    <string name="twitch">Twitch</string>
+    <string name="msgsoon">Cette nouvelle fonctionnalité arrive bientôt !</string>
+    <string name="cameraPhrase">%d caméras</string>
 </resources>

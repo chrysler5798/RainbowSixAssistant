@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:weightSum="1"
+    android:layout_height="wrap_content"
+    android:layout_width="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textPosCam"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="18sp"
+        android:text="@string/bank_cam_s1"/>
+
+    <ImageView
+        android:src="@drawable/bank_cam_1"
+        android:id="@+id/imgmap2"
+        android:layout_height="192dp"
+        android:adjustViewBounds="true"
+        android:layout_width="match_parent"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:contentDescription="@string/image_bank_1" />
+
+    <ImageButton
+        android:src="@android:drawable/ic_menu_search"
+        android:id="@+id/zoomButtonCam"
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/zoom_icon" />
+
+</LinearLayout>

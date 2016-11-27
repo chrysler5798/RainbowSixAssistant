@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.khrys.r6spartner">
+    package="com.khrys.r6assistant">
 
     <application
         android:allowBackup="true"
@@ -11,7 +11,7 @@
 
         <!-- Splash screen -->
         <activity
-            android:name="com.khrys.r6spartner.SplashActivity"
+            android:name=".SplashActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,24 +22,32 @@
 
         <!-- Main activity -->
         <activity
-            android:name="com.khrys.r6spartner.MainActivity"
-            android:label="@string/app_name" >
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
+        <activity android:name=".MapMenuActivity" />
+
         <activity
-            android:name="com.khrys.r6spartner.MapActivity"
+            android:name=".TwitchMapActivity"
             android:label="@string/app_name">
         </activity>
 
         <activity
-            android:name="com.khrys.r6spartner.ZoomActivity"
+            android:name=".MapActivity"
+            android:label="@string/app_name">
+        </activity>
+
+        <activity
+            android:name=".ZoomActivity"
             android:screenOrientation="landscape"
-            android:configChanges="orientation|keyboardHidden"
-            android:theme="@style/Theme.AppCompat">
+            android:configChanges="orientation|keyboardHidden">
         </activity>
 
     </application>

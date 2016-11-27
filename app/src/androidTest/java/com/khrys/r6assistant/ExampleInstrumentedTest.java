@@ -1,4 +1,4 @@
-package com.khrys.r6spartner;
+package com.khrys.r6assistant;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;

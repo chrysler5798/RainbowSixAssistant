@@ -1,4 +1,4 @@
-package com.khrys.r6spartner;
+package com.khrys.r6assistant;
 
 /**
  * Created by Chrysler on 10/1/2016.

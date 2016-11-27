@@ -1,23 +1,84 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:weightSum="1"
-    android:orientation="vertical">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:weightSum="1">
 
-    <TextView
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/my_toolbar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textView"
-        android:textAllCaps="true"
-        android:text="@string/takemap"
-        android:textAlignment="center"
-        android:textColor="@color/white"
-        android:textSize="36sp"/>
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
 
-    <android.support.v7.widget.RecyclerView
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/recyclerView"
-        android:clipToPadding="false"/>
+        android:src="@drawable/banner"
+        android:id="@+id/imageView5"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="20dp"
+        android:contentDescription="@string/banner_image" />
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:text="@string/cameras"
+                android:id="@+id/buttonmain1"
+                android:layout_height="@dimen/button_wah_main"
+                android:layout_width="@dimen/button_wah_main"
+                android:drawableBottom="@drawable/cameraicon"
+                android:paddingBottom="30dp"
+                android:gravity="center"
+                android:backgroundTint="@color/colorPrimary" />
+
+            <Button
+                android:text="@string/twitch"
+                android:layout_height="@dimen/button_wah_main"
+                android:layout_width="@dimen/button_wah_main"
+                android:id="@+id/buttonmain2"
+                android:drawableBottom="@drawable/twitch"
+                android:paddingBottom="30dp"
+                android:gravity="center"
+                android:backgroundTint="@color/colorPrimary" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <Button
+                android:text="@string/soon"
+                android:layout_height="@dimen/button_wah_main"
+                android:layout_width="@dimen/button_wah_main"
+                android:id="@+id/buttonmain3"
+                android:drawableBottom="@drawable/gunicon"
+                android:gravity="center"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingBottom="30dp" />
+
+            <Button
+                android:text="@string/soon"
+                android:layout_height="@dimen/button_wah_main"
+                android:layout_width="@dimen/button_wah_main"
+                android:id="@+id/buttonmain4"
+                android:drawableBottom="@drawable/renownicon"
+                android:gravity="center"
+                android:backgroundTint="@color/colorPrimary"
+                android:paddingBottom="30dp" />
+        </TableRow>
+
+    </TableLayout>
+
 </LinearLayout>

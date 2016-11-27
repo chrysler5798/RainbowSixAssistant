@@ -25,28 +25,15 @@
             android:paddingRight="10dp"
         android:contentDescription="@string/image_bank_1" />
 
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-        <ImageButton
-            android:src="@drawable/twitch"
-            android:id="@+id/twitchButtonCam"
+    <ImageButton
+            android:src="@android:drawable/ic_menu_search"
+            android:id="@+id/zoomButtonCam"
             android:layout_height="50dp"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginLeft="20dp"
-            android:contentDescription="@string/twitch_drone_image" />
-
-        <ImageButton
-                android:src="@android:drawable/ic_menu_search"
-                android:id="@+id/zoomButtonCam"
-                android:layout_height="50dp"
-                android:layout_width="wrap_content"
-            android:layout_weight="1"
-            android:layout_marginRight="20dp"
-            android:contentDescription="@string/zoom_icon" />
-    </LinearLayout>
+            android:layout_width="match_parent"
+        android:layout_weight="1"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:contentDescription="@string/zoom_icon"
+        android:layout_marginBottom="40dp" />
 
 </LinearLayout>

@@ -1,4 +1,4 @@
-package com.khrys.r6spartner;
+package com.khrys.r6assistant;
 
 import android.content.Context;
 import android.content.Intent;
@@ -21,6 +21,13 @@ import java.util.List;
  */
 
 class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewHolder> {
+
+        private int requesttype;
+
+        ListAdapterMapMenu (int request)
+        {
+            requesttype = request;
+        }
 
 
         private final List<Pair<Integer, Integer>> maps = Arrays.asList(
@@ -85,10 +92,20 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
                     @Override
                     public void onClick(View view) {
                         final Intent intent;
-                        intent = new Intent(context, MapActivity.class);
-                        intent.putExtra("nommap",name.getText().toString());
-                        intent.putExtra("pos", getAdapterPosition());
-                        context.startActivity(intent);
+                        if(requesttype == 1)
+                        {
+                            intent = new Intent(context, MapActivity.class);
+                            intent.putExtra("nommap",name.getText().toString());
+                            intent.putExtra("pos", getAdapterPosition());
+                            context.startActivity(intent);
+                        } else if (requesttype == 2)
+                        {
+                            intent = new Intent(context, TwitchMapActivity.class);
+                            intent.putExtra("nommap",name.getText().toString());
+                            intent.putExtra("pos", getAdapterPosition());
+                            context.startActivity(intent);
+                        }
+
                     }
                 });
             }

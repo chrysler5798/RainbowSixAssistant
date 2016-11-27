@@ -1,4 +1,4 @@
-package com.khrys.r6spartner;
+package com.khrys.r6assistant;
 
 import android.content.Context;
 import android.content.Intent;
@@ -26,10 +26,13 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder> {
 
     private List<Integer> pics;
     private List<Integer> poscam;
+    private int type;
 
-    ListAdapterMap(ArrayList<Integer> pics, ArrayList<Integer> poscam){
+    ListAdapterMap(ArrayList<Integer> pics, ArrayList<Integer> poscam, int type){
+
         this.pics = pics;
         this.poscam = poscam;
+        this.type = type;
     }
 
     @Override
@@ -40,7 +43,13 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder> {
     @Override
     public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
-        View view = inflater.inflate(R.layout.list_map, parent, false);
+        View view;
+        if(type == 1)
+        {
+            view = inflater.inflate(R.layout.list_map, parent, false);
+        } else {
+            view = inflater.inflate(R.layout.list_map_twitch, parent, false);
+        }
         return new MyViewHolder(view);
     }
 
@@ -60,7 +69,7 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder> {
 
         private final ImageView image;
         private final TextView txtpos;
-        private final ImageButton buttontwitch, buttonzoom;
+        private final ImageButton buttonzoom;
         private final Context context;
         private long mLastClickTime = 0;
 
@@ -68,9 +77,25 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder> {
          {
             super(itemView);
 
+             if(type == 2)
+             {
+                 ImageButton buttontwitch = (ImageButton) itemView.findViewById(R.id.twitchButtonCam);
+
+                 buttontwitch.setOnClickListener(new View.OnClickListener() {
+                     @Override
+                     public void onClick(View v) {
+                         int position = getAdapterPosition();
+                         if (SystemClock.elapsedRealtime() - mLastClickTime < 1000){
+                             return;
+                         }
+                         mLastClickTime = SystemClock.elapsedRealtime();
+                         removeAt(position);
+                     }
+                 });
+             }
+
             image = (ImageView) itemView.findViewById(R.id.imgmap2);
             txtpos = (TextView) itemView.findViewById(R.id.textPosCam);
-            buttontwitch = (ImageButton) itemView.findViewById(R.id.twitchButtonCam);
             buttonzoom = (ImageButton) itemView.findViewById(R.id.zoomButtonCam);
 
             context = itemView.getContext();
@@ -83,18 +108,6 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder> {
                  width1 = windowManager.getDefaultDisplay().getWidth();
              }
              itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.MATCH_PARENT));
-
-            buttontwitch.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    int position = getAdapterPosition();
-                    if (SystemClock.elapsedRealtime() - mLastClickTime < 1000){
-                        return;
-                    }
-                    mLastClickTime = SystemClock.elapsedRealtime();
-                    removeAt(position);
-                }
-            });
 
             buttonzoom.setOnClickListener(new View.OnClickListener() {
                 @Override

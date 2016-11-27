@@ -1,6 +1,13 @@
 <resources>
-    <string name="app_name">Rainbow Six Partner</string>
+    <string name="app_name">R6 Assistant</string>
 
+    <!--MAIN ACTIVITY - MENU-->
+    <string name="cameras">Cameras</string>
+    <string name="twitch">Twitch</string>
+    <string name="soon">Soon…</string>
+    <string name="msgsoon">This new feature is coming soon !</string>
+
+    <!--MAP MENU-->
     <string name="takemap">Select a map</string>
 
     <string name="bank">Bank</string>
@@ -137,6 +144,7 @@
         <string name="skyscraper_cam_s7">(EXT) Ventilation units</string>
 
     <string name="destroyPhrase">%d remaining</string>
+    <string name="cameraPhrase">%d cameras</string>
     <string name="destroyed">DESTROYED</string>
 
 
@@ -146,4 +154,6 @@
     <string name="zoom_icon">Zoom Icon</string>
     <string name="zoomedimg">Zoomed Image</string>
     <string name="cellimg">Cell Image</string>
+    <string name="banner_image">Banner Image</string>
+
 </resources>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:baselineAligned="false">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewMapName"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textSize="30sp" />
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:id="@+id/recyclerViewMap"
+            android:orientation="horizontal"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent">
+
+        <SurfaceView
+            android:layout_width="10dp"
+            android:layout_height="match_parent"
+            android:background="@color/colorPrimaryDark"/>
+    </LinearLayout>
+
+    <TableLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1">
+
+        <TableRow
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:baselineAligned="false">
+
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/valkyrie"
+                android:layout_height="match_parent"
+                android:id="@+id/imgvalkyrie"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewValkyrie"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"/>
+
+            <ImageButton
+                android:src="@drawable/twitch"
+                android:id="@+id/buttonDValkyrie"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:src="@drawable/gadgetvalkyrie"
+                android:id="@+id/imgvalkyrie2"
+                android:adjustViewBounds="true"
+                android:layout_weight="1"
+                android:layout_height="70dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+
+            <SurfaceView
+                android:layout_height="10dp"
+                android:layout_width="match_parent"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_height="50dp"
+                android:src="@drawable/kapkan"
+                android:id="@+id/imgkapkan"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewKapkan"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"/>
+
+            <ImageButton
+                android:src="@drawable/twitch"
+                android:id="@+id/buttonDKapkan"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="10dp">
+
+            <SurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_height="50dp"
+                android:src="@drawable/mute"
+                android:id="@+id/imgmute"
+                android:adjustViewBounds="true"
+                android:layout_width="wrap_content"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewMute"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"/>
+
+            <ImageButton
+                android:src="@drawable/twitch"
+                android:id="@+id/buttonDMute"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+
+            <SurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="1"/>
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/bandit"
+                android:id="@+id/imgbandit"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewBandit"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"/>
+
+            <ImageButton
+                android:src="@drawable/twitch"
+                android:id="@+id/buttonDBandit"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="10dp">
+
+            <SurfaceView
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorPrimaryDark"
+                android:layout_weight="1"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:src="@drawable/jager"
+                android:id="@+id/imgjager"
+                android:adjustViewBounds="true"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewJager"
+                android:textColor="@android:color/black"
+                android:textAlignment="center"/>
+
+            <ImageButton
+                android:src="@drawable/twitch"
+                android:id="@+id/buttonDJager"
+                android:layout_width="50dp"
+                android:layout_height="50dp"/>
+
+        </TableRow>
+
+    </TableLayout>
+
+
+</LinearLayout>
