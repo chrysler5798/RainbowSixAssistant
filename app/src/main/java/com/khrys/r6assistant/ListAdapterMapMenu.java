@@ -11,7 +11,6 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
-import java.util.Arrays;
 import java.util.List;
 
 /**
@@ -24,29 +23,14 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
 
         private int requesttype;
 
+
         ListAdapterMapMenu (int request)
         {
             requesttype = request;
         }
 
-
-        private final List<Pair<Integer, Integer>> maps = Arrays.asList(
-                Pair.create(R.string.bank, R.drawable.mapbank),
-                Pair.create(R.string.chalet, R.drawable.mapchalet),
-                Pair.create(R.string.clubhouse, R.drawable.mapclubhouse),
-                Pair.create(R.string.consulate, R.drawable.mapconsulate),
-                Pair.create(R.string.hereford, R.drawable.maphereford),
-                Pair.create(R.string.house, R.drawable.maphouse),
-                Pair.create(R.string.kafedostoyevsky, R.drawable.mapkafedostoyevsky),
-                Pair.create(R.string.kanal, R.drawable.mapkanal),
-                Pair.create(R.string.oregon, R.drawable.maporegon),
-                Pair.create(R.string.plane, R.drawable.mapplane),
-                Pair.create(R.string.favela, R.drawable.mapfavela),
-                Pair.create(R.string.border, R.drawable.mapborder),
-                Pair.create(R.string.yacht, R.drawable.mapyacht),
-                Pair.create(R.string.skyscraper, R.drawable.mapskyscraper)
-        );
-
+        private MapSwitch mapS = new MapSwitch();
+        private List<Pair<Integer, Integer>> maps = mapS.SwitchMapName();
 
         @Override
         public int getItemCount() {

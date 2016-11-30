@@ -29,11 +29,8 @@ public class MapMenuActivity extends AppCompatActivity {
         int requesttype = getIntent().getIntExtra("request",0);
 
         RecyclerView rv = (RecyclerView) findViewById(R.id.recyclerView);
-        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
-            rv.setLayoutManager(new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false));
-        } else {
-            rv.setLayoutManager(new LinearLayoutManager(this));
-        }
+        LayoutIfManager layoutIM = new LayoutIfManager(getApplicationContext());
+        rv.setLayoutManager(layoutIM.ReturnManagerChange());
         rv.setAdapter(new ListAdapterMapMenu(requesttype));
     }
 
