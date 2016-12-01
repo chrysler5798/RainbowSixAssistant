@@ -143,9 +143,12 @@
         <string name="skyscraper_cam_s6">(EXT) East garden</string>
         <string name="skyscraper_cam_s7">(EXT) Ventilation units</string>
 
-    <string name="destroyPhrase">%d remaining</string>
+    <string name="destroyPhrase">%d</string>
     <string name="cameraPhrase">%d cameras</string>
-    <string name="destroyed">DESTROYED</string>
+    <string name="cameraPhrase2_1">%d camera remaining</string>
+    <string name="cameraPhrase2_2">%d cameras remaining</string>
+    <string name="cameraAllDestroyed">All cameras destroyed</string>
+    <string name="destroyed">X</string>
 
 
     <!--IMAGE CONTENT DESCRIPTION-->

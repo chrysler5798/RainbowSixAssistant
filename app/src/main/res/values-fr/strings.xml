@@ -14,8 +14,8 @@
     <string name="oregon">Oregon</string>
     <string name="plane">Avion Présidentiel</string>
     <string name="yacht">Yatch</string>
-    <string name="destroyPhrase">%d Restant</string>
-    <string name="destroyed">DETRUIT</string>
+    <string name="destroyPhrase">%d</string>
+    <string name="destroyed">X</string>
     <string name="twitch_drone_image">Image Drone Twitch</string>
     <string name="zoom_icon">Icon Zoom</string>
     <string name="takemap">Selectionne une carte</string>
@@ -123,4 +123,7 @@
     <string name="twitch">Twitch</string>
     <string name="msgsoon">Cette nouvelle fonctionnalité arrive bientôt !</string>
     <string name="cameraPhrase">%d caméras</string>
+    <string name="cameraPhrase2_1">%d caméra restante</string>
+    <string name="cameraPhrase2_2">%d caméras restantes</string>
+    <string name="cameraAllDestroyed">Toutes les caméras détruites</string>
 </resources>

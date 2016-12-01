@@ -22,17 +22,27 @@ import java.util.List;
  * RainbowSixPartner
  */
 
-class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder> {
+class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
+{
 
     private List<Integer> pics;
     private List<Integer> poscam;
     private int type;
+    private ChangeCamRemInterface listenerCam;
 
     ListAdapterMap(ArrayList<Integer> pics, ArrayList<Integer> poscam, int type){
 
         this.pics = pics;
         this.poscam = poscam;
         this.type = type;
+    }
+
+
+     ListAdapterMap(ArrayList<Integer> pics, ArrayList<Integer> poscam, int type, ChangeCamRemInterface listener){
+        this.pics = pics;
+        this.poscam = poscam;
+        this.type = type;
+        this.listenerCam = listener;
     }
 
     @Override
@@ -90,6 +100,7 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder> {
                          }
                          mLastClickTime = SystemClock.elapsedRealtime();
                          removeAt(position);
+                         listenerCam.notifyCamRem(getItemCount());
                      }
                  });
              }

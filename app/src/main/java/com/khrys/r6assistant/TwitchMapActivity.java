@@ -18,9 +18,10 @@ import java.util.ArrayList;
  * RainbowSixPartner
  */
 
-public class TwitchMapActivity extends Activity implements View.OnClickListener {
+public class TwitchMapActivity extends Activity implements View.OnClickListener, ChangeCamRemInterface
+{
 
-    TextView txtValkyrie, txtBandit,txtMute,txtJager,txtKapkan;
+    TextView txtValkyrie, txtBandit,txtMute,txtJager,txtKapkan, txtCamera;
 
     ImageButton buttonValkyrie,buttonBandit,buttonMute,buttonJager,buttonKapkan;
 
@@ -31,6 +32,9 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener 
     RecyclerView rv;
 
     Context context;
+
+    ArrayList<Integer> pics = new ArrayList<>();
+    ArrayList<Integer> poscam = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -47,18 +51,16 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener 
         map = getIntent().getStringExtra("nommap");
         int mapID = getIntent().getIntExtra("pos", 0);
 
-        ArrayList<Integer> pics = new ArrayList<>();
-        ArrayList<Integer> poscam = new ArrayList<>();
-
         MapSwitch mapSwitch = new MapSwitch(pics, poscam, mapID);
         poscam = mapSwitch.SwitchPos();
         pics = mapSwitch.SwitcherPics();
 
+        final ListAdapterMap listAdapterMap = new ListAdapterMap(pics,poscam, type, this);
+
         rv = (RecyclerView) findViewById(R.id.recyclerViewMap);
         LayoutIfManager layoutIM = new LayoutIfManager(context);
-        rv.setAdapter(new ListAdapterMap(pics,poscam, type));
+        rv.setAdapter(listAdapterMap);
         rv.setLayoutManager(layoutIM.ReturnManager());
-
 
         TextView txtMap = (TextView) findViewById(R.id.textViewMapName);
 
@@ -67,6 +69,10 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener 
         txtMute = (TextView) findViewById(R.id.textViewMute);
         txtJager = (TextView) findViewById(R.id.textViewJager);
         txtKapkan = (TextView) findViewById(R.id.textViewKapkan);
+
+        txtCamera = (TextView) findViewById(R.id.textViewCamRem);
+
+        notifyCamRem(pics.size());
 
         textSetup(gadgetV, txtValkyrie);
         textSetup(gadgetB, txtBandit);
@@ -132,6 +138,27 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener 
                 return true;
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    @Override
+    public void notifyCamRem(int count)
+    {
+        String txtCam;
+        if(count == 1)
+        {
+            txtCam = String.format(getResources().getString(R.string.cameraPhrase2_1), count);
+            txtCamera.setText(txtCam);
+        }
+        else if(count <= 0)
+        {
+            txtCam = getResources().getString(R.string.cameraAllDestroyed);
+            txtCamera.setText(txtCam);
+        }
+        else
+        {
+            txtCam = String.format(getResources().getString(R.string.cameraPhrase2_2), count);
+            txtCamera.setText(txtCam);
         }
     }
 }
