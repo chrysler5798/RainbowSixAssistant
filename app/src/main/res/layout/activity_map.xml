@@ -10,8 +10,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/textViewMapName"
         android:textAlignment="center"
-        android:textColor="@android:color/black"
-        android:textSize="30sp"/>
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:background="@color/colorPrimary" />
 
 
     <TextView
@@ -19,14 +20,18 @@
         android:layout_height="wrap_content"
         android:id="@+id/textViewNbCam"
         android:textAlignment="center"
-        android:textColor="@color/colorPrimary"
-        android:textSize="18sp" />
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:background="@color/colorPrimary"
+        android:paddingBottom="10dp" />
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
         android:id="@+id/recyclerViewMap"
         android:orientation="horizontal"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@color/colorPrimary"/>
 
 
 </LinearLayout>

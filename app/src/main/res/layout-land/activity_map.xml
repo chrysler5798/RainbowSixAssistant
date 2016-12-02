@@ -1,47 +1,28 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white">
-
-    <LinearLayout
-        android:orientation="vertical"
-        android:layout_height="match_parent"
-        android:background="@color/colorPrimary"
-        android:layout_width="150dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/textViewMapName"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="30sp"
-            android:layout_weight="1"
-            android:gravity="bottom"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="10dp" />
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:id="@+id/textViewNbCam"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:layout_weight="1"
-            android:gravity="top"
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="10dp" />
-
-    </LinearLayout>
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="wrap_content"
         android:id="@+id/recyclerViewMap"
         android:orientation="horizontal"
-        android:layout_height="match_parent" />
+        android:layout_height="match_parent"
+        android:scrollbars="horizontal"
+        android:scrollbarThumbHorizontal="@color/colorPrimary"
+        android:layout_weight="1" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewNbCam"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        android:gravity="top"
+        android:background="@color/colorPrimary"/>
 
 
 </LinearLayout>

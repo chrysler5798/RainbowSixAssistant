@@ -13,11 +13,13 @@
 
     <android.support.v7.widget.RecyclerView
         android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:id="@+id/recyclerViewMap"
-        android:orientation="horizontal"
         android:background="@color/white"
-        android:layout_height="230dp"
-        android:layout_weight="1" />
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:scrollbars="horizontal"
+        android:scrollbarThumbHorizontal="@color/colorPrimary"/>
 
     <TextView
         android:layout_width="match_parent"
@@ -35,11 +37,6 @@
         android:layout_height="236dp"
         android:gravity="bottom"
         android:background="@color/white">
-
-        <SurfaceView
-            android:layout_width="match_parent"
-            android:layout_height="10dp"
-            android:background="@color/white" />
 
         <LinearLayout
             android:orientation="horizontal"

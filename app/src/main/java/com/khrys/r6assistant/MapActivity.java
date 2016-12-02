@@ -52,14 +52,16 @@ public class MapActivity extends AppCompatActivity
         rv = (RecyclerView) findViewById(R.id.recyclerViewMap);
         if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
             LayoutM = new LinearLayoutManager(MapActivity.this, LinearLayoutManager.HORIZONTAL, false);
+            String txtTitle = String.format(getResources().getString(R.string.app_name)+" - %s",map);
+            setTitle(txtTitle);
         } else {
             LayoutM = new LinearLayoutManager(MapActivity.this);
+            TextView txtMap = (TextView) findViewById(R.id.textViewMapName);
+            txtMap.setText(map);
         }
         rv.setAdapter(new ListAdapterMap(pics,poscam, type));
         rv.setLayoutManager(LayoutM);
 
-        TextView txtMap = (TextView) findViewById(R.id.textViewMapName);
-        txtMap.setText(map);
 
         TextView txtNbCam = (TextView) findViewById(R.id.textViewNbCam);
         String txtCam = String.format(getResources().getString(R.string.cameraPhrase), pics.size());
