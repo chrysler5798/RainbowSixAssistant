@@ -8,8 +8,10 @@ package com.khrys.r6assistant;
 
 import android.app.Activity;
 import android.content.Intent;
+import android.content.pm.PackageManager;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.TextView;
 
 public class SplashActivity extends Activity {
 
@@ -19,6 +21,15 @@ public class SplashActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_splash);
+
+        String versionName = "";
+        try {
+            versionName = String.format(getResources().getString(R.string.version_d), getApplicationContext().getPackageManager().getPackageInfo(getApplicationContext().getPackageName(), 0).versionName);
+        } catch (PackageManager.NameNotFoundException e) {
+            e.printStackTrace();
+        }
+        TextView versionname = (TextView) findViewById(R.id.textViewVersion);
+        versionname.setText(versionName);
 
         new Handler().postDelayed(new Runnable() {
 

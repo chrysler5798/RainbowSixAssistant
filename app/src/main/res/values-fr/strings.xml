@@ -126,4 +126,5 @@
     <string name="cameraPhrase2_1">%d caméra restante</string>
     <string name="cameraPhrase2_2">%d caméras restantes</string>
     <string name="cameraAllDestroyed">Toutes les caméras détruites</string>
+    <string name="version_d">Version %S</string>
 </resources>

@@ -158,5 +158,6 @@
     <string name="zoomedimg">Zoomed Image</string>
     <string name="cellimg">Cell Image</string>
     <string name="banner_image">Banner Image</string>
+    <string name="version_d">Version %S</string>
 
 </resources>
