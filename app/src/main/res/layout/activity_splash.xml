@@ -17,8 +17,8 @@
         android:fontFamily="sans-serif-condensed" />
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="217dp"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:src="@drawable/splash"
         android:id="@+id/imageView3"
         android:layout_weight="1" />

@@ -49,6 +49,11 @@
             android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden">
         </activity>
+        
+        <activity
+            android:name=".MapPlanActivity"
+            android:label="@string/app_name"
+            />
 
     </application>
 
