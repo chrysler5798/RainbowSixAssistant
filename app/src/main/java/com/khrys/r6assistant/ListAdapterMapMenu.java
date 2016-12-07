@@ -57,6 +57,8 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
 
             private final Context context;
 
+            Intent intent;
+
              MyViewHolder(final View itemView) {
                 super(itemView);
 
@@ -75,23 +77,29 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        final Intent intent;
                         if(requesttype == 1)
                         {
-                            intent = new Intent(context, MapActivity.class);
-                            intent.putExtra("nommap",name.getText().toString());
-                            intent.putExtra("pos", getAdapterPosition());
-                            context.startActivity(intent);
-                        } else if (requesttype == 2)
+                            startIntentWithInput(MapActivity.class);
+                        }
+                        else if (requesttype == 2)
                         {
-                            intent = new Intent(context, TwitchMapActivity.class);
-                            intent.putExtra("nommap",name.getText().toString());
-                            intent.putExtra("pos", getAdapterPosition());
-                            context.startActivity(intent);
+                            startIntentWithInput(TwitchMapActivity.class);
+                        }
+                        else if (requesttype == 3)
+                        {
+                            startIntentWithInput(MapPlanActivity.class);
                         }
 
                     }
                 });
+            }
+
+            void startIntentWithInput(Class newclass)
+            {
+                intent = new Intent(context, newclass);
+                intent.putExtra("nommap",name.getText().toString());
+                intent.putExtra("pos", getAdapterPosition());
+                context.startActivity(intent);
             }
 
             void display(Pair<Integer, Integer> pair) {

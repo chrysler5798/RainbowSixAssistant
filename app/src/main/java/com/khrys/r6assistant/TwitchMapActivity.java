@@ -161,23 +161,23 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
             txtCamera.setText(txtCam);
         }
     }
-}
 
-class algoButton
-{
-    algoButton(Context context, int gadget, TextView textView)
+    class algoButton
     {
-        String txtF;
+        algoButton(Context context, int gadget, TextView textView)
+        {
+            String txtF;
 
-        if(check0(gadget)) {
-            txtF = String.format(context.getResources().getString(R.string.destroyPhrase), gadget);
-            textView.setText(txtF);
-        } else {
-            textView.setText(R.string.destroyed);
+            if(check0(gadget)) {
+                txtF = String.format(context.getResources().getString(R.string.destroyPhrase), gadget);
+                textView.setText(txtF);
+            } else {
+                textView.setText(R.string.destroyed);
+            }
         }
-    }
 
-    private boolean check0(int gadget){
-        return gadget > 0;
+        private boolean check0(int gadget){
+            return gadget > 0;
+        }
     }
 }

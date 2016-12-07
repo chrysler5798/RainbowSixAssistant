@@ -59,11 +59,11 @@
             android:gravity="center">
 
             <Button
-                android:text="@string/soon"
+                android:text="@string/mapplans"
                 android:layout_height="@dimen/button_wah_main"
                 android:layout_width="@dimen/button_wah_main"
                 android:id="@+id/buttonmain3"
-                android:drawableBottom="@drawable/gunicon"
+                android:drawableBottom="@drawable/mapicon"
                 android:gravity="center"
                 android:backgroundTint="@color/colorPrimary"
                 android:paddingBottom="30dp" />
@@ -73,7 +73,7 @@
                 android:layout_height="@dimen/button_wah_main"
                 android:layout_width="@dimen/button_wah_main"
                 android:id="@+id/buttonmain4"
-                android:drawableBottom="@drawable/renownicon"
+                android:drawableBottom="@drawable/gunicon"
                 android:gravity="center"
                 android:backgroundTint="@color/colorPrimary"
                 android:paddingBottom="30dp" />

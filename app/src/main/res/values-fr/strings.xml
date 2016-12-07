@@ -127,4 +127,14 @@
     <string name="cameraPhrase2_2">%d caméras restantes</string>
     <string name="cameraAllDestroyed">Toutes les caméras détruites</string>
     <string name="version_d">Version %S</string>
+    <string name="f_base">-1</string>
+    <string name="f_0">RDC</string>
+    <string name="f_1">1ER</string>
+    <string name="f_2">2E</string>
+    <string name="f_3">3E</string>
+    <string name="mapplans">Cartes &amp; Plans</string>
+    <string name="error_floor_below">Il n\'y a pas d\'étage en dessous !</string>
+    <string name="error_floor_above">Il n\'y a pas d\'étage au dessus !</string>
+    <string name="zoom">ZOOM</string>
+    <string name="floor">ETAGE</string>
 </resources>

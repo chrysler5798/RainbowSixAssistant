@@ -1,5 +1,6 @@
 package com.khrys.r6assistant;
 
+
 import android.util.Pair;
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -14,12 +15,18 @@ import java.util.List;
 class MapSwitch
 {
 
-    private ArrayList<Integer> pics, poscam;
-    private int pos;
+    private ArrayList<Integer> pics, poscam, posmap;
+    private int pos, posplanmap;
 
     MapSwitch()
     {
 
+    }
+
+    MapSwitch(ArrayList<Integer> posmap, int posplanmap)
+    {
+        this.posmap = posmap;
+        this.posplanmap = posplanmap;
     }
 
      MapSwitch(ArrayList<Integer> pics, ArrayList<Integer> poscam, int pos)
@@ -336,5 +343,141 @@ class MapSwitch
                 Pair.create(R.string.yacht, R.drawable.mapyacht),
                 Pair.create(R.string.skyscraper, R.drawable.mapskyscraper));
     }
+
+    ArrayList<Integer> SwitchPosPlans()
+    {
+        switch (posplanmap)
+        {
+            case 0:
+                posmap.add(-1);
+                posmap.add(2);
+                posmap.add(R.drawable.map_bank__1);
+                posmap.add(R.drawable.map_bank_f0);
+                posmap.add(R.drawable.map_bank_f1);
+                posmap.add(R.drawable.map_bank_f2);
+                break;
+
+            case 1:
+                posmap.add(-1);
+                posmap.add(2);
+                posmap.add(R.drawable.map_chalet__1);
+                posmap.add(R.drawable.map_chalet_f0);
+                posmap.add(R.drawable.map_chalet_f1);
+                posmap.add(R.drawable.map_chalet_f2);
+                break;
+
+            case 2:
+                posmap.add(-1);
+                posmap.add(2);
+                posmap.add(R.drawable.map_clubhouse__1);
+                posmap.add(R.drawable.map_clubhouse_f0);
+                posmap.add(R.drawable.map_clubhouse_f1);
+                posmap.add(R.drawable.map_clubhouse_f2);
+                break;
+
+            case 3:
+                posmap.add(-1);
+                posmap.add(2);
+                posmap.add(R.drawable.map_consulate__1);
+                posmap.add(R.drawable.map_consulate_f0);
+                posmap.add(R.drawable.map_consulate_f1);
+                posmap.add(R.drawable.map_consulate_f2);
+                break;
+
+            case 4:
+                posmap.add(-1);
+                posmap.add(3);
+                posmap.add(R.drawable.map_hereford__1);
+                posmap.add(R.drawable.map_hereford_f0);
+                posmap.add(R.drawable.map_hereford_f1);
+                posmap.add(R.drawable.map_hereford_f2);
+                posmap.add(R.drawable.map_hereford_f3);
+                break;
+
+            case 5:
+                posmap.add(-1);
+                posmap.add(2);
+                posmap.add(R.drawable.map_house__1);
+                posmap.add(R.drawable.map_house_f0);
+                posmap.add(R.drawable.map_house_f1);
+                posmap.add(R.drawable.map_house_f2);
+                break;
+
+            case 6:
+                posmap.add(0);
+                posmap.add(3);
+                posmap.add(R.drawable.map_kafe_f0);
+                posmap.add(R.drawable.map_kafe_f1);
+                posmap.add(R.drawable.map_kafe_f2);
+                posmap.add(R.drawable.map_kafe_f3);
+                break;
+
+            case 7:
+                posmap.add(0);
+                posmap.add(3);
+                posmap.add(R.drawable.map_kanal_f0);
+                posmap.add(R.drawable.map_kanal_f1);
+                posmap.add(R.drawable.map_kanal_f2);
+                posmap.add(R.drawable.map_kanal_f3);
+                break;
+
+            case 8:
+                posmap.add(-1);
+                posmap.add(2);
+                posmap.add(R.drawable.map_oregon__1);
+                posmap.add(R.drawable.map_oregon_f0);
+                posmap.add(R.drawable.map_oregon_f1);
+                posmap.add(R.drawable.map_oregon_f2);
+                break;
+
+            case 9:
+                posmap.add(-1);
+                posmap.add(2);
+                posmap.add(R.drawable.map_plane__1);
+                posmap.add(R.drawable.map_plane_f0);
+                posmap.add(R.drawable.map_plane_f1);
+                posmap.add(R.drawable.map_plane_f2);
+                break;
+
+            case 10:
+                posmap.add(0);
+                posmap.add(2);
+                posmap.add(R.drawable.map_favela_f0);
+                posmap.add(R.drawable.map_favela_f1);
+                posmap.add(R.drawable.map_favela_f2);
+                break;
+
+            case 11:
+                posmap.add(1);
+                posmap.add(3);
+                posmap.add(R.drawable.map_border_f1);
+                posmap.add(R.drawable.map_border_f2);
+                posmap.add(R.drawable.map_border_f3);
+                break;
+
+            case 12:
+                posmap.add(-1);
+                posmap.add(3);
+                posmap.add(R.drawable.map_yatch__1);
+                posmap.add(R.drawable.map_yatch_f0);
+                posmap.add(R.drawable.map_yatch_f1);
+                posmap.add(R.drawable.map_yatch_f2);
+                posmap.add(R.drawable.map_yatch_f3);
+                break;
+
+            case 13:
+                posmap.add(0);
+                posmap.add(3);
+                posmap.add(R.drawable.map_sky_f0);
+                posmap.add(R.drawable.map_sky_f1);
+                posmap.add(R.drawable.map_sky_f2);
+                posmap.add(R.drawable.map_sky_f3);
+                break;
+        }
+
+        return posmap;
+    }
+
+
 
 }

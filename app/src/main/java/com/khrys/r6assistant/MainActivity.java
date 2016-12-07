@@ -11,46 +11,50 @@ import android.widget.Toast;
 
 public class MainActivity extends Activity {
 
+    Intent menumapIntent;
+
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
         Button buttoncamera = (Button) findViewById(R.id.buttonmain1);
         Button buttontwitch = (Button) findViewById(R.id.buttonmain2);
-        Button buttonsoon = (Button) findViewById(R.id.buttonmain3);
-        Button buttonsoon2 = (Button) findViewById(R.id.buttonmain4);
+        Button buttonmapplans = (Button) findViewById(R.id.buttonmain3);
+        Button buttonsoon = (Button) findViewById(R.id.buttonmain4);
 
-        buttonsoon.setOnClickListener(new SoonCLickListener());
-        buttonsoon2.setOnClickListener(new SoonCLickListener());
+        buttonsoon.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(),R.string.msgsoon, Toast.LENGTH_SHORT).show();
+            }
+        });
 
-        final Intent menumapIntent = new Intent(MainActivity.this, MapMenuActivity.class);
+        menumapIntent = new Intent(MainActivity.this, MapMenuActivity.class);
 
         Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
         myToolbar.setTitle(R.string.app_name);
 
-        buttoncamera.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                menumapIntent.putExtra("request",1);
-                startActivity(menumapIntent);
-            }
-        });
-
-        buttontwitch.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                menumapIntent.putExtra("request",2);
-                startActivity(menumapIntent);
-            }
-        });
+        buttoncamera.setOnClickListener(new MenuCLickListener(1));
+        buttontwitch.setOnClickListener(new MenuCLickListener(2));
+        buttonmapplans.setOnClickListener(new MenuCLickListener(3));
     }
 
-    class SoonCLickListener implements View.OnClickListener
+    class MenuCLickListener implements View.OnClickListener
     {
+        int type;
+        MenuCLickListener(int type)
+        {
+            this.type = type;
+        }
+
         @Override
-        public void onClick(View v) {
-            Toast.makeText(getApplicationContext(),R.string.msgsoon, Toast.LENGTH_SHORT).show();
+        public void onClick(View v)
+        {
+            menumapIntent.putExtra("request",type);
+            startActivity(menumapIntent);
         }
     }
 }

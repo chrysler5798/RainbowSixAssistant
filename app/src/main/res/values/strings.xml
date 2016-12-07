@@ -4,6 +4,7 @@
     <!--MAIN ACTIVITY - MENU-->
     <string name="cameras">Cameras</string>
     <string name="twitch">Twitch</string>
+    <string name="mapplans">Maps &amp; Plans</string>
     <string name="soon">Soon…</string>
     <string name="msgsoon">This new feature is coming soon !</string>
 
@@ -151,6 +152,17 @@
     <string name="destroyed">X</string>
 
 
+    <!--FLOORS OF MAP PLAN-->
+    <string name="f_base">-1</string>
+    <string name="f_0">1F</string>
+    <string name="f_1">2F</string>
+    <string name="f_2">3F</string>
+    <string name="f_3">4F</string>
+
+    <!--FLOORS ERROR PHRASE-->
+    <string name="error_floor_below">There is no floor below !</string>
+    <string name="error_floor_above">There is no floor above !</string>
+
     <!--IMAGE CONTENT DESCRIPTION-->
     <string name="twitch_drone_image">Twitch Drone Image</string>
     <string name="image_bank_1">Image Bank 1</string>
@@ -159,5 +171,7 @@
     <string name="cellimg">Cell Image</string>
     <string name="banner_image">Banner Image</string>
     <string name="version_d">Version %S</string>
+    <string name="zoom">ZOOM</string>
+    <string name="floor">FLOOR</string>
 
 </resources>
