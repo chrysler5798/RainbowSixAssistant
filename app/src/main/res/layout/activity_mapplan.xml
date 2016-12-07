@@ -29,7 +29,7 @@
     <SurfaceView
         android:layout_width="match_parent"
         android:layout_height="10dp"
-        android:background="@color/colorPrimaryDark" />
+        android:background="@color/colorPrimary" />
 
     <LinearLayout
         android:orientation="horizontal"
@@ -61,13 +61,6 @@
                 <ImageButton
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/zoom_in"
-                    android:id="@+id/buttonZoomIn"
-                    android:layout_weight="1" />
-
-                <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
                     app:srcCompat="@drawable/zoom_out"
                     android:id="@+id/buttonZoomOut"
                     android:layout_weight="1" />
@@ -78,14 +71,22 @@
                     app:srcCompat="@drawable/zoom_reset"
                     android:id="@+id/buttonZoomReset"
                     android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/zoom_in"
+                    android:id="@+id/buttonZoomIn"
+                    android:layout_weight="1" />
+
             </LinearLayout>
         </LinearLayout>
 
         <SurfaceView
             android:layout_height="match_parent"
             android:id="@+id/surfaceView"
-            android:layout_width="wrap_content"
-            android:background="@color/colorPrimaryDark"
+            android:layout_width="59dp"
+            android:background="@color/colorPrimary"
             android:elevation="1dp" />
 
         <LinearLayout

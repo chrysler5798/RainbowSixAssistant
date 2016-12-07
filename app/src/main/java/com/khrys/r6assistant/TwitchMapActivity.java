@@ -23,13 +23,17 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
 
     TextView txtValkyrie, txtBandit,txtMute,txtJager,txtKapkan, txtCamera;
 
-    ImageButton buttonValkyrie,buttonBandit,buttonMute,buttonJager,buttonKapkan;
+    ImageButton buttonValkyrie,buttonBandit,buttonMute,buttonJager,buttonKapkan, refreshBut;
 
-    int type = 2, gadgetV = 3, gadgetB = 3, gadgetM = 4, gadgetJ = 3, gadgetK = 3;
+    int type = 2, gadgetV, gadgetB, gadgetM, gadgetJ, gadgetK, mapID;
 
     String map;
 
     RecyclerView rv;
+
+    ListAdapterMap listAdapterMap;
+
+    MapSwitch mapSwitch;
 
     Context context;
 
@@ -49,13 +53,13 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
         context = getApplicationContext();
 
         map = getIntent().getStringExtra("nommap");
-        int mapID = getIntent().getIntExtra("pos", 0);
+        mapID = getIntent().getIntExtra("pos", 0);
 
-        MapSwitch mapSwitch = new MapSwitch(pics, poscam, mapID);
+        mapSwitch = new MapSwitch(pics, poscam, mapID);
         poscam = mapSwitch.SwitchPos();
         pics = mapSwitch.SwitcherPics();
 
-        final ListAdapterMap listAdapterMap = new ListAdapterMap(pics,poscam, type, this);
+        listAdapterMap = new ListAdapterMap(pics,poscam, type, this);
 
         rv = (RecyclerView) findViewById(R.id.recyclerViewMap);
         LayoutIfManager layoutIM = new LayoutIfManager(context);
@@ -74,17 +78,31 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
 
         notifyCamRem(pics.size());
 
-        textSetup(gadgetV, txtValkyrie);
-        textSetup(gadgetB, txtBandit);
-        textSetup(gadgetM, txtMute);
-        textSetup(gadgetJ, txtJager);
-        textSetup(gadgetK, txtKapkan);
+        defaultTxtSetup();
 
         buttonValkyrie = (ImageButton) findViewById(R.id.buttonDValkyrie);
         buttonBandit = (ImageButton) findViewById(R.id.buttonDBandit);
         buttonMute = (ImageButton) findViewById(R.id.buttonDMute);
         buttonJager = (ImageButton) findViewById(R.id.buttonDJager);
         buttonKapkan = (ImageButton) findViewById(R.id.buttonDKapkan);
+
+        refreshBut = (ImageButton) findViewById(R.id.TwitchRefreshButton);
+
+        refreshBut.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                defaultTxtSetup();
+                pics.clear();
+                poscam.clear();
+                poscam = mapSwitch.SwitchPos();
+                pics = mapSwitch.SwitcherPics();
+                rv.removeAllViews();
+                rv.setAdapter(listAdapterMap);
+                notifyCamRem(pics.size());
+            }
+        });
 
         buttonBandit.setOnClickListener(this);
         buttonJager.setOnClickListener(this);
@@ -94,6 +112,20 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
 
         txtMap.setText(map);
 
+    }
+
+    void defaultTxtSetup()
+    {
+        gadgetV = 3;
+        gadgetB = 3;
+        gadgetM = 4;
+        gadgetJ = 3;
+        gadgetK = 3;
+        textSetup(gadgetV, txtValkyrie);
+        textSetup(gadgetB, txtBandit);
+        textSetup(gadgetM, txtMute);
+        textSetup(gadgetJ, txtJager);
+        textSetup(gadgetK, txtKapkan);
     }
 
     void textSetup(int gadget, TextView txtView)

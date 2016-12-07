@@ -1,17 +1,16 @@
 package com.khrys.r6assistant;
 
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import java.util.ArrayList;
-
 import uk.co.senab.photoview.PhotoViewAttacher;
-
 
 /**
  * Created by Louis on 06/12/2016.
@@ -35,6 +34,11 @@ public class MapPlanActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
 
         setContentView(R.layout.activity_mapplan);
+
+        ActionBar actionBar = getSupportActionBar();
+        if (actionBar != null) {
+            actionBar.setDisplayHomeAsUpEnabled(true);
+        }
 
         String map = getIntent().getStringExtra("nommap");
         int mapID = getIntent().getIntExtra("pos", 0);
@@ -61,9 +65,9 @@ public class MapPlanActivity extends AppCompatActivity
 
         mAttacher = new PhotoViewAttacher(mImageView);
 
-        ZoomMinusBut.setOnClickListener(new ClickListenerPlan(1, mAttacher));
-        ZoomResetBut.setOnClickListener(new ClickListenerPlan(2, mAttacher));
-        ZoomPlusBut.setOnClickListener(new ClickListenerPlan(3, mAttacher));
+        ZoomMinusBut.setOnClickListener(new ClickListenerZoom(1, mAttacher));
+        ZoomResetBut.setOnClickListener(new ClickListenerZoom(2, mAttacher));
+        ZoomPlusBut.setOnClickListener(new ClickListenerZoom(3, mAttacher));
 
         titleTextView.setText(map);
 
@@ -145,6 +149,17 @@ public class MapPlanActivity extends AppCompatActivity
         {
             TextViewFloor.setText(SwitchFloorTxt(currentfloorTxt));
             mImageView.setImageResource(posmaps.get(currentfloorImg));
+        }
+    }
+
+    public boolean onOptionsItemSelected(MenuItem item){
+        switch (item.getItemId()) {
+            case android.R.id.home:
+
+                this.finish();
+                return true;
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 }

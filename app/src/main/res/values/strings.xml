@@ -173,5 +173,8 @@
     <string name="version_d">Version %S</string>
     <string name="zoom">ZOOM</string>
     <string name="floor">FLOOR</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="resetzoom">resetzoom</string>
 
 </resources>

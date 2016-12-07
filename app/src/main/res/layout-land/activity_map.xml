@@ -11,6 +11,7 @@
         android:orientation="horizontal"
         android:layout_height="match_parent"
         android:scrollbars="horizontal"
+        android:scrollbarSize="5dip"
         android:scrollbarThumbHorizontal="@color/colorPrimary"
         android:layout_weight="1" />
 

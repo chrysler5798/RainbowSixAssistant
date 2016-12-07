@@ -137,4 +137,7 @@
     <string name="error_floor_above">Il n\'y a pas d\'étage au dessus !</string>
     <string name="zoom">ZOOM</string>
     <string name="floor">ETAGE</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="resetzoom">resetzoom</string>
 </resources>

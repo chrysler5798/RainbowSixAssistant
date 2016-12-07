@@ -1,7 +1,6 @@
 package com.khrys.r6assistant;
 
 import android.view.View;
-
 import uk.co.senab.photoview.PhotoViewAttacher;
 
 /**
@@ -10,12 +9,12 @@ import uk.co.senab.photoview.PhotoViewAttacher;
  * RainbowSixAssistant
  */
 
-class ClickListenerPlan implements View.OnClickListener {
+class ClickListenerZoom implements View.OnClickListener {
 
     private int typeRequest;
     private PhotoViewAttacher mAttacher;
 
-    ClickListenerPlan(int type, PhotoViewAttacher mAttacherTransfer)
+    ClickListenerZoom(int type, PhotoViewAttacher mAttacherTransfer)
     {
         typeRequest = type;
         mAttacher = mAttacherTransfer;
@@ -24,11 +23,10 @@ class ClickListenerPlan implements View.OnClickListener {
     @Override
     public void onClick(View view)
     {
-        float Scale;
+        float Scale = mAttacher.getScale();
         switch (typeRequest)
         {
             case 1:
-                Scale = mAttacher.getScale();
                 if(Scale > 1F)
                 {
                     mAttacher.zoomTo(Scale-1.0F,0,0);
@@ -40,7 +38,6 @@ class ClickListenerPlan implements View.OnClickListener {
                 break;
 
             case 3:
-                Scale = mAttacher.getScale();
                 if(Scale < 4F)
                 {
                     mAttacher.zoomTo(Scale+1.0F,0,0);

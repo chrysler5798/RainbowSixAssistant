@@ -26,9 +26,16 @@
                 android:textColor="@color/white"
                 android:textSize="30sp"
                 android:gravity="center_vertical"
-                android:background="@color/colorPrimary"
+                android:background="?attr/colorBackgroundFloating"
                 android:layout_weight="1" />
 
+            <ImageButton
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/refresh_icon"
+                android:id="@+id/TwitchRefreshButton"
+                android:background="@color/colorPrimary"
+                android:layout_weight="0.45" />
             <SurfaceView
                 android:layout_width="match_parent"
                 android:background="@color/white"

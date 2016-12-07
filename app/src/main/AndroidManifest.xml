@@ -46,7 +46,6 @@
 
         <activity
             android:name=".ZoomActivity"
-            android:screenOrientation="landscape"
             android:configChanges="orientation|keyboardHidden">
         </activity>
         
