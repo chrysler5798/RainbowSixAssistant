@@ -29,7 +29,7 @@ class ClickListenerZoom implements View.OnClickListener {
             case 1:
                 if(Scale > 1F)
                 {
-                    mAttacher.zoomTo(Scale-1.0F,0,0);
+                    mAttacher.setScale(Scale-1.0F);
                 }
                 break;
 
@@ -40,7 +40,7 @@ class ClickListenerZoom implements View.OnClickListener {
             case 3:
                 if(Scale < 4F)
                 {
-                    mAttacher.zoomTo(Scale+1.0F,0,0);
+                    mAttacher.setScale(Scale+1.0F);
                 }
                 break;
         }

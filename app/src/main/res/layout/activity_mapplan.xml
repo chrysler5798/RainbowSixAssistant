@@ -99,7 +99,6 @@
                 android:text="@string/floor"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/textView3"
                 android:textAllCaps="true"
                 android:textColor="@android:color/black"
                 android:textAlignment="center" />

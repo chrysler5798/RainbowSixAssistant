@@ -57,7 +57,7 @@ public class ZoomActivity extends AppCompatActivity{
             case R.id.action_zoomout:
                 if(Scale > 1F)
                 {
-                    mAttacher.zoomTo(Scale-1.0F,0,0);
+                    mAttacher.setScale(Scale-1.0F);
                 }
                 return true;
 
@@ -68,7 +68,7 @@ public class ZoomActivity extends AppCompatActivity{
             case R.id.action_zoomin:
                 if(Scale < 4F)
                 {
-                    mAttacher.zoomTo(Scale+1.0F,0,0);
+                    mAttacher.setScale(Scale+1.0F);
                 }
                 return true;
 
