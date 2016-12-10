@@ -11,14 +11,14 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textViewVersion"
-        android:textSize="14sp"
+        android:textSize="18sp"
         android:textColor="@color/colorPrimary"
         android:textAlignment="center"
         android:fontFamily="sans-serif-condensed" />
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="217dp"
         android:src="@drawable/splash"
         android:id="@+id/imageView3"
         android:layout_weight="1" />

@@ -64,6 +64,7 @@ public class MapPlanActivity extends AppCompatActivity
         nextFloorBut = (ImageButton) findViewById(R.id.buttonPlusFloor);
 
         mAttacher = new PhotoViewAttacher(mImageView);
+        mAttacher.setMaximumScale(6.0F);
 
         ZoomMinusBut.setOnClickListener(new ClickListenerZoom(1, mAttacher));
         ZoomResetBut.setOnClickListener(new ClickListenerZoom(2, mAttacher));

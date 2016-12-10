@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorPrimary">
+    android:background="@color/white">
 
     <TextView
         android:text=""
@@ -11,12 +11,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/txtTitlePlan"
         android:textAlignment="center"
-        android:textColor="@color/white"
-        android:background="@color/colorPrimary"
+        android:textColor="@color/colorPrimary"
         android:textSize="24sp"
         android:paddingBottom="10dp"
         android:paddingTop="5dp" />
-
 
 
     <ImageView
@@ -26,114 +24,71 @@
         android:adjustViewBounds="true"
         android:layout_weight="1" />
 
-    <SurfaceView
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="10dp"
-        android:background="@color/colorPrimary" />
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp">
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/plus_icon"
+            android:id="@+id/buttonPlusFloor" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewEtage"
+            android:textAlignment="center"
+            android:gravity="center"
+            android:textAllCaps="true"
+            android:textSize="24sp"
+            android:textColor="@color/colorPrimary" />
+
+        <ImageButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/minus_icon"
+            android:id="@+id/buttonMinusFloor" />
+
+    </LinearLayout>
 
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/white"
-        android:gravity="center_vertical">
+        android:layout_height="wrap_content">
 
-        <LinearLayout
-            android:orientation="vertical"
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/zoom_out"
+            android:id="@+id/buttonZoomOut"
+            android:layout_weight="1"
+            android:background="@drawable/background_but"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <ImageButton
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/zoom_reset"
+            android:id="@+id/buttonZoomReset"
+            android:layout_weight="1"
+            android:background="@drawable/background_but"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
+
+        <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_weight="1">
-
-            <TextView
-                android:text="@string/zoom"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:id="@+id/textView3"
-                android:textAllCaps="true"
-                android:textColor="@android:color/black"
-                android:textAlignment="center" />
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content">
-
-                <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/zoom_out"
-                    android:id="@+id/buttonZoomOut"
-                    android:layout_weight="1" />
-
-                <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/zoom_reset"
-                    android:id="@+id/buttonZoomReset"
-                    android:layout_weight="1" />
-
-                <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/zoom_in"
-                    android:id="@+id/buttonZoomIn"
-                    android:layout_weight="1" />
-
-            </LinearLayout>
-        </LinearLayout>
-
-        <SurfaceView
-            android:layout_height="match_parent"
-            android:id="@+id/surfaceView"
-            android:layout_width="59dp"
-            android:background="@color/colorPrimary"
-            android:elevation="1dp" />
-
-        <LinearLayout
-            android:orientation="vertical"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
-
-            <TextView
-                android:text="@string/floor"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textAllCaps="true"
-                android:textColor="@android:color/black"
-                android:textAlignment="center" />
-
-            <LinearLayout
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
-
-                <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/minus_icon"
-                    android:id="@+id/buttonMinusFloor"
-                    android:layout_weight="1" />
-
-                <TextView
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:id="@+id/textViewEtage"
-                    android:textAlignment="center"
-                    android:gravity="center"
-                    android:textAllCaps="true"
-                    android:textSize="24sp"
-                    android:layout_weight="1"
-                    android:textColor="@color/colorPrimary" />
-
-                <ImageButton
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    app:srcCompat="@drawable/plus_icon"
-                    android:id="@+id/buttonPlusFloor"
-                    android:layout_weight="1" />
-            </LinearLayout>
-        </LinearLayout>
+            app:srcCompat="@drawable/zoom_in"
+            android:id="@+id/buttonZoomIn"
+            android:layout_weight="1"
+            android:background="@drawable/background_but"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp" />
 
     </LinearLayout>
 

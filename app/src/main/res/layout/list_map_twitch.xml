@@ -20,7 +20,7 @@
         android:id="@+id/imgmap2"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:contentDescription="@string/image_bank_1" />
@@ -34,19 +34,19 @@
             android:src="@drawable/twitch"
             android:id="@+id/twitchButtonCam"
             android:layout_height="50dp"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
             android:layout_marginLeft="20dp"
-            android:contentDescription="@string/twitch_drone_image" />
+            android:contentDescription="@string/twitch_drone_image"
+            android:layout_weight="1" />
 
         <ImageButton
             android:src="@android:drawable/ic_menu_search"
             android:id="@+id/zoomButtonCam"
             android:layout_height="50dp"
-            android:layout_width="wrap_content"
-            android:layout_weight="1"
+            android:layout_width="match_parent"
             android:layout_marginRight="20dp"
-            android:contentDescription="@string/zoom_icon" />
+            android:contentDescription="@string/zoom_icon"
+            android:layout_weight="1" />
     </LinearLayout>
 
 </LinearLayout>

@@ -153,11 +153,11 @@
 
 
     <!--FLOORS OF MAP PLAN-->
-    <string name="f_base">-1</string>
-    <string name="f_0">1F</string>
-    <string name="f_1">2F</string>
-    <string name="f_2">3F</string>
-    <string name="f_3">4F</string>
+    <string name="f_base">Basement</string>
+    <string name="f_0">1st Floor</string>
+    <string name="f_1">2nd Floor</string>
+    <string name="f_2">3rd Floor</string>
+    <string name="f_3">4th Floor</string>
 
     <!--FLOORS ERROR PHRASE-->
     <string name="error_floor_below">There is no floor below !</string>

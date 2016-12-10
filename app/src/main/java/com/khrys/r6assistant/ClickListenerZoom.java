@@ -27,7 +27,7 @@ class ClickListenerZoom implements View.OnClickListener {
         switch (typeRequest)
         {
             case 1:
-                if(Scale > 1F)
+                if(Scale > mAttacher.getMinimumScale())
                 {
                     mAttacher.setScale(Scale-1.0F);
                 }
@@ -38,7 +38,7 @@ class ClickListenerZoom implements View.OnClickListener {
                 break;
 
             case 3:
-                if(Scale < 4F)
+                if(Scale < mAttacher.getMaximumScale())
                 {
                     mAttacher.setScale(Scale+1.0F);
                 }
