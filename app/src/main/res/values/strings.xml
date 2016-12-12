@@ -176,5 +176,6 @@
     <string name="zoom_in">Zoom In</string>
     <string name="zoom_out">Zoom Out</string>
     <string name="resetzoom">resetzoom</string>
+    <string name="position">Positions</string>
 
 </resources>

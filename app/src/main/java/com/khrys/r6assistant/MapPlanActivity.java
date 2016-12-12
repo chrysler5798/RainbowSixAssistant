@@ -5,8 +5,10 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ImageView;
+import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
 import java.util.ArrayList;
@@ -27,6 +29,8 @@ public class MapPlanActivity extends AppCompatActivity
     ImageButton ZoomPlusBut, ZoomMinusBut, ZoomResetBut, prevFloorBut, nextFloorBut;
     ArrayList<Integer> posmaps = new ArrayList<>();
     int minfloor, maxfloor, currentfloorTxt, currentfloorImg = 2, posdefault;
+    Switch switchPos;
+    MapSwitch mapSwitch;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -43,8 +47,41 @@ public class MapPlanActivity extends AppCompatActivity
         String map = getIntent().getStringExtra("nommap");
         int mapID = getIntent().getIntExtra("pos", 0);
 
-        MapSwitch mapSwitch = new MapSwitch(posmaps, mapID);
-        posmaps = mapSwitch.SwitchPosPlans();
+        switchPos = (Switch) findViewById(R.id.switchPos);
+
+        mapSwitch = new MapSwitch(posmaps, mapID);
+
+        if(switchPos.isChecked())
+        {
+            posmaps = mapSwitch.SwitchPosPlans();
+        }
+        else
+        {
+            posmaps = mapSwitch.SwitchPosPlansWithPos();
+        }
+
+        switchPos.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
+        {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
+            {
+                posmaps.clear();
+                if(isChecked)
+                {
+                    posmaps = mapSwitch.SwitchPosPlans();
+                }
+                else
+                {
+                    posmaps = mapSwitch.SwitchPosPlansWithPos();
+                }
+                minfloor = posmaps.get(0);
+                maxfloor = posmaps.get(1);
+                posdefault = posmaps.get(2);
+                currentfloorImg = 2;
+                currentfloorTxt = minfloor;
+                setupImageAndFloor();
+            }
+        });
 
         minfloor = posmaps.get(0);
         maxfloor = posmaps.get(1);
@@ -82,6 +119,7 @@ public class MapPlanActivity extends AppCompatActivity
     {
         mImageView.setImageResource(posdefault);
         TextViewFloor.setText(SwitchFloorTxt(minfloor));
+        mAttacher.update();
     }
 
     String SwitchFloorTxt(int floor)
