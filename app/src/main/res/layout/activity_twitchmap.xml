@@ -85,7 +85,6 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:src="@drawable/valkyrie"
-                        android:id="@+id/imgvalkyrie"
                         android:layout_height="70dp"
                         android:adjustViewBounds="true" />
                 </LinearLayout>
@@ -130,7 +129,6 @@
 
                     <ImageView
                         android:layout_width="wrap_content"
-                        android:id="@+id/imgkapkan"
                         android:src="@drawable/kapkan"
                         android:layout_height="60dp"
                         android:layout_marginTop="5dp" />
@@ -174,7 +172,6 @@
                     <ImageView
                         android:layout_width="wrap_content"
                         android:src="@drawable/mute"
-                        android:id="@+id/imgmute"
                         android:layout_marginTop="5dp"
                         android:layout_height="60dp"
                         android:layout_marginBottom="5dp"
@@ -224,7 +221,6 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:src="@drawable/bandit"
-                    android:id="@+id/imgbandit"
                     android:adjustViewBounds="true"
                     android:layout_height="wrap_content"
                     android:paddingLeft="5dp"
@@ -265,7 +261,6 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:src="@drawable/jager"
-                    android:id="@+id/imgjager"
                     android:adjustViewBounds="true"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp" />

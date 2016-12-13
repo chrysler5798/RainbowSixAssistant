@@ -2,6 +2,7 @@ package com.khrys.r6assistant;
 
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -25,15 +26,15 @@ import uk.co.senab.photoview.PhotoViewAttacher;
 public class MapPlanActivity extends AppCompatActivity
 {
 
-    ImageView mImageView;
-    TextView titleTextView, TextViewFloor;
-    PhotoViewAttacher mAttacher;
-    ImageButton ZoomPlusBut, ZoomMinusBut, ZoomResetBut, prevFloorBut, nextFloorBut;
+    int minfloor, maxfloor, currentfloorTxt, currentfloorImg, posdefault;
     ArrayList<Integer> posmaps = new ArrayList<>();
-    int minfloor, maxfloor, currentfloorTxt, currentfloorImg = 2, posdefault;
-    Switch switchPos;
+
+    Switch switchPosRef;
     MapSwitch mapSwitch;
-    Bitmap posdefaultBM, imgBM;
+
+    ImageView mImageView;
+    TextView TextViewFloor;
+    PhotoViewAttacher mAttacher;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -50,11 +51,35 @@ public class MapPlanActivity extends AppCompatActivity
         String map = getIntent().getStringExtra("nommap");
         int mapID = getIntent().getIntExtra("pos", 0);
 
-        switchPos = (Switch) findViewById(R.id.switchPos);
-
         mapSwitch = new MapSwitch(posmaps, mapID);
 
-        if(switchPos.isChecked())
+        switchPosRef = (Switch) findViewById(R.id.switchPos);
+
+        mImageView = (ImageView) findViewById(R.id.imageViewPlan);
+
+        TextView titleTextView = (TextView) findViewById(R.id.txtTitlePlan);
+        TextViewFloor = (TextView) findViewById(R.id.textViewEtage);
+
+        ImageButton ZoomResetBut = (ImageButton) findViewById(R.id.buttonZoomReset);
+        ImageButton ZoomPlusBut = (ImageButton) findViewById(R.id.buttonZoomIn);
+        ImageButton ZoomMinusBut = (ImageButton) findViewById(R.id.buttonZoomOut);
+
+        ImageButton prevFloorBut = (ImageButton) findViewById(R.id.buttonMinusFloor);
+        ImageButton nextFloorBut = (ImageButton) findViewById(R.id.buttonPlusFloor);
+
+        mAttacher = new PhotoViewAttacher(mImageView);
+        mAttacher.setMaximumScale(6.0F);
+
+        ZoomMinusBut.setOnClickListener(new ClickListenerZoom(1, mAttacher));
+        ZoomResetBut.setOnClickListener(new ClickListenerZoom(2, mAttacher));
+        ZoomPlusBut.setOnClickListener(new ClickListenerZoom(3, mAttacher));
+
+        titleTextView.setText(map);
+
+        prevFloorBut.setOnClickListener(new ClickListenerMinusPlusFloor(1));
+        nextFloorBut.setOnClickListener(new ClickListenerMinusPlusFloor(2));
+
+        if(switchPosRef.isChecked())
         {
             posmaps = mapSwitch.SwitchPosPlans();
         }
@@ -63,7 +88,7 @@ public class MapPlanActivity extends AppCompatActivity
             posmaps = mapSwitch.SwitchPosPlansWithPos();
         }
 
-        switchPos.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
+        switchPosRef.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
         {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
@@ -77,54 +102,23 @@ public class MapPlanActivity extends AppCompatActivity
                 {
                     posmaps = mapSwitch.SwitchPosPlansWithPos();
                 }
-                minfloor = posmaps.get(0);
-                maxfloor = posmaps.get(1);
-                posdefault = posmaps.get(2);
-                posdefaultBM = BitmapFactory.decodeResource(getResources(), posdefault);
-                currentfloorImg = 2;
-                currentfloorTxt = minfloor;
-                setupImageAndFloor();
+                setupVarAndImageAndFloor();
             }
         });
 
+        setupVarAndImageAndFloor();
+    }
+
+    void setupVarAndImageAndFloor()
+    {
         minfloor = posmaps.get(0);
         maxfloor = posmaps.get(1);
         posdefault = posmaps.get(2);
-        posdefaultBM = BitmapFactory.decodeResource(getResources(), posdefault);
+        currentfloorImg = 2;
         currentfloorTxt = minfloor;
 
-        mImageView = (ImageView) findViewById(R.id.imageViewPlan);
-
-        titleTextView = (TextView) findViewById(R.id.txtTitlePlan);
-        TextViewFloor = (TextView) findViewById(R.id.textViewEtage);
-
-        ZoomResetBut = (ImageButton) findViewById(R.id.buttonZoomReset);
-        ZoomPlusBut = (ImageButton) findViewById(R.id.buttonZoomIn);
-        ZoomMinusBut = (ImageButton) findViewById(R.id.buttonZoomOut);
-
-        prevFloorBut = (ImageButton) findViewById(R.id.buttonMinusFloor);
-        nextFloorBut = (ImageButton) findViewById(R.id.buttonPlusFloor);
-
-        mAttacher = new PhotoViewAttacher(mImageView);
-        mAttacher.setMaximumScale(6.0F);
-
-        ZoomMinusBut.setOnClickListener(new ClickListenerZoom(1, mAttacher));
-        ZoomResetBut.setOnClickListener(new ClickListenerZoom(2, mAttacher));
-        ZoomPlusBut.setOnClickListener(new ClickListenerZoom(3, mAttacher));
-
-        titleTextView.setText(map);
-
-        setupImageAndFloor();
-
-        prevFloorBut.setOnClickListener(new ClickListenerMinusPlusFloor(1));
-        nextFloorBut.setOnClickListener(new ClickListenerMinusPlusFloor(2));
-    }
-
-    void setupImageAndFloor()
-    {
-        mImageView.setImageBitmap(posdefaultBM);
+        new SetImage(posdefault,0).execute();
         TextViewFloor.setText(SwitchFloorTxt(minfloor));
-        mAttacher.update();
     }
 
     String SwitchFloorTxt(int floor)
@@ -145,8 +139,10 @@ public class MapPlanActivity extends AppCompatActivity
 
             case 3:
                 return getResources().getString(R.string.f_3);
+
+            default:
+                return "";
         }
-        return "";
     }
 
     class ClickListenerMinusPlusFloor implements View.OnClickListener
@@ -192,9 +188,43 @@ public class MapPlanActivity extends AppCompatActivity
         void SetTextAndImg()
         {
             TextViewFloor.setText(SwitchFloorTxt(currentfloorTxt));
-            imgBM = BitmapFactory.decodeResource(getResources(), posmaps.get(currentfloorImg));
-            mImageView.setImageBitmap(imgBM);
+            new SetImage(posmaps.get(currentfloorImg),1).execute();
         }
+    }
+
+    private class SetImage extends AsyncTask<Bitmap, Void, Bitmap>
+    {
+        Bitmap imageBM;
+        int redId;
+        int type;
+
+        SetImage(int redId, int type)
+        {
+            this.redId = redId;
+            this.type = type;
+        }
+
+        @Override
+        protected Bitmap doInBackground(Bitmap... thumb)
+        {
+            imageBM = BitmapFactory.decodeResource(getResources(), redId);
+            return imageBM;
+        }
+
+        @Override
+        protected void onPostExecute(Bitmap result)
+        {
+            if(type == 0)
+            {
+                mImageView.setImageBitmap(result);
+                mAttacher.update();
+            }
+            else
+            {
+                mImageView.setImageBitmap(result);
+            }
+        }
+
     }
 
     public boolean onOptionsItemSelected(MenuItem item)

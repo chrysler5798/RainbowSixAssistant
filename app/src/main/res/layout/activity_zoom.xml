@@ -6,7 +6,6 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:src="@drawable/bank_cam_1"
         android:id="@+id/imageViewZoom"
         android:contentDescription="@string/zoomedimg" />
 </LinearLayout>

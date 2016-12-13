@@ -59,7 +59,6 @@
                 <ImageView
                     android:layout_width="wrap_content"
                     android:src="@drawable/bandit"
-                    android:id="@+id/imgbandit"
                     android:adjustViewBounds="true"
                     android:paddingLeft="5dp"
                     android:paddingRight="5dp"
@@ -131,7 +130,6 @@
         <ImageView
             android:src="@drawable/valkyrie"
             android:layout_height="match_parent"
-            android:id="@+id/imgvalkyrie"
             android:adjustViewBounds="true"
             android:layout_width="50dp" />
 
@@ -159,7 +157,6 @@
         <ImageView
             android:layout_height="match_parent"
             android:src="@drawable/kapkan"
-            android:id="@+id/imgkapkan"
             android:adjustViewBounds="true"
             android:padding="5dp"
             android:layout_width="50dp" />
@@ -188,7 +185,6 @@
         <ImageView
             android:layout_height="match_parent"
             android:src="@drawable/mute"
-            android:id="@+id/imgmute"
             android:adjustViewBounds="true"
             android:layout_width="50dp"
             android:padding="5dp" />
@@ -218,7 +214,6 @@
             android:layout_width="50dp"
             android:layout_height="match_parent"
             android:src="@drawable/jager"
-            android:id="@+id/imgjager"
             android:adjustViewBounds="true"
             android:paddingLeft="5dp"
             android:paddingRight="5dp" />

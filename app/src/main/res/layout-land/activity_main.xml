@@ -18,7 +18,6 @@
         android:layout_width="match_parent"
         android:layout_height="89dp"
         android:src="@drawable/banner"
-        android:id="@+id/imageView5"
         android:adjustViewBounds="true"
         android:contentDescription="@string/banner_image" />
 

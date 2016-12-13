@@ -11,11 +11,9 @@
         android:id="@+id/textPosCam"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textSize="18sp"
-        android:text="@string/bank_cam_s1"/>
+        android:textSize="18sp" />
 
     <ImageView
-        android:src="@drawable/bank_cam_1"
         android:id="@+id/imgmap2"
         android:layout_height="192dp"
         android:adjustViewBounds="true"

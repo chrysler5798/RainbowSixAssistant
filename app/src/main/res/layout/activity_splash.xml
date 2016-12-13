@@ -20,13 +20,11 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:src="@drawable/splash"
-        android:id="@+id/imageView3"
         android:layout_weight="1" />
 
     <ImageView
         android:layout_height="wrap_content"
         android:src="@drawable/splash1"
-        android:id="@+id/imageView2"
         android:layout_width="match_parent"
         android:adjustViewBounds="true" />
 

@@ -57,7 +57,6 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
 
             private final Context context;
 
-            Intent intent;
 
              MyViewHolder(final View itemView) {
                 super(itemView);
@@ -96,7 +95,7 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
 
             void startIntentWithInput(Class newclass)
             {
-                intent = new Intent(context, newclass);
+                Intent intent = new Intent(context, newclass);
                 intent.putExtra("nommap",name.getText().toString());
                 intent.putExtra("pos", getAdapterPosition());
                 context.startActivity(intent);
