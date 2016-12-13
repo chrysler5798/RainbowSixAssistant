@@ -1,5 +1,7 @@
 package com.khrys.r6assistant;
 
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
@@ -31,6 +33,7 @@ public class MapPlanActivity extends AppCompatActivity
     int minfloor, maxfloor, currentfloorTxt, currentfloorImg = 2, posdefault;
     Switch switchPos;
     MapSwitch mapSwitch;
+    Bitmap posdefaultBM, imgBM;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -77,6 +80,7 @@ public class MapPlanActivity extends AppCompatActivity
                 minfloor = posmaps.get(0);
                 maxfloor = posmaps.get(1);
                 posdefault = posmaps.get(2);
+                posdefaultBM = BitmapFactory.decodeResource(getResources(), posdefault);
                 currentfloorImg = 2;
                 currentfloorTxt = minfloor;
                 setupImageAndFloor();
@@ -86,6 +90,7 @@ public class MapPlanActivity extends AppCompatActivity
         minfloor = posmaps.get(0);
         maxfloor = posmaps.get(1);
         posdefault = posmaps.get(2);
+        posdefaultBM = BitmapFactory.decodeResource(getResources(), posdefault);
         currentfloorTxt = minfloor;
 
         mImageView = (ImageView) findViewById(R.id.imageViewPlan);
@@ -117,7 +122,7 @@ public class MapPlanActivity extends AppCompatActivity
 
     void setupImageAndFloor()
     {
-        mImageView.setImageResource(posdefault);
+        mImageView.setImageBitmap(posdefaultBM);
         TextViewFloor.setText(SwitchFloorTxt(minfloor));
         mAttacher.update();
     }
@@ -187,12 +192,15 @@ public class MapPlanActivity extends AppCompatActivity
         void SetTextAndImg()
         {
             TextViewFloor.setText(SwitchFloorTxt(currentfloorTxt));
-            mImageView.setImageResource(posmaps.get(currentfloorImg));
+            imgBM = BitmapFactory.decodeResource(getResources(), posmaps.get(currentfloorImg));
+            mImageView.setImageBitmap(imgBM);
         }
     }
 
-    public boolean onOptionsItemSelected(MenuItem item){
-        switch (item.getItemId()) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId())
+        {
             case android.R.id.home:
 
                 this.finish();

@@ -20,5 +20,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/recyclerView"
         android:clipToPadding="false"
-        android:scrollbars="vertical" />
+        android:scrollbars="vertical"
+        android:background="@color/white" />
 </LinearLayout>
