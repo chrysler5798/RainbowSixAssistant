@@ -15,18 +15,21 @@ import uk.co.senab.photoview.PhotoViewAttacher;
  * RainbowSixPartner
  */
 
-public class ZoomActivity extends AppCompatActivity{
+public class ZoomActivity extends AppCompatActivity
+{
 
     ImageView image;
     PhotoViewAttacher mAttacher;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_zoom);
 
         ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
+        if (actionBar != null)
+        {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
@@ -39,16 +42,19 @@ public class ZoomActivity extends AppCompatActivity{
     }
 
     @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_zoom, menu);
         return true;
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
         float Scale = mAttacher.getScale();
-        switch (item.getItemId()) {
+        switch (item.getItemId())
+        {
             case android.R.id.home:
 
                 this.finish();

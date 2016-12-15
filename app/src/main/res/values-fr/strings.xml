@@ -143,4 +143,12 @@
     <string name="zoom_out">Zoom Out</string>
     <string name="resetzoom">resetzoom</string>
     <string name="position">Positions</string>
+
+    <string name="university">Bartlett University</string>
+    <string name="university_cam_s1">(2F) Compass Hallway</string>
+    <string name="university_cam_s2">(1F) Archway Hall</string>
+    <string name="university_cam_s3">(1F) Lobby</string>
+    <string name="university_cam_s4">(1F) Dining Room</string>
+    <string name="university_cam_s5">(EXT) Main Gate</string>
+    <string name="university_cam_s6">(EXT) Parking</string>
 </resources>

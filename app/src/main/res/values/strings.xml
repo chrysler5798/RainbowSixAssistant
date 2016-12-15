@@ -144,6 +144,16 @@
         <string name="skyscraper_cam_s6">(EXT) East garden</string>
         <string name="skyscraper_cam_s7">(EXT) Ventilation units</string>
 
+
+    <string name="university">Bartlett University</string>
+        <string name="university_cam_s1">(2F) Compass Hallway</string>
+        <string name="university_cam_s2">(1F) Archway Hall</string>
+        <string name="university_cam_s3">(1F) Lobby</string>
+        <string name="university_cam_s4">(1F) Dining Room</string>
+        <string name="university_cam_s5">(EXT) Main Gate</string>
+        <string name="university_cam_s6">(EXT) Parking</string>
+
+
     <string name="destroyPhrase">%d</string>
     <string name="cameraPhrase">%d cameras</string>
     <string name="cameraPhrase2_1">%d camera remaining</string>
@@ -162,6 +172,8 @@
     <!--FLOORS ERROR PHRASE-->
     <string name="error_floor_below">There is no floor below !</string>
     <string name="error_floor_above">There is no floor above !</string>
+
+    <string name="planerror">Plans are not available yet on this map !</string>
 
     <!--IMAGE CONTENT DESCRIPTION-->
     <string name="twitch_drone_image">Twitch Drone Image</string>

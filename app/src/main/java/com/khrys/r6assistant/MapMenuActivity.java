@@ -37,8 +37,6 @@ public class MapMenuActivity extends AppCompatActivity
         RecyclerView rv = (RecyclerView) findViewById(R.id.recyclerView);
         rv.setHasFixedSize(true);
         rv.setLayoutManager(lLayout);
-//        LayoutIfManager layoutIM = new LayoutIfManager(getApplicationContext());
-        rv.setLayoutManager(lLayout);
         rv.setAdapter(new ListAdapterMapMenu(requesttype));
     }
 

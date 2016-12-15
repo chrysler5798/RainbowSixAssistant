@@ -3,6 +3,9 @@ package com.khrys.r6assistant;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Bitmap;
+import android.graphics.BitmapFactory;
+import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
 import android.util.Pair;
 import android.view.LayoutInflater;
@@ -11,7 +14,10 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.List;
+
 
 /**
  * Created by Chrysler on 10/1/2016.
@@ -19,7 +25,8 @@ import java.util.List;
  * RainbowSixPartner
  */
 
-class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewHolder> {
+class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewHolder>
+{
 
         private int requesttype;
 
@@ -33,32 +40,36 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
         private List<Pair<Integer, Integer>> maps = mapS.SwitchMapName();
 
         @Override
-        public int getItemCount() {
+        public int getItemCount()
+        {
             return maps.size();
         }
 
         @Override
-        public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+        public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
+        {
             LayoutInflater inflater = LayoutInflater.from(parent.getContext());
             View view = inflater.inflate(R.layout.list_grid, parent, false);
             return new MyViewHolder(view);
         }
 
         @Override
-        public void onBindViewHolder(MyViewHolder holder, int position) {
+        public void onBindViewHolder(MyViewHolder holder, int position)
+        {
             Pair<Integer, Integer> pair = maps.get(position);
             holder.display(pair);
         }
 
-        class MyViewHolder extends RecyclerView.ViewHolder {
+        class MyViewHolder extends RecyclerView.ViewHolder
+        {
 
             private final TextView name;
             private final ImageView image;
-
             private final Context context;
 
 
-             MyViewHolder(final View itemView) {
+             MyViewHolder(final View itemView)
+             {
                 super(itemView);
 
                 context = itemView.getContext();
@@ -84,6 +95,10 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
                         {
                             startIntentWithInput(TwitchMapActivity.class);
                         }
+                        else if (requesttype == 3 && getAdapterPosition() == 14)
+                        {
+                            Toast.makeText(itemView.getContext(),R.string.planerror,Toast.LENGTH_LONG).show();
+                        }
                         else if (requesttype == 3)
                         {
                             startIntentWithInput(MapPlanActivity.class);
@@ -103,8 +118,35 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
 
             void display(Pair<Integer, Integer> pair) {
                 name.setText(pair.first);
-                image.setImageResource(pair.second);
+                new SetImage(pair.second, image, context).execute();
+
             }
         }
 
+        private class SetImage extends AsyncTask<Bitmap, Void, Bitmap>
+        {
+            int redId;
+            ImageView imgV;
+            Context context;
+
+
+            SetImage(int redId, ImageView imgV, Context context)
+            {
+                this.redId = redId;
+                this.imgV = imgV;
+                this.context = context;
+            }
+
+            @Override
+            protected Bitmap doInBackground(Bitmap... thumb)
+            {
+                return BitmapFactory.decodeResource(context.getResources(), redId);
+            }
+
+            @Override
+            protected void onPostExecute(Bitmap result)
+            {
+                imgV.setImageBitmap(result);
+            }
+        }
 }

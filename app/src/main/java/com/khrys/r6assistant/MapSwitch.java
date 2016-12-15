@@ -177,6 +177,15 @@ class MapSwitch
                 pics.add(R.drawable.skyscraper_cam_7);
                 break;
 
+            case 14:
+                pics.add(R.drawable.university_cam_1);
+                pics.add(R.drawable.university_cam_2);
+                pics.add(R.drawable.university_cam_3);
+                pics.add(R.drawable.university_cam_4);
+                pics.add(R.drawable.university_cam_5);
+                pics.add(R.drawable.university_cam_6);
+                break;
+
         }
         return pics;
     }
@@ -320,6 +329,15 @@ class MapSwitch
                 poscam.add(R.string.skyscraper_cam_s6);
                 poscam.add(R.string.skyscraper_cam_s7);
                 break;
+
+            case 14:
+                poscam.add(R.string.university_cam_s1);
+                poscam.add(R.string.university_cam_s2);
+                poscam.add(R.string.university_cam_s3);
+                poscam.add(R.string.university_cam_s4);
+                poscam.add(R.string.university_cam_s5);
+                poscam.add(R.string.university_cam_s6);
+                break;
         }
 
         return poscam;
@@ -341,7 +359,8 @@ class MapSwitch
                 Pair.create(R.string.favela, R.drawable.mapfavela),
                 Pair.create(R.string.border, R.drawable.mapborder),
                 Pair.create(R.string.yacht, R.drawable.mapyacht),
-                Pair.create(R.string.skyscraper, R.drawable.mapskyscraper));
+                Pair.create(R.string.skyscraper, R.drawable.mapskyscraper),
+                Pair.create(R.string.university, R.drawable.mapuniversity));
     }
 
     ArrayList<Integer> SwitchPosPlans()

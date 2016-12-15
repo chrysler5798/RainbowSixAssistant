@@ -224,7 +224,6 @@ public class MapPlanActivity extends AppCompatActivity
                 mImageView.setImageBitmap(result);
             }
         }
-
     }
 
     public boolean onOptionsItemSelected(MenuItem item)
