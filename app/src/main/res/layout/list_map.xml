@@ -23,15 +23,4 @@
             android:paddingRight="10dp"
         android:contentDescription="@string/image_bank_1" />
 
-    <ImageButton
-            android:src="@android:drawable/ic_menu_search"
-            android:id="@+id/zoomButtonCam"
-            android:layout_height="50dp"
-            android:layout_width="match_parent"
-        android:layout_weight="1"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
-        android:contentDescription="@string/zoom_icon"
-        android:layout_marginBottom="40dp" />
-
 </LinearLayout>

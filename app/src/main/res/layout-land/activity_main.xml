@@ -3,7 +3,8 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:layout_width="match_parent"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:gravity="center_horizontal">
 
     <ImageView
         android:layout_width="match_parent"
@@ -12,59 +13,60 @@
         android:adjustViewBounds="true"
         android:contentDescription="@string/banner_image" />
 
-    <TableLayout
+    <LinearLayout
+        android:orientation="horizontal"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="center_vertical">
+        android:layout_height="wrap_content"
+        android:layout_weight="0.37">
 
-        <TableRow
-            android:layout_width="match_parent"
+        <Button
+            android:text="@string/cameras"
+            android:id="@+id/buttonmain1"
+            android:layout_width="@dimen/button_wah_main"
             android:layout_height="match_parent"
-            android:gravity="center">
+            android:drawableBottom="@drawable/cameraicon"
+            android:paddingBottom="30dp"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_weight="1" />
 
-            <Button
-                android:text="@string/cameras"
-                android:id="@+id/buttonmain1"
-                android:layout_width="160dp"
-                android:drawableRight="@drawable/cameraicon"
-                android:gravity="left|center_vertical"
-                android:backgroundTint="@color/colorPrimary"
-                android:layout_height="wrap_content" />
-
-            <Button
-                android:text="@string/twitch"
-                android:layout_width="@dimen/button_wah_main"
-                android:id="@+id/buttonmain2"
-                android:drawableRight="@drawable/twitch"
-                android:gravity="left|center_vertical"
-                android:backgroundTint="@color/colorPrimary"
-                android:layout_height="wrap_content" />
-        </TableRow>
-
-        <TableRow
-            android:layout_width="match_parent"
+        <Button
+            android:text="@string/twitch"
+            android:layout_width="@dimen/button_wah_main"
+            android:id="@+id/buttonmain2"
+            android:drawableBottom="@drawable/twitch"
+            android:backgroundTint="@color/colorPrimary"
+            android:paddingBottom="30dp"
             android:layout_height="match_parent"
-            android:gravity="center">
+            android:layout_weight="1" />
 
-            <Button
-                android:text="@string/mapplans"
-                android:layout_width="@dimen/button_wah_main"
-                android:id="@+id/buttonmain3"
-                android:drawableRight="@drawable/mapicon"
-                android:gravity="left|center_vertical"
-                android:backgroundTint="@color/colorPrimary"
-                android:layout_height="wrap_content" />
+        <Button
+            android:text="@string/mapplans"
+            android:layout_width="@dimen/button_wah_main"
+            android:id="@+id/buttonmain3"
+            android:drawableBottom="@drawable/mapicon"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingBottom="30dp" />
 
-            <Button
-                android:text="@string/soon"
-                android:layout_width="@dimen/button_wah_main"
-                android:id="@+id/buttonmain4"
-                android:drawableRight="@drawable/gunicon"
-                android:gravity="left|center_vertical"
-                android:backgroundTint="@color/colorPrimary"
-                android:layout_height="wrap_content" />
-        </TableRow>
+        <Button
+            android:text="@string/soon"
+            android:layout_width="@dimen/button_wah_main"
+            android:id="@+id/buttonmain4"
+            android:drawableBottom="@drawable/gunicon"
+            android:backgroundTint="@color/colorPrimary"
+            android:layout_height="match_parent"
+            android:paddingBottom="30dp"
+            android:layout_weight="1" />
 
-    </TableLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/buttonMore"
+        android:layout_height="wrap_content"
+        android:text="@string/more"
+        android:drawableLeft="@drawable/info_icon"
+        android:backgroundTint="@color/colorPrimary"
+        android:layout_width="150dp" />
 
 </LinearLayout>

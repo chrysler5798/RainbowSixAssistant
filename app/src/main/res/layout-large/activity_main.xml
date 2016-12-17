@@ -10,7 +10,6 @@
         android:layout_height="wrap_content"
         android:src="@drawable/banner"
         android:adjustViewBounds="true"
-        android:layout_marginTop="20dp"
         android:contentDescription="@string/banner_image" />
 
     <TableLayout
@@ -22,22 +21,22 @@
             android:layout_height="wrap_content">
 
             <Button
-                android:text="@string/cameras"
                 android:id="@+id/buttonmain1"
-                android:layout_height="160dp"
+                android:layout_height="@dimen/button_wah_main"
+                android:layout_width="@dimen/button_wah_main"
+                android:text="@string/cameras"
                 android:drawableBottom="@drawable/cameraicon"
                 android:paddingBottom="30dp"
                 android:backgroundTint="@color/colorPrimary"
-                android:layout_width="match_parent"
                 android:layout_weight="1"
                 android:textSize="30sp"
                 android:layout_marginLeft="20dp" />
 
             <Button
-                android:text="@string/twitch"
+                android:id="@+id/buttonmain2"
                 android:layout_height="@dimen/button_wah_main"
                 android:layout_width="@dimen/button_wah_main"
-                android:id="@+id/buttonmain2"
+                android:text="@string/twitch"
                 android:drawableBottom="@drawable/twitch"
                 android:paddingBottom="30dp"
                 android:gravity="center"
@@ -49,8 +48,7 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1">
+            android:layout_height="wrap_content">
 
             <Button
                 android:text="@string/mapplans"
@@ -76,6 +74,24 @@
                 android:paddingBottom="30dp"
                 android:layout_weight="1"
                 android:textSize="30sp"
+                android:layout_marginRight="20dp" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <Button
+                android:layout_height="wrap_content"
+                android:layout_width="0dp"
+                android:text="@string/more"
+                android:id="@+id/buttonMore"
+                android:drawableLeft="@drawable/info_icon"
+                android:backgroundTint="@color/colorPrimary"
+                android:textSize="30sp"
+                android:layout_weight="1"
+                android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp" />
         </TableRow>
 

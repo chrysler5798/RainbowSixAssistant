@@ -9,4 +9,10 @@
         <item name="android:textColorPrimary">@color/white</item>
     </style>
 
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Dialog">
+        <item name="colorAccent">@color/white</item>
+        <item name="android:textColorPrimary">#FFFFFF</item>
+        <item name="android:background">@color/colorPrimary</item>
+    </style>
+
 </resources>

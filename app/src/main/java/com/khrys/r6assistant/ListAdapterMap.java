@@ -79,7 +79,6 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
 
         private final ImageView image;
         private final TextView txtpos;
-        private final ImageButton buttonzoom;
         private final Context context;
         private long mLastClickTime = 0;
 
@@ -107,7 +106,6 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
 
             image = (ImageView) itemView.findViewById(R.id.imgmap2);
             txtpos = (TextView) itemView.findViewById(R.id.textPosCam);
-            buttonzoom = (ImageButton) itemView.findViewById(R.id.zoomButtonCam);
 
             context = itemView.getContext();
 
@@ -120,7 +118,7 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
              }
              itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.MATCH_PARENT));
 
-            buttonzoom.setOnClickListener(new View.OnClickListener() {
+            image.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View v) {
                     Intent zoomintent = new Intent(context,ZoomActivity.class);
