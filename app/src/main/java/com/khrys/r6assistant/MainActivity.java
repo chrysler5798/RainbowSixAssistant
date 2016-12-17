@@ -1,15 +1,14 @@
 package com.khrys.r6assistant;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.v7.widget.Toolbar;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
 
-public class MainActivity extends Activity {
+public class MainActivity extends AppCompatActivity {
 
     Intent menumapIntent;
 
@@ -27,15 +26,15 @@ public class MainActivity extends Activity {
         buttonsoon.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view) {
+            public void onClick(View view)
+            {
                 Toast.makeText(getApplicationContext(),R.string.msgsoon, Toast.LENGTH_SHORT).show();
             }
         });
 
         menumapIntent = new Intent(MainActivity.this, MapMenuActivity.class);
 
-        Toolbar myToolbar = (Toolbar) findViewById(R.id.my_toolbar);
-        myToolbar.setTitle(R.string.app_name);
+        setTitle(R.string.app_name);
 
         buttoncamera.setOnClickListener(new MenuCLickListener(1));
         buttontwitch.setOnClickListener(new MenuCLickListener(2));

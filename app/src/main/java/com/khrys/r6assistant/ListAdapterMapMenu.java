@@ -138,6 +138,11 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
             }
 
             @Override
+            protected void onPreExecute() {
+                imgV.setVisibility(View.GONE);
+            }
+
+            @Override
             protected Bitmap doInBackground(Bitmap... thumb)
             {
                 return BitmapFactory.decodeResource(context.getResources(), redId);
@@ -147,6 +152,7 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
             protected void onPostExecute(Bitmap result)
             {
                 imgV.setImageBitmap(result);
+                imgV.setVisibility(View.VISIBLE);
             }
         }
 }

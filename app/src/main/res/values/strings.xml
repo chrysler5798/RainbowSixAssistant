@@ -6,11 +6,17 @@
     <string name="twitch">Twitch</string>
     <string name="mapplans">Maps &amp; Plans</string>
     <string name="soon">Soon…</string>
+    <string name="more">More…</string>
+
     <string name="msgsoon">This new feature is coming soon !</string>
+
+    <string name="infotitle">Infos Menu</string>
 
     <!--MAP MENU-->
     <string name="takemap">Select a map</string>
 
+
+    <!--MAPS INFO-->
     <string name="bank">Bank</string>
         <string name="bank_cam_s1">(1F) Lobby</string>
         <string name="bank_cam_s2">(1F) Office Hallway</string>

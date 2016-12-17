@@ -34,24 +34,26 @@
         android:orientation="horizontal"
         android:scrollbars="horizontal"
         android:scrollbarSize="5dip"
-        android:scrollbarThumbHorizontal="@color/colorPrimary"/>
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/textViewCamRem"
-        android:textAlignment="center"
-        android:textSize="18sp"
-        android:textColor="@color/white"
-        android:textAllCaps="true"
-        android:textStyle="normal|bold" />
+        android:scrollbarThumbHorizontal="@color/colorPrimary" />
 
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="match_parent"
-        android:layout_height="220dp"
+        android:layout_height="wrap_content"
         android:gravity="bottom"
         android:background="@color/white">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textViewCamRem"
+            android:textAlignment="center"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:textAllCaps="true"
+            android:textStyle="normal|bold"
+            android:background="@color/colorPrimary"
+            android:layout_marginBottom="10dp" />
 
         <LinearLayout
             android:orientation="horizontal"

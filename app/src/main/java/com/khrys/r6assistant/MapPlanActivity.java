@@ -32,7 +32,7 @@ public class MapPlanActivity extends AppCompatActivity
     Switch switchPosRef;
     MapSwitch mapSwitch;
 
-    ImageView mImageView;
+    ImageView imageView;
     TextView TextViewFloor;
     PhotoViewAttacher mAttacher;
 
@@ -55,7 +55,7 @@ public class MapPlanActivity extends AppCompatActivity
 
         switchPosRef = (Switch) findViewById(R.id.switchPos);
 
-        mImageView = (ImageView) findViewById(R.id.imageViewPlan);
+        imageView = (ImageView) findViewById(R.id.imageViewPlan);
 
         TextView titleTextView = (TextView) findViewById(R.id.txtTitlePlan);
         TextViewFloor = (TextView) findViewById(R.id.textViewEtage);
@@ -67,7 +67,7 @@ public class MapPlanActivity extends AppCompatActivity
         ImageButton prevFloorBut = (ImageButton) findViewById(R.id.buttonMinusFloor);
         ImageButton nextFloorBut = (ImageButton) findViewById(R.id.buttonPlusFloor);
 
-        mAttacher = new PhotoViewAttacher(mImageView);
+        mAttacher = new PhotoViewAttacher(imageView);
         mAttacher.setMaximumScale(6.0F);
 
         ZoomMinusBut.setOnClickListener(new ClickListenerZoom(1, mAttacher));
@@ -194,7 +194,6 @@ public class MapPlanActivity extends AppCompatActivity
 
     private class SetImage extends AsyncTask<Bitmap, Void, Bitmap>
     {
-        Bitmap imageBM;
         int redId;
         int type;
 
@@ -207,8 +206,7 @@ public class MapPlanActivity extends AppCompatActivity
         @Override
         protected Bitmap doInBackground(Bitmap... thumb)
         {
-            imageBM = BitmapFactory.decodeResource(getResources(), redId);
-            return imageBM;
+            return BitmapFactory.decodeResource(getResources(), redId);
         }
 
         @Override
@@ -216,12 +214,12 @@ public class MapPlanActivity extends AppCompatActivity
         {
             if(type == 0)
             {
-                mImageView.setImageBitmap(result);
+                imageView.setImageBitmap(result);
                 mAttacher.update();
             }
             else
             {
-                mImageView.setImageBitmap(result);
+                imageView.setImageBitmap(result);
             }
         }
     }

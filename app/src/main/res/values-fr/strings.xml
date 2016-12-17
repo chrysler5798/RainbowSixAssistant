@@ -151,4 +151,6 @@
     <string name="university_cam_s4">(1F) Dining Room</string>
     <string name="university_cam_s5">(EXT) Main Gate</string>
     <string name="university_cam_s6">(EXT) Parking</string>
+
+    <string name="planerror">Plans are not available yet on this map !</string>
 </resources>

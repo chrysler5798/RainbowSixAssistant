@@ -117,7 +117,7 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
     void defaultTxtSetup()
     {
         gadgetV = 3;
-        gadgetB = 3;
+        gadgetB = 4;
         gadgetM = 4;
         gadgetJ = 3;
         gadgetK = 3;
