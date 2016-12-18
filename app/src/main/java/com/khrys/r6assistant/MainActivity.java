@@ -48,8 +48,28 @@ public class MainActivity extends AppCompatActivity {
                 new AlertDialog.Builder(MainActivity.this, R.style.MyAlertDialogStyle)
                         .setTitle(R.string.more)
                         .setItems(items, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int item) {
-                                // Do something with the selection
+                            public void onClick(DialogInterface dialog, int item)
+                            {
+                                Intent myIntent;
+                                switch (item)
+                                {
+                                    case 0:
+                                        myIntent = new Intent(MainActivity.this, AboutActivity.class);
+                                        break;
+
+                                    case 1:
+                                        myIntent = new Intent(MainActivity.this, SupportActivity.class);
+                                        break;
+
+                                    case 2:
+                                        myIntent = new Intent(MainActivity.this, SettingsActivity.class);
+                                        break;
+
+                                    default:
+                                        myIntent = new Intent(MainActivity.this, MainActivity.class);
+                                        break;
+                                }
+                                startActivity(myIntent);
                             }
                         })
                         .setNegativeButton(R.string.close, new DialogInterface.OnClickListener() {

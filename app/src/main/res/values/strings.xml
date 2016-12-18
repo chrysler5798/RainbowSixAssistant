@@ -12,8 +12,21 @@
     <string name="about">About</string>
     <string name="support">Support Me</string>
     <string name="settings">Settings</string>
-
     <string name="close">Close</string>
+
+    <!--ABOUT-->
+    <string name="labelabout">R6 Assistant - About</string>
+    <string name="abouttxt1">This application has been created by Khrys, just a random player of Rainbow Six Siege. \n The application is Open Source and not afiliated with Ubisoft.\n\nAny feedback, bug report, or suggestion are really appreciated.\nAs an Open Source application, you can acccess to the source code hosted on GitHub by clicking on the image right at the bottom of the page.\n\nKhrys, developer and player.</string>
+
+
+    <!--SUPPORT-->
+    <string name="labelsupport">R6 Assistant - Support Me</string>
+    <string name="supporttxt">This application is fully free, ads free, no paid features. By downloading it, giving your feedback or rating it you already did a lot for me, so thank you !\n\nI spend a lot of time on it, and of course because I want it but if you want to donate something, the button is below. If you donate your name will appear in the app soon.\n\n Thanks a lot ! \nKhrys</string>
+
+    <!--SETTINGS-->
+    <string name="labelsettings">R6 Assistant - Settings</string>
+    <string name="settingstxt">Settings are not up yet.\n It\'s coming soon !</string>
+
 
     <string name="msgsoon">This new feature is coming soon !</string>
 

@@ -152,5 +152,19 @@
     <string name="university_cam_s5">(EXT) Main Gate</string>
     <string name="university_cam_s6">(EXT) Parking</string>
 
-    <string name="planerror">Plans are not available yet on this map !</string>
+    <string name="planerror">Les plans ne sont pas encore disponible sur cette carte !</string>
+    <string name="about">A propos</string>
+    <string name="close">Fermer</string>
+    <string name="infotitle">Infos Menu</string>
+    <string name="more">Plus</string>
+    <string name="settings">Options</string>
+    <string name="support">Me supporter</string>
+    <string name="settingstxt">Les réglages ne sont pas encore en place. Ca arrive bientôt !</string>
+
+    <string name="abouttxt1">Cette application a été créée par Khrys, un simple joueur de Rainbow Six Siege. \n L\'application est Open Source et n\'est pas affiliée à Ubisoft.\n\nQuelconques retours, rapport de bug, suggestion sont grandement appréciées.\nEn tant qu\'appli Open Source vous pouvez accéder au code complet sur GitHub en cliquant sur l\'image juste en dessous.\n\nKhrys, développeur et joueur.</string>
+
+    <string name="supporttxt">Cette application est complètement gratuite, sans pubs, sans fonction payante. En la téléchargant, en donnant votre avis ou la noter vous avez déjà fait beaucoup, donc merci !\n\nJe passe beaucoup de temps sur cette appli bien sur parce que je le veux, mais si vous voulez donner quelque chose le bouton est juste en dessous. Si vous donnez votre nom apparaîtra dans l\'application bientôt.\n\n Merci beaucoup ! \nKhrys</string>
+    <string name="labelabout">R6 Assistant - A propos</string>
+    <string name="labelsettings">R6 Assistant - Options</string>
+    <string name="labelsupport">R6 Assistant - Me supporter</string>
 </resources>
