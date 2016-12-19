@@ -75,7 +75,8 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
 
 
     @SuppressWarnings("deprecation")
-    class MyViewHolder extends RecyclerView.ViewHolder {
+    class MyViewHolder extends RecyclerView.ViewHolder
+    {
 
         private final ImageView image;
         private final TextView txtpos;
@@ -86,13 +87,34 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
          {
             super(itemView);
 
-             if(type == 2)
+             image = (ImageView) itemView.findViewById(R.id.imgmap2);
+             txtpos = (TextView) itemView.findViewById(R.id.textPosCam);
+
+             context = itemView.getContext();
+
+             if (type == 1)
+             {
+                 image.setOnClickListener(new View.OnClickListener()
+                 {
+                     @Override
+                     public void onClick(View v)
+                     {
+                         Intent zoomintent = new Intent(context,ZoomActivity.class);
+                         zoomintent.putExtra("imgid", (Integer) image.getTag());
+                         context.startActivity(zoomintent);
+                     }
+                 });
+             }
+             else if(type == 2)
              {
                  ImageButton buttontwitch = (ImageButton) itemView.findViewById(R.id.twitchButtonCam);
+                 ImageButton buttonzoom = (ImageButton) itemView.findViewById(R.id.zoomButtonCam);
 
-                 buttontwitch.setOnClickListener(new View.OnClickListener() {
+                 buttontwitch.setOnClickListener(new View.OnClickListener()
+                 {
                      @Override
-                     public void onClick(View v) {
+                     public void onClick(View v)
+                     {
                          int position = getAdapterPosition();
                          if (SystemClock.elapsedRealtime() - mLastClickTime < 1000){
                              return;
@@ -102,12 +124,18 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
                          listenerCam.notifyCamRem(getItemCount());
                      }
                  });
+
+                 buttonzoom.setOnClickListener(new View.OnClickListener()
+                 {
+                     @Override
+                     public void onClick(View v)
+                     {
+                         Intent zoomintent = new Intent(context,ZoomActivity.class);
+                         zoomintent.putExtra("imgid", (Integer) image.getTag());
+                         context.startActivity(zoomintent);
+                     }
+                 });
              }
-
-            image = (ImageView) itemView.findViewById(R.id.imgmap2);
-            txtpos = (TextView) itemView.findViewById(R.id.textPosCam);
-
-            context = itemView.getContext();
 
              int width1;
              WindowManager windowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
@@ -117,15 +145,6 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
                  width1 = windowManager.getDefaultDisplay().getWidth();
              }
              itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.MATCH_PARENT));
-
-            image.setOnClickListener(new View.OnClickListener() {
-                @Override
-                public void onClick(View v) {
-                    Intent zoomintent = new Intent(context,ZoomActivity.class);
-                    zoomintent.putExtra("imgid",(Integer) image.getTag());
-                   context.startActivity(zoomintent);
-                }
-         });
         }
 
         void display(Integer idimg, Integer idtxt){

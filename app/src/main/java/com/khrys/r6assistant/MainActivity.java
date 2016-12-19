@@ -5,6 +5,8 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
@@ -107,6 +109,27 @@ public class MainActivity extends AppCompatActivity {
         {
             menumapIntent.putExtra("request",type);
             startActivity(menumapIntent);
+        }
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.menu_main, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem menuItem)
+    {
+        switch (menuItem.getItemId())
+        {
+            case R.id.action_rate:
+
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(menuItem);
         }
     }
 }

@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">Rainbow Six Partner</string>
+    <string name="app_name">R6 Assistant</string>
+
     <string name="bank">Banque</string>
     <string name="border">Frontière</string>
     <string name="chalet">Chalet</string>

@@ -18,11 +18,11 @@
 
         <TableRow
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="match_parent">
 
             <Button
                 android:id="@+id/buttonmain1"
-                android:layout_height="@dimen/button_wah_main"
+                android:layout_height="match_parent"
                 android:layout_width="@dimen/button_wah_main"
                 android:text="@string/cameras"
                 android:drawableBottom="@drawable/cameraicon"
@@ -30,20 +30,21 @@
                 android:backgroundTint="@color/colorPrimary"
                 android:layout_weight="1"
                 android:textSize="30sp"
-                android:layout_marginLeft="20dp" />
+                android:layout_marginLeft="20dp"
+                android:paddingTop="20dp" />
 
             <Button
                 android:id="@+id/buttonmain2"
-                android:layout_height="@dimen/button_wah_main"
-                android:layout_width="@dimen/button_wah_main"
+                android:layout_height="match_parent"
+                android:layout_width="140dp"
                 android:text="@string/twitch"
                 android:drawableBottom="@drawable/twitch"
                 android:paddingBottom="30dp"
-                android:gravity="center"
                 android:backgroundTint="@color/colorPrimary"
                 android:layout_weight="1"
                 android:textSize="30sp"
-                android:layout_marginRight="20dp" />
+                android:layout_marginRight="20dp"
+                android:paddingTop="20dp" />
         </TableRow>
 
         <TableRow
@@ -52,7 +53,7 @@
 
             <Button
                 android:text="@string/mapplans"
-                android:layout_height="@dimen/button_wah_main"
+                android:layout_height="match_parent"
                 android:layout_width="@dimen/button_wah_main"
                 android:id="@+id/buttonmain3"
                 android:drawableBottom="@drawable/mapicon"
@@ -61,11 +62,12 @@
                 android:paddingBottom="30dp"
                 android:layout_weight="1"
                 android:textSize="30sp"
-                android:layout_marginLeft="20dp" />
+                android:layout_marginLeft="20dp"
+                android:paddingTop="20dp" />
 
             <Button
                 android:text="@string/soon"
-                android:layout_height="@dimen/button_wah_main"
+                android:layout_height="match_parent"
                 android:layout_width="@dimen/button_wah_main"
                 android:id="@+id/buttonmain4"
                 android:drawableBottom="@drawable/gunicon"
@@ -74,7 +76,8 @@
                 android:paddingBottom="30dp"
                 android:layout_weight="1"
                 android:textSize="30sp"
-                android:layout_marginRight="20dp" />
+                android:layout_marginRight="20dp"
+                android:paddingTop="20dp" />
         </TableRow>
 
         <TableRow
