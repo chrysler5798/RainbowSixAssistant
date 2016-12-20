@@ -10,6 +10,11 @@
     <string name="more">Plus</string>
     <string name="error_market">Erreur : impossible de trouver l\'application Play Store !</string>
 
+    <string name="ratetitle">Noter R6 Assistant</string>
+    <string name="ratemsg">Notez l\'application et donnez votre avis sur le Play Store</string>
+    <string name="go">GO</string>
+
+
     <!--MORE MENU-->
     <string name="about">A propos</string>
     <string name="support">Me supporter</string>
@@ -211,5 +216,6 @@
     <string name="planerror">Les plans ne sont pas encore disponible sur cette carte !</string>
     <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
     <string name="troll_face">Troll Face</string>
+    <string name="star" />
 
 </resources>

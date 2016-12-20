@@ -52,7 +52,8 @@ public class SettingsActivity extends AppCompatActivity
                         setDefaults(PREFS_LANG,1,getApplicationContext());
                         showDialogToExit();
 
-                } else if(position == 1 && getDefaults(PREFS_LANG, getApplicationContext()) != 0)
+                }
+                else if(position == 1 && getDefaults(PREFS_LANG, getApplicationContext()) != 0)
                 {
                     setDefaults(PREFS_LANG,0,getApplicationContext());
                     showDialogToExit();

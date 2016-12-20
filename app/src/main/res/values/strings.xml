@@ -9,6 +9,10 @@
     <string name="more">More</string>
     <string name="error_market">Errror : unable to find the Play Store App !</string>
 
+    <string name="ratetitle">Rate R6 Assistant</string>
+    <string name="ratemsg">Rate the application and give your feedback on the Play Store</string>
+    <string name="go">GO</string>
+
     <!--MORE MENU-->
     <string name="about">About</string>
     <string name="support">Support Me</string>
@@ -220,5 +224,6 @@
     <string name="position">Positions</string>
     <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
     <string name="troll_face">Troll Face</string>
+    <string name="star" />
 
 </resources>

@@ -139,19 +139,41 @@ public class MainActivity extends AppCompatActivity {
             case R.id.action_rate:
                 if(meuflotroll == 1)
                 {
+                    meuflotroll = 0;
                    startActivity(new Intent(MainActivity.this, MeufloActivity.class));
                 }
                 else
                 {
-                    Uri uri = Uri.parse("market://details?id=" + getPackageName());
-                    Intent openPlayStore = new Intent(Intent.ACTION_VIEW, uri);
-                    try
-                    {
-                        startActivity(openPlayStore);
-                    } catch (ActivityNotFoundException e)
-                    {
-                        Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_market),   Toast.LENGTH_LONG).show();
-                    }
+                    AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this, R.style.MyAlertDialogStyle);
+                    builder.setTitle(R.string.ratetitle)
+                            .setMessage(R.string.ratemsg)
+                            .setIcon(R.drawable.staricon)
+                            .setPositiveButton(R.string.go, new DialogInterface.OnClickListener()
+                            {
+                                public void onClick(DialogInterface dialog, int id)
+                                {
+                                    Uri uri = Uri.parse("market://details?id=" + getPackageName());
+                                    Intent openPlayStore = new Intent(Intent.ACTION_VIEW, uri);
+                                    try
+                                    {
+                                        startActivity(openPlayStore);
+                                    } catch (ActivityNotFoundException e)
+                                    {
+                                        Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_market),   Toast.LENGTH_LONG).show();
+                                    }
+                                }
+                            })
+                            .setNegativeButton(R.string.close, new DialogInterface.OnClickListener()
+                            {
+                                public void onClick(DialogInterface dialog, int id)
+                                {
+
+                                }
+                            });
+
+                    AlertDialog dialog = builder.create();
+                    dialog.show();
+
                 }
                 return true;
 

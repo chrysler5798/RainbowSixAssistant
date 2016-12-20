@@ -7,7 +7,7 @@
 
     <item
         android:id="@+id/action_rate"
-        android:title="@string/zoom_in"
+        android:title="@string/star"
         android:icon="@drawable/staricon"
         app:showAsAction="always" />
 </menu>
