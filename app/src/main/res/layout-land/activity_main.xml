@@ -66,6 +66,7 @@
         android:layout_height="wrap_content"
         android:text="@string/more"
         android:drawableLeft="@drawable/info_icon"
+        android:drawableStart="@drawable/info_icon"
         android:backgroundTint="@color/colorPrimary"
         android:layout_width="150dp" />
 

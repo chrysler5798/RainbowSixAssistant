@@ -10,7 +10,8 @@
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/banner"
         android:adjustViewBounds="true"
-        android:tint="@color/white"/>
+        android:tint="@color/white"
+        android:paddingTop="10dp" />
 
     <TextView
         android:text="@string/supporttxt"

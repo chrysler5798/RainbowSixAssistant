@@ -1,7 +1,9 @@
 package com.khrys.r6assistant;
 
+import android.content.ActivityNotFoundException;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -15,6 +17,8 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
 
     Intent menumapIntent;
+
+    int meuflotroll = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -38,14 +42,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        buttonsoon.setOnLongClickListener(new View.OnLongClickListener()
+        {
+            @Override
+            public boolean onLongClick(View v)
+            {
+                meuflotroll = 1;
+                return false;
+            }
+        });
+
         buttonmore.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View v)
             {
-                final String[] items = {
-                        getResources().getString(R.string.about), getResources().getString(R.string.support), getResources().getString(R.string.settings)
-                };
+                final String[] items = {getResources().getString(R.string.about), getResources().getString(R.string.support), getResources().getString(R.string.settings)};
 
                 new AlertDialog.Builder(MainActivity.this, R.style.MyAlertDialogStyle)
                         .setTitle(R.string.more)
@@ -125,7 +137,22 @@ public class MainActivity extends AppCompatActivity {
         switch (menuItem.getItemId())
         {
             case R.id.action_rate:
-
+                if(meuflotroll == 1)
+                {
+                   startActivity(new Intent(MainActivity.this, MeufloActivity.class));
+                }
+                else
+                {
+                    Uri uri = Uri.parse("market://details?id=" + getPackageName());
+                    Intent openPlayStore = new Intent(Intent.ACTION_VIEW, uri);
+                    try
+                    {
+                        startActivity(openPlayStore);
+                    } catch (ActivityNotFoundException e)
+                    {
+                        Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_market),   Toast.LENGTH_LONG).show();
+                    }
+                }
                 return true;
 
             default:

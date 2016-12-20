@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/troll"
+        android:adjustViewBounds="true"
+        android:contentDescription="@string/troll_face" />
+
+    <TextView
+        android:text="@string/meuflostring"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textView"
+        android:textAlignment="center"
+        android:textSize="36sp"
+        android:gravity="center"
+        android:textColor="@color/white"/>
+</LinearLayout>

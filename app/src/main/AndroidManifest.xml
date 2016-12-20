@@ -75,6 +75,10 @@
             android:screenOrientation="portrait">
         </activity>
 
+        <activity android:name=".MeufloActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
     </application>
 
 </manifest>

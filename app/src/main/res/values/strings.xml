@@ -7,6 +7,7 @@
     <string name="mapplans">Maps &amp; Plans</string>
     <string name="soon">Soon…</string>
     <string name="more">More</string>
+    <string name="error_market">Errror : unable to find the Play Store App !</string>
 
     <!--MORE MENU-->
     <string name="about">About</string>
@@ -25,11 +26,13 @@
 
     <!--SETTINGS-->
     <string name="labelsettings">R6 Assistant - Settings</string>
-    <string name="settingstxt">Settings are not up yet.\n It\'s coming soon !</string>
-
+    <string name="language">Language</string>
+    <string name="settings_end">You need to restart your application to apply the new language !</string>
+    <string name="warning">Warning !</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
 
     <string name="msgsoon">This new feature is coming soon !</string>
-
     <string name="infotitle">Infos Menu</string>
 
     <!--MAP MENU-->
@@ -215,5 +218,7 @@
     <string name="zoom_out">Zoom Out</string>
     <string name="resetzoom">resetzoom</string>
     <string name="position">Positions</string>
+    <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
+    <string name="troll_face">Troll Face</string>
 
 </resources>
