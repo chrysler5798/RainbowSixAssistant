@@ -44,18 +44,22 @@ public class SettingsActivity extends AppCompatActivity
         SpinnerAdapter adapter = new SpinnerAdapter(this, textArray, imageArray);
         spinner.setAdapter(adapter);
 
+        if(Locale.getDefault().getLanguage().equals("fr") && getDefaults(PREFS_LANG, getApplicationContext()) == 2)
+        {
+            spinner.setSelection(1);
+        }
+
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(position == 0 && getDefaults(PREFS_LANG, getApplicationContext()) != 1)
+                if(position == 0 && getDefaults(PREFS_LANG, getApplicationContext()) != 1 && !Locale.getDefault().getLanguage().equals("en"))
                 {
-                        setDefaults(PREFS_LANG,1,getApplicationContext());
-                        showDialogToExit();
-
+                    setDefaults(PREFS_LANG,1,getApplicationContext());
+                    showDialogToExit();
                 }
-                else if(position == 1 && getDefaults(PREFS_LANG, getApplicationContext()) != 0)
+                else if(position == 1 && getDefaults(PREFS_LANG, getApplicationContext()) != 2 && !Locale.getDefault().getLanguage().equals("fr"))
                 {
-                    setDefaults(PREFS_LANG,0,getApplicationContext());
+                    setDefaults(PREFS_LANG,2,getApplicationContext());
                     showDialogToExit();
                 }
             }
@@ -80,11 +84,6 @@ public class SettingsActivity extends AppCompatActivity
                         .show();
             }
         });
-
-        if(Locale.getDefault().getLanguage().equals("fr") && getDefaults(PREFS_LANG, getApplicationContext()) == 0)
-        {
-            spinner.setSelection(1);
-        }
     }
 
     public static void setDefaults(String key, int value, Context context)
