@@ -7,8 +7,8 @@ android {
         applicationId "com.khrys.r6assistant"
         minSdkVersion 15
         targetSdkVersion 25
-        versionCode 9
-        versionName "1.5.2"
+        versionCode 10
+        versionName "1.5.3"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
         vectorDrawables.useSupportLibrary = true
     }

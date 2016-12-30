@@ -1,17 +1,30 @@
 <resources>
     <string name="app_name">R6 Assistant</string>
+    <string name="version_d">Version %S</string>
 
     <!--MAIN ACTIVITY - MENU-->
     <string name="cameras">Cameras</string>
     <string name="twitch">Twitch</string>
     <string name="mapplans">Maps &amp; Plans</string>
-    <string name="soon">Soon…</string>
+    <string name="guns">Weapons stats</string>
+    <string name="online">Online</string>
     <string name="more">More</string>
     <string name="error_market">Errror : unable to find the Play Store App !</string>
 
     <string name="ratetitle">Rate R6 Assistant</string>
     <string name="ratemsg">Rate the application and give your feedback on the Play Store</string>
     <string name="go">GO</string>
+
+    <!--LOBBY MENU-->
+    <string name="lobbyplay">PLAY</string>
+    <string name="lobbycreate">CREATE</string>
+    <string name="lobbyjoin">JOIN</string>
+    <string name="lobbymsg1">Create or join a lobby to start</string>
+    <string name="lobbytitle">LOBBY ID : %d</string>
+
+    <string name="lobbydialog1">Enter Name</string>
+    <string name="lobbydialog2">Enter lobby ID</string>
+
 
     <!--MORE MENU-->
     <string name="about">About</string>
@@ -215,15 +228,15 @@
     <string name="zoomedimg">Zoomed Image</string>
     <string name="cellimg">Cell Image</string>
     <string name="banner_image">Banner Image</string>
-    <string name="version_d">Version %S</string>
-    <string name="zoom">ZOOM</string>
-    <string name="floor">FLOOR</string>
+    <string name="settingsicon">Settings Icon</string>
     <string name="zoom_in">Zoom In</string>
     <string name="zoom_out">Zoom Out</string>
-    <string name="resetzoom">resetzoom</string>
+    <string name="resetzoom">Reset Zoom</string>
     <string name="position">Positions</string>
-    <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
     <string name="troll_face">Troll Face</string>
     <string name="star" />
+
+    <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
+
 
 </resources>
