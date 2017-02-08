@@ -69,7 +69,7 @@
                 android:paddingTop="20dp" />
 
             <Button
-                android:text="@string/soon"
+                android:text="@string/guns"
                 android:layout_height="match_parent"
                 android:layout_width="@dimen/button_wah_main"
                 android:id="@+id/buttonmain4"
@@ -98,11 +98,19 @@
                 android:drawableLeft="@drawable/info_icon"
                 android:layout_marginStart="20dp"
                 android:layout_marginLeft="20dp"
-                android:layout_marginEnd="20dp"
-                android:layout_marginRight="20dp"
                 android:backgroundTint="@color/colorPrimary"
                 android:textSize="30sp"
                 android:layout_weight="1" />
+
+                <ImageButton
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/buttonSettings"
+                    android:src="@drawable/settingsicon"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:contentDescription="@string/settingsicon"
+                    android:backgroundTint="@color/colorPrimary" />
         </TableRow>
 
     </TableLayout>
