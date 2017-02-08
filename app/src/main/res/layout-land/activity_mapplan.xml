@@ -30,8 +30,7 @@
             android:id="@+id/imageViewPlan"
             android:layout_weight="1"
             android:adjustViewBounds="true"
-            android:background="@color/colorPrimary"
-            app:srcCompat="@drawable/map_sky_f1_pos" />
+            android:background="@color/colorPrimary" />
 
         <LinearLayout
             android:orientation="horizontal"

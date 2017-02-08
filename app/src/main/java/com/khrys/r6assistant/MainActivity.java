@@ -11,12 +11,11 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.Toast;
 
 
 public class MainActivity extends AppCompatActivity {
-
-    Intent menumapIntent;
 
     int meuflotroll = 0;
 
@@ -24,25 +23,27 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_main);
+        setTitle(R.string.app_name);
 
         Button buttoncamera = (Button) findViewById(R.id.buttonmain1);
         Button buttontwitch = (Button) findViewById(R.id.buttonmain2);
         Button buttonmapplans = (Button) findViewById(R.id.buttonmain3);
-        Button buttonsoon = (Button) findViewById(R.id.buttonmain4);
-
+        Button buttonlobby = (Button) findViewById(R.id.buttonmain4);
         Button buttonmore = (Button) findViewById(R.id.buttonMore);
+        ImageButton buttonset = (ImageButton) findViewById(R.id.buttonSettings);
 
-        buttonsoon.setOnClickListener(new View.OnClickListener()
+        buttonlobby.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-                Toast.makeText(getApplicationContext(),R.string.msgsoon, Toast.LENGTH_SHORT).show();
+                Toast.makeText(getApplicationContext(), "I'm working on this feature, update soon !", Toast.LENGTH_LONG).show();
             }
         });
 
-        buttonsoon.setOnLongClickListener(new View.OnLongClickListener()
+        buttonlobby.setOnLongClickListener(new View.OnLongClickListener()
         {
             @Override
             public boolean onLongClick(View v)
@@ -57,51 +58,19 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v)
             {
-                final String[] items = {getResources().getString(R.string.about), getResources().getString(R.string.support), getResources().getString(R.string.settings)};
-
-                new AlertDialog.Builder(MainActivity.this, R.style.MyAlertDialogStyle)
-                        .setTitle(R.string.more)
-                        .setItems(items, new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int item)
-                            {
-                                Intent myIntent;
-                                switch (item)
-                                {
-                                    case 0:
-                                        myIntent = new Intent(MainActivity.this, AboutActivity.class);
-                                        break;
-
-                                    case 1:
-                                        myIntent = new Intent(MainActivity.this, SupportActivity.class);
-                                        break;
-
-                                    case 2:
-                                        myIntent = new Intent(MainActivity.this, SettingsActivity.class);
-                                        break;
-
-                                    default:
-                                        myIntent = new Intent(MainActivity.this, MainActivity.class);
-                                        break;
-                                }
-                                startActivity(myIntent);
-                            }
-                        })
-                        .setNegativeButton(R.string.close, new DialogInterface.OnClickListener() {
-
-                            @Override
-                            public void onClick(DialogInterface dialog, int which)
-                            {
-
-                            }
-                        })
-                        .setIcon(R.drawable.info_icon)
-                        .show();
+                Intent myIntent = new Intent(MainActivity.this, AboutActivity.class);
+                startActivity(myIntent);
             }
         });
 
-        menumapIntent = new Intent(MainActivity.this, MapMenuActivity.class);
-
-        setTitle(R.string.app_name);
+        buttonset.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(MainActivity.this, SettingsActivity.class));
+            }
+        });
 
         buttoncamera.setOnClickListener(new MenuCLickListener(1));
         buttontwitch.setOnClickListener(new MenuCLickListener(2));
@@ -119,6 +88,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void onClick(View v)
         {
+            Intent menumapIntent = new Intent(MainActivity.this, MapMenuActivity.class);
             menumapIntent.putExtra("request",type);
             startActivity(menumapIntent);
         }
@@ -163,9 +133,10 @@ public class MainActivity extends AppCompatActivity {
                                     }
                                 }
                             })
-                            .setNegativeButton(R.string.close, new DialogInterface.OnClickListener()
+                            .setNeutralButton(R.string.close, new DialogInterface.OnClickListener()
                             {
-                                public void onClick(DialogInterface dialog, int id)
+                                @Override
+                                public void onClick(DialogInterface dialog, int which)
                                 {
 
                                 }
@@ -173,7 +144,6 @@ public class MainActivity extends AppCompatActivity {
 
                     AlertDialog dialog = builder.create();
                     dialog.show();
-
                 }
                 return true;
 

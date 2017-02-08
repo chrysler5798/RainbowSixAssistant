@@ -44,6 +44,14 @@ public class SplashActivity extends Activity {
             config.locale = locale;
             getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
         }
+        else if(langue == 3)
+        {
+            Locale locale = new Locale("pt");
+            Locale.setDefault(locale);
+            Configuration config = new Configuration();
+            config.locale = locale;
+            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        }
         setContentView(R.layout.activity_splash);
 
         String versionName = "";

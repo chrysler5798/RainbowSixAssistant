@@ -99,6 +99,10 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
                         {
                             Toast.makeText(itemView.getContext(),R.string.planerror,Toast.LENGTH_LONG).show();
                         }
+                        else if (requesttype == 3 && getAdapterPosition() == 15)
+                        {
+                            Toast.makeText(itemView.getContext(),R.string.planerror,Toast.LENGTH_LONG).show();
+                        }
                         else if (requesttype == 3)
                         {
                             startIntentWithInput(MapPlanActivity.class);

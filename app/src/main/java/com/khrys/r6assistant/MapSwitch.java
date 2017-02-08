@@ -186,6 +186,15 @@ class MapSwitch
                 pics.add(R.drawable.university_cam_6);
                 break;
 
+            case 15:
+                pics.add(R.drawable.coastline_cam_s1);
+                pics.add(R.drawable.coastline_cam_s2);
+                pics.add(R.drawable.coastline_cam_s3);
+                pics.add(R.drawable.coastline_cam_s4);
+                pics.add(R.drawable.coastline_cam_s5);
+                pics.add(R.drawable.coastline_cam_s6);
+                pics.add(R.drawable.coastline_cam_s7);
+                break;
         }
         return pics;
     }
@@ -338,6 +347,16 @@ class MapSwitch
                 poscam.add(R.string.university_cam_s5);
                 poscam.add(R.string.university_cam_s6);
                 break;
+
+            case 15:
+                poscam.add(R.string.coastline_cam_s1);
+                poscam.add(R.string.coastline_cam_s2);
+                poscam.add(R.string.coastline_cam_s3);
+                poscam.add(R.string.coastline_cam_s4);
+                poscam.add(R.string.coastline_cam_s5);
+                poscam.add(R.string.coastline_cam_s6);
+                poscam.add(R.string.coastline_cam_s7);
+                break;
         }
 
         return poscam;
@@ -360,10 +379,11 @@ class MapSwitch
                 Pair.create(R.string.border, R.drawable.mapborder),
                 Pair.create(R.string.yacht, R.drawable.mapyacht),
                 Pair.create(R.string.skyscraper, R.drawable.mapskyscraper),
-                Pair.create(R.string.university, R.drawable.mapuniversity));
+                Pair.create(R.string.university, R.drawable.mapuniversity),
+                Pair.create(R.string.coastline, R.drawable.mapcoastline));
     }
 
-    ArrayList<Integer> SwitchPosPlans()
+    ArrayList<Integer> SwitchPosPlansWithPos()
     {
         switch (posplanmap)
         {
@@ -471,7 +491,6 @@ class MapSwitch
                 posmap.add(3);
                 posmap.add(R.drawable.map_border_f1);
                 posmap.add(R.drawable.map_border_f2);
-                posmap.add(R.drawable.map_border_f3);
                 break;
 
             case 12:
@@ -497,7 +516,7 @@ class MapSwitch
         return posmap;
     }
 
-    ArrayList<Integer> SwitchPosPlansWithPos()
+    ArrayList<Integer> SwitchPosPlans()
     {
         switch (posplanmap)
         {

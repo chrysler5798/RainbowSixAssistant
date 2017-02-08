@@ -27,8 +27,8 @@ public class SettingsActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        String[] textArray = {getResources().getString(R.string.english),getResources().getString(R.string.french)};
-        Integer[] imageArray = {R.drawable.flag_uk,R.drawable.flag_fr};
+        String[] textArray = {getResources().getString(R.string.english),getResources().getString(R.string.french),getResources().getString(R.string.portuguese)};
+        Integer[] imageArray = {R.drawable.flag_uk,R.drawable.flag_fr,R.drawable.flag_pt};
 
         super.onCreate(savedInstanceState);
 
@@ -48,6 +48,10 @@ public class SettingsActivity extends AppCompatActivity
         {
             spinner.setSelection(1);
         }
+        else if(Locale.getDefault().getLanguage().equals("pt") && getDefaults(PREFS_LANG, getApplicationContext()) == 3)
+        {
+            spinner.setSelection(2);
+        }
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -60,6 +64,11 @@ public class SettingsActivity extends AppCompatActivity
                 else if(position == 1 && getDefaults(PREFS_LANG, getApplicationContext()) != 2 && !Locale.getDefault().getLanguage().equals("fr"))
                 {
                     setDefaults(PREFS_LANG,2,getApplicationContext());
+                    showDialogToExit();
+                }
+                else if(position == 2 && getDefaults(PREFS_LANG, getApplicationContext()) != 3 && !Locale.getDefault().getLanguage().equals("pt"))
+                {
+                    setDefaults(PREFS_LANG,3,getApplicationContext());
                     showDialogToExit();
                 }
             }

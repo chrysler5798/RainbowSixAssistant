@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:baselineAligned="false"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="36sp"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginStart="10dp"
+            android:id="@+id/textViewID"
+            android:textAllCaps="true" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textVname1"
+        android:drawableLeft="@drawable/iconperson"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textVname2"
+        android:drawableLeft="@drawable/iconperson"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textVname3"
+        android:drawableLeft="@drawable/iconperson"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textVname4"
+        android:drawableLeft="@drawable/iconperson"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:textSize="20sp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/textVname5"
+        android:drawableLeft="@drawable/iconperson"
+        android:gravity="center_vertical"
+        android:layout_margin="5dp"
+        android:textSize="20sp"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/textViewNothing"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textAllCaps="false"
+        android:textColor="@color/white" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/white"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary">
+
+        <Button
+            android:text="PLAY"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/buttonStart"
+            android:drawableLeft="@drawable/iconplay"
+            android:drawableStart="@drawable/iconplay"
+            android:layout_weight="1" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <Button
+                android:text="CREATE"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonCreate"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/icongroupadd"
+                android:drawableStart="@drawable/icongroupadd"/>
+
+            <Button
+                android:text="JOIN"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonJoin"
+                android:layout_weight="1"
+                android:drawableLeft="@drawable/iconjoin"
+                android:drawableStart="@drawable/iconjoin"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

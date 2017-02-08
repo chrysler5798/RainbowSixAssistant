@@ -1,0 +1,240 @@
+<resources>
+    <string name="app_name">R6 Assistant</string>
+
+    <!-- MAIN ACTIVITY - MENU-->
+    <string name="cameras">Cameras</string>
+    <string name="twitch">Twitch</string>
+    <string name="mapplans">Mapas e Planos</string>
+    <string name="soon">Em Breve…</string>
+    <string name="online">Online</string>
+    <string name="more">Mais</string>
+    <string name="error_market">Erro : Não foi encontrado o Aplicativo da Play Store!</string>
+
+    <string name="ratetitle">Avalie R6 Assistant</string>
+    <string name="ratemsg">Avalie o Aplicativo e de o seu feedback na Play Store</string>
+    <string name="go">GO</string>
+
+    <!-- LOBBY MENU-->
+    <string name="lobbytitle">LOBBY ID : %d</string>
+
+    <!--MORE MENU-->
+    <string name="about">Sobre</string>
+    <string name="support">Colabore</string>
+    <string name="settings">Configurações</string>
+    <string name="close">Fechar</string>
+
+    <!--ABOUT-->
+    <string name="labelabout">R6 Assistant - Sobre</string>
+    <string name="abouttxt1">Este Aplicativo foi criado por Khrys, apenas mais um jogador qualquer de Rainbow Six Siege. \n Esse Aplicativo é de código aberto e não está afiliado a Ubisoft.\n\nQualquer feedback, Relatórios de erros , ou sugestões serão bem vindas.\nSendo um aplicativo de Código Aberto, você pode acessar o código fonte no GitHub, clicando na imagem no final da pagina .\n\nKhrys, desenvolvedor e jogador.</string>
+
+    <!--SUPPORT-->
+    <string name="labelsupport">R6 Assistant - Colabore</string>
+    <string name="supporttxt">Este Aplicativo é totalmente gratuito, livre de propagandas , sem conteúdos pagos.Fazendo o download ,dando o seu feedback ou avaliando,você ja estará me ajudando , Obrigado !\n\nGastei muito tempo desenvolvendo, mas é claro que foi porque eu quis, mas se você quiser doar algo o botão está logo abaixo. Fazendo uma doação o seu nome aparecerá no App em breve.\n\n Muito Obrigado! \nKhrys</string>
+
+    <!--SETTINGS-->
+    <string name="labelsettings">R6 Assistant - Configurações</string>
+    <string name="language">Idioma</string>
+    <string name="settings_end"> Reinicie o aplicativo para efetuar a mudança de idioma!</string>
+    <string name="warning">Atenção !</string>
+    <string name="english">Inglês</string>
+    <string name="french">Francês</string>
+    <string name="portuguese">Português</string>
+
+    <string name="msgsoon">Este conteúdo novo estará disponível em breve!</string>
+    <string name="infotitle">Menu de Informações</string>
+
+    <!--MAP MENU-->
+    <string name="takemap">Selecione um Mapa</string>
+
+    <!--MAPS INFO-->
+    <string name="bank">Banco</string>
+        <string name="bank_cam_s1">(1º) Saguão</string>
+        <string name="bank_cam_s2">(1º) Corredor do escritório</string>
+        <string name="bank_cam_s3">(2º) Escadaria para clarabóia</string>
+        <string name="bank_cam_s4">(P) Saguão do cofre</string>
+        <string name="bank_cam_s5">(EXT) Praça</string>
+        <string name="bank_cam_s6">(EXT) Rampa da garagem</string>
+        <string name="bank_cam_s7">(EXT) Beco dos fundos</string>
+
+    <string name="chalet">Chalé</string>
+        <string name="chalet_cam_s1">(2º) Corredor do quarto</string>
+        <string name="chalet_cam_s2">(2º) Corredor da lareira</string>
+        <string name="chalet_cam_s3">(1º) Escada da biblioteca</string>
+        <string name="chalet_cam_s4">(P) Garagem das motoneves</string>
+        <string name="chalet_cam_s5">(EXT) Pátio dianteiro</string>
+        <string name="chalet_cam_s6">(EXT) Pátio traseiro</string>
+
+
+    <string name="clubhouse">Case de Campo</string>
+        <string name="clubhouse_cam_s1">(2º) Corredor de quarto</string>
+        <string name="clubhouse_cam_s2">(1º) Bar</string>
+        <string name="clubhouse_cam_s3">(1º) Garagem</string>
+        <string name="clubhouse_cam_s4">(P) Corredor de porão</string>
+        <string name="clubhouse_cam_s5">(EXT) Estacionamento VIP</string>
+        <string name="clubhouse_cam_s6">(EXT) Área de grafite</string>
+        <string name="clubhouse_cam_s7">(EXT) Canis</string>
+
+
+    <string name="consulate">Consulado</string>
+        <string name="consulate_cam_s1">(2º) Recepção de consulado</string>
+        <string name="consulate_cam_s2">(1º) Escada principal</string>
+        <string name="consulate_cam_s3">(1º) Seção de vistos</string>
+        <string name="consulate_cam_s4">(EXT) Porta frontal</string>
+        <string name="consulate_cam_s5">(P) Corredor dos armários</string>
+        <string name="consulate_cam_s6">(P) Garagem</string>
+        <string name="consulate_cam_s7">(EXT) Caminho dianteiro</string>
+        <string name="consulate_cam_s8">(EXT) Entrada da garagem</string>
+
+    <string name="favela">Favelas</string>
+        <string name="favela_cam_s1">(3º) Escadaria traseira</string>
+        <string name="favela_cam_s2">(3º) Escadaria principal</string>
+        <string name="favela_cam_s3">(1º) Lavanderia</string>
+        <string name="favela_cam_s4">(1º) Escadaria</string>
+        <string name="favela_cam_s5">(EXT) Viela de escola</string>
+        <string name="favela_cam_s6">(EXT) Rua</string>
+        <string name="favela_cam_s7">(EXT) Viela traseira</string>
+
+
+    <string name="hereford">Base Hereford</string>
+        <string name="hereford_cam_s1">(EXT) Telhado</string>
+        <string name="hereford_cam_s2">(2º) Corredor 2</string>
+        <string name="hereford_cam_s3">(1º) Corredor 1</string>
+        <string name="hereford_cam_s4">(P) Armários</string>
+        <string name="hereford_cam_s5">(EXT) Campo de tiro acesso leste</string>
+        <string name="hereford_cam_s6">(EXT) Área da empilhadeira</string>
+
+
+    <string name="kafedostoyevsky">Kafe Dostoievsky</string>
+        <string name="kafedostoyevsky_cam_s1">(3º) Lounge de coquetéis</string>
+        <string name="kafedostoyevsky_cam_s2">(2º) Corredor da sala de leitura</string>
+        <string name="kafedostoyevsky_cam_s3">(1º) Corredor da câmara fria</string>
+        <string name="kafedostoyevsky_cam_s4">(1º) Padaria</string>
+        <string name="kafedostoyevsky_cam_s5">(EXT) Rua principal oeste</string>
+        <string name="kafedostoyevsky_cam_s6">(EXT) Beco do parque</string>
+
+
+    <string name="house">Residência</string>
+        <string name="house_cam_s1">(EXT) Telhado da varanda frontal</string>
+        <string name="house_cam_s2">(1º) Cozinha</string>
+        <string name="house_cam_s3">(P) Academia</string>
+        <string name="house_cam_s4">(P) Garagem</string>
+        <string name="house_cam_s5">(EXT) Jardim frontal</string>
+        <string name="house_cam_s6">(EXT) Jardim</string>
+
+
+    <string name="kanal">Canal</string>
+        <string name="kanal_cam_s1">(GC-3º) Corredor sala de controle4343333w</string>
+        <string name="kanal_cam_s2">(GC-2º) Corredor escrit. dos mapas</string>
+        <string name="kanal_cam_s3">(GC-2º) Corredor da guarda costeira</string>
+        <string name="kanal_cam_s4">(GC-1º) Corredor suprimen. Barcos</string>
+        <string name="kanal_cam_s5">(EXT) Gramado dianteiro</string>
+        <string name="kanal_cam_s6">(EXT) Comporta</string>
+        <string name="kanal_cam_s7">(EXT) Canteiro de obras</string>
+
+
+    <string name="plane">Avião Presidencial</string>
+        <string name="plane_cam_s1">(3º) Funcionários da cabine</string>
+        <string name="plane_cam_s2">(2º) Corredor frontal</string>
+        <string name="plane_cam_s3">(2º) Seção de imprensa A</string>
+        <string name="plane_cam_s4">(1º) Compartimento de bagagem</string>
+        <string name="plane_cam_s5">(1º) Compartimento de carga</string>
+
+
+    <string name="border">Fronteira</string>
+        <string name="border_cam_s1">(2º) Escada leste</string>
+        <string name="border_cam_s2">(2º) Corredor principal</string>
+        <string name="border_cam_s3">(1º) Saguão principal</string>
+        <string name="border_cam_s4">(1º) Corredor de saída</string>
+        <string name="border_cam_s5">(EXT) Entrada do estacionamento</string>
+        <string name="border_cam_s6">(EXT) Área do acidente</string>
+        <string name="border_cam_s7">(EXT) Caminho do estacionamento</string>
+
+
+    <string name="oregon">Oregon</string>
+        <string name="oregon_cam_s1">(2º) Corredor do arsenal</string>
+        <string name="oregon_cam_s2">(1º) Saguão</string>
+        <string name="oregon_cam_s3">(1º) Corredor do salão de jantar</string>
+        <string name="oregon_cam_s4">(1º) Palco traseiro</string>
+        <string name="oregon_cam_s5">(EXT) Descarte</string>
+        <string name="oregon_cam_s6">(EXT) Estacionamento</string>
+        <string name="oregon_cam_s7">(EXT) Área de obras</string>
+
+
+    <string name="yacht">Iate</string>
+        <string name="yacht_cam_s1">(4º) Entrada do heliporto</string>
+        <string name="yacht_cam_s2">(3º) Corredor do quarto</string>
+        <string name="yacht_cam_s3">(3º) Lounge</string>
+        <string name="yacht_cam_s4">(2º) Escada frontal</string>
+        <string name="yacht_cam_s5">(2º) Escada traseira</string>
+        <string name="yacht_cam_s6">(1º) Corredor sala de máquinas</string>
+        <string name="yacht_cam_s7">(EXT) Convés frontal</string>
+        <string name="yacht_cam_s8">(EXT) Convés Spa</string>
+
+
+    <string name="skyscraper">Arranha-Céu</string>
+        <string name="skyscraper_cam_s1">(2º) Corredor</string>
+        <string name="skyscraper_cam_s2">(1º) Restaurante</string>
+        <string name="skyscraper_cam_s3">(2º) Escadaria da Casa</string>
+        <string name="skyscraper_cam_s4">(1º) Saguão principal</string>
+        <string name="skyscraper_cam_s5">(EXT) Jardim Oeste</string>
+        <string name="skyscraper_cam_s6">(EXT) Jardim Leste</string>
+        <string name="skyscraper_cam_s7">(EXT) Dutos de ventilação</string>
+
+
+    <string name="university">Bartlett University</string>
+        <string name="university_cam_s1">(2º) Corredor da bússula</string>
+        <string name="university_cam_s2">(1º) Salão dos arcos</string>
+        <string name="university_cam_s3">(1º) Saguão</string>
+        <string name="university_cam_s4">(1º) Sala de jantar</string>
+        <string name="university_cam_s5">(EXT) Portão principal</string>
+        <string name="university_cam_s6">(EXT) Estacionamento</string>
+
+    <string name="coastline">Litoral</string>
+        <string name="coastline_cam_s1">(1º) Corredor</string>
+        <string name="coastline_cam_s2">(1º) Saguão principal</string>
+        <string name="coastline_cam_s3">(2º) Aquário</string>
+        <string name="coastline_cam_s4">(2º) Corredor</string>
+        <string name="coastline_cam_s5">(EXT) Telhado de Garagem</string>
+        <string name="coastline_cam_s6">(EXT) Ruínas</string>
+        <string name="coastline_cam_s7">(EXT) Ruínas</string>
+
+
+    <string name="destroyPhrase">%d</string>
+    <string name="cameraPhrase">%d cameras</string>
+    <string name="cameraPhrase2_1">%d camera remaining</string>
+    <string name="cameraPhrase2_2">%d cameras remaining</string>
+    <string name="cameraAllDestroyed">All cameras destroyed</string>
+    <string name="destroyed">X</string>
+
+    <!--FLOORS OF MAP PLAN-->
+    <string name="f_base">Porão</string>
+    <string name="f_0">1º Andar</string>
+    <string name="f_1">2º Andar</string>
+    <string name="f_2">3º Andar</string>
+    <string name="f_3">4º Andar</string>
+
+    <!--FLOORS ERROR PHRASE-->
+    <string name="error_floor_below">Não há nenhum andar abaixo !</string>
+    <string name="error_floor_above">Não há nenhum andar acima !</string>
+
+    <string name="planerror">Planos não estão disponíveis ainda nesse mapa !</string>
+
+    <!--IMAGE CONTENT DESCRIPTION-->
+    <string name="twitch_drone_image">Twitch Drone Image</string>
+    <string name="image_bank_1">Image Bank 1</string>
+    <string name="zoom_icon">Zoom Icon</string>
+    <string name="zoomedimg">Zoomed Image</string>
+    <string name="cellimg">Cell Image</string>
+    <string name="banner_image">Banner Image</string>
+    <string name="version_d">Version %S</string>
+    <string name="zoom">ZOOM</string>
+    <string name="floor">FLOOR</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="resetzoom">resetzoom</string>
+    <string name="position">Positions</string>
+    <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
+    <string name="troll_face">Troll Face</string>
+    <string name="star">Star</string>
+
+</resources>

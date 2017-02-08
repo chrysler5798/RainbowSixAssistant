@@ -6,12 +6,16 @@
     <string name="twitch">Twitch</string>
     <string name="mapplans">Maps &amp; Plans</string>
     <string name="soon">Soon…</string>
+    <string name="online">Online</string>
     <string name="more">More</string>
     <string name="error_market">Errror : unable to find the Play Store App !</string>
 
     <string name="ratetitle">Rate R6 Assistant</string>
     <string name="ratemsg">Rate the application and give your feedback on the Play Store</string>
     <string name="go">GO</string>
+
+    <!--LOBBY MENU-->
+    <string name="lobbytitle">LOBBY ID : %d</string>
 
     <!--MORE MENU-->
     <string name="about">About</string>
@@ -22,7 +26,6 @@
     <!--ABOUT-->
     <string name="labelabout">R6 Assistant - About</string>
     <string name="abouttxt1">This application has been created by Khrys, just a random player of Rainbow Six Siege. \n The application is Open Source and not afiliated with Ubisoft.\n\nAny feedback, bug report, or suggestion are really appreciated.\nAs an Open Source application, you can acccess to the source code hosted on GitHub by clicking on the image right at the bottom of the page.\n\nKhrys, developer and player.</string>
-
 
     <!--SUPPORT-->
     <string name="labelsupport">R6 Assistant - Support Me</string>
@@ -35,6 +38,8 @@
     <string name="warning">Warning !</string>
     <string name="english">English</string>
     <string name="french">French</string>
+    <string name="portuguese">Portuguese</string>
+
 
     <string name="msgsoon">This new feature is coming soon !</string>
     <string name="infotitle">Infos Menu</string>
@@ -186,6 +191,15 @@
         <string name="university_cam_s5">(EXT) Main Gate</string>
         <string name="university_cam_s6">(EXT) Parking</string>
 
+    <string name="coastline">Coastline</string>
+        <string name="coastline_cam_s1">(1F) Hallway</string>
+        <string name="coastline_cam_s2">(1F) Main Lobby</string>
+        <string name="coastline_cam_s3">(2F) Aquarium</string>
+        <string name="coastline_cam_s4">(2F) Hallway</string>
+        <string name="coastline_cam_s5">(EXT) Garage Roof</string>
+        <string name="coastline_cam_s6">(EXT) Ruins</string>
+        <string name="coastline_cam_s7">(EXT) Ruins</string>
+
 
     <string name="destroyPhrase">%d</string>
     <string name="cameraPhrase">%d cameras</string>
@@ -193,7 +207,6 @@
     <string name="cameraPhrase2_2">%d cameras remaining</string>
     <string name="cameraAllDestroyed">All cameras destroyed</string>
     <string name="destroyed">X</string>
-
 
     <!--FLOORS OF MAP PLAN-->
     <string name="f_base">Basement</string>
@@ -224,6 +237,6 @@
     <string name="position">Positions</string>
     <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
     <string name="troll_face">Troll Face</string>
-    <string name="star" />
+    <string name="star">Star</string>
 
 </resources>

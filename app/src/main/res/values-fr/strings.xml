@@ -42,6 +42,7 @@
     <string name="warning">Attention !</string>
     <string name="english">Anglais</string>
     <string name="french">Français</string>
+    <string name="portuguese">Portugais</string>
 
     <!--MAP MENU-->
     <string name="takemap">Selectionne une carte</string>
@@ -179,6 +180,16 @@
         <string name="university_cam_s5">(EXT) Porte principale</string>
         <string name="university_cam_s6">(EXT) Parking</string>
 
+    <string name="coastline">Littoral</string>
+        <string name="coastline_cam_s1">(RDC) Couloir</string>
+        <string name="coastline_cam_s2">(RDC) Hall principal</string>
+        <string name="coastline_cam_s3">(1ER) Aquarium</string>
+        <string name="coastline_cam_s4">(1ER) Couloir</string>
+        <string name="coastline_cam_s5">(EXT) Toit du garage</string>
+        <string name="coastline_cam_s6">(EXT) Ruines</string>
+        <string name="coastline_cam_s7">(EXT) Ruines</string>
+
+
 
     <string name="destroyPhrase">%d</string>
     <string name="destroyed">X</string>
@@ -216,6 +227,6 @@
     <string name="planerror">Les plans ne sont pas encore disponible sur cette carte !</string>
     <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
     <string name="troll_face">Troll Face</string>
-    <string name="star" />
+    <string name="star">Star</string>
 
 </resources>
