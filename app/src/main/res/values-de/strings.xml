@@ -4,57 +4,57 @@
     <string name="app_name">R6 Assistant</string>
 
     <!--BASIC WORDS-->
-    <string name="go">GO</string>
-    <string name="close">Close</string>
+    <string name="go">Los</string>
+    <string name="close">schließen</string>
 
     <!--MAIN MENU-->
-    <string name="cameras">Cameras</string>
+    <string name="cameras">Kameras</string>
     <string name="twitch">Twitch</string>
-    <string name="mapplans">Maps &amp; Plans</string>
+    <string name="mapplans">Maps &amp; Pläne</string>
     <string name="online">Online</string>
     <string name="guns">Weapons</string>
-    <string name="more">More</string>
+    <string name="more">Mehr</string>
 
     <!--SOON MSG-->
-    <string name="soon">Soon…</string>
-    <string name="msgsoon">This new feature is coming soon !</string>
+    <string name="soon">Bald…</string>
+    <string name="msgsoon">Diese neue Funktionen kommen bald !</string>
 
     <!--RATE APP POPUP-->
-    <string name="ratetitle">Rate R6 Assistant</string>
-    <string name="ratemsg">Rate the application and give your feedback on the Play Store</string>
-    <string name="error_market">Errror : unable to find the Play Store App !</string>
+    <string name="ratetitle">Bewerte R6 Assistant</string>
+    <string name="ratemsg">Bewerte diese App und teile uns deine Meinung im Play Store</string>
+    <string name="error_market">Fehler : nicht imstande den Play Store zu finden !</string>
 
     <!--LOBBY MENU-->
     <string name="lobbytitle">LOBBY ID : %d</string>
 
     <!--MORE MENU-->
-    <string name="about">About</string>
-    <string name="support">Support Me</string>
-    <string name="settings">Settings</string>
+    <string name="about">Über</string>
+    <string name="support">Unterstütze mich</string>
+    <string name="settings">Einstellungen</string>
 
     <!--ABOUT-->
-    <string name="labelabout">R6 Assistant - About</string>
-    <string name="abouttxt1">This application has been created by Khrys, just a random player of Rainbow Six Siege. \n The application is Open Source and not afiliated with Ubisoft.\n\nAny feedback, bug report, or suggestion are really appreciated.\nAs an Open Source application, you can acccess to the source code hosted on GitHub by clicking on the image right at the bottom of the page.\n\nKhrys, developer and player.</string>
+    <string name="labelabout">R6 Assistant - Über</string>
+    <string name="abouttxt1">Diese App wurde von Khrys erstellt, ein einfacher Rainbow Six Siege Spieler. \n Dies ist eine von Ubisoft unabhängige Open Source Anwendung, Fehlermedlungen, oder Vorschläge begrüßen wir sehr.\n Daher dies eine Open Source Anwednung ist, kannst du gerne auf diesen Source Code zugreifen, indem du unten auf das GitHub Logo klickst.Das ganze wird von GitHub gehosted.\n\nKhrys, Entwickler und Spieler.</string>
 
     <!--SUPPORT-->
-    <string name="labelsupport">R6 Assistant - Support Me</string>
-    <string name="supporttxt">This application is fully free, ads free, no paid features. By downloading it, giving your feedback or rating it you already did a lot for me, so thank you !\n\nI spend a lot of time on it, and of course because I want it but if you want to donate something, the button is below. If you donate your name will appear in the app soon.\n\n Thanks a lot ! \nKhrys</string>
+    <string name="labelsupport">R6 Assistant - Unterstütze mich</string>
+    <string name="supporttxt">Diese Anwednung ist völlig kostenfrei, keine Werbung und keine kostenpflichtige Features. Alleine mit dem herunterladen dieser Anwednung, oder deines Feedbacks und dem bewerten dieser Anwednung, damit tust du mir bereits ein riesen Gefallen, ein Dankeschön an alle !\n\n Ich habe darin viel Zeit investiert, das ganze habe ich natürlich gerne gemacht, doch sollte jemand spenden wollen , bitte unten klicken. Solltest du spenden, wird dein Name demnächst in der App erscheinen.\n\n Vielen Dank an euch ! \nKhrys</string>
 
     <!--SETTINGS-->
-    <string name="labelsettings">R6 Assistant - Settings</string>
-    <string name="warning">Warning !</string>
-    <string name="settings_end">You need to restart your application to apply the new language !</string>
+    <string name="labelsettings">R6 Assistant - Einstellungen</string>
+    <string name="settings_end">Du musst die Anwednung neustarten, um die neue Sprache zu benutzen. !</string>
+    <string name="warning">Warnung !</string>
 
     <!--LANGUAGE-->
-    <string name="language">Language</string>
-    <string name="english">English</string>
-    <string name="french">French</string>
+    <string name="language">Sprache</string>
+    <string name="english">Englisch</string>
+    <string name="french">Französisch</string>
     <string name="portuguese">Portuguese</string>
     <string name="italian">Italian</string>
     <string name="german">German</string>
 
     <!--MAP MENU-->
-    <string name="takemap">Select a map</string>
+    <string name="takemap">Wähle eine Map</string>
 
     <!--MAPS INFO-->
     <string name="bank">Bank</string>
@@ -204,16 +204,16 @@
     <string name="destroyed">X</string>
 
     <!--FLOORS OF MAP PLAN-->
-    <string name="f_base">Basement</string>
-    <string name="f_0">1st Floor</string>
-    <string name="f_1">2nd Floor</string>
-    <string name="f_2">3rd Floor</string>
-    <string name="f_3">4th Floor</string>
+    <string name="f_base">Erdgeschoss</string>
+    <string name="f_0">1. Etage</string>
+    <string name="f_1">2. Etage</string>
+    <string name="f_2">3. Etage</string>
+    <string name="f_3">4. Etage</string>
 
     <!--FLOORS ERROR PHRASE-->
-    <string name="planerror">Plans are not available yet on this map !</string>
-    <string name="error_floor_below">There is no floor below !</string>
-    <string name="error_floor_above">There is no floor above !</string>
+    <string name="planerror">Noch sind keine Pläne für diese Map vorhanden !</string>
+    <string name="error_floor_below">Keine untere Etage !</string>
+    <string name="error_floor_above">Keine höhere Etage !</string>
 
     <!--IMAGE CONTENT DESCRIPTION-->
     <string name="twitch_drone_image">Twitch Drone Image</string>

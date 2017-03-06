@@ -31,10 +31,6 @@ public class SplashActivity extends Activity {
         if(langue == 1)
         {
             Locale locale = new Locale("en");
-            Locale.setDefault(locale);
-            Configuration config = new Configuration();
-            config.locale = locale;
-            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
         }
         else if(langue == 2)
         {
@@ -52,6 +48,8 @@ public class SplashActivity extends Activity {
             config.locale = locale;
             getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
         }
+
+
         setContentView(R.layout.activity_splash);
 
         String versionName = "";

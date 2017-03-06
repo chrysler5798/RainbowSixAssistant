@@ -22,7 +22,6 @@
         android:adjustViewBounds="true"
         android:layout_width="match_parent"
         android:paddingLeft="10dp"
-        android:paddingRight="10dp"
-        android:contentDescription="@string/image_bank_1" />
+        android:paddingRight="10dp" />
 
 </LinearLayout>

@@ -1,18 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--GLOBAL TEXT-->
     <string name="app_name">R6 Assistant</string>
 
-    <!-- MAIN ACTIVITY - MENU-->
+    <!--BASIC WORDS-->
+    <string name="go">GO</string>
+    <string name="close">Fechar</string>
+
+    <!--MAIN MENU-->
     <string name="cameras">Cameras</string>
     <string name="twitch">Twitch</string>
     <string name="mapplans">Mapas e Planos</string>
-    <string name="soon">Em Breve…</string>
     <string name="online">Online</string>
+    <string name="guns">Weapons</string>
     <string name="more">Mais</string>
-    <string name="error_market">Erro : Não foi encontrado o Aplicativo da Play Store!</string>
 
+    <!--SOON MSG-->
+    <string name="soon">Em Breve…</string>
+    <string name="msgsoon">Este conteúdo novo estará disponível em breve!</string>
+
+    <!--RATE APP POPUP-->
     <string name="ratetitle">Avalie R6 Assistant</string>
     <string name="ratemsg">Avalie o Aplicativo e de o seu feedback na Play Store</string>
-    <string name="go">GO</string>
+    <string name="error_market">Erro : Não foi encontrado o Aplicativo da Play Store!</string>
 
     <!-- LOBBY MENU-->
     <string name="lobbytitle">LOBBY ID : %d</string>
@@ -21,7 +31,6 @@
     <string name="about">Sobre</string>
     <string name="support">Colabore</string>
     <string name="settings">Configurações</string>
-    <string name="close">Fechar</string>
 
     <!--ABOUT-->
     <string name="labelabout">R6 Assistant - Sobre</string>
@@ -33,15 +42,16 @@
 
     <!--SETTINGS-->
     <string name="labelsettings">R6 Assistant - Configurações</string>
-    <string name="language">Idioma</string>
     <string name="settings_end"> Reinicie o aplicativo para efetuar a mudança de idioma!</string>
     <string name="warning">Atenção !</string>
+
+    <!--LANGUAGE-->
+    <string name="language">Idioma</string>
     <string name="english">Inglês</string>
     <string name="french">Francês</string>
     <string name="portuguese">Português</string>
-
-    <string name="msgsoon">Este conteúdo novo estará disponível em breve!</string>
-    <string name="infotitle">Menu de Informações</string>
+    <string name="italian">Italian</string>
+    <string name="german">German</string>
 
     <!--MAP MENU-->
     <string name="takemap">Selecione um Mapa</string>
@@ -64,7 +74,6 @@
         <string name="chalet_cam_s5">(EXT) Pátio dianteiro</string>
         <string name="chalet_cam_s6">(EXT) Pátio traseiro</string>
 
-
     <string name="clubhouse">Case de Campo</string>
         <string name="clubhouse_cam_s1">(2º) Corredor de quarto</string>
         <string name="clubhouse_cam_s2">(1º) Bar</string>
@@ -73,7 +82,6 @@
         <string name="clubhouse_cam_s5">(EXT) Estacionamento VIP</string>
         <string name="clubhouse_cam_s6">(EXT) Área de grafite</string>
         <string name="clubhouse_cam_s7">(EXT) Canis</string>
-
 
     <string name="consulate">Consulado</string>
         <string name="consulate_cam_s1">(2º) Recepção de consulado</string>
@@ -94,7 +102,6 @@
         <string name="favela_cam_s6">(EXT) Rua</string>
         <string name="favela_cam_s7">(EXT) Viela traseira</string>
 
-
     <string name="hereford">Base Hereford</string>
         <string name="hereford_cam_s1">(EXT) Telhado</string>
         <string name="hereford_cam_s2">(2º) Corredor 2</string>
@@ -102,7 +109,6 @@
         <string name="hereford_cam_s4">(P) Armários</string>
         <string name="hereford_cam_s5">(EXT) Campo de tiro acesso leste</string>
         <string name="hereford_cam_s6">(EXT) Área da empilhadeira</string>
-
 
     <string name="kafedostoyevsky">Kafe Dostoievsky</string>
         <string name="kafedostoyevsky_cam_s1">(3º) Lounge de coquetéis</string>
@@ -112,7 +118,6 @@
         <string name="kafedostoyevsky_cam_s5">(EXT) Rua principal oeste</string>
         <string name="kafedostoyevsky_cam_s6">(EXT) Beco do parque</string>
 
-
     <string name="house">Residência</string>
         <string name="house_cam_s1">(EXT) Telhado da varanda frontal</string>
         <string name="house_cam_s2">(1º) Cozinha</string>
@@ -120,7 +125,6 @@
         <string name="house_cam_s4">(P) Garagem</string>
         <string name="house_cam_s5">(EXT) Jardim frontal</string>
         <string name="house_cam_s6">(EXT) Jardim</string>
-
 
     <string name="kanal">Canal</string>
         <string name="kanal_cam_s1">(GC-3º) Corredor sala de controle4343333w</string>
@@ -131,14 +135,12 @@
         <string name="kanal_cam_s6">(EXT) Comporta</string>
         <string name="kanal_cam_s7">(EXT) Canteiro de obras</string>
 
-
     <string name="plane">Avião Presidencial</string>
         <string name="plane_cam_s1">(3º) Funcionários da cabine</string>
         <string name="plane_cam_s2">(2º) Corredor frontal</string>
         <string name="plane_cam_s3">(2º) Seção de imprensa A</string>
         <string name="plane_cam_s4">(1º) Compartimento de bagagem</string>
         <string name="plane_cam_s5">(1º) Compartimento de carga</string>
-
 
     <string name="border">Fronteira</string>
         <string name="border_cam_s1">(2º) Escada leste</string>
@@ -149,7 +151,6 @@
         <string name="border_cam_s6">(EXT) Área do acidente</string>
         <string name="border_cam_s7">(EXT) Caminho do estacionamento</string>
 
-
     <string name="oregon">Oregon</string>
         <string name="oregon_cam_s1">(2º) Corredor do arsenal</string>
         <string name="oregon_cam_s2">(1º) Saguão</string>
@@ -158,7 +159,6 @@
         <string name="oregon_cam_s5">(EXT) Descarte</string>
         <string name="oregon_cam_s6">(EXT) Estacionamento</string>
         <string name="oregon_cam_s7">(EXT) Área de obras</string>
-
 
     <string name="yacht">Iate</string>
         <string name="yacht_cam_s1">(4º) Entrada do heliporto</string>
@@ -170,7 +170,6 @@
         <string name="yacht_cam_s7">(EXT) Convés frontal</string>
         <string name="yacht_cam_s8">(EXT) Convés Spa</string>
 
-
     <string name="skyscraper">Arranha-Céu</string>
         <string name="skyscraper_cam_s1">(2º) Corredor</string>
         <string name="skyscraper_cam_s2">(1º) Restaurante</string>
@@ -179,7 +178,6 @@
         <string name="skyscraper_cam_s5">(EXT) Jardim Oeste</string>
         <string name="skyscraper_cam_s6">(EXT) Jardim Leste</string>
         <string name="skyscraper_cam_s7">(EXT) Dutos de ventilação</string>
-
 
     <string name="university">Bartlett University</string>
         <string name="university_cam_s1">(2º) Corredor da bússula</string>
@@ -198,7 +196,6 @@
         <string name="coastline_cam_s6">(EXT) Ruínas</string>
         <string name="coastline_cam_s7">(EXT) Ruínas</string>
 
-
     <string name="destroyPhrase">%d</string>
     <string name="cameraPhrase">%d cameras</string>
     <string name="cameraPhrase2_1">%d camera remaining</string>
@@ -214,14 +211,12 @@
     <string name="f_3">4º Andar</string>
 
     <!--FLOORS ERROR PHRASE-->
+    <string name="planerror">Planos não estão disponíveis ainda nesse mapa !</string>
     <string name="error_floor_below">Não há nenhum andar abaixo !</string>
     <string name="error_floor_above">Não há nenhum andar acima !</string>
 
-    <string name="planerror">Planos não estão disponíveis ainda nesse mapa !</string>
-
     <!--IMAGE CONTENT DESCRIPTION-->
     <string name="twitch_drone_image">Twitch Drone Image</string>
-    <string name="image_bank_1">Image Bank 1</string>
     <string name="zoom_icon">Zoom Icon</string>
     <string name="zoomedimg">Zoomed Image</string>
     <string name="cellimg">Cell Image</string>
@@ -236,5 +231,6 @@
     <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
     <string name="troll_face">Troll Face</string>
     <string name="star">Star</string>
+    <string name="settingsicon">Icon Settings</string>
 
 </resources>

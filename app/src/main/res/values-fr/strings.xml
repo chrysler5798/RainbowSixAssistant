@@ -1,52 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+    <!--GLOBAL TEXT-->
     <string name="app_name">R6 Assistant</string>
 
-    <!--MAIN ACTIVITY - MENU-->
+    <!--BASIC WORDS-->
+    <string name="go">GO</string>
+    <string name="close">Fermer</string>
+
+    <!--MAIN MENU-->
     <string name="cameras">Caméras</string>
     <string name="twitch">Twitch</string>
     <string name="mapplans">Cartes &amp; Plans</string>
-    <string name="soon">Bientôt…</string>
+    <string name="online">Online</string>
+    <string name="guns">Weapons</string>
     <string name="more">Plus</string>
-    <string name="error_market">Erreur : impossible de trouver l\'application Play Store !</string>
 
+    <!--SOON MSG-->
+    <string name="soon">Bientôt…</string>
+    <string name="msgsoon">Cette nouvelle fonctionnalité arrive bientôt !</string>
+
+    <!--RATE APP POPUP-->
     <string name="ratetitle">Noter R6 Assistant</string>
     <string name="ratemsg">Notez l\'application et donnez votre avis sur le Play Store</string>
-    <string name="go">GO</string>
+    <string name="error_market">Erreur : impossible de trouver l\'application Play Store !</string>
 
+    <!--LOBBY MENU-->
+    <string name="lobbytitle">LOBBY ID : %d</string>
 
     <!--MORE MENU-->
     <string name="about">A propos</string>
     <string name="support">Me supporter</string>
     <string name="settings">Options</string>
-    <string name="close">Fermer</string>
-
-    <string name="infotitle">Infos Menu</string>
-
-    <string name="msgsoon">Cette nouvelle fonctionnalité arrive bientôt !</string>
 
     <!--ABOUT-->
     <string name="labelabout">R6 Assistant - A propos</string>
     <string name="abouttxt1">Cette application a été créée par Khrys, un simple joueur de Rainbow Six Siege. \n L\'application est Open Source et n\'est pas affiliée à Ubisoft.\n\nQuelconques retours, rapport de bug, suggestion sont grandement appréciées.\nEn tant qu\'appli Open Source vous pouvez accéder au code complet sur GitHub en cliquant sur l\'image juste en dessous.\n\nKhrys, développeur et joueur.</string>
 
-
     <!--SUPPORT-->
     <string name="labelsupport">R6 Assistant - Me supporter</string>
     <string name="supporttxt">Cette application est complètement gratuite, sans pubs, sans fonction payante. En la téléchargant, en donnant votre avis ou la noter vous avez déjà fait beaucoup, donc merci !\n\nJe passe beaucoup de temps sur cette appli bien sur parce que je le veux, mais si vous voulez donner quelque chose le bouton est juste en dessous. Si vous donnez votre nom apparaîtra dans l\'application bientôt.\n\n Merci beaucoup ! \nKhrys</string>
 
-
     <!--SETTINGS-->
     <string name="labelsettings">R6 Assistant - Options</string>
-    <string name="language">Langage</string>
-    <string name="settings_end">Vous devez redémarrer l\'application pour appliquer la nouvelle langue !</string>
     <string name="warning">Attention !</string>
+    <string name="settings_end">Vous devez redémarrer l\'application pour appliquer la nouvelle langue !</string>
+
+    <!--LANGUAGE-->
+    <string name="language">Langage</string>
     <string name="english">Anglais</string>
     <string name="french">Français</string>
     <string name="portuguese">Portugais</string>
+    <string name="italian">Italian</string>
+    <string name="german">German</string>
 
     <!--MAP MENU-->
     <string name="takemap">Selectionne une carte</string>
-
 
     <!--MAPS INFO-->
     <string name="bank">Banque</string>
@@ -118,7 +126,6 @@
         <string name="kafedostoyevsky_cam_s5">(EXT) Rue principale</string>
         <string name="kafedostoyevsky_cam_s6">(EXT) Allée du parc</string>
 
-
     <string name="kanal">Canal</string>
         <string name="kanal_cam_s1">(2E CC) Couloir salle de contrôle</string>
         <string name="kanal_cam_s2">(1ER CC) Couloir salle des cartes</string>
@@ -189,44 +196,41 @@
         <string name="coastline_cam_s6">(EXT) Ruines</string>
         <string name="coastline_cam_s7">(EXT) Ruines</string>
 
-
-
     <string name="destroyPhrase">%d</string>
-    <string name="destroyed">X</string>
-    <string name="twitch_drone_image">Image Drone Twitch</string>
-    <string name="zoom_icon">Icon Zoom</string>
-
-
-    <string name="image_bank_1">Image Banque 1</string>
-
-    <string name="zoomedimg">Image zoomée</string>
-    <string name="cellimg">" Image Cellule"</string>
-    <string name="banner_image">Image bannière</string>
-
     <string name="cameraPhrase">%d caméras</string>
     <string name="cameraPhrase2_1">%d caméra restante</string>
     <string name="cameraPhrase2_2">%d caméras restantes</string>
     <string name="cameraAllDestroyed">Toutes les caméras détruites</string>
-    <string name="version_d">Version %S</string>
+    <string name="destroyed">X</string>
 
+    <!--FLOORS OF MAP PLAN-->
     <string name="f_base">Sous-sol</string>
     <string name="f_0">Rez-de-chaussée</string>
     <string name="f_1">1er etage</string>
     <string name="f_2">2eme etage</string>
     <string name="f_3">3eme etage</string>
 
+    <!--FLOORS ERROR PHRASE-->
+    <string name="planerror">Les plans ne sont pas encore disponible sur cette carte !</string>
+    <string name="error_floor_below">Il n\'y a pas d\'étage en dessous !</string>
+    <string name="error_floor_above">Il n\'y a pas d\'étage au dessus !</string>
+
+    <!--IMAGE CONTENT DESCRIPTION-->
+    <string name="twitch_drone_image">Image Drone Twitch</string>
+    <string name="zoom_icon">Icon Zoom</string>
+    <string name="zoomedimg">Image zoomée</string>
+    <string name="cellimg">" Image Cellule"</string>
+    <string name="banner_image">Image bannière</string>
+    <string name="version_d">Version %S</string>
     <string name="zoom">ZOOM</string>
     <string name="floor">ETAGE</string>
     <string name="zoom_in">Zoom In</string>
     <string name="zoom_out">Zoom Out</string>
     <string name="resetzoom">resetzoom</string>
     <string name="position">Positions</string>
-
-    <string name="error_floor_below">Il n\'y a pas d\'étage en dessous !</string>
-    <string name="error_floor_above">Il n\'y a pas d\'étage au dessus !</string>
-    <string name="planerror">Les plans ne sont pas encore disponible sur cette carte !</string>
     <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
     <string name="troll_face">Troll Face</string>
     <string name="star">Star</string>
+    <string name="settingsicon">Icon Settings</string>
 
 </resources>

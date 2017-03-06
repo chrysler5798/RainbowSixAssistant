@@ -3,6 +3,7 @@ package com.khrys.r6assistant;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
@@ -27,8 +28,8 @@ public class SettingsActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        String[] textArray = {getResources().getString(R.string.english),getResources().getString(R.string.french),getResources().getString(R.string.portuguese)};
-        Integer[] imageArray = {R.drawable.flag_uk,R.drawable.flag_fr,R.drawable.flag_pt};
+        String[] textArray = {getRes(R.string.english),getRes(R.string.french),getRes(R.string.portuguese),getRes(R.string.german),getRes(R.string.italian)};
+        Integer[] imageArray = {R.drawable.flag_uk,R.drawable.flag_fr,R.drawable.flag_pt,R.drawable.flag_de,R.drawable.flag_it};
 
         super.onCreate(savedInstanceState);
 
@@ -44,14 +45,43 @@ public class SettingsActivity extends AppCompatActivity
         SpinnerAdapter adapter = new SpinnerAdapter(this, textArray, imageArray);
         spinner.setAdapter(adapter);
 
-        if(Locale.getDefault().getLanguage().equals("fr") && getDefaults(PREFS_LANG, getApplicationContext()) == 2)
+//        if(Locale.getDefault().getLanguage().equals("fr") && getDefaults(PREFS_LANG, getApplicationContext()) == 2)
+//        {
+//            spinner.setSelection(1);
+//        }
+//        else if(Locale.getDefault().getLanguage().equals("pt") && getDefaults(PREFS_LANG, getApplicationContext()) == 3)
+//        {
+//            spinner.setSelection(2);
+//        }
+
+        int yes;
+        switch(Locale.getDefault().getLanguage())
         {
-            spinner.setSelection(1);
+            case "en":
+                yes = 0;
+                break;
+
+            case "fr":
+                yes = 1;
+                break;
+
+            case "pt":
+                yes = 2;
+                break;
+
+            case "de":
+                yes = 3;
+                break;
+
+            case "it":
+                yes = 4;
+                break;
+
+            default:
+                yes = 0;
+                break;
         }
-        else if(Locale.getDefault().getLanguage().equals("pt") && getDefaults(PREFS_LANG, getApplicationContext()) == 3)
-        {
-            spinner.setSelection(2);
-        }
+        spinner.setSelection(yes);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
@@ -70,6 +100,24 @@ public class SettingsActivity extends AppCompatActivity
                 {
                     setDefaults(PREFS_LANG,3,getApplicationContext());
                     showDialogToExit();
+                }
+
+                switch(position)
+                {
+                    case 0:
+                        break;
+
+                    case 1:
+                        break;
+
+                    case 2:
+                        break;
+
+                    case 3:
+                        break;
+
+                    case 4:
+                        break;
                 }
             }
 
@@ -92,7 +140,13 @@ public class SettingsActivity extends AppCompatActivity
                         .setIcon(R.drawable.info_icon)
                         .show();
             }
+
         });
+    }
+
+    String getRes(int txt)
+    {
+        return getResources().getString(txt);
     }
 
     public static void setDefaults(String key, int value, Context context)
