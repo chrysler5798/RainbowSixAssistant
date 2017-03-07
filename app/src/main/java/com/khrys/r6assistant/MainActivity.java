@@ -30,20 +30,20 @@ public class MainActivity extends AppCompatActivity {
         Button buttoncamera = (Button) findViewById(R.id.buttonmain1);
         Button buttontwitch = (Button) findViewById(R.id.buttonmain2);
         Button buttonmapplans = (Button) findViewById(R.id.buttonmain3);
-        Button buttonlobby = (Button) findViewById(R.id.buttonmain4);
+        Button buttonweapon = (Button) findViewById(R.id.buttonmain4);
         Button buttonmore = (Button) findViewById(R.id.buttonMore);
         ImageButton buttonset = (ImageButton) findViewById(R.id.buttonSettings);
 
-        buttonlobby.setOnClickListener(new View.OnClickListener()
+        buttonweapon.setOnClickListener(new View.OnClickListener()
         {
             @Override
             public void onClick(View view)
             {
-                Toast.makeText(getApplicationContext(), "I'm working on this feature, update soon !", Toast.LENGTH_LONG).show();
+
             }
         });
 
-        buttonlobby.setOnLongClickListener(new View.OnLongClickListener()
+        buttonweapon.setOnLongClickListener(new View.OnLongClickListener()
         {
             @Override
             public boolean onLongClick(View v)
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         buttonmapplans.setOnClickListener(new MenuCLickListener(3));
     }
 
-    class MenuCLickListener implements View.OnClickListener
+    private class MenuCLickListener implements View.OnClickListener
     {
         int type;
         MenuCLickListener(int type)

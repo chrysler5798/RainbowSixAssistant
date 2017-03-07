@@ -1,10 +1,10 @@
 package com.khrys.r6assistant;
 
-/**
- * Created by Chrysler on 10/1/2016.
- * <p>
- * RainbowSixPartner
- */
+/*
+  Created by Chrysler on 10/1/2016.
+  <p>
+  RainbowSixPartner
+*/
 
 import android.app.Activity;
 import android.content.Intent;
@@ -27,28 +27,72 @@ public class SplashActivity extends Activity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
+        int yes;
         int langue = getDefaults(PREFS_LANG, getApplicationContext());
-        if(langue == 1)
+        String language;
+
+        switch(Locale.getDefault().getLanguage())
         {
-            Locale locale = new Locale("en");
-        }
-        else if(langue == 2)
-        {
-            Locale locale = new Locale("fr");
-            Locale.setDefault(locale);
-            Configuration config = new Configuration();
-            config.locale = locale;
-            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
-        }
-        else if(langue == 3)
-        {
-            Locale locale = new Locale("pt");
-            Locale.setDefault(locale);
-            Configuration config = new Configuration();
-            config.locale = locale;
-            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+            case "en":
+                yes = 0;
+                break;
+
+            case "fr":
+                yes = 1;
+                break;
+
+            case "pt":
+                yes = 2;
+                break;
+
+            case "de":
+                yes = 3;
+                break;
+
+            case "it":
+                yes = 4;
+                break;
+
+            default:
+                yes = 0;
+                break;
         }
 
+        if(yes != langue)
+        {
+            switch(langue)
+            {
+                case 0:
+                    language = "en";
+                    break;
+
+                case 1:
+                    language = "fr";
+                    break;
+
+                case 2:
+                    language = "pt";
+                    break;
+
+                case 3:
+                    language = "de";
+                    break;
+
+                case 4:
+                    language = "it";
+                    break;
+
+                default:
+                    language = "en";
+                    break;
+            }
+
+            Locale locale = new Locale(language);
+            Locale.setDefault(locale);
+            Configuration config = new Configuration();
+            config.locale = locale;
+            getBaseContext().getResources().updateConfiguration(config, getBaseContext().getResources().getDisplayMetrics());
+        }
 
         setContentView(R.layout.activity_splash);
 

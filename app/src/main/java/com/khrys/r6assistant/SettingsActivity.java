@@ -14,6 +14,8 @@ import android.widget.AdapterView;
 import android.widget.Spinner;
 import java.util.Locale;
 
+import static android.R.attr.type;
+
 /**
  * Created by Chrysler on 12/18/2016.
  * <p>
@@ -24,6 +26,7 @@ public class SettingsActivity extends AppCompatActivity
 {
 
     private static final String PREFS_LANG = "PREFS_LANG";
+    int yes;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -45,16 +48,6 @@ public class SettingsActivity extends AppCompatActivity
         SpinnerAdapter adapter = new SpinnerAdapter(this, textArray, imageArray);
         spinner.setAdapter(adapter);
 
-//        if(Locale.getDefault().getLanguage().equals("fr") && getDefaults(PREFS_LANG, getApplicationContext()) == 2)
-//        {
-//            spinner.setSelection(1);
-//        }
-//        else if(Locale.getDefault().getLanguage().equals("pt") && getDefaults(PREFS_LANG, getApplicationContext()) == 3)
-//        {
-//            spinner.setSelection(2);
-//        }
-
-        int yes;
         switch(Locale.getDefault().getLanguage())
         {
             case "en":
@@ -86,38 +79,31 @@ public class SettingsActivity extends AppCompatActivity
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
-                if(position == 0 && getDefaults(PREFS_LANG, getApplicationContext()) != 1 && !Locale.getDefault().getLanguage().equals("en"))
+
+                if(position != yes)
                 {
-                    setDefaults(PREFS_LANG,1,getApplicationContext());
-                    showDialogToExit();
-                }
-                else if(position == 1 && getDefaults(PREFS_LANG, getApplicationContext()) != 2 && !Locale.getDefault().getLanguage().equals("fr"))
-                {
-                    setDefaults(PREFS_LANG,2,getApplicationContext());
-                    showDialogToExit();
-                }
-                else if(position == 2 && getDefaults(PREFS_LANG, getApplicationContext()) != 3 && !Locale.getDefault().getLanguage().equals("pt"))
-                {
-                    setDefaults(PREFS_LANG,3,getApplicationContext());
-                    showDialogToExit();
-                }
+                    switch(position)
+                    {
+                        case 0:
+                            showDialogToExit(0);
+                            break;
 
-                switch(position)
-                {
-                    case 0:
-                        break;
+                        case 1:
+                            showDialogToExit(1);
+                            break;
 
-                    case 1:
-                        break;
+                        case 2:
+                            showDialogToExit(2);
+                            break;
 
-                    case 2:
-                        break;
+                        case 3:
+                            showDialogToExit(3);
+                            break;
 
-                    case 3:
-                        break;
-
-                    case 4:
-                        break;
+                        case 4:
+                            showDialogToExit(4);
+                            break;
+                    }
                 }
             }
 
@@ -126,8 +112,9 @@ public class SettingsActivity extends AppCompatActivity
 
             }
 
-            void showDialogToExit()
+            void showDialogToExit(int typeLanguage)
             {
+                setDefaults(PREFS_LANG,typeLanguage,getApplicationContext());
                 new AlertDialog.Builder(SettingsActivity.this)
                         .setTitle(R.string.warning)
                         .setMessage(R.string.settings_end)

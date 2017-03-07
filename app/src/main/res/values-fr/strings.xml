@@ -12,7 +12,7 @@
     <string name="twitch">Twitch</string>
     <string name="mapplans">Cartes &amp; Plans</string>
     <string name="online">Online</string>
-    <string name="guns">Weapons</string>
+    <string name="guns">Weapons Stats</string>
     <string name="more">Plus</string>
 
     <!--SOON MSG-->
@@ -179,7 +179,7 @@
         <string name="skyscraper_cam_s6">(EXT) Jardin Est</string>
         <string name="skyscraper_cam_s7">(EXT) Unités de ventilation</string>
 
-    <string name="university">Université Bartlett</string>
+    <string name="university">Bartlett U.</string>
         <string name="university_cam_s1">(1ER) Couloir de la boussole</string>
         <string name="university_cam_s2">(RDC) Passage voûté</string>
         <string name="university_cam_s3">(RDC) Entrée</string>

@@ -60,11 +60,11 @@
                 android:paddingBottom="30dp"/>
 
             <Button
-                android:text="@string/online"
+                android:text="@string/guns"
                 android:layout_height="@dimen/button_wah_main"
                 android:layout_width="@dimen/button_wah_main"
                 android:id="@+id/buttonmain4"
-                android:drawableBottom="@drawable/iconworld"
+                android:drawableBottom="@drawable/gunicon"
                 android:gravity="center"
                 android:backgroundTint="@color/colorPrimary"
                 android:paddingBottom="30dp"/>
