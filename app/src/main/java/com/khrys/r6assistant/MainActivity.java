@@ -39,7 +39,8 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-
+                Intent myIntent = new Intent(MainActivity.this, WeaponMenuActivity.class);
+                startActivity(myIntent);
             }
         });
 

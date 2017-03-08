@@ -10,11 +10,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
-/**
+/*
  * Created by Chrysler on 10/3/2016.
- * <p>
  * RainbowSixPartner
- */
+*/
 
 public class MapActivity extends AppCompatActivity
 {
@@ -48,6 +47,7 @@ public class MapActivity extends AppCompatActivity
         pics = mapSwitch.SwitcherPics();
 
         rv = (RecyclerView) findViewById(R.id.recyclerViewMap);
+
         if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
             LayoutM = new LinearLayoutManager(MapActivity.this, LinearLayoutManager.HORIZONTAL, false);
             String txtTitle = String.format(getResources().getString(R.string.app_name)+" - %s",map);

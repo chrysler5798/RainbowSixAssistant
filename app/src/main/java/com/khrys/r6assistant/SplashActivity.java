@@ -13,55 +13,31 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.Locale;
 
+import static android.R.attr.y;
+import static android.R.string.yes;
 import static com.khrys.r6assistant.SettingsActivity.getDefaults;
 
 public class SplashActivity extends Activity {
 
     private static final int SPLASH_TIME_OUT = 3000;
     private static final String PREFS_LANG = "PREFS_LANG";
+    private static final String ON_LANG = "ON_LANG";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
 
-        int yes;
-        int langue = getDefaults(PREFS_LANG, getApplicationContext());
+        int langueon = getDefaults(ON_LANG, getApplicationContext());
         String language;
 
-        switch(Locale.getDefault().getLanguage())
-        {
-            case "en":
-                yes = 0;
-                break;
+        if (langueon == 1) {
+            int langue = getDefaults(PREFS_LANG, getApplicationContext());
 
-            case "fr":
-                yes = 1;
-                break;
-
-            case "pt":
-                yes = 2;
-                break;
-
-            case "de":
-                yes = 3;
-                break;
-
-            case "it":
-                yes = 4;
-                break;
-
-            default:
-                yes = 0;
-                break;
-        }
-
-        if(yes != langue)
-        {
-            switch(langue)
-            {
+            switch (langue) {
                 case 0:
                     language = "en";
                     break;

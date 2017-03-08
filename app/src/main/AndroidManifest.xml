@@ -83,6 +83,10 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".WeaponMenuActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

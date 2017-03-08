@@ -15,12 +15,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 import java.util.List;
 
-
-/**
+/*
  * Created by Chrysler on 10/14/2016.
- * <p>
  * RainbowSixPartner
- */
+*/
 
 class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
 {

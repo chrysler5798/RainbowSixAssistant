@@ -6,11 +6,11 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-/**
+/*
  * Created by Chrysler on 11/30/2016.
  * <p>
  * RainbowSixPartner
- */
+*/
 
 class MapSwitch
 {
@@ -487,8 +487,9 @@ class MapSwitch
                 break;
 
             case 11:
-                posmap.add(1);
-                posmap.add(3);
+                posmap.add(0);
+                posmap.add(2);
+                posmap.add(R.drawable.map_border_f0);
                 posmap.add(R.drawable.map_border_f1);
                 posmap.add(R.drawable.map_border_f2);
                 break;

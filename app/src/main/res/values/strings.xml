@@ -24,6 +24,10 @@
     <string name="ratemsg">Rate the application and give your feedback on the Play Store</string>
     <string name="error_market">Errror : unable to find the Play Store App !</string>
 
+
+    <string name="byoperator">By operators</string>
+    <string name="byweapons">By weapons</string>
+
     <!--LOBBY MENU-->
     <string name="lobbytitle">LOBBY ID : %d</string>
 

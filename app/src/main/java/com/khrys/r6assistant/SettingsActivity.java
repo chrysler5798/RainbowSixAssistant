@@ -26,6 +26,7 @@ public class SettingsActivity extends AppCompatActivity
 {
 
     private static final String PREFS_LANG = "PREFS_LANG";
+    private static final String ON_LANG = "ON_LANG";
     int yes;
 
     @Override
@@ -115,6 +116,7 @@ public class SettingsActivity extends AppCompatActivity
             void showDialogToExit(int typeLanguage)
             {
                 setDefaults(PREFS_LANG,typeLanguage,getApplicationContext());
+                setDefaults(ON_LANG,1,getApplicationContext());
                 new AlertDialog.Builder(SettingsActivity.this)
                         .setTitle(R.string.warning)
                         .setMessage(R.string.settings_end)
