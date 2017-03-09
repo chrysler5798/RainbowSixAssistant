@@ -28,7 +28,8 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
     private int type;
     private ChangeCamRemInterface listenerCam;
 
-    ListAdapterMap(ArrayList<Integer> pics, ArrayList<Integer> poscam, int type){
+    ListAdapterMap(ArrayList<Integer> pics, ArrayList<Integer> poscam, int type)
+    {
 
         this.pics = pics;
         this.poscam = poscam;
@@ -36,7 +37,8 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
     }
 
 
-     ListAdapterMap(ArrayList<Integer> pics, ArrayList<Integer> poscam, int type, ChangeCamRemInterface listener){
+     ListAdapterMap(ArrayList<Integer> pics, ArrayList<Integer> poscam, int type, ChangeCamRemInterface listener)
+     {
         this.pics = pics;
         this.poscam = poscam;
         this.type = type;
@@ -44,12 +46,14 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
     }
 
     @Override
-    public int getItemCount() {
+    public int getItemCount()
+    {
         return pics.size();
     }
 
     @Override
-    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
+    {
         LayoutInflater inflater = LayoutInflater.from(parent.getContext());
         View view;
         if(type == 1)
@@ -72,7 +76,6 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
     }
 
 
-    @SuppressWarnings("deprecation")
     class MyViewHolder extends RecyclerView.ViewHolder
     {
 

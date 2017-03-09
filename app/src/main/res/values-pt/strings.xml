@@ -34,7 +34,7 @@
 
     <!--ABOUT-->
     <string name="labelabout">R6 Assistant - Sobre</string>
-    <string name="abouttxt1">Este Aplicativo foi criado por Khrys, apenas mais um jogador qualquer de Rainbow Six Siege. \n Esse Aplicativo é de código aberto e não está afiliado a Ubisoft.\n\nQualquer feedback, Relatórios de erros , ou sugestões serão bem vindas.\nSendo um aplicativo de Código Aberto, você pode acessar o código fonte no GitHub, clicando na imagem no final da pagina .\n\nKhrys, desenvolvedor e jogador.</string>
+    <string name="abouttxt1">Este Aplicativo foi criado por Khrys, apenas mais um jogador qualquer de Rainbow Six Siege. Esse Aplicativo é de código aberto e não está afiliado a Ubisoft.\n\nQualquer feedback, Relatórios de erros , ou sugestões serão bem vindas. Sendo um aplicativo de Código Aberto, você pode acessar o código fonte no GitHub, clicando na imagem no final da pagina .\n\nKhrys, desenvolvedor e jogador.</string>
 
     <!--SUPPORT-->
     <string name="labelsupport">R6 Assistant - Colabore</string>
@@ -52,6 +52,11 @@
     <string name="portuguese">Português</string>
     <string name="italian">Italian</string>
     <string name="german">German</string>
+
+    <!--CREDIT TO TRANSLATORS-->
+    <string name="translator_pt">LeGuigo</string>
+    <string name="translator_de">Mert Huz</string>
+    <string name="translator_it">Andrea Verano</string>
 
     <!--MAP MENU-->
     <string name="takemap">Selecione um Mapa</string>

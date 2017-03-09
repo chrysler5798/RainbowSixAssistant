@@ -13,6 +13,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
+import java.util.ArrayList;
+
 public class WeaponsFragment extends Fragment
 {
 
@@ -29,15 +31,26 @@ public class WeaponsFragment extends Fragment
 
         RecyclerView mRecycler;
         RecyclerView.LayoutManager mLayout;
-        RecyclerView.Adapter mAdapter;
 
         mRecycler = (RecyclerView) view.findViewById(R.id.WeaponsRecycler);
 
         mRecycler.setHasFixedSize(true);
-        mLayout = new LinearLayoutManager(view.getContext());
+        mLayout = new LinearLayoutManager(getContext());
         mRecycler.setLayoutManager(mLayout);
 
-        mAdapter = new ListAdapterWeapons();
+        ArrayList<Integer> weaponsimg = new ArrayList<>();
+        ArrayList<String> weaponstxt = new ArrayList<>();
+
+        weaponsimg.add(R.drawable.test1);
+        weaponstxt.add("UMP-45");
+
+        weaponsimg.add(R.drawable.test2);
+        weaponstxt.add("BEARING9");
+
+        weaponsimg.add(R.drawable.test3);
+        weaponstxt.add("P229");
+
+        mRecycler.setAdapter(new ListAdapterWeapons(weaponsimg,weaponstxt));
     }
 
 }

@@ -6,13 +6,14 @@ package com.khrys.r6assistant;
 */
 
 import android.os.Bundle;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.View;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.TextView;
 
-import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItem;
+import java.util.ArrayList;
 
 public class OperatorsFragment extends Fragment
 {
@@ -27,9 +28,29 @@ public class OperatorsFragment extends Fragment
     public void onViewCreated(View view, Bundle savedInstanceState)
     {
         super.onViewCreated(view, savedInstanceState);
-        int position = FragmentPagerItem.getPosition(getArguments());
-        TextView title = (TextView) view.findViewById(R.id.txtViewEz);
-        title.setText(String.valueOf(position));
+
+        RecyclerView mRecycler;
+        RecyclerView.LayoutManager mLayout;
+
+        mRecycler = (RecyclerView) view.findViewById(R.id.WeaponsRecycler);
+
+        mRecycler.setHasFixedSize(true);
+        mLayout = new LinearLayoutManager(getContext());
+        mRecycler.setLayoutManager(mLayout);
+
+        ArrayList<Integer> weaponsimg = new ArrayList<>();
+        ArrayList<String> weaponstxt = new ArrayList<>();
+
+        weaponsimg.add(R.drawable.ash);
+        weaponstxt.add("Ash");
+
+        weaponsimg.add(R.drawable.iq);
+        weaponstxt.add("IQ");
+
+        weaponsimg.add(R.drawable.montagne);
+        weaponstxt.add("Montagne");
+
+        mRecycler.setAdapter(new ListAdapterWeapons(weaponsimg,weaponstxt));
     }
 
 }

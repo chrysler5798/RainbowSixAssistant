@@ -38,7 +38,7 @@
 
     <!--ABOUT-->
     <string name="labelabout">R6 Assistant - About</string>
-    <string name="abouttxt1">This application has been created by Khrys, just a random player of Rainbow Six Siege. \n The application is Open Source and not afiliated with Ubisoft.\n\nAny feedback, bug report, or suggestion are really appreciated.\nAs an Open Source application, you can acccess to the source code hosted on GitHub by clicking on the image right at the bottom of the page.\n\nKhrys, developer and player.</string>
+    <string name="abouttxt1">This application has been created by Khrys, just a random player of Rainbow Six Siege. The application is Open Source and not afiliated with Ubisoft.\n\nAny feedback, bug report, or suggestion are really appreciated. As an Open Source application, you can acccess to the source code hosted on GitHub by clicking on the image right at the bottom of the page.\n\nKhrys, developer and player.</string>
 
     <!--SUPPORT-->
     <string name="labelsupport">R6 Assistant - Support Me</string>
@@ -56,6 +56,11 @@
     <string name="portuguese">Portuguese</string>
     <string name="italian">Italian</string>
     <string name="german">German</string>
+
+    <!--CREDIT TO TRANSLATORS-->
+    <string name="translator_pt">LeGuigo</string>
+    <string name="translator_de">Mert Huz</string>
+    <string name="translator_it">Andrea Verano</string>
 
     <!--MAP MENU-->
     <string name="takemap">Select a map</string>

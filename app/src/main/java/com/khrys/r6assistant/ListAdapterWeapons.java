@@ -6,37 +6,70 @@ package com.khrys.r6assistant;
 */
 
 import android.support.v7.widget.RecyclerView;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
+import android.widget.TextView;
 
-public class ListAdapterWeapons extends RecyclerView.Adapter<ListAdapterWeapons.ViewHolder>
+import java.util.ArrayList;
+import java.util.List;
+
+class ListAdapterWeapons extends RecyclerView.Adapter<ListAdapterWeapons.MyViewHolder>
 {
+    private List<Integer> weaponsimg;
+    private List<String> weaponstxt;
 
-    public static class ViewHolder extends RecyclerView.ViewHolder
+    ListAdapterWeapons(ArrayList<Integer> weaponsimg,ArrayList<String> weaponstxt)
     {
-
-        public ViewHolder(View itemView)
-        {
-            super(itemView);
-        }
-    }
-
-    @Override
-    public ListAdapterWeapons.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
-    {
-        return null;
-    }
-
-    @Override
-    public void onBindViewHolder(ListAdapterWeapons.ViewHolder holder, int position)
-    {
-
+        this.weaponsimg = weaponsimg;
+        this.weaponstxt = weaponstxt;
     }
 
     @Override
     public int getItemCount()
     {
-        return 0;
+        return weaponstxt.size();
+    }
+
+    @Override
+    public ListAdapterWeapons.MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType)
+    {
+        LayoutInflater inflater = LayoutInflater.from(parent.getContext());
+        View view = inflater.inflate(R.layout.list_weapons, parent, false);
+        return new MyViewHolder(view);
+    }
+
+    @Override
+    public void onBindViewHolder(ListAdapterWeapons.MyViewHolder holder, int position)
+    {
+        if(weaponstxt != null)
+        {
+            Integer imgdata = weaponsimg.get(position);
+            String txtdata = weaponstxt.get(position);
+            holder.display(imgdata,txtdata);
+        }
+    }
+
+    static class MyViewHolder extends RecyclerView.ViewHolder
+    {
+        private final ImageView imageV;
+        private final TextView textV;
+
+        MyViewHolder(View itemView)
+        {
+            super(itemView);
+
+            imageV = (ImageView) itemView.findViewById(R.id.imageVarme);
+            textV = (TextView) itemView.findViewById(R.id.textVarme);
+
+        }
+
+        void display(Integer imgdata, String txtdata)
+        {
+            imageV.setImageResource(imgdata);
+            textV.setText(txtdata);
+        }
     }
 
 }
