@@ -17,8 +17,7 @@
             android:id="@+id/imageVarme"
             android:layout_width="wrap_content"
             android:layout_height="75dp"
-            android:adjustViewBounds="true"
-            app:srcCompat="@drawable/test1" />
+            android:adjustViewBounds="true"/>
 
         <TextView
             android:id="@+id/textVarme"
