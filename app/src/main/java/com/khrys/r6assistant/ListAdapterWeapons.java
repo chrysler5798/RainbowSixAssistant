@@ -5,6 +5,7 @@ package com.khrys.r6assistant;
  * RainbowSixAssistant
 */
 
+import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -56,12 +57,20 @@ class ListAdapterWeapons extends RecyclerView.Adapter<ListAdapterWeapons.MyViewH
         private final ImageView imageV;
         private final TextView textV;
 
-        MyViewHolder(View itemView)
+        MyViewHolder(final View itemView)
         {
             super(itemView);
 
             imageV = (ImageView) itemView.findViewById(R.id.imageVarme);
             textV = (TextView) itemView.findViewById(R.id.textVarme);
+
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    itemView.getContext().startActivity(new Intent(itemView.getContext(), WeaponActivity.class));
+
+                }
+            });
 
         }
 
