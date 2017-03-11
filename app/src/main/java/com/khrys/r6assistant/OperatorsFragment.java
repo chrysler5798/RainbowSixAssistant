@@ -131,7 +131,7 @@ public class OperatorsFragment extends Fragment
         weaponsimg.add(R.drawable.o_jackal);
         weaponstxt.add("jackal");
 
-        mRecycler.setAdapter(new ListAdapterWeapons(weaponsimg,weaponstxt));
+        mRecycler.setAdapter(new ListAdapterWeapons(0,weaponsimg,weaponstxt));
     }
 
 }

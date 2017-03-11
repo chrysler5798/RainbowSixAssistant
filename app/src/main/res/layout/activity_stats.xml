@@ -55,33 +55,29 @@
                     android:id="@+id/imgAgent1"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
-                    android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/o_montagne" />
+                    android:layout_weight="1" />
 
                 <ImageView
                     android:id="@+id/imgAgent2"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
-                    android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    android:src="@drawable/o_twitch" />
+                    android:layout_weight="1" />
 
                 <ImageView
                     android:id="@+id/imgAgent3"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/o_doc" />
+                    android:adjustViewBounds="true" />
 
                 <ImageView
                     android:id="@+id/imgAgent4"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
                     android:layout_weight="1"
-                    android:adjustViewBounds="true"
-                    android:src="@drawable/o_rook" />
+                    android:adjustViewBounds="true"/>
             </LinearLayout>
 
             <LinearLayout
@@ -94,60 +90,60 @@
 
                 <TextView
                     android:id="@+id/txtAmmo"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:paddingLeft="5dp"
-                    android:text="100"
+                    android:paddingStart="5dp"
+                    android:textAlignment="textEnd"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:src="@drawable/ic_ammo" />
 
                 <View
-                    android:layout_width="5dp"
+                    android:layout_width="10dp"
                     android:layout_height="match_parent"
                     android:background="@color/defaultbg" />
 
                 <TextView
                     android:id="@+id/txtFirerate"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:paddingLeft="5dp"
-                    android:text="1100"
+                    android:paddingStart="5dp"
+                    android:textAlignment="textEnd"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:src="@drawable/ic_firerate" />
 
                 <View
-                    android:layout_width="5dp"
+                    android:layout_width="10dp"
                     android:layout_height="match_parent"
                     android:background="@color/defaultbg" />
 
                 <TextView
                     android:id="@+id/txtDamagefalloff"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="match_parent"
+                    android:layout_weight="1"
                     android:gravity="center"
-                    android:paddingLeft="5dp"
-                    android:text="35M"
+                    android:paddingStart="5dp"
+                    android:textAlignment="textEnd"
                     android:textColor="@color/white"
                     android:textSize="30sp" />
 
                 <ImageView
-                    android:layout_width="0dp"
+                    android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
                     android:rotation="270"
                     android:src="@drawable/ic_fall" />
 
@@ -165,7 +161,8 @@
                     android:layout_width="144dp"
                     android:layout_height="match_parent"
                     android:paddingStart="10dp"
-                    android:text="Rook Armor" />
+                    android:text="Rook Armor"
+                    android:theme="@style/Color1SwitchStyle"/>
 
                 <ImageView
                     android:id="@+id/imgRookarmor"
@@ -218,7 +215,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="40"
                     android:textSize="30sp" />
 
                 <TextView
@@ -227,7 +223,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="80"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -254,7 +249,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="40"
                     android:textSize="30sp" />
 
                 <TextView
@@ -263,7 +257,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="80"
                     android:textSize="30sp" />
             </LinearLayout>
 
@@ -288,7 +281,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="40"
                     android:textSize="30sp" />
 
                 <TextView
@@ -297,7 +289,6 @@
                     android:layout_height="match_parent"
                     android:layout_weight="1"
                     android:gravity="center"
-                    android:text="80"
                     android:textSize="30sp" />
 
             </LinearLayout>
@@ -371,19 +362,19 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
+                    android:layout_weight="1"
                     android:background="@color/colorPrimary"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imgBarrel1"
+                        android:id="@+id/imgBarrel3"
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
                         android:adjustViewBounds="true"
                         android:src="@drawable/gb_compensator" />
 
                     <TextView
-                        android:id="@+id/txtBarrel1"
+                        android:id="@+id/txtBarrel3"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
@@ -396,19 +387,19 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
+                    android:layout_weight="1"
                     android:background="@color/colorPrimary"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imgBarrel2"
+                        android:id="@+id/imgBarrel4"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:src="@drawable/gb_suppressor" />
 
                     <TextView
-                        android:id="@+id/txtBarrel2"
+                        android:id="@+id/txtBarrel4"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"
@@ -422,19 +413,19 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_margin="5dp"
+                    android:layout_weight="1"
                     android:background="@color/colorPrimary"
-                    android:orientation="vertical"
-                    android:layout_weight="1">
+                    android:orientation="vertical">
 
                     <ImageView
-                        android:id="@+id/imgBarrel3"
+                        android:id="@+id/imgBarrel5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:adjustViewBounds="true"
                         android:src="@drawable/gb_suppressor" />
 
                     <TextView
-                        android:id="@+id/txtBarrel3"
+                        android:id="@+id/txtBarrel5"
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_weight="1"

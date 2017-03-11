@@ -5,6 +5,7 @@ package com.khrys.r6assistant;
  * RainbowSixAssistant
 */
 
+import android.content.Context;
 import android.content.Intent;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -20,11 +21,13 @@ class ListAdapterWeapons extends RecyclerView.Adapter<ListAdapterWeapons.MyViewH
 {
     private List<Integer> weaponsimg;
     private List<String> weaponstxt;
+    int type;
 
-    ListAdapterWeapons(ArrayList<Integer> weaponsimg,ArrayList<String> weaponstxt)
+    ListAdapterWeapons(int type, ArrayList<Integer> weaponsimg,ArrayList<String> weaponstxt)
     {
         this.weaponsimg = weaponsimg;
         this.weaponstxt = weaponstxt;
+        this.type = type;
     }
 
     @Override
@@ -48,7 +51,7 @@ class ListAdapterWeapons extends RecyclerView.Adapter<ListAdapterWeapons.MyViewH
         {
             Integer imgdata = weaponsimg.get(position);
             String txtdata = weaponstxt.get(position);
-            holder.display(imgdata,txtdata);
+            holder.display(type,imgdata,txtdata);
         }
     }
 
@@ -56,6 +59,8 @@ class ListAdapterWeapons extends RecyclerView.Adapter<ListAdapterWeapons.MyViewH
     {
         private final ImageView imageV;
         private final TextView textV;
+        private final Context context;
+        private int type;
 
         MyViewHolder(final View itemView)
         {
@@ -63,21 +68,28 @@ class ListAdapterWeapons extends RecyclerView.Adapter<ListAdapterWeapons.MyViewH
 
             imageV = (ImageView) itemView.findViewById(R.id.imageVarme);
             textV = (TextView) itemView.findViewById(R.id.textVarme);
-
+            context = itemView.getContext();
             itemView.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    itemView.getContext().startActivity(new Intent(itemView.getContext(), WeaponActivity.class));
+                    if(type == 1)
+                    {
+                        Intent newWeapon = new Intent(context, WeaponActivity.class);
+                        newWeapon.putExtra("arme", textV.getText().toString());
+                        context.startActivity(newWeapon);
+                    } else {
 
+                    }
                 }
             });
 
         }
 
-        void display(Integer imgdata, String txtdata)
+        void display(int type, Integer imgdata, String txtdata)
         {
             imageV.setImageResource(imgdata);
             textV.setText(txtdata);
+            this.type = type;
         }
     }
 

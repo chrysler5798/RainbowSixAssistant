@@ -15,4 +15,8 @@
         <item name="android:background">@color/colorPrimary</item>
     </style>
 
+    <style name="Color1SwitchStyle">
+        <item name="colorControlActivated">@color/switchon</item>
+    </style>
+
 </resources>
