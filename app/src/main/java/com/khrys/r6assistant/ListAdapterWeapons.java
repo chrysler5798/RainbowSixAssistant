@@ -77,8 +77,6 @@ class ListAdapterWeapons extends RecyclerView.Adapter<ListAdapterWeapons.MyViewH
                         Intent newWeapon = new Intent(context, WeaponActivity.class);
                         newWeapon.putExtra("arme", textV.getText().toString());
                         context.startActivity(newWeapon);
-                    } else {
-
                     }
                 }
             });
