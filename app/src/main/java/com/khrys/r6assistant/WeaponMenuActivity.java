@@ -1,11 +1,13 @@
 package com.khrys.r6assistant;
 
 import android.content.DialogInterface;
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
@@ -35,7 +37,7 @@ public class WeaponMenuActivity extends AppCompatActivity
         if (isFirstTime()) {
             AlertDialog.Builder builder = new AlertDialog.Builder(WeaponMenuActivity.this, R.style.MyAlertDialogStyle);
             builder.setTitle(R.string.warning)
-                    .setMessage("This is a BETA ! \nIt means it could miss things.")
+                    .setMessage(R.string.beta_msg)
                     .setIcon(R.drawable.info_icon)
                     .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener()
                     {
@@ -74,6 +76,13 @@ public class WeaponMenuActivity extends AppCompatActivity
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.menu_stats, menu);
+        return true;
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId())
@@ -81,6 +90,10 @@ public class WeaponMenuActivity extends AppCompatActivity
             case android.R.id.home:
 
                 this.finish();
+                return true;
+
+            case R.id.action_help:
+                startActivity(new Intent(this, HelpStatsActivity.class));
                 return true;
 
             default:

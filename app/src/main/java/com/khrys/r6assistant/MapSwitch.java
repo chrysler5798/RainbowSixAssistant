@@ -184,6 +184,7 @@ class MapSwitch
                 pics.add(R.drawable.university_cam_4);
                 pics.add(R.drawable.university_cam_5);
                 pics.add(R.drawable.university_cam_6);
+                pics.add(R.drawable.university_cam_7);
                 break;
 
             case 15:
@@ -346,6 +347,7 @@ class MapSwitch
                 poscam.add(R.string.university_cam_s4);
                 poscam.add(R.string.university_cam_s5);
                 poscam.add(R.string.university_cam_s6);
+                poscam.add(R.string.university_cam_s7);
                 break;
 
             case 15:

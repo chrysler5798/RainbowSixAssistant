@@ -256,7 +256,7 @@ public class WeaponActivity extends AppCompatActivity
                 break;
 
             case "ots-03":
-                weapon = new Object[]{"glaz", "", "", "", 10, 0, "5m", 170, 170, 106, 164, 78, 121, 0, 0, 84, 130, 62, 96, "muzzle_brake","flash_hider","suppressor","",""};
+                weapon = new Object[]{"glaz", "", "", "", 10, 0, "5m", 170, 170, 106, 164, 78, 121, 150, 100, 84, 130, 62, 96, "muzzle_brake","flash_hider","suppressor","",""};
                 break;
 
             case "camrs":

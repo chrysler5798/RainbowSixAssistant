@@ -12,7 +12,7 @@
     <string name="twitch">Twitch</string>
     <string name="mapplans">Maps &amp; Pläne</string>
     <string name="online">Online</string>
-    <string name="guns">Weapons Stats</string>
+    <string name="guns">Weapons Stats \nBETA</string>
     <string name="more">Mehr</string>
 
     <!--SOON MSG-->
@@ -238,5 +238,23 @@
     <string name="troll_face">Troll Face</string>
     <string name="star">Star</string>
     <string name="settingsicon">Icon Settings</string>
+    <!--WEAPON STATS CONTENT DESCRIPTION-->
+    <string name="name_weapon">Weapon Image</string>
+    <string name="op_1">Operator Icon 1</string>
+    <string name="op_2">Operator Icon 2</string>
+    <string name="op_3">Operator Icon 3</string>
+    <string name="op_4">Operator Icon 4</string>
+    <string name="ammo_icon">Ammo Icon</string>
+    <string name="firerate_icon">Fire rate Icon</string>
+    <string name="damagefall_icon">Damage fall off Icon</string>
+    <string name="rook_icon">Damage fall off Icon</string>
+    <string name="armor_light_icon">Light Amor Icon</string>
+    <string name="armor_medium_icon">Medium Amor Icon</string>
+    <string name="armor_heavy_icon">Heavy Amor Icon</string>
+    <string name="barrel_1">Image of the Barrel 1</string>
+    <string name="barrel_2">Image of the Barrel 2</string>
+    <string name="barrel_3">Image of the Barrel 3</string>
+    <string name="barrel_4">Image of the Barrel 4</string>
+    <string name="barrel_5">Image of the Barrel 5</string>
 
 </resources>

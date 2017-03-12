@@ -12,7 +12,7 @@
     <string name="twitch">Twitch</string>
     <string name="mapplans">Mapas e Planos</string>
     <string name="online">Online</string>
-    <string name="guns">Weapons Stats</string>
+    <string name="guns">Weapons Stats \nBETA</string>
     <string name="more">Mais</string>
 
     <!--SOON MSG-->
@@ -34,7 +34,7 @@
 
     <!--ABOUT-->
     <string name="labelabout">R6 Assistant - Sobre</string>
-    <string name="abouttxt1">Este Aplicativo foi criado por Khrys, apenas mais um jogador qualquer de Rainbow Six Siege. Esse Aplicativo é de código aberto e não está afiliado a Ubisoft.\n\nQualquer feedback, Relatórios de erros , ou sugestões serão bem vindas. Sendo um aplicativo de Código Aberto, você pode acessar o código fonte no GitHub, clicando na imagem no final da pagina .\n\nKhrys, desenvolvedor e jogador.</string>
+    <string name="abouttxt1">Este Aplicativo foi criado por Khrys, apenas mais um jogador qualquer de Rainbow Six Siege. Esse Aplicativo é de código aberto e não está afiliado a Ubisoft.\n\nQualquer feedback, Relatórios de erros , ou sugestões serão bem vindas. Sendo um aplicativo de Código Aberto, você pode acessar o código fonte no GitHub, clicando na imagem no final da página .\n\nKhrys, desenvolvedor e jogador.</string>
 
     <!--SUPPORT-->
     <string name="labelsupport">R6 Assistant - Colabore</string>
@@ -186,11 +186,12 @@
 
     <string name="university">Bartlett U.</string>
         <string name="university_cam_s1">(2º) Corredor da bússula</string>
-        <string name="university_cam_s2">(1º) Salão dos arcos</string>
-        <string name="university_cam_s3">(1º) Saguão</string>
-        <string name="university_cam_s4">(1º) Sala de jantar</string>
-        <string name="university_cam_s5">(EXT) Portão principal</string>
-        <string name="university_cam_s6">(EXT) Estacionamento</string>
+        <string name="university_cam_s2">(2º) Corredor de vista</string>
+        <string name="university_cam_s3">(1º) Salão dos arcos</string>
+        <string name="university_cam_s4">(1º) Saguão</string>
+        <string name="university_cam_s5">(1º) Sala de jantar</string>
+        <string name="university_cam_s6">(EXT) Portão principal</string>
+        <string name="university_cam_s7">(EXT) Estacionamento</string>
 
     <string name="coastline">Litoral</string>
         <string name="coastline_cam_s1">(1º) Corredor</string>
@@ -203,7 +204,7 @@
 
     <string name="destroyPhrase">%d</string>
     <string name="cameraPhrase">%d cameras</string>
-    <string name="cameraPhrase2_1">%d camera remaining</string>
+    <string name="cameraPhrase2_1">%d câmera remaining</string>
     <string name="cameraPhrase2_2">%d cameras remaining</string>
     <string name="cameraAllDestroyed">All cameras destroyed</string>
     <string name="destroyed">X</string>
@@ -237,5 +238,23 @@
     <string name="troll_face">Troll Face</string>
     <string name="star">Star</string>
     <string name="settingsicon">Icon Settings</string>
+    <!--WEAPON STATS CONTENT DESCRIPTION-->
+    <string name="name_weapon">Weapon Image</string>
+    <string name="op_1">Operator Icon 1</string>
+    <string name="op_2">Operator Icon 2</string>
+    <string name="op_3">Operator Icon 3</string>
+    <string name="op_4">Operator Icon 4</string>
+    <string name="ammo_icon">Ammo Icon</string>
+    <string name="firerate_icon">Fire rate Icon</string>
+    <string name="damagefall_icon">Damage fall off Icon</string>
+    <string name="rook_icon">Damage fall off Icon</string>
+    <string name="armor_light_icon">Light Amor Icon</string>
+    <string name="armor_medium_icon">Medium Amor Icon</string>
+    <string name="armor_heavy_icon">Heavy Amor Icon</string>
+    <string name="barrel_1">Image of the Barrel 1</string>
+    <string name="barrel_2">Image of the Barrel 2</string>
+    <string name="barrel_3">Image of the Barrel 3</string>
+    <string name="barrel_4">Image of the Barrel 4</string>
+    <string name="barrel_5">Image of the Barrel 5</string>
 
 </resources>
