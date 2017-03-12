@@ -12,6 +12,7 @@ import android.view.View;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -33,6 +34,9 @@ public class WeaponsFragment extends Fragment
         RecyclerView.LayoutManager mLayout;
 
         mRecycler = (RecyclerView) view.findViewById(R.id.WeaponsRecycler);
+
+        Button buttonBack = (Button) view.findViewById(R.id.buttonBack);
+        buttonBack.setVisibility(View.GONE);
 
         mRecycler.setHasFixedSize(true);
         mLayout = new LinearLayoutManager(getContext());
@@ -61,7 +65,7 @@ public class WeaponsFragment extends Fragment
             weaponstxt.add(tableArme[i]);
         }
 
-        mRecycler.setAdapter(new ListAdapterWeapons(1,weaponsimg,weaponstxt));
+        mRecycler.setAdapter(new ListAdapterWeapons(1,weaponsimg,weaponstxt, buttonBack));
     }
 
 }

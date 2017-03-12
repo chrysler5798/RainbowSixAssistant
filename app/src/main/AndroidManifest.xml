@@ -91,6 +91,10 @@
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
 
+        <activity android:name=".HelpStatsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
     </application>
 
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />

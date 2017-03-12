@@ -12,6 +12,7 @@ import android.view.View;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
+import android.widget.Button;
 
 import java.util.ArrayList;
 
@@ -33,6 +34,9 @@ public class OperatorsFragment extends Fragment
         RecyclerView.LayoutManager mLayout;
 
         mRecycler = (RecyclerView) view.findViewById(R.id.WeaponsRecycler);
+
+        Button buttonBack = (Button) view.findViewById(R.id.buttonBack);
+        buttonBack.setVisibility(View.GONE);
 
         mRecycler.setHasFixedSize(true);
         mLayout = new LinearLayoutManager(getContext());
@@ -65,7 +69,7 @@ public class OperatorsFragment extends Fragment
             weaponstxt.add(tableOps[i]);
         }
 
-        mRecycler.setAdapter(new ListAdapterWeapons(0,weaponsimg,weaponstxt));
+        mRecycler.setAdapter(new ListAdapterWeapons(0,weaponsimg,weaponstxt, buttonBack));
     }
 
 }

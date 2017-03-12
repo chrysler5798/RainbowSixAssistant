@@ -1,7 +1,10 @@
 package com.khrys.r6assistant;
 
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
@@ -29,6 +32,22 @@ public class WeaponMenuActivity extends AppCompatActivity
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
+        if (isFirstTime()) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(WeaponMenuActivity.this, R.style.MyAlertDialogStyle);
+            builder.setTitle(R.string.warning)
+                    .setMessage("This is a BETA ! \nIt means it could miss things.")
+                    .setIcon(R.drawable.info_icon)
+                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener()
+                    {
+                        public void onClick(DialogInterface dialog, int id)
+                        {
+
+                        }
+                    });
+            AlertDialog dialog = builder.create();
+            dialog.show();
+        }
+
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(), FragmentPagerItems.with(this)
                 .add(R.string.byoperator, OperatorsFragment.class)
@@ -40,6 +59,18 @@ public class WeaponMenuActivity extends AppCompatActivity
 
         SmartTabLayout viewPagerTab = (SmartTabLayout) findViewById(R.id.viewpagertab);
         viewPagerTab.setViewPager(viewPager);
+    }
+
+    private boolean isFirstTime()
+    {
+        SharedPreferences preferences = getPreferences(MODE_PRIVATE);
+        boolean ranBefore = preferences.getBoolean("RanBefore", false);
+        if (!ranBefore) {
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putBoolean("RanBefore", true);
+            editor.apply();
+        }
+        return !ranBefore;
     }
 
     @Override

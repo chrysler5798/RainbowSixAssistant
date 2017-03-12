@@ -1,5 +1,6 @@
 package com.khrys.r6assistant;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
@@ -162,7 +163,7 @@ public class WeaponActivity extends AppCompatActivity
                 weapon = new Object[]{"blackbeard", "", "", "", 21, 585, "21m", 30, 41, 27, 37, 21, 33, 24, 32, 22, 30, 16, 26, "flash_hider","muzzle_brake","compensator","suppressor",""};
                 break;
 
-            case "para 308":
+            case "para-308":
                 weapon = new Object[]{"capitao", "", "", "", 30, 650, "28m", 31, 42, 28, 38, 21, 33, 26, 35, 23, 31, 16, 26, "compensator","flash_hider","suppressor","muzzle_brake",""};
                 break;
 
@@ -368,9 +369,32 @@ public class WeaponActivity extends AppCompatActivity
         setupAgent(2,imgViewOp3);
         setupAgent(3,imgViewOp4);
 
-        txtViewAmmo.setText(String.valueOf(weapon[4]));
-        txtViewFirerate.setText(String.valueOf(weapon[5]));
-        txtViewDamagefall.setText(String.valueOf(weapon[6]));
+        if(weapon[4].equals(0))
+        {
+            txtViewAmmo.setText("-");
+        }
+        else
+        {
+            txtViewAmmo.setText(String.valueOf(weapon[4]));
+        }
+
+        if(weapon[5].equals(0))
+        {
+            txtViewFirerate.setText("-");
+        }
+        else
+        {
+            txtViewFirerate.setText(String.valueOf(weapon[5]));
+        }
+
+        if(String.valueOf(weapon[6]).equals(""))
+        {
+            txtViewDamagefall.setText("-");
+        }
+        else
+        {
+            txtViewDamagefall.setText(String.valueOf(weapon[6]));
+        }
 
         switchTextArmor(0);
 
@@ -492,6 +516,7 @@ public class WeaponActivity extends AppCompatActivity
                 return true;
 
             case R.id.action_help:
+                startActivity(new Intent(this, HelpStatsActivity.class));
                 return true;
 
             default:
