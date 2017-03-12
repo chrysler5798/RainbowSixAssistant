@@ -2,6 +2,7 @@ package com.khrys.r6assistant;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -474,6 +475,13 @@ public class WeaponActivity extends AppCompatActivity
     }
 
     @Override
+    public boolean onCreateOptionsMenu(Menu menu)
+    {
+        getMenuInflater().inflate(R.menu.menu_stats, menu);
+        return true;
+    }
+
+    @Override
     public boolean onOptionsItemSelected(MenuItem item) {
 
         switch (item.getItemId())
@@ -481,6 +489,9 @@ public class WeaponActivity extends AppCompatActivity
             case android.R.id.home:
 
                 this.finish();
+                return true;
+
+            case R.id.action_help:
                 return true;
 
             default:

@@ -41,95 +41,29 @@ public class OperatorsFragment extends Fragment
         ArrayList<Integer> weaponsimg = new ArrayList<>();
         ArrayList<String> weaponstxt = new ArrayList<>();
 
-        weaponsimg.add(R.drawable.o_kapkan);
-        weaponstxt.add("kapkan");
+        String tableOps[] = {"kapkan","tachanka","glaz","fuze",
+                            "iq","blitz","bandit","jäger",
+                            "rook","doc","twitch","montagne",
+                            "thermite","pulse","castle","ash",
+                            "thatcher","smoke","sledge","mute",
+                            "frost","buck",
+                            "valkyrie","blackbeard",
+                            "cãpitao","caveira",
+                            "echo","hibana",
+                            "mira", "jackal"};
 
-        weaponsimg.add(R.drawable.o_tachanka);
-        weaponstxt.add("tachanka");
+        for(int i = 0; i < 30; i++)
+        {
+            String img = "o_"+tableOps[i];
 
-        weaponsimg.add(R.drawable.o_glaz);
-        weaponstxt.add("glaz");
+            img = img.replace('ä','a');
+            img = img.replace('ã','a');
 
-        weaponsimg.add(R.drawable.o_fuze);
-        weaponstxt.add("fuze");
+            int imgid = getResources().getIdentifier(img, "drawable", view.getContext().getPackageName());
 
-        weaponsimg.add(R.drawable.o_iq);
-        weaponstxt.add("iq");
-
-        weaponsimg.add(R.drawable.o_blitz);
-        weaponstxt.add("blitz");
-
-        weaponsimg.add(R.drawable.o_bandit);
-        weaponstxt.add("bandit");
-
-        weaponsimg.add(R.drawable.o_jager);
-        weaponstxt.add("jäger");
-
-        weaponsimg.add(R.drawable.o_rook);
-        weaponstxt.add("rook");
-
-        weaponsimg.add(R.drawable.o_doc);
-        weaponstxt.add("doc");
-
-        weaponsimg.add(R.drawable.o_twitch);
-        weaponstxt.add("twitch");
-
-        weaponsimg.add(R.drawable.o_montagne);
-        weaponstxt.add("montagne");
-
-        weaponsimg.add(R.drawable.o_thermite);
-        weaponstxt.add("thermite");
-
-        weaponsimg.add(R.drawable.o_pulse);
-        weaponstxt.add("pulse");
-
-        weaponsimg.add(R.drawable.o_castle);
-        weaponstxt.add("castle");
-
-        weaponsimg.add(R.drawable.o_ash);
-        weaponstxt.add("ash");
-
-        weaponsimg.add(R.drawable.o_thatcher);
-        weaponstxt.add("thatcher");
-
-        weaponsimg.add(R.drawable.o_smoke);
-        weaponstxt.add("smoke");
-
-        weaponsimg.add(R.drawable.o_sledge);
-        weaponstxt.add("sledge");
-
-        weaponsimg.add(R.drawable.o_mute);
-        weaponstxt.add("mute");
-
-        weaponsimg.add(R.drawable.o_frost);
-        weaponstxt.add("frost");
-
-        weaponsimg.add(R.drawable.o_buck);
-        weaponstxt.add("buck");
-
-        weaponsimg.add(R.drawable.o_valkyrie);
-        weaponstxt.add("valkyrie");
-
-        weaponsimg.add(R.drawable.o_blackbeard);
-        weaponstxt.add("blackbeard");
-
-        weaponsimg.add(R.drawable.o_capitao);
-        weaponstxt.add("capitão");
-
-        weaponsimg.add(R.drawable.o_caveira);
-        weaponstxt.add("caveira");
-
-        weaponsimg.add(R.drawable.o_echo);
-        weaponstxt.add("echo");
-
-        weaponsimg.add(R.drawable.o_hibana);
-        weaponstxt.add("hibana");
-
-        weaponsimg.add(R.drawable.o_mira);
-        weaponstxt.add("mira");
-
-        weaponsimg.add(R.drawable.o_jackal);
-        weaponstxt.add("jackal");
+            weaponsimg.add(imgid);
+            weaponstxt.add(tableOps[i]);
+        }
 
         mRecycler.setAdapter(new ListAdapterWeapons(0,weaponsimg,weaponstxt));
     }
