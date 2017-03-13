@@ -21,18 +21,16 @@ public class MapActivity extends AppCompatActivity
 
     String map;
 
-    RecyclerView rv;
-
-    LinearLayoutManager LayoutM;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.activity_map);
 
         android.support.v7.app.ActionBar actionBar = getSupportActionBar();
-        if (actionBar != null) {
+        if (actionBar != null)
+        {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
@@ -46,7 +44,10 @@ public class MapActivity extends AppCompatActivity
         poscam = mapSwitch.SwitchPos();
         pics = mapSwitch.SwitcherPics();
 
-        rv = (RecyclerView) findViewById(R.id.recyclerViewMap);
+        TextView txtNbCam = (TextView) findViewById(R.id.textViewNbCam);
+        RecyclerView rv = (RecyclerView) findViewById(R.id.recyclerViewMap);
+
+        LinearLayoutManager LayoutM;
 
         if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
             LayoutM = new LinearLayoutManager(MapActivity.this, LinearLayoutManager.HORIZONTAL, false);
@@ -60,11 +61,8 @@ public class MapActivity extends AppCompatActivity
         rv.setAdapter(new ListAdapterMap(pics,poscam, type));
         rv.setLayoutManager(LayoutM);
 
-
-        TextView txtNbCam = (TextView) findViewById(R.id.textViewNbCam);
         String txtCam = String.format(getResources().getString(R.string.cameraPhrase), pics.size());
         txtNbCam.setText(txtCam);
-
     }
 
 

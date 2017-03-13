@@ -7,6 +7,13 @@
     <string name="go">Los</string>
     <string name="close">schließen</string>
 
+    <!--BASIC NUMBERS-->
+    <string name="n1">1</string>
+    <string name="n2">2</string>
+    <string name="n3">3</string>
+    <string name="n4">4</string>
+    <string name="n5">5</string>
+
     <!--MAIN MENU-->
     <string name="cameras">Kameras</string>
     <string name="twitch">Twitch</string>
@@ -23,6 +30,26 @@
     <string name="ratetitle">Bewerte R6 Assistant</string>
     <string name="ratemsg">Bewerte diese App und teile uns deine Meinung im Play Store</string>
     <string name="error_market">Fehler : nicht imstande den Play Store zu finden !</string>
+
+    <!--WEAPONS STATS-->
+    <string name="beta_msg">This is a BETA !\nIt means it could miss things.\nCheck out the Help button on the top-right corner</string>
+    <string name="byoperator">By operators</string>
+    <string name="byweapons">By weapons</string>
+    <string name="button_back">GO BACK</string>
+    <string name="legs">legs</string>
+    <string name="body">body</string>
+    <string name="rookarmor">Rook Armor</string>
+    <!--WEAPON STATS HELP-->
+    <string name="help_title">Weapon Stats \n BETA</string>
+    <string name="help_ammo">This is the number of ammo in a loader.</string>
+    <string name="help_firerate">This is the Fire rate, it\'s the frequency at which a specific weapon can fire or launch its projectiles</string>
+    <string name="help_damagefalloff">This is the Damage Falloff, it\'s the range where you start doing less damage</string>
+    <string name="help_armor">Damage against an operator with 1, 2 or 3 of armor</string>
+    <string name="help_armor_rook">Damage against an operator with 1, 2 or 3 of armor equipped with a rook armor</string>
+    <string name="help_barrel">At the bottom of stats page, you can see the ranking of barrels. \nThe first is the one which had the most reliable spray to control.\n Anyways it\'s up to you and your playstyle.</string>
+    <!--WEAPON STATS CREDIT-->
+    <string name="stats_credit_1">Thanks a lot to Segio for the sheet of stats ! Without him, nothing would have been possible. \nCLICK HERE to see his Youtube Channel</string>
+    <string name="stats_credit_2">Thanks a lot to VarsityGaming as well, for its videos about attachment ! \nCLICK HERE to see his Youtube Channel</string>
 
     <!--LOBBY MENU-->
     <string name="lobbytitle">LOBBY ID : %d</string>

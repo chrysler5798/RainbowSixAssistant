@@ -33,5 +33,4 @@
         android:scrollbarThumbVertical="@color/colorPrimary"
         android:scrollbars="vertical" />
 
-
 </LinearLayout>

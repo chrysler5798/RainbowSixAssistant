@@ -145,7 +145,7 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
              } else {
                  width1 = windowManager.getDefaultDisplay().getWidth();
              }
-             itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.MATCH_PARENT));
+             itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.WRAP_CONTENT));
         }
 
         void display(Integer idimg, Integer idtxt){
