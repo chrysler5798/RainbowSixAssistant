@@ -1,4 +1,4 @@
-package com.khrys.r6assistant;
+package com.khrys.r6assistant.weapons;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -12,6 +12,8 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
+
+import com.khrys.r6assistant.R;
 
 /*
  * Created by Chrysler on 3/10/2017.
@@ -132,7 +134,7 @@ public class WeaponActivity extends AppCompatActivity
                 break;
 
             case "556xi":
-                weapon = new Object[]{"thermite", "", "", "", 30, 670, "27m", 33, 45, 30, 40, 23, 36, 40, 80, 30, 70, 20, 60, "compensator","muzzle_brake","suppressor","flash_hider",""};
+                weapon = new Object[]{"thermite", "", "", "", 30, 670, "27m", 33, 45, 30, 40, 23, 36, 29, 39, 25, 34, 18, 29, "compensator","muzzle_brake","suppressor","flash_hider",""};
                 break;
 
             case "f2":

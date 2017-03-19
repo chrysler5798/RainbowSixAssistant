@@ -1,4 +1,4 @@
-package com.khrys.r6assistant;
+package com.khrys.r6assistant.about;
 
 import android.content.Intent;
 import android.net.Uri;
@@ -8,11 +8,13 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 
-/**
+import com.khrys.r6assistant.R;
+
+/*
  * Created by Chrysler on 12/18/2016.
  * <p>
  * RainbowSixPartner
- */
+*/
 
 public class AboutActivity extends AppCompatActivity
 {

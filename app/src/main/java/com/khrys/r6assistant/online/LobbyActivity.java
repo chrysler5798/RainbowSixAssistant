@@ -1,4 +1,4 @@
-package com.khrys.r6assistant;
+package com.khrys.r6assistant.online;
 
 import android.content.DialogInterface;
 import android.net.Uri;
@@ -12,6 +12,9 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.khrys.r6assistant.R;
+
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
@@ -26,11 +29,11 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-/**
+/*
  * Created by Chrysler on 12/23/2016.
  * <p>
  * RainbowSixAssistant
- */
+*/
 
 public class LobbyActivity extends AppCompatActivity
 {

@@ -1,4 +1,4 @@
-package com.khrys.r6assistant;
+package com.khrys.r6assistant.weapons;
 
 import android.content.DialogInterface;
 import android.content.Intent;
@@ -10,6 +10,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 
+import com.khrys.r6assistant.R;
 import com.ogaclejapan.smarttablayout.SmartTabLayout;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItemAdapter;
 import com.ogaclejapan.smarttablayout.utils.v4.FragmentPagerItems;

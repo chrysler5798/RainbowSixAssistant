@@ -2,10 +2,14 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:layout_margin="15dp"
+    android:layout_marginEnd="15dp"
+    android:layout_marginLeft="15dp"
+    android:layout_marginRight="15dp"
+    android:layout_marginStart="15dp"
+    android:layout_marginTop="20dp"
     android:background="@color/colorPrimary"
+    android:gravity="center"
     android:orientation="horizontal">
-
 
         <ImageView
             android:id="@+id/imageVarme"
@@ -20,8 +24,8 @@
             android:layout_weight="1"
             android:gravity="center_vertical"
             android:paddingStart="20dp"
-            android:text=""
+            android:paddingLeft="20dp"
             android:textAllCaps="true"
-            android:textColor="@color/white" />
+            android:textColor="@color/white"/>
 
 </LinearLayout>

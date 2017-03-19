@@ -13,13 +13,10 @@ import android.content.res.Configuration;
 import android.os.Bundle;
 import android.os.Handler;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import java.util.Locale;
 
-import static android.R.attr.y;
-import static android.R.string.yes;
-import static com.khrys.r6assistant.SettingsActivity.getDefaults;
+import static com.khrys.r6assistant.settings.SettingsActivity.getDefaults;
 
 public class SplashActivity extends Activity {
 

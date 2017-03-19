@@ -14,6 +14,9 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.Toast;
 
+import com.khrys.r6assistant.about.AboutActivity;
+import com.khrys.r6assistant.settings.SettingsActivity;
+import com.khrys.r6assistant.weapons.WeaponMenuActivity;
 
 public class MainActivity extends AppCompatActivity {
 

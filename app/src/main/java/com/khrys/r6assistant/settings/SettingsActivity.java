@@ -1,9 +1,8 @@
-package com.khrys.r6assistant;
+package com.khrys.r6assistant.settings;
 
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.SharedPreferences;
-import android.content.res.Resources;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.v7.app.AlertDialog;
@@ -12,15 +11,16 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Spinner;
+
+import com.khrys.r6assistant.R;
+
 import java.util.Locale;
 
-import static android.R.attr.type;
-
-/**
+/*
  * Created by Chrysler on 12/18/2016.
  * <p>
  * RainbowSixPartner
- */
+*/
 
 public class SettingsActivity extends AppCompatActivity
 {

@@ -1,4 +1,4 @@
-package com.khrys.r6assistant;
+package com.khrys.r6assistant.settings;
 
 import android.content.Context;
 import android.support.annotation.NonNull;
@@ -8,6 +8,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.khrys.r6assistant.R;
 
 /**
  * Created by Chrysler on 12/20/2016.

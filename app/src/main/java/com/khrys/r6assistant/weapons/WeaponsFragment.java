@@ -1,4 +1,4 @@
-package com.khrys.r6assistant;
+package com.khrys.r6assistant.weapons;
 
 /*
  * Created by Louis on 30/12/2016.
@@ -12,7 +12,8 @@ import android.view.View;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
-import android.widget.Button;
+
+import com.khrys.r6assistant.*;
 
 import java.util.ArrayList;
 
@@ -34,9 +35,6 @@ public class WeaponsFragment extends Fragment
         RecyclerView.LayoutManager mLayout;
 
         mRecycler = (RecyclerView) view.findViewById(R.id.WeaponsRecycler);
-
-        Button buttonBack = (Button) view.findViewById(R.id.buttonBack);
-        buttonBack.setVisibility(View.GONE);
 
         mRecycler.setHasFixedSize(true);
         mLayout = new LinearLayoutManager(getContext());
@@ -65,7 +63,7 @@ public class WeaponsFragment extends Fragment
             weaponstxt.add(tableArme[i]);
         }
 
-        mRecycler.setAdapter(new ListAdapterWeapons(1,weaponsimg,weaponstxt, buttonBack));
+        mRecycler.setAdapter(new com.khrys.r6assistant.weapons.ListAdapterWeapons(1,weaponsimg,weaponstxt));
     }
 
 }
