@@ -89,4 +89,3 @@ public class OperatorsFragment extends Fragment
         return parentObjects;
     }
 }
-
