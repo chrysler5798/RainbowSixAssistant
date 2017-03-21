@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
 
     <string-array name="g_l85a2">
         <item>thatcher</item>
@@ -361,8 +361,8 @@
         <item>0</item><item>0</item>
         <item>0</item><item>0</item>
 
-        <item />
-        <item />
+        <item>muzzle_brake</item>
+        <item>suppressor</item>
         <item />
         <item />
         <item />
@@ -384,8 +384,8 @@
         <item>0</item><item>0</item>
         <item>0</item><item>0</item>
 
-        <item />
-        <item />
+        <item>muzzle_brake</item>
+        <item>suppressor</item>
         <item />
         <item />
         <item />
@@ -407,8 +407,8 @@
         <item>0</item><item>0</item>
         <item>0</item><item>0</item>
 
-        <item />
-        <item />
+        <item>muzzle_brake</item>
+        <item>suppressor</item>
         <item />
         <item />
         <item />
@@ -430,8 +430,8 @@
         <item>16</item><item>22</item>
         <item>12</item><item>19</item>
 
-        <item />
-        <item />
+        <item>muzzle_brake</item>
+        <item>suppressor</item>
         <item />
         <item />
         <item />
@@ -476,9 +476,9 @@
         <item>0</item><item>0</item>
         <item>0</item><item>0</item>
 
-        <item />
-        <item />
-        <item />
+        <item>muzzle_brake</item>
+        <item>compensator</item>
+        <item>suppressor</item>
         <item />
         <item />
     </string-array>
@@ -499,8 +499,8 @@
         <item>0</item><item>0</item>
         <item>0</item><item>0</item>
 
-        <item />
-        <item />
+        <item>muzzle_brake</item>
+        <item>suppressor</item>
         <item />
         <item />
         <item />
@@ -522,8 +522,8 @@
         <item>24</item><item>32</item>
         <item>17</item><item>27</item>
 
-        <item />
-        <item />
+        <item>muzzle_brake</item>
+        <item>suppressor</item>
         <item />
         <item />
         <item />
@@ -545,8 +545,8 @@
         <item>0</item><item>0</item>
         <item>0</item><item>0</item>
 
-        <item />
-        <item />
+        <item>muzzle_brake</item>
+        <item>suppressor</item>
         <item />
         <item />
         <item />
@@ -591,8 +591,8 @@
         <item>21</item><item>29</item>
         <item>16</item><item>25</item>
 
-        <item />
-        <item />
+        <item>muzzle_brake</item>
+        <item>suppressor</item>
         <item />
         <item />
         <item />
@@ -637,8 +637,8 @@
         <item>0</item><item>0</item>
         <item>0</item><item>0</item>
 
-        <item />
-        <item />
+        <item>muzzle_brake</item>
+        <item>suppressor</item>
         <item />
         <item />
         <item />
@@ -660,8 +660,8 @@
         <item>0</item><item>0</item>
         <item>0</item><item>0</item>
 
-        <item />
-        <item />
+        <item>muzzle_brake</item>
+        <item>suppressor</item>
         <item />
         <item />
         <item />
@@ -775,9 +775,9 @@
         <item>0</item><item>0</item>
         <item>0</item><item>0</item>
 
-        <item />
-        <item />
-        <item />
+        <item>compensator</item>
+        <item>flash_hider</item>
+        <item>suppressor</item>
         <item />
         <item />
     </string-array>
@@ -959,7 +959,7 @@
         <item>0</item><item>0</item>
         <item>0</item><item>0</item>
 
-        <item />
+        <item>suppressor</item>
         <item />
         <item />
         <item />

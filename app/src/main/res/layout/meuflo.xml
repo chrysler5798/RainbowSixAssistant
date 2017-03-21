@@ -5,19 +5,28 @@
     android:layout_height="match_parent">
 
     <ImageView
+        android:id="@+id/imgVtroll"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/troll"
         android:adjustViewBounds="true"
-        android:contentDescription="@string/troll_face" />
+        android:contentDescription="@string/troll_face"
+        app:srcCompat="@drawable/troll" />
 
     <TextView
-        android:text="@string/meuflostring"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/textView"
-        android:textAlignment="center"
-        android:textSize="36sp"
+        android:layout_height="0dp"
         android:gravity="center"
-        android:textColor="@color/white"/>
+        android:text="@string/meuflostring"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="36sp"
+        android:layout_weight="1" />
+
+    <TextView
+        android:id="@+id/textVcounter"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textSize="24sp" />
 </LinearLayout>
