@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="maps">
+        <item>bank</item>
+        <item>chalet</item>
+        <item>clubhouse</item>
+        <item>consulate</item>
+        <item>hereford</item>
+        <item>house</item>
+        <item>kafedostoyevsky</item>
+        <item>kanal</item>
+        <item>oregon</item>
+        <item>plane</item>
+        <item>yacht</item>
+        <item>border</item>
+        <item>favela</item>
+        <item>skyscraper</item>
+        <item>university</item>
+        <item>coastline</item>
+    </string-array>
+
+
+    <string-array name="m0">
+        <item>bank</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="m1">
+        <item>chalet</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="m2">
+        <item>clubhouse</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="m3">
+        <item>consulate</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="m4">
+        <item>hereford</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="m5">
+        <item>house</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="m6">
+        <item>kafedostoyevsky</item>
+        <item>6</item>
+    </string-array>
+
+    <string-array name="m7">
+        <item>kanal</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="m8">
+        <item>oregon</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="m9">
+        <item>plane</item>
+        <item>5</item>
+    </string-array>
+
+    <string-array name="m10">
+        <item>yacht</item>
+        <item>8</item>
+    </string-array>
+
+    <string-array name="m11">
+        <item>border</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="m12">
+        <item>favela</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="m13">
+        <item>skyscraper</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="m14">
+        <item>university</item>
+        <item>7</item>
+    </string-array>
+
+    <string-array name="m15">
+        <item>coastline</item>
+        <item>7</item>
+    </string-array>
+
+</resources>

@@ -12,11 +12,10 @@ import android.widget.TextView;
 import java.util.ArrayList;
 
 
-/**
+/*
  * Created by Chrysler on 10/3/2016.
- * <p>
  * RainbowSixPartner
- */
+*/
 
 public class TwitchMapActivity extends Activity implements View.OnClickListener, ChangeCamRemInterface
 {
@@ -55,9 +54,7 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
         map = getIntent().getStringExtra("nommap");
         mapID = getIntent().getIntExtra("pos", 0);
 
-        mapSwitch = new MapSwitch(pics, poscam, mapID);
-        poscam = mapSwitch.SwitchPos();
-        pics = mapSwitch.SwitcherPics();
+        recyclerSetup();
 
         listAdapterMap = new ListAdapterMap(pics,poscam, type, this);
 
@@ -96,8 +93,7 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
                 defaultTxtSetup();
                 pics.clear();
                 poscam.clear();
-                poscam = mapSwitch.SwitchPos();
-                pics = mapSwitch.SwitcherPics();
+                recyclerSetup();
                 rv.removeAllViews();
                 rv.setAdapter(listAdapterMap);
                 notifyCamRem(pics.size());
@@ -133,6 +129,25 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
         String txtstr;
         txtstr = String.format(getResources().getString(R.string.destroyPhrase), gadget);
         txtView.setText(txtstr);
+    }
+
+    void recyclerSetup()
+    {
+        String arrayMapid = "m"+String.valueOf(mapID);
+        int arrayId = getResources().getIdentifier(arrayMapid, "array", getApplicationContext().getPackageName());
+
+        String[] infoMap = getResources().getStringArray(arrayId);
+        int nbCamera = Integer.parseInt(infoMap[1]);
+
+        for(int i = 1; i <= nbCamera; i++)
+        {
+            String idName = infoMap[0]+"_cam_s"+String.valueOf(i);
+            String idPic = "cam_"+infoMap[0]+"_"+String.valueOf(i);
+            int intName = getResources().getIdentifier(idName, "string", getApplicationContext().getPackageName());
+            int intPic = getResources().getIdentifier(idPic, "drawable", getApplicationContext().getPackageName());
+            poscam.add(intName);
+            pics.add(intPic);
+        }
     }
 
     @Override
@@ -194,7 +209,7 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
         }
     }
 
-    class algoButton
+    private class algoButton
     {
         algoButton(Context context, int gadget, TextView textView)
         {

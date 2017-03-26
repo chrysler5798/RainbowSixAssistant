@@ -3,6 +3,7 @@ package com.khrys.r6assistant;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.content.res.TypedArray;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -19,25 +20,22 @@ import android.widget.Toast;
 import java.util.List;
 
 
-/**
+/*
  * Created by Chrysler on 10/1/2016.
- * <p>
  * RainbowSixPartner
- */
+*/
 
 class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewHolder>
 {
 
         private int requesttype;
+        private List<Pair<Integer, Integer>> maps;
 
-
-        ListAdapterMapMenu (int request)
+        ListAdapterMapMenu (int request, List<Pair<Integer, Integer>> maps)
         {
             requesttype = request;
+            this.maps = maps;
         }
-
-        private MapSwitch mapS = new MapSwitch();
-        private List<Pair<Integer, Integer>> maps = mapS.SwitchMapName();
 
         @Override
         public int getItemCount()
@@ -74,15 +72,14 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
 
                 context = itemView.getContext();
 
-                 int width1;
                  WindowManager windowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
                  if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
-                     width1 = windowManager.getDefaultDisplay().getWidth();
+                     int width1 = windowManager.getDefaultDisplay().getWidth();
                      itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.MATCH_PARENT));
                  }
 
-                name = ((TextView) itemView.findViewById(R.id.map));
-                image = ((ImageView) itemView.findViewById(R.id.imgmap));
+                name = (TextView) itemView.findViewById(R.id.map);
+                image = (ImageView) itemView.findViewById(R.id.imgmap);
 
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override
@@ -123,7 +120,6 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
             void display(Pair<Integer, Integer> pair) {
                 name.setText(pair.first);
                 new SetImage(pair.second, image, context).execute();
-
             }
         }
 

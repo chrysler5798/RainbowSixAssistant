@@ -5,6 +5,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.MenuItem;
 import android.widget.TextView;
 import java.util.ArrayList;
@@ -40,9 +41,21 @@ public class MapActivity extends AppCompatActivity
         ArrayList<Integer> pics = new ArrayList<>();
         ArrayList<Integer> poscam = new ArrayList<>();
 
-        MapSwitch mapSwitch = new MapSwitch(pics, poscam, mapID);
-        poscam = mapSwitch.SwitchPos();
-        pics = mapSwitch.SwitcherPics();
+        String arrayMapid = "m"+String.valueOf(mapID);
+        int arrayId = getResources().getIdentifier(arrayMapid, "array", getApplicationContext().getPackageName());
+
+        String[] infoMap = getResources().getStringArray(arrayId);
+        int nbCamera = Integer.parseInt(infoMap[1]);
+
+        for(int i = 1; i <= nbCamera; i++)
+        {
+            String idName = infoMap[0]+"_cam_s"+String.valueOf(i);
+            String idPic = "cam_"+infoMap[0]+"_"+String.valueOf(i);
+            int intName = getResources().getIdentifier(idName, "string", getApplicationContext().getPackageName());
+            int intPic = getResources().getIdentifier(idPic, "drawable", getApplicationContext().getPackageName());
+            poscam.add(intName);
+            pics.add(intPic);
+        }
 
         TextView txtNbCam = (TextView) findViewById(R.id.textViewNbCam);
         RecyclerView rv = (RecyclerView) findViewById(R.id.recyclerViewMap);
