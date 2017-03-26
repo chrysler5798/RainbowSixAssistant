@@ -16,16 +16,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 /*
- * Created by Chrysler on 12/20/2016.
+ * Created by Khrys on 12/20/2016.
  * RainbowSixAssistant
 */
 
 public class MeufloActivity extends AppCompatActivity
 {
     TextView counter;
-
-    static final int CONNECTION_TIMEOUT=10000;
-    static final int READ_TIMEOUT=15000;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -68,8 +65,8 @@ public class MeufloActivity extends AppCompatActivity
             try
             {
                 conn = (HttpURLConnection)url.openConnection();
-                conn.setReadTimeout(READ_TIMEOUT);
-                conn.setConnectTimeout(CONNECTION_TIMEOUT);
+                conn.setReadTimeout(15000);
+                conn.setConnectTimeout(10000);
                 conn.setRequestMethod("GET");
                 conn.setDoInput(true);
                 conn.setDoOutput(true);
@@ -98,7 +95,7 @@ public class MeufloActivity extends AppCompatActivity
             catch (IOException e1)
             {
                 e1.printStackTrace();
-                return "exception";
+                return "";
             }
             finally
             {
