@@ -33,4 +33,5 @@ dependencies {
     compile 'com.ogaclejapan.smarttablayout:library:1.6.1@aar'
     compile 'com.ogaclejapan.smarttablayout:utils-v4:1.6.1@aar'
     compile 'com.bignerdranch.android:expandablerecyclerview:1.0.3'
+    compile 'ca.barrenechea.header-decor:header-decor:0.2.8'
 }

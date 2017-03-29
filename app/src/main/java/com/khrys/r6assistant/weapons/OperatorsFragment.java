@@ -20,6 +20,8 @@ import com.khrys.r6assistant.R;
 import java.util.ArrayList;
 import java.util.List;
 
+import ca.barrenechea.widget.recyclerview.decoration.StickyHeaderDecoration;
+
 public class OperatorsFragment extends Fragment
 {
 
@@ -44,6 +46,8 @@ public class OperatorsFragment extends Fragment
         mOperatorsListExpandableAdapter.setParentAndIconExpandOnClick(true);
 
         recyclerView.setAdapter(mOperatorsListExpandableAdapter);
+        StickyHeaderDecoration decor = new StickyHeaderDecoration(mOperatorsListExpandableAdapter);
+        recyclerView.addItemDecoration(decor);
     }
 
     private ArrayList<ParentObject> generateOperatorsList() {
