@@ -11,20 +11,20 @@ import android.view.MenuItem;
 import java.util.ArrayList;
 import java.util.List;
 
-/**
+/*
  * Created by Chrysler on 11/27/2016.
- * <p>
  * RainbowSixPartner
- */
+*/
 
 public class MapMenuActivity extends AppCompatActivity
 {
-    private GridLayoutManager lLayout;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
         super.onCreate(savedInstanceState);
+
+        GridLayoutManager lLayout;
 
         setContentView(R.layout.activity_mapmenu);
 

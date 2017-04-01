@@ -10,7 +10,6 @@ import com.khrys.r6assistant.R;
 
 /*
  * Created by Chrysler on 3/16/2017.
- * <p>
  * RainbowSixAssistant
 */
 
@@ -18,13 +17,12 @@ class OperatorsViewHolder extends ParentViewHolder {
 
     ImageView imageView;
     TextView mCrimeTitleTextView;
-    ImageButton mParentDropDownArrow;
 
     OperatorsViewHolder(View itemView) {
         super(itemView);
 
         imageView = (ImageView) itemView.findViewById(R.id.imageVarme);
         mCrimeTitleTextView = (TextView) itemView.findViewById(R.id.textVarme);
-        mParentDropDownArrow = (ImageButton) itemView.findViewById(R.id.parent_list_item_expand_arrow);
+        ImageButton mParentDropDownArrow = (ImageButton) itemView.findViewById(R.id.parent_list_item_expand_arrow);
     }
 }

@@ -13,9 +13,11 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.khrys.r6assistant.*;
+import com.khrys.r6assistant.R;
 
 import java.util.ArrayList;
+
+import ca.barrenechea.widget.recyclerview.decoration.StickyHeaderDecoration;
 
 public class WeaponsFragment extends Fragment
 {
@@ -63,7 +65,9 @@ public class WeaponsFragment extends Fragment
             weaponstxt.add(tableArme[i]);
         }
 
-        mRecycler.setAdapter(new com.khrys.r6assistant.weapons.ListAdapterWeapons(1,weaponsimg,weaponstxt));
+        WeaponsListAdapter mAdapter = new WeaponsListAdapter(1,weaponsimg,weaponstxt);
+        mRecycler.setAdapter(mAdapter);
+        mRecycler.addItemDecoration(new StickyHeaderDecoration(mAdapter));
     }
 
 }

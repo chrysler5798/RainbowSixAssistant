@@ -1,10 +1,6 @@
 package com.khrys.r6assistant;
 
-
-import android.util.Pair;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.List;
 
 /*
  * Created by Chrysler on 11/30/2016.
@@ -120,11 +116,13 @@ class MapSwitch
                 break;
 
             case 10:
-                posmap.add(0);
-                posmap.add(2);
-                posmap.add(R.drawable.map_favela_f0);
-                posmap.add(R.drawable.map_favela_f1);
-                posmap.add(R.drawable.map_favela_f2);
+                posmap.add(-1);
+                posmap.add(3);
+                posmap.add(R.drawable.map_yatch__1);
+                posmap.add(R.drawable.map_yatch_f0);
+                posmap.add(R.drawable.map_yatch_f1);
+                posmap.add(R.drawable.map_yatch_f2);
+                posmap.add(R.drawable.map_yatch_f3);
                 break;
 
             case 11:
@@ -136,13 +134,11 @@ class MapSwitch
                 break;
 
             case 12:
-                posmap.add(-1);
-                posmap.add(3);
-                posmap.add(R.drawable.map_yatch__1);
-                posmap.add(R.drawable.map_yatch_f0);
-                posmap.add(R.drawable.map_yatch_f1);
-                posmap.add(R.drawable.map_yatch_f2);
-                posmap.add(R.drawable.map_yatch_f3);
+                posmap.add(0);
+                posmap.add(2);
+                posmap.add(R.drawable.map_favela_f0);
+                posmap.add(R.drawable.map_favela_f1);
+                posmap.add(R.drawable.map_favela_f2);
                 break;
 
             case 13:
@@ -292,7 +288,4 @@ class MapSwitch
 
         return posmap;
     }
-
-
-
 }

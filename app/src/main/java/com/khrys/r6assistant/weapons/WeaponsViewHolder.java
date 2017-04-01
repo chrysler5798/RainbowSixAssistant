@@ -11,7 +11,6 @@ import com.khrys.r6assistant.R;
 
 /*
  * Created by Chrysler on 3/16/2017.
- * <p>
  * RainbowSixAssistant
 */
 

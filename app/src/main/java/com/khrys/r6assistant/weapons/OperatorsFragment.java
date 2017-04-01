@@ -20,8 +20,6 @@ import com.khrys.r6assistant.R;
 import java.util.ArrayList;
 import java.util.List;
 
-import ca.barrenechea.widget.recyclerview.decoration.StickyHeaderDecoration;
-
 public class OperatorsFragment extends Fragment
 {
 
@@ -38,16 +36,13 @@ public class OperatorsFragment extends Fragment
 
         RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.WeaponsRecycler);
 
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
-
         OperatorsListExpandableAdapter mOperatorsListExpandableAdapter = new OperatorsListExpandableAdapter(getContext(), generateOperatorsList());
         mOperatorsListExpandableAdapter.setCustomParentAnimationViewId(R.id.parent_list_item_expand_arrow);
         mOperatorsListExpandableAdapter.setParentClickableViewAnimationDefaultDuration();
         mOperatorsListExpandableAdapter.setParentAndIconExpandOnClick(true);
 
         recyclerView.setAdapter(mOperatorsListExpandableAdapter);
-        StickyHeaderDecoration decor = new StickyHeaderDecoration(mOperatorsListExpandableAdapter);
-        recyclerView.addItemDecoration(decor);
+        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 
     private ArrayList<ParentObject> generateOperatorsList() {

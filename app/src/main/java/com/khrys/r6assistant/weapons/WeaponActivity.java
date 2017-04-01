@@ -122,7 +122,7 @@ public class WeaponActivity extends AppCompatActivity
         setupAgent(2,imgViewOp3);
         setupAgent(3,imgViewOp4);
 
-        if(statsWeapon[4].equals(0))
+        if(statsWeapon[4].equals(""))
         {
             txtViewAmmo.setText("-");
         }
@@ -131,7 +131,7 @@ public class WeaponActivity extends AppCompatActivity
             txtViewAmmo.setText(String.valueOf(statsWeapon[4]));
         }
 
-        if(statsWeapon[5].equals(0))
+        if(statsWeapon[5].equals(""))
         {
             txtViewFirerate.setText("-");
         }
@@ -146,7 +146,8 @@ public class WeaponActivity extends AppCompatActivity
         }
         else
         {
-            txtViewDamagefall.setText(String.valueOf(statsWeapon[6]));
+            String txtDamage = statsWeapon[6]+"m";
+            txtViewDamagefall.setText(txtDamage);
         }
 
         switchTextArmor(0);
