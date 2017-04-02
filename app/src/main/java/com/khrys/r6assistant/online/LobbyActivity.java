@@ -31,7 +31,6 @@ import java.net.URL;
 
 /*
  * Created by Chrysler on 12/23/2016.
- * <p>
  * RainbowSixAssistant
 */
 

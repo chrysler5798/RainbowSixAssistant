@@ -18,7 +18,6 @@ import java.util.Locale;
 
 /*
  * Created by Chrysler on 12/18/2016.
- * <p>
  * RainbowSixPartner
 */
 

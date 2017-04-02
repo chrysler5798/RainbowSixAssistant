@@ -169,6 +169,7 @@ public class MapPlanActivity extends AppCompatActivity
                     currentfloorTxt -=1;
                     currentfloorImg -=1;
                     SetTextAndImg();
+
                 }
                 else
                 {
