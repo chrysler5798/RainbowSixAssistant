@@ -23,81 +23,113 @@
     <string-array name="m0">
         <item>bank</item>
         <item>7</item>
+        <item>-1</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="m1">
         <item>chalet</item>
         <item>6</item>
+        <item>-1</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="m2">
         <item>clubhouse</item>
         <item>7</item>
+        <item>-1</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="m3">
         <item>consulate</item>
         <item>8</item>
+        <item>-1</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="m4">
         <item>hereford</item>
         <item>6</item>
+        <item>-1</item>
+        <item>3</item>
     </string-array>
 
     <string-array name="m5">
         <item>house</item>
         <item>6</item>
+        <item>-1</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="m6">
         <item>kafedostoyevsky</item>
         <item>6</item>
+        <item>0</item>
+        <item>3</item>
     </string-array>
 
     <string-array name="m7">
         <item>kanal</item>
         <item>7</item>
+        <item>0</item>
+        <item>3</item>
     </string-array>
 
     <string-array name="m8">
         <item>oregon</item>
         <item>7</item>
+        <item>-1</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="m9">
         <item>plane</item>
         <item>5</item>
+        <item>-1</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="m10">
         <item>yacht</item>
         <item>8</item>
+        <item>-1</item>
+        <item>3</item>
     </string-array>
 
     <string-array name="m11">
         <item>border</item>
         <item>7</item>
+        <item>0</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="m12">
         <item>favela</item>
         <item>7</item>
+        <item>0</item>
+        <item>3</item>
     </string-array>
 
     <string-array name="m13">
         <item>skyscraper</item>
         <item>7</item>
+        <item>0</item>
+        <item>3</item>
     </string-array>
 
     <string-array name="m14">
         <item>university</item>
         <item>7</item>
+        <item />
+        <item />
     </string-array>
 
     <string-array name="m15">
         <item>coastline</item>
         <item>7</item>
+        <item />
+        <item />
     </string-array>
 
 </resources>

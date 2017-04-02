@@ -17,24 +17,24 @@ import android.widget.Toast;
 import java.util.ArrayList;
 import uk.co.senab.photoview.PhotoViewAttacher;
 
-/**
+/*
  * Created by Louis on 06/12/2016.
- * <p>
  * RainbowSixAssistant
- */
+*/
 
 public class MapPlanActivity extends AppCompatActivity
 {
 
-    int minfloor, maxfloor, currentfloorTxt, currentfloorImg, posdefault;
+    int minEtage, maxEtage, nbEtage, currentfloorTxt, currentfloorImg, posdefault;
     ArrayList<Integer> posmaps = new ArrayList<>();
 
     Switch switchPosRef;
-    MapSwitch mapSwitch;
 
     ImageView imageView;
     TextView TextViewFloor;
     PhotoViewAttacher mAttacher;
+
+    String[] infoMap;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -50,8 +50,6 @@ public class MapPlanActivity extends AppCompatActivity
 
         String map = getIntent().getStringExtra("nommap");
         int mapID = getIntent().getIntExtra("pos", 0);
-
-        mapSwitch = new MapSwitch(posmaps, mapID);
 
         switchPosRef = (Switch) findViewById(R.id.switchPos);
 
@@ -79,14 +77,15 @@ public class MapPlanActivity extends AppCompatActivity
         prevFloorBut.setOnClickListener(new ClickListenerMinusPlusFloor(1));
         nextFloorBut.setOnClickListener(new ClickListenerMinusPlusFloor(2));
 
-        if(switchPosRef.isChecked())
-        {
-            posmaps = mapSwitch.SwitchPosPlans();
-        }
-        else
-        {
-            posmaps = mapSwitch.SwitchPosPlansWithPos();
-        }
+        String arrayMapid = "m"+String.valueOf(mapID);
+        int arrayId = getResources().getIdentifier(arrayMapid, "array", getApplicationContext().getPackageName());
+
+        infoMap = getResources().getStringArray(arrayId);
+        minEtage = Integer.parseInt(infoMap[2]);
+        maxEtage = Integer.parseInt(infoMap[3]);
+        nbEtage = maxEtage-minEtage;
+
+        initPlans(infoMap[0],switchPosRef.isChecked());
 
         switchPosRef.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
         {
@@ -94,14 +93,7 @@ public class MapPlanActivity extends AppCompatActivity
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
             {
                 posmaps.clear();
-                if(isChecked)
-                {
-                    posmaps = mapSwitch.SwitchPosPlans();
-                }
-                else
-                {
-                    posmaps = mapSwitch.SwitchPosPlansWithPos();
-                }
+                initPlans(infoMap[0],isChecked);
                 setupVarAndImageAndFloor();
             }
         });
@@ -109,16 +101,29 @@ public class MapPlanActivity extends AppCompatActivity
         setupVarAndImageAndFloor();
     }
 
+    void initPlans(String nameMap, boolean posOn)
+    {
+        String ifPos = "";
+        if(posOn)
+        {
+            ifPos = "_pos";
+        }
+        String[] prefix = {"_1", "f0", "f1", "f2", "f3"};
+        for (int i = minEtage+1; i < maxEtage+2; i++)
+        {
+            String idPlan = "map_"+nameMap+"_"+prefix[i]+ifPos;
+            posmaps.add(getResources().getIdentifier(idPlan, "drawable", getApplicationContext().getPackageName()));
+        }
+    }
+
     void setupVarAndImageAndFloor()
     {
-        minfloor = posmaps.get(0);
-        maxfloor = posmaps.get(1);
-        posdefault = posmaps.get(2);
-        currentfloorImg = 2;
-        currentfloorTxt = minfloor;
+        posdefault = posmaps.get(0);
+        currentfloorImg = 0;
+        currentfloorTxt = minEtage;
 
         new SetImage(posdefault,0).execute();
-        TextViewFloor.setText(SwitchFloorTxt(minfloor));
+        TextViewFloor.setText(SwitchFloorTxt(minEtage));
     }
 
     String SwitchFloorTxt(int floor)
@@ -145,7 +150,7 @@ public class MapPlanActivity extends AppCompatActivity
         }
     }
 
-    class ClickListenerMinusPlusFloor implements View.OnClickListener
+    private class ClickListenerMinusPlusFloor implements View.OnClickListener
     {
         int requesttype;
 
@@ -159,7 +164,7 @@ public class MapPlanActivity extends AppCompatActivity
         {
             if(requesttype == 1)
             {
-                if(currentfloorTxt != minfloor)
+                if(currentfloorTxt != minEtage)
                 {
                     currentfloorTxt -=1;
                     currentfloorImg -=1;
@@ -172,7 +177,7 @@ public class MapPlanActivity extends AppCompatActivity
             }
             else if (requesttype == 2)
             {
-                if(currentfloorTxt != maxfloor)
+                if(currentfloorTxt != maxEtage)
                 {
                     currentfloorTxt +=1;
                     currentfloorImg +=1;

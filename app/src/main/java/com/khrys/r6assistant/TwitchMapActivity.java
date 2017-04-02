@@ -32,8 +32,6 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
 
     ListAdapterMap listAdapterMap;
 
-    MapSwitch mapSwitch;
-
     Context context;
 
     ArrayList<Integer> pics = new ArrayList<>();
