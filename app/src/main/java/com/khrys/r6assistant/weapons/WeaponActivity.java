@@ -122,7 +122,7 @@ public class WeaponActivity extends AppCompatActivity
         setupAgent(2,imgViewOp3);
         setupAgent(3,imgViewOp4);
 
-        if(statsWeapon[4].equals(""))
+        if(statsWeapon[4].equals("0"))
         {
             txtViewAmmo.setText("-");
         }
@@ -131,7 +131,7 @@ public class WeaponActivity extends AppCompatActivity
             txtViewAmmo.setText(String.valueOf(statsWeapon[4]));
         }
 
-        if(statsWeapon[5].equals(""))
+        if(statsWeapon[5].equals("0"))
         {
             txtViewFirerate.setText("-");
         }
@@ -158,9 +158,11 @@ public class WeaponActivity extends AppCompatActivity
             imgRookArmor.setVisibility(View.INVISIBLE);
         }
 
-        switchRookArmor.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+        switchRookArmor.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
+        {
             @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b) {
+            public void onCheckedChanged(CompoundButton compoundButton, boolean b)
+            {
 
                 int drawRook, draw1, draw2, draw3;
                 if(b)
@@ -205,7 +207,9 @@ public class WeaponActivity extends AppCompatActivity
             txtArmorB2.setText(String.valueOf(statsWeapon[10]));
             txtArmorL3.setText(String.valueOf(statsWeapon[11]));
             txtArmorB3.setText(String.valueOf(statsWeapon[12]));
-        } else {
+        }
+        else
+        {
             txtArmorL1.setText(String.valueOf(statsWeapon[13]));
             txtArmorB1.setText(String.valueOf(statsWeapon[14]));
             txtArmorL2.setText(String.valueOf(statsWeapon[15]));
@@ -213,7 +217,6 @@ public class WeaponActivity extends AppCompatActivity
             txtArmorL3.setText(String.valueOf(statsWeapon[17]));
             txtArmorB3.setText(String.valueOf(statsWeapon[18]));
         }
-
     }
 
     void setupAgent(int type, ImageView imgV)
@@ -260,8 +263,8 @@ public class WeaponActivity extends AppCompatActivity
     }
 
     @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
         switch (item.getItemId())
         {
             case android.R.id.home:
