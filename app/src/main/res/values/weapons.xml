@@ -43,6 +43,7 @@
     </string-array>
 
     <string-array name="kapkan">
+        <item>2</item>
         <item>9x19vsn</item>
         <item>sasg-12</item>
         <item>pmm</item>
@@ -50,6 +51,7 @@
     </string-array>
 
     <string-array name="tachanka">
+        <item>2</item>
         <item>9x19vsn</item>
         <item>sasg-12</item>
         <item>pmm</item>
@@ -57,12 +59,14 @@
     </string-array>
 
     <string-array name="glaz">
+        <item>1</item>
         <item>ots-03</item>
         <item>pmm</item>
         <item>gsh-18</item>
     </string-array>
 
     <string-array name="fuze">
+        <item>2</item>
         <item>6p41</item>
         <item>ak-12</item>
         <item>pmm</item>
@@ -70,6 +74,7 @@
     </string-array>
 
     <string-array name="iq">
+        <item>3</item>
         <item>aug</item>
         <item>552 commando</item>
         <item>g8a1</item>
@@ -77,22 +82,26 @@
     </string-array>
 
     <string-array name="blitz">
+        <item>0</item>
         <item>p12</item>
     </string-array>
 
     <string-array name="bandit">
+        <item>2</item>
         <item>mp7</item>
         <item>m870</item>
         <item>p12</item>
     </string-array>
 
     <string-array name="jager">
+        <item>2</item>
         <item>416-c carbine</item>
         <item>m870</item>
         <item>p12</item>
     </string-array>
 
     <string-array name="rook">
+        <item>3</item>
         <item>p90</item>
         <item>mp5</item>
         <item>sg-cqb</item>
@@ -101,6 +110,7 @@
     </string-array>
 
     <string-array name="doc">
+        <item>3</item>
         <item>p90</item>
         <item>mp5</item>
         <item>sg-cqb</item>
@@ -109,6 +119,7 @@
     </string-array>
 
     <string-array name="twitch">
+        <item>3</item>
         <item>f2</item>
         <item>417</item>
         <item>sg-cqb</item>
@@ -117,11 +128,13 @@
     </string-array>
 
     <string-array name="montagne">
+        <item>0</item>
         <item>lfp586</item>
         <item>p9</item>
     </string-array>
 
     <string-array name="thermite">
+        <item>2</item>
         <item>m1014</item>
         <item>556xi</item>
         <item>m45 meusoc</item>
@@ -129,6 +142,7 @@
     </string-array>
 
     <string-array name="pulse">
+        <item>2</item>
         <item>m1014</item>
         <item>ump45</item>
         <item>m45 meusoc</item>
@@ -136,6 +150,7 @@
     </string-array>
 
     <string-array name="castle">
+        <item>2</item>
         <item>m1014</item>
         <item>ump45</item>
         <item>m45 meusoc</item>
@@ -143,6 +158,7 @@
     </string-array>
 
     <string-array name="ash">
+        <item>2</item>
         <item>g36c</item>
         <item>r4-c</item>
         <item>m45 meusoc</item>
@@ -150,6 +166,7 @@
     </string-array>
 
     <string-array name="thatcher">
+        <item>3</item>
         <item>ar33</item>
         <item>l85a2</item>
         <item>m590a1</item>
@@ -157,6 +174,7 @@
     </string-array>
 
     <string-array name="smoke">
+        <item>2</item>
         <item>fmg-9</item>
         <item>m590a1</item>
         <item>p226 mk 25</item>
@@ -164,6 +182,7 @@
     </string-array>
 
     <string-array name="sledge">
+        <item>2</item>
         <item>l85a2</item>
         <item>m590a1</item>
         <item>p226 mk 25</item>
@@ -171,48 +190,56 @@
     </string-array>
 
     <string-array name="mute">
+        <item>2</item>
         <item>mp5k</item>
         <item>m590a1</item>
         <item>p226 mk 25</item>
     </string-array>
 
     <string-array name="frost">
+        <item>2</item>
         <item>c1</item>
         <item>super 90</item>
         <item>mk1</item>
     </string-array>
 
     <string-array name="buck">
+        <item>2</item>
         <item>c8-sfw</item>
         <item>camrs</item>
         <item>mk1</item>
     </string-array>
 
     <string-array name="valkyrie">
+        <item>2</item>
         <item>mpx</item>
         <item>spas-12</item>
         <item>d-50</item>
     </string-array>
 
     <string-array name="blackbeard">
+        <item>2</item>
         <item>sr-25</item>
         <item>mk17 cqb</item>
         <item>d-50</item>
     </string-array>
 
     <string-array name="capitao">
+        <item>2</item>
         <item>para-308</item>
         <item>m249</item>
         <item>prb92</item>
     </string-array>
 
     <string-array name="caveira">
+        <item>2</item>
         <item>m12</item>
         <item>spas-15</item>
         <item>luison</item>
     </string-array>
 
     <string-array name="echo">
+        <item>2</item>
         <item>supernova</item>
         <item>mp5sd</item>
         <item>p229</item>
@@ -220,6 +247,7 @@
     </string-array>
 
     <string-array name="hibana">
+        <item>2</item>
         <item>supernova</item>
         <item>type 89</item>
         <item>p229</item>
@@ -227,6 +255,7 @@
     </string-array>
 
     <string-array name="mira">
+        <item>2</item>
         <item>vector</item>
         <item>ita12l</item>
         <item>usp40</item>
@@ -234,6 +263,7 @@
     </string-array>
 
     <string-array name="jackal">
+        <item>3</item>
         <item>pdw9</item>
         <item>c7e</item>
         <item>ita12l</item>

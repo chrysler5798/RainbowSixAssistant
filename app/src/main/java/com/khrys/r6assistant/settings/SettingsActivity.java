@@ -125,7 +125,7 @@ public class SettingsActivity extends AppCompatActivity
                                 finish();
                             }
                         })
-                        .setIcon(R.drawable.info_icon)
+                        .setIcon(R.drawable.ic_info)
                         .show();
             }
 

@@ -10,13 +10,14 @@ import java.util.List;
  * RainbowSixAssistant
 */
 
-class Operators implements ParentObject {
-
+class Operators implements ParentObject
+{
     private List<Object> mChildrenList;
     private String name;
     private int image;
 
-    Operators(String name, int image) {
+    Operators(String name, int image)
+    {
         setName(name);
         setImage(image);
     }

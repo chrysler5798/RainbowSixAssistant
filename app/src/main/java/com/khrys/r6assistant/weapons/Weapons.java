@@ -6,21 +6,24 @@ package com.khrys.r6assistant.weapons;
  * RainbowSixAssistant
 */
 
-class Weapons {
-
+class Weapons
+{
     private int idImg;
     private String txtNom;
 
-    Weapons(int idImg, String txtNom) {
+    Weapons(int idImg, String txtNom)
+    {
         this.idImg = idImg;
         this.txtNom = txtNom;
     }
 
-    int getImg() {
+    int getImg()
+    {
         return idImg;
     }
 
-    String getNom() {
+    String getNom()
+    {
         return txtNom;
     }
 }

@@ -148,13 +148,15 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
              itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.WRAP_CONTENT));
         }
 
-        void display(Integer idimg, Integer idtxt){
+        void display(Integer idimg, Integer idtxt)
+        {
             image.setImageResource(idimg);
             image.setTag(idimg);
             txtpos.setText(idtxt);
         }
 
-        void removeAt(int position) {
+        void removeAt(int position)
+        {
             poscam.remove(position);
             pics.remove(position);
             notifyItemRemoved(position);

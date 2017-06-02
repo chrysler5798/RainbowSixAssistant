@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+    <string-array name="operatorsAtkDef">
+        <!--Attackers-->
+        <item>glaz</item>
+        <item>fuze</item>
+        <item>iq</item>
+        <item>blitz</item>
+        <item>twitch</item>
+        <item>montagne</item>
+        <item>thermite</item>
+        <item>ash</item>
+        <item>thatcher</item>
+        <item>sledge</item>
+        <item>buck</item>
+        <item>blackbeard</item>
+        <item>cãpitao</item>
+        <item>hibana</item>
+        <item>jackal</item>
+
+        <!--Defenders-->
+        <item>kapkan</item>
+        <item>tachanka</item>
+        <item>bandit</item>
+        <item>jäger</item>
+        <item>rook</item>
+        <item>doc</item>
+        <item>pulse</item>
+        <item>castle</item>
+        <item>smoke</item>
+        <item>mute</item>
+        <item>frost</item>
+        <item>valkyrie</item>
+        <item>caveira</item>
+        <item>echo</item>
+        <item>mira</item>
+    </string-array>
+
+    <string-array name="countriesArmy">
+        <item>russia</item>
+        <item>Spetsnaz</item>
+        <item>de</item>
+        <item>GSG9</item>
+        <item>fr</item>
+        <item>GIGN</item>
+        <item>usa</item>
+        <item>SWAT</item>
+        <item>uk</item>
+        <item>SAS</item>
+        <item>canada</item>
+        <item>JTF2</item>
+        <item>usa</item>
+        <item>Navy SEAL</item>
+        <item>brazil</item>
+        <item>BOPE</item>
+        <item>japan</item>
+        <item>S.A.T.</item>
+        <item>spain</item>
+        <item>G.E.O.</item>
+    </string-array>
+
+    <string-array name="spetsnaz">
+        <item>kapkan</item>
+        <item>tachanka</item>
+        <item>glaz</item>
+        <item>fuze</item>
+    </string-array>
+
+    <string-array name="gsg9">
+        <item>iq</item>
+        <item>blitz</item>
+        <item>bandit</item>
+        <item>jäger</item>
+    </string-array>
+
+    <string-array name="gign">
+        <item>rook</item>
+        <item>doc</item>
+        <item>twitch</item>
+        <item>montagne</item>
+    </string-array>
+
+    <string-array name="swat">
+        <item>thermite</item>
+        <item>pulse</item>
+        <item>castle</item>
+        <item>ash</item>
+    </string-array>
+
+    <string-array name="sas">
+        <item>thatcher</item>
+        <item>smoke</item>
+        <item>sledge</item>
+        <item>mute</item>
+    </string-array>
+
+    <string-array name="jtf2">
+        <item>frost</item>
+        <item>buck</item>
+    </string-array>
+
+    <string-array name="navy_seal">
+        <item>valkyrie</item>
+        <item>blackbeard</item>
+    </string-array>
+
+    <string-array name="bope">
+        <item>cãpitao</item>
+        <item>caveira</item>
+    </string-array>
+
+    <string-array name="s_a_t_">
+        <item>echo</item>
+        <item>hibana</item>
+    </string-array>
+
+    <string-array name="g_e_o_">
+        <item>mira</item>
+        <item>jackal</item>
+    </string-array>
+</resources>

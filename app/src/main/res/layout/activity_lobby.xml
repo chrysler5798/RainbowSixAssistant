@@ -33,7 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textVname1"
-        android:drawableLeft="@drawable/iconperson"
+        android:drawableLeft="@drawable/ic_person"
         android:gravity="center_vertical"
         android:layout_margin="5dp"
         android:textSize="20sp" />
@@ -42,7 +42,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textVname2"
-        android:drawableLeft="@drawable/iconperson"
+        android:drawableLeft="@drawable/ic_person"
         android:gravity="center_vertical"
         android:layout_margin="5dp"
         android:textSize="20sp" />
@@ -51,7 +51,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textVname3"
-        android:drawableLeft="@drawable/iconperson"
+        android:drawableLeft="@drawable/ic_person"
         android:gravity="center_vertical"
         android:layout_margin="5dp"
         android:textSize="20sp" />
@@ -60,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textVname4"
-        android:drawableLeft="@drawable/iconperson"
+        android:drawableLeft="@drawable/ic_person"
         android:gravity="center_vertical"
         android:layout_margin="5dp"
         android:textSize="20sp" />
@@ -69,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textVname5"
-        android:drawableLeft="@drawable/iconperson"
+        android:drawableLeft="@drawable/ic_person"
         android:gravity="center_vertical"
         android:layout_margin="5dp"
         android:textSize="20sp" />
@@ -105,8 +105,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:id="@+id/buttonStart"
-            android:drawableLeft="@drawable/iconplay"
-            android:drawableStart="@drawable/iconplay"
+            android:drawableLeft="@drawable/ic_play"
+            android:drawableStart="@drawable/ic_play"
             android:layout_weight="1" />
 
         <LinearLayout
@@ -120,8 +120,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/buttonCreate"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/icongroupadd"
-                android:drawableStart="@drawable/icongroupadd"/>
+                android:drawableLeft="@drawable/ic_groupadd"
+                android:drawableStart="@drawable/ic_groupadd"/>
 
             <Button
                 android:text="JOIN"
@@ -129,8 +129,8 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/buttonJoin"
                 android:layout_weight="1"
-                android:drawableLeft="@drawable/iconjoin"
-                android:drawableStart="@drawable/iconjoin"/>
+                android:drawableLeft="@drawable/ic_join"
+                android:drawableStart="@drawable/ic_join"/>
 
         </LinearLayout>
     </LinearLayout>

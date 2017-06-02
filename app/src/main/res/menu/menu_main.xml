@@ -8,6 +8,6 @@
     <item
         android:id="@+id/action_rate"
         android:title="@string/star"
-        android:icon="@drawable/staricon"
+        android:icon="@drawable/ic_star"
         app:showAsAction="always" />
 </menu>

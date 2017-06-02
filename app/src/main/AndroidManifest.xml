@@ -57,13 +57,6 @@
             android:label="@string/app_name">
         </activity>
 
-        <activity
-            android:name=".SupportActivity"
-            android:label="@string/labelsupport"
-            android:configChanges="orientation"
-            android:screenOrientation="portrait">
-        </activity>
-
         <activity android:name=".MeufloActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
@@ -85,6 +78,14 @@
             android:screenOrientation="portrait"/>
 
         <activity android:name=".weapons.HelpStatsActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".operators.OperatorMenuActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
+
+        <activity android:name=".operators.OperatorActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
 

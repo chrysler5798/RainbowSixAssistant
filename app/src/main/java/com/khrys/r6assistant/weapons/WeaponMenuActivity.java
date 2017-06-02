@@ -28,7 +28,7 @@ public class WeaponMenuActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
 
-        setContentView(R.layout.activity_menugun);
+        setContentView(R.layout.activity_menufragment);
 
         if(getSupportActionBar() != null)
         {
@@ -39,7 +39,7 @@ public class WeaponMenuActivity extends AppCompatActivity
             AlertDialog.Builder builder = new AlertDialog.Builder(WeaponMenuActivity.this, R.style.MyAlertDialogStyle);
             builder.setTitle(R.string.warning)
                     .setMessage(R.string.beta_msg)
-                    .setIcon(R.drawable.info_icon)
+                    .setIcon(R.drawable.ic_info)
                     .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener()
                     {
                         public void onClick(DialogInterface dialog, int id)

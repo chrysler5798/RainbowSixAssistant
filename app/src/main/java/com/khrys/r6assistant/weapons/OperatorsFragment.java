@@ -26,7 +26,7 @@ public class OperatorsFragment extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        return inflater.inflate(R.layout.fragment_weapons, container, false);
+        return inflater.inflate(R.layout.fragment_recycler, container, false);
     }
 
     @Override
@@ -45,7 +45,8 @@ public class OperatorsFragment extends Fragment
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 
-    private ArrayList<ParentObject> generateOperatorsList() {
+    private ArrayList<ParentObject> generateOperatorsList()
+    {
         List<Operators> operatorsList = new ArrayList<>();
 
         TypedArray tableOps = getResources().obtainTypedArray(R.array.operators);
@@ -73,7 +74,10 @@ public class OperatorsFragment extends Fragment
 
             ArrayList<Object> childList = new ArrayList<>();
 
-            for (String arme : opWeapon) {
+            for (int j = 1; j < opWeapon.length; j++)
+            {
+                String arme = opWeapon[j];
+
                 String imgArmeId = "g_" + arme;
                 imgArmeId = imgArmeId.replace('-', '_');
                 imgArmeId = imgArmeId.replace(' ', '_');

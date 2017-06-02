@@ -13,6 +13,7 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
+import com.khrys.r6assistant.HeaderListAdapter;
 import com.khrys.r6assistant.R;
 
 import java.util.ArrayList;
@@ -25,7 +26,7 @@ public class WeaponsFragment extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        return inflater.inflate(R.layout.fragment_weapons, container, false);
+        return inflater.inflate(R.layout.fragment_recycler, container, false);
     }
 
     @Override
@@ -53,19 +54,19 @@ public class WeaponsFragment extends Fragment
                               "m590a1","m1014","sg-cqb","sasg-12","m870","super 90","spas-12","spas-15","supernova","ita12l","ita12s",
                               "fmg-9","mp5k","ump45","mp5","p90","9x19vsn","mp7","c1","mpx","m12","mp5sd","pdw9","vector"};
 
-        for(int i = 0; i < 62; i++)
+        for (String aTableArme : tableArme)
         {
-            String img = "g_"+tableArme[i];
-            img = img.replace(' ','_');
-            img = img.replace('-','_');
+            String img = "g_" + aTableArme;
+            img = img.replace(' ', '_');
+            img = img.replace('-', '_');
 
             int imgid = getResources().getIdentifier(img, "drawable", view.getContext().getPackageName());
 
             weaponsimg.add(imgid);
-            weaponstxt.add(tableArme[i]);
+            weaponstxt.add(aTableArme);
         }
 
-        WeaponsListAdapter mAdapter = new WeaponsListAdapter(1,weaponsimg,weaponstxt);
+        HeaderListAdapter mAdapter = new HeaderListAdapter(weaponsimg,weaponstxt);
         mRecycler.setAdapter(mAdapter);
         mRecycler.addItemDecoration(new StickyHeaderDecoration(mAdapter));
     }

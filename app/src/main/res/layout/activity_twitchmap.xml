@@ -20,7 +20,7 @@
         <ImageButton
             android:layout_width="45dp"
             android:layout_height="match_parent"
-            android:src="@drawable/refresh_icon"
+            android:src="@drawable/ic_refresh"
             android:id="@+id/TwitchRefreshButton"
             android:background="@color/colorPrimary" />
     </LinearLayout>

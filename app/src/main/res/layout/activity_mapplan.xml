@@ -61,7 +61,7 @@
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/zoom_out"
+            app:srcCompat="@drawable/ic_zoom_out"
             android:id="@+id/buttonZoomOut"
             android:layout_weight="1"
             android:background="@android:color/transparent"
@@ -71,7 +71,7 @@
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/zoom_reset"
+            app:srcCompat="@drawable/ic_zoom_reset"
             android:id="@+id/buttonZoomReset"
             android:layout_weight="1"
             android:background="@android:color/transparent"
@@ -81,7 +81,7 @@
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:srcCompat="@drawable/zoom_in"
+            app:srcCompat="@drawable/ic_zoom_in"
             android:id="@+id/buttonZoomIn"
             android:layout_weight="1"
             android:background="@android:color/transparent"
@@ -93,7 +93,7 @@
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/plus_icon"
+        app:srcCompat="@drawable/ic_plus"
         android:id="@+id/buttonPlusFloor" />
 
     <TextView
@@ -109,7 +109,7 @@
     <ImageButton
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/minus_icon"
+        app:srcCompat="@drawable/ic_minus"
         android:id="@+id/buttonMinusFloor" />
 
 </LinearLayout>

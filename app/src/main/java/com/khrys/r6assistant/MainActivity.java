@@ -15,6 +15,7 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.khrys.r6assistant.about.AboutActivity;
+import com.khrys.r6assistant.operators.OperatorMenuActivity;
 import com.khrys.r6assistant.settings.SettingsActivity;
 import com.khrys.r6assistant.weapons.WeaponMenuActivity;
 
@@ -30,11 +31,13 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         setTitle(R.string.app_name);
 
-        Button buttoncamera = (Button) findViewById(R.id.buttonmain1);
-        Button buttontwitch = (Button) findViewById(R.id.buttonmain2);
-        Button buttonmapplans = (Button) findViewById(R.id.buttonmain3);
-        Button buttonweapon = (Button) findViewById(R.id.buttonmain4);
-        Button buttonmore = (Button) findViewById(R.id.buttonMore);
+        Button buttoncamera   = (Button) findViewById(R.id.buttonCamera);
+        Button buttontwitch   = (Button) findViewById(R.id.buttonTwitch);
+        Button buttonmap      = (Button) findViewById(R.id.buttonMap);
+        Button buttonweapon   = (Button) findViewById(R.id.buttonWeapon);
+        Button buttonoperator = (Button) findViewById(R.id.buttonOperator);
+        Button buttononline   = (Button) findViewById(R.id.buttonOnline);
+        Button buttonmore     = (Button) findViewById(R.id.buttonMore);
         ImageButton buttonset = (ImageButton) findViewById(R.id.buttonSettings);
 
         buttonweapon.setOnClickListener(new View.OnClickListener()
@@ -42,8 +45,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Intent myIntent = new Intent(MainActivity.this, WeaponMenuActivity.class);
-                startActivity(myIntent);
+                startAct(WeaponMenuActivity.class);
             }
         });
 
@@ -54,6 +56,24 @@ public class MainActivity extends AppCompatActivity {
             {
                 meuflotroll = 1;
                 return false;
+            }
+        });
+
+        buttonoperator.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startAct(OperatorMenuActivity.class);
+            }
+        });
+
+        buttononline.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Toast.makeText(getApplicationContext(), R.string.msgsoon, Toast.LENGTH_SHORT).show();
             }
         });
 
@@ -78,7 +98,12 @@ public class MainActivity extends AppCompatActivity {
 
         buttoncamera.setOnClickListener(new MenuCLickListener(1));
         buttontwitch.setOnClickListener(new MenuCLickListener(2));
-        buttonmapplans.setOnClickListener(new MenuCLickListener(3));
+        buttonmap.setOnClickListener(new MenuCLickListener(3));
+    }
+
+    private void startAct(Class classToGo)
+    {
+        startActivity(new Intent(MainActivity.this, classToGo));
     }
 
     private class MenuCLickListener implements View.OnClickListener
@@ -121,7 +146,7 @@ public class MainActivity extends AppCompatActivity {
                     AlertDialog.Builder builder = new AlertDialog.Builder(MainActivity.this, R.style.MyAlertDialogStyle);
                     builder.setTitle(R.string.ratetitle)
                             .setMessage(R.string.ratemsg)
-                            .setIcon(R.drawable.staricon)
+                            .setIcon(R.drawable.ic_star)
                             .setPositiveButton(R.string.go, new DialogInterface.OnClickListener()
                             {
                                 public void onClick(DialogInterface dialog, int id)
