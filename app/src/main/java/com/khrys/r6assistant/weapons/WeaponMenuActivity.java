@@ -35,22 +35,6 @@ public class WeaponMenuActivity extends AppCompatActivity
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        if (isFirstTime()) {
-            AlertDialog.Builder builder = new AlertDialog.Builder(WeaponMenuActivity.this, R.style.MyAlertDialogStyle);
-            builder.setTitle(R.string.warning)
-                    .setMessage(R.string.beta_msg)
-                    .setIcon(R.drawable.ic_info)
-                    .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener()
-                    {
-                        public void onClick(DialogInterface dialog, int id)
-                        {
-
-                        }
-                    });
-            AlertDialog dialog = builder.create();
-            dialog.show();
-        }
-
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(), FragmentPagerItems.with(this)
                 .add(R.string.byoperator, OperatorsFragment.class)
@@ -64,17 +48,7 @@ public class WeaponMenuActivity extends AppCompatActivity
         viewPagerTab.setViewPager(viewPager);
     }
 
-    private boolean isFirstTime()
-    {
-        SharedPreferences preferences = getPreferences(MODE_PRIVATE);
-        boolean ranBefore = preferences.getBoolean("RanBefore", false);
-        if (!ranBefore) {
-            SharedPreferences.Editor editor = preferences.edit();
-            editor.putBoolean("RanBefore", true);
-            editor.apply();
-        }
-        return !ranBefore;
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu)

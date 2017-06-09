@@ -41,7 +41,7 @@ public class HeaderListAdapter extends RecyclerView.Adapter<HeaderListAdapter.My
         return txt.size();
     }
 
-    boolean isWeapon()
+    private boolean isWeapon()
     {
         return getItemCount() > 60;
     }
@@ -157,34 +157,34 @@ public class HeaderListAdapter extends RecyclerView.Adapter<HeaderListAdapter.My
     @Override
     public void onBindHeaderViewHolder(HeaderHolder viewholder, int position)
     {
-        String txt = "";
+        int txtId = 0;
         if(isWeapon())
         {
             if(position<15){
-                txt = "Assault Rifle";
+                txtId = R.string.assault;
             }else if(position<29){
-                txt = "Pistols";
+                txtId = R.string.pistol;
             }else if(position<32){
-                txt = "Light Machine Gun";
+                txtId = R.string.lightmachine;
             }else if(position<34){
-                txt = "Machine Pistol";
+                txtId = R.string.machinepistol;
             }else if(position<38){
-                txt = "Marksman Rifle";
+                txtId = R.string.marksmanrifle;
             }else if(position<49){
-                txt = "Shotgun";
+                txtId = R.string.shotgun;
             }else if(position<62){
-                txt = "Submachine Gun";
+                txtId = R.string.submachinegun;
             }
         }
         else
         {
             if(position<15){
-                txt = "Attackers";
+                txtId = R.string.attackers;
             }else if(position<30){
-                txt = "Defenders";
+                txtId = R.string.defenders;
             }
         }
-        viewholder.header.setText(txt);
+        viewholder.header.setText(txtId);
     }
 
     class HeaderHolder extends RecyclerView.ViewHolder

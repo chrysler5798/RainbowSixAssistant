@@ -1,5 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources tools:ignore="MissingTranslation" xmlns:tools="http://schemas.android.com/tools">
+
+    <!--Operators sorted by army-->
+    <string-array name="operators">
+        <item>kapkan</item>
+        <item>tachanka</item>
+        <item>glaz</item>
+        <item>fuze</item>
+
+        <item>iq</item>
+        <item>blitz</item>
+        <item>bandit</item>
+        <item>jäger</item>
+
+        <item>rook</item>
+        <item>doc</item>
+        <item>twitch</item>
+        <item>montagne</item>
+
+        <item>thermite</item>
+        <item>pulse</item>
+        <item>castle</item>
+        <item>ash</item>
+
+        <item>thatcher</item>
+        <item>smoke</item>
+        <item>sledge</item>
+        <item>mute</item>
+
+        <item>frost</item>
+        <item>buck</item>
+
+        <item>valkyrie</item>
+        <item>blackbeard</item>
+
+        <item>cãpitao</item>
+        <item>caveira</item>
+
+        <item>echo</item>
+        <item>hibana</item>
+
+        <item>mira</item>
+        <item>jackal</item>
+    </string-array>
+
+    <!--Operators sorted by side-->
     <string-array name="operatorsAtkDef">
         <!--Attackers-->
         <item>glaz</item>
@@ -36,6 +81,7 @@
         <item>mira</item>
     </string-array>
 
+    <!--Army and country-->
     <string-array name="countriesArmy">
         <item>russia</item>
         <item>Spetsnaz</item>
@@ -59,6 +105,7 @@
         <item>G.E.O.</item>
     </string-array>
 
+    <!--Armies with their operators-->
     <string-array name="spetsnaz">
         <item>kapkan</item>
         <item>tachanka</item>
@@ -117,5 +164,445 @@
     <string-array name="g_e_o_">
         <item>mira</item>
         <item>jackal</item>
+    </string-array>
+
+    <!--Operators info-->
+    <string-array name="kapkan">
+        <item>def</item>
+        <item>russia</item><item>Spetsnaz</item>
+        <item>4</item>
+        <item>2</item>
+        <item>9x19vsn</item>
+        <item>sasg-12</item>
+        <item>pmm</item>
+        <item>gsh-18</item>
+        <item>1</item><item>3</item>
+        <item>2</item><item>barbed</item>
+        <item>1</item><item>nitro</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="tachanka">
+        <item>def</item>
+        <item>russia</item><item>Spetsnaz</item>
+        <item>4</item>
+        <item>2</item>
+        <item>9x19vsn</item>
+        <item>sasg-12</item>
+        <item>pmm</item>
+        <item>gsh-18</item>
+        <item>1</item><item>3</item>
+        <item>2</item><item>barbed</item>
+        <item>1</item><item>shield</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="glaz">
+        <item>atk</item>
+        <item>russia</item><item>Spetsnaz</item>
+        <item>3</item>
+        <item>1</item>
+        <item>ots-03</item>
+        <item>pmm</item>
+        <item>gsh-18</item>
+        <item>2</item><item>2</item>
+        <item>3</item><item>smoke</item>
+        <item>1</item><item>claymore</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="fuze">
+        <item>atk</item>
+        <item>russia</item><item>Spetsnaz</item>
+        <item>4</item>
+        <item>2</item>
+        <item>6p41</item>
+        <item>ak-12</item>
+        <item>pmm</item>
+        <item>gsh-18</item>
+        <item>1</item><item>3</item>
+        <item>3</item><item>breach</item>
+        <item>3</item><item>smoke</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="iq">
+        <item>atk</item>
+        <item>de</item><item>GSG9</item>
+        <item>4</item>
+        <item>3</item>
+        <item>aug</item>
+        <item>552 commando</item>
+        <item>g8a1</item>
+        <item>p12</item>
+        <item>3</item><item>1</item>
+        <item>3</item><item>breach</item>
+        <item>2</item><item>frag</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="blitz">
+        <item>atk</item>
+        <item>de</item><item>GSG9</item>
+        <item>1</item>
+        <item>0</item>
+        <item>p12</item>
+        <item>1</item><item>3</item>
+        <item>3</item><item>smoke</item>
+        <item>3</item><item>breach</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="bandit">
+        <item>def</item>
+        <item>de</item><item>GSG9</item>
+        <item>3</item>
+        <item>2</item>
+        <item>mp7</item>
+        <item>m870</item>
+        <item>p12</item>
+        <item>3</item><item>1</item>
+        <item>3</item><item>barbed</item>
+        <item>1</item><item>nitro</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="jager">
+        <item>def</item>
+        <item>de</item><item>GSG9</item>
+        <item>3</item>
+        <item>2</item>
+        <item>416-c carbine</item>
+        <item>m870</item>
+        <item>p12</item>
+        <item>3</item><item>1</item>
+        <item>1</item><item>shield</item>
+        <item>2</item><item>barbed</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="rook">
+        <item>def</item>
+        <item>fr</item><item>GIGN</item>
+        <item>5</item>
+        <item>3</item>
+        <item>p90</item>
+        <item>mp5</item>
+        <item>sg-cqb</item>
+        <item>lfp586</item>
+        <item>p9</item>
+        <item>1</item><item>3</item>
+        <item>1</item><item>shield</item>
+        <item>2</item><item>impact</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="doc">
+        <item>def</item>
+        <item>fr</item><item>GIGN</item>
+        <item>5</item>
+        <item>3</item>
+        <item>p90</item>
+        <item>mp5</item>
+        <item>sg-cqb</item>
+        <item>lfp586</item>
+        <item>p9</item>
+        <item>1</item><item>3</item>
+        <item>1</item><item>shield</item>
+        <item>2</item><item>barbed</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="twitch">
+        <item>atk</item>
+        <item>fr</item><item>GIGN</item>
+        <item>5</item>
+        <item>3</item>
+        <item>f2</item>
+        <item>417</item>
+        <item>sg-cqb</item>
+        <item>lfp586</item>
+        <item>p9</item>
+        <item>2</item><item>2</item>
+        <item>1</item><item>claymore</item>
+        <item>3</item><item>breach</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="montagne">
+        <item>atk</item>
+        <item>fr</item><item>GIGN</item>
+        <item>2</item>
+        <item>0</item>
+        <item>lfp586</item>
+        <item>p9</item>
+        <item>1</item><item>3</item>
+        <item>2</item><item>stun</item>
+        <item>2</item><item>smoke</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="thermite">
+        <item>atk</item>
+        <item>usa</item><item>SWAT</item>
+        <item>4</item>
+        <item>2</item>
+        <item>m1014</item>
+        <item>556xi</item>
+        <item>m45 meusoc</item>
+        <item>57 usg</item>
+        <item>2</item><item>2</item>
+        <item>1</item><item>claymore</item>
+        <item>3</item><item>stun</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="pulse">
+        <item>def</item>
+        <item>usa</item><item>SWAT</item>
+        <item>4</item>
+        <item>2</item>
+        <item>m1014</item>
+        <item>ump45</item>
+        <item>m45 meusoc</item>
+        <item>57 usg</item>
+        <item>3</item><item>1</item>
+        <item>2</item><item>barbed</item>
+        <item>1</item><item>nitro</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="castle">
+        <item>def</item>
+        <item>usa</item><item>SWAT</item>
+        <item>4</item>
+        <item>2</item>
+        <item>m1014</item>
+        <item>ump45</item>
+        <item>m45 meusoc</item>
+        <item>57 usg</item>
+        <item>2</item><item>2</item>
+        <item>1</item><item>shield</item>
+        <item>2</item><item>impact</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="ash">
+        <item>atk</item>
+        <item>usa</item><item>SWAT</item>
+        <item>4</item>
+        <item>2</item>
+        <item>g36c</item>
+        <item>r4-c</item>
+        <item>m45 meusoc</item>
+        <item>57 usg</item>
+        <item>3</item><item>1</item>
+        <item>3</item><item>breach</item>
+        <item>3</item><item>stun</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="thatcher">
+        <item>atk</item>
+        <item>uk</item><item>SAS</item>
+        <item>4</item>
+        <item>3</item>
+        <item>ar33</item>
+        <item>l85a2</item>
+        <item>m590a1</item>
+        <item>p226 mk 25</item>
+        <item>2</item><item>2</item>
+        <item>3</item><item>breach</item>
+        <item>1</item><item>claymore</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="smoke">
+        <item>def</item>
+        <item>uk</item><item>SAS</item>
+        <item>4</item>
+        <item>2</item>
+        <item>fmg-9</item>
+        <item>m590a1</item>
+        <item>p226 mk 25</item>
+        <item>smg-11</item>
+        <item>2</item><item>2</item>
+        <item>2</item><item>barbed</item>
+        <item>2</item><item>impact</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="sledge">
+        <item>atk</item>
+        <item>uk</item><item>SAS</item>
+        <item>4</item>
+        <item>2</item>
+        <item>l85a2</item>
+        <item>m590a1</item>
+        <item>p226 mk 25</item>
+        <item>smg-11</item>
+        <item>2</item><item>2</item>
+        <item>2</item><item>frag</item>
+        <item>3</item><item>stun</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="mute">
+        <item>def</item>
+        <item>uk</item><item>SAS</item>
+        <item>3</item>
+        <item>2</item>
+        <item>mp5k</item>
+        <item>m590a1</item>
+        <item>p226 mk 25</item>
+        <item>2</item><item>2</item>
+        <item>1</item><item>nitro</item>
+        <item>1</item><item>shield</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="frost">
+        <item>def</item>
+        <item>canada</item><item>JTF2</item>
+        <item>3</item>
+        <item>2</item>
+        <item>c1</item>
+        <item>super 90</item>
+        <item>mk1</item>
+        <item>2</item><item>2</item>
+        <item>1</item><item>shield</item>
+        <item>2</item><item>barbed</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="buck">
+        <item>atk</item>
+        <item>canada</item><item>JTF2</item>
+        <item>3</item>
+        <item>2</item>
+        <item>c8-sfw</item>
+        <item>camrs</item>
+        <item>mk1</item>
+        <item>2</item><item>2</item>
+        <item>3</item><item>stun</item>
+        <item>2</item><item>frag</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="valkyrie">
+        <item>def</item>
+        <item>usa</item><item>Navy SEAL</item>
+        <item>3</item>
+        <item>2</item>
+        <item>mpx</item>
+        <item>spas-12</item>
+        <item>d-50</item>
+        <item>2</item><item>2</item>
+        <item>1</item><item>shield</item>
+        <item>1</item><item>nitro</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="blackbeard">
+        <item>atk</item>
+        <item>usa</item><item>Navy SEAL</item>
+        <item>3</item>
+        <item>2</item>
+        <item>sr-25</item>
+        <item>mk17 cqb</item>
+        <item>d-50</item>
+        <item>2</item><item>2</item>
+        <item>3</item><item>breach</item>
+        <item>3</item><item>stun</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="capitao">
+        <item>atk</item>
+        <item>brazil</item><item>BOPE</item>
+        <item>3</item>
+        <item>2</item>
+        <item>para-308</item>
+        <item>m249</item>
+        <item>prb92</item>
+        <item>3</item><item>1</item>
+        <item>1</item><item>claymore</item>
+        <item>2</item><item>stun</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="caveira">
+        <item>def</item>
+        <item>brazil</item><item>BOPE</item>
+        <item>3</item>
+        <item>2</item>
+        <item>m12</item>
+        <item>spas-15</item>
+        <item>luison</item>
+        <item>3</item><item>1</item>
+        <item>2</item><item>impact</item>
+        <item>3</item><item>barbed</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="echo">
+        <item>def</item>
+        <item>japan</item><item>S.A.T.</item>
+        <item>4</item>
+        <item>2</item>
+        <item>supernova</item>
+        <item>mp5sd</item>
+        <item>p229</item>
+        <item>bearing 9</item>
+        <item>1</item><item>3</item>
+        <item>2</item><item>barbed</item>
+        <item>1</item><item>shield</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="hibana">
+        <item>atk</item>
+        <item>japan</item><item>S.A.T.</item>
+        <item>4</item>
+        <item>2</item>
+        <item>supernova</item>
+        <item>type 89</item>
+        <item>p229</item>
+        <item>bearing 9</item>
+        <item>3</item><item>1</item>
+        <item>3</item><item>stun</item>
+        <item>1</item><item>claymore</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="mira">
+        <item>def</item>
+        <item>spain</item><item>G.E.O.</item>
+        <item>4</item>
+        <item>2</item>
+        <item>vector</item>
+        <item>ita12l</item>
+        <item>usp40</item>
+        <item>ita12s</item>
+        <item>1</item><item>3</item>
+        <item>1</item><item>shield</item>
+        <item>1</item><item>nitro</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="jackal">
+        <item>atk</item>
+        <item>spain</item><item>G.E.O.</item>
+        <item>5</item>
+        <item>3</item>
+        <item>pdw9</item>
+        <item>c7e</item>
+        <item>ita12l</item>
+        <item>usp40</item>
+        <item>ita12s</item>
+        <item>2</item><item>2</item>
+        <item>3</item><item>breach</item>
+        <item>3</item><item>smoke</item>
+        <item></item>
     </string-array>
 </resources>

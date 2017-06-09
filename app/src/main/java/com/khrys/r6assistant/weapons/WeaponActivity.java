@@ -1,5 +1,6 @@
 package com.khrys.r6assistant.weapons;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -12,8 +13,10 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.khrys.r6assistant.R;
+import com.khrys.r6assistant.operators.OperatorActivity;
 
 /*
  * Created by Chrysler on 3/10/2017.
@@ -176,9 +179,9 @@ public class WeaponActivity extends AppCompatActivity
                 else
                 {
                     drawRook = R.drawable.o_rook_bw;
-                    draw1 = R.drawable.armor_light;
-                    draw2 = R.drawable.armor_medium;
-                    draw3 = R.drawable.armor_strong;
+                    draw1 = R.drawable.ostat_armor_1;
+                    draw2 = R.drawable.ostat_armor_2;
+                    draw3 = R.drawable.ostat_armor_3;
                     switchTextArmor(0);
                 }
 
@@ -223,9 +226,11 @@ public class WeaponActivity extends AppCompatActivity
     {
         if(!statsWeapon[type].equals(""))
         {
-            String op = "o_"+String.valueOf(statsWeapon[type]);
+            String opeB = String.valueOf(statsWeapon[type]);
+            String op = "o_"+opeB;
             int imgid = getResources().getIdentifier(op, "drawable", getPackageName());
             imgV.setImageResource(imgid);
+            imgV.setOnClickListener(new clickImgOperator(opeB));
         }
         else
         {
@@ -278,6 +283,26 @@ public class WeaponActivity extends AppCompatActivity
 
             default:
                 return super.onOptionsItemSelected(item);
+        }
+    }
+
+    private class clickImgOperator implements View.OnClickListener
+    {
+        String operator = "";
+
+        clickImgOperator(String operator)
+        {
+            super();
+            this.operator = operator;
+        }
+
+        @Override
+        public void onClick(View view)
+        {
+            Context context = view.getContext();
+            Intent newOperator = new Intent(context, OperatorActivity.class);
+            newOperator.putExtra("operator", operator);
+            context.startActivity(newOperator);
         }
     }
 }

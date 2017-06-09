@@ -106,19 +106,19 @@
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/armor_light"
+                        app:srcCompat="@drawable/ostat_armor_1"
                         android:contentDescription="@string/armor_light_icon" />
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/armor_medium"
+                        app:srcCompat="@drawable/ostat_armor_2"
                         android:contentDescription="@string/armor_medium_icon"/>
 
                     <ImageView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/armor_strong"
+                        app:srcCompat="@drawable/ostat_armor_3"
                         android:contentDescription="@string/armor_heavy_icon"/>
                 </LinearLayout>
 

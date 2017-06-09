@@ -65,16 +65,18 @@ public class OperatorsFragment extends Fragment
         tableOps.recycle();
 
         ArrayList<ParentObject> parentObjects = new ArrayList<>();
-        for (Operators operators : operatorsList) {
+        for (Operators operators : operatorsList)
+        {
             String op = operators.getName();
             op = op.replace('ä','a');
             op = op.replace('ã','a');
             int arrayId = getResources().getIdentifier(op, "array", getContext().getPackageName());
             String[] opWeapon = getResources().getStringArray(arrayId);
+            int endWeapons = Integer.parseInt(opWeapon[3])+5;
 
             ArrayList<Object> childList = new ArrayList<>();
 
-            for (int j = 1; j < opWeapon.length; j++)
+            for (int j = 5; j < endWeapons; j++)
             {
                 String arme = opWeapon[j];
 

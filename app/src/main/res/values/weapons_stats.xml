@@ -260,7 +260,7 @@
         <item />
         <item />
 
-        <item>21</item><item>585</item><item>21</item>
+        <item>20</item><item>585</item><item>21</item>
 
         <item>30</item><item>41</item>
         <item>27</item><item>37</item>
@@ -789,7 +789,7 @@
         <item />
         <item />
 
-        <item>12</item><item>660</item><item>30</item>
+        <item>10</item><item>660</item><item>30</item>
 
         <item>49</item><item>66</item>
         <item>44</item><item>59</item>
@@ -1226,7 +1226,7 @@
         <item />
         <item />
 
-        <item>51</item><item>970</item><item>18</item>
+        <item>50</item><item>970</item><item>18</item>
 
         <item>15</item><item>20</item>
         <item>13</item><item>18</item>
@@ -1295,7 +1295,7 @@
         <item />
         <item />
 
-        <item>35</item><item>575</item><item>15</item>
+        <item>34</item><item>575</item><item>15</item>
 
         <item>31</item><item>42</item>
         <item>32</item><item>38</item>
@@ -1425,5 +1425,4 @@
         <item>flash_hider</item>
         <item />
     </string-array>
-
 </resources>

@@ -7,6 +7,7 @@
               android:weightSum="1">
 
     <ScrollView
+        android:id="@+id/globalScroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="0.4">
@@ -33,30 +34,28 @@
                         android:layout_width="match_parent"
                         android:layout_height="0dp"
                         android:layout_marginBottom="15dp"
-                        android:orientation="horizontal"
-                        android:layout_weight="1">
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
 
                         <ImageView
                             android:id="@+id/iconOperator"
                             android:layout_width="0dp"
                             android:layout_height="wrap_content"
+                            android:layout_weight="0.5"
                             android:adjustViewBounds="true"
-                            android:background="@color/colorPrimary"
-                            app:srcCompat="@drawable/o_mira"
-                            android:layout_weight="1"/>
+                            android:background="@color/colorPrimary" />
 
                         <TextView
                             android:id="@+id/textName"
-                            android:layout_width="wrap_content"
+                            android:layout_width="0dp"
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:background="@color/colorPrimary"
                             android:gravity="center"
-                            android:text="Mira"
                             android:textAlignment="center"
                             android:textAllCaps="true"
                             android:textColor="@color/white"
-                            android:textSize="22sp"/>
+                            android:textSize="22sp" />
 
                     </LinearLayout>
 
@@ -73,8 +72,7 @@
                             android:layout_height="match_parent"
                             android:layout_weight="1"
                             android:adjustViewBounds="true"
-                            android:background="@color/colorPrimary"
-                            app:srcCompat="@drawable/os_def"/>
+                            android:background="@color/colorPrimary" />
 
                         <TextView
                             android:id="@+id/textSide"
@@ -83,11 +81,10 @@
                             android:layout_weight="1"
                             android:background="@color/colorPrimary"
                             android:gravity="center"
-                            android:text="Defender"
                             android:textAlignment="center"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="22sp"/>
+                            android:textSize="22sp" />
 
                     </LinearLayout>
 
@@ -104,8 +101,7 @@
                             android:layout_weight="1"
                             android:adjustViewBounds="true"
                             android:background="@color/colorPrimary"
-                            android:padding="10dp"
-                            app:srcCompat="@drawable/flag_spain"/>
+                            android:padding="10dp" />
 
                         <TextView
                             android:id="@+id/textArmy"
@@ -114,11 +110,10 @@
                             android:layout_weight="1"
                             android:background="@color/colorPrimary"
                             android:gravity="center"
-                            android:text="G.E.O"
                             android:textAlignment="center"
                             android:textAllCaps="false"
                             android:textColor="@color/white"
-                            android:textSize="22sp"/>
+                            android:textSize="22sp" />
 
                     </LinearLayout>
 
@@ -128,8 +123,7 @@
                     android:id="@+id/imageOperator"
                     android:layout_width="wrap_content"
                     android:layout_height="match_parent"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/oi_mira"/>
+                    android:layout_weight="1" />
             </LinearLayout>
 
             <LinearLayout
@@ -150,11 +144,11 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingTop="5dp"
-                        android:text="Speed"
+                        android:text="@string/speed"
                         android:textAlignment="center"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:textSize="18sp"/>
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:id="@+id/imageSpeed"
@@ -164,17 +158,16 @@
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:paddingStart="10dp"
-                        app:srcCompat="@drawable/speed_slow"/>
+                        app:srcCompat="@drawable/ostat_speed_1" />
 
                     <TextView
                         android:id="@+id/textSpeed"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:paddingBottom="5dp"
-                        android:text="High"
                         android:textAlignment="center"
                         android:textColor="@color/white"
-                        android:textSize="18sp"/>
+                        android:textSize="18sp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -184,16 +177,15 @@
                     android:orientation="vertical">
 
                     <TextView
-                        android:id="@+id/textView5"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:paddingTop="5dp"
-                        android:text="Armor"
+                        android:text="@string/armor"
                         android:textAlignment="center"
                         android:textAllCaps="true"
                         android:textColor="@color/white"
-                        android:textSize="18sp"/>
+                        android:textSize="18sp" />
 
                     <ImageView
                         android:id="@+id/imageArmor"
@@ -204,7 +196,7 @@
                         android:paddingLeft="10dp"
                         android:paddingRight="10dp"
                         android:paddingStart="10dp"
-                        app:srcCompat="@drawable/armor_strong"/>
+                        app:srcCompat="@drawable/ostat_armor_1" />
 
                     <TextView
                         android:id="@+id/textArmor"
@@ -212,10 +204,9 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
                         android:paddingBottom="5dp"
-                        android:text="High"
                         android:textAlignment="center"
                         android:textColor="@color/white"
-                        android:textSize="18sp"/>
+                        android:textSize="18sp" />
                 </LinearLayout>
 
             </LinearLayout>
@@ -226,10 +217,11 @@
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:text="Primary"
+                android:paddingTop="5dp"
+                android:text="@string/primary"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="20sp"/>
+                android:textSize="20sp" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recyclerPrimary"
@@ -248,34 +240,159 @@
                 android:layout_marginTop="20dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:text="Secondary"
+                android:paddingTop="5dp"
+                android:text="@string/secondary"
                 android:textAlignment="center"
                 android:textColor="@color/white"
-                android:textSize="20sp"/>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                android:orientation="horizontal">
-
-                <ImageView
-                    android:id="@+id/imageView2"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    app:srcCompat="@drawable/ga_breach"/>
-            </LinearLayout>
+                android:textSize="20sp" />
 
             <android.support.v7.widget.RecyclerView
                 android:id="@+id/recyclerSecondary"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:paddingBottom="20dp"/>
+                android:paddingBottom="20dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:paddingBottom="10dp"
+                android:paddingTop="5dp"
+                android:text="@string/gadget"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryLight"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNumGadget1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/txtNameGadget1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/imageGadget1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/gad_frag" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center"
+                    android:text="@string/or"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@color/colorPrimaryLight"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/txtNumGadget2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/white"
+                        android:textSize="24sp" />
+
+                    <TextView
+                        android:id="@+id/txtNameGadget2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="center"
+                        android:textColor="@color/white" />
+
+                    <ImageView
+                        android:id="@+id/imageGadget2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        app:srcCompat="@drawable/gad_breach" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:text="@string/ugadget"
+                android:paddingBottom="5dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <TextView
+                android:id="@+id/titleUniqueGadget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingBottom="10dp"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="20sp" />
+
+            <ImageView
+                android:id="@+id/imageUniqueGadget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:adjustViewBounds="true"
+                android:background="@color/colorPrimary"
+                app:srcCompat="@drawable/ga_blackbeard" />
+
+            <TextView
+                android:id="@+id/textUniqueGadget"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_weight="1"
+                android:background="@color/colorPrimary"
+                android:padding="10dp"
+                android:text=""
+                android:textAlignment="textStart"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
 
         </LinearLayout>
     </ScrollView>
-
 </LinearLayout>

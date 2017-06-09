@@ -215,7 +215,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="10dp"
-                    android:src="@drawable/armor_light"
+                    android:src="@drawable/ostat_armor_1"
                     android:contentDescription="@string/armor_light_icon" />
 
                 <TextView
@@ -250,7 +250,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/armor_medium"
+                    android:src="@drawable/ostat_armor_2"
                     android:contentDescription="@string/armor_medium_icon" />
 
                 <TextView
@@ -283,7 +283,7 @@
                     android:layout_marginBottom="10dp"
                     android:layout_marginEnd="10dp"
                     android:layout_marginStart="10dp"
-                    android:src="@drawable/armor_strong"
+                    android:src="@drawable/ostat_armor_3"
                     android:contentDescription="@string/armor_heavy_icon" />
 
                 <TextView
