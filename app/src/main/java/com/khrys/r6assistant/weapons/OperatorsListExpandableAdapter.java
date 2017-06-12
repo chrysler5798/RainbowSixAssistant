@@ -75,7 +75,6 @@ class OperatorsViewHolder extends ParentViewHolder
 
         imageView = (ImageView) itemView.findViewById(R.id.imageVarme);
         mCrimeTitleTextView = (TextView) itemView.findViewById(R.id.textVarme);
-        ImageButton mParentDropDownArrow = (ImageButton) itemView.findViewById(R.id.parent_list_item_expand_arrow);
     }
 }
 

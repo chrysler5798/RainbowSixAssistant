@@ -21,7 +21,7 @@
     <string name="mapplans">Maps &amp; Pläne</string>
     <string name="online">Online</string>
     <string name="guns">Weapons Stats</string>
-    <string name="operators">Operators</string>
+    <string name="operators">Operator</string>
     <string name="more">Mehr</string>
 
     <!--SOON MSG-->
@@ -42,13 +42,20 @@
     <string name="rookarmor">Rook Armor</string>
 
     <!--WEAPONS STATS CLASS-->
-    <string name="assault">Assault Rifle</string>
-    <string name="pistol">Pistols</string>
-    <string name="lightmachine">Light Machine Gun</string>
-    <string name="machinepistol">Machine Pistol</string>
-    <string name="marksmanrifle">Marksman Rifle</string>
-    <string name="shotgun">Shotgun</string>
-    <string name="submachinegun">Submachine Gun</string>
+    <string name="assault">Sturmgewehr</string>
+    <string name="pistol">Kurzwaffe</string>
+    <string name="lightmachine">Leichtes Maschinengewehr</string>
+    <string name="machinepistol">Reihenfeuerpistole</string>
+    <string name="marksmanrifle">Scharfschützengewehr</string>
+    <string name="shotgun">Schrotflinte</string>
+    <string name="submachinegun">Maschinenpistole</string>
+
+    <!--WEAPONS BARRELS-->
+    <string name="compensator">Kompensator</string>
+    <string name="flash_hider">Mündungsfeuerdämpfer </string>
+    <string name="muzzle_brake">Mündungsbremse</string>
+    <string name="suppressor">Schalldämpfer</string>
+    <string name="extended_barrel">Verlängerter Lauf</string>
 
     <!--WEAPON STATS HELP-->
     <string name="help_title">Weapon Stats \n BETA</string>
@@ -69,8 +76,8 @@
     <string name="defenders">Defenders</string>
 
     <!--OPERATORS-->
-    <string name="attacker">Attacker</string>
-    <string name="defender">Defender</string>
+    <string name="attacker">Angreifer</string>
+    <string name="defender">Verteidiger</string>
     <string name="armor_light">Light</string>
     <string name="armor_heavy">Heavy</string>
     <string name="speed_slow">Slow</string>
@@ -86,14 +93,14 @@
     <string name="ugadget">Unique gadget</string>
 
     <!--OPERATORS GADGET-->
-    <string name="gad_barbed">Barbed wires</string>
-    <string name="gad_breach">Breach charges</string>
-    <string name="gad_frag">Frag grenades</string>
-    <string name="gad_nitro">Nitro cell</string>
-    <string name="gad_shield">Deployable shield</string>
-    <string name="gad_smoke">Smoke grenades</string>
-    <string name="gad_stun">Stun grenades</string>
-    <string name="gad_impact">Impact grenades</string>
+    <string name="gad_barbed">Stacheldraht</string>
+    <string name="gad_breach">Sprengladung</string>
+    <string name="gad_frag">Splittergranate</string>
+    <string name="gad_nitro">Nitro-handy</string>
+    <string name="gad_shield">Mobiler Schild</string>
+    <string name="gad_smoke">Rauchgranate</string>
+    <string name="gad_stun">Betäubungsgranate</string>
+    <string name="gad_impact">Kontaktgranate</string>
     <string name="gad_claymore">Claymore</string>
 
     <!--OPERATORS UNIQUE GADGET DESCRIPTION-->
@@ -192,7 +199,6 @@
 
     <!--MORE MENU-->
     <string name="about">Über</string>
-    <string name="support">Unterstütze mich</string>
     <string name="settings">Einstellungen</string>
 
     <!--ABOUT-->
@@ -201,7 +207,7 @@
 
     <!--SUPPORT-->
     <string name="labelsupport">R6 Assistant - Unterstütze mich</string>
-    <string name="supporttxt">Diese Anwednung ist völlig kostenfrei, keine Werbung und keine kostenpflichtige Features. Alleine mit dem herunterladen dieser Anwednung, oder deines Feedbacks und dem bewerten dieser Anwednung, damit tust du mir bereits ein riesen Gefallen, ein Dankeschön an alle !\n\n Ich habe darin viel Zeit investiert, das ganze habe ich natürlich gerne gemacht, doch sollte jemand spenden wollen , bitte unten klicken. Solltest du spenden, wird dein Name demnächst in der App erscheinen.\n\n Vielen Dank an euch ! \nKhrys</string>
+    <string name="supporttxt">Diese Anwednung ist völlig kostenfrei, keine Werbung und keine kostenpflichtige Features. Alleine mit dem herunterladen dieser Anwednung, oder deines Feedbacks und dem bewerten dieser Anwednung, damit tust du mir bereits ein riesen Gefallen, ein Dankeschön an alle !\n\n Ich habe darin viel Zeit investiert, das ganze habe ich natürlich gerne gemacht, doch sollte jemand spenden wollen, bitte unten klicken. Solltest du spenden, wird dein Name demnächst in der App erscheinen.\n\n Vielen Dank an euch ! \nKhrys</string>
 
     <!--SETTINGS-->
     <string name="labelsettings">R6 Assistant - Einstellungen</string>
@@ -212,14 +218,16 @@
     <string name="language">Sprache</string>
     <string name="english">Englisch</string>
     <string name="french">Französisch</string>
-    <string name="portuguese">Portuguese</string>
-    <string name="italian">Italian</string>
-    <string name="german">German</string>
+    <string name="portuguese">Portugiesisch</string>
+    <string name="italian">Italienisch</string>
+    <string name="german">Deutsche</string>
+    <string name="russian">Russisch</string>
 
     <!--CREDIT TO TRANSLATORS-->
     <string name="translator_pt">LeGuigo</string>
     <string name="translator_de">Mert Huz</string>
     <string name="translator_it">Andrea Verano</string>
+    <string name="translator_ru">Maxim Lem</string>
 
     <!--MAP MENU-->
     <string name="takemap">Wähle eine Map</string>

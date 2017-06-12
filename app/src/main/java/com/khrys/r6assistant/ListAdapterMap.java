@@ -3,6 +3,7 @@ package com.khrys.r6assistant;
 import android.content.Context;
 import android.content.Intent;
 import android.content.res.Configuration;
+import android.graphics.Point;
 import android.os.SystemClock;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
@@ -137,15 +138,6 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
                      }
                  });
              }
-
-             int width1;
-             WindowManager windowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
-             if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
-                 width1 = windowManager.getDefaultDisplay().getWidth()/2;
-             } else {
-                 width1 = windowManager.getDefaultDisplay().getWidth();
-             }
-             itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.WRAP_CONTENT));
         }
 
         void display(Integer idimg, Integer idtxt)

@@ -34,7 +34,7 @@ class CountryListExpandableAdapter extends ExpandableRecyclerAdapter<OperatorsVi
     @Override
     public OperatorsViewHolder onCreateParentViewHolder(ViewGroup viewGroup)
     {
-        View view = mInflater.inflate(R.layout.list_operators, viewGroup, false);
+        View view = mInflater.inflate(R.layout.list_countries, viewGroup, false);
         return new OperatorsViewHolder(view);
     }
 
@@ -51,7 +51,6 @@ class CountryListExpandableAdapter extends ExpandableRecyclerAdapter<OperatorsVi
         Country countries = (Country) c;
         operatorsViewHolder.mCrimeTitleTextView.setText(countries.getName());
         operatorsViewHolder.imageView.setImageResource(countries.getImage());
-        operatorsViewHolder.imageView.setPadding(50,50,50,50);
     }
 
     @Override

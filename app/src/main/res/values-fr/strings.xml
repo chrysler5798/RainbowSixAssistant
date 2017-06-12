@@ -50,6 +50,13 @@
     <string name="shotgun">Fusil à pompe</string>
     <string name="submachinegun">Mitraillette</string>
 
+    <!--WEAPONS BARRELS-->
+    <string name="compensator">Compensateur</string>
+    <string name="flash_hider">Cache-flamme</string>
+    <string name="muzzle_brake">Frein de bouche</string>
+    <string name="suppressor">Silencieux</string>
+    <string name="extended_barrel">Canon allongé</string>
+
     <!--WEAPON STATS HELP-->
     <string name="help_title">Stats Armes</string>
     <string name="help_ammo">Ceci est le nombre de balles dans un chargeur.</string>
@@ -192,7 +199,6 @@
 
     <!--MORE MENU-->
     <string name="about">A propos</string>
-    <string name="support">Me supporter</string>
     <string name="settings">Options</string>
 
     <!--ABOUT-->
@@ -213,13 +219,14 @@
     <string name="english">Anglais</string>
     <string name="french">Français</string>
     <string name="portuguese">Portugais</string>
-    <string name="italian">Italian</string>
-    <string name="german">German</string>
+    <string name="italian">Italien</string>
+    <string name="german">Allemand</string>
 
     <!--CREDIT TO TRANSLATORS-->
     <string name="translator_pt">LeGuigo</string>
     <string name="translator_de">Mert Huz</string>
     <string name="translator_it">Andrea Verano</string>
+    <string name="translator_ru">Maxim Lem</string>
 
     <!--MAP MENU-->
     <string name="takemap">Selectionne une carte</string>
@@ -419,5 +426,6 @@
     <string name="barrel_3">Image of the Barrel 3</string>
     <string name="barrel_4">Image of the Barrel 4</string>
     <string name="barrel_5">Image of the Barrel 5</string>
+    <string name="russian">Russe</string>
 
 </resources>

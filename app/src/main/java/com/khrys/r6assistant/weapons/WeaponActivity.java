@@ -246,8 +246,10 @@ public class WeaponActivity extends AppCompatActivity
     {
         if(!statsWeapon[type].equals(""))
         {
-            String finaltxt = String.valueOf(statsWeapon[type]).toUpperCase();
-            txtV.setText(finaltxt.replace('_',' '));
+
+            String finaltxt = String.valueOf(statsWeapon[type]);
+            int txtId = getResources().getIdentifier(finaltxt, "string", getPackageName());
+            txtV.setText(getResources().getString(txtId).toUpperCase());
 
             String txt = String.valueOf(statsWeapon[type]);
             String bar = "gb_"+txt;

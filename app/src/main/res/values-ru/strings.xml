@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--GLOBAL TEXT-->
+    <string name="app_name">R6 Assistant</string>
+
+    <!--BASIC WORDS-->
+    <string name="go">ВПЕРЕД</string>
+    <string name="or">ИЛИ</string>
+    <string name="close">ЗАКРЫТЬ</string>
+
+    <!--BASIC NUMBERS-->
+    <string name="n1">1</string>
+    <string name="n2">2</string>
+    <string name="n3">3</string>
+    <string name="n4">4</string>
+    <string name="n5">5</string>
+
+    <!--MAIN MENU-->
+    <string name="cameras">Камеры</string>
+    <string name="twitch">Twitch</string>
+    <string name="mapplans">Карты и Планы</string>
+    <string name="online">Online</string>
+    <string name="guns">Характеристики оружия</string>
+    <string name="operators">Оперативники</string>
+    <string name="more">Больше</string>
+
+    <!--SOON MSG-->
+    <string name="soon">Скоро…</string>
+    <string name="msgsoon">Эта функция появится в ближайшем будущем!</string>
+
+    <!--RATE APP POPUP-->
+    <string name="ratetitle">Оценить R6 Assistant</string>
+    <string name="ratemsg">Оцените приложение и напишите отзыв в Play Store!</string>
+    <string name="error_market">Ошибка: не удается найти приложение в Play Store!</string>
+
+    <!--WEAPONS STATS-->
+    <string name="beta_msg">Это БЕТА!\nЭто значит, что мы можем что-то упустить. Мы работаем над переводом!</string>
+    <string name="byoperator">По оперативникам</string>
+    <string name="byweapons">По оружиям</string>
+    <string name="legs">ноги</string>
+    <string name="body">тело</string>
+    <string name="rookarmor">Броня Rook\'а</string>
+
+    <!--WEAPONS STATS CLASS-->
+    <string name="assault">Штурмовые Винтовки</string>
+    <string name="pistol">Пистолеты</string>
+    <string name="lightmachine">Легкие Пулемёты</string>
+    <string name="machinepistol">Автоматические Пистолеты</string>
+    <string name="marksmanrifle">Снайперские Винтовки</string>
+    <string name="shotgun">Дробовики</string>
+    <string name="submachinegun">Пистолеты-Пулемёты</string>
+
+    <!--WEAPONS BARRELS-->
+    <string name="compensator">Надульник</string>
+    <string name="flash_hider">Пламегаситель</string>
+    <string name="muzzle_brake">Дульный тормоз</string>
+    <string name="suppressor">Глушитель</string>
+    <string name="extended_barrel">Удлиненный ствол</string>
+
+    <!--WEAPON STATS HELP-->
+    <string name="help_title">Характеристики Оружия</string>
+    <string name="help_ammo">Это количество патронов в обойме.</string>
+    <string name="help_firerate">Это скорострельность, с этой частотой оружие может выпускать пули. </string>
+    <string name="help_damagefalloff">Это спад урона. Длина, после которой пули начинают наносить меньше урона.</string>
+    <string name="help_armor">Урон оперативнику с 1, 2 или 3 показателями брони.</string>
+    <string name="help_armor_rook">Урон оперативнику с 1, 2 или 3 показателями брони с бронёй Rook\'а.</string>
+    <string name="help_barrel">В нижней части страницы вы можете видеть статистику с рейтингом наствольников. \nПервый из них может сделать надежную управляемую длинную очередь. В любом случае, это зависит от вашего стиля игры.</string>
+
+    <!--WEAPON STATS CREDIT-->
+    <string name="stats_credit_1">Большое спасибо Segio за таблицу со статистикой! Без него ничего бы не получилось.\nНАЖМИ ЗДЕСЬ, чтобы перейти на его YouTube Канал</string>
+    <string name="stats_credit_2">Также большое спасибо VarsityGaming за его преданность к игре, выражая это в видео!\nНАЖМИ ЗДЕСЬ, чтобы перейти на его YouTube Канал</string>
+
+    <!--OPERATORS MENU-->
+    <string name="bycountries">По странам</string>
+    <string name="attackers">Атакующие</string>
+    <string name="defenders">Защитники</string>
+
+    <!--OPERATORS-->
+    <string name="attacker">Атакующий</string>
+    <string name="defender">Защитник</string>
+    <string name="armor_light">Лёгкий</string>
+    <string name="armor_heavy">Тяжёлый</string>
+    <string name="speed_slow">Медленный</string>
+    <string name="speed_fast">Быстрый</string>
+    <string name="medium">Умеренный</string>
+
+    <!--OPERATORS TITLE-->
+    <string name="speed">Скорость</string>
+    <string name="armor">Броня</string>
+    <string name="primary">Основное</string>
+    <string name="secondary">Втростепенное</string>
+    <string name="gadget">Устройство</string>
+    <string name="ugadget">Особый навык</string>
+
+    <!--OPERATORS GADGET-->
+    <string name="gad_barbed">Колючая проволока</string>
+    <string name="gad_breach">Пробивные заряды</string>
+    <string name="gad_frag">Гранаты</string>
+    <string name="gad_nitro">Взрывчатка</string>
+    <string name="gad_shield">Стационарный щит</string>
+    <string name="gad_smoke">Дымовые шашки</string>
+    <string name="gad_stun">Светошумовые гранаты</string>
+    <string name="gad_impact">Ударные гранаты</string>
+    <string name="gad_claymore">Мина</string>
+
+    <!--OPERATORS UNIQUE GADGET DESCRIPTION-->
+    <string name="ugat_ash">M120 CREM</string>
+    <string name="uga_ash">Fires an explosive Breach Round that burrows into a surface and automatically detonates.</string>
+
+    <string name="ugat_bandit">CED-1</string>
+    <string name="uga_bandit">Sets high-tension Shock Wire on metallic gadgets, dealing damage to enemies.</string>
+
+    <string name="ugat_blackbeard">TARS MK 0-Armored Rifle Shield</string>
+    <string name="uga_blackbeard">Has a backup mounted shield to swap if the first one gets damaged.</string>
+
+    <string name="ugat_blitz">G52-Tactical Shield</string>
+    <string name="uga_blitz">Triggers the flash attached to his ballistic shield to temporarily blind enemies.</string>
+
+    <string name="ugat_buck">SK 4–12</string>
+    <string name="uga_buck">Toggles under-barrel shotgun attachment on his main weapon.</string>
+
+    <string name="ugat_capitao">TAC Mk0</string>
+    <string name="uga_capitao">Tactical crossbow firing asphyxiating bolts and micro smoke grenades.</string>
+
+    <string name="ugat_castle">UTP1-Universal Tactical Panel</string>
+    <string name="uga_castle">Sets bulletproof barricades, more resistant than standard ones.</string>
+
+    <string name="ugat_caveira">Silent step</string>
+    <string name="uga_caveira">Caveira\'s predatory stealth, the "Silent Step" allows her to lurk on her prey, almost inaudible, until it\'s too late.</string>
+
+    <string name="ugat_doc">MPD-0 Stim Pistol</string>
+    <string name="uga_doc">Fires a hypodermic shot to revive himself or teammates from a distance. Can also provide a temporary boost.</string>
+
+    <string name="ugat_echo">YOKAI</string>
+    <string name="uga_echo">Hovering drone that releases disorienting sonic bursts. Yokai also transmits a video feed to the Echo and his team.</string>
+
+    <string name="ugat_frost">Sterling MK2 LHT</string>
+    <string name="uga_frost">Uses a mechanical trap to incapacitate enemies.</string>
+
+    <string name="ugat_fuze">APM-6 "Matryoshka"</string>
+    <string name="uga_fuze">Uses Cluster Charge that pierce and stick to walls, releasing sub-grenades on the opposing side.</string>
+
+    <string name="ugat_glaz">HDS Flip Sight</string>
+    <string name="uga_glaz">Toggles a magnification scope with sophisticated image sensors outlining long range marks, even trough smoke.</string>
+
+    <string name="ugat_hibana">X-KAIROS</string>
+    <string name="uga_hibana">A 40mm grenade launcher firing explosive pellets that can be detonated from a distance.</string>
+
+    <string name="ugat_iq">RED MK III "Spectre"</string>
+    <string name="uga_iq">Uses the Electronics Detector to locate any electronics in range through obstacles such as walls.</string>
+
+    <string name="ugat_jackal">EYENOX MODEL III</string>
+    <string name="uga_jackal">Tracking eyewear that locates targets by revealing and identifying recent footsteps.</string>
+
+    <string name="ugat_jager">ADS-MKIV "Magpie"</string>
+    <string name="uga_jager">Uses an Active Defense system to intercept grenades before they detonate.</string>
+
+    <string name="ugat_kapkan">EDD MK II</string>
+    <string name="uga_kapkan">Sets booby traps on windows and door frames.</string>
+
+    <string name="ugat_mira">BLACK MIRROR</string>
+    <string name="uga_mira">Deploys a one-way bulletproof mirror on breakable and reinforced walls. Also can be ejected to create a murder hole.</string>
+
+    <string name="ugat_montagne">Le Roc</string>
+    <string name="uga_montagne">Can expand his Extendable Shield to offer full protection while standing.</string>
+
+    <string name="ugat_mute">GC90 "Moni" Signal Disruptor</string>
+    <string name="uga_mute">Jams communications for remotely detonated gadgets or drones in its range.</string>
+
+    <string name="ugat_pulse">HB-5 Cardiac Sensor</string>
+    <string name="uga_pulse">Detects heartbeats at a short distance through obstacles.</string>
+
+    <string name="ugat_rook">R1N "Rhino" Armor</string>
+    <string name="uga_rook">Drops a supply bag full of armor plates for his team to use.</string>
+
+    <string name="ugat_sledge">Tactical Breaching Hammer "The Caber"</string>
+    <string name="uga_sledge">Uses a Breaching Hammer to breach through destructible surfaces.</string>
+
+    <string name="ugat_smoke">Compound Z8 Grenade</string>
+    <string name="uga_smoke">Sets remote detonated toxic gas charges.</string>
+
+    <string name="ugat_tachanka">RP-46 Degtyaryov Machine Gun</string>
+    <string name="uga_tachanka">Deploys a Mounted LMG with a ballistic shield protecting the head from frontal shots.</string>
+
+    <string name="ugat_thatcher">EG MK0-EMP Grenade</string>
+    <string name="uga_thatcher">Uses EMP Grenades to disable any electronics in range.</string>
+
+    <string name="ugat_thermite">BRIMSTONE BC-3 Exothermic Charge</string>
+    <string name="uga_thermite">Sets an exotherrmic charge that destroys reinforced walls.</string>
+
+    <string name="ugat_twitch">RSD Model 1 Shock Drone</string>
+    <string name="uga_twitch">Uses two Shock Drones to disable traps or injure enemies. Deploys the first Shock Drone during the preparation phase.</string>
+
+    <string name="ugat_valkyrie">Gyro Cam Mk2</string>
+    <string name="uga_valkyrie">Can set up "Black Eye" cameras, feed accessible by whole team via observation tools.</string>
+
+    <!--LOBBY MENU-->
+    <string name="lobbytitle">LOBBY ID : %d</string>
+
+    <!--MORE MENU-->
+    <string name="about">О программе</string>
+    <string name="settings">Настройки</string>
+
+    <!--ABOUT-->
+    <string name="labelabout">R6 Assistant - О программе</string>
+    <string name="abouttxt1">Это приложение было создано Khrys, случайным игроком Rainbow Six Siege. Код приложения в Открытом Доступе и никак не связано с Ubisoft.\n\nЛюбая поддержка, сообщение о баге, или любое предложение действительно ценится. Как приложение с открытым исходным кодом, вы можете получить доступ к коду, размещенному на GitHub, нажав на кнопку внизу страницы.\n\nKhrys, разработчик и обычный игрок.</string>
+
+    <!--SUPPORT-->
+    <string name="labelsupport">R6 Assistant - Support Me</string>
+    <string name="supporttxt">This application is fully free, ads free, no paid features. By downloading it, giving your feedback or rating it you already did a lot for me, so thank you !\n\nI spend a lot of time on it, and of course because I want it but if you want to donate something, the button is below. If you donate your name will appear in the app soon.\n\n Thanks a lot ! \nKhrys</string>
+
+    <!--SETTINGS-->
+    <string name="labelsettings">R6 Assistant - Настройки</string>
+    <string name="warning">Предупреждение!</string>
+    <string name="settings_end">Вам нужно перезапустить приложение, чтобы изменения языка вошли в силу!</string>
+
+    <!--CREDIT TO TRANSLATORS-->
+    <string name="translator_pt">LeGuigo</string>
+    <string name="translator_de">Mert Huz</string>
+    <string name="translator_it">Andrea Verano</string>
+    <string name="translator_ru">Maxim Lem</string>
+
+    <!--LANGUAGE-->
+    <string name="language">Язык</string>
+    <string name="english">Английский</string>
+    <string name="french">Французский</string>
+    <string name="portuguese">Португальский</string>
+    <string name="italian">Итальянский</string>
+    <string name="german">Немецкий</string>
+    <string name="russian">Русский</string>
+
+    <!--MAP MENU-->
+    <string name="takemap">Выбрать карту</string>
+
+    <!--MAPS INFO-->
+    <string name="bank">Банк</string>
+        <string name="bank_cam_s1">(1Э) Холл</string>
+        <string name="bank_cam_s2">(1Э) Коридор</string>
+        <string name="bank_cam_s3">(2Э) Лестница</string>
+        <string name="bank_cam_s4">(П) Хранилище</string>
+        <string name="bank_cam_s5">(СНАРУЖИ) Открытая Площадка</string>
+        <string name="bank_cam_s6">(СНАРУЖИ) Проезд в Гараж</string>
+        <string name="bank_cam_s7">(СНАРУЖИ) Back Alley</string>
+
+    <string name="chalet">Шале</string>
+        <string name="chalet_cam_s1">(2Э) Спальня Коридор</string>
+        <string name="chalet_cam_s2">(2Э) Камин Коридор</string>
+        <string name="chalet_cam_s3">(1Э) Библиотека Лестница</string>
+        <string name="chalet_cam_s4">(П) Доп. Гараж</string>
+        <string name="chalet_cam_s5">(СНАРУЖИ) Двор</string>
+        <string name="chalet_cam_s6">(СНАРУЖИ) Задний Двор</string>
+
+    <string name="clubhouse">Клуб</string>
+        <string name="clubhouse_cam_s1">(2Э) Спальня Коридор</string>
+        <string name="clubhouse_cam_s2">(1Э) Бар</string>
+        <string name="clubhouse_cam_s3">(1Э) Garage</string>
+        <string name="clubhouse_cam_s4">(П) Basement Hallway</string>
+        <string name="clubhouse_cam_s5">(СНАРУЖИ) VIP-парковка</string>
+        <string name="clubhouse_cam_s6">(СНАРУЖИ) Арт-зона</string>
+        <string name="clubhouse_cam_s7">(СНАРУЖИ) Будки</string>
+
+    <string name="consulate">Консульство</string>
+        <string name="consulate_cam_s1">(2Э) Приемная Консула</string>
+        <string name="consulate_cam_s2">(1Э) Главная Лестница</string>
+        <string name="consulate_cam_s3">(1Э) Отдел Виз</string>
+        <string name="consulate_cam_s4">(СНАРУЖИ) Главный Вход</string>
+        <string name="consulate_cam_s5">(П) Раздевалка Коридор</string>
+        <string name="consulate_cam_s6">(П) Гараж</string>
+        <string name="consulate_cam_s7">(СНАРУЖИ) Аллея</string>
+        <string name="consulate_cam_s8">(СНАРУЖИ) Въезд в Гараж</string>
+
+    <string name="favela">Фавела</string>
+        <string name="favela_cam_s1">(3Э) Задняя Лестница</string>
+        <string name="favela_cam_s2">(3Э) Главная Лестница</string>
+        <string name="favela_cam_s3">(1Э) Постирочная</string>
+        <string name="favela_cam_s4">(1Э) Лестница - Зал</string>
+        <string name="favela_cam_s5">(СНАРУЖИ) Школа - Переулок</string>
+        <string name="favela_cam_s6">(СНАРУЖИ) Улица</string>
+        <string name="favela_cam_s7">(СНАРУЖИ) Переулок</string>
+
+    <string name="hereford">База Херефорд</string>
+        <string name="hereford_cam_s1">(СНАРУЖИ) Крыша</string>
+        <string name="hereford_cam_s2">(2Э) Коридор</string>
+        <string name="hereford_cam_s3">(1Э) Коридор 1</string>
+        <string name="hereford_cam_s4">(П) Раздевалка</string>
+        <string name="hereford_cam_s5">(СНАРУЖИ) Стрельбище</string>
+        <string name="hereford_cam_s6">(СНАРУЖИ) Подъемник</string>
+
+    <string name="kafedostoyevsky">Кафе "Достоевский"</string>
+        <string name="kafedostoyevsky_cam_s1">(3Э) Коктейльный Зал</string>
+        <string name="kafedostoyevsky_cam_s2">(2Э) Читальный Зал</string>
+        <string name="kafedostoyevsky_cam_s3">(1Э) Холодильник Коридор</string>
+        <string name="kafedostoyevsky_cam_s4">(1Э) Пекарня</string>
+        <string name="kafedostoyevsky_cam_s5">(СНАРУЖИ) Западная Центральная Улица</string>
+        <string name="kafedostoyevsky_cam_s6">(СНАРУЖИ) Аллея</string>
+
+    <string name="house">Дом</string>
+        <string name="house_cam_s1">(СНАРУЖИ) Козырек Крыльца</string>
+        <string name="house_cam_s2">(1Э) Кухня</string>
+        <string name="house_cam_s3">(П) Тренажёрная</string>
+        <string name="house_cam_s4">(П) Гараж</string>
+        <string name="house_cam_s5">(СНАРУЖИ) Передний Двор</string>
+        <string name="house_cam_s6">(СНАРУЖИ) Сад</string>
+
+    <string name="kanal">Канал</string>
+        <string name="kanal_cam_s1">(Д-3Э) Диспетчерская Коридор</string>
+        <string name="kanal_cam_s2">(Д-2Э) Комната Карт Коридор</string>
+        <string name="kanal_cam_s3">(БО-2Э) Берег. Охрана Коридор</string>
+        <string name="kanal_cam_s4">(БО-1Э) Склад Снабжения Коридор</string>
+        <string name="kanal_cam_s5">(СНАРУЖИ) Лужайка</string>
+        <string name="kanal_cam_s6">(СНАРУЖИ) Ворота Шлюза</string>
+        <string name="kanal_cam_s7">(СНАРУЖИ) Стройплощадка</string>
+
+    <string name="plane">Борт Номер Один</string>
+        <string name="plane_cam_s1">(3Э) Экипаж</string>
+        <string name="plane_cam_s2">(2Э) Передний Коридор</string>
+        <string name="plane_cam_s3">(2Э) Пресс-центр А</string>
+        <string name="plane_cam_s4">(1Э) Багажный Отсек</string>
+        <string name="plane_cam_s5">(1Э) Грузовой Отсек</string>
+
+    <string name="border">Граница</string>
+        <string name="border_cam_s1">(2Э) Восточная Лестница</string>
+        <string name="border_cam_s2">(2Э) Главный Коридор</string>
+        <string name="border_cam_s3">(1Э) Главный Холл</string>
+        <string name="border_cam_s4">(1Э) Выход Коридор</string>
+        <string name="border_cam_s5">(СНАРУЖИ) Въезд на Парковку</string>
+        <string name="border_cam_s6">(СНАРУЖИ) Авария</string>
+        <string name="border_cam_s7">(СНАРУЖИ) Парковка Переулок</string>
+
+    <string name="oregon">Орегон</string>
+        <string name="oregon_cam_s1">(2Э) Оружейная Коридор</string>
+        <string name="oregon_cam_s2">(1Э) Холл</string>
+        <string name="oregon_cam_s3">(1Э) Столовая Коридор</string>
+        <string name="oregon_cam_s4">(1Э) Лестница Сзади</string>
+        <string name="oregon_cam_s5">(СНАРУЖИ) Свалка</string>
+        <string name="oregon_cam_s6">(СНАРУЖИ) Парковка</string>
+        <string name="oregon_cam_s7">(СНАРУЖИ) Стройплощадка</string>
+
+    <string name="yacht">Яхта</string>
+        <string name="yacht_cam_s1">(4Э) Верт. Площадка</string>
+        <string name="yacht_cam_s2">(3Э) Спальня Коридор</string>
+        <string name="yacht_cam_s3">(3Э) Зал</string>
+        <string name="yacht_cam_s4">(2Э) Передняя Лестница</string>
+        <string name="yacht_cam_s5">(2Э) Черный Вход</string>
+        <string name="yacht_cam_s6">(1Э) Машин. Отедл Коридор</string>
+        <string name="yacht_cam_s7">(СНАРУЖИ) Палуба, Передняя Часть</string>
+        <string name="yacht_cam_s8">(СНАРУЖИ) Гидромассажная Ванна</string>
+
+    <string name="skyscraper">Небоскреб</string>
+        <string name="skyscraper_cam_s1">(2Э) Коридор</string>
+        <string name="skyscraper_cam_s2">(1Э) Ресторан</string>
+        <string name="skyscraper_cam_s3">(2Э) Дом - Лестница</string>
+        <string name="skyscraper_cam_s4">(1Э) Дом - Холл</string>
+        <string name="skyscraper_cam_s5">(СНАРУЖИ) Сад - Запад</string>
+        <string name="skyscraper_cam_s6">(СНАРУЖИ) Сад - Восток</string>
+        <string name="skyscraper_cam_s7">(СНАРУЖИ) Вентиляция</string>
+
+    <string name="university">Ун. Бартлет</string>
+        <string name="university_cam_s1">(2Э) Коридор</string>
+        <string name="university_cam_s2">(2Э) Открытый Коридор</string>
+        <string name="university_cam_s3">(1Э) Зал с Арками</string>
+        <string name="university_cam_s4">(1Э) Холл</string>
+        <string name="university_cam_s5">(1Э) Столовая</string>
+        <string name="university_cam_s6">(СНАРУЖИ) Главные Ворота</string>
+        <string name="university_cam_s7">(СНАРУЖИ) Парковка</string>
+
+    <string name="coastline">Побережье</string>
+        <string name="coastline_cam_s1">(1Э) Коридор</string>
+        <string name="coastline_cam_s2">(1Э) Главный Холл</string>
+        <string name="coastline_cam_s3">(2Э) Аквариум</string>
+        <string name="coastline_cam_s4">(2Э) Коридор</string>
+        <string name="coastline_cam_s5">(СНАРУЖИ) Гараж - Крыша</string>
+        <string name="coastline_cam_s6">(СНАРУЖИ) Развалины</string>
+        <string name="coastline_cam_s7">(СНАРУЖИ) Развалины</string>
+
+    <string name="destroyPhrase">%d</string>
+    <string name="cameraPhrase">%d cameras</string>
+    <string name="cameraPhrase2_1">%d camera remaining</string>
+    <string name="cameraPhrase2_2">%d cameras remaining</string>
+    <string name="cameraAllDestroyed">All cameras destroyed</string>
+    <string name="destroyed">X</string>
+
+    <!--FLOORS OF MAP PLAN-->
+    <string name="f_base">СНАРУЖИ</string>
+    <string name="f_0">(1Э)</string>
+    <string name="f_1">(2Э)</string>
+    <string name="f_2">(3Э)</string>
+    <string name="f_3">(4Э)</string>
+
+    <!--FLOORS ERROR PHRASE-->
+    <string name="planerror">Планы не доступны на этой карте!</string>
+    <string name="error_floor_below">Этажей ниже больше нет!</string>
+    <string name="error_floor_above">Этажей выше больше нет!</string>
+
+    <!--IMAGE CONTENT DESCRIPTION-->
+    <string name="twitch_drone_image">Twitch Drone Image</string>
+    <string name="zoom_icon">Zoom Icon</string>
+    <string name="zoomedimg">Zoomed Image</string>
+    <string name="cellimg">Cell Image</string>
+    <string name="banner_image">Banner Image</string>
+    <string name="version_d">Version %S</string>
+    <string name="zoom">ZOOM</string>
+    <string name="floor">FLOOR</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="resetzoom">resetzoom</string>
+    <string name="position">Positions</string>
+    <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
+    <string name="troll_face">Troll Face</string>
+    <string name="star">Star</string>
+    <string name="settingsicon">Icon Settings</string>
+    <!--WEAPON STATS CONTENT DESCRIPTION-->
+    <string name="name_weapon">Weapon Image</string>
+    <string name="op_1">Operator Icon 1</string>
+    <string name="op_2">Operator Icon 2</string>
+    <string name="op_3">Operator Icon 3</string>
+    <string name="op_4">Operator Icon 4</string>
+    <string name="ammo_icon">Ammo Icon</string>
+    <string name="firerate_icon">Fire rate Icon</string>
+    <string name="damagefall_icon">Damage fall off Icon</string>
+    <string name="rook_icon">Damage fall off Icon</string>
+    <string name="armor_light_icon">Light Amor Icon</string>
+    <string name="armor_medium_icon">Medium Amor Icon</string>
+    <string name="armor_heavy_icon">Heavy Amor Icon</string>
+    <string name="barrel_1">Image of the Barrel 1</string>
+    <string name="barrel_2">Image of the Barrel 2</string>
+    <string name="barrel_3">Image of the Barrel 3</string>
+    <string name="barrel_4">Image of the Barrel 4</string>
+    <string name="barrel_5">Image of the Barrel 5</string>
+
+</resources>

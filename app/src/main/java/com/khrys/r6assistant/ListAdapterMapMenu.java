@@ -72,9 +72,10 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
                 context = itemView.getContext();
 
                  WindowManager windowManager = (WindowManager)context.getSystemService(Context.WINDOW_SERVICE);
-                 if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
-                     int width1 = windowManager.getDefaultDisplay().getWidth();
-                     itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.MATCH_PARENT));
+                 if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+                 {
+                     //int width1 = windowManager.getDefaultDisplay().getWidth();
+                     //itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.MATCH_PARENT));
                  }
 
                 name = (TextView) itemView.findViewById(R.id.map);
@@ -90,10 +91,6 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
                         else if (requesttype == 2)
                         {
                             startIntentWithInput(TwitchMapActivity.class);
-                        }
-                        else if (requesttype == 3 && getAdapterPosition() == 14)
-                        {
-                            Toast.makeText(itemView.getContext(),R.string.planerror,Toast.LENGTH_LONG).show();
                         }
                         else if (requesttype == 3 && getAdapterPosition() == 15)
                         {

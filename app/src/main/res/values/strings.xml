@@ -50,6 +50,13 @@
     <string name="shotgun">Shotgun</string>
     <string name="submachinegun">Submachine Gun</string>
 
+    <!--WEAPONS BARRELS-->
+    <string name="compensator">Compensator</string>
+    <string name="flash_hider">Flash hider</string>
+    <string name="muzzle_brake">Muzzle brake</string>
+    <string name="suppressor">Suppressor</string>
+    <string name="extended_barrel">Extended barrel</string>
+
     <!--WEAPON STATS HELP-->
     <string name="help_title">Weapon Stats</string>
     <string name="help_ammo">This is the number of ammo in a loader.</string>
@@ -192,7 +199,6 @@
 
     <!--MORE MENU-->
     <string name="about">About</string>
-    <string name="support">Support Me</string>
     <string name="settings">Settings</string>
 
     <!--ABOUT-->
@@ -212,6 +218,7 @@
     <string name="translator_pt">LeGuigo</string>
     <string name="translator_de">Mert Huz</string>
     <string name="translator_it">Andrea Verano</string>
+    <string name="translator_ru">Maxim Lem</string>
 
     <!--LANGUAGE-->
     <string name="language">Language</string>
@@ -220,6 +227,7 @@
     <string name="portuguese">Portuguese</string>
     <string name="italian">Italian</string>
     <string name="german">German</string>
+    <string name="russian">Russian</string>
 
     <!--MAP MENU-->
     <string name="takemap">Select a map</string>
@@ -391,7 +399,7 @@
     <string name="cellimg">Cell Image</string>
     <string name="banner_image">Banner Image</string>
     <string name="version_d">Version %S</string>
-    <string name="zoom">ZOOM</string>
+    <string name="zoom">Zoom</string>
     <string name="floor">FLOOR</string>
     <string name="zoom_in">Zoom In</string>
     <string name="zoom_out">Zoom Out</string>

@@ -1,5 +1,6 @@
 package com.khrys.r6assistant;
 
+import android.content.res.Configuration;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
@@ -51,11 +52,20 @@ public class MapPlanActivity extends AppCompatActivity
         String map = getIntent().getStringExtra("nommap");
         int mapID = getIntent().getIntExtra("pos", 0);
 
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+        {
+            setTitle(getResources().getString(R.string.app_name) + " - " + map);
+        }
+        else
+        {
+            TextView titleTextView = (TextView) findViewById(R.id.txtTitlePlan);
+            titleTextView.setText(map);
+        }
+
         switchPosRef = (Switch) findViewById(R.id.switchPos);
 
         imageView = (ImageView) findViewById(R.id.imageViewPlan);
 
-        TextView titleTextView = (TextView) findViewById(R.id.txtTitlePlan);
         TextViewFloor = (TextView) findViewById(R.id.textViewEtage);
 
         ImageButton ZoomResetBut = (ImageButton) findViewById(R.id.buttonZoomReset);
@@ -72,7 +82,7 @@ public class MapPlanActivity extends AppCompatActivity
         ZoomResetBut.setOnClickListener(new ClickListenerZoom(2, mAttacher));
         ZoomPlusBut.setOnClickListener(new ClickListenerZoom(3, mAttacher));
 
-        titleTextView.setText(map);
+
 
         prevFloorBut.setOnClickListener(new ClickListenerMinusPlusFloor(1));
         nextFloorBut.setOnClickListener(new ClickListenerMinusPlusFloor(2));

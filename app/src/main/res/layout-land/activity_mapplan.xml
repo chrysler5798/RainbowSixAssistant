@@ -8,25 +8,14 @@
 
     <LinearLayout
         android:orientation="vertical"
-        android:layout_width="match_parent"
+        android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:layout_weight="1">
 
-        <TextView
-            android:text="@string/border"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/txtTitlePlan"
-            android:textAlignment="center"
-            android:textColor="@color/white"
-            android:textSize="24sp"
-            android:paddingBottom="10dp"
-            android:paddingTop="5dp" />
-
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="0dp"
             android:id="@+id/imageViewPlan"
             android:layout_weight="1"
             android:adjustViewBounds="true"
@@ -46,7 +35,8 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:paddingBottom="10dp"
-                android:paddingTop="10dp" />
+                android:paddingTop="10dp"
+                android:contentDescription="@string/zoom_out" />
 
             <ImageButton
                 android:layout_width="0dp"
@@ -56,7 +46,8 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:paddingBottom="10dp"
-                android:paddingTop="10dp" />
+                android:paddingTop="10dp"
+                android:contentDescription="@string/resetzoom"/>
 
             <ImageButton
                 android:layout_width="0dp"
@@ -66,7 +57,8 @@
                 android:layout_weight="1"
                 android:background="@android:color/transparent"
                 android:paddingBottom="10dp"
-                android:paddingTop="10dp" />
+                android:paddingTop="10dp"
+                android:contentDescription="@string/zoom_in"/>
 
         </LinearLayout>
 
@@ -89,13 +81,16 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:paddingEnd="10dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="10dp"
+                android:paddingStart="5dp"
                 android:text="@string/position"
                 android:textAlignment="center"
-                android:gravity="center"
                 android:textColor="@color/white"
-                android:textSize="20sp"
-                android:paddingRight="10dp"
-                android:layout_weight="1" />
+                android:textSize="20sp" />
 
             <Switch
                 android:layout_width="wrap_content"
@@ -105,6 +100,7 @@
                 android:theme="@style/AppTheme"
                 android:textColor="@color/white"
                 android:paddingRight="10dp"
+                android:paddingEnd="10dp"
                 android:layout_weight="1" />
 
         </LinearLayout>

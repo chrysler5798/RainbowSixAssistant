@@ -21,7 +21,7 @@
     <string name="mapplans">Mapas e Planos</string>
     <string name="online">Online</string>
     <string name="guns">Weapons Stats</string>
-    <string name="operators">Operators</string>
+    <string name="operators">Agentes</string>
     <string name="more">Mais</string>
 
     <!--SOON MSG-->
@@ -42,13 +42,20 @@
     <string name="rookarmor">Rook Armor</string>
 
     <!--WEAPONS STATS CLASS-->
-    <string name="assault">Assault Rifle</string>
-    <string name="pistol">Pistols</string>
-    <string name="lightmachine">Light Machine Gun</string>
-    <string name="machinepistol">Machine Pistol</string>
-    <string name="marksmanrifle">Marksman Rifle</string>
-    <string name="shotgun">Shotgun</string>
-    <string name="submachinegun">Submachine Gun</string>
+    <string name="assault">Rifle de Assalto</string>
+    <string name="pistol">Arma Curta</string>
+    <string name="lightmachine">Metralhadora Leve</string>
+    <string name="machinepistol">Pistola-Metralhadora</string>
+    <string name="marksmanrifle">Rifle Atirador de Elite</string>
+    <string name="shotgun">Espingarda</string>
+    <string name="submachinegun">Submetralhadora</string>
+
+    <!--WEAPONS BARRELS-->
+    <string name="compensator">Compensador</string>
+    <string name="flash_hider">Corta-chama</string>
+    <string name="muzzle_brake">Freio de Boca</string>
+    <string name="suppressor">Silenciador</string>
+    <string name="extended_barrel">Cano Estendido</string>
 
     <!--WEAPON STATS HELP-->
     <string name="help_title">Weapon Stats \n BETA</string>
@@ -69,8 +76,8 @@
     <string name="defenders">Defenders</string>
 
     <!--OPERATORS-->
-    <string name="attacker">Attacker</string>
-    <string name="defender">Defender</string>
+    <string name="attacker">Atacantes</string>
+    <string name="defender">Defensores</string>
     <string name="armor_light">Light</string>
     <string name="armor_heavy">Heavy</string>
     <string name="speed_slow">Slow</string>
@@ -86,14 +93,14 @@
     <string name="ugadget">Unique gadget</string>
 
     <!--OPERATORS GADGET-->
-    <string name="gad_barbed">Barbed wires</string>
-    <string name="gad_breach">Breach charges</string>
-    <string name="gad_frag">Frag grenades</string>
-    <string name="gad_nitro">Nitro cell</string>
-    <string name="gad_shield">Deployable shield</string>
-    <string name="gad_smoke">Smoke grenades</string>
-    <string name="gad_stun">Stun grenades</string>
-    <string name="gad_impact">Impact grenades</string>
+    <string name="gad_barbed">Arame Farpado</string>
+    <string name="gad_breach">Carga de Demolição</string>
+    <string name="gad_frag">Granada Frag</string>
+    <string name="gad_nitro">C4</string>
+    <string name="gad_shield">Escudo Ajustável</string>
+    <string name="gad_smoke">Granada de fumaça</string>
+    <string name="gad_stun">Granada Atordoante</string>
+    <string name="gad_impact">Granada de Impacto</string>
     <string name="gad_claymore">Claymore</string>
 
     <!--OPERATORS UNIQUE GADGET DESCRIPTION-->
@@ -192,7 +199,6 @@
 
     <!--MORE MENU-->
     <string name="about">Sobre</string>
-    <string name="support">Colabore</string>
     <string name="settings">Configurações</string>
 
     <!--ABOUT-->
@@ -212,14 +218,16 @@
     <string name="translator_pt">LeGuigo</string>
     <string name="translator_de">Mert Huz</string>
     <string name="translator_it">Andrea Verano</string>
+    <string name="translator_ru">Maxim Lem</string>
 
     <!--LANGUAGE-->
     <string name="language">Idioma</string>
     <string name="english">Inglês</string>
     <string name="french">Francês</string>
     <string name="portuguese">Português</string>
-    <string name="italian">Italian</string>
-    <string name="german">German</string>
+    <string name="italian">Italiano</string>
+    <string name="german">Alemão</string>
+    <string name="russian">Russo</string>
 
     <!--MAP MENU-->
     <string name="takemap">Selecione um Mapa</string>

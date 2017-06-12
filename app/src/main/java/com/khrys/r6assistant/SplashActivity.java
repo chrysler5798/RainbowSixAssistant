@@ -18,23 +18,27 @@ import java.util.Locale;
 
 import static com.khrys.r6assistant.settings.SettingsActivity.getDefaults;
 
-public class SplashActivity extends Activity {
+public class SplashActivity extends Activity
+{
 
     private static final int SPLASH_TIME_OUT = 3000;
     private static final String PREFS_LANG = "PREFS_LANG";
     private static final String ON_LANG = "ON_LANG";
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
 
         int langueon = getDefaults(ON_LANG, getApplicationContext());
         String language;
 
-        if (langueon == 1) {
+        if (langueon == 1)
+        {
             int langue = getDefaults(PREFS_LANG, getApplicationContext());
 
-            switch (langue) {
+            switch (langue)
+            {
                 case 0:
                     language = "en";
                     break;
@@ -55,6 +59,10 @@ public class SplashActivity extends Activity {
                     language = "it";
                     break;
 
+                case 5:
+                    language = "ru";
+                    break;
+
                 default:
                     language = "en";
                     break;
@@ -70,9 +78,12 @@ public class SplashActivity extends Activity {
         setContentView(R.layout.activity_splash);
 
         String versionName = "";
-        try {
+        try
+        {
             versionName = String.format(getResources().getString(R.string.version_d), getApplicationContext().getPackageManager().getPackageInfo(getApplicationContext().getPackageName(), 0).versionName);
-        } catch (PackageManager.NameNotFoundException e) {
+        }
+        catch (PackageManager.NameNotFoundException e)
+        {
             e.printStackTrace();
         }
         TextView versionname = (TextView) findViewById(R.id.textViewVersion);
