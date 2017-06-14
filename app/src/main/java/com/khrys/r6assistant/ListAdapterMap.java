@@ -67,8 +67,8 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
     }
 
     @Override
-    public void onBindViewHolder(MyViewHolder holder, int position) {
-
+    public void onBindViewHolder(MyViewHolder holder, int position)
+    {
         if(pics != null) {
             Integer idimg = pics.get(position);
             Integer idtxt = poscam.get(position);
@@ -138,13 +138,29 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
                      }
                  });
              }
+
+             int width1;
+             WindowManager windowManager = (WindowManager) context.getSystemService(Context.WINDOW_SERVICE);
+             if(context.getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+             {
+                 Point size = new Point();
+                 windowManager.getDefaultDisplay().getSize(size);
+                 width1 = size.x/2;
+             }
+             else
+             {
+                 Point size = new Point();
+                 windowManager.getDefaultDisplay().getSize(size);
+                 width1 = size.x;
+             }
+             itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.WRAP_CONTENT));
         }
 
         void display(Integer idimg, Integer idtxt)
         {
             image.setImageResource(idimg);
             image.setTag(idimg);
-            txtpos.setText(idtxt);
+            txtpos.setText(context.getString(idtxt));
         }
 
         void removeAt(int position)

@@ -381,7 +381,7 @@
     <string name="destroyed">X</string>
 
     <!--FLOORS OF MAP PLAN-->
-    <string name="f_base">СНАРУЖИ</string>
+    <string name="f_base">П</string>
     <string name="f_0">(1Э)</string>
     <string name="f_1">(2Э)</string>
     <string name="f_2">(3Э)</string>
