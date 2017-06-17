@@ -356,13 +356,13 @@
         <string name="skyscraper_cam_s7">(EXT) Ventilation units</string>
 
     <string name="university">Bartlett U.</string>
-        <string name="university_cam_s1">(2F) Compass Hallway</string>
-        <string name="university_cam_s2">(2F) Vista Hallway</string>
-        <string name="university_cam_s3">(1F) Archway Hall</string>
-        <string name="university_cam_s4">(1F) Lobby</string>
-        <string name="university_cam_s5">(1F) Dining Room</string>
-        <string name="university_cam_s6">(EXT) Main Gate</string>
-        <string name="university_cam_s7">(EXT) Parking</string>
+        <string name="barlett_cam_s1">(2F) Compass Hallway</string>
+        <string name="barlett_cam_s2">(2F) Vista Hallway</string>
+        <string name="barlett_cam_s3">(1F) Archway Hall</string>
+        <string name="barlett_cam_s4">(1F) Lobby</string>
+        <string name="barlett_cam_s5">(1F) Dining Room</string>
+        <string name="barlett_cam_s6">(EXT) Main Gate</string>
+        <string name="barlett_cam_s7">(EXT) Parking</string>
 
     <string name="coastline">Coastline</string>
         <string name="coastline_cam_s1">(1F) Hallway</string>

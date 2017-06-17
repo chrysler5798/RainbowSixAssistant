@@ -355,13 +355,13 @@
         <string name="skyscraper_cam_s7">(EXT) Unités de ventilation</string>
 
     <string name="university">Bartlett U.</string>
-        <string name="university_cam_s1">(1ER) Couloir de la boussole</string>
-        <string name="university_cam_s2">(1ER) Couloir dégagé</string>
-        <string name="university_cam_s3">(RDC) Passage voûté</string>
-        <string name="university_cam_s4">(RDC) Entrée</string>
-        <string name="university_cam_s5">(RDC) Salle à manger</string>
-        <string name="university_cam_s6">(EXT) Porte principale</string>
-        <string name="university_cam_s7">(EXT) Parking</string>
+        <string name="barlett_cam_s1">(1ER) Couloir de la boussole</string>
+        <string name="barlett_cam_s2">(1ER) Couloir dégagé</string>
+        <string name="barlett_cam_s3">(RDC) Passage voûté</string>
+        <string name="barlett_cam_s4">(RDC) Entrée</string>
+        <string name="barlett_cam_s5">(RDC) Salle à manger</string>
+        <string name="barlett_cam_s6">(EXT) Porte principale</string>
+        <string name="barlett_cam_s7">(EXT) Parking</string>
 
     <string name="coastline">Littoral</string>
         <string name="coastline_cam_s1">(RDC) Couloir</string>

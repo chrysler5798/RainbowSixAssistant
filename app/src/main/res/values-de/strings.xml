@@ -104,95 +104,95 @@
     <string name="gad_claymore">Claymore</string>
 
     <!--OPERATORS UNIQUE GADGET DESCRIPTION-->
-    <string name="ugat_ash">M120 CREM</string>
-    <string name="uga_ash">Fires an explosive Breach Round that burrows into a surface and automatically detonates.</string>
+    <string name="ugat_ash">M120 KGAM</string>
+    <string name="uga_ash">Feuert ein Durchbruchsgeschoss ab, das sich in eine Oberfläche bohrt und dann automatisch detoniert.</string>
 
-    <string name="ugat_bandit">CED-1</string>
-    <string name="uga_bandit">Sets high-tension Shock Wire on metallic gadgets, dealing damage to enemies.</string>
+    <string name="ugat_bandit">ESG-1</string>
+    <string name="uga_bandit">Bringt Hochspannungsschockdraht an Metallgeräten an und fügt Feinden Schaden zu.</string>
 
-    <string name="ugat_blackbeard">TARS MK 0-Armored Rifle Shield</string>
-    <string name="uga_blackbeard">Has a backup mounted shield to swap if the first one gets damaged.</string>
+    <string name="ugat_blackbeard">TARS MK 0 Panzer-Gewehrschild</string>
+    <string name="uga_blackbeard">Verfügt über einen zweiten montierten Schild; falls der erste beschädigt wird.</string>
 
-    <string name="ugat_blitz">G52-Tactical Shield</string>
-    <string name="uga_blitz">Triggers the flash attached to his ballistic shield to temporarily blind enemies.</string>
+    <string name="ugat_blitz">G52 Taktischer Schild</string>
+    <string name="uga_blitz">Löst den Blitz an seinem ballistichen Schild aus, der Feindre vorübergehend blendet.</string>
 
     <string name="ugat_buck">SK 4–12</string>
-    <string name="uga_buck">Toggles under-barrel shotgun attachment on his main weapon.</string>
+    <string name="uga_buck">Schaltet Unterlauf-Schrotflintenaufsatz an seiner Hauptwaffe ein und aus.</string>
 
     <string name="ugat_capitao">TAC Mk0</string>
-    <string name="uga_capitao">Tactical crossbow firing asphyxiating bolts and micro smoke grenades.</string>
+    <string name="uga_capitao">Taktische Armbrust, die Bolzen mit erstickenden Gasen und Mikrorauchgranaten verschießt.</string>
 
-    <string name="ugat_castle">UTP1-Universal Tactical Panel</string>
-    <string name="uga_castle">Sets bulletproof barricades, more resistant than standard ones.</string>
+    <string name="ugat_castle">UTP1-Universelle Taktische Panzerplatte</string>
+    <string name="uga_castle">Baut kugelsichere Barrikaden, widerstandsfähiger qls die Standardversionen.</string>
 
-    <string name="ugat_caveira">Silent step</string>
-    <string name="uga_caveira">Caveira\'s predatory stealth, the "Silent Step" allows her to lurk on her prey, almost inaudible, until it\'s too late.</string>
+    <string name="ugat_caveira">Leisetritt</string>
+    <string name="uga_caveira">Caveiras raubtierhafte Schleichfähigkeit, der "Leisetritt", ermöglichen es ihr; beinahe lautlos an ihre Gegner heranzupirschen, bis es zu spät für sie ist.</string>
 
-    <string name="ugat_doc">MPD-0 Stim Pistol</string>
-    <string name="uga_doc">Fires a hypodermic shot to revive himself or teammates from a distance. Can also provide a temporary boost.</string>
+    <string name="ugat_doc">MPD-0 Reanimationspistole</string>
+    <string name="uga_doc">Feuert eine Spritze ab, um sich oder Teammitglieder aus der Ferne wiederzubeleben. Kann auch einen temporären Boost bieten.</string>
 
     <string name="ugat_echo">YOKAI</string>
-    <string name="uga_echo">Hovering drone that releases disorienting sonic bursts. Yokai also transmits a video feed to the Echo and his team.</string>
+    <string name="uga_echo">Eine schwebende Drohne, die Schallimpulse ausstößt, die orientierungslos machen. Yokai sendet auch Videoübertragungen an den Operator.</string>
 
     <string name="ugat_frost">Sterling MK2 LHT</string>
-    <string name="uga_frost">Uses a mechanical trap to incapacitate enemies.</string>
+    <string name="uga_frost">Macht Feinde mit einer mechanischen Falle kampfunfähig.</string>
 
-    <string name="ugat_fuze">APM-6 "Matryoshka"</string>
-    <string name="uga_fuze">Uses Cluster Charge that pierce and stick to walls, releasing sub-grenades on the opposing side.</string>
+    <string name="ugat_fuze">APM-6 "Matrjoschka"</string>
+    <string name="uga_fuze">Setzt Streu-Sprengsätze ein, die Wände durchschlagen und Minigranaten auf Feinde loslassen.</string>
 
-    <string name="ugat_glaz">HDS Flip Sight</string>
-    <string name="uga_glaz">Toggles a magnification scope with sophisticated image sensors outlining long range marks, even trough smoke.</string>
+    <string name="ugat_glaz">HDS-Klappvisier</string>
+    <string name="uga_glaz">Aufklappbares Vergrößerungsvisier mit komplexen Bildsensoren, die sogar durch Rauch hindurch weit entfernte Ziele markieren.</string>
 
     <string name="ugat_hibana">X-KAIROS</string>
-    <string name="uga_hibana">A 40mm grenade launcher firing explosive pellets that can be detonated from a distance.</string>
+    <string name="uga_hibana">Ein 40-mm-Granatwerfer, der Sprengladungen verschießt, die aus der Ferne gezündet werden können.</string>
 
-    <string name="ugat_iq">RED MK III "Spectre"</string>
-    <string name="uga_iq">Uses the Electronics Detector to locate any electronics in range through obstacles such as walls.</string>
+    <string name="ugat_iq">Elektronik-Scanner MK III "Phantom"</string>
+    <string name="uga_iq">Setzt Detektor für Elektro-Felder ein, um alle Elektronik im Bereich, auch durch Wände, zu orten.</string>
 
-    <string name="ugat_jackal">EYENOX MODEL III</string>
-    <string name="uga_jackal">Tracking eyewear that locates targets by revealing and identifying recent footsteps.</string>
+    <string name="ugat_jackal">EYENOX-MODELL III</string>
+    <string name="uga_jackal">Tracking-Sichtausrüstung, die Ziele aufspürt, indem sie frische Fußspuren aufdeckt und identifiziert.</string>
 
-    <string name="ugat_jager">ADS-MKIV "Magpie"</string>
-    <string name="uga_jager">Uses an Active Defense system to intercept grenades before they detonate.</string>
+    <string name="ugat_jager">ADS-MKIV "Elster"</string>
+    <string name="uga_jager">Setzt aktives Verteidigungssystem ein, um Granaten abzufangen, bevor sie explodieren.</string>
 
-    <string name="ugat_kapkan">EDD MK II</string>
-    <string name="uga_kapkan">Sets booby traps on windows and door frames.</string>
+    <string name="ugat_kapkan">Zugangssperre MK II</string>
+    <string name="uga_kapkan">Bringt Sprengfallen an Fenstern und Türrahmen an.</string>
 
-    <string name="ugat_mira">BLACK MIRROR</string>
-    <string name="uga_mira">Deploys a one-way bulletproof mirror on breakable and reinforced walls. Also can be ejected to create a murder hole.</string>
+    <string name="ugat_mira">SCHWARZER SPIEGEL</string>
+    <string name="uga_mira">Platziert einen kugelsicheren Spionspiegel an zerstörbaren und verstärkten Wänden. Entfernt man ihn, kreiert man eine Schussluke.</string>
 
     <string name="ugat_montagne">Le Roc</string>
-    <string name="uga_montagne">Can expand his Extendable Shield to offer full protection while standing.</string>
+    <string name="uga_montagne">Kann seinen ausfahrbaren Schild vergrößern, damit er imStehen vollen Schutz bietet.</string>
 
-    <string name="ugat_mute">GC90 "Moni" Signal Disruptor</string>
-    <string name="uga_mute">Jams communications for remotely detonated gadgets or drones in its range.</string>
+    <string name="ugat_mute">GC90 "Moni" Störsender</string>
+    <string name="uga_mute">Stört in seiner Reichweite die Kommunikation von ferngezündeten Geräten oder Drohnen.</string>
 
-    <string name="ugat_pulse">HB-5 Cardiac Sensor</string>
-    <string name="uga_pulse">Detects heartbeats at a short distance through obstacles.</string>
+    <string name="ugat_pulse">HB-5 Herzsensor</string>
+    <string name="uga_pulse">Erkennt Herzschläge auf kurze Distanz durch Hindernisse.</string>
 
-    <string name="ugat_rook">R1N "Rhino" Armor</string>
-    <string name="uga_rook">Drops a supply bag full of armor plates for his team to use.</string>
+    <string name="ugat_rook">R1N "Rhino" Rüstung</string>
+    <string name="uga_rook">Bringt eine Tasche mit gepanzerten Schutzplatten, die sein Team einsetzen kann.</string>
 
-    <string name="ugat_sledge">Tactical Breaching Hammer "The Caber"</string>
-    <string name="uga_sledge">Uses a Breaching Hammer to breach through destructible surfaces.</string>
+    <string name="ugat_sledge">Taktischer Vorschlaghammer "The Caber"</string>
+    <string name="uga_sledge">Verwendet einen Vorschlaghammer, um zerstörbare Flächen zu durchbrechen.</string>
 
-    <string name="ugat_smoke">Compound Z8 Grenade</string>
-    <string name="uga_smoke">Sets remote detonated toxic gas charges.</string>
+    <string name="ugat_smoke">Z8-Verbundgranate</string>
+    <string name="uga_smoke">Legt aus der Ferne gezündete giftige Gassprengladungen aus.</string>
 
-    <string name="ugat_tachanka">RP-46 Degtyaryov Machine Gun</string>
-    <string name="uga_tachanka">Deploys a Mounted LMG with a ballistic shield protecting the head from frontal shots.</string>
+    <string name="ugat_tachanka">RP-46 Degtjarjow Maschinengewehr</string>
+    <string name="uga_tachanka">Setzt ein montiertes LMG mit ballistischem Schild für Kopfschüsse von vorn ein.</string>
 
-    <string name="ugat_thatcher">EG MK0-EMP Grenade</string>
-    <string name="uga_thatcher">Uses EMP Grenades to disable any electronics in range.</string>
+    <string name="ugat_thatcher">EG MKO EMP-Granate</string>
+    <string name="uga_thatcher">Setzt EMP-Granaten ein, um jegliche Elektronik in Reichweite auszuschalten.</string>
 
-    <string name="ugat_thermite">BRIMSTONE BC-3 Exothermic Charge</string>
-    <string name="uga_thermite">Sets an exotherrmic charge that destroys reinforced walls.</string>
+    <string name="ugat_thermite">BRIMSTONE BC-3 Exotherme Sprengladung</string>
+    <string name="uga_thermite">Legt eine exotherme Sprengladung aus, die verstärkte Wände zerstört.</string>
 
-    <string name="ugat_twitch">RSD Model 1 Shock Drone</string>
-    <string name="uga_twitch">Uses two Shock Drones to disable traps or injure enemies. Deploys the first Shock Drone during the preparation phase.</string>
+    <string name="ugat_twitch">RSD Modell I Schockdrohne</string>
+    <string name="uga_twitch">Setzt zwei Schockdrohnen ein, um Fallen zu deaktivieren oder Feinde zu verletzen. Setzt die erste Schockdrohne während der Vorbereitungsphase ein.</string>
 
-    <string name="ugat_valkyrie">Gyro Cam Mk2</string>
-    <string name="uga_valkyrie">Can set up "Black Eye" cameras, feed accessible by whole team via observation tools.</string>
+    <string name="ugat_valkyrie">Gyro-Kamera Mk2</string>
+    <string name="uga_valkyrie">Stellt "SCHWARZES AUGE"-Kameras auf, auf die das ganze Team über Überwachungsinstrumente zugreift.</string>
 
     <!--LOBBY MENU-->
     <string name="lobbytitle">LOBBY ID : %d</string>
@@ -356,13 +356,13 @@
         <string name="skyscraper_cam_s7">(AUSSEN) Lüftungseinheiten</string>
 
     <string name="university">Bartlett U.</string>
-        <string name="university_cam_s1">(1. OG) Kompass-Flur</string>
-        <string name="university_cam_s2">(1. OG) Offener Gang</string>
-        <string name="university_cam_s3">(EG) Bogengang-Halle</string>
-        <string name="university_cam_s4">(EG) Lobby</string>
-        <string name="university_cam_s5">(EG) Esszimmer</string>
-        <string name="university_cam_s6">(AUSSEN) Haupttor</string>
-        <string name="university_cam_s7">(AUSSEN) Parkplatz</string>
+        <string name="barlett_cam_s1">(1. OG) Kompass-Flur</string>
+        <string name="barlett_cam_s2">(1. OG) Offener Gang</string>
+        <string name="barlett_cam_s3">(EG) Bogengang-Halle</string>
+        <string name="barlett_cam_s4">(EG) Lobby</string>
+        <string name="barlett_cam_s5">(EG) Esszimmer</string>
+        <string name="barlett_cam_s6">(AUSSEN) Haupttor</string>
+        <string name="barlett_cam_s7">(AUSSEN) Parkplatz</string>
 
     <string name="coastline">Küste</string>
         <string name="coastline_cam_s1">(EG) Korridor</string>

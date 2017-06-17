@@ -110,8 +110,8 @@
     <string name="ugat_bandit">CED-1</string>
     <string name="uga_bandit">Sets high-tension Shock Wire on metallic gadgets, dealing damage to enemies.</string>
 
-    <string name="ugat_blackbeard">TARS MK 0-Armored Rifle Shield</string>
-    <string name="uga_blackbeard">Has a backup mounted shield to swap if the first one gets damaged.</string>
+    <string name="ugat_blackbeard">Escudo TARS MK 0</string>
+    <string name="uga_blackbeard">Tem um escudo reserva acoplado em caso de o prirneiro ser danificadu.</string>
 
     <string name="ugat_blitz">G52-Tactical Shield</string>
     <string name="uga_blitz">Triggers the flash attached to his ballistic shield to temporarily blind enemies.</string>
@@ -125,8 +125,8 @@
     <string name="ugat_castle">UTP1-Universal Tactical Panel</string>
     <string name="uga_castle">Sets bulletproof barricades, more resistant than standard ones.</string>
 
-    <string name="ugat_caveira">Silent step</string>
-    <string name="uga_caveira">Caveira\'s predatory stealth, the "Silent Step" allows her to lurk on her prey, almost inaudible, until it\'s too late.</string>
+    <string name="ugat_caveira">Passos silenciosos</string>
+    <string name="uga_caveira">Caveira possui as habilidades furtivas dos "Passos silenciosos", que a tornam uma caçadora formidável. Rápida e silenciosa.</string>
 
     <string name="ugat_doc">MPD-0 Stim Pistol</string>
     <string name="uga_doc">Fires a hypodermic shot to revive himself or teammates from a distance. Can also provide a temporary boost.</string>
@@ -144,13 +144,13 @@
     <string name="uga_glaz">Toggles a magnification scope with sophisticated image sensors outlining long range marks, even trough smoke.</string>
 
     <string name="ugat_hibana">X-KAIROS</string>
-    <string name="uga_hibana">A 40mm grenade launcher firing explosive pellets that can be detonated from a distance.</string>
+    <string name="uga_hibana">Um lançador de granadas compatível com munições de 40 mm. Os projétais explosivos podem ser detonados a distância.</string>
 
     <string name="ugat_iq">RED MK III "Spectre"</string>
     <string name="uga_iq">Uses the Electronics Detector to locate any electronics in range through obstacles such as walls.</string>
 
     <string name="ugat_jackal">EYENOX MODEL III</string>
-    <string name="uga_jackal">Tracking eyewear that locates targets by revealing and identifying recent footsteps.</string>
+    <string name="uga_jackal">Item de rastreamento por identificação de pegadas recentes.</string>
 
     <string name="ugat_jager">ADS-MKIV "Magpie"</string>
     <string name="uga_jager">Uses an Active Defense system to intercept grenades before they detonate.</string>
@@ -356,13 +356,13 @@
         <string name="skyscraper_cam_s7">(EXT) Dutos de ventilação</string>
 
     <string name="university">Bartlett U.</string>
-        <string name="university_cam_s1">(2º) Corredor da bússula</string>
-        <string name="university_cam_s2">(2º) Corredor de vista</string>
-        <string name="university_cam_s3">(1º) Salão dos arcos</string>
-        <string name="university_cam_s4">(1º) Saguão</string>
-        <string name="university_cam_s5">(1º) Sala de jantar</string>
-        <string name="university_cam_s6">(EXT) Portão principal</string>
-        <string name="university_cam_s7">(EXT) Estacionamento</string>
+        <string name="barlett_cam_s1">(2º) Corredor da bússula</string>
+        <string name="barlett_cam_s2">(2º) Corredor de vista</string>
+        <string name="barlett_cam_s3">(1º) Salão dos arcos</string>
+        <string name="barlett_cam_s4">(1º) Saguão</string>
+        <string name="barlett_cam_s5">(1º) Sala de jantar</string>
+        <string name="barlett_cam_s6">(EXT) Portão principal</string>
+        <string name="barlett_cam_s7">(EXT) Estacionamento</string>
 
     <string name="coastline">Litoral</string>
         <string name="coastline_cam_s1">(1º) Corredor</string>

@@ -240,7 +240,7 @@
         <string name="bank_cam_s4">(П) Хранилище</string>
         <string name="bank_cam_s5">(СНАРУЖИ) Открытая Площадка</string>
         <string name="bank_cam_s6">(СНАРУЖИ) Проезд в Гараж</string>
-        <string name="bank_cam_s7">(СНАРУЖИ) Back Alley</string>
+        <string name="bank_cam_s7">(СНАРУЖИ) Переулок</string>
 
     <string name="chalet">Шале</string>
         <string name="chalet_cam_s1">(2Э) Спальня Коридор</string>
@@ -253,8 +253,8 @@
     <string name="clubhouse">Клуб</string>
         <string name="clubhouse_cam_s1">(2Э) Спальня Коридор</string>
         <string name="clubhouse_cam_s2">(1Э) Бар</string>
-        <string name="clubhouse_cam_s3">(1Э) Garage</string>
-        <string name="clubhouse_cam_s4">(П) Basement Hallway</string>
+        <string name="clubhouse_cam_s3">(1Э) Гараж</string>
+        <string name="clubhouse_cam_s4">(П) Коридор</string>
         <string name="clubhouse_cam_s5">(СНАРУЖИ) VIP-парковка</string>
         <string name="clubhouse_cam_s6">(СНАРУЖИ) Арт-зона</string>
         <string name="clubhouse_cam_s7">(СНАРУЖИ) Будки</string>
@@ -356,13 +356,13 @@
         <string name="skyscraper_cam_s7">(СНАРУЖИ) Вентиляция</string>
 
     <string name="university">Ун. Бартлет</string>
-        <string name="university_cam_s1">(2Э) Коридор</string>
-        <string name="university_cam_s2">(2Э) Открытый Коридор</string>
-        <string name="university_cam_s3">(1Э) Зал с Арками</string>
-        <string name="university_cam_s4">(1Э) Холл</string>
-        <string name="university_cam_s5">(1Э) Столовая</string>
-        <string name="university_cam_s6">(СНАРУЖИ) Главные Ворота</string>
-        <string name="university_cam_s7">(СНАРУЖИ) Парковка</string>
+        <string name="barlett_cam_s1">(2Э) Коридор</string>
+        <string name="barlett_cam_s2">(2Э) Открытый Коридор</string>
+        <string name="barlett_cam_s3">(1Э) Зал с Арками</string>
+        <string name="barlett_cam_s4">(1Э) Холл</string>
+        <string name="barlett_cam_s5">(1Э) Столовая</string>
+        <string name="barlett_cam_s6">(СНАРУЖИ) Главные Ворота</string>
+        <string name="barlett_cam_s7">(СНАРУЖИ) Парковка</string>
 
     <string name="coastline">Побережье</string>
         <string name="coastline_cam_s1">(1Э) Коридор</string>
