@@ -19,7 +19,6 @@
         <item>coastline</item>
     </string-array>
 
-
     <string-array name="m0">
         <item>bank</item>
         <item>7</item>
@@ -128,7 +127,7 @@
     <string-array name="m15">
         <item>coastline</item>
         <item>7</item>
-        <item />
-        <item />
+        <item>0</item>
+        <item>2</item>
     </string-array>
 </resources>

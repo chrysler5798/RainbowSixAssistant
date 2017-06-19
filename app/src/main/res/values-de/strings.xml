@@ -85,12 +85,12 @@
     <string name="medium">Medium</string>
 
     <!--OPERATORS TITLE-->
-    <string name="speed">Speed</string>
-    <string name="armor">Armor</string>
-    <string name="primary">Primary</string>
-    <string name="secondary">Secondary</string>
-    <string name="gadget">Gadget</string>
-    <string name="ugadget">Unique gadget</string>
+    <string name="speed">Geschw.</string>
+    <string name="armor">Rüstung</string>
+    <string name="primary">Primärwaffe</string>
+    <string name="secondary">Sekundärwaffe</string>
+    <string name="gadget">Gerät</string>
+    <string name="ugadget">Besondere gerät</string>
 
     <!--OPERATORS GADGET-->
     <string name="gad_barbed">Stacheldraht</string>
