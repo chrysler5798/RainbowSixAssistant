@@ -75,8 +75,8 @@ public class HeaderListAdapter extends RecyclerView.Adapter<HeaderListAdapter.My
         {
             super(itemView);
 
-            imageV = (ImageView) itemView.findViewById(R.id.imageVarme);
-            textV = (TextView) itemView.findViewById(R.id.textVarme);
+            imageV = itemView.findViewById(R.id.imageVarme);
+            textV = itemView.findViewById(R.id.textVarme);
             context = itemView.getContext();
             itemView.setOnClickListener(new View.OnClickListener()
             {

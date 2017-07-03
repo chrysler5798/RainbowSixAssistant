@@ -89,8 +89,8 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
          {
             super(itemView);
 
-             image = (ImageView) itemView.findViewById(R.id.imgmap2);
-             txtpos = (TextView) itemView.findViewById(R.id.textPosCam);
+             image = itemView.findViewById(R.id.imgmap2);
+             txtpos = itemView.findViewById(R.id.textPosCam);
 
              context = itemView.getContext();
 
@@ -109,8 +109,8 @@ class ListAdapterMap extends RecyclerView.Adapter<ListAdapterMap.MyViewHolder>
              }
              else if(type == 2)
              {
-                 ImageButton buttontwitch = (ImageButton) itemView.findViewById(R.id.twitchButtonCam);
-                 ImageButton buttonzoom = (ImageButton) itemView.findViewById(R.id.zoomButtonCam);
+                 ImageButton buttontwitch = itemView.findViewById(R.id.twitchButtonCam);
+                 ImageButton buttonzoom = itemView.findViewById(R.id.zoomButtonCam);
 
                  buttontwitch.setOnClickListener(new View.OnClickListener()
                  {

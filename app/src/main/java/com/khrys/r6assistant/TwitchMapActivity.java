@@ -56,32 +56,32 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
 
         listAdapterMap = new ListAdapterMap(pics,poscam, type, this);
 
-        rv = (RecyclerView) findViewById(R.id.recyclerViewMap);
+        rv = findViewById(R.id.recyclerViewMap);
         LayoutIfManager layoutIM = new LayoutIfManager(context);
         rv.setAdapter(listAdapterMap);
         rv.setLayoutManager(layoutIM.ReturnManager());
 
-        TextView txtMap = (TextView) findViewById(R.id.textViewMapName);
+        TextView txtMap = findViewById(R.id.textViewMapName);
 
-        txtValkyrie = (TextView) findViewById(R.id.textViewValkyrie);
-        txtBandit = (TextView) findViewById(R.id.textViewBandit);
-        txtMute = (TextView) findViewById(R.id.textViewMute);
-        txtJager = (TextView) findViewById(R.id.textViewJager);
-        txtKapkan = (TextView) findViewById(R.id.textViewKapkan);
+        txtValkyrie = findViewById(R.id.textViewValkyrie);
+        txtBandit = findViewById(R.id.textViewBandit);
+        txtMute = findViewById(R.id.textViewMute);
+        txtJager = findViewById(R.id.textViewJager);
+        txtKapkan = findViewById(R.id.textViewKapkan);
 
-        txtCamera = (TextView) findViewById(R.id.textViewCamRem);
+        txtCamera = findViewById(R.id.textViewCamRem);
 
         notifyCamRem(pics.size());
 
         defaultTxtSetup();
 
-        buttonValkyrie = (ImageButton) findViewById(R.id.buttonDValkyrie);
-        buttonBandit = (ImageButton) findViewById(R.id.buttonDBandit);
-        buttonMute = (ImageButton) findViewById(R.id.buttonDMute);
-        buttonJager = (ImageButton) findViewById(R.id.buttonDJager);
-        buttonKapkan = (ImageButton) findViewById(R.id.buttonDKapkan);
+        buttonValkyrie = findViewById(R.id.buttonDValkyrie);
+        buttonBandit = findViewById(R.id.buttonDBandit);
+        buttonMute = findViewById(R.id.buttonDMute);
+        buttonJager = findViewById(R.id.buttonDJager);
+        buttonKapkan = findViewById(R.id.buttonDKapkan);
 
-        refreshBut = (ImageButton) findViewById(R.id.TwitchRefreshButton);
+        refreshBut = findViewById(R.id.TwitchRefreshButton);
 
         refreshBut.setOnClickListener(new View.OnClickListener()
         {

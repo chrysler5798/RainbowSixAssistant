@@ -15,12 +15,14 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.khrys.r6assistant.about.AboutActivity;
+import com.khrys.r6assistant.chat.MainChatActivity;
+import com.khrys.r6assistant.chat.MenuChatActivity;
 import com.khrys.r6assistant.operators.OperatorMenuActivity;
 import com.khrys.r6assistant.settings.SettingsActivity;
 import com.khrys.r6assistant.weapons.WeaponMenuActivity;
 
-public class MainActivity extends AppCompatActivity {
-
+public class MainActivity extends AppCompatActivity
+{
     int meuflotroll = 0;
 
     @Override
@@ -73,7 +75,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view)
             {
-                Toast.makeText(getApplicationContext(), R.string.msgsoon, Toast.LENGTH_SHORT).show();
+                //Toast.makeText(getApplicationContext(), R.string.msgsoon, Toast.LENGTH_SHORT).show();
+                Intent myIntent = new Intent(MainActivity.this, MenuChatActivity.class);
+                startActivity(myIntent);
             }
         });
 

@@ -86,7 +86,7 @@ public class SplashActivity extends Activity
         {
             e.printStackTrace();
         }
-        TextView versionname = (TextView) findViewById(R.id.textViewVersion);
+        TextView versionname = findViewById(R.id.textViewVersion);
         versionname.setText(versionName);
 
         new Handler().postDelayed(new Runnable() {

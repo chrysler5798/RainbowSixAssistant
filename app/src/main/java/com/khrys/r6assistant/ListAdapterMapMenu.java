@@ -77,8 +77,8 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
                      //itemView.setLayoutParams(new RecyclerView.LayoutParams(width1, RecyclerView.LayoutParams.MATCH_PARENT));
                  }
 
-                name = (TextView) itemView.findViewById(R.id.map);
-                image = (ImageView) itemView.findViewById(R.id.imgmap);
+                name = itemView.findViewById(R.id.map);
+                image = itemView.findViewById(R.id.imgmap);
 
                 itemView.setOnClickListener(new View.OnClickListener() {
                     @Override

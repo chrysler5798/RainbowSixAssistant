@@ -37,7 +37,7 @@ public class OperatorFragment extends Fragment
         RecyclerView mRecycler;
         RecyclerView.LayoutManager mLayout;
 
-        mRecycler = (RecyclerView) view.findViewById(R.id.WeaponsRecycler);
+        mRecycler = view.findViewById(R.id.WeaponsRecycler);
 
         mRecycler.setHasFixedSize(true);
         mLayout = new LinearLayoutManager(getContext());

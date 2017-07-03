@@ -107,7 +107,7 @@ public class LobbyActivity extends AppCompatActivity
                 LayoutInflater inflater = getLayoutInflater();
                 View dialoglayout = inflater.inflate(R.layout.dialog_lobby_create, null);
 
-                editName = (EditText) dialoglayout.findViewById(R.id.editTextName);
+                editName = dialoglayout.findViewById(R.id.editTextName);
 
                 builder.setView(dialoglayout);
                 builder.show();
@@ -150,8 +150,8 @@ public class LobbyActivity extends AppCompatActivity
                 LayoutInflater inflater = getLayoutInflater();
                 View dialoglayout = inflater.inflate(R.layout.dialog_lobby_join, null);
 
-                editName = (EditText) dialoglayout.findViewById(R.id.editTextName);
-                editID = (EditText) dialoglayout.findViewById(R.id.editTextID);
+                editName = dialoglayout.findViewById(R.id.editTextName);
+                editID = dialoglayout.findViewById(R.id.editTextID);
 
                 builder.setView(dialoglayout);
                 builder.show();

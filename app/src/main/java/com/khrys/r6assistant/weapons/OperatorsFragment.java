@@ -34,7 +34,7 @@ public class OperatorsFragment extends Fragment
     {
         super.onViewCreated(view, savedInstanceState);
 
-        RecyclerView recyclerView = (RecyclerView) view.findViewById(R.id.WeaponsRecycler);
+        RecyclerView recyclerView = view.findViewById(R.id.WeaponsRecycler);
 
         OperatorsListExpandableAdapter mOperatorsListExpandableAdapter = new OperatorsListExpandableAdapter(getContext(), generateOperatorsList());
         mOperatorsListExpandableAdapter.setCustomParentAnimationViewId(R.id.parent_list_item_expand_arrow);

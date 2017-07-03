@@ -73,8 +73,8 @@ class OperatorsViewHolder extends ParentViewHolder
     {
         super(itemView);
 
-        imageView = (ImageView) itemView.findViewById(R.id.imageVarme);
-        mCrimeTitleTextView = (TextView) itemView.findViewById(R.id.textVarme);
+        imageView = itemView.findViewById(R.id.imageVarme);
+        mCrimeTitleTextView = itemView.findViewById(R.id.textVarme);
     }
 }
 
@@ -88,8 +88,8 @@ class WeaponsViewHolder extends ChildViewHolder
     {
         super(itemView);
 
-        imgOperator = (ImageView) itemView.findViewById(R.id.imageVarme);
-        nomOperator = (TextView) itemView.findViewById(R.id.textVarme);
+        imgOperator = itemView.findViewById(R.id.imageVarme);
+        nomOperator = itemView.findViewById(R.id.textVarme);
 
         itemView.setOnClickListener(new View.OnClickListener()
         {
