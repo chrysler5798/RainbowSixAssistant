@@ -7,7 +7,6 @@
               android:orientation="vertical">
 
     <ImageView
-        android:id="@+id/imageView3"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:adjustViewBounds="true"
@@ -19,28 +18,28 @@
         android:orientation="vertical">
 
         <Button
-            android:id="@+id/buttonCamera2"
+            android:id="@+id/buttonTeam"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginBottom="10dp"
+            android:layout_weight="1"
             android:background="@color/colorPrimary"
             android:drawableLeft="@drawable/ic_operators"
             android:drawablePadding="10dp"
             android:padding="15dp"
-            android:text="Find team"
-            android:layout_weight="1"/>
+            android:text="@string/find_team"/>
 
         <Button
-            android:id="@+id/buttonCamera"
+            android:id="@+id/buttonPlayer"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginBottom="10dp"
+            android:layout_weight="1"
             android:background="@color/colorPrimary"
             android:drawableLeft="@drawable/ic_person"
             android:drawablePadding="10dp"
             android:padding="15dp"
-            android:text="Find players"
-            android:layout_weight="1"
+            android:text="@string/find_players"
             />
 
         <Button
@@ -52,7 +51,7 @@
             android:drawableLeft="@drawable/ic_chat"
             android:drawablePadding="10dp"
             android:padding="15dp"
-            android:text="Chat"
+            android:text="@string/chat"
             />
     </LinearLayout>
 

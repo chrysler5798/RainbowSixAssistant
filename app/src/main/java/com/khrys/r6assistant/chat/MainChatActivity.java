@@ -6,27 +6,28 @@ package com.khrys.r6assistant.chat;
  * Info : 7/1/2017 [7:24 PM]
 */
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseListAdapter;
 import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.khrys.r6assistant.R;
 
 public class MainChatActivity extends AppCompatActivity
 {
-    int SIGN_IN_REQUEST_CODE = 1;
     private FirebaseListAdapter<ChatMessage> adapter;
-    String user = "default";
+    String pseudo = "";
     int channel;
 
     @Override
@@ -34,23 +35,14 @@ public class MainChatActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
 
-//        if(FirebaseAuth.getInstance().getCurrentUser() == null)
-//        {
-//            // Start sign in/sign up activity
-//            startActivityForResult(AuthUI.getInstance().createSignInIntentBuilder().build(),SIGN_IN_REQUEST_CODE);
-//        } else {
-//            // User is already signed in. Therefore, display
-//            // a welcome Toast
-//            user = FirebaseAuth.getInstance().getCurrentUser().getEmail();
-//            Toast.makeText(this,
-//                    "Welcome " + user,
-//                    Toast.LENGTH_LONG)
-//                    .show();
-
-            // Load chat room contents
+        if(getSupportActionBar() != null)
+        {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
 
         channel = getIntent().getIntExtra("channel",0)+1;
         displayChatMessages(channel);
+        getPseudoDb();
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
 
@@ -64,7 +56,7 @@ public class MainChatActivity extends AppCompatActivity
                     FirebaseDatabase.getInstance()
                             .getReference("channels/channel"+channel+"/msgs")
                             .push()
-                            .setValue(new ChatMessage(input.getText().toString(), FirebaseAuth.getInstance().getCurrentUser().getDisplayName()));
+                            .setValue(new ChatMessage(input.getText().toString(), pseudo));
 
                     input.setText("");
                 }
@@ -72,30 +64,16 @@ public class MainChatActivity extends AppCompatActivity
     }
 
     @Override
-    protected void onActivityResult(int requestCode, int resultCode, Intent data)
+    public boolean onOptionsItemSelected(MenuItem item)
     {
-        super.onActivityResult(requestCode, resultCode, data);
-
-        if(requestCode == SIGN_IN_REQUEST_CODE)
+        switch (item.getItemId())
         {
-            if(resultCode == RESULT_OK)
-            {
-                Toast.makeText(this,
-                        "Successfully signed in. Welcome!",
-                        Toast.LENGTH_LONG)
-                        .show();
-                displayChatMessages(0);
-            }
-            else
-            {
-                Toast.makeText(this,
-                        "We couldn't sign you in. Please try again later.",
-                        Toast.LENGTH_LONG)
-                        .show();
+            case android.R.id.home:
+                this.finish();
+                return true;
 
-                // Close the app
-                finish();
-            }
+            default:
+                return super.onOptionsItemSelected(item);
         }
     }
 
@@ -121,5 +99,28 @@ public class MainChatActivity extends AppCompatActivity
         };
 
         listOfMessages.setAdapter(adapter);
+    }
+
+    void getPseudoDb()
+    {
+        FirebaseDatabase.getInstance().getReference().addListenerForSingleValueEvent(new ValueEventListener()
+        {
+            @Override
+            public void onDataChange(DataSnapshot dataSnapshot)
+            {
+                pseudo = dataSnapshot.child("users").child(getUid()).getValue(User.class).getPseudo();
+            }
+
+            @Override
+            public void onCancelled(DatabaseError databaseError)
+            {
+
+            }
+        });
+    }
+
+    String getUid()
+    {
+        return FirebaseAuth.getInstance().getCurrentUser().getUid();
     }
 }

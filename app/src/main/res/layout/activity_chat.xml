@@ -1,15 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
                 xmlns:app="http://schemas.android.com/apk/res-auto"
-                xmlns:tools="http://schemas.android.com/tools"
                 android:id="@+id/activity_main"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:paddingBottom="10dp"
                 android:paddingLeft="10dp"
                 android:paddingRight="10dp"
-                android:paddingTop="10dp"
-                tools:context="com.khrys.r6assistant.about.AboutActivity">
+                android:paddingTop="10dp">
 
     <android.support.design.widget.FloatingActionButton
         android:layout_width="wrap_content"
@@ -46,5 +44,6 @@
         android:dividerHeight="10dp"
         android:divider="@android:color/transparent"
         android:id="@+id/list_of_messages"
-        android:layout_marginBottom="16dp"/>
+        android:layout_marginBottom="16dp"
+        android:transcriptMode="alwaysScroll"/>
 </RelativeLayout>

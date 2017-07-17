@@ -19,7 +19,7 @@
     <string name="cameras">Caméras</string>
     <string name="twitch">Twitch</string>
     <string name="mapplans">Cartes &amp; Plans</string>
-    <string name="online">Online</string>
+    <string name="online">Online \n Chat &amp; trouver des joueurs</string>
     <string name="guns">Stats Armes</string>
     <string name="operators">Opérateurs</string>
     <string name="more">Plus</string>
@@ -194,6 +194,17 @@
     <string name="ugat_valkyrie">Caméra gyroscopique Mk2</string>
     <string name="uga_valkyrie">Peut paramétrer des caméras "Black Eye", accessibles par toute l\'équipe via les outils d\'observation.</string>
 
+    <!--ONLINE-->
+    <string name="no_internet">Aucune connexion internet !</string>
+    <string name="find_team">Trouver une équipe</string>
+    <string name="find_players">Trouver des joueurs</string>
+    <string name="chat">Chat</string>
+    <string name="online_welcome">Bienvenue %s sur R6 Assistant Online</string>
+    <string name="online_fail">Authentification échouée.</string>
+    <string name="online_signin">S\'inscrire</string>
+    <string name="signin_online">Ce pseudo est trop court !</string>
+    <string name="enternick_online">Entrer votre pseudo :</string>
+
     <!--LOBBY MENU-->
     <string name="lobbytitle">LOBBY ID : %d</string>
 
@@ -221,12 +232,17 @@
     <string name="portuguese">Portugais</string>
     <string name="italian">Italien</string>
     <string name="german">Allemand</string>
+    <string name="russian">Russe</string>
+    <string name="chinese">Chinese</string>
+    <string name="polish">Polish</string>
 
     <!--CREDIT TO TRANSLATORS-->
     <string name="translator_pt">LeGuigo</string>
     <string name="translator_de">Mert Huz</string>
     <string name="translator_it">Andrea Verano</string>
     <string name="translator_ru">Maxim Lem</string>
+    <string name="translator_zh">Neel Lee</string>
+    <string name="translator_pl">AK_D14BL0</string>
 
     <!--MAP MENU-->
     <string name="takemap">Selectionne une carte</string>
@@ -426,6 +442,4 @@
     <string name="barrel_3">Image of the Barrel 3</string>
     <string name="barrel_4">Image of the Barrel 4</string>
     <string name="barrel_5">Image of the Barrel 5</string>
-    <string name="russian">Russe</string>
-
 </resources>

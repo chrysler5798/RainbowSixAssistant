@@ -83,25 +83,25 @@
 
     <!--Army and country-->
     <string-array name="countriesArmy">
-        <item>russia</item>
+        <item>ru</item>
         <item>Spetsnaz</item>
         <item>de</item>
         <item>GSG9</item>
         <item>fr</item>
         <item>GIGN</item>
-        <item>usa</item>
+        <item>us</item>
         <item>SWAT</item>
-        <item>uk</item>
+        <item>gb</item>
         <item>SAS</item>
-        <item>canada</item>
+        <item>ca</item>
         <item>JTF2</item>
-        <item>usa</item>
+        <item>us</item>
         <item>Navy SEAL</item>
-        <item>brazil</item>
+        <item>br</item>
         <item>BOPE</item>
-        <item>japan</item>
+        <item>jp</item>
         <item>S.A.T.</item>
-        <item>spain</item>
+        <item>es</item>
         <item>G.E.O.</item>
     </string-array>
 
@@ -169,7 +169,7 @@
     <!--Operators info-->
     <string-array name="kapkan">
         <item>def</item>
-        <item>russia</item><item>Spetsnaz</item>
+        <item>ru</item><item>Spetsnaz</item>
         <item>4</item>
         <item>2</item>
         <item>9x19vsn</item>
@@ -184,7 +184,7 @@
 
     <string-array name="tachanka">
         <item>def</item>
-        <item>russia</item><item>Spetsnaz</item>
+        <item>ru</item><item>Spetsnaz</item>
         <item>4</item>
         <item>2</item>
         <item>9x19vsn</item>
@@ -199,7 +199,7 @@
 
     <string-array name="glaz">
         <item>atk</item>
-        <item>russia</item><item>Spetsnaz</item>
+        <item>ru</item><item>Spetsnaz</item>
         <item>3</item>
         <item>1</item>
         <item>ots-03</item>
@@ -213,7 +213,7 @@
 
     <string-array name="fuze">
         <item>atk</item>
-        <item>russia</item><item>Spetsnaz</item>
+        <item>ru</item><item>Spetsnaz</item>
         <item>4</item>
         <item>2</item>
         <item>6p41</item>
@@ -344,7 +344,7 @@
 
     <string-array name="thermite">
         <item>atk</item>
-        <item>usa</item><item>SWAT</item>
+        <item>us</item><item>SWAT</item>
         <item>4</item>
         <item>2</item>
         <item>m1014</item>
@@ -359,7 +359,7 @@
 
     <string-array name="pulse">
         <item>def</item>
-        <item>usa</item><item>SWAT</item>
+        <item>us</item><item>SWAT</item>
         <item>4</item>
         <item>2</item>
         <item>m1014</item>
@@ -374,7 +374,7 @@
 
     <string-array name="castle">
         <item>def</item>
-        <item>usa</item><item>SWAT</item>
+        <item>us</item><item>SWAT</item>
         <item>4</item>
         <item>2</item>
         <item>m1014</item>
@@ -389,7 +389,7 @@
 
     <string-array name="ash">
         <item>atk</item>
-        <item>usa</item><item>SWAT</item>
+        <item>us</item><item>SWAT</item>
         <item>4</item>
         <item>2</item>
         <item>g36c</item>
@@ -404,7 +404,7 @@
 
     <string-array name="thatcher">
         <item>atk</item>
-        <item>uk</item><item>SAS</item>
+        <item>gb</item><item>SAS</item>
         <item>4</item>
         <item>3</item>
         <item>ar33</item>
@@ -419,7 +419,7 @@
 
     <string-array name="smoke">
         <item>def</item>
-        <item>uk</item><item>SAS</item>
+        <item>gb</item><item>SAS</item>
         <item>4</item>
         <item>2</item>
         <item>fmg-9</item>
@@ -434,7 +434,7 @@
 
     <string-array name="sledge">
         <item>atk</item>
-        <item>uk</item><item>SAS</item>
+        <item>gb</item><item>SAS</item>
         <item>4</item>
         <item>2</item>
         <item>l85a2</item>
@@ -449,7 +449,7 @@
 
     <string-array name="mute">
         <item>def</item>
-        <item>uk</item><item>SAS</item>
+        <item>gb</item><item>SAS</item>
         <item>3</item>
         <item>2</item>
         <item>mp5k</item>
@@ -463,7 +463,7 @@
 
     <string-array name="frost">
         <item>def</item>
-        <item>canada</item><item>JTF2</item>
+        <item>ca</item><item>JTF2</item>
         <item>3</item>
         <item>2</item>
         <item>c1</item>
@@ -477,7 +477,7 @@
 
     <string-array name="buck">
         <item>atk</item>
-        <item>canada</item><item>JTF2</item>
+        <item>ca</item><item>JTF2</item>
         <item>3</item>
         <item>2</item>
         <item>c8-sfw</item>
@@ -491,7 +491,7 @@
 
     <string-array name="valkyrie">
         <item>def</item>
-        <item>usa</item><item>Navy SEAL</item>
+        <item>us</item><item>Navy SEAL</item>
         <item>3</item>
         <item>2</item>
         <item>mpx</item>
@@ -505,7 +505,7 @@
 
     <string-array name="blackbeard">
         <item>atk</item>
-        <item>usa</item><item>Navy SEAL</item>
+        <item>us</item><item>Navy SEAL</item>
         <item>3</item>
         <item>2</item>
         <item>sr-25</item>
@@ -519,7 +519,7 @@
 
     <string-array name="capitao">
         <item>atk</item>
-        <item>brazil</item><item>BOPE</item>
+        <item>br</item><item>BOPE</item>
         <item>3</item>
         <item>2</item>
         <item>para-308</item>
@@ -533,7 +533,7 @@
 
     <string-array name="caveira">
         <item>def</item>
-        <item>brazil</item><item>BOPE</item>
+        <item>br</item><item>BOPE</item>
         <item>3</item>
         <item>2</item>
         <item>m12</item>
@@ -547,7 +547,7 @@
 
     <string-array name="echo">
         <item>def</item>
-        <item>japan</item><item>S.A.T.</item>
+        <item>jp</item><item>S.A.T.</item>
         <item>4</item>
         <item>2</item>
         <item>supernova</item>
@@ -562,7 +562,7 @@
 
     <string-array name="hibana">
         <item>atk</item>
-        <item>japan</item><item>S.A.T.</item>
+        <item>jp</item><item>S.A.T.</item>
         <item>4</item>
         <item>2</item>
         <item>supernova</item>
@@ -577,7 +577,7 @@
 
     <string-array name="mira">
         <item>def</item>
-        <item>spain</item><item>G.E.O.</item>
+        <item>es</item><item>G.E.O.</item>
         <item>4</item>
         <item>2</item>
         <item>vector</item>
@@ -592,7 +592,7 @@
 
     <string-array name="jackal">
         <item>atk</item>
-        <item>spain</item><item>G.E.O.</item>
+        <item>es</item><item>G.E.O.</item>
         <item>5</item>
         <item>3</item>
         <item>pdw9</item>

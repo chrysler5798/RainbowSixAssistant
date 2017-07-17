@@ -11,11 +11,10 @@ import android.widget.TextView;
 
 import com.khrys.r6assistant.R;
 
-/**
+/*
  * Created by Chrysler on 12/20/2016.
- * <p>
  * RainbowSixAssistant
- */
+*/
 
 class SpinnerAdapter extends ArrayAdapter<String>
 {

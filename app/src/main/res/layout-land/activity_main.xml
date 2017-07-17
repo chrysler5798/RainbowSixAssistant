@@ -48,7 +48,7 @@
                     android:background="@color/colorPrimary"
                     android:drawableStart="@drawable/ic_camera"
                     android:gravity="center"
-                    android:text="@string/cameras" />
+                    android:text="@string/cameras"/>
 
                 <Button
                     android:id="@+id/buttonTwitch"
@@ -62,7 +62,7 @@
                     android:background="@color/colorPrimary"
                     android:drawableStart="@drawable/twitch"
                     android:gravity="center"
-                    android:text="@string/twitch" />
+                    android:text="@string/twitch"/>
 
                 <Button
                     android:id="@+id/buttonMap"
@@ -76,7 +76,7 @@
                     android:background="@color/colorPrimary"
                     android:drawableStart="@drawable/ic_map"
                     android:gravity="center"
-                    android:text="@string/mapplans" />
+                    android:text="@string/mapplans"/>
             </TableRow>
 
             <TableRow
@@ -99,7 +99,7 @@
                     android:background="@color/colorPrimary"
                     android:drawableStart="@drawable/ic_gun"
                     android:gravity="center"
-                    android:text="@string/guns" />
+                    android:text="@string/guns"/>
 
                 <Button
                     android:id="@+id/buttonOperator"
@@ -112,7 +112,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:drawableStart="@drawable/ic_operators"
-                    android:text="@string/operators" />
+                    android:text="@string/operators"/>
 
                 <Button
                     android:id="@+id/buttonOnline"
@@ -125,7 +125,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:drawableStart="@drawable/ic_online"
-                    android:text="@string/soon" />
+                    android:text="@string/soon"/>
             </TableRow>
 
         </TableLayout>
@@ -146,7 +146,7 @@
                 android:drawableLeft="@drawable/ic_info"
                 android:drawableStart="@drawable/ic_info"
                 android:paddingLeft="7dp"
-                android:text="@string/more" />
+                android:text="@string/more"/>
 
             <ImageButton
                 android:id="@+id/buttonSettings"
@@ -155,7 +155,7 @@
                 android:layout_margin="10dp"
                 android:background="@color/colorPrimary"
                 android:padding="12dp"
-                app:srcCompat="@drawable/ic_settings" />
+                app:srcCompat="@drawable/ic_settings"/>
         </LinearLayout>
     </LinearLayout>
 

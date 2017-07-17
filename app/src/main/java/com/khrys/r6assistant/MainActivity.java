@@ -1,8 +1,11 @@
 package com.khrys.r6assistant;
 
 import android.content.ActivityNotFoundException;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.ConnectivityManager;
+import android.net.NetworkInfo;
 import android.net.Uri;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
@@ -15,7 +18,6 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.khrys.r6assistant.about.AboutActivity;
-import com.khrys.r6assistant.chat.MainChatActivity;
 import com.khrys.r6assistant.chat.MenuChatActivity;
 import com.khrys.r6assistant.operators.OperatorMenuActivity;
 import com.khrys.r6assistant.settings.SettingsActivity;
@@ -75,9 +77,25 @@ public class MainActivity extends AppCompatActivity
             @Override
             public void onClick(View view)
             {
-                //Toast.makeText(getApplicationContext(), R.string.msgsoon, Toast.LENGTH_SHORT).show();
-                Intent myIntent = new Intent(MainActivity.this, MenuChatActivity.class);
-                startActivity(myIntent);
+
+                Toast.makeText(getApplicationContext(), R.string.msgsoon, Toast.LENGTH_SHORT).show();
+//                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+//                NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+//                if(activeNetworkInfo != null && activeNetworkInfo.isConnected())
+//                {
+//                    Intent myIntent = new Intent(MainActivity.this, MenuChatActivity.class);
+//                    startActivity(myIntent);
+//                }
+//                else
+//                {
+//                    AlertDialog.Builder dialogNoInternetBuilder = new AlertDialog.Builder(view.getContext(), R.style.MyAlertDialogStyle);
+//                    dialogNoInternetBuilder.setTitle(R.string.no_internet);
+//                    dialogNoInternetBuilder.setIcon(android.R.drawable.stat_sys_warning);
+//                    dialogNoInternetBuilder.setPositiveButton(android.R.string.ok, null);
+//
+//                    AlertDialog alertNoInternet = dialogNoInternetBuilder.create();
+//                    alertNoInternet.show();
+//                }
             }
         });
 

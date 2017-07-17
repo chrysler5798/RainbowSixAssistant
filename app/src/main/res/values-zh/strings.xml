@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--GLOBAL TEXT-->
+    <string name="app_name">R6 助手</string>
+
+    <!--BASIC WORDS-->
+    <string name="go">GO</string>
+    <string name="or">或</string>
+    <string name="close">关闭</string>
+
+    <!--BASIC NUMBERS-->
+    <string name="n1">1</string>
+    <string name="n2">2</string>
+    <string name="n3">3</string>
+    <string name="n4">4</string>
+    <string name="n5">5</string>
+
+    <!--MAIN MENU-->
+    <string name="cameras">监控</string>
+    <string name="twitch">电击小车加分项</string>
+    <string name="mapplans">地图</string>
+    <string name="online">Online \n Chat &amp; find players</string>
+    <string name="guns">武器属性</string>
+    <string name="operators">探员</string>
+    <string name="more">更多</string>
+
+    <!--SOON MSG-->
+    <string name="soon">更新</string>
+    <string name="msgsoon">新版本很快来临！</string>
+
+    <!--RATE APP POPUP-->
+    <string name="ratetitle">Rate R6 Assistant</string>
+    <string name="ratemsg">Rate the application and give your feedback on the Play Store</string>
+    <string name="error_market">Error : unable to find the Play Store App !</string>
+
+    <!--WEAPONS STATS-->
+    <string name="beta_msg">"这是测试版！这意味着它可能会错过一些东西。我们正在进行翻译工作！"</string>
+    <string name="byoperator">探员</string>
+    <string name="byweapons">武器</string>
+    <string name="legs">四肢</string>
+    <string name="body">身体</string>
+    <string name="rookarmor">穿着护甲</string>
+
+    <!--WEAPONS STATS CLASS-->
+    <string name="assault">突击步枪</string>
+    <string name="pistol">手枪</string>
+    <string name="lightmachine">轻机枪</string>
+    <string name="machinepistol">冲锋手枪</string>
+    <string name="marksmanrifle">精确射手步枪</string>
+    <string name="shotgun">霰弹枪</string>
+    <string name="submachinegun">冲锋枪</string>
+
+    <!--WEAPONS BARRELS-->
+    <string name="compensator">补偿器</string>
+    <string name="flash_hider">消焰器</string>
+    <string name="muzzle_brake">制退器</string>
+    <string name="suppressor">消音器</string>
+    <string name="extended_barrel">延长枪管</string>
+
+    <!--WEAPON STATS HELP-->
+    <string name="help_title">武器属性</string>
+    <string name="help_ammo">武器弹药数量</string>
+    <string name="help_firerate">射速</string>
+    <string name="help_damagefalloff">伤害开始衰减的距离</string>
+    <string name="help_armor">对1, 2或3级装甲的探员造成的伤害</string>
+    <string name="help_armor_rook">ROOK护甲所提供的不同等级减伤</string>
+    <string name="help_barrel">在统计页面的底部，你可以看到排位排名。 不管怎么说，这取决于你得个人风格。</string>
+
+    <!--WEAPON STATS CREDIT-->
+    <string name="stats_credit_1">一切版权归原作者所有。</string>
+    <string name="stats_credit_2">萌新汉化作品</string>
+
+    <!--OPERATORS MENU-->
+    <string name="bycountries">国籍</string>
+    <string name="attackers">攻击方</string>
+    <string name="defenders">布防手</string>
+
+    <!--OPERATORS-->
+    <string name="attacker">攻击方</string>
+    <string name="defender">布防手</string>
+    <string name="armor_light">轻甲</string>
+    <string name="armor_heavy">重甲</string>
+    <string name="speed_slow">慢</string>
+    <string name="speed_fast">快</string>
+    <string name="medium">中等</string>
+
+    <!--OPERATORS TITLE-->
+    <string name="speed">速度</string>
+    <string name="armor">盔甲</string>
+    <string name="primary">主武器</string>
+    <string name="secondary">副武器</string>
+    <string name="gadget">可选配置</string>
+    <string name="ugadget">探员技能</string>
+
+    <!--OPERATORS GADGET-->
+    <string name="gad_barbed">铁丝网</string>
+    <string name="gad_breach">姨妈贴</string>
+    <string name="gad_claymore">阔剑地雷</string>
+    <string name="gad_frag">手榴弹</string>
+    <string name="gad_impact">摔炮</string>
+    <string name="gad_nitro">遥控炸药</string>
+    <string name="gad_shield">可部署盾牌</string>
+    <string name="gad_smoke">烟雾弹</string>
+    <string name="gad_stun">闪光弹</string>
+
+    <!--OPERATORS UNIQUE GADGET DESCRIPTION-->
+    <string name="ugat_ash">M120 CREM</string>
+    <string name="uga_ash">发射一枚延时爆破弹，可破坏门窗和未被加固的墙体，配合自身速度，适合rush。</string>
+
+    <string name="ugat_bandit">CED-1</string>
+    <string name="uga_bandit">在铁墙，铁丝网，机动护盾上部署电箱，对触碰到的敌人造成伤害，并摧毁通电物体上地方部署的装置。</string>
+
+    <string name="ugat_blackbeard">TARS MK 0-Armored Rifle Shield</string>
+    <string name="uga_blackbeard">可在主武器上方插装防护小盾保护头部，损坏后可更坏一次。对枪时提供更多优势。</string>
+
+    <string name="ugat_blitz">G52-Tactical Shield</string>
+    <string name="uga_blitz">拥有可在中近距离致盲敌人的闪光盾牌，适合在狭小空间对付没有C4的敌人，限于速度原因被C4克制。</string>
+
+    <string name="ugat_buck">SK 4–12</string>
+    <string name="uga_buck">主武器上附挂榴弹装置，可造成高伤害，可杀伤敌人破坏为加强墙体。</string>
+
+    <string name="ugat_capitao">TAC Mk0</string>
+    <string name="uga_capitao">连弩弹药有两种，蓝色的是烟雾，另一种是火，伤害蛮高的，不快跑出去就会被烤熟。</string>
+
+    <string name="ugat_castle">UTP1-Universal Tactical Panel</string>
+    <string name="uga_castle">用更加坚固的龙鳞板替换普通门窗的挡板，阻止没有炸药的进攻探员推进，同时会拖延回防。</string>
+
+    <string name="ugat_caveira">Silent step</string>
+    <string name="uga_caveira">使用技能后的手枪威力巨大，审问技能可使你知道攻击方的位置，显示很短的时间。</string>
+
+    <string name="ugat_doc">MPD-0 Stim Pistol</string>
+    <string name="uga_doc">激素手枪可救起濒死的队友或自己，也可在健康时使用，恢复生命或提高血限（血限递减)。</string>
+
+    <string name="ugat_echo">YOKAI</string>
+    <string name="uga_echo">用一个4轴飞行器去震晕敌人，拥有侦察视野，可飞到天花板上隐形，在地上不能隐形。</string>
+
+    <string name="ugat_frost">Sterling MK2 LHT</string>
+    <string name="uga_frost">迎宾踏板可布置在窗下、转弯处、隐蔽处。被夹后无法自行脱身。</string>
+
+    <string name="ugat_fuze">APM-6 Matryoshka</string>
+    <string name="uga_fuze">在可破坏的墙体及天花板放置霰射炸药，对敌人造成伤害，但容易误伤人质和友军。</string>
+
+    <string name="ugat_glaz">HDS Flip Sight</string>
+    <string name="uga_glaz">主武器瞄准镜可穿透烟雾并将敌人标记异色，远处卡点以及配合烟雾弹的进行小范围冲突时很有效。</string>
+
+    <string name="ugat_hibana">X-KAIROS</string>
+    <string name="uga_hibana">铝热剂炸药可以在加固墙体上开出一个长方形的洞，可供观察与射击，但是无法过人。</string>
+
+    <string name="ugat_iq">RED MK III Spectre</string>
+    <string name="uga_iq">手臂的探测仪可探测一切电子装置，并将其安全摧毁。也可探测正在使用心跳探测仪的pulse。</string>
+
+    <string name="ugat_jackal">EYENOX MODEL III</string>
+    <string name="uga_jackal">跟踪目镜可通过脚步来追踪敌人踪迹。</string>
+
+    <string name="ugat_jager">ADS-MKIV Magpie</string>
+    <string name="uga_jager">主动防御装置可拦截攻击方一切飞行道具，使自己和队友免受手雷或闪光弹的侵扰。</string>
+
+    <string name="ugat_kapkan">EDD MK II</string>
+    <string name="uga_kapkan">在门、窗放置激光拌雷，触发拌雷会被炸死，激光线容易被攻击方发觉。</string>
+
+    <string name="ugat_mira">BLACK MIRROR</string>
+    <string name="uga_mira">在加固墙面上布置一个单向镜观察敌情，但容易被摧毁。</string>
+
+    <string name="ugat_montagne">Le Roc</string>
+    <string name="uga_montagne">伸缩护盾展开时可防御正面攻击，减免C4伤害，强攻时提供有效掩护并打乱布防手阵脚。</string>
+
+    <string name="ugat_mute">GC90 Moni Signal Disruptor</string>
+    <string name="uga_mute">放置信号干扰装置，干扰攻击方遥控设备，被EMP克制。</string>
+
+    <string name="ugat_pulse">HB-5 Cardiac Sensor</string>
+    <string name="uga_pulse">心跳探测仪可隔墙探测敌方心跳，并配合装置在门窗或未加固的墙体击杀敌人。</string>
+
+    <string name="ugat_rook">R1N Rhino Armor</string>
+    <string name="uga_rook">在地上放置一个护甲包，穿戴护甲的队友能减少子弹带来的伤害，且不减速。</string>
+
+    <string name="ugat_sledge">Tactical Breaching Hammer The Caber</string>
+    <string name="uga_sledge">爆破锤可破坏门窗及未被加固的墙体，突入更为迅速，副武器SMG性能在游戏中数一数二。</string>
+
+    <string name="ugat_smoke">Compound Z8 Grenade</string>
+    <string name="uga_smoke">放置遥控毒气，毒气内的玩家会持续受到伤害，对打乱攻击方的进攻节奏很有效。</string>
+
+    <string name="ugat_tachanka">RP-46 Degtyaryov Machine Gun</string>
+    <string name="uga_tachanka">部署一架NB机枪供自己或队友使用，机枪自带护盾可保护使用者上半身，使用时无法移动。</string>
+
+    <string name="ugat_thatcher">EG MK0-EMP Grenade</string>
+    <string name="uga_thatcher">脉冲手雷可摧毁爆炸范围内的敌方电子装备，推进更轻松。</string>
+
+    <string name="ugat_thermite">BRIMSTONE BC-3 Exothermic Charge</string>
+    <string name="uga_thermite">吕热炸药可摧毁加强墙面，是使攻击方有更多选择。</string>
+
+    <string name="ugat_twitch">RSD Model 1 Shock Drone</string>
+    <string name="uga_twitch">攻击型无人机，可破坏布防手一切电子设备，每次对布防手探员造成十点伤害，移动时声音比小，但不可跳跃。</string>
+
+    <string name="ugat_valkyrie">Gyro Cam Mk2</string>
+    <string name="uga_valkyrie">投掷监控探头，可在开局时投掷在高出观察敌情，为队友提供视野。</string>
+
+    <!--ONLINE-->
+    <string name="no_internet">No internet connection !</string>
+    <string name="find_team">Find team</string>
+    <string name="find_players">Find players</string>
+    <string name="chat">Chat</string>
+    <string name="online_welcome">Welcome %s to R6 Assistant Online</string>
+    <string name="online_fail">Authentication failed.</string>
+    <string name="online_signin">Sign in</string>
+    <string name="signin_online">This nickname is way too short !</string>
+    <string name="enternick_online">Enter your nickname :</string>
+
+    <!--LOBBY MENU-->
+    <string name="lobbytitle">LOBBY ID : %d</string>
+
+    <!--MORE MENU-->
+    <string name="about">About</string>
+    <string name="settings">设置</string>
+
+    <!--ABOUT-->
+    <string name="labelabout">R6 Assistant - 关于</string>
+    <string name="abouttxt1">"特别鸣谢ノやから  贴吧ID：我的确是新手ノやから 提供了部分词汇的翻译、探员技能介绍并进行校准贴吧ID：我的确是新手 提供了大部分探员技能介绍和基础打法。在此特别鸣谢"</string>
+
+    <!--SUPPORT-->
+    <string name="labelsupport">R6 Assistant - 支持我</string>
+    <string name="supporttxt">"This application is fully free, ads free, no paid features. By downloading it, giving your feedback or rating it you already did a lot for me, so thank you !I spend a lot of time on it, and of course because I want it but if you want to donate something, the button is below. If you donate your name will appear in the app soon.Thanks a lot !Khrys"</string>
+
+    <!--SETTINGS-->
+    <string name="labelsettings">R6 Assistant - 设置</string>
+    <string name="warning">Warning !</string>
+    <string name="settings_end">您需要重新启动应用程序以应用新语言！</string>
+
+    <!--CREDIT TO TRANSLATORS-->
+    <string name="translator_pt">LeGuigo</string>
+    <string name="translator_de">Mert Huz</string>
+    <string name="translator_it">Andrea Verano</string>
+    <string name="translator_ru">Maxim Lem</string>
+    <string name="translator_zh">Neel Lee</string>
+    <string name="translator_pl">AK_D14BL0</string>
+
+    <!--LANGUAGE-->
+    <string name="language">语言</string>
+    <string name="english">英语</string>
+    <string name="french">法语</string>
+    <string name="portuguese">葡萄牙语</string>
+    <string name="italian">意大利语</string>
+    <string name="german">德语</string>
+    <string name="russian">俄语</string>
+    <string name="chinese">中文</string>
+    <string name="polish">Polish</string>
+
+    <!--MAP MENU-->
+    <string name="takemap">选择地图</string>
+
+    <!--MAPS INFO-->
+    <string name="bank">银行</string>
+        <string name="bank_cam_s1">(1F) 序厅</string>
+        <string name="bank_cam_s2">(1F) 序厅</string>
+        <string name="bank_cam_s3">(2F) 天窗的楼梯间</string>
+        <string name="bank_cam_s4">(B) 拱顶大厅</string>
+        <string name="bank_cam_s5">(外部) 广场</string>
+        <string name="bank_cam_s6">(外部) 车库坡道</string>
+        <string name="bank_cam_s7">(外部) 小巷</string>
+
+    <string name="chalet">木屋</string>
+        <string name="chalet_cam_s1">(2F) 卧室走廊</string>
+        <string name="chalet_cam_s2">(2F) 壁炉走廊</string>
+        <string name="chalet_cam_s3">(1F) 书房楼梯</string>
+        <string name="chalet_cam_s4">(B) 雪地车车库</string>
+        <string name="chalet_cam_s5">(外部) 前院</string>
+        <string name="chalet_cam_s6">(外部) 后院</string>
+
+    <string name="clubhouse">俱乐部</string>
+        <string name="clubhouse_cam_s1">(2F) 卧室走廊</string>
+        <string name="clubhouse_cam_s2">(1F) 酒吧</string>
+        <string name="clubhouse_cam_s3">(1F) 车库</string>
+        <string name="clubhouse_cam_s4">(B) 地下室走廊</string>
+        <string name="clubhouse_cam_s5">(外部) VIP停车场</string>
+        <string name="clubhouse_cam_s6">(外部) 涂鸦区</string>
+        <string name="clubhouse_cam_s7">(外部) 犬舍</string>
+
+    <string name="consulate">领事馆</string>
+        <string name="consulate_cam_s1">(2F) 领事馆前台</string>
+        <string name="consulate_cam_s2">(1F) 主楼梯</string>
+        <string name="consulate_cam_s3">(1F) 签证处</string>
+        <string name="consulate_cam_s4">(外部) 前门</string>
+        <string name="consulate_cam_s5">(B) 更衣室的走廊</string>
+        <string name="consulate_cam_s6">(B) 车库</string>
+        <string name="consulate_cam_s7">(外部) 前面的巷子</string>
+        <string name="consulate_cam_s8">(外部) 车库的路</string>
+
+    <string name="favela">贫民区</string>
+        <string name="favela_cam_s1">(3F) 后面楼梯</string>
+        <string name="favela_cam_s2">(3F) 主楼梯</string>
+        <string name="favela_cam_s3">(1F) 洗衣房</string>
+        <string name="favela_cam_s4">(1F) 洗衣房</string>
+        <string name="favela_cam_s5">(外部) 学校小路</string>
+        <string name="favela_cam_s6">(外部) 街面</string>
+        <string name="favela_cam_s7">(外部) 小巷</string>
+
+    <string name="hereford">赫里福德基地</string>
+        <string name="hereford_cam_s1">(外部) 屋顶</string>
+        <string name="hereford_cam_s2">(2F) 走廊</string>
+        <string name="hereford_cam_s3">(1F) 走廊 1</string>
+        <string name="hereford_cam_s4">(B) 储物柜</string>
+        <string name="hereford_cam_s5">(外部) 射击场</string>
+        <string name="hereford_cam_s6">(外部) 叉车地区</string>
+
+    <string name="kafedostoyevsky">咖啡馆</string>
+        <string name="kafedostoyevsky_cam_s1">(3F) 鸡尾酒会</string>
+        <string name="kafedostoyevsky_cam_s2">(2F) 阅览室</string>
+        <string name="kafedostoyevsky_cam_s3">(1F) 冷室走廊</string>
+        <string name="kafedostoyevsky_cam_s4">(1F) 面包店</string>
+        <string name="kafedostoyevsky_cam_s5">(外部) 西大街</string>
+        <string name="kafedostoyevsky_cam_s6">(外部) 公园小径</string>
+
+    <string name="house">豪宅</string>
+        <string name="house_cam_s1">(外部) 前廊顶</string>
+        <string name="house_cam_s2">(1F) 厨房</string>
+        <string name="house_cam_s3">(B) 培训室</string>
+        <string name="house_cam_s4">(B) 车库</string>
+        <string name="house_cam_s5">(外部) 前院</string>
+        <string name="house_cam_s6">(外部) 花园</string>
+
+    <string name="kanal">运河</string>
+        <string name="kanal_cam_s1">(CC3F) 控制室走廊</string>
+        <string name="kanal_cam_s2">(CC2F) 办公室的走廊地图</string>
+        <string name="kanal_cam_s3">(CG2F) 海岸警卫队走廊</string>
+        <string name="kanal_cam_s4">(CG1F) 船上的走廊</string>
+        <string name="kanal_cam_s5">(外部) 前面的草坪</string>
+        <string name="kanal_cam_s6">(外部) 闸门</string>
+        <string name="kanal_cam_s7">(外部) 施工现场</string>
+
+    <string name="plane">总统专机</string>
+        <string name="plane_cam_s1">(3F) 机组人员</string>
+        <string name="plane_cam_s2">(2F) 前面走廊</string>
+        <string name="plane_cam_s3">(2F) Press Section A</string>
+        <string name="plane_cam_s4">(1F) 行李舱</string>
+        <string name="plane_cam_s5">(1F) 货舱</string>
+
+    <string name="border">边境</string>
+        <string name="border_cam_s1">(2F) 东楼梯</string>
+        <string name="border_cam_s2">(2F) 主门</string>
+        <string name="border_cam_s3">(1F) 大堂</string>
+        <string name="border_cam_s4">(1F) 出口通道</string>
+        <string name="border_cam_s5">(外部) 停车场小路</string>
+        <string name="border_cam_s6">(外部) 车祸现场</string>
+        <string name="border_cam_s7">(外部) 停车场的小巷</string>
+
+    <string name="oregon">俄勒冈</string>
+        <string name="oregon_cam_s1">(2F) 军械库走廊</string>
+        <string name="oregon_cam_s2">(1F) 序厅</string>
+        <string name="oregon_cam_s3">(1F) 餐厅的走廊</string>
+        <string name="oregon_cam_s4">(1F) 后楼梯</string>
+        <string name="oregon_cam_s5">(外部)垃圾场</string>
+        <string name="oregon_cam_s6">(外部) 停车场</string>
+        <string name="oregon_cam_s7">(外部) 施工现场</string>
+
+    <string name="yacht">游艇</string>
+        <string name="yacht_cam_s1">(4F) 直升机停机坪</string>
+        <string name="yacht_cam_s2">(3F) 卧室走廊</string>
+        <string name="yacht_cam_s3">(3F) 等候室</string>
+        <string name="yacht_cam_s4">(2F) 前楼梯</string>
+        <string name="yacht_cam_s5">(2F) 后楼梯</string>
+        <string name="yacht_cam_s6">(1F) 发动机走廊</string>
+        <string name="yacht_cam_s7">(外部) 前甲板</string>
+        <string name="yacht_cam_s8">(外部) 健身甲板</string>
+
+    <string name="skyscraper">摩天大楼</string>
+        <string name="skyscraper_cam_s1">(2F) 走廊</string>
+        <string name="skyscraper_cam_s2">(1F) 餐厅</string>
+        <string name="skyscraper_cam_s3">(2F) 房子楼梯</string>
+        <string name="skyscraper_cam_s4">(1F) 房子大厅</string>
+        <string name="skyscraper_cam_s5">(外部) 西花园</string>
+        <string name="skyscraper_cam_s6">(外部) 东花园</string>
+        <string name="skyscraper_cam_s7">(外部) 通风装置</string>
+
+    <string name="university">巴特雷特</string>
+        <string name="barlett_cam_s1">(2F) 旋转走廊</string>
+        <string name="barlett_cam_s2">(2F) Vista走廊</string>
+        <string name="barlett_cam_s3">(1F) 牌楼馆</string>
+        <string name="barlett_cam_s4">(1F) 序厅</string>
+        <string name="barlett_cam_s5">(1F) 餐厅</string>
+        <string name="barlett_cam_s6">(外部) 主门</string>
+        <string name="barlett_cam_s7">(外部) 停车场</string>
+
+    <string name="coastline">海岸线</string>
+        <string name="coastline_cam_s1">(1F) 走廊</string>
+        <string name="coastline_cam_s2">(1F) 走廊</string>
+        <string name="coastline_cam_s3">(2F) 水族馆</string>
+        <string name="coastline_cam_s4">(2F) 走廊</string>
+        <string name="coastline_cam_s5">(外部) 车库顶板</string>
+        <string name="coastline_cam_s6">(外部) 废墟</string>
+        <string name="coastline_cam_s7">(外部) 废墟</string>
+
+    <string name="destroyPhrase">%d</string>
+    <string name="cameraPhrase">%d 监控</string>
+    <string name="cameraPhrase2_1">%d 监控剩余</string>
+    <string name="cameraPhrase2_2">%d 监控剩余</string>
+    <string name="cameraAllDestroyed">所有监控已摧毁</string>
+    <string name="destroyed">无</string>
+
+    <!--FLOORS OF MAP PLAN-->
+    <string name="f_base">地下室</string>
+    <string name="f_0">1楼</string>
+    <string name="f_1">2楼</string>
+    <string name="f_2">3楼</string>
+    <string name="f_3">4楼</string>
+
+    <!--FLOORS ERROR PHRASE-->
+    <string name="planerror">这张地图上还没有计划！</string>
+    <string name="error_floor_below">没有下一层了！</string>
+    <string name="error_floor_above">没有上一层了！</string>
+
+    <!--IMAGE CONTENT DESCRIPTION-->
+    <string name="twitch_drone_image">Twitch Drone Image</string>
+    <string name="zoom_icon">Zoom Icon</string>
+    <string name="zoomedimg">Zoomed Image</string>
+    <string name="cellimg">Cell Image</string>
+    <string name="banner_image">Banner Image</string>
+    <string name="version_d">Version %S</string>
+    <string name="zoom">放大</string>
+    <string name="floor">地板</string>
+    <string name="zoom_in">放大</string>
+    <string name="zoom_out">缩小</string>
+    <string name="resetzoom">重置缩放</string>
+    <string name="position">位置</string>
+    <string name="meuflostring">"TROLLED BY MEUFLO THE BETA TESTER"</string>
+    <string name="troll_face">Troll Face</string>
+    <string name="star">开始</string>
+    <string name="settingsicon">Icon Settings</string>
+    <!--WEAPON STATS CONTENT DESCRIPTION-->
+    <string name="name_weapon">Weapon Image</string>
+    <string name="op_1">Operator Icon 1</string>
+    <string name="op_2">Operator Icon 2</string>
+    <string name="op_3">Operator Icon 3</string>
+    <string name="op_4">Operator Icon 4</string>
+    <string name="ammo_icon">Ammo Icon</string>
+    <string name="firerate_icon">Fire rate Icon</string>
+    <string name="damagefall_icon">Damage fall off Icon</string>
+    <string name="rook_icon">Damage fall off Icon</string>
+    <string name="armor_light_icon">Light Amor Icon</string>
+    <string name="armor_medium_icon">Medium Amor Icon</string>
+    <string name="armor_heavy_icon">Heavy Amor Icon</string>
+    <string name="barrel_1">Image of the Barrel 1</string>
+    <string name="barrel_2">Image of the Barrel 2</string>
+    <string name="barrel_3">Image of the Barrel 3</string>
+    <string name="barrel_4">Image of the Barrel 4</string>
+    <string name="barrel_5">Image of the Barrel 5</string>
+</resources>

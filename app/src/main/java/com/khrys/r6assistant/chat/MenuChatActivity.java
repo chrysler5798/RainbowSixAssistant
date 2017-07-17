@@ -6,6 +6,7 @@ package com.khrys.r6assistant.chat;
  * Info : 7/2/2017 [4:58 PM]
 */
 
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,10 +15,11 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.view.LayoutInflater;
+import android.view.MenuItem;
 import android.view.View;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -25,16 +27,20 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
-import com.google.firebase.auth.UserProfileChangeRequest;
+import com.google.firebase.database.DataSnapshot;
+import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.FirebaseDatabase;
+import com.google.firebase.database.ValueEventListener;
 import com.khrys.r6assistant.R;
 
 public class MenuChatActivity extends AppCompatActivity
 {
+    String pseudo;
     FirebaseAuth mAuth;
     EditText editPseudo;
-    String pseudoUser = "";
     FirebaseUser user;
     AlertDialog dialog;
+    InputMethodManager inputMethodManager;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
@@ -43,7 +49,16 @@ public class MenuChatActivity extends AppCompatActivity
 
         setContentView(R.layout.activity_onlinemenu);
 
+        if(getSupportActionBar() != null)
+        {
+            getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        }
+
+        Button btnTeam = (Button) findViewById(R.id.buttonTeam);
+        Button btnPlayer = (Button) findViewById(R.id.buttonPlayer);
         Button btnChat = (Button) findViewById(R.id.buttonChat);
+
+        inputMethodManager = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
 
         mAuth = FirebaseAuth.getInstance();
         user = mAuth.getCurrentUser();
@@ -52,6 +67,43 @@ public class MenuChatActivity extends AppCompatActivity
         {
             showDialogToSign();
         }
+        else
+        {
+            FirebaseDatabase.getInstance().getReference().addListenerForSingleValueEvent(new ValueEventListener()
+            {
+                @Override
+                public void onDataChange(DataSnapshot dataSnapshot)
+                {
+                    String pseudoDb = dataSnapshot.child("users").child(getUid()).getValue(User.class).getPseudo();
+                    String msgWelcome = String.format(getResources().getString(R.string.online_welcome), pseudoDb);
+                    Toast.makeText(getApplicationContext(), msgWelcome, Toast.LENGTH_LONG).show();
+                }
+
+                @Override
+                public void onCancelled(DatabaseError databaseError)
+                {
+
+                }
+            });
+        }
+
+        btnTeam.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(MenuChatActivity.this, MenuFindTeamActivity.class));
+            }
+        });
+
+        btnPlayer.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(MenuChatActivity.this, MenuFindPlayerActivity.class));
+            }
+        });
 
         btnChat.setOnClickListener(new View.OnClickListener()
         {
@@ -72,16 +124,14 @@ public class MenuChatActivity extends AppCompatActivity
             {
                 if (task.isSuccessful())
                 {
-                    if(user != null)
-                    {
-                        UserProfileChangeRequest changeP = new UserProfileChangeRequest.Builder().setDisplayName(pseudoUser).build();
-                        user.updateProfile(changeP);
-                    }
-                    Toast.makeText(getApplicationContext(), "Welcome "+pseudoUser+" to R6 Assistant Online", Toast.LENGTH_LONG).show();
+                    FirebaseDatabase.getInstance()
+                            .getReference("users/"+getUid())
+                            .setValue(new User(pseudo,1));
+                    welcomeMsg();
                 }
                 else
                 {
-                    Toast.makeText(getApplicationContext(), "Authentication failed.", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(getApplicationContext(), R.string.online_fail, Toast.LENGTH_SHORT).show();
                 }
             }
         });
@@ -93,9 +143,9 @@ public class MenuChatActivity extends AppCompatActivity
 
         LayoutInflater inflater = getLayoutInflater();
 
-        builder.setView(inflater.inflate(R.layout.activity_login, null))
-                .setPositiveButton("Sign in", null)
-                .setNegativeButton("Cancel", new DialogInterface.OnClickListener()
+        builder.setView(inflater.inflate(R.layout.dialog_login, null))
+                .setPositiveButton(R.string.online_signin, null)
+                .setNegativeButton(android.R.string.cancel, new DialogInterface.OnClickListener()
                 {
                     public void onClick(DialogInterface dialog, int id)
                     {
@@ -111,20 +161,24 @@ public class MenuChatActivity extends AppCompatActivity
             @Override
             public void onShow(DialogInterface dialogInterface)
             {
+                inputMethodManager.toggleSoftInput(InputMethodManager.SHOW_FORCED,0);
+
                 Button posiButton = dialog.getButton(AlertDialog.BUTTON_POSITIVE);
                 posiButton.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
                     public void onClick(View view)
                     {
-                        pseudoUser = editPseudo.getText().toString();
-                        if(pseudoUser.length() > 15)
+                        String txtEdit = editPseudo.getText().toString();
+                        if(txtEdit.length() <= 4)
                         {
-                            Toast.makeText(getApplicationContext(), "This nickname is way too long !", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(getApplicationContext(), R.string.signin_online, Toast.LENGTH_SHORT).show();
                         }
                         else
                         {
                             dialog.dismiss();
+                            pseudo = txtEdit;
+                            closeKeyboard();
                             signInAno();
                         }
                     }
@@ -133,7 +187,7 @@ public class MenuChatActivity extends AppCompatActivity
         });
 
         dialog.getWindow().setBackgroundDrawableResource(R.color.colorPrimary);
-        dialog.setTitle("Enter your nickname :");
+        dialog.setTitle(R.string.enternick_online);
         dialog.show();
 
         editPseudo = (EditText) dialog.findViewById(R.id.editTextPseudo);
@@ -143,8 +197,39 @@ public class MenuChatActivity extends AppCompatActivity
             @Override
             public void onCancel(DialogInterface dialogInterface)
             {
+                closeKeyboard();
                 finish();
             }
         });
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
+        switch (item.getItemId())
+        {
+            case android.R.id.home:
+                this.finish();
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
+    }
+
+    void welcomeMsg()
+    {
+        String msgWelcome = String.format(getResources().getString(R.string.online_welcome), pseudo);
+        Toast.makeText(getApplicationContext(), msgWelcome, Toast.LENGTH_LONG).show();
+    }
+
+    String getUid()
+    {
+        return FirebaseAuth.getInstance().getCurrentUser().getUid();
+    }
+
+    void closeKeyboard()
+    {
+        inputMethodManager.toggleSoftInput(InputMethodManager.HIDE_IMPLICIT_ONLY,0);
     }
 }

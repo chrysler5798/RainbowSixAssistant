@@ -19,7 +19,7 @@
     <string name="cameras">Камеры</string>
     <string name="twitch">Twitch</string>
     <string name="mapplans">Карты и Планы</string>
-    <string name="online">Online</string>
+    <string name="online">Online \n Chat &amp; find players</string>
     <string name="guns">Характеристики оружия</string>
     <string name="operators">Оперативники</string>
     <string name="more">Больше</string>
@@ -194,6 +194,17 @@
     <string name="ugat_valkyrie">Gyro Cam Mk2</string>
     <string name="uga_valkyrie">Can set up "Black Eye" cameras, feed accessible by whole team via observation tools.</string>
 
+    <!--ONLINE-->
+    <string name="no_internet">No internet connection !</string>
+    <string name="find_team">Find team</string>
+    <string name="find_players">Find players</string>
+    <string name="chat">Chat</string>
+    <string name="online_welcome">Welcome %s to R6 Assistant Online</string>
+    <string name="online_fail">Authentication failed.</string>
+    <string name="online_signin">Sign in</string>
+    <string name="signin_online">This nickname is way too short !</string>
+    <string name="enternick_online">Enter your nickname :</string>
+
     <!--LOBBY MENU-->
     <string name="lobbytitle">LOBBY ID : %d</string>
 
@@ -219,6 +230,8 @@
     <string name="translator_de">Mert Huz</string>
     <string name="translator_it">Andrea Verano</string>
     <string name="translator_ru">Maxim Lem</string>
+    <string name="translator_zh">Neel Lee</string>
+    <string name="translator_pl">AK_D14BL0</string>
 
     <!--LANGUAGE-->
     <string name="language">Язык</string>
@@ -228,6 +241,8 @@
     <string name="italian">Итальянский</string>
     <string name="german">Немецкий</string>
     <string name="russian">Русский</string>
+    <string name="chinese">Chinese</string>
+    <string name="polish">Polish</string>
 
     <!--MAP MENU-->
     <string name="takemap">Выбрать карту</string>
@@ -427,5 +442,4 @@
     <string name="barrel_3">Image of the Barrel 3</string>
     <string name="barrel_4">Image of the Barrel 4</string>
     <string name="barrel_5">Image of the Barrel 5</string>
-
 </resources>

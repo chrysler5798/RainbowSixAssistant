@@ -7,28 +7,25 @@ package com.khrys.r6assistant.chat;
 */
 
 import java.util.Calendar;
+import java.util.TimeZone;
 
 public class ChatMessage
 {
     private String messageText;
     private String messageUser;
     private String messageTime;
-    private String uplay;
+
+    public ChatMessage()
+    {
+    }
 
     public ChatMessage(String messageText, String messageUser)
     {
         this.messageText = messageText;
         this.messageUser = messageUser;
 
-        // Initialize to current time
-        Calendar c = Calendar.getInstance();
-        messageTime = c.get(Calendar.HOUR)+":"+c.get(Calendar.MINUTE);
-        uplay = "test";
-    }
-
-    public ChatMessage()
-    {
-
+        Calendar c = Calendar.getInstance(TimeZone.getTimeZone("Europe/Paris"));
+        messageTime = String.format("%02d:%02d", c.get(Calendar.HOUR), c.get(Calendar.MINUTE));
     }
 
     public String getMessageText()
@@ -59,15 +56,5 @@ public class ChatMessage
     public void setMessageTime(String messageTime)
     {
         this.messageTime = messageTime;
-    }
-
-    public String getUplay()
-    {
-        return uplay;
-    }
-
-    public void setUplay(String uplay)
-    {
-        this.uplay = uplay;
     }
 }

@@ -31,8 +31,8 @@ public class SettingsActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        String[] textArray = {getRes(R.string.english),getRes(R.string.french),getRes(R.string.portuguese),getRes(R.string.german),getRes(R.string.italian), getRes(R.string.russian)};
-        Integer[] imageArray = {R.drawable.flag_uk,R.drawable.flag_fr,R.drawable.flag_pt,R.drawable.flag_de,R.drawable.flag_it, R.drawable.flag_russia};
+        String[] textArray = {getRes(R.string.english),getRes(R.string.french),getRes(R.string.portuguese),getRes(R.string.german),getRes(R.string.italian), getRes(R.string.russian), getRes(R.string.chinese), getRes(R.string.polish)};
+        Integer[] imageArray = {R.drawable.flag_gb,R.drawable.flag_fr,R.drawable.flag_pt,R.drawable.flag_de,R.drawable.flag_it, R.drawable.flag_ru, R.drawable.flag_zh, R.drawable.flag_pl};
 
         super.onCreate(savedInstanceState);
 
@@ -74,6 +74,14 @@ public class SettingsActivity extends AppCompatActivity
                 yes = 5;
                 break;
 
+            case "zh":
+                yes = 6;
+                break;
+
+            case "pl":
+                yes = 7;
+                break;
+
             default:
                 yes = 0;
                 break;
@@ -110,6 +118,14 @@ public class SettingsActivity extends AppCompatActivity
 
                         case 5:
                             showDialogToExit(5);
+                            break;
+
+                        case 6:
+                            showDialogToExit(6);
+                            break;
+
+                        case 7:
+                            showDialogToExit(7);
                             break;
                     }
                 }
