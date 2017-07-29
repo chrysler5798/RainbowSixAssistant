@@ -75,27 +75,28 @@ public class MainActivity extends AppCompatActivity
         buttononline.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(View view)
+            public void onClick(final View view)
             {
 
-                Toast.makeText(getApplicationContext(), R.string.msgsoon, Toast.LENGTH_SHORT).show();
-//                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-//                NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-//                if(activeNetworkInfo != null && activeNetworkInfo.isConnected())
-//                {
-//                    Intent myIntent = new Intent(MainActivity.this, MenuChatActivity.class);
-//                    startActivity(myIntent);
-//                }
-//                else
-//                {
-//                    AlertDialog.Builder dialogNoInternetBuilder = new AlertDialog.Builder(view.getContext(), R.style.MyAlertDialogStyle);
-//                    dialogNoInternetBuilder.setTitle(R.string.no_internet);
-//                    dialogNoInternetBuilder.setIcon(android.R.drawable.stat_sys_warning);
-//                    dialogNoInternetBuilder.setPositiveButton(android.R.string.ok, null);
-//
-//                    AlertDialog alertNoInternet = dialogNoInternetBuilder.create();
-//                    alertNoInternet.show();
-//                }
+                //Toast.makeText(getApplicationContext(), R.string.msgsoon, Toast.LENGTH_SHORT).show();
+
+                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+                NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+                if(activeNetworkInfo != null && activeNetworkInfo.isConnected())
+                {
+                    Intent myIntent = new Intent(MainActivity.this, MenuChatActivity.class);
+                    startActivity(myIntent);
+                }
+                else
+                {
+                    AlertDialog.Builder dialogNoInternetBuilder = new AlertDialog.Builder(view.getContext(), R.style.MyAlertDialogStyle);
+                    dialogNoInternetBuilder.setTitle(R.string.no_internet);
+                    dialogNoInternetBuilder.setIcon(android.R.drawable.stat_sys_warning);
+                    dialogNoInternetBuilder.setPositiveButton(android.R.string.ok, null);
+
+                    AlertDialog alertNoInternet = dialogNoInternetBuilder.create();
+                    alertNoInternet.show();
+                }
             }
         });
 

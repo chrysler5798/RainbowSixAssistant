@@ -53,12 +53,16 @@ public class MainChatActivity extends AppCompatActivity
                 {
                     EditText input = (EditText)findViewById(R.id.input);
 
-                    FirebaseDatabase.getInstance()
-                            .getReference("channels/channel"+channel+"/msgs")
-                            .push()
-                            .setValue(new ChatMessage(input.getText().toString(), pseudo));
+                    String msgToSend = input.getText().toString();
+                    if(!msgToSend.isEmpty())
+                    {
+                        FirebaseDatabase.getInstance()
+                                .getReference("channels/channel"+channel+"/msgs")
+                                .push()
+                                .setValue(new ChatMessage(msgToSend, pseudo));
 
-                    input.setText("");
+                        input.setText("");
+                    }
                 }
             });
     }

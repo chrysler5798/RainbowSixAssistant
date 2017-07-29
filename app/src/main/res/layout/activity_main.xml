@@ -132,7 +132,7 @@
                 android:background="@color/colorPrimary"
                 android:drawableTop="@drawable/ic_online"
                 android:paddingTop="20dp"
-                android:text="@string/soon"/>
+                android:text="@string/online"/>
         </TableRow>
 
     </TableLayout>

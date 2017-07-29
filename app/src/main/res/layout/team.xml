@@ -64,7 +64,7 @@
                 android:gravity="center"
                 android:paddingLeft="15dp"
                 android:paddingStart="15dp"
-                android:text="Platform :"
+                android:text="@string/team_platform"
                 android:textSize="18sp"/>
 
             <ImageView
@@ -81,7 +81,7 @@
                 android:gravity="center"
                 android:paddingLeft="15dp"
                 android:paddingStart="15dp"
-                android:text="Rank :"
+                android:text="@string/team_rank"
                 android:textSize="18sp"/>
 
             <ImageView

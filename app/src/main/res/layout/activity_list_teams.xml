@@ -29,6 +29,6 @@
         android:id="@+id/buttonCreateTeam"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Create new team"/>
+        android:text="@string/create_team"/>
 
 </LinearLayout>

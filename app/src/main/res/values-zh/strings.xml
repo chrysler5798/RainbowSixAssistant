@@ -195,15 +195,75 @@
     <string name="uga_valkyrie">投掷监控探头，可在开局时投掷在高出观察敌情，为队友提供视野。</string>
 
     <!--ONLINE-->
-    <string name="no_internet">No internet connection !</string>
+    <string name="create_txt">Create</string>
+    <string name="message">Message</string>
+    <string name="online_chat_msg">Hi ! I\'m not a cop, please be respectful in chats. I\'ve made this app to help you, not to ban you.</string>
+
+    <!--ONLINE MENU-->
     <string name="find_team">Find team</string>
     <string name="find_players">Find players</string>
     <string name="chat">Chat</string>
-    <string name="online_welcome">Welcome %s to R6 Assistant Online</string>
-    <string name="online_fail">Authentication failed.</string>
+
+    <!--ONLINE SIGN IN-->
     <string name="online_signin">Sign in</string>
-    <string name="signin_online">This nickname is way too short !</string>
     <string name="enternick_online">Enter your nickname :</string>
+    <string name="signin_online">This nickname is way too short !</string>
+    <string name="online_welcome">Welcome %s to R6 Assistant Online</string>
+
+    <!--ONLINE ERROR-->
+    <string name="no_internet">No internet connection !</string>
+    <string name="online_fail">Authentication failed.</string>
+    <string name="maintenance">Maintenance !</string>
+
+    <!--TEAM ONLINE MSG-->
+    <string name="team_dialog_title">Be careful</string>
+    <string name="team_dialog_msg">If you leave the app, your team will be removed. You will need to create a new one.</string>
+    <string name="player_dialog_msg">If you leave the app, your profile will be removed. You will need to create a new one.</string>
+
+    <string name="team_full_dialog_title">Is your team full ?</string>
+    <string name="team_full_dialog_msg">If your team is full, then you can remove it from team seeking players.</string>
+
+    <string name="team_leave_dialog_title">Are you sure that you want to leave ?</string>
+    <string name="team_leave_dialog_msg">If you leave, your team will be removed, you will need to create a new one.</string>
+    <string name="player_leave_dialog_msg">If you leave, your profile will be removed, you will need to create a new one.</string>
+    <string name="team_leave_dialog">Leave</string>
+    <string name="team_stay_dialog">Stay</string>
+
+    <string name="team_tag_admin">[Team admin] </string>
+    <string name="player_tag_admin">[Player] </string>
+
+    <!--TEAM and PLAYER ONLINE-->
+    <string name="create_team">Create new team</string>
+    <string name="create_uteam">Create your team</string>
+
+    <string name="create_player">Add yourself as a player</string>
+    <string name="create_uplayer">Create your profile</string>
+
+    <string name="team_name">Name of your team:</string>
+    <string name="team_name_error">Name of the team is way too short !</string>
+    <string name="player_name_error">Your name is way too short !</string>
+
+    <string name="player_name">Your nickname:</string>
+
+    <string name="team_language">Language:</string>
+
+    <string name="team_platform">Platform:</string>
+
+    <string name="team_mpmode">Multiplayer mode:</string>
+    <string name="team_mpmode_for">for</string>
+    <string name="team_mpmode_1">Casual</string>
+    <string name="team_mpmode_2">Ranked</string>
+    <string name="team_mpmode_3">Practice</string>
+
+    <string name="team_rank">Rank:</string>
+    <string name="team_rank_1">Copper</string>
+    <string name="team_rank_2">Bronze</string>
+    <string name="team_rank_3">Silver</string>
+    <string name="team_rank_4">Gold</string>
+    <string name="team_rank_5">Platinum</string>
+    <string name="team_rank_6">Diamond</string>
+
+    <string name="team_playerneed">How many players do you need ?</string>
 
     <!--LOBBY MENU-->
     <string name="lobbytitle">LOBBY ID : %d</string>
@@ -243,6 +303,9 @@
     <string name="russian">俄语</string>
     <string name="chinese">中文</string>
     <string name="polish">Polish</string>
+    <string name="japenese">Japenese</string>
+    <string name="korean">Korean</string>
+    <string name="spanish">Spanish</string>
 
     <!--MAP MENU-->
     <string name="takemap">选择地图</string>

@@ -20,6 +20,8 @@ import android.view.View;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.LinearLayout;
+import android.widget.ProgressBar;
 import android.widget.Toast;
 
 import com.google.android.gms.tasks.OnCompleteListener;
@@ -29,12 +31,17 @@ import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
+import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.khrys.r6assistant.R;
 
 public class MenuChatActivity extends AppCompatActivity
 {
+    Button btnTeam, btnPlayer, btnChat;
+    LinearLayout mainLayout;
+    DatabaseReference dbRef;
+    ProgressBar progress;
     String pseudo;
     FirebaseAuth mAuth;
     EditText editPseudo;
@@ -54,9 +61,14 @@ public class MenuChatActivity extends AppCompatActivity
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        Button btnTeam = (Button) findViewById(R.id.buttonTeam);
-        Button btnPlayer = (Button) findViewById(R.id.buttonPlayer);
-        Button btnChat = (Button) findViewById(R.id.buttonChat);
+        mainLayout = (LinearLayout) findViewById(R.id.defaultLayoutMenuOnline);
+        mainLayout.setVisibility(View.INVISIBLE);
+
+        progress = (ProgressBar) findViewById(R.id.progressMenuOnline);
+
+        btnTeam = (Button) findViewById(R.id.buttonTeam);
+        btnPlayer = (Button) findViewById(R.id.buttonPlayer);
+        btnChat = (Button) findViewById(R.id.buttonChat);
 
         inputMethodManager = (InputMethodManager)getSystemService(Context.INPUT_METHOD_SERVICE);
 
@@ -69,14 +81,24 @@ public class MenuChatActivity extends AppCompatActivity
         }
         else
         {
-            FirebaseDatabase.getInstance().getReference().addListenerForSingleValueEvent(new ValueEventListener()
+            dbRef = FirebaseDatabase.getInstance().getReference();
+            dbRef.addListenerForSingleValueEvent(new ValueEventListener()
             {
                 @Override
                 public void onDataChange(DataSnapshot dataSnapshot)
                 {
-                    String pseudoDb = dataSnapshot.child("users").child(getUid()).getValue(User.class).getPseudo();
-                    String msgWelcome = String.format(getResources().getString(R.string.online_welcome), pseudoDb);
-                    Toast.makeText(getApplicationContext(), msgWelcome, Toast.LENGTH_LONG).show();
+                    if(dataSnapshot.child("maintenance").getValue(Maintenance.class).getOn() == 1)
+                    {
+                        showMaintenance(dataSnapshot.child("maintenance").getValue(Maintenance.class).getMsg());
+                    }
+                    else
+                    {
+                        setupView();
+                        String pseudoDb = dataSnapshot.child("users").child(getUid()).getValue(User.class).getPseudo();
+                        String msgWelcome = String.format(getResources().getString(R.string.online_welcome), pseudoDb);
+                        Toast.makeText(getApplicationContext(), msgWelcome, Toast.LENGTH_LONG).show();
+                    }
+                    dbRef.removeEventListener(this);
                 }
 
                 @Override
@@ -86,6 +108,40 @@ public class MenuChatActivity extends AppCompatActivity
                 }
             });
         }
+    }
+
+    void showMaintenance(String msg)
+    {
+        AlertDialog.Builder dialogMaintenanceBuilder = new AlertDialog.Builder(this, R.style.MyAlertDialogStyle);
+        dialogMaintenanceBuilder.setTitle(R.string.maintenance);
+        dialogMaintenanceBuilder.setMessage(msg);
+        dialogMaintenanceBuilder.setIcon(android.R.drawable.stat_sys_warning);
+        dialogMaintenanceBuilder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i)
+            {
+                finish();
+            }
+        });
+
+        AlertDialog alertMaintenance = dialogMaintenanceBuilder.create();
+        alertMaintenance.show();
+
+        alertMaintenance.setOnCancelListener(new DialogInterface.OnCancelListener()
+        {
+            @Override
+            public void onCancel(DialogInterface dialogInterface)
+            {
+                finish();
+            }
+        });
+    }
+
+    void setupView()
+    {
+        progress.setVisibility(View.GONE);
+        mainLayout.setVisibility(View.VISIBLE);
 
         btnTeam.setOnClickListener(new View.OnClickListener()
         {
@@ -126,8 +182,31 @@ public class MenuChatActivity extends AppCompatActivity
                 {
                     FirebaseDatabase.getInstance()
                             .getReference("users/"+getUid())
-                            .setValue(new User(pseudo,1));
-                    welcomeMsg();
+                            .setValue(new User(pseudo,0));
+
+                    dbRef = FirebaseDatabase.getInstance().getReference();
+                    dbRef.addListenerForSingleValueEvent(new ValueEventListener()
+                    {
+                        @Override
+                        public void onDataChange(DataSnapshot dataSnapshot)
+                        {
+                            if(dataSnapshot.child("maintenance").getValue(Maintenance.class).getOn() == 1)
+                            {
+                                showMaintenance(dataSnapshot.child("maintenance").getValue(Maintenance.class).getMsg());
+                            }
+                            else
+                            {
+                                setupView();
+                                welcomeMsg();
+                                dbRef.removeEventListener(this);
+                            }
+                        }
+
+                        @Override
+                        public void onCancelled(DatabaseError databaseError)
+                        {
+                        }
+                    });
                 }
                 else
                 {

@@ -25,15 +25,14 @@
                 android:id="@+id/imageLanguagePlayer"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                app:srcCompat="@drawable/flag_fr"
-                />
+                android:padding="5dp"
+                app:srcCompat="@drawable/flag_fr"/>
 
             <TextView
                 android:id="@+id/nomPlayer"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:text="dawsdaw"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 />
@@ -46,7 +45,6 @@
                 android:gravity="center_vertical"
                 android:paddingLeft="5dp"
                 android:paddingStart="5dp"
-                android:text="for Ranked"
                 android:textAlignment="textStart"
                 android:textColor="@color/white"
                 android:textSize="16sp"/>
@@ -66,7 +64,7 @@
                 android:gravity="center"
                 android:paddingLeft="15dp"
                 android:paddingStart="15dp"
-                android:text="Platform :"
+                android:text="@string/team_platform"
                 android:textSize="18sp"/>
 
             <ImageView
@@ -83,7 +81,7 @@
                 android:gravity="center"
                 android:paddingLeft="15dp"
                 android:paddingStart="15dp"
-                android:text="Rank :"
+                android:text="@string/team_rank"
                 android:textSize="18sp"/>
 
             <ImageView

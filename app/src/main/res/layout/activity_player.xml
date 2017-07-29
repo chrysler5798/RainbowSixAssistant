@@ -16,12 +16,12 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:gravity="center"
             android:paddingLeft="15dp"
             android:paddingStart="15dp"
-            android:text="Platform :"
-            android:textSize="18sp"
-            android:layout_weight="1"/>
+            android:text="@string/team_platform"
+            android:textSize="18sp"/>
 
         <ImageView
             android:id="@+id/imagePlatformActPlayer"
@@ -33,12 +33,12 @@
         <TextView
             android:layout_width="0dp"
             android:layout_height="match_parent"
+            android:layout_weight="1"
             android:gravity="center"
             android:paddingLeft="15dp"
             android:paddingStart="15dp"
-            android:text="Rank :"
-            android:textSize="18sp"
-            android:layout_weight="1"/>
+            android:text="@string/team_rank"
+            android:textSize="18sp"/>
 
         <ImageView
             android:id="@+id/imageRankActPlayer"
@@ -61,7 +61,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
-        android:text="Chat"
+        android:text="@string/chat"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="18sp"/>
@@ -69,7 +69,7 @@
     <ListView
         android:id="@+id/list_msg_ActPlayer"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="0dp"
         android:layout_margin="10dp"
         android:layout_weight="1"
         android:divider="@android:color/transparent"
@@ -83,7 +83,7 @@
         >
 
         <android.support.design.widget.TextInputLayout
-            android:layout_width="match_parent"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1">
 
@@ -91,7 +91,7 @@
                 android:id="@+id/input_msg_ActPlayer"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Input"
+                android:hint="@string/message"
                 />
         </android.support.design.widget.TextInputLayout>
 

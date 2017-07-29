@@ -29,6 +29,6 @@
         android:id="@+id/buttonCreatePlayer"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Add you as a player"/>
+        android:text="@string/create_player"/>
 
 </LinearLayout>

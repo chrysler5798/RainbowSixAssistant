@@ -29,7 +29,7 @@
         android:layout_height="wrap_content"
         android:background="@color/colorPrimary"
         android:padding="5dp"
-        android:text="Hi ! I'm not a cop, please be respectful in chats. I've made this app to help you, not to ban you."
+        android:text="@string/online_chat_msg"
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="16sp"/>

@@ -64,7 +64,7 @@
     <string name="help_damagefalloff">Ceci est la chute des dégâts, c\'est la distance à laquelle votre arme commence à faire moins de dégâts.</string>
     <string name="help_armor">Dégâts contre un opérateur avec 1, 2 ou 3 d\'armure.</string>
     <string name="help_armor_rook">Dégâts contre un opérateur avec 1, 2 ou 3 d\'armure équipé d\'une armure Rook</string>
-    <string name="help_barrel">En bas de la page des Stats, vous pouvez voir le classement des canons. Le premier est celui qui rend l\'arme la plus contrallable possible. Ceci dit, ça reste un choix personnel en fonction de votre style de jeu.</string>
+    <string name="help_barrel">En bas de la page des Stats, vous pouvez voir le classement des canons. Le premier est celui qui rend l\'arme la plus contrôlable possible. Ceci dit, ça reste un choix personnel en fonction de votre style de jeu.</string>
 
     <!--WEAPON STATS CREDIT-->
     <string name="stats_credit_1">Merci beaucoup à Segio pour la feuille de Stats ! Sans lui, rien n\'aurait été possible. \nCLIQUE ICI pour voir sa chaine Youtube</string>
@@ -195,15 +195,75 @@
     <string name="uga_valkyrie">Peut paramétrer des caméras "Black Eye", accessibles par toute l\'équipe via les outils d\'observation.</string>
 
     <!--ONLINE-->
-    <string name="no_internet">Aucune connexion internet !</string>
-    <string name="find_team">Trouver une équipe</string>
-    <string name="find_players">Trouver des joueurs</string>
-    <string name="chat">Chat</string>
-    <string name="online_welcome">Bienvenue %s sur R6 Assistant Online</string>
-    <string name="online_fail">Authentification échouée.</string>
+    <string name="create_txt">Créer</string>
+    <string name="message">Message</string>
+    <string name="online_chat_msg">Bonjour ! Je ne suis pas un gendarme, merci d\'être respectueux dans les chats. J\'ai fait cette application pour vous aider, pas pour vous bannir.</string>
+
+    <!--ONLINE MENU-->
+    <string name="find_team">Trouver équipe</string>
+    <string name="find_players">Trouver joueurs</string>
+    <string name="chat">Messages</string>
+
+    <!--ONLINE SIGN IN-->
     <string name="online_signin">S\'inscrire</string>
-    <string name="signin_online">Ce pseudo est trop court !</string>
     <string name="enternick_online">Entrer votre pseudo :</string>
+    <string name="signin_online">Ce pseudo est trop court !</string>
+    <string name="online_welcome">Bienvenue %s sur R6 Assistant Online</string>
+
+    <!--ONLINE ERROR-->
+    <string name="no_internet">Aucune connexion internet !</string>
+    <string name="online_fail">Authentification échouée.</string>
+    <string name="maintenance">Maintenance !</string>
+
+    <!--TEAM ONLINE MSG-->
+    <string name="team_dialog_title">Attention !</string>
+    <string name="team_dialog_msg">Si vous quittez l\'application, votre équipe sera supprimée. Il faudra alors en créer une nouvelle.</string>
+    <string name="player_dialog_msg">Si vous quittez l\'application, votre profil sera supprimé. Il faudra alors en créer un nouveau.</string>
+
+    <string name="team_full_dialog_title">Votre équipe est pleine ?</string>
+    <string name="team_full_dialog_msg">Si votre équipe est pleine, vous pouvez la retirer des équipes cherchant des joueurs.</string>
+
+    <string name="team_leave_dialog_title">Êtes-vous sur de vouloir quitter ?</string>
+    <string name="team_leave_dialog_msg">Si vous quittez, votre équipe sera supprimée. Il faudra alors en créer une nouvelle.</string>
+    <string name="player_leave_dialog_msg">Si vous quittez, votre profil sera supprimé. Il faudra alors en créer un nouveau.</string>
+    <string name="team_leave_dialog">Quitter</string>
+    <string name="team_stay_dialog">Rester</string>
+
+    <string name="team_tag_admin">[Team admin] </string>
+    <string name="player_tag_admin">[Joueur] </string>
+
+    <!--TEAM and PLAYER ONLINE-->
+    <string name="create_team">Créer nouvelle équipe</string>
+    <string name="create_uteam">Créer votre équipe</string>
+
+    <string name="create_player">M\'ajouter en tant que joueur</string>
+    <string name="create_uplayer">Créer votre profil</string>
+
+    <string name="team_name">Nom de votre équipe:</string>
+    <string name="team_name_error">Le nom de votre équipe est trop court !</string>
+    <string name="player_name_error">Votre pseudo est trop court !</string>
+
+    <string name="player_name">Votre pseudo:</string>
+
+    <string name="team_language">Langage:</string>
+
+    <string name="team_platform">Platforme:</string>
+
+    <string name="team_mpmode">Mode multijoueur:</string>
+    <string name="team_mpmode_for">pour</string>
+    <string name="team_mpmode_1">Simple</string>
+    <string name="team_mpmode_2">Classé</string>
+    <string name="team_mpmode_3">Entrainement</string>
+
+    <string name="team_rank">Rang:</string>
+    <string name="team_rank_1">Cuivre</string>
+    <string name="team_rank_2">Bronze</string>
+    <string name="team_rank_3">Argent</string>
+    <string name="team_rank_4">Or</string>
+    <string name="team_rank_5">Platinium</string>
+    <string name="team_rank_6">Diamant</string>
+
+    <string name="team_playerneed">Combien de joueur recherchez-vous ?</string>
 
     <!--LOBBY MENU-->
     <string name="lobbytitle">LOBBY ID : %d</string>
@@ -233,8 +293,11 @@
     <string name="italian">Italien</string>
     <string name="german">Allemand</string>
     <string name="russian">Russe</string>
-    <string name="chinese">Chinese</string>
-    <string name="polish">Polish</string>
+    <string name="chinese">Chinois</string>
+    <string name="polish">Polonais</string>
+    <string name="japenese">Japonais</string>
+    <string name="korean">Coréen</string>
+    <string name="spanish">Espagnol</string>
 
     <!--CREDIT TO TRANSLATORS-->
     <string name="translator_pt">LeGuigo</string>
@@ -245,7 +308,7 @@
     <string name="translator_pl">AK_D14BL0</string>
 
     <!--MAP MENU-->
-    <string name="takemap">Selectionne une carte</string>
+    <string name="takemap">Sélectionne une carte</string>
 
     <!--MAPS INFO-->
     <string name="bank">Banque</string>

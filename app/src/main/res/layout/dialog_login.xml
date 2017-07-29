@@ -18,6 +18,6 @@
             android:layout_weight="0.05"
             android:ems="10"
             android:inputType="text"
-            android:maxLength="12"/>
+            android:maxLength="13"/>
     </android.support.design.widget.TextInputLayout>
 </LinearLayout>

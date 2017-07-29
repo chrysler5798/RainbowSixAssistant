@@ -63,9 +63,9 @@ public class MenuFindTeamActivity extends AppCompatActivity
         {
             EditText editName;
             Spinner spinnerLanguage, spinnerMpMode, spinnerPlatform, spinnerRank, spinnerPlayerNeed;
-            String[] modeMp = {"Casual","Ranked","Practice"}, platformsList = {"PC","Xbox ONE","PS4"}, ranksList = {"Copper","Bronze","Silver","Gold","Platinium","Diamond"};
-            String[] languagesList = {"English","French","German","Italian","Japanese","Korean","Polish","Portuguese","Russian","Spanish"};
-            String[] languagesIdList = {"gb","fr","de","it","jp","kr","pl","pt","ru","es"};
+            String[] modeMp = {getString(R.string.team_mpmode_1),getString(R.string.team_mpmode_2),getString(R.string.team_mpmode_3)}, platformsList = {"PC","Xbox ONE","PS4"}, ranksList = {getString(R.string.team_rank_1),getString(R.string.team_rank_2),getString(R.string.team_rank_3),getString(R.string.team_rank_4),getString(R.string.team_rank_5),getString(R.string.team_rank_6)};
+            String[] languagesList = {getString(R.string.english),getString(R.string.chinese),getString(R.string.french),getString(R.string.german),getString(R.string.italian),getString(R.string.japenese),getString(R.string.korean),getString(R.string.polish),getString(R.string.portuguese),getString(R.string.russian),getString(R.string.spanish)};
+            String[] languagesIdList = {"gb","zh","fr","de","it","jp","kr","pl","pt","ru","es"};
             String[] numberOfPlayers = {"1","2","3"};
 
             @Override
@@ -76,11 +76,11 @@ public class MenuFindTeamActivity extends AppCompatActivity
                 LayoutInflater layoutDialog = getLayoutInflater();
 
                 dialogBuilder.setView(layoutDialog.inflate(R.layout.dialog_create_team, null))
-                        .setPositiveButton("Create", null)
-                        .setNegativeButton("Cancel", null);
+                        .setPositiveButton(R.string.create_txt, null)
+                        .setNegativeButton(android.R.string.cancel, null);
 
                 dialog = dialogBuilder.create();
-                dialog.setTitle("Create your team");
+                dialog.setTitle(R.string.create_uteam);
 
                 dialog.setOnShowListener(new DialogInterface.OnShowListener()
                 {
@@ -123,7 +123,7 @@ public class MenuFindTeamActivity extends AppCompatActivity
                                     }
                                     else
                                     {
-                                        Toast.makeText(getApplicationContext(), "Name of the team is way too short !", Toast.LENGTH_LONG).show();
+                                        Toast.makeText(getApplicationContext(), R.string.team_name_error, Toast.LENGTH_LONG).show();
                                     }
                                 }
                             }
@@ -161,24 +161,8 @@ public class MenuFindTeamActivity extends AppCompatActivity
 
                 imageLanguage.setImageResource(getResources().getIdentifier("flag_"+model.getLanguage(),"drawable",getPackageName()));
 
-                String textLooking = "";
-
-                switch (model.getLooking())
-                {
-                    case 1:
-                        textLooking = "for Casual";
-                        break;
-
-                    case 2:
-                        textLooking = "for Ranked";
-                        break;
-
-                    case 3:
-                        textLooking = "for Practice";
-                        break;
-                }
-
-                txtLooking.setText(textLooking);
+                String msgLooking = getString(R.string.team_mpmode_for)+" "+getString(getResources().getIdentifier("team_mpmode_"+String.valueOf(model.getLooking()),"string", getPackageName()));
+                txtLooking.setText(msgLooking);
 
                 imagePlatform.setImageResource(getResources().getIdentifier("platform_"+model.getPlatform(), "drawable", getPackageName()));
 

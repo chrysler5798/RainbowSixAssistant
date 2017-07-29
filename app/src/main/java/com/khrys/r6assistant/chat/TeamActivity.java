@@ -20,7 +20,6 @@ import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.firebase.ui.database.FirebaseListAdapter;
 import com.google.firebase.auth.FirebaseAuth;
@@ -59,8 +58,8 @@ public class TeamActivity extends AppCompatActivity
             {
                 AlertDialog.Builder alertFirstBuilder = new AlertDialog.Builder(this);
 
-                alertFirstBuilder.setTitle("Be careful");
-                alertFirstBuilder.setMessage("If you leave the app, your team will be removed. You will need to create a new one.");
+                alertFirstBuilder.setTitle(R.string.team_dialog_title);
+                alertFirstBuilder.setMessage(R.string.team_dialog_msg);
                 alertFirstBuilder.setIcon(android.R.drawable.ic_dialog_info);
 
                 alertFirstBuilder.setPositiveButton(android.R.string.ok,null);
@@ -73,12 +72,18 @@ public class TeamActivity extends AppCompatActivity
         pseudo = getIntent().getStringExtra("pseudo");
         ownerId = getIntent().getStringExtra("ownerId");
         team_id = "team_"+ownerId;
+        dbExists();
 
         FirebaseDatabase.getInstance().getReference().addValueEventListener(new ValueEventListener()
         {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot)
             {
+                if(!existDb)
+                {
+                    finish();
+                }
+
                 String idplayer, name, country;
                 int rank, platform, looking;
 
@@ -143,8 +148,8 @@ public class TeamActivity extends AppCompatActivity
                 {
                     AlertDialog.Builder alertFull = new AlertDialog.Builder(TeamActivity.this);
 
-                    alertFull.setTitle("Team is full ?");
-                    alertFull.setMessage("If your team is full, then you can remove it from team seeking players.");
+                    alertFull.setTitle(R.string.team_full_dialog_title);
+                    alertFull.setMessage(R.string.team_full_dialog_msg);
                     alertFull.setIcon(android.R.drawable.ic_dialog_info);
 
                     alertFull.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener()
@@ -167,7 +172,7 @@ public class TeamActivity extends AppCompatActivity
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.button_team_msg);
         listOfMessages = (ListView) findViewById(R.id.list_msg_team);
 
-        adapter = new FirebaseListAdapter<ChatMessage>(this, ChatMessage.class, R.layout.message, FirebaseDatabase.getInstance().getReference().child("teams").child(team_id).child("msgs"))
+        adapter = new FirebaseListAdapter<ChatMessage>(this, ChatMessage.class, R.layout.message, FirebaseDatabase.getInstance().getReference().child("teams").child(team_id+"_msgs"))
         {
             @Override
             protected void populateView(View v, ChatMessage model, int position)
@@ -194,7 +199,7 @@ public class TeamActivity extends AppCompatActivity
                 String sender;
                 if(isOwner())
                 {
-                    sender = "[Team owner] "+pseudo;
+                    sender = getString(R.string.team_tag_admin)+" "+pseudo;
                 }
                 else
                 {
@@ -202,17 +207,14 @@ public class TeamActivity extends AppCompatActivity
                 }
 
                 DatabaseReference dbTeam = FirebaseDatabase.getInstance().getReference().child("teams");
-                if(dbExists())
+                String msgToSend = input.getText().toString();
+                if(existDb && !msgToSend.isEmpty())
                 {
-                    dbTeam.child(team_id).child("msgs")
+                    dbTeam.child(team_id+"_msgs")
                             .push()
-                            .setValue(new ChatMessage(input.getText().toString(), sender));
+                            .setValue(new ChatMessage(msgToSend, sender));
 
                     input.setText("");
-                }
-                else
-                {
-                    finish();
                 }
 
             }
@@ -225,24 +227,7 @@ public class TeamActivity extends AppCompatActivity
         ImageView imageRank = (ImageView) findViewById(R.id.imageRankTeam);
         TextView textNumberPlayers = (TextView) findViewById(R.id.textPlayerNeededTeam);
 
-        String textLooking = "";
-
-        switch (looking)
-        {
-            case 1:
-                textLooking = "Casual";
-                break;
-
-            case 2:
-                textLooking = "Ranked";
-                break;
-
-            case 3:
-                textLooking = "Practice";
-                break;
-        }
-
-        setTitle(name+" ("+textLooking+")");
+        setTitle(name+" ("+getString(R.string.team_mpmode_for)+" "+getString(getResources().getIdentifier("team_mpmode_"+String.valueOf(looking),"string", getPackageName()))+")");
 
         imagePlatform.setImageResource(getResources().getIdentifier("platform_"+platform, "drawable", getPackageName()));
 
@@ -277,6 +262,14 @@ public class TeamActivity extends AppCompatActivity
     {
         super.onPause();
         removeTeam();
+        finish();
+    }
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+        removeTeam();
     }
 
     private boolean isFirstTime()
@@ -291,7 +284,7 @@ public class TeamActivity extends AppCompatActivity
         return !ranBefore;
     }
 
-    boolean dbExists()
+    void dbExists()
     {
         FirebaseDatabase.getInstance().getReference().addValueEventListener(new ValueEventListener()
         {
@@ -299,7 +292,6 @@ public class TeamActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot)
             {
                 existDb = dataSnapshot.child("teams").hasChild(team_id);
-                Toast.makeText(getApplicationContext(), team_id, Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -308,7 +300,6 @@ public class TeamActivity extends AppCompatActivity
 
             }
         });
-        return existDb;
     }
 
     void checkIfOwnerWantToLeave()
@@ -317,11 +308,11 @@ public class TeamActivity extends AppCompatActivity
         {
             AlertDialog.Builder alertLeaveBuilder = new AlertDialog.Builder(this);
 
-            alertLeaveBuilder.setTitle("Are you sure that you want to leave ?");
-            alertLeaveBuilder.setMessage("If you leave, your team will be removed, you will need to create a new one.");
+            alertLeaveBuilder.setTitle(R.string.team_leave_dialog_title);
+            alertLeaveBuilder.setMessage(R.string.team_leave_dialog_msg);
             alertLeaveBuilder.setIcon(android.R.drawable.stat_sys_warning);
 
-            alertLeaveBuilder.setPositiveButton("Leave", new DialogInterface.OnClickListener()
+            alertLeaveBuilder.setPositiveButton(R.string.team_leave_dialog, new DialogInterface.OnClickListener()
             {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i)
@@ -330,7 +321,7 @@ public class TeamActivity extends AppCompatActivity
                     finish();
                 }
             });
-            alertLeaveBuilder.setNegativeButton("Stay", new DialogInterface.OnClickListener()
+            alertLeaveBuilder.setNegativeButton(R.string.team_stay_dialog, new DialogInterface.OnClickListener()
             {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i)
@@ -353,6 +344,7 @@ public class TeamActivity extends AppCompatActivity
         if(isOwner())
         {
             FirebaseDatabase.getInstance().getReference().child("teams").child(team_id).removeValue();
+            FirebaseDatabase.getInstance().getReference().child("teams").child(team_id+"_msgs").removeValue();
         }
     }
 

@@ -105,105 +105,165 @@
 
     <!--OPERATORS UNIQUE GADGET DESCRIPTION-->
     <string name="ugat_ash">M120 CREM</string>
-    <string name="uga_ash">Fires an explosive Breach Round that burrows into a surface and automatically detonates.</string>
+    <string name="uga_ash">Broń która wystrzeliwuje pocisk wbijający śie w powierzchnie,i wybuchając automatycznie.</string>
 
     <string name="ugat_bandit">CED-1</string>
-    <string name="uga_bandit">Sets high-tension Shock Wire on metallic gadgets, dealing damage to enemies.</string>
+    <string name="uga_bandit">Wysoko natężona maszynka która podpięta pod gadgety metaliczne powoduje prąd zadający obrażenia ludzią i gadgetą.</string>
 
-    <string name="ugat_blackbeard">TARS MK 0-Armored Rifle Shield</string>
-    <string name="uga_blackbeard">Has a backup mounted shield to swap if the first one gets damaged.</string>
+    <string name="ugat_blackbeard">TARS MK-0 Tarcza</string>
+    <string name="uga_blackbeard">2 Tarcze które można zamontowac na uchwyt broni, które bronią operatora.</string>
 
-    <string name="ugat_blitz">G52-Tactical Shield</string>
-    <string name="uga_blitz">Triggers the flash attached to his ballistic shield to temporarily blind enemies.</string>
+    <string name="ugat_blitz">G52-Tarcza Taktyczna</string>
+    <string name="uga_blitz">Pozwala odpalic potężny błysk wbudowany w tarcze balistyczną który momentalnie oślepia wrogów.</string>
 
     <string name="ugat_buck">SK 4–12</string>
-    <string name="uga_buck">Toggles under-barrel shotgun attachment on his main weapon.</string>
+    <string name="uga_buck">Małą flinta podczepiona pod lufę głownej broni.</string>
 
     <string name="ugat_capitao">TAC Mk0</string>
-    <string name="uga_capitao">Tactical crossbow firing asphyxiating bolts and micro smoke grenades.</string>
+    <string name="uga_capitao">Kusza taktyczna która wystrzeliwuje pociski duszące i micro granaty dymne.</string>
 
-    <string name="ugat_castle">UTP1-Universal Tactical Panel</string>
-    <string name="uga_castle">Sets bulletproof barricades, more resistant than standard ones.</string>
+    <string name="ugat_castle">UTP1-Uniwersalny Panel Taktyczny</string>
+    <string name="uga_castle">Kulo odporny panel który można nałożyć na każde okno i drwi. Bardziej wytrzymały nisz standardowe.</string>
 
-    <string name="ugat_caveira">Silent step</string>
-    <string name="uga_caveira">Caveira\'s predatory stealth, the "Silent Step" allows her to lurk on her prey, almost inaudible, until it\'s too late.</string>
+    <string name="ugat_caveira">Cichy Chód</string>
+    <string name="uga_caveira">Cichy chód CAVEIRY pozwala jej na ciche powalanie wroga i następne pszesłuchanie go, co pozwala na zlokalizowanie całej drużyny przeciwnej. Wróg zostaje potem eliminowany.</string>
 
-    <string name="ugat_doc">MPD-0 Stim Pistol</string>
-    <string name="uga_doc">Fires a hypodermic shot to revive himself or teammates from a distance. Can also provide a temporary boost.</string>
+    <string name="ugat_doc">MPD-0 Pistolet Strykawkowy</string>
+    <string name="uga_doc">Strzela na odległość strzykawki które mogą podnieść obalonych i uleczyc rannych. Może tez dodac wiecej bżycia operatorowi z FULL HP.</string>
 
     <string name="ugat_echo">YOKAI</string>
-    <string name="uga_echo">Hovering drone that releases disorienting sonic bursts. Yokai also transmits a video feed to the Echo and his team.</string>
+    <string name="uga_echo">YOKAI jest latającym dronem który umożliwia ogłuszenie wroga. Jest on też niewidzialny jak przyklej śię do płaskiej powieszchni. Daje tez podgląd kamery.</string>
 
     <string name="ugat_frost">Sterling MK2 LHT</string>
-    <string name="uga_frost">Uses a mechanical trap to incapacitate enemies.</string>
+    <string name="uga_frost">Pułąpka mechaniczna która blokuje i powala wroga.</string>
 
     <string name="ugat_fuze">APM-6 "Matryoshka"</string>
-    <string name="uga_fuze">Uses Cluster Charge that pierce and stick to walls, releasing sub-grenades on the opposing side.</string>
+    <string name="uga_fuze">Jest to ładunek który wbija śię w ściane przebijając ją i wypuszcza małe granaty do pomieszczenia.</string>
 
-    <string name="ugat_glaz">HDS Flip Sight</string>
-    <string name="uga_glaz">Toggles a magnification scope with sophisticated image sensors outlining long range marks, even trough smoke.</string>
+    <string name="ugat_glaz">Celownik HDS</string>
+    <string name="uga_glaz">Pozwala na zbliżenie celownika broni z dodatkowym sensorem podświetlającym osoby na żółto, nawet przez granaty gazowe i dymne.</string>
 
     <string name="ugat_hibana">X-KAIROS</string>
-    <string name="uga_hibana">A 40mm grenade launcher firing explosive pellets that can be detonated from a distance.</string>
+    <string name="uga_hibana">Wyrzutnia 40mm pocisków odpalanych na odległoś, które palą przeszkode.</string>
 
     <string name="ugat_iq">RED MK III "Spectre"</string>
-    <string name="uga_iq">Uses the Electronics Detector to locate any electronics in range through obstacles such as walls.</string>
+    <string name="uga_iq">Czujnik który wykrywa nawet za ścianami każdy jaką kolwiek elektronike w pobliżu operatora.</string>
 
     <string name="ugat_jackal">EYENOX MODEL III</string>
-    <string name="uga_jackal">Tracking eyewear that locates targets by revealing and identifying recent footsteps.</string>
+    <string name="uga_jackal">Hełm taktyczny kóry pozwala na zlokalizowanie wroga dzięki skannerowi odcisków stóp.</string>
 
     <string name="ugat_jager">ADS-MKIV "Magpie"</string>
-    <string name="uga_jager">Uses an Active Defense system to intercept grenades before they detonate.</string>
+    <string name="uga_jager">Używa systemu obrony aktywnej który niszczy nadlatujące granaty zanim te wybuchną.</string>
 
     <string name="ugat_kapkan">EDD MK II</string>
-    <string name="uga_kapkan">Sets booby traps on windows and door frames.</string>
+    <string name="uga_kapkan">Pułapki laserowe które można wwiercić w okna i drwi.</string>
 
-    <string name="ugat_mira">BLACK MIRROR</string>
-    <string name="uga_mira">Deploys a one-way bulletproof mirror on breakable and reinforced walls. Also can be ejected to create a murder hole.</string>
+    <string name="ugat_mira">Czarne Lustro Weneckie</string>
+    <string name="uga_mira">Lustro które przebija powieszchnie i pozwala na widoczność za scianą. Moze zostac zniszczone w celu zrobiena dziury mordu.</string>
 
     <string name="ugat_montagne">Le Roc</string>
-    <string name="uga_montagne">Can expand his Extendable Shield to offer full protection while standing.</string>
+    <string name="uga_montagne">Tarcza która ma możliwość powiększenia śię do rozmiaru operatora w tym broniąc jego przednią część ciała.</string>
 
-    <string name="ugat_mute">GC90 "Moni" Signal Disruptor</string>
-    <string name="uga_mute">Jams communications for remotely detonated gadgets or drones in its range.</string>
+    <string name="ugat_mute">GC90 Moni Zakłócacz Sygnału</string>
+    <string name="uga_mute">Zakłóca sygnał aparatów zdalnie sterowanych i detonowanych.</string>
 
-    <string name="ugat_pulse">HB-5 Cardiac Sensor</string>
-    <string name="uga_pulse">Detects heartbeats at a short distance through obstacles.</string>
+    <string name="ugat_pulse">HB-5 Wykrywacz Pulsu</string>
+    <string name="uga_pulse">Wykrywa bicie serca wroga na bliskich dystansach.</string>
 
     <string name="ugat_rook">R1N "Rhino" Armor</string>
-    <string name="uga_rook">Drops a supply bag full of armor plates for his team to use.</string>
+    <string name="uga_rook">Paczka kamizelek kulo odpornych rozdawana drużynie. Zmniejsza obrażenia dostawane.</string>
 
-    <string name="ugat_sledge">Tactical Breaching Hammer "The Caber"</string>
-    <string name="uga_sledge">Uses a Breaching Hammer to breach through destructible surfaces.</string>
+    <string name="ugat_sledge">Taktyczny Młot Wyłomowy "The Caber"</string>
+    <string name="uga_sledge">Młot który jest w stanie rozbic każdą zniszczalną powierzchnie.</string>
 
-    <string name="ugat_smoke">Compound Z8 Grenade</string>
-    <string name="uga_smoke">Sets remote detonated toxic gas charges.</string>
+    <string name="ugat_smoke">Z8 Granat Gazowy</string>
+    <string name="uga_smoke">Zdalnie detonowane ładunki toksycznego gazu.</string>
 
-    <string name="ugat_tachanka">RP-46 Degtyaryov Machine Gun</string>
-    <string name="uga_tachanka">Deploys a Mounted LMG with a ballistic shield protecting the head from frontal shots.</string>
+    <string name="ugat_tachanka">RP-46 Degtyaryov Karabin Maszynowy</string>
+    <string name="uga_tachanka">DRozkładany karabin który broni operatora tarczą balistyczną przed strałami frontowymi.</string>
 
-    <string name="ugat_thatcher">EG MK0-EMP Grenade</string>
-    <string name="uga_thatcher">Uses EMP Grenades to disable any electronics in range.</string>
+    <string name="ugat_thatcher">EG MK0-EMP Granat</string>
+    <string name="uga_thatcher">Granat wybuchowy powodujący fale EMP które niszczą elektronike w zaśięgu.</string>
 
-    <string name="ugat_thermite">BRIMSTONE BC-3 Exothermic Charge</string>
-    <string name="uga_thermite">Sets an exotherrmic charge that destroys reinforced walls.</string>
+    <string name="ugat_thermite">BRIMSTONE BC-3 Ładunek Exotermiczny</string>
+    <string name="uga_thermite">Ładunek który przepala wzmocnione metalowo ściany.</string>
 
-    <string name="ugat_twitch">RSD Model 1 Shock Drone</string>
-    <string name="uga_twitch">Uses two Shock Drones to disable traps or injure enemies. Deploys the first Shock Drone during the preparation phase.</string>
+    <string name="ugat_twitch">RDS Model 1 Dron Porażający</string>
+    <string name="uga_twitch">Dron który pozwala niszczyć pułapki i ranić wrogów. 1 dron jest używany podczas fazy przygotowawczej, 2 jest dostępny podczas gry.</string>
 
     <string name="ugat_valkyrie">Gyro Cam Mk2</string>
-    <string name="uga_valkyrie">Can set up "Black Eye" cameras, feed accessible by whole team via observation tools.</string>
+    <string name="uga_valkyrie">Czarne kamery ktore można ustawiac osobiście dla całej drużyny.</string>
 
     <!--ONLINE-->
-    <string name="no_internet">No internet connection !</string>
+    <string name="create_txt">Create</string>
+    <string name="message">Message</string>
+    <string name="online_chat_msg">Hi ! I\'m not a cop, please be respectful in chats. I\'ve made this app to help you, not to ban you.</string>
+
+    <!--ONLINE MENU-->
     <string name="find_team">Find team</string>
     <string name="find_players">Find players</string>
     <string name="chat">Chat</string>
-    <string name="online_welcome">Welcome %s to R6 Assistant Online</string>
-    <string name="online_fail">Authentication failed.</string>
+
+    <!--ONLINE SIGN IN-->
     <string name="online_signin">Sign in</string>
-    <string name="signin_online">This nickname is way too short !</string>
     <string name="enternick_online">Enter your nickname :</string>
+    <string name="signin_online">This nickname is way too short !</string>
+    <string name="online_welcome">Welcome %s to R6 Assistant Online</string>
+
+    <!--ONLINE ERROR-->
+    <string name="no_internet">No internet connection !</string>
+    <string name="online_fail">Authentication failed.</string>
+    <string name="maintenance">Maintenance !</string>
+
+    <!--TEAM ONLINE MSG-->
+    <string name="team_dialog_title">Be careful</string>
+    <string name="team_dialog_msg">If you leave the app, your team will be removed. You will need to create a new one.</string>
+    <string name="player_dialog_msg">If you leave the app, your profile will be removed. You will need to create a new one.</string>
+
+    <string name="team_full_dialog_title">Is your team full ?</string>
+    <string name="team_full_dialog_msg">If your team is full, then you can remove it from team seeking players.</string>
+
+    <string name="team_leave_dialog_title">Are you sure that you want to leave ?</string>
+    <string name="team_leave_dialog_msg">If you leave, your team will be removed, you will need to create a new one.</string>
+    <string name="player_leave_dialog_msg">If you leave, your profile will be removed, you will need to create a new one.</string>
+    <string name="team_leave_dialog">Leave</string>
+    <string name="team_stay_dialog">Stay</string>
+
+    <string name="team_tag_admin">[Team admin] </string>
+    <string name="player_tag_admin">[Player] </string>
+
+    <!--TEAM and PLAYER ONLINE-->
+    <string name="create_team">Create new team</string>
+    <string name="create_uteam">Create your team</string>
+
+    <string name="create_player">Add yourself as a player</string>
+    <string name="create_uplayer">Create your profile</string>
+
+    <string name="team_name">Name of your team:</string>
+    <string name="team_name_error">Name of the team is way too short !</string>
+    <string name="player_name_error">Your name is way too short !</string>
+
+    <string name="player_name">Your nickname:</string>
+
+    <string name="team_language">Language:</string>
+
+    <string name="team_platform">Platform:</string>
+
+    <string name="team_mpmode">Multiplayer mode:</string>
+    <string name="team_mpmode_for">for</string>
+    <string name="team_mpmode_1">Casual</string>
+    <string name="team_mpmode_2">Ranked</string>
+    <string name="team_mpmode_3">Practice</string>
+
+    <string name="team_rank">Rank:</string>
+    <string name="team_rank_1">Copper</string>
+    <string name="team_rank_2">Bronze</string>
+    <string name="team_rank_3">Silver</string>
+    <string name="team_rank_4">Gold</string>
+    <string name="team_rank_5">Platinum</string>
+    <string name="team_rank_6">Diamond</string>
+
+    <string name="team_playerneed">How many players do you need ?</string>
 
     <!--LOBBY MENU-->
     <string name="lobbytitle">LOBBY ID : %d</string>
@@ -243,150 +303,153 @@
     <string name="russian">Rosyjski</string>
     <string name="chinese">Chinese</string>
     <string name="polish">Polski</string>
+    <string name="japenese">Japenese</string>
+    <string name="korean">Korean</string>
+    <string name="spanish">Spanish</string>
 
     <!--MAP MENU-->
     <string name="takemap">Wybór Mapy</string>
 
     <!--MAPS INFO-->
     <string name="bank">Bank</string>
-    <string name="bank_cam_s1">(1F) Lobby</string>
-    <string name="bank_cam_s2">(1F) Office Hallway</string>
-    <string name="bank_cam_s3">(2F) Skylight stairwell</string>
-    <string name="bank_cam_s4">(B) Vault Lobby</string>
-    <string name="bank_cam_s5">(EXT) Plaza</string>
-    <string name="bank_cam_s6">(EXT) Garage Ramp</string>
-    <string name="bank_cam_s7">(EXT) Back Alley</string>
+        <string name="bank_cam_s1">(1F) Lobby</string>
+        <string name="bank_cam_s2">(1F) Office Hallway</string>
+        <string name="bank_cam_s3">(2F) Skylight stairwell</string>
+        <string name="bank_cam_s4">(B) Vault Lobby</string>
+        <string name="bank_cam_s5">(EXT) Plaza</string>
+        <string name="bank_cam_s6">(EXT) Garage Ramp</string>
+        <string name="bank_cam_s7">(EXT) Back Alley</string>
 
     <string name="chalet">Chalet</string>
-    <string name="chalet_cam_s1">(2F) Bedroom Hallway</string>
-    <string name="chalet_cam_s2">(2F) Fireplace Hallway</string>
-    <string name="chalet_cam_s3">(1F) Library Stairs</string>
-    <string name="chalet_cam_s4">(B) Snowmobile Garage</string>
-    <string name="chalet_cam_s5">(EXT) Frontyard</string>
-    <string name="chalet_cam_s6">(EXT) Backyard</string>
+        <string name="chalet_cam_s1">(2F) Bedroom Hallway</string>
+        <string name="chalet_cam_s2">(2F) Fireplace Hallway</string>
+        <string name="chalet_cam_s3">(1F) Library Stairs</string>
+        <string name="chalet_cam_s4">(B) Snowmobile Garage</string>
+        <string name="chalet_cam_s5">(EXT) Frontyard</string>
+        <string name="chalet_cam_s6">(EXT) Backyard</string>
 
     <string name="clubhouse">Club House</string>
-    <string name="clubhouse_cam_s1">(2F) Bedroom Hallway</string>
-    <string name="clubhouse_cam_s2">(1F) Bar</string>
-    <string name="clubhouse_cam_s3">(1F) Garage</string>
-    <string name="clubhouse_cam_s4">(B) Basement Hallway</string>
-    <string name="clubhouse_cam_s5">(EXT) VIP Parking</string>
-    <string name="clubhouse_cam_s6">(EXT) Graffiti Area</string>
-    <string name="clubhouse_cam_s7">(EXT) Kennels</string>
+        <string name="clubhouse_cam_s1">(2F) Bedroom Hallway</string>
+        <string name="clubhouse_cam_s2">(1F) Bar</string>
+        <string name="clubhouse_cam_s3">(1F) Garage</string>
+        <string name="clubhouse_cam_s4">(B) Basement Hallway</string>
+        <string name="clubhouse_cam_s5">(EXT) VIP Parking</string>
+        <string name="clubhouse_cam_s6">(EXT) Graffiti Area</string>
+        <string name="clubhouse_cam_s7">(EXT) Kennels</string>
 
     <string name="consulate">Consulate</string>
-    <string name="consulate_cam_s1">(2F) Consul Front Desk</string>
-    <string name="consulate_cam_s2">(1F) Main Stairs</string>
-    <string name="consulate_cam_s3">(1F) Visa Office</string>
-    <string name="consulate_cam_s4">(EXT) Front Door</string>
-    <string name="consulate_cam_s5">(B) Locker Hallway</string>
-    <string name="consulate_cam_s6">(B) Garage</string>
-    <string name="consulate_cam_s7">(EXT) Front Alley</string>
-    <string name="consulate_cam_s8">(EXT) Garage Way</string>
+        <string name="consulate_cam_s1">(2F) Consul Front Desk</string>
+        <string name="consulate_cam_s2">(1F) Main Stairs</string>
+        <string name="consulate_cam_s3">(1F) Visa Office</string>
+        <string name="consulate_cam_s4">(EXT) Front Door</string>
+        <string name="consulate_cam_s5">(B) Locker Hallway</string>
+        <string name="consulate_cam_s6">(B) Garage</string>
+        <string name="consulate_cam_s7">(EXT) Front Alley</string>
+        <string name="consulate_cam_s8">(EXT) Garage Way</string>
 
     <string name="favela">Favela</string>
-    <string name="favela_cam_s1">(3F) Back Stairs</string>
-    <string name="favela_cam_s2">(3F) Main Stairs</string>
-    <string name="favela_cam_s3">(1F) Laundry Room</string>
-    <string name="favela_cam_s4">(1F) Stair Hall</string>
-    <string name="favela_cam_s5">(EXT) School Alley</string>
-    <string name="favela_cam_s6">(EXT) Street</string>
-    <string name="favela_cam_s7">(EXT) Back Alley</string>
+        <string name="favela_cam_s1">(3F) Back Stairs</string>
+        <string name="favela_cam_s2">(3F) Main Stairs</string>
+        <string name="favela_cam_s3">(1F) Laundry Room</string>
+        <string name="favela_cam_s4">(1F) Stair Hall</string>
+        <string name="favela_cam_s5">(EXT) School Alley</string>
+        <string name="favela_cam_s6">(EXT) Street</string>
+        <string name="favela_cam_s7">(EXT) Back Alley</string>
 
     <string name="hereford">Hereford Base</string>
-    <string name="hereford_cam_s1">(EXT) Roof Top</string>
-    <string name="hereford_cam_s2">(2F) Corridor</string>
-    <string name="hereford_cam_s3">(1F) Corridor 1</string>
-    <string name="hereford_cam_s4">(B) Lockers</string>
-    <string name="hereford_cam_s5">(EXT) Shooting Range</string>
-    <string name="hereford_cam_s6">(EXT) Forklift Area</string>
+        <string name="hereford_cam_s1">(EXT) Roof Top</string>
+        <string name="hereford_cam_s2">(2F) Corridor</string>
+        <string name="hereford_cam_s3">(1F) Corridor 1</string>
+        <string name="hereford_cam_s4">(B) Lockers</string>
+        <string name="hereford_cam_s5">(EXT) Shooting Range</string>
+        <string name="hereford_cam_s6">(EXT) Forklift Area</string>
 
     <string name="kafedostoyevsky">Kafe Dostoyevsky</string>
-    <string name="kafedostoyevsky_cam_s1">(3F) Cocktail Lounge</string>
-    <string name="kafedostoyevsky_cam_s2">(2F) Reading Room</string>
-    <string name="kafedostoyevsky_cam_s3">(1F) Cold Room Corridor</string>
-    <string name="kafedostoyevsky_cam_s4">(1F) Bakery</string>
-    <string name="kafedostoyevsky_cam_s5">(EXT) West Main Street</string>
-    <string name="kafedostoyevsky_cam_s6">(EXT) Park Alley</string>
+        <string name="kafedostoyevsky_cam_s1">(3F) Cocktail Lounge</string>
+        <string name="kafedostoyevsky_cam_s2">(2F) Reading Room</string>
+        <string name="kafedostoyevsky_cam_s3">(1F) Cold Room Corridor</string>
+        <string name="kafedostoyevsky_cam_s4">(1F) Bakery</string>
+        <string name="kafedostoyevsky_cam_s5">(EXT) West Main Street</string>
+        <string name="kafedostoyevsky_cam_s6">(EXT) Park Alley</string>
 
     <string name="house">House</string>
-    <string name="house_cam_s1">(EXT) Front Porch Top</string>
-    <string name="house_cam_s2">(1F) Kitchen</string>
-    <string name="house_cam_s3">(B) Training Room</string>
-    <string name="house_cam_s4">(B) Garage</string>
-    <string name="house_cam_s5">(EXT) Frontyard</string>
-    <string name="house_cam_s6">(EXT) Garden</string>
+        <string name="house_cam_s1">(EXT) Front Porch Top</string>
+        <string name="house_cam_s2">(1F) Kitchen</string>
+        <string name="house_cam_s3">(B) Training Room</string>
+        <string name="house_cam_s4">(B) Garage</string>
+        <string name="house_cam_s5">(EXT) Frontyard</string>
+        <string name="house_cam_s6">(EXT) Garden</string>
 
     <string name="kanal">Kanal</string>
-    <string name="kanal_cam_s1">(CC3F) Control Room Hallway</string>
-    <string name="kanal_cam_s2">(CC2F) Maps Office Hallway</string>
-    <string name="kanal_cam_s3">(CG2F) Coast Guard Hallway</string>
-    <string name="kanal_cam_s4">(CG1F) Boat Supplies Hallway</string>
-    <string name="kanal_cam_s5">(EXT) Front Lawn</string>
-    <string name="kanal_cam_s6">(EXT) Lockgate</string>
-    <string name="kanal_cam_s7">(EXT) Construction Site</string>
+        <string name="kanal_cam_s1">(CC3F) Control Room Hallway</string>
+        <string name="kanal_cam_s2">(CC2F) Maps Office Hallway</string>
+        <string name="kanal_cam_s3">(CG2F) Coast Guard Hallway</string>
+        <string name="kanal_cam_s4">(CG1F) Boat Supplies Hallway</string>
+        <string name="kanal_cam_s5">(EXT) Front Lawn</string>
+        <string name="kanal_cam_s6">(EXT) Lockgate</string>
+        <string name="kanal_cam_s7">(EXT) Construction Site</string>
 
     <string name="plane">Presidential Plane</string>
-    <string name="plane_cam_s1">(3F) Cabin Staff</string>
-    <string name="plane_cam_s2">(2F) Front Hallway</string>
-    <string name="plane_cam_s3">(2F) Press Section A</string>
-    <string name="plane_cam_s4">(1F) Luggage Hold</string>
-    <string name="plane_cam_s5">(1F) Cargo Hold</string>
+        <string name="plane_cam_s1">(3F) Cabin Staff</string>
+        <string name="plane_cam_s2">(2F) Front Hallway</string>
+        <string name="plane_cam_s3">(2F) Press Section A</string>
+        <string name="plane_cam_s4">(1F) Luggage Hold</string>
+        <string name="plane_cam_s5">(1F) Cargo Hold</string>
 
     <string name="border">Border</string>
-    <string name="border_cam_s1">(2F) East Stairs</string>
-    <string name="border_cam_s2">(2F) Main Hallway</string>
-    <string name="border_cam_s3">(1F) Main Lobby</string>
-    <string name="border_cam_s4">(1F) Exit Hallway</string>
-    <string name="border_cam_s5">(EXT) Parking Lot Ent.</string>
-    <string name="border_cam_s6">(EXT) Crash Scene</string>
-    <string name="border_cam_s7">(EXT) Parking Lot Alley</string>
+        <string name="border_cam_s1">(2F) East Stairs</string>
+        <string name="border_cam_s2">(2F) Main Hallway</string>
+        <string name="border_cam_s3">(1F) Main Lobby</string>
+        <string name="border_cam_s4">(1F) Exit Hallway</string>
+        <string name="border_cam_s5">(EXT) Parking Lot Ent.</string>
+        <string name="border_cam_s6">(EXT) Crash Scene</string>
+        <string name="border_cam_s7">(EXT) Parking Lot Alley</string>
 
     <string name="oregon">Oregon</string>
-    <string name="oregon_cam_s1">(2F) Armory Corridor</string>
-    <string name="oregon_cam_s2">(1F) Lobby</string>
-    <string name="oregon_cam_s3">(1F) Dinning Hall Corridor</string>
-    <string name="oregon_cam_s4">(1F) Rear Stage</string>
-    <string name="oregon_cam_s5">(EXT) Junkyard</string>
-    <string name="oregon_cam_s6">(EXT) Parking</string>
-    <string name="oregon_cam_s7">(EXT) Construction Site</string>
+        <string name="oregon_cam_s1">(2F) Armory Corridor</string>
+        <string name="oregon_cam_s2">(1F) Lobby</string>
+        <string name="oregon_cam_s3">(1F) Dinning Hall Corridor</string>
+        <string name="oregon_cam_s4">(1F) Rear Stage</string>
+        <string name="oregon_cam_s5">(EXT) Junkyard</string>
+        <string name="oregon_cam_s6">(EXT) Parking</string>
+        <string name="oregon_cam_s7">(EXT) Construction Site</string>
 
     <string name="yacht">Yacht</string>
-    <string name="yacht_cam_s1">(4F) Helipad Entrance</string>
-    <string name="yacht_cam_s2">(3F) Bedroom Hallway</string>
-    <string name="yacht_cam_s3">(3F) Lounge</string>
-    <string name="yacht_cam_s4">(2F) Front Stairs</string>
-    <string name="yacht_cam_s5">(2F) Back Stairs</string>
-    <string name="yacht_cam_s6">(1F) Engine Hallway</string>
-    <string name="yacht_cam_s7">(EXT) Front Deck</string>
-    <string name="yacht_cam_s8">(EXT) Spa Deck</string>
+        <string name="yacht_cam_s1">(4F) Helipad Entrance</string>
+        <string name="yacht_cam_s2">(3F) Bedroom Hallway</string>
+        <string name="yacht_cam_s3">(3F) Lounge</string>
+        <string name="yacht_cam_s4">(2F) Front Stairs</string>
+        <string name="yacht_cam_s5">(2F) Back Stairs</string>
+        <string name="yacht_cam_s6">(1F) Engine Hallway</string>
+        <string name="yacht_cam_s7">(EXT) Front Deck</string>
+        <string name="yacht_cam_s8">(EXT) Spa Deck</string>
 
     <string name="skyscraper">Skyscraper</string>
-    <string name="skyscraper_cam_s1">(2F) Hallway</string>
-    <string name="skyscraper_cam_s2">(1F) Restaurant</string>
-    <string name="skyscraper_cam_s3">(2F) House stairs</string>
-    <string name="skyscraper_cam_s4">(1F) House lobby</string>
-    <string name="skyscraper_cam_s5">(EXT) West garden</string>
-    <string name="skyscraper_cam_s6">(EXT) East garden</string>
-    <string name="skyscraper_cam_s7">(EXT) Ventilation units</string>
+        <string name="skyscraper_cam_s1">(2F) Hallway</string>
+        <string name="skyscraper_cam_s2">(1F) Restaurant</string>
+        <string name="skyscraper_cam_s3">(2F) House stairs</string>
+        <string name="skyscraper_cam_s4">(1F) House lobby</string>
+        <string name="skyscraper_cam_s5">(EXT) West garden</string>
+        <string name="skyscraper_cam_s6">(EXT) East garden</string>
+        <string name="skyscraper_cam_s7">(EXT) Ventilation units</string>
 
     <string name="university">Bartlett U.</string>
-    <string name="barlett_cam_s1">(2F) Compass Hallway</string>
-    <string name="barlett_cam_s2">(2F) Vista Hallway</string>
-    <string name="barlett_cam_s3">(1F) Archway Hall</string>
-    <string name="barlett_cam_s4">(1F) Lobby</string>
-    <string name="barlett_cam_s5">(1F) Dining Room</string>
-    <string name="barlett_cam_s6">(EXT) Main Gate</string>
-    <string name="barlett_cam_s7">(EXT) Parking</string>
+        <string name="barlett_cam_s1">(2F) Compass Hallway</string>
+        <string name="barlett_cam_s2">(2F) Vista Hallway</string>
+        <string name="barlett_cam_s3">(1F) Archway Hall</string>
+        <string name="barlett_cam_s4">(1F) Lobby</string>
+        <string name="barlett_cam_s5">(1F) Dining Room</string>
+        <string name="barlett_cam_s6">(EXT) Main Gate</string>
+        <string name="barlett_cam_s7">(EXT) Parking</string>
 
     <string name="coastline">Coastline</string>
-    <string name="coastline_cam_s1">(1F) Hallway</string>
-    <string name="coastline_cam_s2">(1F) Main Lobby</string>
-    <string name="coastline_cam_s3">(2F) Aquarium</string>
-    <string name="coastline_cam_s4">(2F) Hallway</string>
-    <string name="coastline_cam_s5">(EXT) Garage Roof</string>
-    <string name="coastline_cam_s6">(EXT) Ruins</string>
-    <string name="coastline_cam_s7">(EXT) Ruins</string>
+        <string name="coastline_cam_s1">(1F) Hallway</string>
+        <string name="coastline_cam_s2">(1F) Main Lobby</string>
+        <string name="coastline_cam_s3">(2F) Aquarium</string>
+        <string name="coastline_cam_s4">(2F) Hallway</string>
+        <string name="coastline_cam_s5">(EXT) Garage Roof</string>
+        <string name="coastline_cam_s6">(EXT) Ruins</string>
+        <string name="coastline_cam_s7">(EXT) Ruins</string>
 
     <string name="destroyPhrase">%d</string>
     <string name="cameraPhrase">%d kamery</string>

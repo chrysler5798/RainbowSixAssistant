@@ -56,8 +56,8 @@ public class PlayerActivity extends AppCompatActivity
             {
                 AlertDialog.Builder alertFirstBuilder = new AlertDialog.Builder(this);
 
-                alertFirstBuilder.setTitle("Be careful");
-                alertFirstBuilder.setMessage("If you leave the app, your profile will be removed. You will need to create a new one.");
+                alertFirstBuilder.setTitle(R.string.team_dialog_title);
+                alertFirstBuilder.setMessage(R.string.player_dialog_msg);
                 alertFirstBuilder.setIcon(android.R.drawable.ic_dialog_info);
 
                 alertFirstBuilder.setPositiveButton(android.R.string.ok,null);
@@ -70,12 +70,17 @@ public class PlayerActivity extends AppCompatActivity
         pseudo = getIntent().getStringExtra("pseudo");
         ownerId = getIntent().getStringExtra("ownerId");
         player_id = "player_"+ownerId;
+        dbExists();
 
         FirebaseDatabase.getInstance().getReference().addValueEventListener(new ValueEventListener()
         {
             @Override
             public void onDataChange(DataSnapshot dataSnapshot)
             {
+                if(!existDb)
+                {
+                    finish();
+                }
                 String idplayer, name, country;
                 int rank, platform, looking;
 
@@ -132,7 +137,7 @@ public class PlayerActivity extends AppCompatActivity
                 String sender;
                 if(isOwner())
                 {
-                    sender = "[Player] "+pseudo;
+                    sender = getString(R.string.player_tag_admin)+" "+pseudo;
                 }
                 else
                 {
@@ -140,17 +145,14 @@ public class PlayerActivity extends AppCompatActivity
                 }
 
                 DatabaseReference dbPlayer = FirebaseDatabase.getInstance().getReference().child("players");
-                if(dbExists())
+                String msgToSend = input.getText().toString();
+                if(existDb && !msgToSend.isEmpty())
                 {
                     dbPlayer.child(player_id).child("msgs")
                             .push()
-                            .setValue(new ChatMessage(input.getText().toString(), sender));
+                            .setValue(new ChatMessage(msgToSend, sender));
 
                     input.setText("");
-                }
-                else
-                {
-                    finish();
                 }
 
             }
@@ -182,6 +184,14 @@ public class PlayerActivity extends AppCompatActivity
     {
         super.onPause();
         removePlayer();
+        finish();
+    }
+
+    @Override
+    protected void onDestroy()
+    {
+        super.onDestroy();
+        removePlayer();
     }
 
     void setupView(String idplayer, String name, String country, int rank, int platform, int looking)
@@ -189,24 +199,7 @@ public class PlayerActivity extends AppCompatActivity
         ImageView imagePlatform = (ImageView) findViewById(R.id.imagePlatformActPlayer);
         ImageView imageRank = (ImageView) findViewById(R.id.imageRankActPlayer);
 
-        String textLooking = "";
-
-        switch (looking)
-        {
-            case 1:
-                textLooking = "Casual";
-                break;
-
-            case 2:
-                textLooking = "Ranked";
-                break;
-
-            case 3:
-                textLooking = "Practice";
-                break;
-        }
-
-        setTitle(name+" ("+textLooking+")");
+        setTitle(name+" ("+getString(R.string.team_mpmode_for)+" "+getString(getResources().getIdentifier("team_mpmode_"+String.valueOf(looking),"string", getPackageName()))+")");
 
         imagePlatform.setImageResource(getResources().getIdentifier("platform_"+platform, "drawable", getPackageName()));
 
@@ -225,7 +218,7 @@ public class PlayerActivity extends AppCompatActivity
         return !ranBefore;
     }
 
-    boolean dbExists()
+    void dbExists()
     {
         FirebaseDatabase.getInstance().getReference().addValueEventListener(new ValueEventListener()
         {
@@ -233,7 +226,6 @@ public class PlayerActivity extends AppCompatActivity
             public void onDataChange(DataSnapshot dataSnapshot)
             {
                 existDb = dataSnapshot.child("players").hasChild(player_id);
-                Toast.makeText(getApplicationContext(), player_id, Toast.LENGTH_LONG).show();
             }
 
             @Override
@@ -242,7 +234,6 @@ public class PlayerActivity extends AppCompatActivity
 
             }
         });
-        return existDb;
     }
 
     void checkIfOwnerWantToLeave()
@@ -251,11 +242,11 @@ public class PlayerActivity extends AppCompatActivity
         {
             AlertDialog.Builder alertLeaveBuilder = new AlertDialog.Builder(this);
 
-            alertLeaveBuilder.setTitle("Are you sure that you want to leave ?");
-            alertLeaveBuilder.setMessage("If you leave, your profile will be removed, you will need to create a new one.");
+            alertLeaveBuilder.setTitle(R.string.team_leave_dialog_title);
+            alertLeaveBuilder.setMessage(R.string.player_leave_dialog_msg);
             alertLeaveBuilder.setIcon(android.R.drawable.stat_sys_warning);
 
-            alertLeaveBuilder.setPositiveButton("Leave", new DialogInterface.OnClickListener()
+            alertLeaveBuilder.setPositiveButton(R.string.team_leave_dialog, new DialogInterface.OnClickListener()
             {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i)
@@ -264,7 +255,7 @@ public class PlayerActivity extends AppCompatActivity
                     finish();
                 }
             });
-            alertLeaveBuilder.setNegativeButton("Stay", new DialogInterface.OnClickListener()
+            alertLeaveBuilder.setNegativeButton(R.string.team_stay_dialog, new DialogInterface.OnClickListener()
             {
                 @Override
                 public void onClick(DialogInterface dialogInterface, int i)

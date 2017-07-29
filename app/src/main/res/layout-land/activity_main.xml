@@ -125,7 +125,7 @@
                     android:layout_weight="1"
                     android:background="@color/colorPrimary"
                     android:drawableStart="@drawable/ic_online"
-                    android:text="@string/soon"/>
+                    android:text="@string/online"/>
             </TableRow>
 
         </TableLayout>
