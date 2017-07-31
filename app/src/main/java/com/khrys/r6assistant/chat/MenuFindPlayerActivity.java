@@ -35,14 +35,14 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.khrys.r6assistant.R;
 
-import static com.khrys.r6assistant.R.id.spinnerLanguage;
-
 public class MenuFindPlayerActivity extends AppCompatActivity
 {
     AlertDialog dialog;
     ProgressBar progressLoad;
+    TextView msgWhenNothing;
     boolean existDb;
-    String pseudoDb, ownerId;
+    String pseudoDb;
+    FirebaseListAdapter<Team> adapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
@@ -59,6 +59,8 @@ public class MenuFindPlayerActivity extends AppCompatActivity
         ListView listPlayers = (ListView) findViewById(R.id.listPlayer);
         Button buttonCreatePlayer = (Button) findViewById(R.id.buttonCreatePlayer);
         progressLoad = (ProgressBar) findViewById(R.id.progressBarLoadPlayer);
+        msgWhenNothing = (TextView) findViewById(R.id.textMsgEmptyPlayer);
+        msgWhenNothing.setVisibility(View.GONE);
 
         initPseudoDb();
 
@@ -90,6 +92,7 @@ public class MenuFindPlayerActivity extends AppCompatActivity
                     public void onShow(DialogInterface dialogInterface)
                     {
                         editName = (EditText) dialog.findViewById(R.id.editNamePlayer);
+                        editName.setText(pseudoDb);
                         spinnerLanguage = (Spinner) dialog.findViewById(R.id.spinnerLanguagePlayer);
                         spinnerMpMode = (Spinner) dialog.findViewById(R.id.spinnerLookingPlayer);
                         spinnerPlatform = (Spinner) dialog.findViewById(R.id.spinnerPlatformPlayer);
@@ -110,13 +113,13 @@ public class MenuFindPlayerActivity extends AppCompatActivity
                                     if(editName.getText().toString().length() > 4)
                                     {
                                         Task taskSend = FirebaseDatabase.getInstance().getReference().child("players").child("player_"+getUid())
-                                                .setValue(new Player(getUid(),editName.getText().toString(),languagesIdList[spinnerLanguage.getSelectedItemPosition()],spinnerPlatform.getSelectedItemPosition()+1,spinnerMpMode.getSelectedItemPosition()+1,spinnerRank.getSelectedItemPosition()+1));
+                                                .setValue(new Player(getUid(),editName.getText().toString(),languagesIdList[spinnerLanguage.getSelectedItemPosition()],spinnerRank.getSelectedItemPosition()+1,spinnerPlatform.getSelectedItemPosition()+1,spinnerMpMode.getSelectedItemPosition()+1));
                                         taskSend.addOnSuccessListener(new OnSuccessListener()
                                         {
                                             @Override
                                             public void onSuccess(Object o)
                                             {
-                                                switchToPlayerView();
+                                                switchToPlayerView(getUid(), pseudoDb);
                                                 dialog.cancel();
                                             }
                                         });
@@ -135,7 +138,7 @@ public class MenuFindPlayerActivity extends AppCompatActivity
             }
         });
 
-        FirebaseListAdapter<Team> adapter = new FirebaseListAdapter<Team>(this, Team.class, R.layout.player, FirebaseDatabase.getInstance().getReference("players"))
+        adapter = new FirebaseListAdapter<Team>(this, Team.class, R.layout.player, FirebaseDatabase.getInstance().getReference("players"))
         {
             String nameChann;
 
@@ -144,10 +147,18 @@ public class MenuFindPlayerActivity extends AppCompatActivity
             {
                 super.onDataChanged();
                 progressLoad.setVisibility(View.GONE);
+                if(adapter.getCount() < 1)
+                {
+                    msgWhenNothing.setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    msgWhenNothing.setVisibility(View.GONE);
+                }
             }
 
             @Override
-            protected void populateView(View v, Team model, final int position)
+            protected void populateView(View v, final Team model, final int position)
             {
                 TextView txtNom = v.findViewById(R.id.nomPlayer);
                 ImageView imageLanguage = v.findViewById(R.id.imageLanguagePlayer);
@@ -167,14 +178,12 @@ public class MenuFindPlayerActivity extends AppCompatActivity
 
                 imageRank.setImageResource(getResources().getIdentifier("rankg_"+model.getRank(), "drawable", getPackageName()));
 
-                ownerId = model.getIdplayer();
-
                 v.setOnClickListener(new View.OnClickListener()
                 {
                     @Override
                     public void onClick(View view)
                     {
-                        switchToPlayerView();
+                        switchToPlayerView(model.getIdplayer(), pseudoDb);
                     }
                 });
             }
@@ -197,9 +206,9 @@ public class MenuFindPlayerActivity extends AppCompatActivity
         }
     }
 
-    void switchToPlayerView()
+    void switchToPlayerView(String uid, String pseudo)
     {
-        Intent playerAct = new Intent(MenuFindPlayerActivity.this, PlayerActivity.class).putExtra("ownerId", ownerId).putExtra("pseudo",pseudoDb);
+        Intent playerAct = new Intent(MenuFindPlayerActivity.this, PlayerActivity.class).putExtra("ownerId", uid).putExtra("pseudo",pseudo);
         startActivity(playerAct);
     }
 

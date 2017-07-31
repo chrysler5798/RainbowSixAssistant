@@ -214,6 +214,8 @@
     <string name="no_internet">Aucune connexion internet !</string>
     <string name="online_fail">Authentification échouée.</string>
     <string name="maintenance">Maintenance !</string>
+    <string name="not_updated">Application plus à jour !</string>
+    <string name="not_updated_msg">Vous devez mettre à jour l\'application sur le Play Store pour utiliser R6 Assistant Online.</string>
 
     <!--TEAM ONLINE MSG-->
     <string name="team_dialog_title">Attention !</string>
@@ -235,6 +237,9 @@
     <!--TEAM and PLAYER ONLINE-->
     <string name="create_team">Créer nouvelle équipe</string>
     <string name="create_uteam">Créer votre équipe</string>
+
+    <string name="team_msg_nothing">Il n\'y a aucune équipes pour le moment. Si vous êtes une équipe, ajoutez votre équipe avec le bouton en bas et attendez que les joueurs rejoignent votre salle.</string>
+    <string name="player_msg_nothing">Il n\'y a aucun joueurs pour le moment. Si vous êtes un joueur, ajoutez votre profil avec le bouton en bas et attendez que les joueurs rejoignent votre salle.</string>
 
     <string name="create_player">M\'ajouter en tant que joueur</string>
     <string name="create_uplayer">Créer votre profil</string>

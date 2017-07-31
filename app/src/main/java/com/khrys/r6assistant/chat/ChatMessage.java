@@ -6,7 +6,12 @@ package com.khrys.r6assistant.chat;
  * Info : 7/1/2017 [7:41 PM]
 */
 
+import java.text.DateFormat;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
+import java.util.Locale;
 import java.util.TimeZone;
 
 public class ChatMessage
@@ -24,8 +29,10 @@ public class ChatMessage
         this.messageText = messageText;
         this.messageUser = messageUser;
 
-        Calendar c = Calendar.getInstance(TimeZone.getTimeZone("Europe/Paris"));
-        messageTime = String.format("%02d:%02d", c.get(Calendar.HOUR), c.get(Calendar.MINUTE));
+        DateFormat dateFormat = new SimpleDateFormat("hh:mm");
+        dateFormat.setTimeZone(TimeZone.getTimeZone("Europe/Paris"));
+        Date date = new Date();
+        messageTime = dateFormat.format(date);
     }
 
     public String getMessageText()

@@ -6,9 +6,11 @@ package com.khrys.r6assistant.chat;
  * Info : 7/2/2017 [4:58 PM]
 */
 
+import android.content.ActivityNotFoundException;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.net.Uri;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
@@ -34,6 +36,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.khrys.r6assistant.BuildConfig;
 import com.khrys.r6assistant.R;
 
 public class MenuChatActivity extends AppCompatActivity
@@ -48,6 +51,7 @@ public class MenuChatActivity extends AppCompatActivity
     FirebaseUser user;
     AlertDialog dialog;
     InputMethodManager inputMethodManager;
+    int versionCode = BuildConfig.VERSION_CODE;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
@@ -91,6 +95,10 @@ public class MenuChatActivity extends AppCompatActivity
                     {
                         showMaintenance(dataSnapshot.child("maintenance").getValue(Maintenance.class).getMsg());
                     }
+                    else if(dataSnapshot.child("version").getValue(Version.class).getVersionCode() != versionCode)
+                    {
+                        showNotUpdated();
+                    }
                     else
                     {
                         setupView();
@@ -129,6 +137,43 @@ public class MenuChatActivity extends AppCompatActivity
         alertMaintenance.show();
 
         alertMaintenance.setOnCancelListener(new DialogInterface.OnCancelListener()
+        {
+            @Override
+            public void onCancel(DialogInterface dialogInterface)
+            {
+                finish();
+            }
+        });
+    }
+
+    void showNotUpdated()
+    {
+        AlertDialog.Builder dialogUpdateBuilder = new AlertDialog.Builder(this, R.style.MyAlertDialogStyle);
+        dialogUpdateBuilder.setTitle(R.string.not_updated);
+        dialogUpdateBuilder.setMessage(R.string.not_updated_msg);
+        dialogUpdateBuilder.setIcon(android.R.drawable.stat_sys_warning);
+        dialogUpdateBuilder.setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener()
+        {
+            @Override
+            public void onClick(DialogInterface dialogInterface, int i)
+            {
+                finish();
+                Uri uri = Uri.parse("market://details?id=" + getPackageName());
+                Intent openPlayStore = new Intent(Intent.ACTION_VIEW, uri);
+                try
+                {
+                    startActivity(openPlayStore);
+                } catch (ActivityNotFoundException e)
+                {
+                    Toast.makeText(getApplicationContext(), getResources().getString(R.string.error_market),   Toast.LENGTH_LONG).show();
+                }
+            }
+        });
+
+        AlertDialog alertUpdate = dialogUpdateBuilder.create();
+        alertUpdate.show();
+
+        alertUpdate.setOnCancelListener(new DialogInterface.OnCancelListener()
         {
             @Override
             public void onCancel(DialogInterface dialogInterface)

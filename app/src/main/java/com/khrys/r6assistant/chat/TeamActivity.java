@@ -172,7 +172,7 @@ public class TeamActivity extends AppCompatActivity
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.button_team_msg);
         listOfMessages = (ListView) findViewById(R.id.list_msg_team);
 
-        adapter = new FirebaseListAdapter<ChatMessage>(this, ChatMessage.class, R.layout.message, FirebaseDatabase.getInstance().getReference().child("teams").child(team_id+"_msgs"))
+        adapter = new FirebaseListAdapter<ChatMessage>(this, ChatMessage.class, R.layout.message, FirebaseDatabase.getInstance().getReference().child("teams_msgs").child(team_id))
         {
             @Override
             protected void populateView(View v, ChatMessage model, int position)
@@ -206,11 +206,11 @@ public class TeamActivity extends AppCompatActivity
                     sender = pseudo;
                 }
 
-                DatabaseReference dbTeam = FirebaseDatabase.getInstance().getReference().child("teams");
+                DatabaseReference dbTeam = FirebaseDatabase.getInstance().getReference().child("teams_msgs");
                 String msgToSend = input.getText().toString();
                 if(existDb && !msgToSend.isEmpty())
                 {
-                    dbTeam.child(team_id+"_msgs")
+                    dbTeam.child(team_id)
                             .push()
                             .setValue(new ChatMessage(msgToSend, sender));
 
@@ -344,7 +344,7 @@ public class TeamActivity extends AppCompatActivity
         if(isOwner())
         {
             FirebaseDatabase.getInstance().getReference().child("teams").child(team_id).removeValue();
-            FirebaseDatabase.getInstance().getReference().child("teams").child(team_id+"_msgs").removeValue();
+            FirebaseDatabase.getInstance().getReference().child("teams_msgs").child(team_id).removeValue();
         }
     }
 

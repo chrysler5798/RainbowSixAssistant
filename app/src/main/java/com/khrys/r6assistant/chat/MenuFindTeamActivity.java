@@ -40,6 +40,8 @@ public class MenuFindTeamActivity extends AppCompatActivity
     String pseudoDb, ownerId;
     boolean existDb;
     ProgressBar progressLoad;
+    TextView msgWhenNothing;
+    FirebaseListAdapter<Team> adapter;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState)
@@ -56,6 +58,8 @@ public class MenuFindTeamActivity extends AppCompatActivity
         ListView listTeams = (ListView) findViewById(R.id.listTeam);
         Button buttonCreateTeam = (Button) findViewById(R.id.buttonCreateTeam);
         progressLoad = (ProgressBar) findViewById(R.id.progressBarLoadTeam);
+        msgWhenNothing = (TextView) findViewById(R.id.textMsgEmptyTeam);
+        msgWhenNothing.setVisibility(View.GONE);
 
         initPseudoDb();
 
@@ -116,7 +120,7 @@ public class MenuFindTeamActivity extends AppCompatActivity
                                             @Override
                                             public void onSuccess(Object o)
                                             {
-                                                switchToTeamView();
+                                                switchToTeamView(getUid(), pseudoDb);
                                                 dialog.cancel();
                                             }
                                         });
@@ -135,7 +139,7 @@ public class MenuFindTeamActivity extends AppCompatActivity
             }
         });
 
-        FirebaseListAdapter<Team> adapter = new FirebaseListAdapter<Team>(this, Team.class, R.layout.team, FirebaseDatabase.getInstance().getReference("teams"))
+        adapter = new FirebaseListAdapter<Team>(this, Team.class, R.layout.team, FirebaseDatabase.getInstance().getReference("teams"))
         {
             String nameChann;
 
@@ -144,10 +148,18 @@ public class MenuFindTeamActivity extends AppCompatActivity
             {
                 super.onDataChanged();
                 progressLoad.setVisibility(View.GONE);
+                if(adapter.getCount() < 1)
+                {
+                    msgWhenNothing.setVisibility(View.VISIBLE);
+                }
+                else
+                {
+                    msgWhenNothing.setVisibility(View.GONE);
+                }
             }
 
             @Override
-            protected void populateView(View v, Team model, final int position)
+            protected void populateView(View v, final Team model, final int position)
             {
                 TextView txtNom = v.findViewById(R.id.nomTeam);
                 ImageView imageLanguage = v.findViewById(R.id.imageLanguage);
@@ -178,7 +190,7 @@ public class MenuFindTeamActivity extends AppCompatActivity
                     @Override
                     public void onClick(View view)
                     {
-                        switchToTeamView();
+                        switchToTeamView(model.getIdplayer(), model.getName());
                     }
                 });
             }
@@ -201,9 +213,9 @@ public class MenuFindTeamActivity extends AppCompatActivity
         }
     }
 
-    void switchToTeamView()
+    void switchToTeamView(String uid, String pseudo)
     {
-        Intent teamAct = new Intent(MenuFindTeamActivity.this, TeamActivity.class).putExtra("ownerId", ownerId).putExtra("pseudo",pseudoDb);
+        Intent teamAct = new Intent(MenuFindTeamActivity.this, TeamActivity.class).putExtra("ownerId", uid).putExtra("pseudo",pseudo);
         startActivity(teamAct);
     }
 
