@@ -104,95 +104,95 @@
     <string name="gad_claymore">Мина</string>
 
     <!--OPERATORS UNIQUE GADGET DESCRIPTION-->
-    <string name="ugat_ash">M120 CREM</string>
-    <string name="uga_ash">Fires an explosive Breach Round that burrows into a surface and automatically detonates.</string>
+    <string name="ugat_ash">С120 ВГП</string>
+    <string name="uga_ash">Боеприпас, взрывающийся при контакте с припятствием.</string>
 
-    <string name="ugat_bandit">CED-1</string>
-    <string name="uga_bandit">Sets high-tension Shock Wire on metallic gadgets, dealing damage to enemies.</string>
+    <string name="ugat_bandit">УПТ-1</string>
+    <string name="uga_bandit">Позволяет подвести ток к любому металлическому предмету и нанести дополнительный урон.</string>
 
-    <string name="ugat_blackbeard">TARS MK 0-Armored Rifle Shield</string>
-    <string name="uga_blackbeard">Has a backup mounted shield to swap if the first one gets damaged.</string>
+    <string name="ugat_blackbeard">Навесной Щит</string>
+    <string name="uga_blackbeard">Если щит будет поврежден, в снаряжении доступен запасной.</string>
 
-    <string name="ugat_blitz">G52-Tactical Shield</string>
-    <string name="uga_blitz">Triggers the flash attached to his ballistic shield to temporarily blind enemies.</string>
+    <string name="ugat_blitz">Баллистический Щит Б52</string>
+    <string name="uga_blitz">Устройство, установленное на щите, создаст вспышку, ослепляющую противника.</string>
 
-    <string name="ugat_buck">SK 4–12</string>
-    <string name="uga_buck">Toggles under-barrel shotgun attachment on his main weapon.</string>
+    <string name="ugat_buck">ПД 4-12</string>
+    <string name="uga_buck">Подствольный дробовик для основного оружия.</string>
 
-    <string name="ugat_capitao">TAC Mk0</string>
-    <string name="uga_capitao">Tactical crossbow firing asphyxiating bolts and micro smoke grenades.</string>
+    <string name="ugat_capitao">АТУ M 0</string>
+    <string name="uga_capitao">Спецарбалет. Боеприпасы: Вызывающие асфиксию дротики, компактные дымовые шашки.</string>
 
-    <string name="ugat_castle">UTP1-Universal Tactical Panel</string>
-    <string name="uga_castle">Sets bulletproof barricades, more resistant than standard ones.</string>
+    <string name="ugat_castle">УБП1 Универсальная бронепанель</string>
+    <string name="uga_castle">Ставит пуленепробиваемые преграды, эфективнее стандартных.</string>
 
-    <string name="ugat_caveira">Silent step</string>
-    <string name="uga_caveira">Caveira\'s predatory stealth, the "Silent Step" allows her to lurk on her prey, almost inaudible, until it\'s too late.</string>
+    <string name="ugat_caveira">Бесшумность</string>
+    <string name="uga_caveira">Навыки скрытных действий позволяют оперативнику Caveira бесшумно подбираться к врагу и устранять его.</string>
 
-    <string name="ugat_doc">MPD-0 Stim Pistol</string>
-    <string name="uga_doc">Fires a hypodermic shot to revive himself or teammates from a distance. Can also provide a temporary boost.</string>
+    <string name="ugat_doc">ОП-0 "Стимулятор"</string>
+    <string name="uga_doc">Инъектор с адреналином позволяет привести в чувства себя или союзника на расстоянии. Также может временно увеличить запас здоровья.</string>
 
-    <string name="ugat_echo">YOKAI</string>
-    <string name="uga_echo">Hovering drone that releases disorienting sonic bursts. Yokai also transmits a video feed to the Echo and his team.</string>
+    <string name="ugat_echo">Йокай</string>
+    <string name="uga_echo">Бот, испускающий звуковые импульсы. Встроенная камера позволяет вести Echo и его команде наблюдение за местом. </string>
 
-    <string name="ugat_frost">Sterling MK2 LHT</string>
-    <string name="uga_frost">Uses a mechanical trap to incapacitate enemies.</string>
+    <string name="ugat_frost">Л Sterling М2 (Силок)</string>
+    <string name="uga_frost">Механические ловушки, обездвиживающие противника.</string>
 
-    <string name="ugat_fuze">APM-6 "Matryoshka"</string>
-    <string name="uga_fuze">Uses Cluster Charge that pierce and stick to walls, releasing sub-grenades on the opposing side.</string>
+    <string name="ugat_fuze">К3-6 "Матрешка"</string>
+    <string name="uga_fuze">Взрывное устройство, пробивающие стену и выпускающие мини-заряды.</string>
 
-    <string name="ugat_glaz">HDS Flip Sight</string>
-    <string name="uga_glaz">Toggles a magnification scope with sophisticated image sensors outlining long range marks, even trough smoke.</string>
+    <string name="ugat_glaz">ПСО "Зрачок"</string>
+    <string name="uga_glaz">Увеличивает дальность прицеливания даже в условиях дымовой завесы за счет особых визуальных эффектов.</string>
 
-    <string name="ugat_hibana">X-KAIROS</string>
-    <string name="uga_hibana">A 40mm grenade launcher firing explosive pellets that can be detonated from a distance.</string>
+    <string name="ugat_hibana">Икс-Кайрос</string>
+    <string name="uga_hibana">40-мм гранатомет с пробивными зарядами в качестве боеприпасов. Активация - на расстоянии.</string>
 
-    <string name="ugat_iq">RED MK III "Spectre"</string>
-    <string name="uga_iq">Uses the Electronics Detector to locate any electronics in range through obstacles such as walls.</string>
+    <string name="ugat_iq">ДЭД М III "Спектр"</string>
+    <string name="uga_iq">Дистанционный детектор электронники. Улавливает сигналы устройств.</string>
 
-    <string name="ugat_jackal">EYENOX MODEL III</string>
-    <string name="uga_jackal">Tracking eyewear that locates targets by revealing and identifying recent footsteps.</string>
+    <string name="ugat_jackal">"EYENOX" M III</string>
+    <string name="uga_jackal">Прибор, позволяющий обнаружить и проанализировать следы, оставленные недавно.</string>
 
-    <string name="ugat_jager">ADS-MKIV "Magpie"</string>
-    <string name="uga_jager">Uses an Active Defense system to intercept grenades before they detonate.</string>
+    <string name="ugat_jager">СОГ М IV "Сорока"</string>
+    <string name="uga_jager">Система отражения гранат. Компактный аналог активной защиты.</string>
 
-    <string name="ugat_kapkan">EDD MK II</string>
-    <string name="uga_kapkan">Sets booby traps on windows and door frames.</string>
+    <string name="ugat_kapkan">"Капкан" М II</string>
+    <string name="uga_kapkan">Взрывные ловушки, устанавливаемые на двери и окна.</string>
 
-    <string name="ugat_mira">BLACK MIRROR</string>
-    <string name="uga_mira">Deploys a one-way bulletproof mirror on breakable and reinforced walls. Also can be ejected to create a murder hole.</string>
+    <string name="ugat_mira">ЧЕРНОЕ ЗЕРКАЛО</string>
+    <string name="uga_mira">Можно установить на разрушаемые и усиленные стены или удалить для создания новой линии стрельбы.</string>
 
-    <string name="ugat_montagne">Le Roc</string>
-    <string name="uga_montagne">Can expand his Extendable Shield to offer full protection while standing.</string>
+    <string name="ugat_montagne">"Скала"</string>
+    <string name="uga_montagne">Позволяет увеличить область защиты.</string>
 
-    <string name="ugat_mute">GC90 "Moni" Signal Disruptor</string>
-    <string name="uga_mute">Jams communications for remotely detonated gadgets or drones in its range.</string>
+    <string name="ugat_mute">Генератор Помех ПС90</string>
+    <string name="uga_mute">Блокирует сигналы связи, устройств ДУ и разведботов в радиусе.</string>
 
-    <string name="ugat_pulse">HB-5 Cardiac Sensor</string>
-    <string name="uga_pulse">Detects heartbeats at a short distance through obstacles.</string>
+    <string name="ugat_pulse">Датчик Пульса ДП-5</string>
+    <string name="uga_pulse">На небольшом растоянии позволяет уловить сердцебиение противника.</string>
 
-    <string name="ugat_rook">R1N "Rhino" Armor</string>
-    <string name="uga_rook">Drops a supply bag full of armor plates for his team to use.</string>
+    <string name="ugat_rook">П1К "Носорог"</string>
+    <string name="uga_rook">Защита, которую могут использовать все члены команды.</string>
 
-    <string name="ugat_sledge">Tactical Breaching Hammer "The Caber"</string>
-    <string name="uga_sledge">Uses a Breaching Hammer to breach through destructible surfaces.</string>
+    <string name="ugat_sledge">Инструмент для создания брешей "Кувалда"</string>
+    <string name="uga_sledge">C помощью этого инструмента можно пробить брешь в разрушаемом объекте.</string>
 
-    <string name="ugat_smoke">Compound Z8 Grenade</string>
-    <string name="uga_smoke">Sets remote detonated toxic gas charges.</string>
+    <string name="ugat_smoke">Заряд "Реагент Z8"</string>
+    <string name="uga_smoke">Взрывное устройство, создающее облако газа.</string>
 
-    <string name="ugat_tachanka">RP-46 Degtyaryov Machine Gun</string>
-    <string name="uga_tachanka">Deploys a Mounted LMG with a ballistic shield protecting the head from frontal shots.</string>
+    <string name="ugat_tachanka">Пулемет Дегтярева РП-46</string>
+    <string name="uga_tachanka">Турельная установка и баллистический щит, препятствующий попаданиям в голову.</string>
 
-    <string name="ugat_thatcher">EG MK0-EMP Grenade</string>
-    <string name="uga_thatcher">Uses EMP Grenades to disable any electronics in range.</string>
+    <string name="ugat_thatcher">Эми-Граната</string>
+    <string name="uga_thatcher">Средство для отключения электронных устройств врага.</string>
 
-    <string name="ugat_thermite">BRIMSTONE BC-3 Exothermic Charge</string>
-    <string name="uga_thermite">Sets an exotherrmic charge that destroys reinforced walls.</string>
+    <string name="ugat_thermite">Термозаряд УТВ-3 "Пепел"</string>
+    <string name="uga_thermite">Взрывное устройство, позволяющие пробить усиленные стены.</string>
 
-    <string name="ugat_twitch">RSD Model 1 Shock Drone</string>
-    <string name="uga_twitch">Uses two Shock Drones to disable traps or injure enemies. Deploys the first Shock Drone during the preparation phase.</string>
+    <string name="ugat_twitch">"Шок-Бот" ДШБ М I</string>
+    <string name="uga_twitch">Использует 2 "Шок-Бота", чтобы обезвредить ловушки или нанести урон. Активируйте "Бота" в рамках фазы подготовки</string>
 
-    <string name="ugat_valkyrie">Gyro Cam Mk2</string>
-    <string name="uga_valkyrie">Can set up "Black Eye" cameras, feed accessible by whole team via observation tools.</string>
+    <string name="ugat_valkyrie">Гирокамера M2</string>
+    <string name="uga_valkyrie">Специальные камеры слежения. Доступ к ним имеет вся команда.</string>
 
     <string name="ugat_ying"></string>
     <string name="uga_ying"></string>
@@ -315,11 +315,11 @@
     <string name="italian">Итальянский</string>
     <string name="german">Немецкий</string>
     <string name="russian">Русский</string>
-    <string name="chinese">Chinese</string>
-    <string name="polish">Polish</string>
-    <string name="japenese">Japenese</string>
-    <string name="korean">Korean</string>
-    <string name="spanish">Spanish</string>
+    <string name="chinese">Китайский</string>
+    <string name="polish">Польский</string>
+    <string name="japenese">Японский</string>
+    <string name="korean">Корейский</string>
+    <string name="spanish">Испанский</string>
 
     <!--MAP MENU-->
     <string name="takemap">Выбрать карту</string>
