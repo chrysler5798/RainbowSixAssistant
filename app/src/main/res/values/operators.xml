@@ -42,6 +42,11 @@
 
         <item>mira</item>
         <item>jackal</item>
+
+        <item>ying</item>
+        <item>lesion</item>
+
+        <item>ela</item>
     </string-array>
 
     <!--Operators sorted by side-->
@@ -62,6 +67,7 @@
         <item>cãpitao</item>
         <item>hibana</item>
         <item>jackal</item>
+        <item>ying</item>
 
         <!--Defenders-->
         <item>kapkan</item>
@@ -79,6 +85,8 @@
         <item>caveira</item>
         <item>echo</item>
         <item>mira</item>
+        <item>lesion</item>
+        <item>ela</item>
     </string-array>
 
     <!--Army and country-->
@@ -103,6 +111,11 @@
         <item>S.A.T.</item>
         <item>es</item>
         <item>G.E.O.</item>
+        <item>hk</item>
+        <item>SDU</item>
+        <item>pl</item>
+        <item>GROM</item>
+
     </string-array>
 
     <!--Armies with their operators-->
@@ -164,6 +177,15 @@
     <string-array name="g_e_o_">
         <item>mira</item>
         <item>jackal</item>
+    </string-array>
+
+    <string-array name="sdu">
+        <item>ying</item>
+        <item>lesion</item>
+    </string-array>
+
+    <string-array name="grom">
+        <item>ela</item>
     </string-array>
 
     <!--Operators info-->
@@ -603,6 +625,48 @@
         <item>2</item><item>2</item>
         <item>3</item><item>breach</item>
         <item>3</item><item>smoke</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="ying">
+        <item>atk</item>
+        <item>hk</item><item>SDU</item>
+        <item>3</item>
+        <item>1</item>
+        <item>t-95 lsw</item>
+        <item>six12</item>
+        <item>q-929</item>
+        <item>2</item><item>2</item>
+        <item>1</item><item>claymore</item>
+        <item>3</item><item>smoke</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="lesion">
+        <item>def</item>
+        <item>hk</item><item>SDU</item>
+        <item>3</item>
+        <item>1</item>
+        <item>six12 sd</item>
+        <item>t-5 smg</item>
+        <item>q-929</item>
+        <item>2</item><item>2</item>
+        <item>2</item><item>impact</item>
+        <item>1</item><item>shield</item>
+        <item></item>
+    </string-array>
+
+    <string-array name="ela">
+        <item>def</item>
+        <item>pl</item><item>GROM</item>
+        <item>3</item>
+        <item>1</item>
+        <item>scorpion evo 3 a1</item>
+        <item>f0-12</item>
+        <item>rg15</item>
+        <item>3</item><item>1</item>
+        <item>2</item><item>barbed</item>
+        <item>3</item><item>impact</item>
         <item></item>
     </string-array>
 </resources>

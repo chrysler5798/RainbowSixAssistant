@@ -14,6 +14,7 @@ import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.List;
 
@@ -90,6 +91,10 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
                         else if (requesttype == 2)
                         {
                             startIntentWithInput(TwitchMapActivity.class);
+                        }
+                        else if (requesttype == 3 && getAdapterPosition() == 16)
+                        {
+                            Toast.makeText(itemView.getContext(),R.string.planerror,Toast.LENGTH_LONG).show();
                         }
                         else if (requesttype == 3)
                         {

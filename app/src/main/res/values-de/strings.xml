@@ -194,6 +194,15 @@
     <string name="ugat_valkyrie">Gyro-Kamera Mk2</string>
     <string name="uga_valkyrie">Stellt "SCHWARZES AUGE"-Kameras auf, auf die das ganze Team über Überwachungsinstrumente zugreift.</string>
 
+    <string name="ugat_ying"></string>
+    <string name="uga_ying"></string>
+
+    <string name="ugat_lesion"></string>
+    <string name="uga_lesion"></string>
+
+    <string name="ugat_ela"></string>
+    <string name="uga_ela"></string>
+
     <!--ONLINE-->
     <string name="create_txt">Create</string>
     <string name="message">Message</string>
@@ -455,6 +464,16 @@
         <string name="coastline_cam_s5">(AUSSEN) Garagendach</string>
         <string name="coastline_cam_s6">(AUSSEN) Ruinen</string>
         <string name="coastline_cam_s7">(AUSSEN) Ruinen</string>
+
+    <string name="themepark">Theme park</string>
+        <string name="themepark_cam_s1">(1F) Gallery</string>
+        <string name="themepark_cam_s2">(2F) Haunted Stairs</string>
+        <string name="themepark_cam_s3">(1F) Joint Corridor</string>
+        <string name="themepark_cam_s4">(2F) Upper Arcarde</string>
+        <string name="themepark_cam_s5">(2F) Rail Platform</string>
+        <string name="themepark_cam_s6">(EXT) Teacups</string>
+        <string name="themepark_cam_s7">(EXT) Service Entrance</string>
+        <string name="themepark_cam_s8">(EXT) Guest Info</string>
 
     <string name="destroyPhrase">%d</string>
     <string name="cameraPhrase">%d cameras</string>

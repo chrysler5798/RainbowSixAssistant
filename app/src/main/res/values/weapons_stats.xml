@@ -582,7 +582,7 @@
         <item />
         <item />
 
-        <item>15</item><item>0</item><item>18</item>
+        <item>15</item><item>375</item><item>18</item>
 
         <item>29</item><item>39</item>
         <item>26</item><item>35</item>
@@ -605,7 +605,7 @@
         <item />
         <item />
 
-        <item>15</item><item>0</item><item>3</item>
+        <item>15</item><item>375</item><item>3</item>
 
         <item>66</item><item>99</item>
         <item>66</item><item>89</item>
@@ -628,7 +628,7 @@
         <item />
         <item />
 
-        <item>12</item><item>0</item><item>10</item>
+        <item>12</item><item>375</item><item>10</item>
 
         <item>37</item><item>50</item>
         <item>33</item><item>45</item>
@@ -651,7 +651,7 @@
         <item />
         <item />
 
-        <item>12</item><item>0</item><item />
+        <item>12</item><item>375</item><item />
 
         <item>32</item><item>43</item>
         <item>29</item><item>39</item>
@@ -1423,6 +1423,188 @@
         <item>suppressor</item>
         <item>muzzle_brake</item>
         <item>flash_hider</item>
+        <item />
+    </string-array>
+
+
+    <string-array name="g_t_5_smg">
+        <item>lesion</item>
+        <item />
+        <item />
+        <item />
+
+        <item>30</item><item>900</item><item>20</item>
+
+        <item>22</item><item>30</item>
+        <item>20</item><item>27</item>
+        <item>15</item><item>24</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+
+        <item>muzzle_brake</item>
+        <item>flash_hider</item>
+        <item>compensator</item>
+        <item>suppressor</item>
+        <item />
+    </string-array>
+
+
+    <string-array name="g_six12">
+        <item>ying</item>
+        <item />
+        <item />
+        <item />
+
+        <item>6</item><item>0</item><item>0</item>
+
+        <item>0</item><item>35</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+    </string-array>
+
+
+    <string-array name="g_six12_sd">
+        <item>lesion</item>
+        <item />
+        <item />
+        <item />
+
+        <item>6</item><item>0</item><item>0</item>
+
+        <item>0</item><item>35</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+    </string-array>
+
+    <string-array name="g_t_95_lsw">
+        <item>ying</item>
+        <item />
+        <item />
+        <item />
+
+        <item>80</item><item>650</item><item>30</item>
+
+        <item>25</item><item>34</item>
+        <item>22</item><item>30</item>
+        <item>17</item><item>27</item>
+        <item>21</item><item>27</item>
+        <item>18</item><item>24</item>
+        <item>13</item><item>21</item>
+
+        <item>muzzle_brake</item>
+        <item>flash_hider</item>
+        <item>compensator</item>
+        <item>suppressor</item>
+        <item />
+    </string-array>
+
+
+    <string-array name="g_q_929">
+        <item>ying</item>
+        <item>lesion</item>
+        <item />
+        <item />
+
+        <item>10</item><item>0</item><item>15</item>
+
+        <item>37</item><item>50</item>
+        <item>33</item><item>45</item>
+        <item>26</item><item>40</item>
+        <item>31</item><item>43</item>
+        <item>27</item><item>37</item>
+        <item>22</item><item>33</item>
+
+        <item>muzzle_brake</item>
+        <item>suppressor</item>
+        <item />
+        <item />
+        <item />
+    </string-array>
+
+    <string-array name="g_scorpion_evo_3_a1">
+        <item>ela</item>
+        <item />
+        <item />
+        <item />
+
+        <item>50</item><item>1080</item><item>20</item>
+
+        <item>21</item><item>28</item>
+        <item>18</item><item>25</item>
+        <item>14</item><item>22</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+
+        <item>muzzle_brake</item>
+        <item>flash_hider</item>
+        <item>compensator</item>
+        <item>suppressor</item>
+        <item />
+    </string-array>
+
+
+    <string-array name="g_f0_12">
+        <item>ela</item>
+        <item />
+        <item />
+        <item />
+
+        <item>10</item><item>0</item><item>0</item>
+
+        <item>0</item><item>35</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+
+        <item>extended_barrel</item>
+        <item>suppressor</item>
+        <item/>
+        <item/>
+        <item />
+    </string-array>
+
+
+    <string-array name="g_rg15">
+        <item>ela</item>
+        <item />
+        <item />
+        <item />
+
+        <item>15</item><item>0</item><item>15</item>
+
+        <item>28</item><item>38</item>
+        <item>25</item><item>34</item>
+        <item>19</item><item>30</item>
+        <item>24</item><item>32</item>
+        <item>21</item><item>28</item>
+        <item>16</item><item>25</item>
+
+        <item>muzzle_brake</item>
+        <item>suppressor</item>
+        <item/>
+        <item/>
         <item />
     </string-array>
 </resources>

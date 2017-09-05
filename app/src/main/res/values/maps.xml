@@ -17,6 +17,7 @@
         <item>skyscraper</item>
         <item>university</item>
         <item>coastline</item>
+        <item>themepark</item>
     </string-array>
 
     <string-array name="m0">
@@ -127,6 +128,13 @@
     <string-array name="m15">
         <item>coastline</item>
         <item>7</item>
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="m16">
+        <item>themepark</item>
+        <item>8</item>
         <item>0</item>
         <item>2</item>
     </string-array>
