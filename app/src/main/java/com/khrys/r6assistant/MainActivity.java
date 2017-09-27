@@ -78,25 +78,31 @@ public class MainActivity extends AppCompatActivity
             public void onClick(final View view)
             {
 
-                //Toast.makeText(getApplicationContext(), R.string.msgsoon, Toast.LENGTH_SHORT).show();
+                AlertDialog.Builder dialogNoInternetBuilder = new AlertDialog.Builder(view.getContext(), R.style.MyAlertDialogStyle);
+                dialogNoInternetBuilder.setTitle(R.string.maintenance);
+                dialogNoInternetBuilder.setMessage("R6 Assistant Online is under maintenance, it will be up in the next update, thanks for your patience !");
+                dialogNoInternetBuilder.setIcon(android.R.drawable.stat_sys_warning);
+                dialogNoInternetBuilder.setPositiveButton(android.R.string.ok, null);
+                AlertDialog alertNoInternet = dialogNoInternetBuilder.create();
+                alertNoInternet.show();
 
-                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-                NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-                if(activeNetworkInfo != null && activeNetworkInfo.isConnected())
-                {
-                    Intent myIntent = new Intent(MainActivity.this, MenuChatActivity.class);
-                    startActivity(myIntent);
-                }
-                else
-                {
-                    AlertDialog.Builder dialogNoInternetBuilder = new AlertDialog.Builder(view.getContext(), R.style.MyAlertDialogStyle);
-                    dialogNoInternetBuilder.setTitle(R.string.no_internet);
-                    dialogNoInternetBuilder.setIcon(android.R.drawable.stat_sys_warning);
-                    dialogNoInternetBuilder.setPositiveButton(android.R.string.ok, null);
-
-                    AlertDialog alertNoInternet = dialogNoInternetBuilder.create();
-                    alertNoInternet.show();
-                }
+//                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+//                NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+//                if(activeNetworkInfo != null && activeNetworkInfo.isConnected())
+//                {
+//                    Intent myIntent = new Intent(MainActivity.this, MenuChatActivity.class);
+//                    startActivity(myIntent);
+//                }
+//                else
+//                {
+//                    AlertDialog.Builder dialogNoInternetBuilder = new AlertDialog.Builder(view.getContext(), R.style.MyAlertDialogStyle);
+//                    dialogNoInternetBuilder.setTitle(R.string.no_internet);
+//                    dialogNoInternetBuilder.setIcon(android.R.drawable.stat_sys_warning);
+//                    dialogNoInternetBuilder.setPositiveButton(android.R.string.ok, null);
+//
+//                    AlertDialog alertNoInternet = dialogNoInternetBuilder.create();
+//                    alertNoInternet.show();
+//                }
             }
         });
 
