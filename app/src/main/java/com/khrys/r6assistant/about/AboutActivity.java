@@ -16,8 +16,6 @@ import com.khrys.r6assistant.R;
 
 public class AboutActivity extends AppCompatActivity
 {
-    ImageView imgGit;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -30,7 +28,7 @@ public class AboutActivity extends AppCompatActivity
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        imgGit = (ImageView) findViewById(R.id.imageGit);
+        ImageView imgGit = findViewById(R.id.imageGit);
 
         imgGit.setOnClickListener(new View.OnClickListener()
         {

@@ -194,14 +194,14 @@
     <string name="ugat_valkyrie">Telecamera giroscopica Mk2</string>
     <string name="uga_valkyrie">Piazza delle telecamere Black Eye, a cui può accedere tutta la squadra con gli strumenti di osservazione.</string>
 
-    <string name="ugat_ying"></string>
-    <string name="uga_ying"></string>
+    <string name="ugat_ying">Candela</string>
+    <string name="uga_ying">Un grappolo di flashbang che può essere ancorato alle superfici o fatto rotolare.</string>
 
-    <string name="ugat_lesion"></string>
-    <string name="uga_lesion"></string>
+    <string name="ugat_lesion">Gu</string>
+    <string name="uga_lesion">Mine tossiche mimetiche che iniettano un composto in grado di ferire e limitare la velocità dei nemici.</string>
 
-    <string name="ugat_ela"></string>
-    <string name="uga_ela"></string>
+    <string name="ugat_ela">Grzmot Mine</string>
+    <string name="uga_ela">Mine di prossimità a concussione che possono essere applicate alle superfici: danneggiano l\'udito e hanno un effetto stordente.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Create</string>

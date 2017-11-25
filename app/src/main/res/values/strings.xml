@@ -194,14 +194,14 @@
     <string name="ugat_valkyrie">Gyro Cam Mk2</string>
     <string name="uga_valkyrie">Can set up "Black Eye" cameras, feed accessible by whole team via observation tools.</string>
 
-    <string name="ugat_ying"></string>
-    <string name="uga_ying"></string>
+    <string name="ugat_ying">Candela</string>
+    <string name="uga_ying">Cluster of flash charges that can either be anchored on surfaces or rolled out as a grenade.</string>
 
-    <string name="ugat_lesion"></string>
-    <string name="uga_lesion"></string>
+    <string name="ugat_lesion">Gu</string>
+    <string name="uga_lesion">Cloaked toxic mines injecting a compound which injures opponents and limits their speed.</string>
 
-    <string name="ugat_ela"></string>
-    <string name="uga_ela"></string>
+    <string name="ugat_ela">Grzmot Mine</string>
+    <string name="uga_ela">Concussion proximity mines that can be anchored on surfaces, impairing hearing and causing a dizzying effect.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Create</string>

@@ -1,8 +1,9 @@
 package com.khrys.r6assistant.operators;
 /*
- * Created by Louis on 31/05/2017.
- * 
- * R6Assistant
+ * Created by Khrys.
+ *
+ * App : RainbowSixAssistant
+ * Info : 05/31/2017[00:00 PM]
 */
 
 import android.content.res.TypedArray;
@@ -10,6 +11,7 @@ import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +21,7 @@ import com.khrys.r6assistant.R;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Locale;
 
 public class CountryFragment extends Fragment
 {
@@ -34,7 +37,7 @@ public class CountryFragment extends Fragment
         super.onViewCreated(view, savedInstanceState);
         RecyclerView recyclerView = view.findViewById(R.id.WeaponsRecycler);
 
-        CountryListExpandableAdapter mOperatorsListExpandableAdapter = new CountryListExpandableAdapter(getContext(), generateOperatorsList());
+        CountryListExpandableAdapter mOperatorsListExpandableAdapter = new CountryListExpandableAdapter(getContext(), generateOperatorsList(view));
         mOperatorsListExpandableAdapter.setCustomParentAnimationViewId(R.id.parent_list_item_expand_arrow);
         mOperatorsListExpandableAdapter.setParentClickableViewAnimationDefaultDuration();
         mOperatorsListExpandableAdapter.setParentAndIconExpandOnClick(true);
@@ -43,7 +46,7 @@ public class CountryFragment extends Fragment
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 
-    private ArrayList<ParentObject> generateOperatorsList()
+    private ArrayList<ParentObject> generateOperatorsList(View view)
     {
         List<Country> countriesList = new ArrayList<>();
 
@@ -52,7 +55,7 @@ public class CountryFragment extends Fragment
             String ct = tableCtries.getString(i);
             String img = "flag_" + tableCtries.getString(i - 1);
 
-            int imgid = getResources().getIdentifier(img, "drawable", getContext().getPackageName());
+            int imgid = getResources().getIdentifier(img, "drawable", view.getContext().getPackageName());
 
             countriesList.add(new Country(ct, imgid));
         }
@@ -65,8 +68,8 @@ public class CountryFragment extends Fragment
             String ct = country.getName();
             ct = ct.replace(' ', '_');
             ct = ct.replace('.', '_');
-            ct = ct.toLowerCase();
-            int arrayId = getResources().getIdentifier(ct, "array", getContext().getPackageName());
+            ct = ct.toLowerCase(Locale.ENGLISH);
+            int arrayId = getResources().getIdentifier(ct, "array", view.getContext().getPackageName());
             String[] ctOp = getResources().getStringArray(arrayId);
 
             ArrayList<Object> childList = new ArrayList<>();
@@ -77,7 +80,7 @@ public class CountryFragment extends Fragment
                 imgArmeId = imgArmeId.replace('ä','a');
                 imgArmeId = imgArmeId.replace('ã','a');
 
-                int resID = getResources().getIdentifier(imgArmeId, "drawable", getContext().getPackageName());
+                int resID = getResources().getIdentifier(imgArmeId, "drawable", view.getContext().getPackageName());
 
                 childList.add(new Operator(resID, operators));
             }

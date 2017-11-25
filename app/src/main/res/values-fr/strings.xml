@@ -194,14 +194,14 @@
     <string name="ugat_valkyrie">Caméra gyroscopique Mk2</string>
     <string name="uga_valkyrie">Peut paramétrer des caméras "Black Eye", accessibles par toute l\'équipe via les outils d\'observation.</string>
 
-    <string name="ugat_ying"></string>
-    <string name="uga_ying"></string>
+    <string name="ugat_ying">Candela</string>
+    <string name="uga_ying">Nuée d\'explosifs à flashs pouvant être accolée à des surfaces ou lancée comme une grenade.</string>
 
-    <string name="ugat_lesion"></string>
-    <string name="uga_lesion"></string>
+    <string name="ugat_lesion">Gu</string>
+    <string name="uga_lesion">Mines toxiques dissimulées injectant un composé qui inflige des dégâts à l\'adversaire et le ralentit.</string>
 
-    <string name="ugat_ela"></string>
-    <string name="uga_ela"></string>
+    <string name="ugat_ela">Grzmot Mine</string>
+    <string name="uga_ela">Mines offensives de proximité pouvant être collées à des surfaces. Leur déclenchement assourdit et étourdit la cible.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Créer</string>

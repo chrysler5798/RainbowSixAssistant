@@ -9,11 +9,12 @@ import android.widget.ImageView;
 
 import uk.co.senab.photoview.PhotoViewAttacher;
 
-/**
- * Created by Chrysler on 10/23/2016.
- * <p>
- * RainbowSixPartner
- */
+/*
+ * Created by Khrys.
+ *
+ * App : RainbowSixAssistant
+ * Info : 23/10/2016[00:00 PM]
+*/
 
 public class ZoomActivity extends AppCompatActivity
 {

@@ -1,8 +1,9 @@
 package com.khrys.r6assistant.operators;
 /*
- * Created by Louis on 31/05/2017.
- * 
- * R6Assistant
+ * Created by Khrys.
+ *
+ * App : RainbowSixAssistant
+ * Info : 05/31/2017[00:00 PM]
 */
 
 import android.content.res.TypedArray;

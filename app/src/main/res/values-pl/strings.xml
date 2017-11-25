@@ -194,14 +194,14 @@
     <string name="ugat_valkyrie">Gyro Cam Mk2</string>
     <string name="uga_valkyrie">Czarne kamery ktore można ustawiac osobiście dla całej drużyny.</string>
 
-    <string name="ugat_ying"></string>
-    <string name="uga_ying"></string>
+    <string name="ugat_ying">Candela</string>
+    <string name="uga_ying">Pakiet tadunków oślepiających, które mogą zostać przymocowane do powierzchni lub użyte jako granaty.</string>
 
-    <string name="ugat_lesion"></string>
-    <string name="uga_lesion"></string>
+    <string name="ugat_lesion">Gu</string>
+    <string name="uga_lesion">Zamaskowana mina chemiczna, która wstrzykuje mieszaninę trujących chemikaliów, zadając poważne obrażenia i ograniczając szybkość poruszania się celu.</string>
 
-    <string name="ugat_ela"></string>
-    <string name="uga_ela"></string>
+    <string name="ugat_ela">Grzmot Mine</string>
+    <string name="uga_ela">Mina ogłuszająca o działaniu kierunkowym, którą można zamocować do wybranej powierzchni, wywołująca poważne zaburzenia słuchu i dezorientację.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Create</string>

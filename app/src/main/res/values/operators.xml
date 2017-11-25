@@ -115,7 +115,6 @@
         <item>SDU</item>
         <item>pl</item>
         <item>GROM</item>
-
     </string-array>
 
     <!--Armies with their operators-->
@@ -198,10 +197,10 @@
         <item>sasg-12</item>
         <item>pmm</item>
         <item>gsh-18</item>
-        <item>1</item><item>3</item>
+        <item>2</item><item>2</item>
         <item>2</item><item>barbed</item>
         <item>1</item><item>nitro</item>
-        <item></item>
+        <item>5</item>
     </string-array>
 
     <string-array name="tachanka">
@@ -216,7 +215,7 @@
         <item>1</item><item>3</item>
         <item>2</item><item>barbed</item>
         <item>1</item><item>shield</item>
-        <item></item>
+        <item>0</item>
     </string-array>
 
     <string-array name="glaz">
@@ -228,9 +227,9 @@
         <item>pmm</item>
         <item>gsh-18</item>
         <item>2</item><item>2</item>
-        <item>3</item><item>smoke</item>
+        <item>2</item><item>smoke</item>
         <item>1</item><item>claymore</item>
-        <item></item>
+        <item>0</item>
     </string-array>
 
     <string-array name="fuze">
@@ -244,8 +243,8 @@
         <item>gsh-18</item>
         <item>1</item><item>3</item>
         <item>3</item><item>breach</item>
-        <item>3</item><item>smoke</item>
-        <item></item>
+        <item>2</item><item>smoke</item>
+        <item>3</item>
     </string-array>
 
     <string-array name="iq">
@@ -260,7 +259,7 @@
         <item>3</item><item>1</item>
         <item>3</item><item>breach</item>
         <item>2</item><item>frag</item>
-        <item></item>
+        <item>0</item>
     </string-array>
 
     <string-array name="blitz">
@@ -270,9 +269,9 @@
         <item>0</item>
         <item>p12</item>
         <item>1</item><item>3</item>
-        <item>3</item><item>smoke</item>
+        <item>2</item><item>smoke</item>
         <item>3</item><item>breach</item>
-        <item></item>
+        <item>5</item>
     </string-array>
 
     <string-array name="bandit">
@@ -286,7 +285,7 @@
         <item>3</item><item>1</item>
         <item>3</item><item>barbed</item>
         <item>1</item><item>nitro</item>
-        <item></item>
+        <item>4</item>
     </string-array>
 
     <string-array name="jager">
@@ -300,7 +299,7 @@
         <item>3</item><item>1</item>
         <item>1</item><item>shield</item>
         <item>2</item><item>barbed</item>
-        <item></item>
+        <item>3</item>
     </string-array>
 
     <string-array name="rook">
@@ -316,7 +315,7 @@
         <item>1</item><item>3</item>
         <item>1</item><item>shield</item>
         <item>2</item><item>impact</item>
-        <item></item>
+        <item>1</item>
     </string-array>
 
     <string-array name="doc">
@@ -332,7 +331,7 @@
         <item>1</item><item>3</item>
         <item>1</item><item>shield</item>
         <item>2</item><item>barbed</item>
-        <item></item>
+        <item>3</item>
     </string-array>
 
     <string-array name="twitch">
@@ -348,7 +347,7 @@
         <item>2</item><item>2</item>
         <item>1</item><item>claymore</item>
         <item>3</item><item>breach</item>
-        <item></item>
+        <item>2</item>
     </string-array>
 
     <string-array name="montagne">
@@ -359,9 +358,9 @@
         <item>lfp586</item>
         <item>p9</item>
         <item>1</item><item>3</item>
-        <item>2</item><item>stun</item>
+        <item>3</item><item>stun</item>
         <item>2</item><item>smoke</item>
-        <item></item>
+        <item>0</item>
     </string-array>
 
     <string-array name="thermite">
@@ -376,7 +375,7 @@
         <item>2</item><item>2</item>
         <item>1</item><item>claymore</item>
         <item>3</item><item>stun</item>
-        <item></item>
+        <item>2</item>
     </string-array>
 
     <string-array name="pulse">
@@ -391,7 +390,7 @@
         <item>3</item><item>1</item>
         <item>2</item><item>barbed</item>
         <item>1</item><item>nitro</item>
-        <item></item>
+        <item>0</item>
     </string-array>
 
     <string-array name="castle">
@@ -406,7 +405,7 @@
         <item>2</item><item>2</item>
         <item>1</item><item>shield</item>
         <item>2</item><item>impact</item>
-        <item></item>
+        <item>3</item>
     </string-array>
 
     <string-array name="ash">
@@ -421,7 +420,7 @@
         <item>3</item><item>1</item>
         <item>3</item><item>breach</item>
         <item>3</item><item>stun</item>
-        <item></item>
+        <item>2</item>
     </string-array>
 
     <string-array name="thatcher">
@@ -436,7 +435,7 @@
         <item>2</item><item>2</item>
         <item>3</item><item>breach</item>
         <item>1</item><item>claymore</item>
-        <item></item>
+        <item>3</item>
     </string-array>
 
     <string-array name="smoke">
@@ -451,7 +450,7 @@
         <item>2</item><item>2</item>
         <item>2</item><item>barbed</item>
         <item>2</item><item>impact</item>
-        <item></item>
+        <item>3</item>
     </string-array>
 
     <string-array name="sledge">
@@ -466,7 +465,7 @@
         <item>2</item><item>2</item>
         <item>2</item><item>frag</item>
         <item>3</item><item>stun</item>
-        <item></item>
+        <item>0</item>
     </string-array>
 
     <string-array name="mute">
@@ -480,7 +479,7 @@
         <item>2</item><item>2</item>
         <item>1</item><item>nitro</item>
         <item>1</item><item>shield</item>
-        <item></item>
+        <item>4</item>
     </string-array>
 
     <string-array name="frost">
@@ -494,7 +493,7 @@
         <item>2</item><item>2</item>
         <item>1</item><item>shield</item>
         <item>2</item><item>barbed</item>
-        <item></item>
+        <item>3</item>
     </string-array>
 
     <string-array name="buck">
@@ -508,7 +507,7 @@
         <item>2</item><item>2</item>
         <item>3</item><item>stun</item>
         <item>2</item><item>frag</item>
-        <item></item>
+        <item>0</item>
     </string-array>
 
     <string-array name="valkyrie">
@@ -522,7 +521,7 @@
         <item>2</item><item>2</item>
         <item>1</item><item>shield</item>
         <item>1</item><item>nitro</item>
-        <item></item>
+        <item>3</item>
     </string-array>
 
     <string-array name="blackbeard">
@@ -536,7 +535,7 @@
         <item>2</item><item>2</item>
         <item>3</item><item>breach</item>
         <item>3</item><item>stun</item>
-        <item></item>
+        <item>2</item>
     </string-array>
 
     <string-array name="capitao">
@@ -549,8 +548,8 @@
         <item>prb92</item>
         <item>3</item><item>1</item>
         <item>1</item><item>claymore</item>
-        <item>2</item><item>stun</item>
-        <item></item>
+        <item>3</item><item>stun</item>
+        <item>4</item>
     </string-array>
 
     <string-array name="caveira">
@@ -563,8 +562,8 @@
         <item>luison</item>
         <item>3</item><item>1</item>
         <item>2</item><item>impact</item>
-        <item>3</item><item>barbed</item>
-        <item></item>
+        <item>2</item><item>barbed</item>
+        <item>0</item>
     </string-array>
 
     <string-array name="echo">
@@ -579,7 +578,7 @@
         <item>1</item><item>3</item>
         <item>2</item><item>barbed</item>
         <item>1</item><item>shield</item>
-        <item></item>
+        <item>1</item>
     </string-array>
 
     <string-array name="hibana">
@@ -594,7 +593,7 @@
         <item>3</item><item>1</item>
         <item>3</item><item>stun</item>
         <item>1</item><item>claymore</item>
-        <item></item>
+        <item>3</item>
     </string-array>
 
     <string-array name="mira">
@@ -609,7 +608,7 @@
         <item>1</item><item>3</item>
         <item>1</item><item>shield</item>
         <item>1</item><item>nitro</item>
-        <item></item>
+        <item>2</item>
     </string-array>
 
     <string-array name="jackal">
@@ -624,49 +623,49 @@
         <item>ita12s</item>
         <item>2</item><item>2</item>
         <item>3</item><item>breach</item>
-        <item>3</item><item>smoke</item>
-        <item></item>
+        <item>2</item><item>smoke</item>
+        <item>3</item>
     </string-array>
 
     <string-array name="ying">
         <item>atk</item>
         <item>hk</item><item>SDU</item>
         <item>3</item>
-        <item>1</item>
+        <item>2</item>
         <item>t-95 lsw</item>
         <item>six12</item>
         <item>q-929</item>
         <item>2</item><item>2</item>
-        <item>1</item><item>claymore</item>
-        <item>3</item><item>smoke</item>
-        <item></item>
+        <item>3</item><item>breach</item>
+        <item>2</item><item>smoke</item>
+        <item>3</item>
     </string-array>
 
     <string-array name="lesion">
         <item>def</item>
         <item>hk</item><item>SDU</item>
         <item>3</item>
-        <item>1</item>
+        <item>2</item>
         <item>six12 sd</item>
         <item>t-5 smg</item>
         <item>q-929</item>
         <item>2</item><item>2</item>
         <item>2</item><item>impact</item>
         <item>1</item><item>shield</item>
-        <item></item>
+        <item>7</item>
     </string-array>
 
     <string-array name="ela">
         <item>def</item>
         <item>pl</item><item>GROM</item>
         <item>3</item>
-        <item>1</item>
+        <item>2</item>
         <item>scorpion evo 3 a1</item>
         <item>f0-12</item>
         <item>rg15</item>
         <item>3</item><item>1</item>
         <item>2</item><item>barbed</item>
-        <item>3</item><item>impact</item>
-        <item></item>
+        <item>2</item><item>impact</item>
+        <item>3</item>
     </string-array>
 </resources>

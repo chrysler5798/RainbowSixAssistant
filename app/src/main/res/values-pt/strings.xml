@@ -194,13 +194,13 @@
     <string name="ugat_valkyrie">Câmera portátil Mk2</string>
     <string name="uga_valkyrie">Utiliza a câmera de ação "Black Eye", cujas imagens são acessíveis a toda a equipe com as ferramentas de observação.</string>
 
-    <string name="ugat_ying"></string>
+    <string name="ugat_ying">Candela</string>
     <string name="uga_ying"></string>
 
-    <string name="ugat_lesion"></string>
+    <string name="ugat_lesion">Gu</string>
     <string name="uga_lesion"></string>
 
-    <string name="ugat_ela"></string>
+    <string name="ugat_ela">Grzmot Mine</string>
     <string name="uga_ela"></string>
 
     <!--ONLINE-->

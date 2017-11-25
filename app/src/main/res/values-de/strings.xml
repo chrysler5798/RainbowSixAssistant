@@ -194,14 +194,14 @@
     <string name="ugat_valkyrie">Gyro-Kamera Mk2</string>
     <string name="uga_valkyrie">Stellt "SCHWARZES AUGE"-Kameras auf, auf die das ganze Team über Überwachungsinstrumente zugreift.</string>
 
-    <string name="ugat_ying"></string>
-    <string name="uga_ying"></string>
+    <string name="ugat_ying">Candela</string>
+    <string name="uga_ying">Ein Bündel Blendgranaten, die entweder auf Oberflächen befestigt oder als Granate gerollt werden können.</string>
 
-    <string name="ugat_lesion"></string>
-    <string name="uga_lesion"></string>
+    <string name="ugat_lesion">Gu</string>
+    <string name="uga_lesion">Getarnte Giftminen, die eine Chemikalie injizieren, die Gegner verletzt und ihre Geschwindigkeit einschränkt.</string>
 
-    <string name="ugat_ela"></string>
-    <string name="uga_ela"></string>
+    <string name="ugat_ela">Grzmot Mine</string>
+    <string name="uga_ela">Annäherungs-Sprengminen, die an Oberflächen befestigt werden können. Beeinträchtigen das Hörvermögen und verursachen einen Schwindeleffekt.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Create</string>

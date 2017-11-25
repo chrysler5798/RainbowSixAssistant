@@ -110,13 +110,13 @@ public class OperatorActivity extends AppCompatActivity
         int numberSpeed = opArray.getInt(numberWeapons, 0);
         int numberArmor = opArray.getInt(numberWeapons+ 1, 0);
 
-
         String numberGadget1 = opArray.getString(numberWeapons + 2);
         String nameGadget1 = opArray.getString(numberWeapons + 3);
 
         String numberGadget2 = opArray.getString(numberWeapons + 4);
         String nameGadget2 = opArray.getString(numberWeapons + 5);
 
+        int numberUniqueGadget = opArray.getInt(numberWeapons + 6, 0);
 
         for (int i = 5; i < numberScd; i++)
         {
@@ -293,7 +293,13 @@ public class OperatorActivity extends AppCompatActivity
         int imgUnGadget = getResources().getIdentifier(idGadget, "drawable", getPackageName());
         int txtUnGadget = getResources().getIdentifier(idDescGadget, "string", getPackageName());
 
-        titleUniqueGadget.setText(titleUnGadget);
+        String titleGadgetString = getString(titleUnGadget);
+        if(numberUniqueGadget != 0)
+        {
+            titleGadgetString += " x"+numberUniqueGadget;
+        }
+
+        titleUniqueGadget.setText(titleGadgetString);
         imgUniqueGadget.setImageResource(imgUnGadget);
         txtUniqueGadget.setText(txtUnGadget);
     }
