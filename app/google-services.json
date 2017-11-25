@@ -1,0 +1,71 @@
+{
+  "project_info": {
+    "project_number": "511444372126",
+    "firebase_url": "https://rainbowsixassistant.firebaseio.com",
+    "project_id": "rainbowsixassistant",
+    "storage_bucket": "rainbowsixassistant.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:511444372126:android:4376fa7bcd32876a",
+        "android_client_info": {
+          "package_name": "com.khrys.r6assistant"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "511444372126-44padgkp4afudievspefb41a72ii4308.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khrys.r6assistant",
+            "certificate_hash": "a032569ee72324d639eb6f820803159dc2b8dbf5"
+          }
+        },
+        {
+          "client_id": "511444372126-uli0vmftjt0egbcjk46omjg2lqt20784.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khrys.r6assistant",
+            "certificate_hash": "09af1516c41cceaae99e7e759153b46509aa6353"
+          }
+        },
+        {
+          "client_id": "511444372126-5cmgera8uskj7emfitjesh5n35jsn46s.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.khrys.r6assistant",
+            "certificate_hash": "f3147a9f37803ec498bc0599d92e854d2f6be3fe"
+          }
+        },
+        {
+          "client_id": "511444372126-4rk57b654g94f1k312v1ri4cbkj0orqr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCT8nCxiMEQ2JEPHiYS7AsOYTjjoqGK-hs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "511444372126-4rk57b654g94f1k312v1ri4cbkj0orqr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
