@@ -1,0 +1,112 @@
+{
+  "maps": {
+    "0": {
+      "name": "bank",
+      "cameras": 7,
+      "minfloor": -1,
+      "maxfloor": 2
+    },
+    "1": {
+      "name": "chalet",
+      "cameras": 6,
+      "minfloor": -1,
+      "maxfloor": 2
+    },
+    "2": {
+      "name": "clubhouse",
+      "cameras": 7,
+      "minfloor": -1,
+      "maxfloor": 2
+    },
+    "3": {
+      "name": "consulate",
+      "cameras": 8,
+      "minfloor": -1,
+      "maxfloor": 2
+    },
+    "4": {
+      "name": "hereford",
+      "cameras": 6,
+      "minfloor": -1,
+      "maxfloor": 3
+    },
+    "5": {
+      "name": "house",
+      "cameras": 6,
+      "minfloor": -1,
+      "maxfloor": 2
+    },
+    "6": {
+      "name": "kafedostoyevsky",
+      "cameras": 6,
+      "minfloor": 0,
+      "maxfloor": 3
+    },
+    "7": {
+      "name": "kanal",
+      "cameras": 7,
+      "minfloor": 0,
+      "maxfloor": 3
+    },
+    "8": {
+      "name": "oregon",
+      "cameras": 7,
+      "minfloor": -1,
+      "maxfloor": 2
+    },
+    "9": {
+      "name": "plane",
+      "cameras": 5,
+      "minfloor": -1,
+      "maxfloor": 2
+    },
+    "10": {
+      "name": "yacht",
+      "cameras": 8,
+      "minfloor": -1,
+      "maxfloor": 3
+    },
+    "11": {
+      "name": "border",
+      "cameras": 7,
+      "minfloor": 0,
+      "maxfloor": 2
+    },
+    "12": {
+      "name": "favela",
+      "cameras": 7,
+      "minfloor": 0,
+      "maxfloor": 3
+    },
+    "13": {
+      "name": "skyscraper",
+      "cameras": 7,
+      "minfloor": 0,
+      "maxfloor": 3
+    },
+    "14": {
+      "name": "barlett",
+      "cameras": 7,
+      "minfloor": 0,
+      "maxfloor": 2
+    },
+    "15": {
+      "name": "coastline",
+      "cameras": 7,
+      "minfloor": 0,
+      "maxfloor": 2
+    },
+    "16": {
+      "name": "themepark",
+      "cameras": 8,
+      "minfloor": 0,
+      "maxfloor": 2
+    },
+    "17": {
+      "name": "tower",
+      "cameras": 7,
+      "minfloor": 0,
+      "maxfloor": 1
+    }
+  }
+}

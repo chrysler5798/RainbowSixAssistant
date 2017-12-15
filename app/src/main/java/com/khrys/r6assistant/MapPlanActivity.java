@@ -15,6 +15,12 @@ import android.widget.ImageView;
 import android.widget.Switch;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.khrys.r6assistant.data.LoadData;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import uk.co.senab.photoview.PhotoViewAttacher;
 
@@ -34,7 +40,7 @@ public class MapPlanActivity extends AppCompatActivity
     ImageView imageView;
     TextView TextViewFloor;
     PhotoViewAttacher mAttacher;
-
+    int mapID;
     String[] infoMap;
 
     @Override
@@ -50,7 +56,7 @@ public class MapPlanActivity extends AppCompatActivity
         }
 
         String map = getIntent().getStringExtra("nommap");
-        int mapID = getIntent().getIntExtra("pos", 0);
+        mapID = getIntent().getIntExtra("pos", 0);
 
         if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
         {
@@ -87,15 +93,22 @@ public class MapPlanActivity extends AppCompatActivity
         prevFloorBut.setOnClickListener(new ClickListenerMinusPlusFloor(1));
         nextFloorBut.setOnClickListener(new ClickListenerMinusPlusFloor(2));
 
-        String arrayMapid = "m"+String.valueOf(mapID);
-        int arrayId = getResources().getIdentifier(arrayMapid, "array", getApplicationContext().getPackageName());
+        LoadData dataLoader = new LoadData();
+        JSONObject mapsData;
+        try
+        {
+            mapsData = dataLoader.loadData(this, dataLoader.RES_MAPS).getJSONObject(String.valueOf(mapID));
+            minEtage = Integer.parseInt(String.valueOf(mapsData.getInt("minfloor")));
+            maxEtage = Integer.parseInt(String.valueOf(mapsData.getInt("maxfloor")));
+        }
+        catch (JSONException e)
+        {
+            e.printStackTrace();
+        }
 
-        infoMap = getResources().getStringArray(arrayId);
-        minEtage = Integer.parseInt(infoMap[2]);
-        maxEtage = Integer.parseInt(infoMap[3]);
         nbEtage = maxEtage-minEtage;
 
-        initPlans(infoMap[0],switchPosRef.isChecked());
+        initPlans(mapID,switchPosRef.isChecked());
 
         switchPosRef.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
         {
@@ -103,7 +116,7 @@ public class MapPlanActivity extends AppCompatActivity
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked)
             {
                 posmaps.clear();
-                initPlans(infoMap[0],isChecked);
+                initPlans(mapID,isChecked);
                 setupVarAndImageAndFloor();
             }
         });
@@ -111,7 +124,7 @@ public class MapPlanActivity extends AppCompatActivity
         setupVarAndImageAndFloor();
     }
 
-    void initPlans(String nameMap, boolean posOn)
+    void initPlans(int idMap, boolean posOn)
     {
         String ifPos = "";
         if(posOn)
@@ -121,7 +134,7 @@ public class MapPlanActivity extends AppCompatActivity
         String[] prefix = {"_1", "f0", "f1", "f2", "f3"};
         for (int i = minEtage+1; i < maxEtage+2; i++)
         {
-            String idPlan = "map_"+nameMap+"_"+prefix[i]+ifPos;
+            String idPlan = "plan_"+idMap+"_"+prefix[i]+ifPos;
             posmaps.add(getResources().getIdentifier(idPlan, "drawable", getApplicationContext().getPackageName()));
         }
     }

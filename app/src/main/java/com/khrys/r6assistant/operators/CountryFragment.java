@@ -69,6 +69,10 @@ public class CountryFragment extends Fragment
             ct = ct.replace(' ', '_');
             ct = ct.replace('.', '_');
             ct = ct.toLowerCase(Locale.ENGLISH);
+            if(ct.equals("707th"))
+            {
+                ct = "m707th";
+            }
             int arrayId = getResources().getIdentifier(ct, "array", view.getContext().getPackageName());
             String[] ctOp = getResources().getStringArray(arrayId);
 

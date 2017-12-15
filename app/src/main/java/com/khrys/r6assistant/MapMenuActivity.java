@@ -8,6 +8,10 @@ import android.support.v7.widget.RecyclerView;
 import android.util.Pair;
 import android.view.MenuItem;
 
+import com.khrys.r6assistant.data.LoadData;
+
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -24,8 +28,6 @@ public class MapMenuActivity extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
 
-        GridLayoutManager lLayout;
-
         setContentView(R.layout.activity_mapmenu);
 
         ActionBar actionBar = getSupportActionBar();
@@ -35,27 +37,33 @@ public class MapMenuActivity extends AppCompatActivity
         }
 
         int requesttype = getIntent().getIntExtra("request",0);
+        GridLayoutManager gridLayout = new GridLayoutManager(MapMenuActivity.this, 2);
+        RecyclerView rv = findViewById(R.id.recyclerView);
+        LoadData dataLoader = new LoadData();
+        JSONObject mapsData = new LoadData().loadData(this, dataLoader.RES_MAPS);
+        int mapsNumber = mapsData.length();
+        //new LoadData().loadDataFromRes(this, R.raw.maps).getJSONObject("maps").getJSONObject("0").get("name")
 
         List<Pair<Integer, Integer>> maps = new ArrayList<>();
-        String[] allmaps = getResources().getStringArray(R.array.maps);
 
-        for(int i = 0; i < allmaps.length; i++)
+        for(int i = 0; i < mapsNumber; i++)
         {
-            String drawName = "thunmap_"+allmaps[i];
-            int idName = getResources().getIdentifier(allmaps[i], "string", getApplicationContext().getPackageName());
-            int idDraw = getResources().getIdentifier(drawName, "drawable", getApplicationContext().getPackageName());
-            maps.add(i, Pair.create(idName,idDraw));
+            String stringMapName = "map_name_"+i;
+            String drawMapName   = "thum_map_"+i;
 
+            int idName = getResources().getIdentifier(stringMapName, "string", getApplicationContext().getPackageName());
+            int idDraw = getResources().getIdentifier(drawMapName, "drawable", getApplicationContext().getPackageName());
+
+            maps.add(i, Pair.create(idName,idDraw));
         }
 
-        lLayout = new GridLayoutManager(MapMenuActivity.this, 2);
-        RecyclerView rv = (RecyclerView) findViewById(R.id.recyclerView);
         rv.setHasFixedSize(true);
-        rv.setLayoutManager(lLayout);
+        rv.setLayoutManager(gridLayout);
         rv.setAdapter(new ListAdapterMapMenu(requesttype, maps));
     }
 
-    public boolean onOptionsItemSelected(MenuItem item){
+    public boolean onOptionsItemSelected(MenuItem item)
+    {
         switch (item.getItemId()) {
             case android.R.id.home:
 

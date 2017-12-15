@@ -7,9 +7,11 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
+import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -19,9 +21,30 @@ import android.widget.Toast;
 
 import com.khrys.r6assistant.about.AboutActivity;
 import com.khrys.r6assistant.chat.MenuChatActivity;
+import com.khrys.r6assistant.data.DownloadTask;
+import com.khrys.r6assistant.data.LoadData;
 import com.khrys.r6assistant.operators.OperatorMenuActivity;
 import com.khrys.r6assistant.settings.SettingsActivity;
 import com.khrys.r6assistant.weapons.WeaponMenuActivity;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedInputStream;
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException;
+import java.io.InputStream;
+import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.Reader;
+import java.io.StringWriter;
+import java.io.UnsupportedEncodingException;
+import java.io.Writer;
+import java.net.URL;
+import java.net.URLConnection;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -35,14 +58,15 @@ public class MainActivity extends AppCompatActivity
         setContentView(R.layout.activity_main);
         setTitle(R.string.app_name);
 
-        Button buttoncamera   = (Button) findViewById(R.id.buttonCamera);
-        Button buttontwitch   = (Button) findViewById(R.id.buttonTwitch);
-        Button buttonmap      = (Button) findViewById(R.id.buttonMap);
-        Button buttonweapon   = (Button) findViewById(R.id.buttonWeapon);
-        Button buttonoperator = (Button) findViewById(R.id.buttonOperator);
-        Button buttononline   = (Button) findViewById(R.id.buttonOnline);
-        Button buttonmore     = (Button) findViewById(R.id.buttonMore);
-        ImageButton buttonset = (ImageButton) findViewById(R.id.buttonSettings);
+        Button buttoncamera   = findViewById(R.id.buttonCamera);
+        Button buttontwitch   = findViewById(R.id.buttonTwitch);
+        Button buttonmap      = findViewById(R.id.buttonMap);
+        Button buttonweapon   = findViewById(R.id.buttonWeapon);
+        Button buttonoperator = findViewById(R.id.buttonOperator);
+        Button buttononline   = findViewById(R.id.buttonOnline);
+        Button buttonmore     = findViewById(R.id.buttonMore);
+        ImageButton buttonset = findViewById(R.id.buttonSettings);
+
 
         buttonweapon.setOnClickListener(new View.OnClickListener()
         {
@@ -75,16 +99,46 @@ public class MainActivity extends AppCompatActivity
         buttononline.setOnClickListener(new View.OnClickListener()
         {
             @Override
-            public void onClick(final View view)
+            public void onClick(View view)
             {
+
+                //new DownloadFileFromURL(view.getContext()).execute("https://goo.gl/rmfKPW");
+
+//                InputStream is = getResources().openRawResource(R.raw.operators);
+//                Writer writer = new StringWriter();
+//                char[] buffer = new char[1024];
+//                try {
+//                    Reader reader = new BufferedReader(new InputStreamReader(is, "UTF-8"));
+//                    int n;
+//                    while ((n = reader.read(buffer)) != -1) {
+//                        writer.write(buffer, 0, n);
+//                    }
+//
+//                    is.close();
+//                } catch (UnsupportedEncodingException e)
+//                {
+//                    e.printStackTrace();
+//                } catch (IOException e)
+//                {
+//                    e.printStackTrace();
+//                }
+//
+//                String jsonString = writer.toString();
+//                Log.e("TEST", jsonString);
+
+                //new DownloadTask(MainActivity.this, "test").execute(new LoadData().URL_TEST);
+                //new LoadData().loadDataFromInternal(getApplicationContext(), "test");
+               // new LoadData().loadDataFromRes(getApplicationContext(), R.raw.weapons);
+
 
                 AlertDialog.Builder dialogNoInternetBuilder = new AlertDialog.Builder(view.getContext(), R.style.MyAlertDialogStyle);
                 dialogNoInternetBuilder.setTitle(R.string.maintenance);
-                dialogNoInternetBuilder.setMessage("R6 Assistant Online is under maintenance, it will be up in the next update, thanks for your patience !");
+                dialogNoInternetBuilder.setMessage("R6 Assistant Online is currently unvailable, this service is limited because I need to pay servers. Thanks for your understanding !");
                 dialogNoInternetBuilder.setIcon(android.R.drawable.stat_sys_warning);
                 dialogNoInternetBuilder.setPositiveButton(android.R.string.ok, null);
                 AlertDialog alertNoInternet = dialogNoInternetBuilder.create();
                 alertNoInternet.show();
+
 
 //                ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
 //                NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
@@ -133,6 +187,16 @@ public class MainActivity extends AppCompatActivity
     private void startAct(Class classToGo)
     {
         startActivity(new Intent(MainActivity.this, classToGo));
+    }
+
+    private void checkForDataUpdate()
+    {
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        if(activeNetworkInfo != null && activeNetworkInfo.isConnected())
+        {
+
+        }
     }
 
     private class MenuCLickListener implements View.OnClickListener

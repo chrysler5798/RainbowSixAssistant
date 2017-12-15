@@ -46,23 +46,23 @@ public class WeaponsFragment extends Fragment
         ArrayList<Integer> weaponsimg = new ArrayList<>();
         ArrayList<String> weaponstxt = new ArrayList<>();
 
-        String tableArme[] = {"l85a2","ar33","g36c","r4-c","556xi","f2","ak-12","aug","552 commando","416-c carbine","c8-sfw","mk17 cqb","para 308","type 89","c7e",
+        String tableArme[] = {"l85a2","ar33","g36c","r4-c","556xi","f2","ak-12","aug","552 commando","416-c carbine","c8-sfw","mk17 cqb","para 308","type 89","c7e","m762",
                               "p226 mk 25","57 usg","m45 meusoc","p9","lfp586","gsh-18","pmm","p12","mk1","d-50","prb92","luison","p229","usp40","q-929","rg15",
-                              "6p41","g8a1","m249","t-95 lsw",
-                              "smg-11","bearing-9",
-                              "417","ots-03","camrs","sr-25",
-                              "m590a1","m1014","sg-cqb","sasg-12","m870","super 90","spas-12","spas-15","supernova","ita12l","ita12s","six12","six12 sd","f0-12",
-                              "fmg-9","mp5k","ump45","mp5","p90","9x19vsn","mp7","c1","mpx","m12","mp5sd","pdw9","vector","t-5 smg","scorpion evo 3 a1"};
+                              "6p41","g8a1","m249","t-95 lsw","lmg-e",
+                              "smg-11","bearing-9","c75","smg-12",
+                              "417","ots-03","camrs","sr-25","mk 14 ebr",
+                              "m590a1","m1014","sg-cqb","sasg-12","m870","super 90","spas-12","spas-15","supernova","ita12l","ita12s","six12","six12 sd","f0-12","bosg 12 2",
+                              "fmg-9","mp5k","ump45","mp5","p90","9x19vsn","mp7","c1","mpx","m12","mp5sd","pdw9","vector","t-5 smg","scorpion evo 3 a1","k1a"};
 
 /*        Compte
-            Assault : 15
+            Assault : 16
             Pistols : 16
-            LMG : 4
-            SMG : 2
-            Sniper : 4
-            Shotgun : 14
-            Submachine : 15
-            TOTAL : 70
+            LMG : 5
+            SMG : 4
+            Sniper : 5
+            Shotgun : 15
+            Submachine : 16
+            TOTAL : 77
  */
         for (String aTableArme : tableArme)
         {

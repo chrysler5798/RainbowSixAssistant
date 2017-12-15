@@ -31,8 +31,8 @@ public class SettingsActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        String[] textArray = {getRes(R.string.english),getRes(R.string.french),getRes(R.string.portuguese),getRes(R.string.german),getRes(R.string.italian), getRes(R.string.russian), getRes(R.string.chinese), getRes(R.string.polish)};
-        Integer[] imageArray = {R.drawable.flag_gb,R.drawable.flag_fr,R.drawable.flag_pt,R.drawable.flag_de,R.drawable.flag_it, R.drawable.flag_ru, R.drawable.flag_zh, R.drawable.flag_pl};
+        String[] textArray = {getRes(R.string.english),getRes(R.string.french),getRes(R.string.portuguese),getRes(R.string.german),getRes(R.string.italian), getRes(R.string.russian), getRes(R.string.chinese), getRes(R.string.polish), getRes(R.string.korean)};
+        Integer[] imageArray = {R.drawable.flag_gb,R.drawable.flag_fr,R.drawable.flag_pt,R.drawable.flag_de,R.drawable.flag_it, R.drawable.flag_ru, R.drawable.flag_zh, R.drawable.flag_pl, R.drawable.flag_kr};
 
         super.onCreate(savedInstanceState);
 
@@ -82,6 +82,10 @@ public class SettingsActivity extends AppCompatActivity
                 yes = 7;
                 break;
 
+            case "ko":
+                yes = 8;
+                break;
+
             default:
                 yes = 0;
                 break;
@@ -94,40 +98,7 @@ public class SettingsActivity extends AppCompatActivity
 
                 if(position != yes)
                 {
-                    switch(position)
-                    {
-                        case 0:
-                            showDialogToExit(0);
-                            break;
-
-                        case 1:
-                            showDialogToExit(1);
-                            break;
-
-                        case 2:
-                            showDialogToExit(2);
-                            break;
-
-                        case 3:
-                            showDialogToExit(3);
-                            break;
-
-                        case 4:
-                            showDialogToExit(4);
-                            break;
-
-                        case 5:
-                            showDialogToExit(5);
-                            break;
-
-                        case 6:
-                            showDialogToExit(6);
-                            break;
-
-                        case 7:
-                            showDialogToExit(7);
-                            break;
-                    }
+                    showDialogToExit(position);
                 }
             }
 

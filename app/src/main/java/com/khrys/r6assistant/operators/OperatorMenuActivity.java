@@ -36,10 +36,10 @@ public class OperatorMenuActivity extends AppCompatActivity
                 .add(R.string.bycountries, CountryFragment.class)
                 .create());
 
-        ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
+        ViewPager viewPager = findViewById(R.id.viewpager);
         viewPager.setAdapter(fragmentAdapter);
 
-        SmartTabLayout tabLayout = (SmartTabLayout) findViewById(R.id.viewpagertab);
+        SmartTabLayout tabLayout = findViewById(R.id.viewpagertab);
         tabLayout.setViewPager(viewPager);
     }
 

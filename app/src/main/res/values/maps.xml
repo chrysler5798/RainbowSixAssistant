@@ -18,123 +18,131 @@
         <item>university</item>
         <item>coastline</item>
         <item>themepark</item>
+        <item>tower</item>
     </string-array>
 
-    <string-array name="m0">
+    <string-array name="map_0">
         <item>bank</item>
         <item>7</item>
         <item>-1</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="m1">
+    <string-array name="map_1">
         <item>chalet</item>
         <item>6</item>
         <item>-1</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="m2">
+    <string-array name="map_2">
         <item>clubhouse</item>
         <item>7</item>
         <item>-1</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="m3">
+    <string-array name="map_3">
         <item>consulate</item>
         <item>8</item>
         <item>-1</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="m4">
+    <string-array name="map_4">
         <item>hereford</item>
         <item>6</item>
         <item>-1</item>
         <item>3</item>
     </string-array>
 
-    <string-array name="m5">
+    <string-array name="map_5">
         <item>house</item>
         <item>6</item>
         <item>-1</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="m6">
+    <string-array name="map_6">
         <item>kafedostoyevsky</item>
         <item>6</item>
         <item>0</item>
         <item>3</item>
     </string-array>
 
-    <string-array name="m7">
+    <string-array name="map_7">
         <item>kanal</item>
         <item>7</item>
         <item>0</item>
         <item>3</item>
     </string-array>
 
-    <string-array name="m8">
+    <string-array name="map_8">
         <item>oregon</item>
         <item>7</item>
         <item>-1</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="m9">
+    <string-array name="map_9">
         <item>plane</item>
         <item>5</item>
         <item>-1</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="m10">
+    <string-array name="map_10">
         <item>yacht</item>
         <item>8</item>
         <item>-1</item>
         <item>3</item>
     </string-array>
 
-    <string-array name="m11">
+    <string-array name="map_11">
         <item>border</item>
         <item>7</item>
         <item>0</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="m12">
+    <string-array name="map_12">
         <item>favela</item>
         <item>7</item>
         <item>0</item>
         <item>3</item>
     </string-array>
 
-    <string-array name="m13">
+    <string-array name="map_13">
         <item>skyscraper</item>
         <item>7</item>
         <item>0</item>
         <item>3</item>
     </string-array>
 
-    <string-array name="m14">
+    <string-array name="map_14">
         <item>barlett</item>
         <item>7</item>
         <item>0</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="m15">
+    <string-array name="map_15">
         <item>coastline</item>
         <item>7</item>
         <item>0</item>
         <item>2</item>
     </string-array>
 
-    <string-array name="m16">
+    <string-array name="map_16">
         <item>themepark</item>
         <item>8</item>
+        <item>0</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="map_17">
+        <item>tower</item>
+        <item>7</item>
         <item>0</item>
         <item>2</item>
     </string-array>

@@ -7,8 +7,8 @@ android {
         applicationId "com.khrys.r6assistant"
         minSdkVersion 16
         targetSdkVersion 26
-        versionCode 31
-        versionName "1.8.9"
+        versionCode 36
+        versionName "1.9.2"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
     }
     buildTypes {
@@ -35,7 +35,7 @@ dependencies {
     implementation 'ca.barrenechea.header-decor:header-decor:0.2.8'
     implementation 'com.android.support:design:26.1.0'
     implementation 'com.firebaseui:firebase-ui:2.0.1'
-    implementation "com.google.firebase:firebase-database:11.0.1"
+    implementation 'com.google.firebase:firebase-database:11.0.1'
     testImplementation 'junit:junit:4.12'
 }
 apply plugin: 'com.google.gms.google-services'

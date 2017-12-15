@@ -1,9 +1,10 @@
 package com.khrys.r6assistant;
 
 /*
-  Created by Chrysler on 10/1/2016.
-  <p>
-  RainbowSixPartner
+ * Created by Khrys.
+ *
+ * App : RainbowSixAssistant
+ * Info : 10/1/2016 [00:00 AM]
 */
 
 import android.app.Activity;
@@ -20,7 +21,6 @@ import static com.khrys.r6assistant.settings.SettingsActivity.getDefaults;
 
 public class SplashActivity extends Activity
 {
-
     private static final int SPLASH_TIME_OUT = 3000;
     private static final String PREFS_LANG = "PREFS_LANG";
     private static final String ON_LANG = "ON_LANG";
@@ -71,6 +71,10 @@ public class SplashActivity extends Activity
                     language = "pl";
                     break;
 
+                case 8:
+                    language = "ko";
+                    break;
+
                 default:
                     language = "en";
                     break;
@@ -97,15 +101,11 @@ public class SplashActivity extends Activity
         TextView versionname = findViewById(R.id.textViewVersion);
         versionname.setText(versionName);
 
-        new Handler().postDelayed(new Runnable() {
-
-            /*
-             * Showing splash screen with a timer. This will be useful when you
-             * want to show case your app logo / company
-             */
-
+        new Handler().postDelayed(new Runnable()
+        {
             @Override
-            public void run() {
+            public void run()
+            {
                 Intent i = new Intent(SplashActivity.this, MainActivity.class);
                 startActivity(i);
                 finish();

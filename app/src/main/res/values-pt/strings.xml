@@ -195,13 +195,22 @@
     <string name="uga_valkyrie">Utiliza a câmera de ação "Black Eye", cujas imagens são acessíveis a toda a equipe com as ferramentas de observação.</string>
 
     <string name="ugat_ying">Candela</string>
-    <string name="uga_ying"></string>
+    <string name="uga_ying">Cluster of flash charges that can either be anchored on surfaces or rolled out as a grenade.</string>
 
     <string name="ugat_lesion">Gu</string>
-    <string name="uga_lesion"></string>
+    <string name="uga_lesion">Cloaked toxic mines injecting a compound which injures opponents and limits their speed.</string>
 
     <string name="ugat_ela">Grzmot Mine</string>
-    <string name="uga_ela"></string>
+    <string name="uga_ela">Concussion proximity mines that can be anchored on surfaces, impairing hearing and causing a dizzying effect.</string>
+
+    <string name="ugat_zofia">KS79 LIFELINE</string>
+    <string name="uga_zofia">Double barrel that can fire both concussion and impact grenades.</string>
+
+    <string name="ugat_dokkaebi">LOGIC BOMB</string>
+    <string name="uga_dokkaebi">Uploads a virus that forces enemy devices to emit a loud buzz, thereby compromising their position.</string>
+
+    <string name="ugat_vigil">ELECTRONIC RENDERING CLOAK (ERC-7)</string>
+    <string name="uga_vigil">Vigil scans surrounding devices to wipe his image from cameras and drones.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Create</string>
@@ -306,6 +315,7 @@
     <string name="translator_ru">Maxim Lem</string>
     <string name="translator_zh">Neel Lee</string>
     <string name="translator_pl">AK_D14BL0</string>
+    <string name="translator_kr">sd_iron</string>
 
     <!--LANGUAGE-->
     <string name="language">Idioma</string>
@@ -325,155 +335,164 @@
     <string name="takemap">Selecione um Mapa</string>
 
     <!--MAPS INFO-->
-    <string name="bank">Banco</string>
-        <string name="bank_cam_s1">(1º) Saguão</string>
-        <string name="bank_cam_s2">(1º) Corredor do escritório</string>
-        <string name="bank_cam_s3">(2º) Escadaria para clarabóia</string>
-        <string name="bank_cam_s4">(P) Saguão do cofre</string>
-        <string name="bank_cam_s5">(EXT) Praça</string>
-        <string name="bank_cam_s6">(EXT) Rampa da garagem</string>
-        <string name="bank_cam_s7">(EXT) Beco dos fundos</string>
+    <string name="map_name_0">Banco</string>
+        <string name="cam_0_0">(1º) Saguão</string>
+        <string name="cam_0_1">(1º) Corredor do escritório</string>
+        <string name="cam_0_2">(2º) Escadaria para clarabóia</string>
+        <string name="cam_0_3">(P) Saguão do cofre</string>
+        <string name="cam_0_4">(EXT) Praça</string>
+        <string name="cam_0_5">(EXT) Rampa da garagem</string>
+        <string name="cam_0_6">(EXT) Beco dos fundos</string>
 
-    <string name="chalet">Chalé</string>
-        <string name="chalet_cam_s1">(2º) Corredor do quarto</string>
-        <string name="chalet_cam_s2">(2º) Corredor da lareira</string>
-        <string name="chalet_cam_s3">(1º) Escada da biblioteca</string>
-        <string name="chalet_cam_s4">(P) Garagem das motoneves</string>
-        <string name="chalet_cam_s5">(EXT) Pátio dianteiro</string>
-        <string name="chalet_cam_s6">(EXT) Pátio traseiro</string>
+    <string name="map_name_1">Chalé</string>
+        <string name="cam_1_0">(2º) Corredor do quarto</string>
+        <string name="cam_1_1">(2º) Corredor da lareira</string>
+        <string name="cam_1_2">(1º) Escada da biblioteca</string>
+        <string name="cam_1_3">(P) Garagem das motoneves</string>
+        <string name="cam_1_4">(EXT) Pátio dianteiro</string>
+        <string name="cam_1_5">(EXT) Pátio traseiro</string>
 
-    <string name="clubhouse">Case de Campo</string>
-        <string name="clubhouse_cam_s1">(2º) Corredor de quarto</string>
-        <string name="clubhouse_cam_s2">(1º) Bar</string>
-        <string name="clubhouse_cam_s3">(1º) Garagem</string>
-        <string name="clubhouse_cam_s4">(P) Corredor de porão</string>
-        <string name="clubhouse_cam_s5">(EXT) Estacionamento VIP</string>
-        <string name="clubhouse_cam_s6">(EXT) Área de grafite</string>
-        <string name="clubhouse_cam_s7">(EXT) Canis</string>
+    <string name="map_name_2">Case de Campo</string>
+        <string name="cam_2_0">(2º) Corredor de quarto</string>
+        <string name="cam_2_1">(1º) Bar</string>
+        <string name="cam_2_2">(1º) Garagem</string>
+        <string name="cam_2_3">(P) Corredor de porão</string>
+        <string name="cam_2_4">(EXT) Estacionamento VIP</string>
+        <string name="cam_2_5">(EXT) Área de grafite</string>
+        <string name="cam_2_6">(EXT) Canis</string>
 
-    <string name="consulate">Consulado</string>
-        <string name="consulate_cam_s1">(2º) Recepção de consulado</string>
-        <string name="consulate_cam_s2">(1º) Escada principal</string>
-        <string name="consulate_cam_s3">(1º) Seção de vistos</string>
-        <string name="consulate_cam_s4">(EXT) Porta frontal</string>
-        <string name="consulate_cam_s5">(P) Corredor dos armários</string>
-        <string name="consulate_cam_s6">(P) Garagem</string>
-        <string name="consulate_cam_s7">(EXT) Caminho dianteiro</string>
-        <string name="consulate_cam_s8">(EXT) Entrada da garagem</string>
+    <string name="map_name_3">Consulado</string>
+        <string name="cam_3_0">(2º) Recepção de consulado</string>
+        <string name="cam_3_1">(1º) Escada principal</string>
+        <string name="cam_3_2">(1º) Seção de vistos</string>
+        <string name="cam_3_3">(EXT) Porta frontal</string>
+        <string name="cam_3_4">(P) Corredor dos armários</string>
+        <string name="cam_3_5">(P) Garagem</string>
+        <string name="cam_3_6">(EXT) Caminho dianteiro</string>
+        <string name="cam_3_7">(EXT) Entrada da garagem</string>
 
-    <string name="favela">Favelas</string>
-        <string name="favela_cam_s1">(3º) Escadaria traseira</string>
-        <string name="favela_cam_s2">(3º) Escadaria principal</string>
-        <string name="favela_cam_s3">(1º) Lavanderia</string>
-        <string name="favela_cam_s4">(1º) Escadaria</string>
-        <string name="favela_cam_s5">(EXT) Viela de escola</string>
-        <string name="favela_cam_s6">(EXT) Rua</string>
-        <string name="favela_cam_s7">(EXT) Viela traseira</string>
+    <string name="map_name_12">Favelas</string>
+        <string name="cam_12_0">(3º) Escadaria traseira</string>
+        <string name="cam_12_1">(3º) Escadaria principal</string>
+        <string name="cam_12_2">(1º) Lavanderia</string>
+        <string name="cam_12_3">(1º) Escadaria</string>
+        <string name="cam_12_4">(EXT) Viela de escola</string>
+        <string name="cam_12_5">(EXT) Rua</string>
+        <string name="cam_12_6">(EXT) Viela traseira</string>
 
-    <string name="hereford">Base Hereford</string>
-        <string name="hereford_cam_s1">(EXT) Telhado</string>
-        <string name="hereford_cam_s2">(2º) Corredor 2</string>
-        <string name="hereford_cam_s3">(1º) Corredor 1</string>
-        <string name="hereford_cam_s4">(P) Armários</string>
-        <string name="hereford_cam_s5">(EXT) Campo de tiro acesso leste</string>
-        <string name="hereford_cam_s6">(EXT) Área da empilhadeira</string>
+    <string name="map_name_4">Base Hereford</string>
+        <string name="cam_4_0">(EXT) Telhado</string>
+        <string name="cam_4_1">(2º) Corredor 2</string>
+        <string name="cam_4_2">(1º) Corredor 1</string>
+        <string name="cam_4_3">(P) Armários</string>
+        <string name="cam_4_4">(EXT) Campo de tiro acesso leste</string>
+        <string name="cam_4_5">(EXT) Área da empilhadeira</string>
 
-    <string name="kafedostoyevsky">Kafe Dostoievsky</string>
-        <string name="kafedostoyevsky_cam_s1">(3º) Lounge de coquetéis</string>
-        <string name="kafedostoyevsky_cam_s2">(2º) Corredor da sala de leitura</string>
-        <string name="kafedostoyevsky_cam_s3">(1º) Corredor da câmara fria</string>
-        <string name="kafedostoyevsky_cam_s4">(1º) Padaria</string>
-        <string name="kafedostoyevsky_cam_s5">(EXT) Rua principal oeste</string>
-        <string name="kafedostoyevsky_cam_s6">(EXT) Beco do parque</string>
+    <string name="map_name_6">Kafe Dostoievsky</string>
+        <string name="cam_6_0">(3º) Lounge de coquetéis</string>
+        <string name="cam_6_1">(2º) Corredor da sala de leitura</string>
+        <string name="cam_6_2">(1º) Corredor da câmara fria</string>
+        <string name="cam_6_3">(1º) Padaria</string>
+        <string name="cam_6_4">(EXT) Rua principal oeste</string>
+        <string name="cam_6_5">(EXT) Beco do parque</string>
 
-    <string name="house">Residência</string>
-        <string name="house_cam_s1">(EXT) Telhado da varanda frontal</string>
-        <string name="house_cam_s2">(1º) Cozinha</string>
-        <string name="house_cam_s3">(P) Academia</string>
-        <string name="house_cam_s4">(P) Garagem</string>
-        <string name="house_cam_s5">(EXT) Jardim frontal</string>
-        <string name="house_cam_s6">(EXT) Jardim</string>
+    <string name="map_name_5">Residência</string>
+        <string name="cam_5_0">(EXT) Telhado da varanda frontal</string>
+        <string name="cam_5_1">(1º) Cozinha</string>
+        <string name="cam_5_2">(P) Academia</string>
+        <string name="cam_5_3">(P) Garagem</string>
+        <string name="cam_5_4">(EXT) Jardim frontal</string>
+        <string name="cam_5_5">(EXT) Jardim</string>
 
-    <string name="kanal">Canal</string>
-        <string name="kanal_cam_s1">(GC-3º) Corredor sala de controle4343333w</string>
-        <string name="kanal_cam_s2">(GC-2º) Corredor escrit. dos mapas</string>
-        <string name="kanal_cam_s3">(GC-2º) Corredor da guarda costeira</string>
-        <string name="kanal_cam_s4">(GC-1º) Corredor suprimen. Barcos</string>
-        <string name="kanal_cam_s5">(EXT) Gramado dianteiro</string>
-        <string name="kanal_cam_s6">(EXT) Comporta</string>
-        <string name="kanal_cam_s7">(EXT) Canteiro de obras</string>
+    <string name="map_name_7">Canal</string>
+        <string name="cam_7_0">(GC-3º) Corredor sala de controle4343333w</string>
+        <string name="cam_7_1">(GC-2º) Corredor escrit. dos mapas</string>
+        <string name="cam_7_2">(GC-2º) Corredor da guarda costeira</string>
+        <string name="cam_7_3">(GC-1º) Corredor suprimen. Barcos</string>
+        <string name="cam_7_4">(EXT) Gramado dianteiro</string>
+        <string name="cam_7_5">(EXT) Comporta</string>
+        <string name="cam_7_6">(EXT) Canteiro de obras</string>
 
-    <string name="plane">Avião Presidencial</string>
-        <string name="plane_cam_s1">(3º) Funcionários da cabine</string>
-        <string name="plane_cam_s2">(2º) Corredor frontal</string>
-        <string name="plane_cam_s3">(2º) Seção de imprensa A</string>
-        <string name="plane_cam_s4">(1º) Compartimento de bagagem</string>
-        <string name="plane_cam_s5">(1º) Compartimento de carga</string>
+    <string name="map_name_9">Avião Presidencial</string>
+        <string name="cam_9_0">(3º) Funcionários da cabine</string>
+        <string name="cam_9_1">(2º) Corredor frontal</string>
+        <string name="cam_9_2">(2º) Seção de imprensa A</string>
+        <string name="cam_9_3">(1º) Compartimento de bagagem</string>
+        <string name="cam_9_4">(1º) Compartimento de carga</string>
 
-    <string name="border">Fronteira</string>
-        <string name="border_cam_s1">(2º) Escada leste</string>
-        <string name="border_cam_s2">(2º) Corredor principal</string>
-        <string name="border_cam_s3">(1º) Saguão principal</string>
-        <string name="border_cam_s4">(1º) Corredor de saída</string>
-        <string name="border_cam_s5">(EXT) Entrada do estacionamento</string>
-        <string name="border_cam_s6">(EXT) Área do acidente</string>
-        <string name="border_cam_s7">(EXT) Caminho do estacionamento</string>
+    <string name="map_name_11">Fronteira</string>
+        <string name="cam_11_0">(2º) Escada leste</string>
+        <string name="cam_11_1">(2º) Corredor principal</string>
+        <string name="cam_11_2">(1º) Saguão principal</string>
+        <string name="cam_11_3">(1º) Corredor de saída</string>
+        <string name="cam_11_4">(EXT) Entrada do estacionamento</string>
+        <string name="cam_11_5">(EXT) Área do acidente</string>
+        <string name="cam_11_6">(EXT) Caminho do estacionamento</string>
 
-    <string name="oregon">Oregon</string>
-        <string name="oregon_cam_s1">(2º) Corredor do arsenal</string>
-        <string name="oregon_cam_s2">(1º) Saguão</string>
-        <string name="oregon_cam_s3">(1º) Corredor do salão de jantar</string>
-        <string name="oregon_cam_s4">(1º) Palco traseiro</string>
-        <string name="oregon_cam_s5">(EXT) Descarte</string>
-        <string name="oregon_cam_s6">(EXT) Estacionamento</string>
-        <string name="oregon_cam_s7">(EXT) Área de obras</string>
+    <string name="map_name_8">Oregon</string>
+        <string name="cam_8_0">(2º) Corredor do arsenal</string>
+        <string name="cam_8_1">(1º) Saguão</string>
+        <string name="cam_8_2">(1º) Corredor do salão de jantar</string>
+        <string name="cam_8_3">(1º) Palco traseiro</string>
+        <string name="cam_8_4">(EXT) Descarte</string>
+        <string name="cam_8_5">(EXT) Estacionamento</string>
+        <string name="cam_8_6">(EXT) Área de obras</string>
 
-    <string name="yacht">Iate</string>
-        <string name="yacht_cam_s1">(4º) Entrada do heliporto</string>
-        <string name="yacht_cam_s2">(3º) Corredor do quarto</string>
-        <string name="yacht_cam_s3">(3º) Lounge</string>
-        <string name="yacht_cam_s4">(2º) Escada frontal</string>
-        <string name="yacht_cam_s5">(2º) Escada traseira</string>
-        <string name="yacht_cam_s6">(1º) Corredor sala de máquinas</string>
-        <string name="yacht_cam_s7">(EXT) Convés frontal</string>
-        <string name="yacht_cam_s8">(EXT) Convés Spa</string>
+    <string name="map_name_10">Iate</string>
+        <string name="cam_10_0">(4º) Entrada do heliporto</string>
+        <string name="cam_10_1">(3º) Corredor do quarto</string>
+        <string name="cam_10_2">(3º) Lounge</string>
+        <string name="cam_10_3">(2º) Escada frontal</string>
+        <string name="cam_10_4">(2º) Escada traseira</string>
+        <string name="cam_10_5">(1º) Corredor sala de máquinas</string>
+        <string name="cam_10_6">(EXT) Convés frontal</string>
+        <string name="cam_10_7">(EXT) Convés Spa</string>
 
-    <string name="skyscraper">Arranha-Céu</string>
-        <string name="skyscraper_cam_s1">(2º) Corredor</string>
-        <string name="skyscraper_cam_s2">(1º) Restaurante</string>
-        <string name="skyscraper_cam_s3">(2º) Escadaria da Casa</string>
-        <string name="skyscraper_cam_s4">(1º) Saguão principal</string>
-        <string name="skyscraper_cam_s5">(EXT) Jardim Oeste</string>
-        <string name="skyscraper_cam_s6">(EXT) Jardim Leste</string>
-        <string name="skyscraper_cam_s7">(EXT) Dutos de ventilação</string>
+    <string name="map_name_13">Arranha-Céu</string>
+        <string name="cam_13_0">(2º) Corredor</string>
+        <string name="cam_13_1">(1º) Restaurante</string>
+        <string name="cam_13_2">(2º) Escadaria da Casa</string>
+        <string name="cam_13_3">(1º) Saguão principal</string>
+        <string name="cam_13_4">(EXT) Jardim Oeste</string>
+        <string name="cam_13_5">(EXT) Jardim Leste</string>
+        <string name="cam_13_6">(EXT) Dutos de ventilação</string>
 
-    <string name="university">Bartlett U.</string>
-        <string name="barlett_cam_s1">(2º) Corredor da bússula</string>
-        <string name="barlett_cam_s2">(2º) Corredor de vista</string>
-        <string name="barlett_cam_s3">(1º) Salão dos arcos</string>
-        <string name="barlett_cam_s4">(1º) Saguão</string>
-        <string name="barlett_cam_s5">(1º) Sala de jantar</string>
-        <string name="barlett_cam_s6">(EXT) Portão principal</string>
-        <string name="barlett_cam_s7">(EXT) Estacionamento</string>
+    <string name="map_name_14">Bartlett U.</string>
+        <string name="cam_14_0">(2º) Corredor da bússula</string>
+        <string name="cam_14_1">(2º) Corredor de vista</string>
+        <string name="cam_14_2">(1º) Salão dos arcos</string>
+        <string name="cam_14_3">(1º) Saguão</string>
+        <string name="cam_14_4">(1º) Sala de jantar</string>
+        <string name="cam_14_5">(EXT) Portão principal</string>
+        <string name="cam_14_6">(EXT) Estacionamento</string>
 
-    <string name="coastline">Litoral</string>
-        <string name="coastline_cam_s1">(1º) Corredor</string>
-        <string name="coastline_cam_s2">(1º) Saguão principal</string>
-        <string name="coastline_cam_s3">(2º) Aquário</string>
-        <string name="coastline_cam_s4">(2º) Corredor</string>
-        <string name="coastline_cam_s5">(EXT) Telhado de Garagem</string>
-        <string name="coastline_cam_s6">(EXT) Ruínas</string>
-        <string name="coastline_cam_s7">(EXT) Ruínas</string>
+    <string name="map_name_15">Litoral</string>
+        <string name="cam_15_0">(1º) Corredor</string>
+        <string name="cam_15_1">(1º) Saguão principal</string>
+        <string name="cam_15_2">(2º) Aquário</string>
+        <string name="cam_15_3">(2º) Corredor</string>
+        <string name="cam_15_4">(EXT) Telhado de Garagem</string>
+        <string name="cam_15_5">(EXT) Ruínas</string>
+        <string name="cam_15_6">(EXT) Ruínas</string>
 
-    <string name="themepark">Theme park</string>
-        <string name="themepark_cam_s1">(1F) Gallery</string>
-        <string name="themepark_cam_s2">(2F) Haunted Stairs</string>
-        <string name="themepark_cam_s3">(1F) Joint Corridor</string>
-        <string name="themepark_cam_s4">(2F) Upper Arcarde</string>
-        <string name="themepark_cam_s5">(2F) Rail Platform</string>
-        <string name="themepark_cam_s6">(EXT) Teacups</string>
-        <string name="themepark_cam_s7">(EXT) Service Entrance</string>
-        <string name="themepark_cam_s8">(EXT) Guest Info</string>
+    <string name="map_name_16">Theme park</string>
+        <string name="cam_16_0">(1F) Gallery</string>
+        <string name="cam_16_1">(2F) Haunted Stairs</string>
+        <string name="cam_16_2">(1F) Joint Corridor</string>
+        <string name="cam_16_3">(2F) Upper Arcarde</string>
+        <string name="cam_16_4">(2F) Rail Platform</string>
+        <string name="cam_16_5">(EXT) Teacups</string>
+        <string name="cam_16_6">(EXT) Service Entrance</string>
+        <string name="cam_16_7">(EXT) Guest Info</string>
+
+    <string name="map_name_17">Tower</string>
+        <string name="cam_17_0">(2F) Gallery Main</string>
+        <string name="cam_17_1">(2F) Exhibit Hallway</string>
+        <string name="cam_17_2">(2F) Company Reception</string>
+        <string name="cam_17_3">(1F) Traditional Hall</string>
+        <string name="cam_17_4">(1F) West Balcony</string>
+        <string name="cam_17_5">(2F) Center Atrium</string>
+        <string name="cam_17_6">(1F) Fountain</string>
 
     <string name="destroyPhrase">%d</string>
     <string name="cameraPhrase">%d cameras</string>

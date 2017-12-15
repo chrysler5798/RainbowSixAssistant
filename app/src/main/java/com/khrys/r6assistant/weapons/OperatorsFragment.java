@@ -5,7 +5,7 @@ package com.khrys.r6assistant.weapons;
  * RainbowSixAssistant
 */
 
-import android.content.res.TypedArray;
+import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -16,6 +16,10 @@ import android.view.ViewGroup;
 
 import com.bignerdranch.expandablerecyclerview.Model.ParentObject;
 import com.khrys.r6assistant.R;
+import com.khrys.r6assistant.data.LoadData;
+
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,33 +40,41 @@ public class OperatorsFragment extends Fragment
 
         RecyclerView recyclerView = view.findViewById(R.id.WeaponsRecycler);
 
-        OperatorsListExpandableAdapter mOperatorsListExpandableAdapter = new OperatorsListExpandableAdapter(getContext(), generateOperatorsList());
+        Context mContext = getContext();
+
+        OperatorsListExpandableAdapter mOperatorsListExpandableAdapter = new OperatorsListExpandableAdapter(mContext, generateOperatorsList(mContext));
         mOperatorsListExpandableAdapter.setCustomParentAnimationViewId(R.id.parent_list_item_expand_arrow);
         mOperatorsListExpandableAdapter.setParentClickableViewAnimationDefaultDuration();
         mOperatorsListExpandableAdapter.setParentAndIconExpandOnClick(true);
 
         recyclerView.setAdapter(mOperatorsListExpandableAdapter);
-        recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
+        recyclerView.setLayoutManager(new LinearLayoutManager(mContext));
     }
 
-    private ArrayList<ParentObject> generateOperatorsList()
+    private ArrayList<ParentObject> generateOperatorsList(Context context)
     {
         List<Operators> operatorsList = new ArrayList<>();
 
-        TypedArray tableOps = getResources().obtainTypedArray(R.array.operators);
-        for(int i = 0; i < tableOps.length(); i++)
+        LoadData dataLoader = new LoadData();
+        JSONObject operatorsListData = dataLoader.loadData(context, dataLoader.RES_OPERATORS);
+
+        for(int i = 0; i < operatorsListData.length(); i++)
         {
-            String op = tableOps.getString(i);
-            String img = "o_"+op;
+            try
+            {
+                JSONObject operator = operatorsListData.getJSONObject(String.valueOf(i));
+                String operatorName = operator.getString("name");
+                String iconOperatorId = "op_icon_"+i;
 
-            img = img.replace('ä','a');
-            img = img.replace('ã','a');
+                int iconOperatorid = getResources().getIdentifier(iconOperatorId, "drawable", getContext().getPackageName());
 
-            int imgid = getResources().getIdentifier(img, "drawable", getContext().getPackageName());
-
-            operatorsList.add(new Operators(op, imgid));
+                operatorsList.add(new Operators(operatorName, iconOperatorid));
+            }
+            catch (JSONException e)
+            {
+                e.printStackTrace();
+            }
         }
-        tableOps.recycle();
 
         ArrayList<ParentObject> parentObjects = new ArrayList<>();
         for (Operators operators : operatorsList)

@@ -9,6 +9,12 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.TextView;
+
+import com.khrys.r6assistant.data.LoadData;
+
+import org.json.JSONException;
+import org.json.JSONObject;
+
 import java.util.ArrayList;
 
 
@@ -114,7 +120,7 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
         gadgetB = 4;
         gadgetM = 4;
         gadgetJ = 3;
-        gadgetK = 3;
+        gadgetK = 5;
         textSetup(gadgetV, txtValkyrie);
         textSetup(gadgetB, txtBandit);
         textSetup(gadgetM, txtMute);
@@ -131,18 +137,26 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
 
     void recyclerSetup()
     {
-        String arrayMapid = "m"+String.valueOf(mapID);
-        int arrayId = getResources().getIdentifier(arrayMapid, "array", getApplicationContext().getPackageName());
+        LoadData dataLoader = new LoadData();
+        JSONObject mapsData = dataLoader.loadData(this, dataLoader.RES_MAPS);
 
-        String[] infoMap = getResources().getStringArray(arrayId);
-        int nbCamera = Integer.parseInt(infoMap[1]);
+        int nbCamera = 0;
 
-        for(int i = 1; i <= nbCamera; i++)
+        try
         {
-            String idName = infoMap[0]+"_cam_s"+String.valueOf(i);
-            String idPic = "cam_"+infoMap[0]+"_"+String.valueOf(i);
-            int intName = getResources().getIdentifier(idName, "string", getApplicationContext().getPackageName());
-            int intPic = getResources().getIdentifier(idPic, "drawable", getApplicationContext().getPackageName());
+            nbCamera = mapsData.getJSONObject(String.valueOf(mapID)).getInt("cameras");
+        }
+        catch (JSONException e)
+        {
+            e.printStackTrace();
+        }
+
+        for(int i = 0; i < nbCamera; i++)
+        {
+            String id = "cam_"+mapID+"_"+i;
+            int intName = getResources().getIdentifier(id, "string", getApplicationContext().getPackageName());
+            int intPic = getResources().getIdentifier(id, "drawable", getApplicationContext().getPackageName());
+
             poscam.add(intName);
             pics.add(intPic);
         }

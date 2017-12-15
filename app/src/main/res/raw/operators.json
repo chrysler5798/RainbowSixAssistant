@@ -1,0 +1,148 @@
+{
+  "operators": {
+    "0": {
+      "name": "kapkan",
+      "side": 0
+    },
+    "1": {
+      "name": "tachanka",
+      "side": 0
+    },
+    "2": {
+      "name": "glaz",
+      "side": 1
+    },
+    "3": {
+      "name": "fuze",
+      "side": 1
+    },
+    "4": {
+      "name": "iq",
+      "side": 1
+    },
+    "5": {
+      "name": "blitz",
+      "side": 1
+    },
+    "6": {
+      "name": "bandit",
+      "side": 0
+    },
+    "7": {
+      "name": "jäger",
+      "side": 0
+    },
+    "8": {
+      "name": "rook",
+      "side": 0
+    },
+    "9": {
+      "name": "doc",
+      "side": 0
+    },
+    "10": {
+      "name": "twitch",
+      "side": 1
+    },
+    "11": {
+      "name": "montagne",
+      "side": 1
+    },
+    "12": {
+      "name": "thermite",
+      "side": 1
+    },
+    "13": {
+      "name": "ash",
+      "side": 1
+    },
+    "14": {
+      "name": "castle",
+      "side": 0
+    },
+    "15": {
+      "name": "pulse",
+      "side": 0
+    },
+    "16": {
+      "name": "thatcher",
+      "side": 1
+    },
+    "17": {
+      "name": "sledge",
+      "side": 1
+    },
+    "18": {
+      "name": "smoke",
+      "side": 0
+    },
+    "19": {
+      "name": "mute",
+      "side": 0
+    },
+    "20": {
+      "name": "frost",
+      "side": 0
+    },
+    "21": {
+      "name": "buck",
+      "side": 1
+    },
+    "22": {
+      "name": "valkyrie",
+      "side": 0
+    },
+    "23": {
+      "name": "blackbeard",
+      "side": 1
+    },
+    "24": {
+      "name": "cãpitao",
+      "side": 1
+    },
+    "25": {
+      "name": "caveira",
+      "side": 0
+    },
+    "26": {
+      "name": "echo",
+      "side": 0
+    },
+    "27": {
+      "name": "hibana",
+      "side": 1
+    },
+    "28": {
+      "name": "mira",
+      "side": 0
+    },
+    "29": {
+      "name": "jackal",
+      "side": 1
+    },
+    "30": {
+      "name": "ying",
+      "side": 1
+    },
+    "31": {
+      "name": "lesion",
+      "side": 0
+    },
+    "32": {
+      "name": "ela",
+      "side": 0
+    },
+    "33": {
+      "name": "zofia",
+      "side": 1
+    },
+    "34": {
+      "name": "dokkaebi",
+      "side": 1
+    },
+    "35": {
+      "name": "vigil",
+      "side": 0
+    }
+  }
+}

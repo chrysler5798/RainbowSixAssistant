@@ -1,0 +1,551 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--GLOBAL TEXT-->
+    <string name="app_name">R6 어시스턴트</string>
+
+    <!--BASIC WORDS-->
+    <string name="go">가기</string>
+    <string name="or">또는</string>
+    <string name="close">닫기</string>
+
+    <!--BASIC NUMBERS-->
+    <string name="n1">1</string>
+    <string name="n2">2</string>
+    <string name="n3">3</string>
+    <string name="n4">4</string>
+    <string name="n5">5</string>
+
+    <!--MAIN MENU-->
+    <string name="cameras">카메라</string>
+    <string name="twitch">트위치</string>
+    <string name="mapplans">지도 &amp; 전략</string>
+    <string name="online">온라인 \n 채팅 &amp; 플레이어 찾기</string>
+    <string name="guns">무기 정보</string>
+    <string name="operators">오퍼레이터</string>
+    <string name="more">더보기</string>
+
+    <!--SOON MSG-->
+    <string name="soon">곧...</string>
+    <string name="msgsoon">곧 이 새로운 기능이 찾아옵니다!</string>
+
+    <!--RATE APP POPUP-->
+    <string name="ratetitle">R6 어시트턴트 앱을 평가해주세요♡</string>
+    <string name="ratemsg">플레이 스토어에서 별점을 매기고 피드백을 남겨주세요!</string>
+    <string name="error_market">오류 : 플레이 스토어 앱을 찾을 수 없습니다</string>
+
+    <!--WEAPONS STATS-->
+    <string name="beta_msg">이것은 베타 상태입니다! \n몇몇 정보들이 누락되어 있을 수 있습니다. 저희는 번역 작업을 진행중입니다.</string>
+    <string name="byoperator">오퍼레이터별</string>
+    <string name="byweapons">무기별</string>
+    <string name="legs">다리</string>
+    <string name="body">몸통</string>
+    <string name="rookarmor">룩 방탄판</string>
+
+    <!--WEAPONS STATS CLASS-->
+    <string name="assault">돌격소총</string>
+    <string name="pistol">권총</string>
+    <string name="lightmachine">경기관총</string>
+    <string name="machinepistol">기관권총</string>
+    <string name="marksmanrifle">지정사수소총</string>
+    <string name="shotgun">산탄총</string>
+    <string name="submachinegun">기관단총</string>
+
+    <!--WEAPONS BARRELS-->
+    <string name="compensator">컴펜세이터</string>
+    <string name="flash_hider">소염기</string>
+    <string name="muzzle_brake">포구 제퇴기</string>
+    <string name="suppressor">소음기</string>
+    <string name="extended_barrel">연장 총열</string>
+
+    <!--WEAPON STATS HELP-->
+    <string name="help_title">무기 정보</string>
+    <string name="help_ammo">이것은 탄창 안에 있는 탄알의 개수입니다.</string>
+    <string name="help_firerate">이것은 연사력입니다. 총이 발사체를 발사하는 속도입니다.</string>
+    <string name="help_damagefalloff">이것은 피해량 감소입니다. 발사체가 날아가면서 피해량이 감소하기 시작하는 거리입니다.</string>
+    <string name="help_armor"> 1,2,3 아머 오퍼레이터에 대한 피해량입니다.</string>
+    <string name="help_armor_rook">룩 방탄판을 착용한 1,2,3 아머 오퍼레이터에 대한 피해량입니다.</string>
+    <string name="help_barrel">무기 정보 페이지의 하단에는 총열의 추천 우선순위가 있습니다. \n첫번째 것부터 반동 제어가 쉬운 순서입니다.\n그러나 이 모든 것은 당신의 게임 방식에 따라 맞추는 것이 제일 좋습니다.</string>
+
+    <!--WEAPON STATS CREDIT-->
+    <string name="stats_credit_1">무기 정보를 제공해 준 Segio에게 감사의 말씀을 드립니다. 그가 없었더라면, 이 모든 것이 가능하지 않았을 것입니다.\n그의 유튜브 채널을 보려면 여기를 누르세요.</string>
+    <string name="stats_credit_2">또한 부착물에 대한 정보를 제공해 준 VarsityGaming에게도 감사의 말씀을 드립니다.\n그의 유튜브 채널을 보려면 여기를 누르세요.</string>
+
+    <!--OPERATORS MENU-->
+    <string name="bycountries">국가별</string>
+    <string name="attackers">공격</string>
+    <string name="defenders">수비</string>
+
+    <!--OPERATORS-->
+    <string name="attacker">공격</string>
+    <string name="defender">수비</string>
+    <string name="armor_light">1</string>
+    <string name="armor_heavy">3</string>
+    <string name="speed_slow">1</string>
+    <string name="speed_fast">3</string>
+    <string name="medium">2</string>
+
+    <!--OPERATORS TITLE-->
+    <string name="speed">속도</string>
+    <string name="armor">장갑</string>
+    <string name="primary">주무기</string>
+    <string name="secondary">보조무기</string>
+    <string name="gadget">도구</string>
+    <string name="ugadget">특수 기술</string>
+
+    <!--OPERATORS GADGET-->
+    <string name="gad_barbed">철조망</string>
+    <string name="gad_breach">접착 폭약</string>
+    <string name="gad_frag">수류탄</string>
+    <string name="gad_nitro">원격 제어 폭탄</string>
+    <string name="gad_shield">이동식 방패</string>
+    <string name="gad_smoke">연막탄</string>
+    <string name="gad_stun">섬광탄</string>
+    <string name="gad_impact">충격 수류탄</string>
+    <string name="gad_claymore">대인 지뢰</string>
+
+    <!--OPERATORS UNIQUE GADGET DESCRIPTION-->
+    <string name="ugat_ash">M120 CREM 소형 소총용 진압탄</string>
+    <string name="uga_ash">표면에 박혀 자동으로 폭발하는 파괴탄을 발사합니다.</string>
+
+    <string name="ugat_bandit">CED-1 전압 증폭기</string>
+    <string name="uga_bandit">금속제 도구에 고압선을 설치하여 적에게 피해를 가합니다.</string>
+
+    <string name="ugat_blackbeard">TARS Mk 0-투명 방찬 소총 방패</string>
+    <string name="uga_blackbeard">첫 번째 방패가 손상될 경우 교체할 수 있는 예비 장착형 방패를 전개할 수 있습니다.</string>
+
+    <string name="ugat_blitz">G52 섬광 방패</string>
+    <string name="uga_blitz">사격 방패에 부착된 섬광 장치를 격발하여 일시적으로 적의 시야를 빼앗을 수 있습니다.</string>
+
+    <string name="ugat_buck">SK 4–12</string>
+    <string name="uga_buck">주 무기의 총열 하부에 부착된 산탄총을 사용합니다.</string>
+
+    <string name="ugat_capitao">TAC Mk0</string>
+    <string name="uga_capitao">질식 화살과 초소형 연막탄을 발사하는 전술 크로스보우입니다.</string>
+
+    <string name="ugat_castle">UTP-1 범용 방탄 패널</string>
+    <string name="uga_castle">일반 바리케이드보다 단단한 방탄 바리케이드를 설치합니다.</string>
+
+    <string name="ugat_caveira">고요한 발걸음</string>
+    <string name="uga_caveira">카베이라의 맹수와 같은 스텔스 능력, "고요한 발걸음"을 사용하면 적에게 소리 없이 접근해 순식간에 해치울 수 있습니다.</string>
+
+    <string name="ugat_doc">MPD-0 자극제 권총</string>
+    <string name="uga_doc">원거리에서 자신이나 팀원을 소생시킬 수 있는 피하 주사기를 발사합니다. 일시적으로 보너스를 부여할 수 있습니다.</string>
+
+    <string name="ugat_echo">요괴</string>
+    <string name="uga_echo">음파를 발산하여 방향 감각에 혼란을 주는 제자리비행형 드론입니다. 요괴는 대원에게 영상을 전송할 수도 있습니다.</string>
+
+    <string name="ugat_frost">Sterling MK2 LHT</string>
+    <string name="uga_frost">격발 시 적을 무력화시키는 기계 함정을 설치합니다.</string>
+
+    <string name="ugat_fuze">APM-6 \'마트료시카\'</string>
+    <string name="uga_fuze">부착 시 벽을 관통하여 반대편에 소형 수류탄들을 방출하는 집속탄을 사용합니다.</string>
+
+    <string name="ugat_glaz">HDS 접이식 조준기</string>
+    <string name="uga_glaz">연기 속에서도 장거리 표적의 윤곽을 표시하는 정교한 이미지 센서가 탑재된 확대경을 조절하는 장치입니다.</string>
+
+    <string name="ugat_hibana">X-KAIROS</string>
+    <string name="uga_hibana">40mm 구경의 유탄 발사기로, 원거리에서 격발할 수 있는 폭발성 파편을 발사합니다.</string>
+
+    <string name="ugat_iq">RED MK III \'감시자\'</string>
+    <string name="uga_iq">벽 등의 장애물을 투과하여 범위 내 모든 전자기기를 감지할 수 있는 전자기기 탐지기를 사용합니다.</string>
+
+    <string name="ugat_jackal">아이녹스 모델 III</string>
+    <string name="uga_jackal">최근에 남겨진 발자국을 밝히고 감별하여 표적의 위치를 파악하는 추적용 고글입니다.</string>
+
+    <string name="ugat_jager">ADS-MKIV \'까치\'</string>
+    <string name="uga_jager">선제 방어 시스템을 사용하여 폭발하기 전에 수류탄을 요격합니다.</string>
+
+    <string name="ugat_kapkan">EDD MK II</string>
+    <string name="uga_kapkan">창문틀과 문틀에 부비트랩을 설치합니다.</string>
+
+    <string name="ugat_mira">검은 거울</string>
+    <string name="uga_mira">파괴 가능한 벽과 강화된 벽에 방탄 편면거울을 설치합니다. 거울을 사출하여 급작스러운 공격 기회를 노릴 수도 있습니다.</string>
+
+    <string name="ugat_montagne">\'암벽\' 방패</string>
+    <string name="uga_montagne">서 있는 상태에서도 온몸이 보호되도록 방패를 확장할 수 있습니다.</string>
+
+    <string name="ugat_mute">GC90 신호 방해기 \'재갈\'</string>
+    <string name="uga_mute">일정 범위 내의 원격 폭발형 도구 또는 드론의 신호를 방해합니다.</string>
+
+    <string name="ugat_pulse">HB-5 심장 박동 감지기</string>
+    <string name="uga_pulse">장애물에 관계없이 근거리 내의 심장 박동을 감지합니다.</string>
+
+    <string name="ugat_rook">R1N \'코뿔소\' 방탄판</string>
+    <string name="uga_rook">아군이 무장할 수 있는 방탄판으로 가득 찬 보급 가방을 바닥에 내려놓습니다.</string>
+
+    <string name="ugat_sledge">진입용 파쇄 망치 \'디스트로이어\'</string>
+    <string name="uga_sledge">파괴할 수 있는 면을 돌파하는데 사용하는 파쇄용 망치입니다.</string>
+
+    <string name="ugat_smoke">Z8 화합물 수류탄</string>
+    <string name="uga_smoke">원격으로 폭발시킬 수 있는 독가스 폭탄을 설치합니다.</string>
+
+    <string name="ugat_tachanka">RP-46 데그챠레프 경기관총</string>
+    <string name="uga_tachanka">전방으로부터 머리를 방어하는 방탄 방패가 장착된 탑승형 LMG를 설치합니다.</string>
+
+    <string name="ugat_thatcher">EG MK0 EMP 수류탄</string>
+    <string name="uga_thatcher">범위 내의 모든 전자 기기를 무력화시키는 EMP 수류탄을 사용합니다.</string>
+
+    <string name="ugat_thermite">BRIMSTONE BC-3 발열성 폭약</string>
+    <string name="uga_thermite">강화된 벽을 파괴할 수 있는 발열성 폭약을 설치합니다.</string>
+
+    <string name="ugat_twitch">RSD Model 1 감전 드론</string>
+    <string name="uga_twitch">함정을 무력화하거나 적에게 부상을 입히는 감전 드론 두 대를 사용합니다. 첫 감전 드론은 준비 단계에 전개합니다.</string>
+
+    <string name="ugat_valkyrie">Gyro Cam Mk2</string>
+    <string name="uga_valkyrie">팀원 모두가 관측 도구를 통해 사용할 수 있는 \'칠흑의 주시자\'를 설치합니다.</string>
+
+    <string name="ugat_ying">칸델라</string>
+    <string name="uga_ying">표면에 고정하거나 수류탄처럼 굴릴 수 있는 섬광 집속탄입니다.</string>
+
+    <string name="ugat_lesion">고독</string>
+    <string name="uga_lesion">독성 혼합물을 주입하여 상대에게 피해를 주고 속도를 제한하는 은폐형 독지뢰입니다.</string>
+
+    <string name="ugat_ela">GRZMOT 지뢰</string>
+    <string name="uga_ela">표면에 고정시킬 수 있는 진탕 접근신관 지뢰로, 청각을 손상시키고 현기증 효과를 줍니다.</string>
+
+    <string name="ugat_zofia">KS79 생명선</string>
+    <string name="uga_zofia">진탕탄과 충격탄을 발사할 수 있는 쌍열 유탄발사기입니다.</string>
+
+    <string name="ugat_dokkaebi">논리 폭탄</string>
+    <string name="uga_dokkaebi">적의 장치가 큰 소음을 발산하게 만들어 위치를 드러내는 바이러스를 업로드합니다.</string>
+
+    <string name="ugat_vigil">전자식 렌더링 은폐기(ERC-7)</string>
+    <string name="uga_vigil">비질은 주변의 장치를 탐지하여 카메라와 드론의 영상에서 자신의 모습을 제거합니다.</string>
+
+    <!--ONLINE-->
+    <string name="create_txt">만들기</string>
+    <string name="message">메세지</string>
+    <string name="online_chat_msg">안녕하세요! 채팅에서는 다른 사람들을 존중해 주시길 바랍니다.</string>
+
+    <!--ONLINE MENU-->
+    <string name="find_team">팀 찾기</string>
+    <string name="find_players">플레이어 찾기</string>
+    <string name="chat">채팅</string>
+
+    <!--ONLINE SIGN IN-->
+    <string name="online_signin">로그인</string>
+    <string name="enternick_online">닉네임를 입력해주세요 :</string>
+    <string name="signin_online">닉네임이 너무 짧아요!</string>
+    <string name="online_welcome">R6 어시스턴트 온라인에 오신 것을 환영합니다</string>
+
+    <!--ONLINE ERROR-->
+    <string name="no_internet">인터넷에 연결할 수 없습니다!</string>
+    <string name="online_fail">인증 실패</string>
+    <string name="maintenance">보수중</string>
+    <string name="not_updated">앱이 업데이트되지 않았습니다!</string>
+    <string name="not_updated_msg">R6 어시스턴트 온라인을 사용하려면 플레이 스토어에서 앱을 업데이트해야 합니다.</string>
+
+    <!--TEAM ONLINE MSG-->
+    <string name="team_dialog_title">주의</string>
+    <string name="team_dialog_msg">앱을 종료하면, 팀이 삭제됩니다. 새 팀을 만들어야 할 것입니다.</string>
+    <string name="player_dialog_msg">앱을 종료하면, 프로필이 삭제될 것입니다. 새 것을 만들어야 할 것입니다.</string>
+
+    <string name="team_full_dialog_title">팀이 꽉 찼습니까?</string>
+    <string name="team_full_dialog_msg">팀이 꽉 차 있다면 팀을 찾는 플레이어에서 팀을 제거 할 수 있습니다.</string>
+
+    <string name="team_leave_dialog_title">정말로 팀을 나가고 싶습니까?</string>
+    <string name="team_leave_dialog_msg">나간다면, 팀이 삭제될 것입니다. 새 것을 만들어야 할 것입니다.</string>
+    <string name="player_leave_dialog_msg">나간다면, 프로필이 삭제될 것입니다. 새 것을 만들어야 할 것입니다.</string>
+    <string name="team_leave_dialog">나가기</string>
+    <string name="team_stay_dialog">머무르기</string>
+
+    <string name="team_tag_admin">[팀 어드민] </string>
+    <string name="player_tag_admin">[플레이어] </string>
+
+    <!--TEAM and PLAYER ONLINE-->
+    <string name="create_team">새 팀 만들기</string>
+    <string name="create_uteam">팀 만들기</string>
+
+    <string name="team_msg_nothing">지금은 팀이 없습니다. 당신이 팀이라면, 하단의 버튼으로 당신의 팀을 추가하고 플레이어들이 방에 합류하기를 기다려 주세요.</string>
+    <string name="player_msg_nothing">지금은 플레이어가 없습니다. 플레이어를 찾고 있다면, 하단의 버튼으로 당신의 프로필을 만들고 다른 플레이어들이 방에 합류하기를 기다려 주세요.</string>
+
+    <string name="create_player">플레이어로서 자신을 추가해주세요</string>
+    <string name="create_uplayer">프로필을 만들어 주세요</string>
+
+    <string name="team_name">팀의 이름:</string>
+    <string name="team_name_error">팀의 이름이 너무 짧습니다!</string>
+    <string name="player_name_error">이름이 너무 짧습니다!</string>
+
+    <string name="player_name">닉네임:</string>
+
+    <string name="team_language">언어:</string>
+
+    <string name="team_platform">플랫폼:</string>
+
+    <string name="team_mpmode">멀티플레이어 모드:</string>
+    <string name="team_mpmode_for">for</string>
+    <string name="team_mpmode_1">캐주얼</string>
+    <string name="team_mpmode_2">랭크</string>
+    <string name="team_mpmode_3">연습</string>
+
+    <string name="team_rank">랭크:</string>
+    <string name="team_rank_1">카퍼</string>
+    <string name="team_rank_2">브론즈</string>
+    <string name="team_rank_3">실버</string>
+    <string name="team_rank_4">골드</string>
+    <string name="team_rank_5">플래티넘</string>
+    <string name="team_rank_6">다이아몬드</string>
+
+    <string name="team_playerneed">얼마나 많은 플레이어가 필요합니까?</string>
+
+    <!--LOBBY MENU-->
+    <string name="lobbytitle">로비 ID : %d</string>
+
+    <!--MORE MENU-->
+    <string name="about">정보</string>
+    <string name="settings">설정</string>
+
+    <!--ABOUT-->
+    <string name="labelabout">R6 어시스턴트 - 정보</string>
+    <string name="abouttxt1">이 어플리케이션은 레인보우 식스 시즈 플레이어인 Khrys가 만들었습니다. 이 어플리케이션은 오픈 소스이고 유비소프트와는 아무런 관련이 없습니다.\n\n피드백, 버그 리포트, 제안 등은 감사히 받겠습니다. 오픈 소스 애플리케이션으로서, 페이지 하단에 있는 이미지를 클릭하여 GitHub에서 호스팅 된 소스 코드를 확인할 수 있습니다.\n\nKhrys, 개발자 겸 플레이어.</string>
+
+    <!--SUPPORT-->
+    <string name="labelsupport">R6 어시스턴트 - 지원</string>
+    <string name="supporttxt">이 어플리케이션은 완전히 무료이며, 광고나 유료 기능도 없습니다. 다운로드하거나 피드백을 주고 계신다면, 정말 감사하다는 말씀을 드리고 싶습니다!\n\n저는 이것에 많은 시간을 투자하였습니다. 물론 제가 순전히 자의로 한 것입니다만 기부하기를 원하신다면, 버튼은 하단에 위치해 있습니다. 기부하시면 당신의 이름이 명단에 올라갈 것입니다.\n\n 정말 감사합니다! \nKhrys</string>
+
+    <!--SETTINGS-->
+    <string name="labelsettings">R6 어시스턴트 - 설정</string>
+    <string name="warning">주의</string>
+    <string name="settings_end">새로운 언어를 적용하려면 앱을 재시작해야 합니다!</string>
+
+    <!--CREDIT TO TRANSLATORS-->
+    <string name="translator_pt">LeGuigo</string>
+    <string name="translator_de">Mert Huz</string>
+    <string name="translator_it">Andrea Verano</string>
+    <string name="translator_ru">Maxim Lem</string>
+    <string name="translator_zh">Neel Lee</string>
+    <string name="translator_pl">AK_D14BL0</string>
+    <string name="translator_kr">sd_iron</string>
+
+    <!--LANGUAGE-->
+    <string name="language">Language</string>
+    <string name="english">English</string>
+    <string name="french">French</string>
+    <string name="portuguese">Portuguese</string>
+    <string name="italian">Italian</string>
+    <string name="german">German</string>
+    <string name="russian">Russian</string>
+    <string name="chinese">Chinese</string>
+    <string name="polish">Polish</string>
+    <string name="japenese">Japenese</string>
+    <string name="korean">Korean</string>
+    <string name="spanish">Spanish</string>
+
+    <!--MAP MENU-->
+    <string name="takemap">맵을 선택하세요</string>
+
+    <!--MAPS INFO-->
+    <string name="map_name_0">은행</string>
+        <string name="cam_0_0">1층 로비</string>
+        <string name="cam_0_1">1층 사무실 복도</string>
+        <string name="cam_0_2">2층 채광 계단</string>
+        <string name="cam_0_3">지하 금고 로비</string>
+        <string name="cam_0_4">외부 광장</string>
+        <string name="cam_0_5">외부 차고 경사로</string>
+        <string name="cam_0_6">외부 뒷골목</string>
+
+    <string name="map_name_1">별장</string>
+        <string name="cam_1_0">2층 침실 복도</string>
+        <string name="cam_1_1">2층 벽난로 복도</string>
+        <string name="cam_1_2">1층 서재 복도</string>
+        <string name="cam_1_3">지하 설상차 차고</string>
+        <string name="cam_1_4">외부 앞마당</string>
+        <string name="cam_1_5">외부 뒷마당</string>
+
+    <string name="map_name_2">클럽 하우스</string>
+        <string name="cam_2_0">2층 침실 복도</string>
+        <string name="cam_2_1">1층 바</string>
+        <string name="cam_2_2">1층 차고</string>
+        <string name="cam_2_3">지하 지하실 복도</string>
+        <string name="cam_2_4">외부 VIP 주차장</string>
+        <string name="cam_2_5">외부 그래피티 구역</string>
+        <string name="cam_2_6">외부 사육장</string>
+
+    <string name="map_name_3">영사관</string>
+        <string name="cam_3_0">2층 영사관 접수처</string>
+        <string name="cam_3_1">1층 중앙 계단</string>
+        <string name="cam_3_2">1층 비자 사무실</string>
+        <string name="cam_3_3">외부 앞문</string>
+        <string name="cam_3_4">지하 탈의실 복도</string>
+        <string name="cam_3_5">지하 차고</string>
+        <string name="cam_3_6">외부 정면 골목</string>
+        <string name="cam_3_7">외부 차고 진입로</string>
+
+    <string name="map_name_12">빈민가</string>
+        <string name="cam_12_0">3층 뒤쪽 계단</string>
+        <string name="cam_12_1">3층 중앙 계단</string>
+        <string name="cam_12_2">1층 세탁실</string>
+        <string name="cam_12_3">1층 계단실</string>
+        <string name="cam_12_4">외부 학교 골목</string>
+        <string name="cam_12_5">외부 도로</string>
+        <string name="cam_12_6">외부 뒷골목</string>
+
+    <string name="map_name_4">헤리퍼드 기지</string>
+        <string name="cam_4_0">외부 옥상</string>
+        <string name="cam_4_1">2층 통로</string>
+        <string name="cam_4_2">1층 통로 1</string>
+        <string name="cam_4_3">지하 탈의실</string>
+        <string name="cam_4_4">외부 사격장</string>
+        <string name="cam_4_5">외부 지게차 구역</string>
+
+    <string name="map_name_6">도스토예프스키 카페</string>
+        <string name="cam_6_0">3층 칵테일 라운지</string>
+        <string name="cam_6_1">2층 독서실</string>
+        <string name="cam_6_2">1층 냉장실 통로</string>
+        <string name="cam_6_3">1층 제과점</string>
+        <string name="cam_6_4">외부 서쪽 대로</string>
+        <string name="cam_6_5">외부 공원 골목</string>
+
+    <string name="map_name_5">저택</string>
+        <string name="cam_5_0">외부 정문 현관 위</string>
+        <string name="cam_5_1">1층 주방</string>
+        <string name="cam_5_2">지하 체력 단련실</string>
+        <string name="cam_5_3">지하 차고</string>
+        <string name="cam_5_4">외부 앞마당</string>
+        <string name="cam_5_5">외부 정원</string>
+
+    <string name="map_name_7">운하</string>
+        <string name="cam_7_0">통제소3층 통제실 복도</string>
+        <string name="cam_7_1">통제소2층 지도 사무실 복도</string>
+        <string name="cam_7_2">해경2층 해안 경비대 복도</string>
+        <string name="cam_7_3">해경1층 보트 비품실 복도</string>
+        <string name="cam_7_4">외부 앞 잔디밭</string>
+        <string name="cam_7_5">외부 수문</string>
+        <string name="cam_7_6">외부 건설 현장</string>
+
+    <string name="map_name_9">대통령 전용기</string>
+        <string name="cam_9_0">3층 승무원실</string>
+        <string name="cam_9_1">2층 앞쪽 통로</string>
+        <string name="cam_9_2">2층 기자석 A</string>
+        <string name="cam_9_3">1층 수화물 적재실</string>
+        <string name="cam_9_4">1층 화물 적재실</string>
+
+    <string name="map_name_11">국경</string>
+        <string name="cam_11_0">2층 동쪽 계단</string>
+        <string name="cam_11_1">2층 메인 통로</string>
+        <string name="cam_11_2">1층 메인 로비</string>
+        <string name="cam_11_3">1층 출구 복도</string>
+        <string name="cam_11_4">외부 주차장 입구</string>
+        <string name="cam_11_5">외부 사고 현장</string>
+        <string name="cam_11_6">외부 주차장 입구</string>
+
+    <string name="map_name_8">오리건</string>
+        <string name="cam_8_0">2층 무기고 복도</string>
+        <string name="cam_8_1">1층 로비</string>
+        <string name="cam_8_2">1층 식당 통로</string>
+        <string name="cam_8_3">1층 무대 뒤</string>
+        <string name="cam_8_4">외부 쓰레기장</string>
+        <string name="cam_8_5">외부 주차장</string>
+        <string name="cam_8_6">외부 건설 현장</string>
+
+    <string name="map_name_10">요트</string>
+        <string name="cam_10_0">4F 헬기장 입구</string>
+        <string name="cam_10_1">3층 화장길 복도</string>
+        <string name="cam_10_2">3층 라운지</string>
+        <string name="cam_10_3">2층 앞쪽 계단</string>
+        <string name="cam_10_4">2층 뒤쪽 계단</string>
+        <string name="cam_10_5">1층 기관실 복도</string>
+        <string name="cam_10_6">외부 전방 갑판</string>
+        <string name="cam_10_7">외부 스파 갑판</string>
+
+    <string name="map_name_13">마천루</string>
+        <string name="cam_13_0">2층 볻도</string>
+        <string name="cam_13_1">1층 식당</string>
+        <string name="cam_13_2">2층 집 계단</string>
+        <string name="cam_13_3">1층 집 로비</string>
+        <string name="cam_13_4">외부 서쪽 정원</string>
+        <string name="cam_13_5">외부 동쪽 정원</string>
+        <string name="cam_13_6">외부 환풍기</string>
+
+    <string name="map_name_14">바틀렛 대학교</string>
+        <string name="cam_14_0">2층 나침반 복도</string>
+        <string name="cam_14_1">2층 조망 복도</string>
+        <string name="cam_14_2">1층 아치 홀</string>
+        <string name="cam_14_3">1층 로비</string>
+        <string name="cam_14_4">1층 식당</string>
+        <string name="cam_14_5">외부 정문</string>
+        <string name="cam_14_6">외부 주차장</string>
+
+    <string name="map_name_15">해안선</string>
+        <string name="cam_15_0">1층 복도</string>
+        <string name="cam_15_1">1층 메인 로비</string>
+        <string name="cam_15_2">2층 수족관</string>
+        <string name="cam_15_3">2층 복도</string>
+        <string name="cam_15_4">외부 차고 지붕</string>
+        <string name="cam_15_5">외부 잔해</string>
+        <string name="cam_15_6">외부 잔해</string>
+
+    <string name="map_name_16">테마 파크</string>
+        <string name="cam_16_0">1층 갤러리</string>
+        <string name="cam_16_1">2층 유령의 집 계단</string>
+        <string name="cam_16_2">1층 공동 통로</string>
+        <string name="cam_16_3">2층 아케이드 입구</string>
+        <string name="cam_16_4">2층 열차 플랫폼</string>
+        <string name="cam_16_5">외부 찻잔 기구</string>
+        <string name="cam_16_6">외부 직원 출입구</string>
+        <string name="cam_16_7">외부 손님 안내소</string>
+
+    <string name="map_name_17">타워</string>
+        <string name="cam_17_0">2층 주 갤러리</string>
+        <string name="cam_17_1">2층 전시관 복도</string>
+        <string name="cam_17_2">2층 회사 접수처</string>
+        <string name="cam_17_3">1층 전통문화실 복도</string>
+        <string name="cam_17_4">1층 서쪽 발코니</string>
+        <string name="cam_17_5">2층 중앙 아트리움</string>
+        <string name="cam_17_6">1층 분수</string>
+
+    <string name="destroyPhrase">%d</string>
+    <string name="cameraPhrase">%d 카메라</string>
+    <string name="cameraPhrase2_1">%d 카메라 남음</string>
+    <string name="cameraPhrase2_2">%d 카메라 남음</string>
+    <string name="cameraAllDestroyed">모든 카메라가 파괴됨</string>
+    <string name="destroyed">X</string>
+
+    <!--FLOORS OF MAP PLAN-->
+    <string name="f_base">지하</string>
+    <string name="f_0">1층</string>
+    <string name="f_1">2층</string>
+    <string name="f_2">3층</string>
+    <string name="f_3">4층</string>
+
+    <!--FLOORS ERROR PHRASE-->
+    <string name="planerror">이 맵의 전략은 아직 준비되지 않았습니다!</string>
+    <string name="error_floor_below">밑엔 더 이상 층이 없습니다!</string>
+    <string name="error_floor_above">위엔 더 이상 층이 없습니다!</string>
+
+    <!--IMAGE CONTENT DESCRIPTION-->
+    <string name="twitch_drone_image">Twitch Drone Image</string>
+    <string name="zoom_icon">Zoom Icon</string>
+    <string name="zoomedimg">Zoomed Image</string>
+    <string name="cellimg">Cell Image</string>
+    <string name="banner_image">Banner Image</string>
+    <string name="version_d">Version %S</string>
+    <string name="zoom">Zoom</string>
+    <string name="floor">FLOOR</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="resetzoom">resetzoom</string>
+    <string name="position">Positions</string>
+    <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
+    <string name="troll_face">Troll Face</string>
+    <string name="star">Star</string>
+    <string name="settingsicon">Icon Settings</string>
+    <!--WEAPON STATS CONTENT DESCRIPTION-->
+    <string name="name_weapon">Weapon Image</string>
+    <string name="op_1">Operator Icon 1</string>
+    <string name="op_2">Operator Icon 2</string>
+    <string name="op_3">Operator Icon 3</string>
+    <string name="op_4">Operator Icon 4</string>
+    <string name="ammo_icon">Ammo Icon</string>
+    <string name="firerate_icon">Fire rate Icon</string>
+    <string name="damagefall_icon">Damage fall off Icon</string>
+    <string name="rook_icon">Damage fall off Icon</string>
+    <string name="armor_light_icon">Light Amor Icon</string>
+    <string name="armor_medium_icon">Medium Amor Icon</string>
+    <string name="armor_heavy_icon">Heavy Amor Icon</string>
+    <string name="barrel_1">Image of the Barrel 1</string>
+    <string name="barrel_2">Image of the Barrel 2</string>
+    <string name="barrel_3">Image of the Barrel 3</string>
+    <string name="barrel_4">Image of the Barrel 4</string>
+    <string name="barrel_5">Image of the Barrel 5</string>
+</resources>

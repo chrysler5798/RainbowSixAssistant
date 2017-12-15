@@ -47,6 +47,10 @@
         <item>lesion</item>
 
         <item>ela</item>
+        <item>zofia</item>
+
+        <item>dokkaebi</item>
+        <item>vigil</item>
     </string-array>
 
     <!--Operators sorted by side-->
@@ -68,6 +72,8 @@
         <item>hibana</item>
         <item>jackal</item>
         <item>ying</item>
+        <item>zofia</item>
+        <item>dokkaebi</item>
 
         <!--Defenders-->
         <item>kapkan</item>
@@ -87,6 +93,7 @@
         <item>mira</item>
         <item>lesion</item>
         <item>ela</item>
+        <item>vigil</item>
     </string-array>
 
     <!--Army and country-->
@@ -115,6 +122,8 @@
         <item>SDU</item>
         <item>pl</item>
         <item>GROM</item>
+        <item>kr</item>
+        <item>707th</item>
     </string-array>
 
     <!--Armies with their operators-->
@@ -185,6 +194,12 @@
 
     <string-array name="grom">
         <item>ela</item>
+        <item>zofia</item>
+    </string-array>
+
+    <string-array name="m707th">
+        <item>dokkaebi</item>
+        <item>vigil</item>
     </string-array>
 
     <!--Operators info-->
@@ -667,5 +682,49 @@
         <item>2</item><item>barbed</item>
         <item>2</item><item>impact</item>
         <item>3</item>
+    </string-array>
+
+    <string-array name="zofia">
+        <item>atk</item>
+        <item>pl</item><item>GROM</item>
+        <item>3</item>
+        <item>2</item>
+        <item>lmg-e</item>
+        <item>m762</item>
+        <item>rg15</item>
+        <item>2</item><item>2</item>
+        <item>3</item><item>breach</item>
+        <item>1</item><item>claymore</item>
+        <item>4</item>
+    </string-array>
+
+    <string-array name="dokkaebi">
+        <item>atk</item>
+        <item>kr</item><item>707th</item>
+        <item>4</item>
+        <item>2</item>
+        <item>mk 14 ebr</item>
+        <item>bosg 12 2</item>
+        <item>c75</item>
+        <item>smg-12</item>
+        <item>2</item><item>2</item>
+        <item>2</item><item>smoke</item>
+        <item>1</item><item>claymore</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="vigil">
+        <item>def</item>
+        <item>kr</item><item>707th</item>
+        <item>4</item>
+        <item>2</item>
+        <item>k1a</item>
+        <item>bosg 12 2</item>
+        <item>c75</item>
+        <item>smg-12</item>
+        <item>3</item><item>1</item>
+        <item>2</item><item>barbed</item>
+        <item>2</item><item>impact</item>
+        <item>0</item>
     </string-array>
 </resources>

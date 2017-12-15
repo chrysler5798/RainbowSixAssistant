@@ -94,6 +94,7 @@ public class HeaderListAdapter extends RecyclerView.Adapter<HeaderListAdapter.My
                     else
                     {
                         newAct = new Intent(context, OperatorActivity.class);
+                        newAct.putExtra("position", getAdapterPosition());
                         typeExtra = "operator";
                     }
 
@@ -115,41 +116,41 @@ public class HeaderListAdapter extends RecyclerView.Adapter<HeaderListAdapter.My
     public long getHeaderId(int position)
     {
         /*        Compte
-                    Assault : 15
-                    Pistols : 16
-                    LMG : 4
-                    SMG : 2
-                    Sniper : 4
-                    Shotgun : 14
-                    Submachine : 15
-                    TOTAL : 70
+                Assault : 16
+                Pistols : 16
+                LMG : 5
+                SMG : 4
+                Sniper : 5
+                Shotgun : 15
+                Submachine : 16
+                TOTAL : 77
          */
         if(isWeapon())
         {
-            if(position<15){
+            if(position<16){
                 return 0;
-            }else if(position<31){
-                return 15;
-            }else if(position<35){
-                return 31;
+            }else if(position<32){
+                return 16;
             }else if(position<37){
-                return 35;
+                return 32;
             }else if(position<41){
                 return 37;
-            }else if(position<55){
+            }else if(position<46){
                 return 41;
-            }else if(position<70){
-                return 55;
+            }else if(position<61){
+                return 46;
+            }else if(position<77){
+                return 61;
             }else{
-                return 62;
+                return 77;
             }
         }
         else
         {
-            if(position<16){
+            if(position<18){
                 return 0;
-            }else if(position<33){
-                return 16;
+            }else if(position<36){
+                return 18;
             }else {
                 return 0;
             }
@@ -170,27 +171,27 @@ public class HeaderListAdapter extends RecyclerView.Adapter<HeaderListAdapter.My
         int txtId = 0;
         if(isWeapon())
         {
-            if(position<15){
+            if(position<16){
                 txtId = R.string.assault;
-            }else if(position<31){
+            }else if(position<32){
                 txtId = R.string.pistol;
-            }else if(position<35){
-                txtId = R.string.lightmachine;
             }else if(position<37){
-                txtId = R.string.machinepistol;
+                txtId = R.string.lightmachine;
             }else if(position<41){
+                txtId = R.string.machinepistol;
+            }else if(position<46){
                 txtId = R.string.marksmanrifle;
-            }else if(position<55){
+            }else if(position<61){
                 txtId = R.string.shotgun;
-            }else if(position<70){
+            }else if(position<77){
                 txtId = R.string.submachinegun;
             }
         }
         else
         {
-            if(position<16){
+            if(position<18){
                 txtId = R.string.attackers;
-            }else if(position<33){
+            }else if(position<36){
                 txtId = R.string.defenders;
             }
         }
