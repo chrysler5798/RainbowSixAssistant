@@ -422,7 +422,7 @@
     },
     "operator_35": {
       "name": "Vigil",
-      "side": 1,
+      "side": 0,
       "army": 13,
       "weapons_primary": [0,1],
       "weapons_secondary": [0,1],

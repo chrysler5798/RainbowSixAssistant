@@ -84,7 +84,7 @@ class WeaponsViewHolder extends ChildViewHolder
     ImageView imgOperator;
     TextView nomOperator;
 
-    WeaponsViewHolder(final View itemView)
+    WeaponsViewHolder(View itemView)
     {
         super(itemView);
 
@@ -96,7 +96,7 @@ class WeaponsViewHolder extends ChildViewHolder
             @Override
             public void onClick(View view)
             {
-                Context context = itemView.getContext();
+                Context context = view.getContext();
                 Intent newOperator = new Intent(context, OperatorActivity.class);
                 newOperator.putExtra("operator", nomOperator.getText().toString());
                 context.startActivity(newOperator);

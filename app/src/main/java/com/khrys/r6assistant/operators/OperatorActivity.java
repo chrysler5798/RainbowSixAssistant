@@ -112,14 +112,17 @@ public class OperatorActivity extends AppCompatActivity
 
             TypedArray opArray = getResources().obtainTypedArray(getResources().getIdentifier(operatorConvert, "array", getApplicationContext().getPackageName()));
 
-            int sideOp = operatorInfo.getInt("side");
+            String sideOp = opArray.getString(0);
+            //int sideOp = operatorInfo.getInt("side");
             String flagOp = opArray.getString(1);
             String armyOp = opArray.getString(2);
 
             int numberWeapons = opArray.getInt(3, 0) + 5;
             int numberScd = opArray.getInt(4, 0) + 5;
-            int speedOp = operatorInfo.getInt("speed");
-            int armorOp = operatorInfo.getInt("armor");
+            int numberSpeed = opArray.getInt(numberWeapons, 0);
+            int numberArmor = opArray.getInt(numberWeapons+ 1, 0);
+//            int speedOp = operatorInfo.getInt("speed");
+//            int armorOp = operatorInfo.getInt("armor");
 
             String numberGadget1 = opArray.getString(numberWeapons + 2);
             String nameGadget1 = opArray.getString(numberWeapons + 3);
@@ -127,7 +130,7 @@ public class OperatorActivity extends AppCompatActivity
             String numberGadget2 = opArray.getString(numberWeapons + 4);
             String nameGadget2 = opArray.getString(numberWeapons + 5);
 
-            int numberUniqueGadget = operatorInfo.getInt("gadget_unique_nb");
+            int numberUniqueGadget = opArray.getInt(numberWeapons + 6, 0);
 
             for (int i = 5; i < numberScd; i++)
             {
@@ -160,11 +163,11 @@ public class OperatorActivity extends AppCompatActivity
             //
             int sideTxtId = 0;
 
-            if(sideOp == 0)
+            if(sideOp.equals("def"))
             {
                 sideTxtId = R.string.defender;
             }
-            else if(sideOp == 1)
+            else if(sideOp.equals("atk"))
             {
                 sideTxtId = R.string.attacker;
             }
@@ -187,7 +190,7 @@ public class OperatorActivity extends AppCompatActivity
             //
             int armorTxt, armorImg;
 
-            switch (armorOp)
+            switch (numberArmor)
             {
                 case 1:
                     armorTxt = R.string.armor_light;
@@ -222,7 +225,7 @@ public class OperatorActivity extends AppCompatActivity
             //
             int speedTxt, speedImg;
 
-            switch (speedOp)
+            switch (numberSpeed)
             {
                 case 1:
                     speedTxt = R.string.speed_slow;

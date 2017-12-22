@@ -67,7 +67,7 @@
     <string name="help_barrel">В нижней части страницы вы можете видеть статистику с рейтингом наствольников. \nПервый из них может сделать надежную управляемую длинную очередь. В любом случае, это зависит от вашего стиля игры.</string>
 
     <!--WEAPON STATS CREDIT-->
-    <string name="stats_credit_1">Большое спасибо Segio за таблицу со статистикой! Без него ничего бы не получилось.\nНАЖМИ ЗДЕСЬ, чтобы перейти на его YouTube Канал</string>
+    <string name="stats_credit_1">Большое спасибо Sergio за таблицу со статистикой! Без него ничего бы не получилось.\nНАЖМИ ЗДЕСЬ, чтобы перейти на его YouTube Канал</string>
     <string name="stats_credit_2">Также большое спасибо VarsityGaming за его преданность к игре, выражая это в видео!\nНАЖМИ ЗДЕСЬ, чтобы перейти на его YouTube Канал</string>
 
     <!--OPERATORS MENU-->
@@ -313,23 +313,25 @@
     <string name="translator_de">Mert Huz</string>
     <string name="translator_it">Andrea Verano</string>
     <string name="translator_ru">Maxim Lem</string>
-    <string name="translator_zh">Neel Lee</string>
+    <string name="translator_zh1">Gpoint Chen</string>
+    <string name="translator_zh2">Neel Lee</string>
     <string name="translator_pl">AK_D14BL0</string>
     <string name="translator_kr">sd_iron</string>
 
     <!--LANGUAGE-->
     <string name="language">Язык</string>
-    <string name="english">Английский</string>
-    <string name="french">Французский</string>
-    <string name="portuguese">Португальский</string>
-    <string name="italian">Итальянский</string>
-    <string name="german">Немецкий</string>
+    <string name="english">English</string>
+    <string name="french">Français</string>
+    <string name="portuguese">Português</string>
+    <string name="italian">Italiano</string>
+    <string name="german">Deutsch</string>
     <string name="russian">Русский</string>
-    <string name="chinese">Китайский</string>
-    <string name="polish">Польский</string>
-    <string name="japenese">Японский</string>
-    <string name="korean">Корейский</string>
-    <string name="spanish">Испанский</string>
+    <string name="polish">Polski</string>
+    <string name="japenese">日本語</string>
+    <string name="korean">한국어</string>
+    <string name="spanish">Español</string>
+    <string name="simplified_chinese">简体中文</string>
+    <string name="traditional_chinese">繁體中文</string>
 
     <!--MAP MENU-->
     <string name="takemap">Выбрать карту</string>

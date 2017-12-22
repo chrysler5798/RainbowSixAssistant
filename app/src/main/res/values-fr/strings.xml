@@ -67,7 +67,7 @@
     <string name="help_barrel">En bas de la page des Stats, vous pouvez voir le classement des canons. Le premier est celui qui rend l\'arme la plus contrôlable possible. Ceci dit, ça reste un choix personnel en fonction de votre style de jeu.</string>
 
     <!--WEAPON STATS CREDIT-->
-    <string name="stats_credit_1">Merci beaucoup à Segio pour la feuille de Stats ! Sans lui, rien n\'aurait été possible. \nCLIQUE ICI pour voir sa chaine Youtube</string>
+    <string name="stats_credit_1">Merci beaucoup à Sergio pour la feuille de Stats ! Sans lui, rien n\'aurait été possible. \nCLIQUE ICI pour voir sa chaine Youtube</string>
     <string name="stats_credit_2">Merci beaucoup à VarsityGaming aussi, pour sa vidéo sur les canons ! \nCLIQUE ICI pour voir sa chaine Youtube</string>
 
     <!--OPERATORS MENU-->
@@ -308,28 +308,30 @@
     <string name="warning">Attention !</string>
     <string name="settings_end">Vous devez redémarrer l\'application pour appliquer la nouvelle langue !</string>
 
-    <!--LANGUAGE-->
-    <string name="language">Langage</string>
-    <string name="english">Anglais</string>
-    <string name="french">Français</string>
-    <string name="portuguese">Portugais</string>
-    <string name="italian">Italien</string>
-    <string name="german">Allemand</string>
-    <string name="russian">Russe</string>
-    <string name="chinese">Chinois</string>
-    <string name="polish">Polonais</string>
-    <string name="japenese">Japonais</string>
-    <string name="korean">Coréen</string>
-    <string name="spanish">Espagnol</string>
-
     <!--CREDIT TO TRANSLATORS-->
     <string name="translator_pt">LeGuigo</string>
     <string name="translator_de">Mert Huz</string>
     <string name="translator_it">Andrea Verano</string>
     <string name="translator_ru">Maxim Lem</string>
-    <string name="translator_zh">Neel Lee</string>
+    <string name="translator_zh1">Gpoint Chen</string>
+    <string name="translator_zh2">Neel Lee</string>
     <string name="translator_pl">AK_D14BL0</string>
     <string name="translator_kr">sd_iron</string>
+
+    <!--LANGUAGE-->
+    <string name="language">Langage</string>
+    <string name="english">English</string>
+    <string name="french">Français</string>
+    <string name="portuguese">Português</string>
+    <string name="italian">Italiano</string>
+    <string name="german">Deutsch</string>
+    <string name="russian">Русский</string>
+    <string name="polish">Polski</string>
+    <string name="japenese">日本語</string>
+    <string name="korean">한국어</string>
+    <string name="spanish">Español</string>
+    <string name="simplified_chinese">简体中文</string>
+    <string name="traditional_chinese">繁體中文</string>
 
     <!--MAP MENU-->
     <string name="takemap">Sélectionne une carte</string>

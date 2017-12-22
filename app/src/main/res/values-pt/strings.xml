@@ -67,7 +67,7 @@
     <string name="help_barrel">At the bottom of stats page, you can see the ranking of barrels. \nThe first is the one which had the most reliable spray to control.\n Anyways it\'s up to you and your playstyle.</string>
 
     <!--WEAPON STATS CREDIT-->
-    <string name="stats_credit_1">Thanks a lot to Segio for the sheet of stats ! Without him, nothing would have been possible. \nCLICK HERE to see his Youtube Channel</string>
+    <string name="stats_credit_1">Thanks a lot to Sergio for the sheet of stats ! Without him, nothing would have been possible. \nCLICK HERE to see his Youtube Channel</string>
     <string name="stats_credit_2">Thanks a lot to VarsityGaming as well, for its videos about attachment ! \nCLICK HERE to see his Youtube Channel</string>
 
     <!--OPERATORS MENU-->
@@ -313,23 +313,25 @@
     <string name="translator_de">Mert Huz</string>
     <string name="translator_it">Andrea Verano</string>
     <string name="translator_ru">Maxim Lem</string>
-    <string name="translator_zh">Neel Lee</string>
+    <string name="translator_zh1">Gpoint Chen</string>
+    <string name="translator_zh2">Neel Lee</string>
     <string name="translator_pl">AK_D14BL0</string>
     <string name="translator_kr">sd_iron</string>
 
     <!--LANGUAGE-->
     <string name="language">Idioma</string>
-    <string name="english">Inglês</string>
-    <string name="french">Francês</string>
+    <string name="english">English</string>
+    <string name="french">Français</string>
     <string name="portuguese">Português</string>
     <string name="italian">Italiano</string>
-    <string name="german">Alemão</string>
-    <string name="russian">Russo</string>
-    <string name="chinese">Chinese</string>
-    <string name="polish">Polish</string>
-    <string name="japenese">Japenese</string>
-    <string name="korean">Korean</string>
-    <string name="spanish">Spanish</string>
+    <string name="german">Deutsch</string>
+    <string name="russian">Русский</string>
+    <string name="polish">Polski</string>
+    <string name="japenese">日本語</string>
+    <string name="korean">한국어</string>
+    <string name="spanish">Español</string>
+    <string name="simplified_chinese">简体中文</string>
+    <string name="traditional_chinese">繁體中文</string>
 
     <!--MAP MENU-->
     <string name="takemap">Selecione um Mapa</string>

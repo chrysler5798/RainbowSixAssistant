@@ -64,15 +64,19 @@ public class SplashActivity extends Activity
                     break;
 
                 case 6:
-                    language = "zh";
-                    break;
-
-                case 7:
                     language = "pl";
                     break;
 
-                case 8:
+                case 7:
                     language = "ko";
+                    break;
+
+                case 8:
+                    language = "zh";
+                    break;
+
+                case 9:
+                    language = "zh";
                     break;
 
                 default:
@@ -80,7 +84,20 @@ public class SplashActivity extends Activity
                     break;
             }
 
-            Locale locale = new Locale(language);
+            Locale locale;
+            if(langue == 8)
+            {
+                locale = new Locale(language, "CN");
+            }
+            else if(langue == 9)
+            {
+                locale = new Locale(language, "TW");
+            }
+            else
+            {
+                locale = new Locale(language);
+            }
+
             Locale.setDefault(locale);
             Configuration config = new Configuration();
             config.locale = locale;

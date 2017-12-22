@@ -26,13 +26,13 @@ public class SettingsActivity extends AppCompatActivity
 
     private static final String PREFS_LANG = "PREFS_LANG";
     private static final String ON_LANG = "ON_LANG";
-    int yes;
+    int languageId;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        String[] textArray = {getRes(R.string.english),getRes(R.string.french),getRes(R.string.portuguese),getRes(R.string.german),getRes(R.string.italian), getRes(R.string.russian), getRes(R.string.chinese), getRes(R.string.polish), getRes(R.string.korean)};
-        Integer[] imageArray = {R.drawable.flag_gb,R.drawable.flag_fr,R.drawable.flag_pt,R.drawable.flag_de,R.drawable.flag_it, R.drawable.flag_ru, R.drawable.flag_zh, R.drawable.flag_pl, R.drawable.flag_kr};
+        String[] textArray = {getRes(R.string.english),getRes(R.string.french),getRes(R.string.portuguese),getRes(R.string.german),getRes(R.string.italian), getRes(R.string.russian), getRes(R.string.polish), getRes(R.string.korean), getRes(R.string.simplified_chinese), getRes(R.string.traditional_chinese)};
+        Integer[] imageArray = {R.drawable.flag_gb,R.drawable.flag_fr,R.drawable.flag_pt,R.drawable.flag_de,R.drawable.flag_it, R.drawable.flag_ru, R.drawable.flag_pl, R.drawable.flag_kr, R.drawable.flag_zhcn, R.drawable.flag_zhtw};
 
         super.onCreate(savedInstanceState);
 
@@ -43,7 +43,7 @@ public class SettingsActivity extends AppCompatActivity
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        Spinner spinner = (Spinner) findViewById(R.id.spinnerLanguage);
+        Spinner spinner = findViewById(R.id.spinnerLanguage);
 
         SpinnerAdapter adapter = new SpinnerAdapter(this, textArray, imageArray);
         spinner.setAdapter(adapter);
@@ -51,52 +51,65 @@ public class SettingsActivity extends AppCompatActivity
         switch(Locale.getDefault().getLanguage())
         {
             case "en":
-                yes = 0;
+                languageId = 0;
                 break;
 
             case "fr":
-                yes = 1;
+                languageId = 1;
                 break;
 
             case "pt":
-                yes = 2;
+                languageId = 2;
                 break;
 
             case "de":
-                yes = 3;
+                languageId = 3;
                 break;
 
             case "it":
-                yes = 4;
+                languageId = 4;
                 break;
 
             case "ru":
-                yes = 5;
-                break;
-
-            case "zh":
-                yes = 6;
+                languageId = 5;
                 break;
 
             case "pl":
-                yes = 7;
+                languageId = 6;
                 break;
 
             case "ko":
-                yes = 8;
+                languageId = 7;
+                break;
+
+            case "zh":
+                switch (Locale.getDefault().getCountry())
+                {
+                    case "CN":
+                        languageId = 8;
+                        break;
+
+                    case "TW":
+                        languageId = 9;
+                        break;
+
+                    default:
+                        languageId = 8;
+                        break;
+                }
                 break;
 
             default:
-                yes = 0;
+                languageId = 0;
                 break;
         }
-        spinner.setSelection(yes);
+        spinner.setSelection(languageId);
 
         spinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(AdapterView<?> parent, View view, int position, long id) {
 
-                if(position != yes)
+                if(position != languageId)
                 {
                     showDialogToExit(position);
                 }

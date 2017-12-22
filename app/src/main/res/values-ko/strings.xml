@@ -67,7 +67,7 @@
     <string name="help_barrel">무기 정보 페이지의 하단에는 총열의 추천 우선순위가 있습니다. \n첫번째 것부터 반동 제어가 쉬운 순서입니다.\n그러나 이 모든 것은 당신의 게임 방식에 따라 맞추는 것이 제일 좋습니다.</string>
 
     <!--WEAPON STATS CREDIT-->
-    <string name="stats_credit_1">무기 정보를 제공해 준 Segio에게 감사의 말씀을 드립니다. 그가 없었더라면, 이 모든 것이 가능하지 않았을 것입니다.\n그의 유튜브 채널을 보려면 여기를 누르세요.</string>
+    <string name="stats_credit_1">무기 정보를 제공해 준 Sergio에게 감사의 말씀을 드립니다. 그가 없었더라면, 이 모든 것이 가능하지 않았을 것입니다.\n그의 유튜브 채널을 보려면 여기를 누르세요.</string>
     <string name="stats_credit_2">또한 부착물에 대한 정보를 제공해 준 VarsityGaming에게도 감사의 말씀을 드립니다.\n그의 유튜브 채널을 보려면 여기를 누르세요.</string>
 
     <!--OPERATORS MENU-->
@@ -313,23 +313,25 @@
     <string name="translator_de">Mert Huz</string>
     <string name="translator_it">Andrea Verano</string>
     <string name="translator_ru">Maxim Lem</string>
-    <string name="translator_zh">Neel Lee</string>
+    <string name="translator_zh1">Gpoint Chen</string>
+    <string name="translator_zh2">Neel Lee</string>
     <string name="translator_pl">AK_D14BL0</string>
     <string name="translator_kr">sd_iron</string>
 
     <!--LANGUAGE-->
     <string name="language">Language</string>
     <string name="english">English</string>
-    <string name="french">French</string>
-    <string name="portuguese">Portuguese</string>
-    <string name="italian">Italian</string>
-    <string name="german">German</string>
-    <string name="russian">Russian</string>
-    <string name="chinese">Chinese</string>
-    <string name="polish">Polish</string>
-    <string name="japenese">Japenese</string>
-    <string name="korean">Korean</string>
-    <string name="spanish">Spanish</string>
+    <string name="french">Français</string>
+    <string name="portuguese">Português</string>
+    <string name="italian">Italiano</string>
+    <string name="german">Deutsch</string>
+    <string name="russian">Русский</string>
+    <string name="polish">Polski</string>
+    <string name="japenese">日本語</string>
+    <string name="korean">한국어</string>
+    <string name="spanish">Español</string>
+    <string name="simplified_chinese">简体中文</string>
+    <string name="traditional_chinese">繁體中文</string>
 
     <!--MAP MENU-->
     <string name="takemap">맵을 선택하세요</string>

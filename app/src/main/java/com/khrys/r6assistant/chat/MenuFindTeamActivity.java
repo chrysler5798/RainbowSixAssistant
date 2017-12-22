@@ -68,7 +68,7 @@ public class MenuFindTeamActivity extends AppCompatActivity
             EditText editName;
             Spinner spinnerLanguage, spinnerMpMode, spinnerPlatform, spinnerRank, spinnerPlayerNeed;
             String[] modeMp = {getString(R.string.team_mpmode_1),getString(R.string.team_mpmode_2),getString(R.string.team_mpmode_3)}, platformsList = {"PC","Xbox ONE","PS4"}, ranksList = {getString(R.string.team_rank_1),getString(R.string.team_rank_2),getString(R.string.team_rank_3),getString(R.string.team_rank_4),getString(R.string.team_rank_5),getString(R.string.team_rank_6)};
-            String[] languagesList = {getString(R.string.english),getString(R.string.chinese),getString(R.string.french),getString(R.string.german),getString(R.string.italian),getString(R.string.japenese),getString(R.string.korean),getString(R.string.polish),getString(R.string.portuguese),getString(R.string.russian),getString(R.string.spanish)};
+            String[] languagesList = {getString(R.string.english),getString(R.string.simplified_chinese),getString(R.string.french),getString(R.string.german),getString(R.string.italian),getString(R.string.japenese),getString(R.string.korean),getString(R.string.polish),getString(R.string.portuguese),getString(R.string.russian),getString(R.string.spanish)};
             String[] languagesIdList = {"gb","zh","fr","de","it","jp","kr","pl","pt","ru","es"};
             String[] numberOfPlayers = {"1","2","3"};
 
