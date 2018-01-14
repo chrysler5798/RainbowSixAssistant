@@ -28,6 +28,10 @@
     <string name="soon">Bald…</string>
     <string name="msgsoon">Diese neue Funktionen kommen bald !</string>
 
+    <!--UPDATE APP-->
+    <string name="update_title">An update is available !</string>
+    <string name="update_text">You are using an older version of R6 Assistant, do you want to update it ?</string>
+
     <!--RATE APP POPUP-->
     <string name="ratetitle">Bewerte R6 Assistant</string>
     <string name="ratemsg">Bewerte diese App und teile uns deine Meinung im Play Store</string>
@@ -203,14 +207,14 @@
     <string name="ugat_ela">Grzmot Mine</string>
     <string name="uga_ela">Annäherungs-Sprengminen, die an Oberflächen befestigt werden können. Beeinträchtigen das Hörvermögen und verursachen einen Schwindeleffekt.</string>
 
-    <string name="ugat_zofia">KS79 LIFELINE</string>
-    <string name="uga_zofia">Double barrel that can fire both concussion and impact grenades.</string>
+    <string name="ugat_zofia">KS79-RETTUNGSANKER</string>
+    <string name="uga_zofia">Ein Doppelwerfer, der Spreng- und Kontaktgranaten abfeuern kann.</string>
 
-    <string name="ugat_dokkaebi">LOGIC BOMB</string>
-    <string name="uga_dokkaebi">Uploads a virus that forces enemy devices to emit a loud buzz, thereby compromising their position.</string>
+    <string name="ugat_dokkaebi">LOGIKBOMBE</string>
+    <string name="uga_dokkaebi">Übermittelt einen Virus. durch den gegnerische Telefone ein leises, hörbares Brummen von sich geben und dadurch ihre Position verraten.</string>
 
-    <string name="ugat_vigil">ELECTRONIC RENDERING CLOAK (ERC-7)</string>
-    <string name="uga_vigil">Vigil scans surrounding devices to wipe his image from cameras and drones.</string>
+    <string name="ugat_vigil">ERT-7</string>
+    <string name="uga_vigil">Vigil scannt Geräte in der Umgebung, um sich vor Kameras und Drohnen zu tarnen.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Create</string>
@@ -308,21 +312,6 @@
     <string name="settings_end">Du musst die Anwednung neustarten, um die neue Sprache zu benutzen. !</string>
     <string name="warning">Warnung !</string>
 
-    <!--LANGUAGE-->
-    <string name="language">Sprache</string>
-    <string name="english">English</string>
-    <string name="french">Français</string>
-    <string name="portuguese">Português</string>
-    <string name="italian">Italiano</string>
-    <string name="german">Deutsch</string>
-    <string name="russian">Русский</string>
-    <string name="polish">Polski</string>
-    <string name="japenese">日本語</string>
-    <string name="korean">한국어</string>
-    <string name="spanish">Español</string>
-    <string name="simplified_chinese">简体中文</string>
-    <string name="traditional_chinese">繁體中文</string>
-
     <!--CREDIT TO TRANSLATORS-->
     <string name="translator_pt">LeGuigo</string>
     <string name="translator_de">Mert Huz</string>
@@ -332,6 +321,23 @@
     <string name="translator_zh2">Neel Lee</string>
     <string name="translator_pl">AK_D14BL0</string>
     <string name="translator_kr">sd_iron</string>
+    <string name="translator_sr">error55o</string>
+
+    <!--LANGUAGE-->
+    <string name="language">Sprache</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_polish">Polski</string>
+    <string name="language_japenese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_simplified_chinese">简体中文</string>
+    <string name="language_traditional_chinese">繁體中文</string>
+    <string name="language_serbian">Srpski</string>
 
     <!--MAP MENU-->
     <string name="takemap">Wähle eine Map</string>
@@ -373,15 +379,6 @@
         <string name="cam_3_6">(AUSSEN) Front-Einfahrt</string>
         <string name="cam_3_7">(AUSSEN) Garageneinfahrt</string>
 
-    <string name="map_name_12">Favela</string>
-        <string name="cam_12_0">(2. OG) Hintere Treppe</string>
-        <string name="cam_12_1">(2. OG) Haupttreppe</string>
-        <string name="cam_12_2">(EG) Waschküche</string>
-        <string name="cam_12_3">(EG) Treppenhaus</string>
-        <string name="cam_12_4">(AUSSEN) Schul-Gasse</string>
-        <string name="cam_12_5">(AUSSEN) Straße</string>
-        <string name="cam_12_6">(AUSSEN) Seitengasse</string>
-
     <string name="map_name_4">Hereford-Basis</string>
         <string name="cam_4_0">(AUSSEN) Dach</string>
         <string name="cam_4_1">(1. OG) Korridor</string>
@@ -390,6 +387,14 @@
         <string name="cam_4_4">(AUSSEN) Schießplatz Osteingang</string>
         <string name="cam_4_5">(AUSSEN) Gabelstapler-Bereich</string>
 
+    <string name="map_name_5">Haus</string>
+        <string name="cam_5_0">(1. OG) Oberer Gang</string>
+        <string name="cam_5_1">(EG) Küche</string>
+        <string name="cam_5_2">(K) Fitnessraum</string>
+        <string name="cam_5_3">(K) Garage</string>
+        <string name="cam_5_4">(AUSSEN) Vorgarten</string>
+        <string name="cam_5_5">(AUSSEN) Garten</string>
+
     <string name="map_name_6">Café Dostojewski</string>
         <string name="cam_6_0">(2. OG) Cocktail-Lounge</string>
         <string name="cam_6_1">(1. OG) Lesezimmer-korridor</string>
@@ -397,14 +402,6 @@
         <string name="cam_6_3">(EG) Bäckerei</string>
         <string name="cam_6_4">(AUSSEN) Westliche Hauptstraße</string>
         <string name="cam_6_5">(AUSSEN) Parkgasse</string>
-
-    <string name="map_name_5">Haus</string>
-        <string name="cam_5_0">(AUSSEN) Vordere Veranda oben</string>
-        <string name="cam_5_1">(EG) Küche</string>
-        <string name="cam_5_2">(K) Fitnessraum</string>
-        <string name="cam_5_3">(K) Garage</string>
-        <string name="cam_5_4">(AUSSEN) Vorgarten</string>
-        <string name="cam_5_5">(AUSSEN) Garten</string>
 
     <string name="map_name_7">Kanal</string>
         <string name="cam_7_0">(KTZ 2. OG) Kontrollraum-Gang</string>
@@ -415,22 +412,6 @@
         <string name="cam_7_5">(AUSSEN) Schleusentor</string>
         <string name="cam_7_6">(AUSSEN) Baustelle</string>
 
-    <string name="map_name_9">Präsidentenflugzeug</string>
-        <string name="cam_9_0">(DECK 3) Kabinenpersonal</string>
-        <string name="cam_9_1">(1. OG) Vorderer Gang</string>
-        <string name="cam_9_2">(DECK 2) Pressebereich A</string>
-        <string name="cam_9_3">(DECK 1) Gepäckraum</string>
-        <string name="cam_9_4">(DECK 1) Frachtraum</string>
-
-    <string name="map_name_11">Grenze</string>
-        <string name="cam_11_0">(1. OG) Ost-treppe</string>
-        <string name="cam_11_1">(1. OG) Haupt-flur</string>
-        <string name="cam_11_2">(EG) Haupt-lobby</string>
-        <string name="cam_11_3">(EG) Gang zum Ausgang</string>
-        <string name="cam_11_4">(AUSSEN) Parkplatz-eingang</string>
-        <string name="cam_11_5">(AUSSEN) Unfall-stelle</string>
-        <string name="cam_11_6">(AUSSEN) Parkplatz-gasse</string>
-
     <string name="map_name_8">Oregon</string>
         <string name="cam_8_0">(1. OG) Waffenlager-korridor</string>
         <string name="cam_8_1">(EG) Lobby</string>
@@ -439,6 +420,13 @@
         <string name="cam_8_4">(AUSSEN) Schrottplatz</string>
         <string name="cam_8_5">(AUSSEN) Parkplatz</string>
         <string name="cam_8_6">(AUSSEN) Baustelle</string>
+
+    <string name="map_name_9">Präsidentenflugzeug</string>
+        <string name="cam_9_0">(DECK 3) Kabinenpersonal</string>
+        <string name="cam_9_1">(1. OG) Vorderer Gang</string>
+        <string name="cam_9_2">(DECK 2) Pressebereich A</string>
+        <string name="cam_9_3">(DECK 1) Gepäckraum</string>
+        <string name="cam_9_4">(DECK 1) Frachtraum</string>
 
     <string name="map_name_10">Jacht</string>
         <string name="cam_10_0">(3. OG) Helipad-Eingang</string>
@@ -449,6 +437,24 @@
         <string name="cam_10_5">(EG) Maschinen-korridor</string>
         <string name="cam_10_6">(AUSSEN) Frontdeck</string>
         <string name="cam_10_7">(AUSSEN) Pool-Deck</string>
+
+    <string name="map_name_11">Grenze</string>
+        <string name="cam_11_0">(1. OG) Ost-treppe</string>
+        <string name="cam_11_1">(1. OG) Haupt-flur</string>
+        <string name="cam_11_2">(EG) Haupt-lobby</string>
+        <string name="cam_11_3">(EG) Gang zum Ausgang</string>
+        <string name="cam_11_4">(AUSSEN) Parkplatz-eingang</string>
+        <string name="cam_11_5">(AUSSEN) Unfall-stelle</string>
+        <string name="cam_11_6">(AUSSEN) Parkplatz-gasse</string>
+
+    <string name="map_name_12">Favela</string>
+        <string name="cam_12_0">(2. OG) Hintere Treppe</string>
+        <string name="cam_12_1">(2. OG) Haupttreppe</string>
+        <string name="cam_12_2">(EG) Waschküche</string>
+        <string name="cam_12_3">(EG) Treppenhaus</string>
+        <string name="cam_12_4">(AUSSEN) Schul-Gasse</string>
+        <string name="cam_12_5">(AUSSEN) Straße</string>
+        <string name="cam_12_6">(AUSSEN) Seitengasse</string>
 
     <string name="map_name_13">Wolkenkratzer</string>
         <string name="cam_13_0">(1. OG) Flur</string>
@@ -477,24 +483,24 @@
         <string name="cam_15_5">(AUSSEN) Ruinen</string>
         <string name="cam_15_6">(AUSSEN) Ruinen</string>
 
-    <string name="map_name_16">Theme park</string>
-        <string name="cam_16_0">(1F) Gallery</string>
-        <string name="cam_16_1">(2F) Haunted Stairs</string>
-        <string name="cam_16_2">(1F) Joint Corridor</string>
-        <string name="cam_16_3">(2F) Upper Arcarde</string>
-        <string name="cam_16_4">(2F) Rail Platform</string>
-        <string name="cam_16_5">(EXT) Teacups</string>
-        <string name="cam_16_6">(EXT) Service Entrance</string>
-        <string name="cam_16_7">(EXT) Guest Info</string>
+    <string name="map_name_16">Freizeitpark</string>
+        <string name="cam_16_0">(EG) Galerie</string>
+        <string name="cam_16_1">(1. OG) Spuktreppe</string>
+        <string name="cam_16_2">(EG) Verbindungskorridor</string>
+        <string name="cam_16_3">(1. OG) Obere Spiehalle</string>
+        <string name="cam_16_4">(1. OG) Bahnsteig</string>
+        <string name="cam_16_5">(AUSSEN) Teetassen</string>
+        <string name="cam_16_6">(AUSSEN) Service-Eingang</string>
+        <string name="cam_16_7">(AUSSEN) Gästeinformation</string>
 
-    <string name="map_name_17">Tower</string>
-        <string name="cam_17_0">(2F) Gallery Main</string>
-        <string name="cam_17_1">(2F) Exhibit Hallway</string>
-        <string name="cam_17_2">(2F) Company Reception</string>
-        <string name="cam_17_3">(1F) Traditional Hall</string>
-        <string name="cam_17_4">(1F) West Balcony</string>
-        <string name="cam_17_5">(2F) Center Atrium</string>
-        <string name="cam_17_6">(1F) Fountain</string>
+    <string name="map_name_17">Turm</string>
+        <string name="cam_17_0">(1. OG) Hauptgalerie</string>
+        <string name="cam_17_1">(1. OG) Ausstellungskorridor</string>
+        <string name="cam_17_2">(1. OG) Firmenempfang</string>
+        <string name="cam_17_3">(EG) Traditioneller Saal</string>
+        <string name="cam_17_4">(EG) Westbalkon</string>
+        <string name="cam_17_5">(1. OG) Atrium Mitte</string>
+        <string name="cam_17_6">(EG) Wasserbecken</string>
 
     <string name="destroyPhrase">%d</string>
     <string name="cameraPhrase">%d cameras</string>

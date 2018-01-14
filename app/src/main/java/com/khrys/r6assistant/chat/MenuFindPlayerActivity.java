@@ -69,7 +69,7 @@ public class MenuFindPlayerActivity extends AppCompatActivity
             EditText editName;
             Spinner spinnerLanguage, spinnerMpMode, spinnerPlatform, spinnerRank;
             String[] modeMp = {getString(R.string.team_mpmode_1),getString(R.string.team_mpmode_2),getString(R.string.team_mpmode_3)}, platformsList = {"PC","Xbox ONE","PS4"}, ranksList = {getString(R.string.team_rank_1),getString(R.string.team_rank_2),getString(R.string.team_rank_3),getString(R.string.team_rank_4),getString(R.string.team_rank_5),getString(R.string.team_rank_6)};
-            String[] languagesList = {getString(R.string.english),getString(R.string.simplified_chinese),getString(R.string.french),getString(R.string.german),getString(R.string.italian),getString(R.string.japenese),getString(R.string.korean),getString(R.string.polish),getString(R.string.portuguese),getString(R.string.russian),getString(R.string.spanish)};
+            String[] languagesList = {getString(R.string.language_english),getString(R.string.language_simplified_chinese),getString(R.string.language_french),getString(R.string.language_german),getString(R.string.language_italian),getString(R.string.language_japenese),getString(R.string.language_korean),getString(R.string.language_polish),getString(R.string.language_portuguese),getString(R.string.language_russian),getString(R.string.language_spanish)};
             String[] languagesIdList = {"gb","zh","fr","de","it","jp","kr","pl","pt","ru","es"};
 
             @Override

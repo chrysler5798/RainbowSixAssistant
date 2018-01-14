@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--GLOBAL TEXT-->
+    <string name="app_name">R6 Asistent</string>
+
+    <!--BASIC WORDS-->
+    <string name="go">IDI</string>
+    <string name="or">ILI</string>
+    <string name="close">Zatvori</string>
+
+    <!--BASIC NUMBERS-->
+    <string name="n1">1</string>
+    <string name="n2">2</string>
+    <string name="n3">3</string>
+    <string name="n4">4</string>
+    <string name="n5">5</string>
+
+    <!--MAIN MENU-->
+    <string name="cameras">Kamere</string>
+    <string name="twitch">Twitch</string>
+    <string name="mapplans">Mape &amp; Planovi</string>
+    <string name="online">Mrežni \n Razgovor &amp; pronađi igrače</string>
+    <string name="guns">Statistika Oružja</string>
+    <string name="operators">Operateri</string>
+    <string name="more">Više</string>
+
+    <!--SOON MSG-->
+    <string name="soon">Uskoro…</string>
+    <string name="msgsoon">Ovo svojstvo dolazi uskoro !</string>
+
+    <!--UPDATE APP-->
+    <string name="update_title">An update is available !</string>
+    <string name="update_text">You are using an older version of R6 Assistant, do you want to update it ?</string>
+
+    <!--RATE APP POPUP-->
+    <string name="ratetitle">Ocenite R6 Asistent</string>
+    <string name="ratemsg">Ocenite aplikaciju i napišite povratne informacije na Play Prodavnici</string>
+    <string name="error_market">Greška : nemoguće je pronaći aplikaciju Play Prodavnica !</string>
+
+    <!--WEAPONS STATS-->
+    <string name="beta_msg">Ovo je BETA !\nTo znači da pojedine stvari fale. Radimo na prevodu !</string>
+    <string name="byoperator">Po operaterima</string>
+    <string name="byweapons">Po oružju</string>
+    <string name="legs">noge</string>
+    <string name="body">telo</string>
+    <string name="rookarmor">Rook Pancir</string>
+
+    <!--WEAPONS STATS CLASS-->
+    <string name="assault">Jurišna puška</string>
+    <string name="pistol">Pištolji</string>
+    <string name="lightmachine">Lagani mitraljez</string>
+    <string name="machinepistol">Mašinski Pištolj</string>
+    <string name="marksmanrifle">Snajperi</string>
+    <string name="shotgun">Sačmara</string>
+    <string name="submachinegun">Mašinka</string>
+
+    <!--WEAPONS BARRELS-->
+    <string name="compensator">Kompenzator</string>
+    <string name="flash_hider">Skrivač blica</string>
+    <string name="muzzle_brake">Stabilizator </string>
+    <string name="suppressor">Prigušivač</string>
+    <string name="extended_barrel">Produžena cev</string>
+
+    <!--WEAPON STATS HELP-->
+    <string name="help_title">Statistika Oružja</string>
+    <string name="help_ammo">Ovo je broj municije u šaržeru.</string>
+    <string name="help_firerate">Ovo je Brzina pucanja, to je frekvencija kojom određeno oružje može pucati ili ispaliti projektile</string>
+    <string name="help_damagefalloff">Ovo je Opadanje Štete, to je daljina sa koje se pravi manja šteta</string>
+    <string name="help_armor">Šteta protiv operatera sa jačinom pancira 1, 2 ili 3</string>
+    <string name="help_armor_rook">Šteta protiv operatera sa jačinom poboljšanog pancira 1, 2 ili 3</string>
+    <string name="help_barrel">Na dnu stranice o statistikama, možete videti rank cevi. \nPrvi je onaj koji je imao najpouzdaniji sprej za kontrolu.\n U svakom slučaju, to je na vama i vašem stilu igre.</string>
+
+    <!--WEAPON STATS CREDIT-->
+    <string name="stats_credit_1">Hvala puno Segio za listu statistika ! Bez njega,ništa ne bi bilo moguće. \nPRITISNITE OVDE da vidite njegov Youtube Kanal</string>
+    <string name="stats_credit_2">Takođe hvala puno VarsityGaming , zbog njegovih videa o dodacima ! \nPRITISNITE OVDE da vidite njegov Youtube Kanal</string>
+
+    <!--OPERATORS MENU-->
+    <string name="bycountries">Po zemljama</string>
+    <string name="attackers">Napadači</string>
+    <string name="defenders">Branitelji</string>
+
+    <!--OPERATORS-->
+    <string name="attacker">Napadač</string>
+    <string name="defender">Branilac</string>
+    <string name="armor_light">Slab</string>
+    <string name="armor_heavy">Jak</string>
+    <string name="speed_slow">Spor</string>
+    <string name="speed_fast">Brz</string>
+    <string name="medium">Srednji</string>
+
+    <!--OPERATORS TITLE-->
+    <string name="speed">Brzina</string>
+    <string name="armor">Pancir</string>
+    <string name="primary">Primarno</string>
+    <string name="secondary">Seckundarno</string>
+    <string name="gadget">Uređaj</string>
+    <string name="ugadget">Jedinstven uređaj</string>
+
+    <!--OPERATORS GADGET-->
+    <string name="gad_barbed">Bodljikave žice</string>
+    <string name="gad_breach">Eksplozivni prodor</string>
+    <string name="gad_frag">Granata</string>
+    <string name="gad_nitro">Nitro ćelija</string>
+    <string name="gad_shield">Štit na razmeštanje</string>
+    <string name="gad_smoke">Dimna granata</string>
+    <string name="gad_stun">Šok granata</string>
+    <string name="gad_impact">Impaktna granata</string>
+    <string name="gad_claymore">Mina</string>
+
+    <!--OPERATORS UNIQUE GADGET DESCRIPTION-->
+    <string name="ugat_ash">M120 CREM</string>
+    <string name="uga_ash">Ispaljuje eksplozivni prodor koji se zakopa u površinu i automatski detonira.</string>
+
+    <string name="ugat_bandit">CED-1</string>
+    <string name="uga_bandit">Postavlja šok žicu velikog napona na metalne uređaje, nanošenjem štete neprijatelju.</string>
+
+    <string name="ugat_blackbeard">TARS MK 0-Armored Rifle Shield</string>
+    <string name="uga_blackbeard">Ima štit na svom primarnom oružju.</string>
+
+    <string name="ugat_blitz">G52-Tactical Shield</string>
+    <string name="uga_blitz">Koristi bljesak prikačen na njegov balistički štit da privremeno oslepi neprijatelje.</string>
+
+    <string name="ugat_buck">SK 4–12</string>
+    <string name="uga_buck">Uključuje dodatak pumparice ispod cevi na svom primarnom oružju.</string>
+
+    <string name="ugat_capitao">TAC Mk0</string>
+    <string name="uga_capitao">Taktički samostrel koji puca strele na udar i mikro dimne bombe.</string>
+
+    <string name="ugat_castle">UTP1-Universal Tactical Panel</string>
+    <string name="uga_castle">Postavlja barikade otporne na metak, otpornije od standardnih.</string>
+
+    <string name="ugat_caveira">Silent step</string>
+    <string name="uga_caveira">Njen pištolj joj dozvoljava da proganja neprijatelje, gotovo nečujno, sve dok nije kasno.</string>
+
+    <string name="ugat_doc">MPD-0 Stim Pistol</string>
+    <string name="uga_doc">Može da podigne sebe ili saigrače sa distance. Takođe može pružiti privremeni podsticaj.</string>
+
+    <string name="ugat_echo">YOKAI</string>
+    <string name="uga_echo">Leteći dron koji oslobađa dezorijentisane zvučne talase. Yokai takođe prenosi video zapise Echo-u i njegovom timu.</string>
+
+    <string name="ugat_frost">Sterling MK2 LHT</string>
+    <string name="uga_frost">Koristi mehaničku zamku kako bi onesposobila neprijatelje.</string>
+
+    <string name="ugat_fuze">APM-6 "Matryoshka"</string>
+    <string name="uga_fuze">Koristi grupna punjenja koja prolaze i drže zidove, oslobađajući granate na suprotnoj strani zida.</string>
+
+    <string name="ugat_glaz">HDS Flip Sight</string>
+    <string name="uga_glaz">Uključuje opseg uvećanja sa sofisticiranim senzorima slike koji obeležavaju mete velikog dometa, čak i kroz dim.</string>
+
+    <string name="ugat_hibana">X-KAIROS</string>
+    <string name="uga_hibana">40mm raketni bacač granata eksplozivnih kuglica koje se mogu detonirati sa daljine.</string>
+
+    <string name="ugat_iq">RED MK III "Spectre"</string>
+    <string name="uga_iq">Koristi Elektronski Detektor da locira bilo koju elektroniku u opsegu kroz prepreke kao što su zidovi.</string>
+
+    <string name="ugat_jackal">EYENOX MODEL III</string>
+    <string name="uga_jackal">Naočare za praćenje koje lociraju ciljeve otkrivajući i prepoznavajući najnovije korake.</string>
+
+    <string name="ugat_jager">ADS-MKIV "Magpie"</string>
+    <string name="uga_jager">Koristi aktivnu odbranu kako bi presreo granate pre nego što se detoniraju.</string>
+
+    <string name="ugat_kapkan">EDD MK II</string>
+    <string name="uga_kapkan">Postavlja zamke na prozorima i okvirima vrata.</string>
+
+    <string name="ugat_mira">BLACK MIRROR</string>
+    <string name="uga_mira">Postavlja jednosmerni prozor protiv metaka na lomljive i ojačane zidove. Takođe se može izbaciti da stvori rupu za ubistvo.</string>
+
+    <string name="ugat_montagne">Le Roc</string>
+    <string name="uga_montagne">Može da produži svoj štit za punu zaštitu dok stoji.</string>
+
+    <string name="ugat_mute">GC90 "Moni" Signal Disruptor</string>
+    <string name="uga_mute">Zamagljuje komunikaciju za daljinski detonirane naprave ili dronove u svom opsegu.</string>
+
+    <string name="ugat_pulse">HB-5 Cardiac Sensor</string>
+    <string name="uga_pulse">Detektuje otkucaje srca na maloj udaljenosti kroz prepreke.</string>
+
+    <string name="ugat_rook">R1N "Rhino" Armor</string>
+    <string name="uga_rook">Spušta torbu koja je puna oklopa za saigrače.</string>
+
+    <string name="ugat_sledge">Tactical Breaching Hammer "The Caber"</string>
+    <string name="uga_sledge">Upotrebljava čekić za razvaljivanje da probije kroz slabe površine.</string>
+
+    <string name="ugat_smoke">Compound Z8 Grenade</string>
+    <string name="uga_smoke">Postavlja daljinski detonirane toksične gasove.</string>
+
+    <string name="ugat_tachanka">RP-46 Degtyaryov Machine Gun</string>
+    <string name="uga_tachanka">Postavlja motorizovan LMG s balističkim štitom koji štiti glavu od frontalnih metaka.</string>
+
+    <string name="ugat_thatcher">EG MK0-EMP Grenade</string>
+    <string name="uga_thatcher">Koristi EMP granate kako bi onemogućio bilo koju elektroniku u opsegu.</string>
+
+    <string name="ugat_thermite">BRIMSTONE BC-3 Exothermic Charge</string>
+    <string name="uga_thermite">Postavlja egzotermično punjenje koje uništava ojačane zidove.</string>
+
+    <string name="ugat_twitch">RSD Model 1 Shock Drone</string>
+    <string name="uga_twitch">Koristi dva Šok Drona kako bi onemogućila zamke ili povredila neprijatelje. Koristi prvi Šok Dron tokom pripremne faze.</string>
+
+    <string name="ugat_valkyrie">Gyro Cam Mk2</string>
+    <string name="uga_valkyrie">Može postaviti kamere, dostupne celom timu pomoću alata za posmatranje.</string>
+
+    <string name="ugat_ying">Candela</string>
+    <string name="uga_ying">Grupa blic granata koje se mogu učvrstiti na površinama ili se baciti kao granata.</string>
+
+    <string name="ugat_lesion">Gu</string>
+    <string name="uga_lesion">Maskirane toksične mine ubrizgavaju otrov koji povređuje protivnike i ograničava njihovu brzinu.</string>
+
+    <string name="ugat_ela">Grzmot Mine</string>
+    <string name="uga_ela">Mine potresa koje se mogu zakačiti na površinama, oštećuju sluh i izazivaju vrtoglavicu.</string>
+
+    <string name="ugat_zofia">KS79 LIFELINE</string>
+    <string name="uga_zofia">Dvostruka cev koja može ispaliti i potresne granate i udarne granate.</string>
+
+    <string name="ugat_dokkaebi">LOGIC BOMB</string>
+    <string name="uga_dokkaebi">Prenosi virus koji prisiljava neprijateljske uređaje da emitiraju glasno zujanje, čime otkriva njihov položaj.</string>
+
+    <string name="ugat_vigil">ELECTRONIC RENDERING CLOAK (ERC-7)</string>
+    <string name="uga_vigil">Vigil skenira okolne uređaje kako bi obrisao njegovu sliku sa kamera i dronova.</string>
+
+    <!--ONLINE-->
+    <string name="create_txt">Napravi</string>
+    <string name="message">Poruka</string>
+    <string name="online_chat_msg">Zdravo ! Ja nisam policajac, molim te budi pristojan u ćaskanju. Napravio sam ovu aplikaciju da vam pomognem, ne da vas banujem.</string>
+
+    <!--ONLINE MENU-->
+    <string name="find_team">Pronađi tim</string>
+    <string name="find_players">Pronađi igrače</string>
+    <string name="chat">Ćaskanje</string>
+
+    <!--ONLINE SIGN IN-->
+    <string name="online_signin">Prijavi se</string>
+    <string name="enternick_online">Unesi svoje korisničko ime :</string>
+    <string name="signin_online">Korisničko ime je prekratko !</string>
+    <string name="online_welcome">Dobrodošao u R6 Asistent na mreži</string>
+
+    <!--ONLINE ERROR-->
+    <string name="no_internet">Nema internet konekcije !</string>
+    <string name="online_fail">Autentičnost nije uspela.</string>
+    <string name="maintenance">Održavanje !</string>
+    <string name="not_updated">Tvoja aplikacija nije ažurirana !</string>
+    <string name="not_updated_msg">Moraš da ažuriraš aplikaciju na Play Prodavnici da bi koristio R6 Asistent na mreži.</string>
+
+    <!--TEAM ONLINE MSG-->
+    <string name="team_dialog_title">Budi oprezan</string>
+    <string name="team_dialog_msg">Ako napustiš aplikaciju, tvoj tim će biti uklonjen. Moraćeš da napraviš novi .</string>
+    <string name="player_dialog_msg">Ako napustiš aplikaciju, tvoj profil će biti uklonjen. Moraćeš da napraviš novi.</string>
+
+    <string name="team_full_dialog_title">Da li je tvoj tim pun ?</string>
+    <string name="team_full_dialog_msg">Ako je tvoj tim pun, onda možeš da ga ukloniš sa pretrage igrača.</string>
+
+    <string name="team_leave_dialog_title">Da li si siguran da želiš da odeš ?</string>
+    <string name="team_leave_dialog_msg">Ako izađeš, tvoj tim će biti uklonjen. Moraćeš da napraviš novi.</string>
+    <string name="player_leave_dialog_msg">Ako izađeš, tvoj profil će biti uklonjen. Moraćeš da napraviš novi.</string>
+    <string name="team_leave_dialog">Izađi</string>
+    <string name="team_stay_dialog">Ostani</string>
+
+    <string name="team_tag_admin">[Tim admina] </string>
+    <string name="player_tag_admin">[Igrač] </string>
+
+    <!--TEAM and PLAYER ONLINE-->
+    <string name="create_team">Napravi novi tim</string>
+    <string name="create_uteam">Napravi svoj tim</string>
+
+    <string name="team_msg_nothing">Trenutno nema timova. Ako već imaš tim, dodaj tvoj tim sa dugmetom na dnu i sačekaj igrače da se pridruže tvojoj sobi.</string>
+    <string name="player_msg_nothing">Trenutno nema igrača. Ako traziš tim, dodaj svoj profil sa dugmetom na dnu i sačekaj igrače da se pridruže tvojoj sobi.</string>
+
+    <string name="create_player">Dodaj sebe kao igrača</string>
+    <string name="create_uplayer">Napravi svoj profil</string>
+
+    <string name="team_name">Ime tima:</string>
+    <string name="team_name_error">Ime tima je prekratko !</string>
+    <string name="player_name_error">Tvoje ime je prekratko !</string>
+
+    <string name="player_name">Tvoje ime:</string>
+
+    <string name="team_language">Jezik:</string>
+
+    <string name="team_platform">Platforma:</string>
+
+    <string name="team_mpmode">Mod za više igrača:</string>
+    <string name="team_mpmode_for">za</string>
+    <string name="team_mpmode_1">Casual</string>
+    <string name="team_mpmode_2">Ranked</string>
+    <string name="team_mpmode_3">Vežba</string>
+
+    <string name="team_rank">Rank:</string>
+    <string name="team_rank_1">Bakar</string>
+    <string name="team_rank_2">Bronza</string>
+    <string name="team_rank_3">Srebro</string>
+    <string name="team_rank_4">Zlato</string>
+    <string name="team_rank_5">Platina</string>
+    <string name="team_rank_6">Dijamant</string>
+
+    <string name="team_playerneed">Koliko ti igrača treba ?</string>
+
+    <!--LOBBY MENU-->
+    <string name="lobbytitle">LOBI ID : %d</string>
+
+    <!--MORE MENU-->
+    <string name="about">O tome</string>
+    <string name="settings">Podešavanja</string>
+
+    <!--ABOUT-->
+    <string name="labelabout">R6 Asistent - O tome</string>
+    <string name="abouttxt1">Ova aplikacija je napravljena od strane Khrys, samo igrač Rainbow Six Siege-a. Aplikacija je Otvorenog Porekla i nije povezana sa Ubisoft-om.\n\nSvaka povratna informacija, izveštaj o greškama, ili sugestije su veoma cenjeni . Kao aplikacija Otvorenog Porekla, možete da pristupite kodu zastupljenom na GitHub-u tako što na dnu stranice pritisnete na sliku .\n\nKhrys, developer i igrač.</string>
+
+    <!--SUPPORT-->
+    <string name="labelsupport">R6 Asistent - Podržite me</string>
+    <string name="supporttxt">Ova aplikacija je besplatna, bez reklama, bez plaćanja. Skidajući je, davajući povratne informacije ili ocenjivanjem aplikacije već ste mi dosta pomogli, hvala vam !\n\nPotrošio sam puno vremena na njoj, naravno jer sam ja hteo tako ali ako hoćete da donirate, dugme je ispod. Ako donirate vaše ime će uskoro biti u aplikaciji.\n\n Hvala puno ! \nKhrys</string>
+
+    <!--SETTINGS-->
+    <string name="labelsettings">R6 Asistent - Podešavanja</string>
+    <string name="warning">Upozorenje !</string>
+    <string name="settings_end">Moraš da restartuješ aplikaciju da bih primenio novi jezik !</string>
+
+    <!--CREDIT TO TRANSLATORS-->
+    <string name="translator_pt">LeGuigo</string>
+    <string name="translator_de">Mert Huz</string>
+    <string name="translator_it">Andrea Verano</string>
+    <string name="translator_ru">Maxim Lem</string>
+    <string name="translator_zh1">Gpoint Chen</string>
+    <string name="translator_zh2">Neel Lee</string>
+    <string name="translator_pl">AK_D14BL0</string>
+    <string name="translator_kr">sd_iron</string>
+    <string name="translator_sr">error55o</string>
+
+    <!--LANGUAGE-->
+    <string name="language">Language</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_polish">Polski</string>
+    <string name="language_japenese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_simplified_chinese">简体中文</string>
+    <string name="language_traditional_chinese">繁體中文</string>
+    <string name="language_serbian">Srpski</string>
+
+    <!--MAP MENU-->
+    <string name="takemap">Izaberi mapu</string>
+
+    <!--MAPS INFO-->
+    <string name="map_name_0">Banka</string>
+        <string name="cam_0_0">(1S) Lobi</string>
+        <string name="cam_0_1">(1S) Hodnik Kancelarije</string>
+        <string name="cam_0_2">(2S) Krovno stepenište</string>
+        <string name="cam_0_3">(P) Lobi Trezora</string>
+        <string name="cam_0_4">(IZL) Trg</string>
+        <string name="cam_0_5">(IZL) Rampa Garaže</string>
+        <string name="cam_0_6">(IZL) Uličica</string>
+
+    <string name="map_name_1">Koliba</string>
+        <string name="cam_1_0">(2S) Hodnik Spavaće sobe</string>
+        <string name="cam_1_1">(2S) Hodnik Kamina</string>
+        <string name="cam_1_2">(1S) Stepenice Biblioteke</string>
+        <string name="cam_1_3">(P) Garaža za motorne sanke</string>
+        <string name="cam_1_4">(IZL) Dvorište</string>
+        <string name="cam_1_5">(IZL) Dvorište iza kuće</string>
+
+    <string name="map_name_2">Kućni Klub</string>
+        <string name="cam_2_0">(2S) Hodnik Spavaće sobe</string>
+        <string name="cam_2_1">(1S) Bar</string>
+        <string name="cam_2_2">(1S) Garaža</string>
+        <string name="cam_2_3">(P) Hodnik Podruma</string>
+        <string name="cam_2_4">(IZL) VIP Parking</string>
+        <string name="cam_2_5">(IZL) Područje sa Grafitima</string>
+        <string name="cam_2_6">(IZL) Štenara</string>
+
+    <string name="map_name_3">Konzulat</string>
+        <string name="cam_3_0">(2S) Recepcija konzulata</string>
+        <string name="cam_3_1">(1S) Glavne Stepenice</string>
+        <string name="cam_3_2">(1S) Kancelarija za Vizu</string>
+        <string name="cam_3_3">(IZL) Prednja Vrata</string>
+        <string name="cam_3_4">(P) Hodnik sa ormarićima</string>
+        <string name="cam_3_5">(P) Garaža</string>
+        <string name="cam_3_6">(IZL) Prednja Uličica</string>
+        <string name="cam_3_7">(IZL) Garažni put</string>
+
+    <string name="map_name_4">Hereford Baza</string>
+    <string name="cam_4_0">(IZL) Krov</string>
+    <string name="cam_4_1">(2S) Hodnik</string>
+    <string name="cam_4_2">(1S) Hodnik 1</string>
+    <string name="cam_4_3">(P) Ormarići</string>
+    <string name="cam_4_4">(IZL) Streljana</string>
+    <string name="cam_4_5">(IZL) Područje viljuškara</string>
+
+    <string name="map_name_5">Kuća</string>
+        <string name="cam_5_0">(IZL) Prednji Trem</string>
+        <string name="cam_5_1">(1S) Kuhinja</string>
+        <string name="cam_5_2">(P) Soba za Rekreaciju</string>
+        <string name="cam_5_3">(P) Garaža</string>
+        <string name="cam_5_4">(IZL) Dvorište</string>
+        <string name="cam_5_5">(IZL) Bašta</string>
+
+    <string name="map_name_6">Kafe Dostoyevsky</string>
+        <string name="cam_6_0">(3S) Čekaonica sa Koktelima</string>
+        <string name="cam_6_1">(2S) Soba za Čitanje</string>
+        <string name="cam_6_2">(1S) Hodnik Hladne Sobe</string>
+        <string name="cam_6_3">(1S) Pekara</string>
+        <string name="cam_6_4">(IZL) Zapadna Glavna Ulica</string>
+        <string name="cam_6_5">(IZL) Uličica Parka</string>
+
+    <string name="map_name_7">Kanal</string>
+        <string name="cam_7_0">(CC3S) Hodnik Kontrolne Sobe</string>
+        <string name="cam_7_1">(CC2S) Kancelarija sa Mapama</string>
+        <string name="cam_7_2">(CG2S) Hodnik Obalne Straže</string>
+        <string name="cam_7_3">(CG1S) Hodnik Brodske opreme</string>
+        <string name="cam_7_4">(IZL) Travnjak</string>
+        <string name="cam_7_5">(IZL) Kapija</string>
+        <string name="cam_7_6">(IZL) Gradilište</string>
+
+    <string name="map_name_8">Oregon</string>
+        <string name="cam_8_0">(2S) Hodnik za oružja</string>
+        <string name="cam_8_1">(1S) Lobi</string>
+        <string name="cam_8_2">(1S) Hodnik Trpeze</string>
+        <string name="cam_8_3">(1S) Zadnja Scena</string>
+        <string name="cam_8_4">(IZL) Đubrište</string>
+        <string name="cam_8_5">(IZL) Parking</string>
+        <string name="cam_8_6">(IZL) Gradilište</string>
+
+    <string name="map_name_9">Predsednički avion</string>
+        <string name="cam_9_0">(3S) Osoblje kabine</string>
+        <string name="cam_9_1">(2S) Prednji Hodnik</string>
+        <string name="cam_9_2">(2S) Sekcija za Novinare A</string>
+        <string name="cam_9_3">(1S) Sekcija Prtljaga</string>
+        <string name="cam_9_4">(1S) Sekcija Tereta</string>
+
+    <string name="map_name_10">Jahta</string>
+        <string name="cam_10_0">(4S) Helipad Ulaz</string>
+        <string name="cam_10_1">(3S) Hodnik Spavaće sobe</string>
+        <string name="cam_10_2">(3S) Čekaonica</string>
+        <string name="cam_10_3">(2S) Prednje Stepenice</string>
+        <string name="cam_10_4">(2S) Zadnje Stepenice</string>
+        <string name="cam_10_5">(1S) Hodnik Motora</string>
+        <string name="cam_10_6">(IZL) Prednja Paluba</string>
+        <string name="cam_10_7">(IZL) Spa Paluba</string>
+
+    <string name="map_name_11">Granica</string>
+        <string name="cam_11_0">(2S) Istočne Stepenice</string>
+        <string name="cam_11_1">(2S) Glavni Hodnik</string>
+        <string name="cam_11_2">(1S) Glavni Lobi</string>
+        <string name="cam_11_3">(1S) Hodnik ka Izlazu</string>
+        <string name="cam_11_4">(IZL) Parking</string>
+        <string name="cam_11_5">(IZL) Mesto Sudara</string>
+        <string name="cam_11_6">(IZL) Uličica Parkinga</string>
+
+    <string name="map_name_12">Favela</string>
+        <string name="cam_12_0">(3S) Zadnje Stepenice</string>
+        <string name="cam_12_1">(3S) Glavne Stepenice</string>
+        <string name="cam_12_2">(1S) Soba za Pranje veša</string>
+        <string name="cam_12_3">(1S) Stepenište</string>
+        <string name="cam_12_4">(IZL) Uličica Škole</string>
+        <string name="cam_12_5">(IZL) Ulica</string>
+        <string name="cam_12_6">(IZL) Uličica</string>
+
+    <string name="map_name_13">Oblakoder</string>
+        <string name="cam_13_0">(2S) Hodnik</string>
+        <string name="cam_13_1">(1S) Restoran</string>
+        <string name="cam_13_2">(2S) Kućne stepenice</string>
+        <string name="cam_13_3">(1S) Kućni lobi</string>
+        <string name="cam_13_4">(IZL) Zapadna bašta</string>
+        <string name="cam_13_5">(IZL) Istočna bašta</string>
+        <string name="cam_13_6">(IZL) Ventilacija</string>
+
+    <string name="map_name_14">Bartlett U.</string>
+        <string name="cam_14_0">(2S) Hodnik Kompasa</string>
+        <string name="cam_14_1">(2S) Vidik Hodnika</string>
+        <string name="cam_14_2">(1S) Zakrivljena Dvorana</string>
+        <string name="cam_14_3">(1S) Lobi</string>
+        <string name="cam_14_4">(1S) Trpeza</string>
+        <string name="cam_14_5">(IZL) Glavna kapija</string>
+        <string name="cam_14_6">(IZL) Parking</string>
+
+    <string name="map_name_15">Obala</string>
+        <string name="cam_15_0">(1S) Hodnik</string>
+        <string name="cam_15_1">(1S) Glavni Lobi</string>
+        <string name="cam_15_2">(2S) Akvarijum</string>
+        <string name="cam_15_3">(2S) Hodnik</string>
+        <string name="cam_15_4">(IZL) Krov Garaže</string>
+        <string name="cam_15_5">(IZL) Ruševine</string>
+        <string name="cam_15_6">(IZL) Ruševine</string>
+
+    <string name="map_name_16">Zabavni park</string>
+        <string name="cam_16_0">(1S) Galerija</string>
+        <string name="cam_16_1">(2S) Uklete Stepenice</string>
+        <string name="cam_16_2">(1S) Spojeni Hodnik</string>
+        <string name="cam_16_3">(2S) Gornja Arkada</string>
+        <string name="cam_16_4">(2S) Platforma Šina</string>
+        <string name="cam_16_5">(IZL) Šolje za čaj</string>
+        <string name="cam_16_6">(IZL) Službeni ulaz</string>
+        <string name="cam_16_7">(IZL) Informacije za Goste</string>
+
+    <string name="map_name_17">Kula</string>
+        <string name="cam_17_0">(2S) Glavna Galerija</string>
+        <string name="cam_17_1">(2S) Hodnik za izložbu</string>
+        <string name="cam_17_2">(2S) Recepcija Kompanije</string>
+        <string name="cam_17_3">(1S) Tradicionalni Hodnik</string>
+        <string name="cam_17_4">(1S) Zapadni Balkon</string>
+        <string name="cam_17_5">(2S) Centralni Atrijum</string>
+        <string name="cam_17_6">(1S) Fontana</string>
+
+    <string name="destroyPhrase">%d</string>
+    <string name="cameraPhrase">%d kamere</string>
+    <string name="cameraPhrase2_1">%d preostalo kamera</string>
+    <string name="cameraPhrase2_2">%d preostalo kamera</string>
+    <string name="cameraAllDestroyed">Sve kamere uništene</string>
+    <string name="destroyed">X</string>
+
+    <!--FLOORS OF MAP PLAN-->
+    <string name="f_base">Podrum</string>
+    <string name="f_0">1. Sprat</string>
+    <string name="f_1">2. Sprat</string>
+    <string name="f_2">3. Sprat</string>
+    <string name="f_3">4. Sprat</string>
+
+    <!--FLOORS ERROR PHRASE-->
+    <string name="planerror">Planovi još nisu dostupni za ovu mapu !</string>
+    <string name="error_floor_below">Ne postoji sprat iznad !</string>
+    <string name="error_floor_above">Ne postoji sprat ispod !</string>
+
+    <!--IMAGE CONTENT DESCRIPTION-->
+    <string name="twitch_drone_image">Twitch Drone Image</string>
+    <string name="zoom_icon">Zoom Icon</string>
+    <string name="zoomedimg">Zoomed Image</string>
+    <string name="cellimg">Cell Image</string>
+    <string name="banner_image">Banner Image</string>
+    <string name="version_d">Version %S</string>
+    <string name="zoom">Zoom</string>
+    <string name="floor">FLOOR</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="resetzoom">resetzoom</string>
+    <string name="position">Positions</string>
+    <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
+    <string name="troll_face">Troll Face</string>
+    <string name="star">Star</string>
+    <string name="settingsicon">Icon Settings</string>
+    <!--WEAPON STATS CONTENT DESCRIPTION-->
+    <string name="name_weapon">Weapon Image</string>
+    <string name="op_1">Operator Icon 1</string>
+    <string name="op_2">Operator Icon 2</string>
+    <string name="op_3">Operator Icon 3</string>
+    <string name="op_4">Operator Icon 4</string>
+    <string name="ammo_icon">Ammo Icon</string>
+    <string name="firerate_icon">Fire rate Icon</string>
+    <string name="damagefall_icon">Damage fall off Icon</string>
+    <string name="rook_icon">Damage fall off Icon</string>
+    <string name="armor_light_icon">Light Amor Icon</string>
+    <string name="armor_medium_icon">Medium Amor Icon</string>
+    <string name="armor_heavy_icon">Heavy Amor Icon</string>
+    <string name="barrel_1">Image of the Barrel 1</string>
+    <string name="barrel_2">Image of the Barrel 2</string>
+    <string name="barrel_3">Image of the Barrel 3</string>
+    <string name="barrel_4">Image of the Barrel 4</string>
+    <string name="barrel_5">Image of the Barrel 5</string>
+</resources>

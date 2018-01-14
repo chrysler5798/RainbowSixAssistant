@@ -25,8 +25,12 @@
     <string name="more">더보기</string>
 
     <!--SOON MSG-->
-    <string name="soon">곧...</string>
+    <string name="soon">곧…</string>
     <string name="msgsoon">곧 이 새로운 기능이 찾아옵니다!</string>
+
+    <!--UPDATE APP-->
+    <string name="update_title">An update is available !</string>
+    <string name="update_text">You are using an older version of R6 Assistant, do you want to update it ?</string>
 
     <!--RATE APP POPUP-->
     <string name="ratetitle">R6 어시트턴트 앱을 평가해주세요♡</string>
@@ -317,21 +321,23 @@
     <string name="translator_zh2">Neel Lee</string>
     <string name="translator_pl">AK_D14BL0</string>
     <string name="translator_kr">sd_iron</string>
+    <string name="translator_sr">error55o</string>
 
     <!--LANGUAGE-->
     <string name="language">Language</string>
-    <string name="english">English</string>
-    <string name="french">Français</string>
-    <string name="portuguese">Português</string>
-    <string name="italian">Italiano</string>
-    <string name="german">Deutsch</string>
-    <string name="russian">Русский</string>
-    <string name="polish">Polski</string>
-    <string name="japenese">日本語</string>
-    <string name="korean">한국어</string>
-    <string name="spanish">Español</string>
-    <string name="simplified_chinese">简体中文</string>
-    <string name="traditional_chinese">繁體中文</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_polish">Polski</string>
+    <string name="language_japenese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_simplified_chinese">简体中文</string>
+    <string name="language_traditional_chinese">繁體中文</string>
+    <string name="language_serbian">Srpski</string>
 
     <!--MAP MENU-->
     <string name="takemap">맵을 선택하세요</string>
@@ -373,15 +379,6 @@
         <string name="cam_3_6">외부 정면 골목</string>
         <string name="cam_3_7">외부 차고 진입로</string>
 
-    <string name="map_name_12">빈민가</string>
-        <string name="cam_12_0">3층 뒤쪽 계단</string>
-        <string name="cam_12_1">3층 중앙 계단</string>
-        <string name="cam_12_2">1층 세탁실</string>
-        <string name="cam_12_3">1층 계단실</string>
-        <string name="cam_12_4">외부 학교 골목</string>
-        <string name="cam_12_5">외부 도로</string>
-        <string name="cam_12_6">외부 뒷골목</string>
-
     <string name="map_name_4">헤리퍼드 기지</string>
         <string name="cam_4_0">외부 옥상</string>
         <string name="cam_4_1">2층 통로</string>
@@ -390,14 +387,6 @@
         <string name="cam_4_4">외부 사격장</string>
         <string name="cam_4_5">외부 지게차 구역</string>
 
-    <string name="map_name_6">도스토예프스키 카페</string>
-        <string name="cam_6_0">3층 칵테일 라운지</string>
-        <string name="cam_6_1">2층 독서실</string>
-        <string name="cam_6_2">1층 냉장실 통로</string>
-        <string name="cam_6_3">1층 제과점</string>
-        <string name="cam_6_4">외부 서쪽 대로</string>
-        <string name="cam_6_5">외부 공원 골목</string>
-
     <string name="map_name_5">저택</string>
         <string name="cam_5_0">외부 정문 현관 위</string>
         <string name="cam_5_1">1층 주방</string>
@@ -405,6 +394,14 @@
         <string name="cam_5_3">지하 차고</string>
         <string name="cam_5_4">외부 앞마당</string>
         <string name="cam_5_5">외부 정원</string>
+
+    <string name="map_name_6">도스토예프스키 카페</string>
+        <string name="cam_6_0">3층 칵테일 라운지</string>
+        <string name="cam_6_1">2층 독서실</string>
+        <string name="cam_6_2">1층 냉장실 통로</string>
+        <string name="cam_6_3">1층 제과점</string>
+        <string name="cam_6_4">외부 서쪽 대로</string>
+        <string name="cam_6_5">외부 공원 골목</string>
 
     <string name="map_name_7">운하</string>
         <string name="cam_7_0">통제소3층 통제실 복도</string>
@@ -415,22 +412,6 @@
         <string name="cam_7_5">외부 수문</string>
         <string name="cam_7_6">외부 건설 현장</string>
 
-    <string name="map_name_9">대통령 전용기</string>
-        <string name="cam_9_0">3층 승무원실</string>
-        <string name="cam_9_1">2층 앞쪽 통로</string>
-        <string name="cam_9_2">2층 기자석 A</string>
-        <string name="cam_9_3">1층 수화물 적재실</string>
-        <string name="cam_9_4">1층 화물 적재실</string>
-
-    <string name="map_name_11">국경</string>
-        <string name="cam_11_0">2층 동쪽 계단</string>
-        <string name="cam_11_1">2층 메인 통로</string>
-        <string name="cam_11_2">1층 메인 로비</string>
-        <string name="cam_11_3">1층 출구 복도</string>
-        <string name="cam_11_4">외부 주차장 입구</string>
-        <string name="cam_11_5">외부 사고 현장</string>
-        <string name="cam_11_6">외부 주차장 입구</string>
-
     <string name="map_name_8">오리건</string>
         <string name="cam_8_0">2층 무기고 복도</string>
         <string name="cam_8_1">1층 로비</string>
@@ -439,6 +420,13 @@
         <string name="cam_8_4">외부 쓰레기장</string>
         <string name="cam_8_5">외부 주차장</string>
         <string name="cam_8_6">외부 건설 현장</string>
+
+    <string name="map_name_9">대통령 전용기</string>
+        <string name="cam_9_0">3층 승무원실</string>
+        <string name="cam_9_1">2층 앞쪽 통로</string>
+        <string name="cam_9_2">2층 기자석 A</string>
+        <string name="cam_9_3">1층 수화물 적재실</string>
+        <string name="cam_9_4">1층 화물 적재실</string>
 
     <string name="map_name_10">요트</string>
         <string name="cam_10_0">4F 헬기장 입구</string>
@@ -449,6 +437,24 @@
         <string name="cam_10_5">1층 기관실 복도</string>
         <string name="cam_10_6">외부 전방 갑판</string>
         <string name="cam_10_7">외부 스파 갑판</string>
+
+    <string name="map_name_11">국경</string>
+        <string name="cam_11_0">2층 동쪽 계단</string>
+        <string name="cam_11_1">2층 메인 통로</string>
+        <string name="cam_11_2">1층 메인 로비</string>
+        <string name="cam_11_3">1층 출구 복도</string>
+        <string name="cam_11_4">외부 주차장 입구</string>
+        <string name="cam_11_5">외부 사고 현장</string>
+        <string name="cam_11_6">외부 주차장 입구</string>
+
+    <string name="map_name_12">빈민가</string>
+        <string name="cam_12_0">3층 뒤쪽 계단</string>
+        <string name="cam_12_1">3층 중앙 계단</string>
+        <string name="cam_12_2">1층 세탁실</string>
+        <string name="cam_12_3">1층 계단실</string>
+        <string name="cam_12_4">외부 학교 골목</string>
+        <string name="cam_12_5">외부 도로</string>
+        <string name="cam_12_6">외부 뒷골목</string>
 
     <string name="map_name_13">마천루</string>
         <string name="cam_13_0">2층 볻도</string>

@@ -28,6 +28,10 @@
     <string name="soon">Soon…</string>
     <string name="msgsoon">This new feature is coming soon !</string>
 
+    <!--UPDATE APP-->
+    <string name="update_title">An update is available !</string>
+    <string name="update_text">You are using an older version of R6 Assistant, do you want to update it ?</string>
+
     <!--RATE APP POPUP-->
     <string name="ratetitle">Rate R6 Assistant</string>
     <string name="ratemsg">Rate the application and give your feedback on the Play Store</string>
@@ -317,21 +321,23 @@
     <string name="translator_zh2">Neel Lee</string>
     <string name="translator_pl">AK_D14BL0</string>
     <string name="translator_kr">sd_iron</string>
+    <string name="translator_sr">error55o</string>
 
     <!--LANGUAGE-->
     <string name="language">Language</string>
-    <string name="english">English</string>
-    <string name="french">Français</string>
-    <string name="portuguese">Português</string>
-    <string name="italian">Italiano</string>
-    <string name="german">Deutsch</string>
-    <string name="russian">Русский</string>
-    <string name="polish">Polski</string>
-    <string name="japenese">日本語</string>
-    <string name="korean">한국어</string>
-    <string name="spanish">Español</string>
-    <string name="simplified_chinese">简体中文</string>
-    <string name="traditional_chinese">繁體中文</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_polish">Polski</string>
+    <string name="language_japenese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_simplified_chinese">简体中文</string>
+    <string name="language_traditional_chinese">繁體中文</string>
+    <string name="language_serbian">Srpski</string>
 
     <!--MAP MENU-->
     <string name="takemap">Select a map</string>
@@ -373,15 +379,6 @@
         <string name="cam_3_6">(EXT) Front Alley</string>
         <string name="cam_3_7">(EXT) Garage Way</string>
 
-    <string name="map_name_12">Favela</string>
-        <string name="cam_12_0">(3F) Back Stairs</string>
-        <string name="cam_12_1">(3F) Main Stairs</string>
-        <string name="cam_12_2">(1F) Laundry Room</string>
-        <string name="cam_12_3">(1F) Stair Hall</string>
-        <string name="cam_12_4">(EXT) School Alley</string>
-        <string name="cam_12_5">(EXT) Street</string>
-        <string name="cam_12_6">(EXT) Back Alley</string>
-
     <string name="map_name_4">Hereford Base</string>
         <string name="cam_4_0">(EXT) Roof Top</string>
         <string name="cam_4_1">(2F) Corridor</string>
@@ -390,6 +387,14 @@
         <string name="cam_4_4">(EXT) Shooting Range</string>
         <string name="cam_4_5">(EXT) Forklift Area</string>
 
+    <string name="map_name_5">House</string>
+        <string name="cam_5_0">(2F) Upper hallway</string>
+        <string name="cam_5_1">(1F) Kitchen</string>
+        <string name="cam_5_2">(B) Training Room</string>
+        <string name="cam_5_3">(B) Garage</string>
+        <string name="cam_5_4">(EXT) Frontyard</string>
+        <string name="cam_5_5">(EXT) Garden</string>
+
     <string name="map_name_6">Kafe Dostoyevsky</string>
         <string name="cam_6_0">(3F) Cocktail Lounge</string>
         <string name="cam_6_1">(2F) Reading Room</string>
@@ -397,14 +402,6 @@
         <string name="cam_6_3">(1F) Bakery</string>
         <string name="cam_6_4">(EXT) West Main Street</string>
         <string name="cam_6_5">(EXT) Park Alley</string>
-
-    <string name="map_name_5">House</string>
-        <string name="cam_5_0">(EXT) Front Porch Top</string>
-        <string name="cam_5_1">(1F) Kitchen</string>
-        <string name="cam_5_2">(B) Training Room</string>
-        <string name="cam_5_3">(B) Garage</string>
-        <string name="cam_5_4">(EXT) Frontyard</string>
-        <string name="cam_5_5">(EXT) Garden</string>
 
     <string name="map_name_7">Kanal</string>
         <string name="cam_7_0">(CC3F) Control Room Hallway</string>
@@ -415,22 +412,6 @@
         <string name="cam_7_5">(EXT) Lockgate</string>
         <string name="cam_7_6">(EXT) Construction Site</string>
 
-    <string name="map_name_9">Presidential Plane</string>
-        <string name="cam_9_0">(3F) Cabin Staff</string>
-        <string name="cam_9_1">(2F) Front Hallway</string>
-        <string name="cam_9_2">(2F) Press Section A</string>
-        <string name="cam_9_3">(1F) Luggage Hold</string>
-        <string name="cam_9_4">(1F) Cargo Hold</string>
-
-    <string name="map_name_11">Border</string>
-        <string name="cam_11_0">(2F) East Stairs</string>
-        <string name="cam_11_1">(2F) Main Hallway</string>
-        <string name="cam_11_2">(1F) Main Lobby</string>
-        <string name="cam_11_3">(1F) Exit Hallway</string>
-        <string name="cam_11_4">(EXT) Parking Lot Ent.</string>
-        <string name="cam_11_5">(EXT) Crash Scene</string>
-        <string name="cam_11_6">(EXT) Parking Lot Alley</string>
-
     <string name="map_name_8">Oregon</string>
         <string name="cam_8_0">(2F) Armory Corridor</string>
         <string name="cam_8_1">(1F) Lobby</string>
@@ -439,6 +420,13 @@
         <string name="cam_8_4">(EXT) Junkyard</string>
         <string name="cam_8_5">(EXT) Parking</string>
         <string name="cam_8_6">(EXT) Construction Site</string>
+
+    <string name="map_name_9">Presidential Plane</string>
+        <string name="cam_9_0">(3F) Cabin Staff</string>
+        <string name="cam_9_1">(2F) Front Hallway</string>
+        <string name="cam_9_2">(2F) Press Section A</string>
+        <string name="cam_9_3">(1F) Luggage Hold</string>
+        <string name="cam_9_4">(1F) Cargo Hold</string>
 
     <string name="map_name_10">Yacht</string>
         <string name="cam_10_0">(4F) Helipad Entrance</string>
@@ -449,6 +437,24 @@
         <string name="cam_10_5">(1F) Engine Hallway</string>
         <string name="cam_10_6">(EXT) Front Deck</string>
         <string name="cam_10_7">(EXT) Spa Deck</string>
+
+    <string name="map_name_11">Border</string>
+        <string name="cam_11_0">(2F) East Stairs</string>
+        <string name="cam_11_1">(2F) Main Hallway</string>
+        <string name="cam_11_2">(1F) Main Lobby</string>
+        <string name="cam_11_3">(1F) Exit Hallway</string>
+        <string name="cam_11_4">(EXT) Parking Lot Ent.</string>
+        <string name="cam_11_5">(EXT) Crash Scene</string>
+        <string name="cam_11_6">(EXT) Parking Lot Alley</string>
+
+    <string name="map_name_12">Favela</string>
+        <string name="cam_12_0">(3F) Back Stairs</string>
+        <string name="cam_12_1">(3F) Main Stairs</string>
+        <string name="cam_12_2">(1F) Laundry Room</string>
+        <string name="cam_12_3">(1F) Stair Hall</string>
+        <string name="cam_12_4">(EXT) School Alley</string>
+        <string name="cam_12_5">(EXT) Street</string>
+        <string name="cam_12_6">(EXT) Back Alley</string>
 
     <string name="map_name_13">Skyscraper</string>
         <string name="cam_13_0">(2F) Hallway</string>

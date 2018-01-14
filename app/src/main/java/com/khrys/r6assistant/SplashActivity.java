@@ -79,6 +79,10 @@ public class SplashActivity extends Activity
                     language = "zh";
                     break;
 
+                case 10:
+                    language = "sr";
+                    break;
+
                 default:
                     language = "en";
                     break;

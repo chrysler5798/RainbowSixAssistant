@@ -28,6 +28,10 @@
     <string name="soon">Скоро…</string>
     <string name="msgsoon">Эта функция появится в ближайшем будущем!</string>
 
+    <!--UPDATE APP-->
+    <string name="update_title">An update is available !</string>
+    <string name="update_text">You are using an older version of R6 Assistant, do you want to update it ?</string>
+
     <!--RATE APP POPUP-->
     <string name="ratetitle">Оценить R6 Assistant</string>
     <string name="ratemsg">Оцените приложение и напишите отзыв в Play Store!</string>
@@ -116,7 +120,7 @@
     <string name="ugat_blitz">Баллистический Щит Б52</string>
     <string name="uga_blitz">Устройство, установленное на щите, создаст вспышку, ослепляющую противника.</string>
 
-    <string name="ugat_buck">ПД 4-12</string>
+    <string name="ugat_buck">ПД 4–12</string>
     <string name="uga_buck">Подствольный дробовик для основного оружия.</string>
 
     <string name="ugat_capitao">АТУ M 0</string>
@@ -137,7 +141,7 @@
     <string name="ugat_frost">Л Sterling М2 (Силок)</string>
     <string name="uga_frost">Механические ловушки, обездвиживающие противника.</string>
 
-    <string name="ugat_fuze">К3-6 "Матрешка"</string>
+    <string name="ugat_fuze">К3–6 "Матрешка"</string>
     <string name="uga_fuze">Взрывное устройство, пробивающие стену и выпускающие мини-заряды.</string>
 
     <string name="ugat_glaz">ПСО "Зрачок"</string>
@@ -317,21 +321,23 @@
     <string name="translator_zh2">Neel Lee</string>
     <string name="translator_pl">AK_D14BL0</string>
     <string name="translator_kr">sd_iron</string>
+    <string name="translator_sr">error55o</string>
 
     <!--LANGUAGE-->
     <string name="language">Язык</string>
-    <string name="english">English</string>
-    <string name="french">Français</string>
-    <string name="portuguese">Português</string>
-    <string name="italian">Italiano</string>
-    <string name="german">Deutsch</string>
-    <string name="russian">Русский</string>
-    <string name="polish">Polski</string>
-    <string name="japenese">日本語</string>
-    <string name="korean">한국어</string>
-    <string name="spanish">Español</string>
-    <string name="simplified_chinese">简体中文</string>
-    <string name="traditional_chinese">繁體中文</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_polish">Polski</string>
+    <string name="language_japenese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_simplified_chinese">简体中文</string>
+    <string name="language_traditional_chinese">繁體中文</string>
+    <string name="language_serbian">Srpski</string>
 
     <!--MAP MENU-->
     <string name="takemap">Выбрать карту</string>
@@ -373,15 +379,6 @@
         <string name="cam_3_6">(СНАРУЖИ) Аллея</string>
         <string name="cam_3_7">(СНАРУЖИ) Въезд в Гараж</string>
 
-    <string name="map_name_12">Фавела</string>
-        <string name="cam_12_0">(3Э) Задняя Лестница</string>
-        <string name="cam_12_1">(3Э) Главная Лестница</string>
-        <string name="cam_12_2">(1Э) Постирочная</string>
-        <string name="cam_12_3">(1Э) Лестница - Зал</string>
-        <string name="cam_12_4">(СНАРУЖИ) Школа - Переулок</string>
-        <string name="cam_12_5">(СНАРУЖИ) Улица</string>
-        <string name="cam_12_6">(СНАРУЖИ) Переулок</string>
-
     <string name="map_name_4">База Херефорд</string>
         <string name="cam_4_0">(СНАРУЖИ) Крыша</string>
         <string name="cam_4_1">(2Э) Коридор</string>
@@ -390,14 +387,6 @@
         <string name="cam_4_4">(СНАРУЖИ) Стрельбище</string>
         <string name="cam_4_5">(СНАРУЖИ) Подъемник</string>
 
-    <string name="map_name_6">Кафе "Достоевский"</string>
-        <string name="cam_6_0">(3Э) Коктейльный Зал</string>
-        <string name="cam_6_1">(2Э) Читальный Зал</string>
-        <string name="cam_6_2">(1Э) Холодильник Коридор</string>
-        <string name="cam_6_3">(1Э) Пекарня</string>
-        <string name="cam_6_4">(СНАРУЖИ) Западная Центральная Улица</string>
-        <string name="cam_6_5">(СНАРУЖИ) Аллея</string>
-
     <string name="map_name_5">Дом</string>
         <string name="cam_5_0">(СНАРУЖИ) Козырек Крыльца</string>
         <string name="cam_5_1">(1Э) Кухня</string>
@@ -405,6 +394,14 @@
         <string name="cam_5_3">(П) Гараж</string>
         <string name="cam_5_4">(СНАРУЖИ) Передний Двор</string>
         <string name="cam_5_5">(СНАРУЖИ) Сад</string>
+
+    <string name="map_name_6">Кафе "Достоевский"</string>
+        <string name="cam_6_0">(3Э) Коктейльный Зал</string>
+        <string name="cam_6_1">(2Э) Читальный Зал</string>
+        <string name="cam_6_2">(1Э) Холодильник Коридор</string>
+        <string name="cam_6_3">(1Э) Пекарня</string>
+        <string name="cam_6_4">(СНАРУЖИ) Западная Центральная Улица</string>
+        <string name="cam_6_5">(СНАРУЖИ) Аллея</string>
 
     <string name="map_name_7">Канал</string>
         <string name="cam_7_0">(Д-3Э) Диспетчерская Коридор</string>
@@ -415,22 +412,6 @@
         <string name="cam_7_5">(СНАРУЖИ) Ворота Шлюза</string>
         <string name="cam_7_6">(СНАРУЖИ) Стройплощадка</string>
 
-    <string name="map_name_9">Борт Номер Один</string>
-        <string name="cam_9_0">(3Э) Экипаж</string>
-        <string name="cam_9_1">(2Э) Передний Коридор</string>
-        <string name="cam_9_2">(2Э) Пресс-центр А</string>
-        <string name="cam_9_3">(1Э) Багажный Отсек</string>
-        <string name="cam_9_4">(1Э) Грузовой Отсек</string>
-
-    <string name="map_name_11">Граница</string>
-        <string name="cam_11_0">(2Э) Восточная Лестница</string>
-        <string name="cam_11_1">(2Э) Главный Коридор</string>
-        <string name="cam_11_2">(1Э) Главный Холл</string>
-        <string name="cam_11_3">(1Э) Выход Коридор</string>
-        <string name="cam_11_4">(СНАРУЖИ) Въезд на Парковку</string>
-        <string name="cam_11_5">(СНАРУЖИ) Авария</string>
-        <string name="cam_11_6">(СНАРУЖИ) Парковка Переулок</string>
-
     <string name="map_name_8">Орегон</string>
         <string name="cam_8_0">(2Э) Оружейная Коридор</string>
         <string name="cam_8_1">(1Э) Холл</string>
@@ -439,6 +420,13 @@
         <string name="cam_8_4">(СНАРУЖИ) Свалка</string>
         <string name="cam_8_5">(СНАРУЖИ) Парковка</string>
         <string name="cam_8_6">(СНАРУЖИ) Стройплощадка</string>
+
+    <string name="map_name_9">Борт Номер Один</string>
+        <string name="cam_9_0">(3Э) Экипаж</string>
+        <string name="cam_9_1">(2Э) Передний Коридор</string>
+        <string name="cam_9_2">(2Э) Пресс-центр А</string>
+        <string name="cam_9_3">(1Э) Багажный Отсек</string>
+        <string name="cam_9_4">(1Э) Грузовой Отсек</string>
 
     <string name="map_name_10">Яхта</string>
         <string name="cam_10_0">(4Э) Верт. Площадка</string>
@@ -449,6 +437,24 @@
         <string name="cam_10_5">(1Э) Машин. Отедл Коридор</string>
         <string name="cam_10_6">(СНАРУЖИ) Палуба, Передняя Часть</string>
         <string name="cam_10_7">(СНАРУЖИ) Гидромассажная Ванна</string>
+
+    <string name="map_name_11">Граница</string>
+        <string name="cam_11_0">(2Э) Восточная Лестница</string>
+        <string name="cam_11_1">(2Э) Главный Коридор</string>
+        <string name="cam_11_2">(1Э) Главный Холл</string>
+        <string name="cam_11_3">(1Э) Выход Коридор</string>
+        <string name="cam_11_4">(СНАРУЖИ) Въезд на Парковку</string>
+        <string name="cam_11_5">(СНАРУЖИ) Авария</string>
+        <string name="cam_11_6">(СНАРУЖИ) Парковка Переулок</string>
+
+    <string name="map_name_12">Фавела</string>
+        <string name="cam_12_0">(3Э) Задняя Лестница</string>
+        <string name="cam_12_1">(3Э) Главная Лестница</string>
+        <string name="cam_12_2">(1Э) Постирочная</string>
+        <string name="cam_12_3">(1Э) Лестница - Зал</string>
+        <string name="cam_12_4">(СНАРУЖИ) Школа - Переулок</string>
+        <string name="cam_12_5">(СНАРУЖИ) Улица</string>
+        <string name="cam_12_6">(СНАРУЖИ) Переулок</string>
 
     <string name="map_name_13">Небоскреб</string>
         <string name="cam_13_0">(2Э) Коридор</string>

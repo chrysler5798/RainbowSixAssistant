@@ -7,11 +7,9 @@ import android.content.Intent;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
 import android.net.Uri;
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -20,31 +18,10 @@ import android.widget.ImageButton;
 import android.widget.Toast;
 
 import com.khrys.r6assistant.about.AboutActivity;
-import com.khrys.r6assistant.chat.MenuChatActivity;
-import com.khrys.r6assistant.data.DownloadTask;
-import com.khrys.r6assistant.data.LoadData;
+import com.khrys.r6assistant.data.CheckAppVersion;
 import com.khrys.r6assistant.operators.OperatorMenuActivity;
 import com.khrys.r6assistant.settings.SettingsActivity;
 import com.khrys.r6assistant.weapons.WeaponMenuActivity;
-
-import org.json.JSONException;
-import org.json.JSONObject;
-
-import java.io.BufferedInputStream;
-import java.io.BufferedReader;
-import java.io.File;
-import java.io.FileInputStream;
-import java.io.FileOutputStream;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.OutputStream;
-import java.io.Reader;
-import java.io.StringWriter;
-import java.io.UnsupportedEncodingException;
-import java.io.Writer;
-import java.net.URL;
-import java.net.URLConnection;
 
 public class MainActivity extends AppCompatActivity
 {
@@ -67,6 +44,12 @@ public class MainActivity extends AppCompatActivity
         Button buttonmore     = findViewById(R.id.buttonMore);
         ImageButton buttonset = findViewById(R.id.buttonSettings);
 
+        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
+        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
+        if(activeNetworkInfo != null && activeNetworkInfo.isConnected())
+        {
+            new CheckAppVersion(MainActivity.this).execute();
+        }
 
         buttonweapon.setOnClickListener(new View.OnClickListener()
         {

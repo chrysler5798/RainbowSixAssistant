@@ -28,6 +28,10 @@
     <string name="soon">Em Breve…</string>
     <string name="msgsoon">Este conteúdo novo estará disponível em breve!</string>
 
+    <!--UPDATE APP-->
+    <string name="update_title">An update is available !</string>
+    <string name="update_text">You are using an older version of R6 Assistant, do you want to update it ?</string>
+
     <!--RATE APP POPUP-->
     <string name="ratetitle">Avalie R6 Assistant</string>
     <string name="ratemsg">Avalie o Aplicativo e de o seu feedback na Play Store</string>
@@ -195,22 +199,22 @@
     <string name="uga_valkyrie">Utiliza a câmera de ação "Black Eye", cujas imagens são acessíveis a toda a equipe com as ferramentas de observação.</string>
 
     <string name="ugat_ying">Candela</string>
-    <string name="uga_ying">Cluster of flash charges that can either be anchored on surfaces or rolled out as a grenade.</string>
+    <string name="uga_ying">Combinação de explosivos que pode ser fixada a estruturas ou lançada como uma granada.</string>
 
     <string name="ugat_lesion">Gu</string>
-    <string name="uga_lesion">Cloaked toxic mines injecting a compound which injures opponents and limits their speed.</string>
+    <string name="uga_lesion">Minas tóxicas camufladas que ferem o oponente e reduzem sua velocidade.</string>
 
-    <string name="ugat_ela">Grzmot Mine</string>
-    <string name="uga_ela">Concussion proximity mines that can be anchored on surfaces, impairing hearing and causing a dizzying effect.</string>
+    <string name="ugat_ela">Mina Grzmot</string>
+    <string name="uga_ela">Minas de concussão aplicáveis a diversas superfícies, causando surdez e tontura.</string>
 
     <string name="ugat_zofia">KS79 LIFELINE</string>
-    <string name="uga_zofia">Double barrel that can fire both concussion and impact grenades.</string>
+    <string name="uga_zofia">Lançador de tambor duplo capaz de atirar granadas de concussão e de impacto.</string>
 
-    <string name="ugat_dokkaebi">LOGIC BOMB</string>
-    <string name="uga_dokkaebi">Uploads a virus that forces enemy devices to emit a loud buzz, thereby compromising their position.</string>
+    <string name="ugat_dokkaebi">BOMBA LÓGICA</string>
+    <string name="uga_dokkaebi">Carrega um vírus que faz com que os celulares dos inimigos emitam um som, o que pode comprometer a posição deles.</string>
 
-    <string name="ugat_vigil">ELECTRONIC RENDERING CLOAK (ERC-7)</string>
-    <string name="uga_vigil">Vigil scans surrounding devices to wipe his image from cameras and drones.</string>
+    <string name="ugat_vigil">ERC-7</string>
+    <string name="uga_vigil">Vigil escaneia dispositivos ao seu redor para apagar sua própria imagem.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Create</string>
@@ -317,21 +321,23 @@
     <string name="translator_zh2">Neel Lee</string>
     <string name="translator_pl">AK_D14BL0</string>
     <string name="translator_kr">sd_iron</string>
+    <string name="translator_sr">error55o</string>
 
     <!--LANGUAGE-->
     <string name="language">Idioma</string>
-    <string name="english">English</string>
-    <string name="french">Français</string>
-    <string name="portuguese">Português</string>
-    <string name="italian">Italiano</string>
-    <string name="german">Deutsch</string>
-    <string name="russian">Русский</string>
-    <string name="polish">Polski</string>
-    <string name="japenese">日本語</string>
-    <string name="korean">한국어</string>
-    <string name="spanish">Español</string>
-    <string name="simplified_chinese">简体中文</string>
-    <string name="traditional_chinese">繁體中文</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_polish">Polski</string>
+    <string name="language_japenese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_simplified_chinese">简体中文</string>
+    <string name="language_traditional_chinese">繁體中文</string>
+    <string name="language_serbian">Srpski</string>
 
     <!--MAP MENU-->
     <string name="takemap">Selecione um Mapa</string>
@@ -373,15 +379,6 @@
         <string name="cam_3_6">(EXT) Caminho dianteiro</string>
         <string name="cam_3_7">(EXT) Entrada da garagem</string>
 
-    <string name="map_name_12">Favelas</string>
-        <string name="cam_12_0">(3º) Escadaria traseira</string>
-        <string name="cam_12_1">(3º) Escadaria principal</string>
-        <string name="cam_12_2">(1º) Lavanderia</string>
-        <string name="cam_12_3">(1º) Escadaria</string>
-        <string name="cam_12_4">(EXT) Viela de escola</string>
-        <string name="cam_12_5">(EXT) Rua</string>
-        <string name="cam_12_6">(EXT) Viela traseira</string>
-
     <string name="map_name_4">Base Hereford</string>
         <string name="cam_4_0">(EXT) Telhado</string>
         <string name="cam_4_1">(2º) Corredor 2</string>
@@ -390,6 +387,14 @@
         <string name="cam_4_4">(EXT) Campo de tiro acesso leste</string>
         <string name="cam_4_5">(EXT) Área da empilhadeira</string>
 
+    <string name="map_name_5">Residência</string>
+        <string name="cam_5_0">(2º) Corredor superior</string>
+        <string name="cam_5_1">(1º) Cozinha</string>
+        <string name="cam_5_2">(P) Academia</string>
+        <string name="cam_5_3">(P) Garagem</string>
+        <string name="cam_5_4">(EXT) Jardim frontal</string>
+        <string name="cam_5_5">(EXT) Jardim</string>
+
     <string name="map_name_6">Kafe Dostoievsky</string>
         <string name="cam_6_0">(3º) Lounge de coquetéis</string>
         <string name="cam_6_1">(2º) Corredor da sala de leitura</string>
@@ -397,14 +402,6 @@
         <string name="cam_6_3">(1º) Padaria</string>
         <string name="cam_6_4">(EXT) Rua principal oeste</string>
         <string name="cam_6_5">(EXT) Beco do parque</string>
-
-    <string name="map_name_5">Residência</string>
-        <string name="cam_5_0">(EXT) Telhado da varanda frontal</string>
-        <string name="cam_5_1">(1º) Cozinha</string>
-        <string name="cam_5_2">(P) Academia</string>
-        <string name="cam_5_3">(P) Garagem</string>
-        <string name="cam_5_4">(EXT) Jardim frontal</string>
-        <string name="cam_5_5">(EXT) Jardim</string>
 
     <string name="map_name_7">Canal</string>
         <string name="cam_7_0">(GC-3º) Corredor sala de controle4343333w</string>
@@ -415,22 +412,6 @@
         <string name="cam_7_5">(EXT) Comporta</string>
         <string name="cam_7_6">(EXT) Canteiro de obras</string>
 
-    <string name="map_name_9">Avião Presidencial</string>
-        <string name="cam_9_0">(3º) Funcionários da cabine</string>
-        <string name="cam_9_1">(2º) Corredor frontal</string>
-        <string name="cam_9_2">(2º) Seção de imprensa A</string>
-        <string name="cam_9_3">(1º) Compartimento de bagagem</string>
-        <string name="cam_9_4">(1º) Compartimento de carga</string>
-
-    <string name="map_name_11">Fronteira</string>
-        <string name="cam_11_0">(2º) Escada leste</string>
-        <string name="cam_11_1">(2º) Corredor principal</string>
-        <string name="cam_11_2">(1º) Saguão principal</string>
-        <string name="cam_11_3">(1º) Corredor de saída</string>
-        <string name="cam_11_4">(EXT) Entrada do estacionamento</string>
-        <string name="cam_11_5">(EXT) Área do acidente</string>
-        <string name="cam_11_6">(EXT) Caminho do estacionamento</string>
-
     <string name="map_name_8">Oregon</string>
         <string name="cam_8_0">(2º) Corredor do arsenal</string>
         <string name="cam_8_1">(1º) Saguão</string>
@@ -439,6 +420,13 @@
         <string name="cam_8_4">(EXT) Descarte</string>
         <string name="cam_8_5">(EXT) Estacionamento</string>
         <string name="cam_8_6">(EXT) Área de obras</string>
+
+    <string name="map_name_9">Avião Presidencial</string>
+        <string name="cam_9_0">(3º) Funcionários da cabine</string>
+        <string name="cam_9_1">(2º) Corredor frontal</string>
+        <string name="cam_9_2">(2º) Seção de imprensa A</string>
+        <string name="cam_9_3">(1º) Compartimento de bagagem</string>
+        <string name="cam_9_4">(1º) Compartimento de carga</string>
 
     <string name="map_name_10">Iate</string>
         <string name="cam_10_0">(4º) Entrada do heliporto</string>
@@ -449,6 +437,24 @@
         <string name="cam_10_5">(1º) Corredor sala de máquinas</string>
         <string name="cam_10_6">(EXT) Convés frontal</string>
         <string name="cam_10_7">(EXT) Convés Spa</string>
+
+    <string name="map_name_11">Fronteira</string>
+        <string name="cam_11_0">(2º) Escada leste</string>
+        <string name="cam_11_1">(2º) Corredor principal</string>
+        <string name="cam_11_2">(1º) Saguão principal</string>
+        <string name="cam_11_3">(1º) Corredor de saída</string>
+        <string name="cam_11_4">(EXT) Entrada do estacionamento</string>
+        <string name="cam_11_5">(EXT) Área do acidente</string>
+        <string name="cam_11_6">(EXT) Caminho do estacionamento</string>
+
+    <string name="map_name_12">Favelas</string>
+        <string name="cam_12_0">(3º) Escadaria traseira</string>
+        <string name="cam_12_1">(3º) Escadaria principal</string>
+        <string name="cam_12_2">(1º) Lavanderia</string>
+        <string name="cam_12_3">(1º) Escadaria</string>
+        <string name="cam_12_4">(EXT) Viela de escola</string>
+        <string name="cam_12_5">(EXT) Rua</string>
+        <string name="cam_12_6">(EXT) Viela traseira</string>
 
     <string name="map_name_13">Arranha-Céu</string>
         <string name="cam_13_0">(2º) Corredor</string>
@@ -477,24 +483,24 @@
         <string name="cam_15_5">(EXT) Ruínas</string>
         <string name="cam_15_6">(EXT) Ruínas</string>
 
-    <string name="map_name_16">Theme park</string>
-        <string name="cam_16_0">(1F) Gallery</string>
-        <string name="cam_16_1">(2F) Haunted Stairs</string>
-        <string name="cam_16_2">(1F) Joint Corridor</string>
-        <string name="cam_16_3">(2F) Upper Arcarde</string>
-        <string name="cam_16_4">(2F) Rail Platform</string>
-        <string name="cam_16_5">(EXT) Teacups</string>
-        <string name="cam_16_6">(EXT) Service Entrance</string>
-        <string name="cam_16_7">(EXT) Guest Info</string>
+    <string name="map_name_16">Parque temático</string>
+        <string name="cam_16_0">(1º) Galeria</string>
+        <string name="cam_16_1">(2º) Escadaria Assombrada</string>
+        <string name="cam_16_2">(1º) Corredor Adjunto</string>
+        <string name="cam_16_3">(2º) Fliperama Superior</string>
+        <string name="cam_16_4">(2º) Plataforma dos Trilhos</string>
+        <string name="cam_16_5">(EXT) Xícaras</string>
+        <string name="cam_16_6">(EXT) Entrada de Serviços</string>
+        <string name="cam_16_7">(EXT) Informações</string>
 
-    <string name="map_name_17">Tower</string>
-        <string name="cam_17_0">(2F) Gallery Main</string>
-        <string name="cam_17_1">(2F) Exhibit Hallway</string>
-        <string name="cam_17_2">(2F) Company Reception</string>
-        <string name="cam_17_3">(1F) Traditional Hall</string>
-        <string name="cam_17_4">(1F) West Balcony</string>
-        <string name="cam_17_5">(2F) Center Atrium</string>
-        <string name="cam_17_6">(1F) Fountain</string>
+    <string name="map_name_17">Torre</string>
+        <string name="cam_17_0">(2º) Galeria Central</string>
+        <string name="cam_17_1">(2º) Corredor Exposições</string>
+        <string name="cam_17_2">(2º) Recepção Corporativa</string>
+        <string name="cam_17_3">(1º) Salão Tradicional</string>
+        <string name="cam_17_4">(1º) Sacada Oeste</string>
+        <string name="cam_17_5">(2º) Átrio Central</string>
+        <string name="cam_17_6">(1º) Fonte</string>
 
     <string name="destroyPhrase">%d</string>
     <string name="cameraPhrase">%d cameras</string>

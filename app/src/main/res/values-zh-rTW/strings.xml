@@ -28,6 +28,10 @@
     <string name="soon">即將更新</string>
     <string name="msgsoon">新功能即將更新！</string>
 
+    <!--UPDATE APP-->
+    <string name="update_title">An update is available !</string>
+    <string name="update_text">You are using an older version of R6 Assistant, do you want to update it ?</string>
+
     <!--RATE APP POPUP-->
     <string name="ratetitle">替虹彩六號助手評分</string>
     <string name="ratemsg">評價這個應用程式，並在Play商店上給予意見回饋！</string>
@@ -317,21 +321,23 @@
     <string name="translator_zh2">Neel Lee</string>
     <string name="translator_pl">AK_D14BL0</string>
     <string name="translator_kr">sd_iron</string>
+    <string name="translator_sr">error55o</string>
 
     <!--LANGUAGE-->
     <string name="language">語言</string>
-    <string name="english">English</string>
-    <string name="french">Français</string>
-    <string name="portuguese">Português</string>
-    <string name="italian">Italiano</string>
-    <string name="german">Deutsch</string>
-    <string name="russian">Русский</string>
-    <string name="polish">Polski</string>
-    <string name="japenese">日本語</string>
-    <string name="korean">한국어</string>
-    <string name="spanish">Español</string>
-    <string name="simplified_chinese">简体中文</string>
-    <string name="traditional_chinese">繁體中文</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_polish">Polski</string>
+    <string name="language_japenese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_simplified_chinese">简体中文</string>
+    <string name="language_traditional_chinese">繁體中文</string>
+    <string name="language_serbian">Srpski</string>
 
     <!--MAP MENU-->
     <string name="takemap">選擇地圖</string>
@@ -373,15 +379,6 @@
     <string name="cam_3_6">外部 前巷</string>
     <string name="cam_3_7">外部 車庫通道</string>
 
-    <string name="map_name_12">貧民窟</string>
-    <string name="cam_12_0">三樓 後方樓梯</string>
-    <string name="cam_12_1">三樓 主樓梯</string>
-    <string name="cam_12_2">一樓 洗衣間</string>
-    <string name="cam_12_3">一樓 樓梯間</string>
-    <string name="cam_12_4">外部 學校走廊</string>
-    <string name="cam_12_5">外部 街道</string>
-    <string name="cam_12_6">外部 後巷走道</string>
-
     <string name="map_name_4">赫里福基地</string>
     <string name="cam_4_0">外部 屋頂</string>
     <string name="cam_4_1">二樓 廊道</string>
@@ -390,6 +387,14 @@
     <string name="cam_4_4">外部 靶場</string>
     <string name="cam_4_5">外部 升降機區</string>
 
+    <string name="map_name_5">芝加哥豪宅</string>
+        <string name="cam_5_0">二樓 上方過道</string>
+        <string name="cam_5_1">一樓 廚房</string>
+        <string name="cam_5_2">地下室 訓練室</string>
+        <string name="cam_5_3">地下室 車庫</string>
+        <string name="cam_5_4">地下室 前院</string>
+        <string name="cam_5_5">外部 庭園</string>
+
     <string name="map_name_6">杜斯妥也夫斯基咖啡館</string>
     <string name="cam_6_0">三樓 酒吧</string>
     <string name="cam_6_1">二樓 閱覽室</string>
@@ -397,14 +402,6 @@
     <string name="cam_6_3">一樓 烘焙坊</string>
     <string name="cam_6_4">外部 西側主街</string>
     <string name="cam_6_5">外部 停車區小徑</string>
-
-    <string name="map_name_5">芝加哥豪宅</string>
-    <string name="cam_5_0">二樓 上方過道</string>
-    <string name="cam_5_1">一樓 廚房</string>
-    <string name="cam_5_2">地下室 訓練室</string>
-    <string name="cam_5_3">地下室 車庫</string>
-    <string name="cam_5_4">地下室 前院</string>
-    <string name="cam_5_5">外部 庭園</string>
 
     <string name="map_name_7">運河</string>
     <string name="cam_7_0">控制中心三樓 控制房</string>
@@ -415,86 +412,95 @@
     <string name="cam_7_5">外部 閘門</string>
     <string name="cam_7_6">外部 建築工地</string>
 
-    <string name="map_name_9">總統專機</string>
-    <string name="cam_9_0">三樓 空服人員區</string>
-    <string name="cam_9_1">二樓 前方過道</string>
-    <string name="cam_9_2">二樓 新聞宣傳部A</string>
-    <string name="cam_9_3">一樓 行李艙</string>
-    <string name="cam_9_4">一樓 貨艙</string>
-
-    <string name="map_name_11">邊境</string>
-    <string name="cam_11_0">二樓 東側</string>
-    <string name="cam_11_1">二樓 主過道</string>
-    <string name="cam_11_2">一樓 主大廳</string>
-    <string name="cam_11_3">一樓 出口過道</string>
-    <string name="cam_11_4">外部 停車場</string>
-    <string name="cam_11_5">外部 車禍現場</string>
-    <string name="cam_11_6">外部 停車場小徑</string>
-
     <string name="map_name_8">奧勒岡鄉間屋宅</string>
-    <string name="cam_8_0">二樓 軍械室廊道</string>
-    <string name="cam_8_1">一樓 門廳</string>
-    <string name="cam_8_2">一樓 食堂廊道</string>
-    <string name="cam_8_3">一樓 舞台後方</string>
-    <string name="cam_8_4">外部 廢物堆積場</string>
-    <string name="cam_8_5">外部 停車場</string>
-    <string name="cam_8_6">外部 建築</string>
+        <string name="cam_8_0">二樓 軍械室廊道</string>
+        <string name="cam_8_1">一樓 門廳</string>
+        <string name="cam_8_2">一樓 食堂廊道</string>
+        <string name="cam_8_3">一樓 舞台後方</string>
+        <string name="cam_8_4">外部 廢物堆積場</string>
+        <string name="cam_8_5">外部 停車場</string>
+        <string name="cam_8_6">外部 建築</string>
+
+    <string name="map_name_9">總統專機</string>
+        <string name="cam_9_0">三樓 空服人員區</string>
+        <string name="cam_9_1">二樓 前方過道</string>
+        <string name="cam_9_2">二樓 新聞宣傳部A</string>
+        <string name="cam_9_3">一樓 行李艙</string>
+        <string name="cam_9_4">一樓 貨艙</string>
 
     <string name="map_name_10">遊艇</string>
-    <string name="cam_10_0">四樓 直昇機停機坪</string>
-    <string name="cam_10_1">三樓 臥室</string>
-    <string name="cam_10_2">三樓 休息室</string>
-    <string name="cam_10_3">二樓 前方</string>
-    <string name="cam_10_4">二樓 後方</string>
-    <string name="cam_10_5">一樓 引擎</string>
-    <string name="cam_10_6">外部 前方甲板</string>
-    <string name="cam_10_7">外部 水浴甲板</string>
+        <string name="cam_10_0">四樓 直昇機停機坪</string>
+        <string name="cam_10_1">三樓 臥室</string>
+        <string name="cam_10_2">三樓 休息室</string>
+        <string name="cam_10_3">二樓 前方</string>
+        <string name="cam_10_4">二樓 後方</string>
+        <string name="cam_10_5">一樓 引擎</string>
+        <string name="cam_10_6">外部 前方甲板</string>
+        <string name="cam_10_7">外部 水浴甲板</string>
+
+    <string name="map_name_11">邊境</string>
+        <string name="cam_11_0">二樓 東側</string>
+        <string name="cam_11_1">二樓 主過道</string>
+        <string name="cam_11_2">一樓 主大廳</string>
+        <string name="cam_11_3">一樓 出口過道</string>
+        <string name="cam_11_4">外部 停車場</string>
+        <string name="cam_11_5">外部 車禍現場</string>
+        <string name="cam_11_6">外部 停車場小徑</string>
+
+    <string name="map_name_12">貧民窟</string>
+        <string name="cam_12_0">三樓 後方樓梯</string>
+        <string name="cam_12_1">三樓 主樓梯</string>
+        <string name="cam_12_2">一樓 洗衣間</string>
+        <string name="cam_12_3">一樓 樓梯間</string>
+        <string name="cam_12_4">外部 學校走廊</string>
+        <string name="cam_12_5">外部 街道</string>
+        <string name="cam_12_6">外部 後巷走道</string>
 
     <string name="map_name_13">摩天大樓</string>
-    <string name="cam_13_0">二樓 走廊</string>
-    <string name="cam_13_1">一樓 餐廳</string>
-    <string name="cam_13_2">二樓 房子大廳</string>
-    <string name="cam_13_3">一樓 房子大廳</string>
-    <string name="cam_13_4">外部 西側庭園</string>
-    <string name="cam_13_5">外部 東側庭園</string>
-    <string name="cam_13_6">外部 通風單位</string>
+        <string name="cam_13_0">二樓 走廊</string>
+        <string name="cam_13_1">一樓 餐廳</string>
+        <string name="cam_13_2">二樓 房子大廳</string>
+        <string name="cam_13_3">一樓 房子大廳</string>
+        <string name="cam_13_4">外部 西側庭園</string>
+        <string name="cam_13_5">外部 東側庭園</string>
+        <string name="cam_13_6">外部 通風單位</string>
 
     <string name="map_name_14">巴特雷特大學</string>
-    <string name="cam_14_0">二樓 圓廳過道</string>
-    <string name="cam_14_1">二樓 景觀廳過道</string>
-    <string name="cam_14_2">一樓 拱廊廳</string>
-    <string name="cam_14_3">一樓 門廳</string>
-    <string name="cam_14_4">一樓 飯廳</string>
-    <string name="cam_14_5">外部 大門</string>
-    <string name="cam_14_6">外部 停車場</string>
+        <string name="cam_14_0">二樓 圓廳過道</string>
+        <string name="cam_14_1">二樓 景觀廳過道</string>
+        <string name="cam_14_2">一樓 拱廊廳</string>
+        <string name="cam_14_3">一樓 門廳</string>
+        <string name="cam_14_4">一樓 飯廳</string>
+        <string name="cam_14_5">外部 大門</string>
+        <string name="cam_14_6">外部 停車場</string>
 
     <string name="map_name_15">海岸線</string>
-    <string name="cam_15_0">一樓 走廊</string>
-    <string name="cam_15_1">一樓 主大廳</string>
-    <string name="cam_15_2">二樓 水族館</string>
-    <string name="cam_15_3">二樓 走廊</string>
-    <string name="cam_15_4">外部 車庫屋頂</string>
-    <string name="cam_15_5">外部 廢墟</string>
-    <string name="cam_15_6">外部 廢墟</string>
+        <string name="cam_15_0">一樓 走廊</string>
+        <string name="cam_15_1">一樓 主大廳</string>
+        <string name="cam_15_2">二樓 水族館</string>
+        <string name="cam_15_3">二樓 走廊</string>
+        <string name="cam_15_4">外部 車庫屋頂</string>
+        <string name="cam_15_5">外部 廢墟</string>
+        <string name="cam_15_6">外部 廢墟</string>
 
     <string name="map_name_16">主題樂園</string>
-    <string name="cam_16_0">一樓 畫廊</string>
-    <string name="cam_16_1">二樓 鬧鬼樓梯</string>
-    <string name="cam_16_2">一樓 共同走廊</string>
-    <string name="cam_16_3">二樓 上層遊樂中心</string>
-    <string name="cam_16_4">二樓 軌道平台</string>
-    <string name="cam_16_5">外部 茶杯</string>
-    <string name="cam_16_6">外部 員工入口</string>
-    <string name="cam_16_7">外部 訪客資訊處</string>
+        <string name="cam_16_0">一樓 畫廊</string>
+        <string name="cam_16_1">二樓 鬧鬼樓梯</string>
+        <string name="cam_16_2">一樓 共同走廊</string>
+        <string name="cam_16_3">二樓 上層遊樂中心</string>
+        <string name="cam_16_4">二樓 軌道平台</string>
+        <string name="cam_16_5">外部 茶杯</string>
+        <string name="cam_16_6">外部 員工入口</string>
+        <string name="cam_16_7">外部 訪客資訊處</string>
 
     <string name="map_name_17">塔樓</string>
-    <string name="cam_17_0">二樓 畫廊主展場</string>
-    <string name="cam_17_1">二樓 展覽走廊</string>
-    <string name="cam_17_2">二樓 公司接待處</string>
-    <string name="cam_17_3">一樓 傳統大廳</string>
-    <string name="cam_17_4">一樓 西側陽台</string>
-    <string name="cam_17_5">二樓 中央天井</string>
-    <string name="cam_17_6">一樓 噴泉</string>
+        <string name="cam_17_0">二樓 畫廊主展場</string>
+        <string name="cam_17_1">二樓 展覽走廊</string>
+        <string name="cam_17_2">二樓 公司接待處</string>
+        <string name="cam_17_3">一樓 傳統大廳</string>
+        <string name="cam_17_4">一樓 西側陽台</string>
+        <string name="cam_17_5">二樓 中央天井</string>
+        <string name="cam_17_6">一樓 噴泉</string>
 
     <string name="destroyPhrase">%d</string>
     <string name="cameraPhrase">%d 處攝影機</string>
