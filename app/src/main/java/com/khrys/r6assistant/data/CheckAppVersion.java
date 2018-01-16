@@ -29,7 +29,7 @@ import java.net.URL;
 
 public class CheckAppVersion extends AsyncTask<String, Void, String>
 {
-    private final String URL_VERSION_TXT = "http://louis-jeancolin.fr/r6assistant/version/version.txt";
+    private final String URL_VERSION_TXT = "http://louis-jeancolin.fr/r6assistant/version/version.php";
     private Context context;
 
     public CheckAppVersion(Context context)
@@ -84,13 +84,18 @@ public class CheckAppVersion extends AsyncTask<String, Void, String>
     protected void onPostExecute(String result)
     {
         int actualVersionCode = 0;
-        int onlineVersionCode = Integer.valueOf(result);
+        int onlineVersionCode = 0;
 
         try
         {
             actualVersionCode = context.getPackageManager().getPackageInfo(context.getPackageName(), 0).versionCode;
+            onlineVersionCode = Integer.valueOf(result);
         }
         catch(PackageManager.NameNotFoundException e)
+        {
+            e.printStackTrace();
+        }
+        catch(NumberFormatException e)
         {
             e.printStackTrace();
         }
