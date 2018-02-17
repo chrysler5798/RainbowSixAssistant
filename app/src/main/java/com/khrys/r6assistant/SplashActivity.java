@@ -48,31 +48,31 @@ public class SplashActivity extends Activity
                     break;
 
                 case 2:
-                    language = "pt";
+                    language = "es";
                     break;
 
                 case 3:
-                    language = "de";
+                    language = "pt";
                     break;
 
                 case 4:
-                    language = "it";
+                    language = "de";
                     break;
 
                 case 5:
-                    language = "ru";
+                    language = "it";
                     break;
 
                 case 6:
-                    language = "pl";
+                    language = "ru";
                     break;
 
                 case 7:
-                    language = "ko";
+                    language = "pl";
                     break;
 
                 case 8:
-                    language = "zh";
+                    language = "ko";
                     break;
 
                 case 9:
@@ -80,6 +80,10 @@ public class SplashActivity extends Activity
                     break;
 
                 case 10:
+                    language = "zh";
+                    break;
+
+                case 11:
                     language = "sr";
                     break;
 

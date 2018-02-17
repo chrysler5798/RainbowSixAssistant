@@ -31,8 +31,8 @@ public class SettingsActivity extends AppCompatActivity
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
-        String[] textArray = {getRes(R.string.language_english),getRes(R.string.language_french),getRes(R.string.language_portuguese),getRes(R.string.language_german),getRes(R.string.language_italian), getRes(R.string.language_russian), getRes(R.string.language_polish), getRes(R.string.language_korean), getRes(R.string.language_simplified_chinese), getRes(R.string.language_traditional_chinese), getRes(R.string.language_serbian)};
-        Integer[] imageArray = {R.drawable.flag_gb,R.drawable.flag_fr,R.drawable.flag_pt,R.drawable.flag_de,R.drawable.flag_it, R.drawable.flag_ru, R.drawable.flag_pl, R.drawable.flag_kr, R.drawable.flag_zhcn, R.drawable.flag_zhtw, R.drawable.flag_sr};
+        String[] textArray = {getRes(R.string.language_english),getRes(R.string.language_french),getRes(R.string.language_spanish),getRes(R.string.language_portuguese),getRes(R.string.language_german),getRes(R.string.language_italian), getRes(R.string.language_russian), getRes(R.string.language_polish), getRes(R.string.language_korean), getRes(R.string.language_simplified_chinese), getRes(R.string.language_traditional_chinese), getRes(R.string.language_serbian)};
+        Integer[] imageArray = {R.drawable.flag_gb,R.drawable.flag_fr,R.drawable.flag_es,R.drawable.flag_pt,R.drawable.flag_de,R.drawable.flag_it, R.drawable.flag_ru, R.drawable.flag_pl, R.drawable.flag_kr, R.drawable.flag_zhcn, R.drawable.flag_zhtw, R.drawable.flag_sr};
 
         super.onCreate(savedInstanceState);
 
@@ -58,49 +58,53 @@ public class SettingsActivity extends AppCompatActivity
                 languageId = 1;
                 break;
 
-            case "pt":
+            case "es":
                 languageId = 2;
                 break;
 
-            case "de":
+            case "pt":
                 languageId = 3;
                 break;
 
-            case "it":
+            case "de":
                 languageId = 4;
                 break;
 
-            case "ru":
+            case "it":
                 languageId = 5;
                 break;
 
-            case "pl":
+            case "ru":
                 languageId = 6;
                 break;
 
-            case "ko":
+            case "pl":
                 languageId = 7;
+                break;
+
+            case "ko":
+                languageId = 8;
                 break;
 
             case "zh":
                 switch (Locale.getDefault().getCountry())
                 {
                     case "CN":
-                        languageId = 8;
-                        break;
-
-                    case "TW":
                         languageId = 9;
                         break;
 
+                    case "TW":
+                        languageId = 10;
+                        break;
+
                     default:
-                        languageId = 8;
+                        languageId = 9;
                         break;
                 }
                 break;
 
             case "sr":
-                languageId = 10;
+                languageId = 11;
                 break;
 
             default:

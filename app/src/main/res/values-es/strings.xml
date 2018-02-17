@@ -1,0 +1,560 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--GLOBAL TEXT-->
+    <string name="app_name">R6 Assistant</string>
+
+    <!--BASIC WORDS-->
+    <string name="go">IR</string>
+    <string name="or">O</string>
+    <string name="close">Cerrar</string>
+
+    <!--BASIC NUMBERS-->
+    <string name="n1">1</string>
+    <string name="n2">2</string>
+    <string name="n3">3</string>
+    <string name="n4">4</string>
+    <string name="n5">5</string>
+
+    <!--MAIN MENU-->
+    <string name="cameras">Camaras</string>
+    <string name="twitch">Twitch</string>
+    <string name="mapplans">Mapas &amp; Planos</string>
+    <string name="online"> En línea \n Chat &amp; Encontrar jugadores</string>
+    <string name="guns">caracterstcas de armas</string>
+    <string name="operators">Operadors</string>
+    <string name="more">More</string>
+
+    <!--SOON MSG-->
+    <string name="soon">Pronto…</string>
+    <string name="msgsoon">esta nueva característica llegará pronto!</string>
+
+    <!--UPDATE APP-->
+    <string name="update_title">Una nueva versión está disponible !</string>
+    <string name="update_text">Está utilizando una versión anterior de R6 Assistant ¿ desea actualizarla ?</string>
+
+    <!--RATE APP POPUP-->
+    <string name="ratetitle">Califica R6 Assistant</string>
+    <string name="ratemsg">Califica esta aplicacion di danos tu comentario en la Play Store</string>
+    <string name="error_market">Error : No fue posible encontrar la app Play Store !</string>
+
+    <!--WEAPONS STATS-->
+    <string name="beta_msg">Esto es una beta!\nEsto significa que nos pueden faltar algunas cosas. Estamos trabajando en la traducción!</string>
+    <string name="byoperator">Por agentes</string>
+    <string name="byweapons">Por armas</string>
+    <string name="legs">piernas</string>
+    <string name="body">cuerpo</string>
+    <string name="rookarmor">Armadura de rook</string>
+
+    <!--WEAPONS STATS CLASS-->
+    <string name="assault">Rifles de asalto</string>
+    <string name="pistol">Pistolas</string>
+    <string name="lightmachine">Ametralladoras ligeras</string>
+    <string name="machinepistol">Pistolas ametralladoras</string>
+    <string name="marksmanrifle">Rifle de tirador</string>
+    <string name="shotgun">Shotgun</string>
+    <string name="submachinegun">Subametralladoras</string>
+
+    <!--WEAPONS BARRELS-->
+    <string name="compensator">Compensador</string>
+    <string name="flash_hider">reductor de fogonazo</string>
+    <string name="muzzle_brake">freno de boca</string>
+    <string name="suppressor">Supresor</string>
+    <string name="extended_barrel">Barril extendido</string>
+
+    <!--WEAPON STATS HELP-->
+    <string name="help_title">Estadisticas de las armas</string>
+    <string name="help_ammo">Esta es la cantidad de balas en el cargador.</string>
+    <string name="help_firerate">Esta el la tasa de disparo, esta es la frecuencia a la cual un arma especifica puede disparar o lanzar sus proyectiles</string>
+    <string name="help_damagefalloff">Esta es la perdida de daño, este es el rango donde se empieza a causar menos daño</string>
+    <string name="help_armor">Daño contra un operador con 1, 2 ó 3 de armadura</string>
+    <string name="help_armor_rook">Daño contra un operador con 1, 2 ó 3 de armadura equipado con armadura de rook</string>
+    <string name="help_barrel">Al fondo de la página, puedes ver el ranking de los barriles. \nel primero es el único el cual tuvo el spray mas confiable para controlar.\n de cualquier manera depende de ti y tu estilo de juego.</string>
+
+    <!--WEAPON STATS CREDIT-->
+    <string name="stats_credit_1">Muchas gracias a sergio por su hoja de características sin el nada de esto hubiera sido posible. \nCLICK AQUI para ver su canal de Youtube</string>
+    <string name="stats_credit_2">Muchas gracias VarsityGaming también, por sus videos sobre accesorios ! \nCLICK AQUI para ver su canal de YOUTUBE</string>
+
+    <!--OPERATORS MENU-->
+    <string name="bycountries">Por paises</string>
+    <string name="attackers">Atacantes</string>
+    <string name="defenders">Defensores</string>
+
+    <!--OPERATORS-->
+    <string name="attacker">Atacantes</string>
+    <string name="defender">Defensores</string>
+    <string name="armor_light">Ligero</string>
+    <string name="armor_heavy">Pesado</string>
+    <string name="speed_slow">Lento</string>
+    <string name="speed_fast">Rápido</string>
+    <string name="medium">Medio</string>
+
+    <!--OPERATORS TITLE-->
+    <string name="speed">Velocidad</string>
+    <string name="armor">Blindaje</string>
+    <string name="primary">Principal</string>
+    <string name="secondary">Secundaria</string>
+    <string name="gadget">Dispositivo</string>
+    <string name="ugadget">Habilidad especial</string>
+
+    <!--OPERATORS GADGET-->
+    <string name="gad_barbed">Alambre de espino</string>
+    <string name="gad_breach">Carga de demolición</string>
+    <string name="gad_frag">Granadas de fragmentación</string>
+    <string name="gad_nitro">Explosivo remoto</string>
+    <string name="gad_shield">Escudo desplegable</string>
+    <string name="gad_smoke">Granadas de humo</string>
+    <string name="gad_stun">Granadas aturdidora</string>
+    <string name="gad_impact">Granada de impacto</string>
+    <string name="gad_claymore">Claymore</string>
+
+    <!--OPERATORS UNIQUE GADGET DESCRIPTION-->
+    <string name="ugat_ash">PROYECTIL DE VOLADURA</string>
+    <string name="uga_ash">Dispara un proyectil de voladura que se clava en una superficie y detona automáticamente.</string>
+
+    <string name="ugat_bandit">ALAMBRADA ELECTRIFICADA</string>
+    <string name="uga_bandit">Coloca un dispositivo CED que electrifica otros aparatos y daña cualquier cosa que entra en contacto con ellos.</string>
+
+    <string name="ugat_blackbeard">ESCUDO DE FUSIL</string>
+    <string name="uga_blackbeard">Despliega un escudo antibalas en el fusil que puede combiarse si el primero resulta dañado.</string>
+
+    <string name="ugat_blitz">ESCUDO CEGADOR</string>
+    <string name="uga_blitz">Activa el dispositivo de fogonazo integrado en su escudo, y ciega temporalmente al enemigo.</string>
+
+    <string name="ugat_buck">LLAVE SKELETON</string>
+    <string name="uga_buck">Activa el accesorio que hay bajo el cañón de su escopeta.</string>
+
+    <string name="ugat_capitao">BALLESTA TÁCTICA</string>
+    <string name="uga_capitao">Ballesta táctica que dispara una ampolla de gas asfixiante y micro botes de humo.</string>
+
+    <string name="ugat_castle">PANEL DE BLINDAJE</string>
+    <string name="uga_castle">Coloca barricadas a prueba de balas, más resistentes que los refuerzos normales.</string>
+
+    <string name="ugat_caveira">PASO CALLADO</string>
+    <string name="uga_caveira">La habilidad depredadora de Caveira, el "paso callado", permite que aceche a su presa hasta que es demasiado tarde.</string>
+
+    <string name="ugat_doc">PISTOLA HIPODÉRMICA</string>
+    <string name="uga_doc">Dispara una dosis de epinefrina para reanimarse a sí mismo, o a compañeros de forma remota. Aporta una estimulación temporal.</string>
+
+    <string name="ugat_echo">YOKAI</string>
+    <string name="uga_echo">Dron volador que emite ráfagas de sonido desorientadoras y envía imágenes de vídeo al agente.</string>
+
+    <string name="ugat_frost">FELPUDO TRAMPA</string>
+    <string name="uga_frost">Oculta una trampa mecánica que incapacita a cualquier enemigo.</string>
+
+    <string name="ugat_fuze">CARGA DE RACIMO</string>
+    <string name="uga_fuze">Similar a las bombas de racimo, la carga perfora la pared y lanza pequeñas granadas al otro lado.</string>
+
+    <string name="ugat_glaz">MIRA PLEGABLE</string>
+    <string name="uga_glaz">Activa una mira telescópica con sensores de imagen avanzados para apuntar a los objectivos a larga distancia, incluso a través del humo.</string>
+
+    <string name="ugat_hibana">X-KAIROS</string>
+    <string name="uga_hibana">Lanzador de granadas de 40mm que dispara proyectiles explosivos que se detonan de forma remota.</string>
+
+    <string name="ugat_iq">DETECTOR DE ELECTRÓNICA</string>
+    <string name="uga_iq">Detecta campos electromagnéticos para localizar dispositivos cercanos a través de obstáculos.</string>
+
+    <string name="ugat_jackal">EYENOX MODELO III</string>
+    <string name="uga_jackal">Visor de rastreo, que localiza al enemigo al revelar e identificar pisadas recientes.</string>
+
+    <string name="ugat_jager">DEFENSA ACTIVA</string>
+    <string name="uga_jager">Usa un sistema de defensa activa que intercepta granadas antes de que detonen.</string>
+
+    <string name="ugat_kapkan">BLOQUEO DE ENTRADA</string>
+    <string name="uga_kapkan">Coloca las Ilamadas "trampas para bobos" en ventanas y en marcos de puertas.</string>
+
+    <string name="ugat_mira">ESPEJO NEGRO</string>
+    <string name="uga_mira">Instala un cristal-espejo antibalas de una sola dirección en paredes destructibles y reforzadas. Puede ser eyectado para crear un agujero de disparo.</string>
+
+    <string name="ugat_montagne">ESCUDO DESPLEGABLE</string>
+    <string name="uga_montagne">Puede extender su escudo para proteger por completo al agente estando de pie.</string>
+
+    <string name="ugat_mute">INHIBIDOR DE SEÑAL</string>
+    <string name="uga_mute">Interfiere las comunicaciones para detonar de forma remota los dispositivos o drones en sur radio.</string>
+
+    <string name="ugat_pulse">SENSOR DE LATIDO</string>
+    <string name="uga_pulse">Detecta los latidos cardiacos a corta distancia, incluso con obstáculos en el camino.</string>
+
+    <string name="ugat_rook">PACK DE BLINDAJE</string>
+    <string name="uga_rook">Pone a disposición de sus compañeros una bolsa con planchas de blindaje corporal.</string>
+
+    <string name="ugat_sledge">MARTILLO DEMOLEDOR</string>
+    <string name="uga_sledge">Usa un martillo de demolición para abrirse paso a través de superficies que pueden destruirse.</string>
+
+    <string name="ugat_smoke">GRANADA DE GAS REMOTA</string>
+    <string name="uga_smoke">Coloca cargas degas tóxico de detonación remota.</string>
+
+    <string name="ugat_tachanka">AMETRALLADORA MONTADA</string>
+    <string name="uga_tachanka">Instala una ametralladora ligera montada en torreta, con un escudo que protege la cabeza ante disparos frontales.</string>
+
+    <string name="ugat_thatcher">GRANADA PEM</string>
+    <string name="uga_thatcher">Sus granadas de pulso electromagnético desactivan los aparatos electrónicos cercanos.</string>
+
+    <string name="ugat_thermite">CARGA EXOTÉRMICA</string>
+    <string name="uga_thermite">Coloca una carga de racción exotérmica que destruye paredes fortificadas.</string>
+
+    <string name="ugat_twitch">DRON DE ELECTROCHOQUE</string>
+    <string name="uga_twitch">Usa dos drones de electrochoque para desactivar trampas o herir enemigos. Despliega el primer dron de electrochoque durante la fase de preparación.</string>
+
+    <string name="ugat_valkyrie">BLACK EYE</string>
+    <string name="uga_valkyrie">Puede activar una cámara cuya imagen está accesible para todo el equipo.</string>
+
+    <string name="ugat_ying">Candela</string>
+    <string name="uga_ying">Grupo de cargas aturdidoras (por fogonazo) que se anclan a una superficie o se hacen rodar como una granada.</string>
+
+    <string name="ugat_lesion">GU</string>
+    <string name="uga_lesion">Mina tóxica que inyecta un compuesto capaz de herir al enemigo y limitar su velocidad.</string>
+
+    <string name="ugat_ela">MINA GRZMOT</string>
+    <string name="uga_ela">Mina aturdidora de proximidad que puede anclarse a una superficie y deja sordo y desorientado al enemigo.</string>
+
+    <string name="ugat_zofia">KS79 LIFELINE</string>
+    <string name="uga_zofia">Lanzador de doble cañón que puede disparar tanto granadas aturdidoras como granadas de impacto.</string>
+
+    <string name="ugat_dokkaebi">BOMBA LÓGICA</string>
+    <string name="uga_dokkaebi">Carga un virus que obliga a los móviles enemigos a emitir un zumbido que pueden escuchar los demás, de modo que lq posición enemiga podría quedar al descubierto.</string>
+
+    <string name="ugat_vigil">ERC-7</string>
+    <string name="uga_vigil">Vigil escanea la zona buscando dispositivos cercanos para ocultar su imagen a cámaras y drones.</string>
+
+    <!--ONLINE-->
+    <string name="create_txt">Create</string>
+    <string name="message">Message</string>
+    <string name="online_chat_msg">Hi ! I\'m not a cop, please be respectful in chats. I\'ve made this app to help you, not to ban you.</string>
+
+    <!--ONLINE MENU-->
+    <string name="find_team">Find team</string>
+    <string name="find_players">Find players</string>
+    <string name="chat">Chat</string>
+
+    <!--ONLINE SIGN IN-->
+    <string name="online_signin">Sign in</string>
+    <string name="enternick_online">Enter your nickname :</string>
+    <string name="signin_online">This nickname is way too short !</string>
+    <string name="online_welcome">Welcome %s to R6 Assistant Online</string>
+
+    <!--ONLINE ERROR-->
+    <string name="no_internet">No internet connection !</string>
+    <string name="online_fail">Authentication failed.</string>
+    <string name="maintenance">Maintenance !</string>
+    <string name="not_updated">Your app is out of date !</string>
+    <string name="not_updated_msg">You need to update your app on the Play Store to use R6 Assistant Online.</string>
+
+    <!--TEAM ONLINE MSG-->
+    <string name="team_dialog_title">Be careful</string>
+    <string name="team_dialog_msg">If you leave the app, your team will be removed. You will need to create a new one.</string>
+    <string name="player_dialog_msg">If you leave the app, your profile will be removed. You will need to create a new one.</string>
+
+    <string name="team_full_dialog_title">Is your team full ?</string>
+    <string name="team_full_dialog_msg">If your team is full, then you can remove it from team seeking players.</string>
+
+    <string name="team_leave_dialog_title">Are you sure that you want to leave ?</string>
+    <string name="team_leave_dialog_msg">If you leave, your team will be removed, you will need to create a new one.</string>
+    <string name="player_leave_dialog_msg">If you leave, your profile will be removed, you will need to create a new one.</string>
+    <string name="team_leave_dialog">Leave</string>
+    <string name="team_stay_dialog">Stay</string>
+
+    <string name="team_tag_admin">[Team admin] </string>
+    <string name="player_tag_admin">[Player] </string>
+
+    <!--TEAM and PLAYER ONLINE-->
+    <string name="create_team">Create new team</string>
+    <string name="create_uteam">Create your team</string>
+
+    <string name="team_msg_nothing">There is no teams for the moment. If you are a team, add your team with the button at the bottom and wait players to join your room.</string>
+    <string name="player_msg_nothing">There is no players for the moment. If you are looking for players, add your profile with the button at the bottom and wait players to join your room.</string>
+
+    <string name="create_player">Add yourself as a player</string>
+    <string name="create_uplayer">Create your profile</string>
+
+    <string name="team_name">Name of your team:</string>
+    <string name="team_name_error">Name of the team is way too short !</string>
+    <string name="player_name_error">Your name is way too short !</string>
+
+    <string name="player_name">Your nickname:</string>
+
+    <string name="team_language">Language:</string>
+
+    <string name="team_platform">Platform:</string>
+
+    <string name="team_mpmode">Multiplayer mode:</string>
+    <string name="team_mpmode_for">for</string>
+    <string name="team_mpmode_1">Casual</string>
+    <string name="team_mpmode_2">Ranked</string>
+    <string name="team_mpmode_3">Practice</string>
+
+    <string name="team_rank">Rank:</string>
+    <string name="team_rank_1">Copper</string>
+    <string name="team_rank_2">Bronze</string>
+    <string name="team_rank_3">Silver</string>
+    <string name="team_rank_4">Gold</string>
+    <string name="team_rank_5">Platinum</string>
+    <string name="team_rank_6">Diamond</string>
+
+    <string name="team_playerneed">How many players do you need ?</string>
+
+    <!--LOBBY MENU-->
+    <string name="lobbytitle">LOBBY ID : %d</string>
+
+    <!--MORE MENU-->
+    <string name="about">About</string>
+    <string name="settings">Settings</string>
+
+    <!--ABOUT-->
+    <string name="labelabout">R6 Assistant - About</string>
+    <string name="abouttxt1">This application has been created by Khrys, just a random player of Rainbow Six Siege. The application is Open Source and not afiliated with Ubisoft.\n\nAny feedback, bug report, or suggestion are really appreciated. As an Open Source application, you can acccess to the source code hosted on GitHub by clicking on the image right at the bottom of the page.\n\nKhrys, developer and player.</string>
+
+    <!--SUPPORT-->
+    <string name="labelsupport">R6 Assistant - Support Me</string>
+    <string name="supporttxt">This application is fully free, ads free, no paid features. By downloading it, giving your feedback or rating it you already did a lot for me, so thank you !\n\nI spend a lot of time on it, and of course because I want it but if you want to donate something, the button is below. If you donate your name will appear in the app soon.\n\n Thanks a lot ! \nKhrys</string>
+
+    <!--SETTINGS-->
+    <string name="labelsettings">R6 Assistant - Settings</string>
+    <string name="warning">Warning !</string>
+    <string name="settings_end">You need to restart your application to apply the new language !</string>
+
+    <!--CREDIT TO TRANSLATORS-->
+    <string name="translator_pt">LeGuigo</string>
+    <string name="translator_de">Mert Huz</string>
+    <string name="translator_it">Andrea Verano</string>
+    <string name="translator_ru">Maxim Lem</string>
+    <string name="translator_zh1">Gpoint Chen</string>
+    <string name="translator_zh2">Neel Lee</string>
+    <string name="translator_pl">AK_D14BL0</string>
+    <string name="translator_kr">sd_iron</string>
+    <string name="translator_sr">error55o</string>
+    <string name="translator_es">Samigameplays</string>
+
+    <!--LANGUAGE-->
+    <string name="language">Idioma</string>
+    <string name="language_english">English</string>
+    <string name="language_french">Français</string>
+    <string name="language_spanish">Español</string>
+    <string name="language_portuguese">Português</string>
+    <string name="language_italian">Italiano</string>
+    <string name="language_german">Deutsch</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_polish">Polski</string>
+    <string name="language_japenese">日本語</string>
+    <string name="language_korean">한국어</string>
+    <string name="language_simplified_chinese">简体中文</string>
+    <string name="language_traditional_chinese">繁體中文</string>
+    <string name="language_serbian">Srpski</string>
+
+    <!--MAP MENU-->
+    <string name="takemap">Seleccione un mapa</string>
+
+    <!--MAPS INFO-->
+    <string name="map_name_0">Banco</string>
+        <string name="cam_0_0">(P1) Vestíbulo</string>
+        <string name="cam_0_1">(P1) Pasillo de los despachos</string>
+        <string name="cam_0_2">(P2) Escalera a la claraboya</string>
+        <string name="cam_0_3">(S) Vestíbulo de la cámara</string>
+        <string name="cam_0_4">(EXT) Plaza</string>
+        <string name="cam_0_5">(EXT) Rampa del garaje</string>
+        <string name="cam_0_6">(EXT) Callejón trasero</string>
+
+    <string name="map_name_1">Chalet</string>
+        <string name="cam_1_0">(P2) Pasillo de las habitaciones</string>
+        <string name="cam_1_1">(P2) Zona de la chimenea</string>
+        <string name="cam_1_2">(P1) Escalera a la biblioteca</string>
+        <string name="cam_1_3">(S) Garaje de motos de nieves</string>
+        <string name="cam_1_4">(EXT) Patio delantero</string>
+        <string name="cam_1_5">(EXT) Patio trasero</string>
+
+    <string name="map_name_2">Club</string>
+        <string name="cam_2_0">(P2) Pasillo a las habitaciones</string>
+        <string name="cam_2_1">(P1) Bar</string>
+        <string name="cam_2_2">(P1) Garaje</string>
+        <string name="cam_2_3">(S) Pasillo del sótano</string>
+        <string name="cam_2_4">(EXT) Aparcamiento VIP</string>
+        <string name="cam_2_5">(EXT) Pared de grafitis</string>
+        <string name="cam_2_6">(EXT) Perreras</string>
+
+    <string name="map_name_3">Consulado</string>
+        <string name="cam_3_0">(P2) Mostrador del consulado</string>
+        <string name="cam_3_1">(P1) Escalera principal</string>
+        <string name="cam_3_2">(P1) Despacho de visados</string>
+        <string name="cam_3_3">(EXT) Puerta frontal</string>
+        <string name="cam_3_4">(S) Pasillo de taquillas</string>
+        <string name="cam_3_5">(S) Garaje</string>
+        <string name="cam_3_6">(EXT) Callejón delanteo</string>
+        <string name="cam_3_7">(EXT) Acceso al garaje</string>
+
+    <string name="map_name_4">Base de Hereford</string>
+        <string name="cam_4_0">(EXT) Tejado</string>
+        <string name="cam_4_1">(P2) Pasillo 2</string>
+        <string name="cam_4_2">(P1) Pasillo 1</string>
+        <string name="cam_4_3">(S) Taquillas</string>
+        <string name="cam_4_4">(EXT) Acceso este a galería de tiro</string>
+        <string name="cam_4_5">(EXT) Zona de carretilla elevadora</string>
+
+    <string name="map_name_5">Casa</string>
+        <string name="cam_5_0">(P2) Pasillo superior</string>
+        <string name="cam_5_1">(P1) Cocina</string>
+        <string name="cam_5_2">(S) Gimnasio</string>
+        <string name="cam_5_3">(S) Garaje</string>
+        <string name="cam_5_4">(EXT) Patio delantero</string>
+        <string name="cam_5_5">(EXT) Jardín</string>
+
+    <string name="map_name_6">Café Dostoyevsky</string>
+        <string name="cam_6_0">(P3) Sala de cócteles</string>
+        <string name="cam_6_1">(P2) Pasillo a la sala de lectura</string>
+        <string name="cam_6_2">(P1) Pasillo a la cámara fría</string>
+        <string name="cam_6_3">(P1) Obrador de pastelería</string>
+        <string name="cam_6_4">(EXT) Calle principal, zona oeste</string>
+        <string name="cam_6_5">(EXT) Callejón del parque</string>
+
+    <string name="map_name_7">Canal</string>
+        <string name="cam_7_0">(CC-P3) Pasillo a la sala de control</string>
+        <string name="cam_7_1">(CC-P2) Pasillo a la oficina de mapas</string>
+        <string name="cam_7_2">(GC-P2) Pasillo de guardacostas</string>
+        <string name="cam_7_3">(GC-P1) Pasillo suministro barca</string>
+        <string name="cam_7_4">(EXT) Césped delantero</string>
+        <string name="cam_7_5">(EXT) Compuerta</string>
+        <string name="cam_7_6">(EXT) Zona de obras</string>
+
+    <string name="map_name_8">Oregón</string>
+        <string name="cam_8_0">(P2) Pasillo a la armería</string>
+        <string name="cam_8_1">(P1) Vestíbulo</string>
+        <string name="cam_8_2">(P1) Entrada del salón comnedor</string>
+        <string name="cam_8_3">(P1) Escenario posterior</string>
+        <string name="cam_8_4">(EXT) Desguace</string>
+        <string name="cam_8_5">(EXT) Aparcamiento</string>
+        <string name="cam_8_6">(EXT) Zona de obras</string>
+
+    <string name="map_name_9">Avión presidencial</string>
+        <string name="cam_9_0">(P3) Personal de cabina</string>
+        <string name="cam_9_1">(P2) Pasillo frontal</string>
+        <string name="cam_9_2">(P2) Zona de prensa A</string>
+        <string name="cam_9_3">(P1) Bodega de equipaje</string>
+        <string name="cam_9_4">(P1) Bodega de carga</string>
+
+    <string name="map_name_10">Yate</string>
+        <string name="cam_10_0">(4F) Entrada del helipuerto</string>
+        <string name="cam_10_1">(P3) Pasillo a camarotes</string>
+        <string name="cam_10_2">(P3) Sala de espera</string>
+        <string name="cam_10_3">(P2) Escaleras de proa</string>
+        <string name="cam_10_4">(P2) Escaleras de popa</string>
+        <string name="cam_10_5">(P1) Pasillo a las sala de máquinas</string>
+        <string name="cam_10_6">(EXT) Cubierta de proa</string>
+        <string name="cam_10_7">(EXT) Cubierta del spa</string>
+
+    <string name="map_name_11">Frontera</string>
+        <string name="cam_11_0">(P2) Escalera este</string>
+        <string name="cam_11_1">(P2) Pasillo principal</string>
+        <string name="cam_11_2">(P1) Vestíbulo principal</string>
+        <string name="cam_11_3">(P1) Pasillo de salida</string>
+        <string name="cam_11_4">(EXT) Entrada al aparcamiento</string>
+        <string name="cam_11_5">(EXT) Zona del accidente</string>
+        <string name="cam_11_6">(EXT) Callejón al aparcamiento</string>
+
+    <string name="map_name_12">Favela</string>
+        <string name="cam_12_0">(P3) Escaleras traseras</string>
+        <string name="cam_12_1">(P3) Escaleras principales</string>
+        <string name="cam_12_2">(P1) Cuarto de lavado</string>
+        <string name="cam_12_3">(P1) Vestíbulo de las escaleras</string>
+        <string name="cam_12_4">(EXT) Callejón de la escuela</string>
+        <string name="cam_12_5">(EXT) Calle</string>
+        <string name="cam_12_6">(EXT) Callejón trasero</string>
+
+    <string name="map_name_13">Rascacielos</string>
+        <string name="cam_13_0">(P2) Pasillo</string>
+        <string name="cam_13_1">(P1) Restaurante</string>
+        <string name="cam_13_2">(P2) Vestíbulo de la casa</string>
+        <string name="cam_13_3">(P1) Vestíbulo de la casa</string>
+        <string name="cam_13_4">(EXT) Jardín oeste</string>
+        <string name="cam_13_5">(EXT) Jardín este</string>
+        <string name="cam_13_6">(EXT) Unidades de refrigeración</string>
+
+    <string name="map_name_14">U. Bartlett</string>
+        <string name="cam_14_0">(P2) Pasillo de la brújula</string>
+        <string name="cam_14_1">(P2) Pasillo del mirador</string>
+        <string name="cam_14_2">(P1) Salón de los arcos</string>
+        <string name="cam_14_3">(P1) Vestíbulo</string>
+        <string name="cam_14_4">(P1) Comedor</string>
+        <string name="cam_14_5">(EXT) Puerta principal</string>
+        <string name="cam_14_6">(EXT) Apartcamiento</string>
+
+    <string name="map_name_15">Litoral</string>
+        <string name="cam_15_0">(P1) Pasillo</string>
+        <string name="cam_15_1">(P1) Vestíbulo principal</string>
+        <string name="cam_15_2">(P2) Acurario</string>
+        <string name="cam_15_3">(P2) Pasillo</string>
+        <string name="cam_15_4">(EXT) Tejado del garaje</string>
+        <string name="cam_15_5">(EXT) Ruinas</string>
+        <string name="cam_15_6">(EXT) Ruinas</string>
+
+    <string name="map_name_16">Parque de atracciones</string>
+        <string name="cam_16_0">(P1) Galería</string>
+        <string name="cam_16_1">(P2) Escaleras encentadas</string>
+        <string name="cam_16_2">(P1) Pasillo general</string>
+        <string name="cam_16_3">(P2) Zona superior de los recreativos</string>
+        <string name="cam_16_4">(P2) Andén de tren</string>
+        <string name="cam_16_5">(EXT) Atracción de las tazas</string>
+        <string name="cam_16_6">(EXT) Entrada de servicio</string>
+        <string name="cam_16_7">(EXT) Información para visitantes</string>
+
+    <string name="map_name_17">Torre</string>
+        <string name="cam_17_0">(P2) Galería principal</string>
+        <string name="cam_17_1">(P2) Área de exposiciones</string>
+        <string name="cam_17_2">(P2) Recepción de la compañía</string>
+        <string name="cam_17_3">(P1) Vestíbulo tradicional</string>
+        <string name="cam_17_4">(P1) Balconada Oeste</string>
+        <string name="cam_17_5">(P2) Atrio central</string>
+        <string name="cam_17_6">(P1) Fuente</string>
+
+    <string name="destroyPhrase">%d</string>
+    <string name="cameraPhrase">%d camaras</string>
+    <string name="cameraPhrase2_1">%d cámara restante</string>
+    <string name="cameraPhrase2_2">%d cameras remaining</string>
+    <string name="cameraAllDestroyed">todas las camaras destruidas</string>
+    <string name="destroyed">X</string>
+
+    <!--FLOORS OF MAP PLAN-->
+    <string name="f_base">Sótano</string>
+    <string name="f_0">1er Planta</string>
+    <string name="f_1">2do Planta</string>
+    <string name="f_2">3er Planta</string>
+    <string name="f_3">4to Planta</string>
+
+    <!--FLOORS ERROR PHRASE-->
+    <string name="planerror">Los planos no están disponibles todavía !</string>
+    <string name="error_floor_below">No hay más pisos debajo !</string>
+    <string name="error_floor_above">No hay más pisos arriba !</string>
+
+    <!--IMAGE CONTENT DESCRIPTION-->
+    <string name="twitch_drone_image">Twitch Drone Image</string>
+    <string name="zoom_icon">Zoom Icon</string>
+    <string name="zoomedimg">Zoomed Image</string>
+    <string name="cellimg">Cell Image</string>
+    <string name="banner_image">Banner Image</string>
+    <string name="version_d">Version %S</string>
+    <string name="zoom">Zoom</string>
+    <string name="floor">FLOOR</string>
+    <string name="zoom_in">Zoom In</string>
+    <string name="zoom_out">Zoom Out</string>
+    <string name="resetzoom">resetzoom</string>
+    <string name="position">Posiciones</string>
+    <string name="meuflostring">TROLLED BY MEUFLO\n THE BETA TESTER</string>
+    <string name="troll_face">Troll Face</string>
+    <string name="star">Star</string>
+    <string name="settingsicon">Icon Settings</string>
+    <!--WEAPON STATS CONTENT DESCRIPTION-->
+    <string name="name_weapon">Weapon Image</string>
+    <string name="op_1">Operator Icon 1</string>
+    <string name="op_2">Operator Icon 2</string>
+    <string name="op_3">Operator Icon 3</string>
+    <string name="op_4">Operator Icon 4</string>
+    <string name="ammo_icon">Ammo Icon</string>
+    <string name="firerate_icon">Fire rate Icon</string>
+    <string name="damagefall_icon">Damage fall off Icon</string>
+    <string name="rook_icon">Damage fall off Icon</string>
+    <string name="armor_light_icon">Light Amor Icon</string>
+    <string name="armor_medium_icon">Medium Amor Icon</string>
+    <string name="armor_heavy_icon">Heavy Amor Icon</string>
+    <string name="barrel_1">Image of the Barrel 1</string>
+    <string name="barrel_2">Image of the Barrel 2</string>
+    <string name="barrel_3">Image of the Barrel 3</string>
+    <string name="barrel_4">Image of the Barrel 4</string>
+    <string name="barrel_5">Image of the Barrel 5</string>
+</resources>

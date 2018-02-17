@@ -29,8 +29,8 @@
     <string name="msgsoon">Cette nouvelle fonctionnalité arrive bientôt !</string>
 
     <!--UPDATE APP-->
-    <string name="update_title">An update is available !</string>
-    <string name="update_text">You are using an older version of R6 Assistant, do you want to update it ?</string>
+    <string name="update_title">Une mise à jour est disponible !</string>
+    <string name="update_text">Vous utilisez une ancienne version de R6 Assistant, voulez-vous mettre à jour ?</string>
 
     <!--RATE APP POPUP-->
     <string name="ratetitle">Noter R6 Assistant</string>
@@ -322,6 +322,7 @@
     <string name="translator_pl">AK_D14BL0</string>
     <string name="translator_kr">sd_iron</string>
     <string name="translator_sr">error55o</string>
+    <string name="translator_es">Samigameplays</string>
 
     <!--LANGUAGE-->
     <string name="language">Langage</string>
