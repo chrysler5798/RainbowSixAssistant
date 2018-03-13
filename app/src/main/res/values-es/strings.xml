@@ -216,6 +216,12 @@
     <string name="ugat_vigil">ERC-7</string>
     <string name="uga_vigil">Vigil escanea la zona buscando dispositivos cercanos para ocultar su imagen a cámaras y drones.</string>
 
+    <string name="ugat_lion">EE-1-D</string>
+    <string name="uga_lion">El EE-1-D detecta movimiento enemigo en un área y ofrece a Lion una vista general de la zona de combate.</string>
+
+    <string name="ugat_finka">ESTÍMULO DE ADRENALINA</string>
+    <string name="uga_finka">Los nanobots dan al equipo un breve aumento de salud y reaniman temporalmente a los aliados en estado DBNO.</string>
+
     <!--ONLINE-->
     <string name="create_txt">Create</string>
     <string name="message">Message</string>

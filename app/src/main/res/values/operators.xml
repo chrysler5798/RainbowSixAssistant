@@ -7,6 +7,7 @@
         <item>tachanka</item>
         <item>glaz</item>
         <item>fuze</item>
+        <item>finka</item>
 
         <item>iq</item>
         <item>blitz</item>
@@ -17,6 +18,7 @@
         <item>doc</item>
         <item>twitch</item>
         <item>montagne</item>
+        <item>lion</item>
 
         <item>thermite</item>
         <item>pulse</item>
@@ -74,6 +76,8 @@
         <item>ying</item>
         <item>zofia</item>
         <item>dokkaebi</item>
+        <item>lion</item>
+        <item>finka</item>
 
         <!--Defenders-->
         <item>kapkan</item>
@@ -132,6 +136,7 @@
         <item>tachanka</item>
         <item>glaz</item>
         <item>fuze</item>
+        <item>finka</item>
     </string-array>
 
     <string-array name="gsg9">
@@ -146,6 +151,7 @@
         <item>doc</item>
         <item>twitch</item>
         <item>montagne</item>
+        <item>lion</item>
     </string-array>
 
     <string-array name="swat">
@@ -725,6 +731,38 @@
         <item>3</item><item>1</item>
         <item>2</item><item>barbed</item>
         <item>2</item><item>impact</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="lion">
+        <item>atk</item>
+        <item>fr</item><item>GIGN</item>
+        <item>5</item>
+        <item>3</item>
+        <item>v308</item>
+        <item>417</item>
+        <item>sg-cqb</item>
+        <item>lfp586</item>
+        <item>p9</item>
+        <item>2</item><item>2</item>
+        <item>1</item><item>claymore</item>
+        <item>3</item><item>stun</item>
+        <item>0</item>
+    </string-array>
+
+    <string-array name="finka">
+        <item>atk</item>
+        <item>ru</item><item>Spetsnaz</item>
+        <item>5</item>
+        <item>3</item>
+        <item>spear</item>
+        <item>6p41</item>
+        <item>sasg-12</item>
+        <item>pmm</item>
+        <item>gsh-18</item>
+        <item>2</item><item>2</item>
+        <item>3</item><item>breach</item>
+        <item>3</item><item>stun</item>
         <item>0</item>
     </string-array>
 </resources>

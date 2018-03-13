@@ -216,6 +216,12 @@
     <string name="ugat_vigil">ERT-7</string>
     <string name="uga_vigil">Vigil scannt Geräte in der Umgebung, um sich vor Kameras und Drohnen zu tarnen.</string>
 
+    <string name="ugat_lion">EE-EINS-D</string>
+    <string name="uga_lion">EE-EINS-D nimmt feindliche Bewegungen wahr und gibt einen Überblick über das Schlachtfeld.</string>
+
+    <string name="ugat_finka">ADRENALINSCHUB</string>
+    <string name="uga_finka">Durch die Nanobots erhält das Team einen kurzen TP-Zuwachs und Verbündete mit dem Zustand "Am Boden" werden wiederbelebt.</string>
+
     <!--ONLINE-->
     <string name="create_txt">Create</string>
     <string name="message">Message</string>

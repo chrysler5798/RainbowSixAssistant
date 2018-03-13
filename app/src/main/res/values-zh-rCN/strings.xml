@@ -216,6 +216,12 @@
     <string name="ugat_vigil">电子干涉斗篷（ERC-7）</string>
     <string name="uga_vigil">Vigil会扫描周遭装置，让他的样貌从摄影机与无人机中抹灭。</string>
 
+    <string name="ugat_lion">EE-ONE-D</string>
+    <string name="uga_lion">The EE-ONE-D detects enemy movement, providing an overview of the battlefield.</string>
+
+    <string name="ugat_finka">ADRENAL SURGE</string>
+    <string name="uga_finka">The nanobots give the team a brief gain in HP and revives allies in a DBNO state.</string>
+
     <!--ONLINE-->
     <string name="create_txt">建立</string>
     <string name="message">信息</string>

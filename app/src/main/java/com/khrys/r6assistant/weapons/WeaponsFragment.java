@@ -46,7 +46,7 @@ public class WeaponsFragment extends Fragment
         ArrayList<Integer> weaponsimg = new ArrayList<>();
         ArrayList<String> weaponstxt = new ArrayList<>();
 
-        String tableArme[] = {"l85a2","ar33","g36c","r4-c","556xi","f2","ak-12","aug","552 commando","416-c carbine","c8-sfw","mk17 cqb","para 308","type 89","c7e","m762",
+        String tableArme[] = {"l85a2","ar33","g36c","r4-c","556xi","f2","ak-12","aug","552 commando","416-c carbine","c8-sfw","mk17 cqb","para 308","type 89","c7e","m762","v308","spear",
                               "p226 mk 25","57 usg","m45 meusoc","p9","lfp586","gsh-18","pmm","p12","mk1","d-50","prb92","luison","p229","usp40","q-929","rg15",
                               "6p41","g8a1","m249","t-95 lsw","lmg-e",
                               "smg-11","bearing-9","c75","smg-12",

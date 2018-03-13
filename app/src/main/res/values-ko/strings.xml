@@ -216,6 +216,12 @@
     <string name="ugat_vigil">전자식 렌더링 은폐기(ERC-7)</string>
     <string name="uga_vigil">비질은 주변의 장치를 탐지하여 카메라와 드론의 영상에서 자신의 모습을 제거합니다.</string>
 
+    <string name="ugat_lion">EE-ONE-D</string>
+    <string name="uga_lion">The EE-ONE-D detects enemy movement, providing an overview of the battlefield.</string>
+
+    <string name="ugat_finka">ADRENAL SURGE</string>
+    <string name="uga_finka">The nanobots give the team a brief gain in HP and revives allies in a DBNO state.</string>
+
     <!--ONLINE-->
     <string name="create_txt">만들기</string>
     <string name="message">메세지</string>

@@ -216,6 +216,12 @@
     <string name="ugat_vigil">ERC-7</string>
     <string name="uga_vigil">Vigil scanne les appareils voisins pour effacer son image des caméras et des drones.</string>
 
+    <string name="ugat_lion">EE-ONE-D</string>
+    <string name="uga_lion">Le EE-ONE-D détecte les mouvements ennemis et donne une vue d\'ensemble du champ de bataille.</string>
+
+    <string name="ugat_finka">SHOOT D\'ADRÉNALINE</string>
+    <string name="uga_finka">Les nanobots offrent un bonus de santé temporaire à l\'équipe et raniment les alliés blessés.</string>
+
     <!--ONLINE-->
     <string name="create_txt">Créer</string>
     <string name="message">Message</string>

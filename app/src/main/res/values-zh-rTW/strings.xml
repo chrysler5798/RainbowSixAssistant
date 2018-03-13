@@ -216,6 +216,12 @@
     <string name="ugat_vigil">電子渲染迷彩 ERC-7</string>
     <string name="uga_vigil">Vigil會掃描周遭裝置，讓他的樣貌從攝影機與無人機中抹滅。</string>
 
+    <string name="ugat_lion">EE-ONE-D</string>
+    <string name="uga_lion">The EE-ONE-D detects enemy movement, providing an overview of the battlefield.</string>
+
+    <string name="ugat_finka">ADRENAL SURGE</string>
+    <string name="uga_finka">The nanobots give the team a brief gain in HP and revives allies in a DBNO state.</string>
+
     <!--ONLINE-->
     <string name="create_txt">創建</string>
     <string name="message">訊息</string>

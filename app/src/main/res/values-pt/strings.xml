@@ -216,6 +216,12 @@
     <string name="ugat_vigil">ERC-7</string>
     <string name="uga_vigil">Vigil escaneia dispositivos ao seu redor para apagar sua própria imagem.</string>
 
+    <string name="ugat_lion">EE-ONE-D</string>
+    <string name="uga_lion">O EE-ONE-D detecta movimento inimigo, proporcionando uma visão geral do campo batalha.</string>
+
+    <string name="ugat_finka">PICO DE ADRENALINA</string>
+    <string name="uga_finka">Os nanorrobôs dão um breve genho de energia à equipe e reanimam temporariamente os aliados feridos em estado crítico (DBNO).</string>
+
     <!--ONLINE-->
     <string name="create_txt">Create</string>
     <string name="message">Message</string>

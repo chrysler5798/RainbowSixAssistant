@@ -216,6 +216,12 @@
     <string name="ugat_vigil">ERC-7 エレクトロレンダリングクローク</string>
     <string name="uga_vigil">周囲のデバイスをスキャンし、自身の画像をカメラやドローンから消し去る。</string>
 
+    <string name="ugat_lion">EE-ONE-D</string>
+    <string name="uga_lion">The EE-ONE-D detects enemy movement, providing an overview of the battlefield.</string>
+
+    <string name="ugat_finka">ADRENAL SURGE</string>
+    <string name="uga_finka">The nanobots give the team a brief gain in HP and revives allies in a DBNO state.</string>
+
     <!--ONLINE-->
     <string name="create_txt">作成</string>
     <string name="message">メッセージ</string>

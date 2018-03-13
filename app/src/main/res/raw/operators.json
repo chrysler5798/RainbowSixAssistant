@@ -143,6 +143,14 @@
     "35": {
       "name": "vigil",
       "side": 0
+    },
+    "36": {
+      "name": "lion",
+      "side": 1
+    },
+    "37": {
+      "name": "finka",
+      "side": 1
     }
   }
 }

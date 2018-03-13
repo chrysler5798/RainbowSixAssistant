@@ -216,6 +216,12 @@
     <string name="ugat_vigil">ERC-7</string>
     <string name="uga_vigil">Vigil effettua una scansione dei dispositivi circostanti per rimuovere Ia sua immagine da telecamere e droni.</string>
 
+    <string name="ugat_lion">EE-ONE-D</string>
+    <string name="uga_lion">L\'EE-ONE-D rileva i movimenti, fornendo una panoramica del campo di battaglia.</string>
+
+    <string name="ugat_finka">BOTTA DI ADRENALINA</string>
+    <string name="uga_finka">Le nanomacchine conferiscono alla squadra un momentaneo aumento di salute e rianima gli alleati.</string>
+
     <!--ONLINE-->
     <string name="create_txt">Create</string>
     <string name="message">Message</string>

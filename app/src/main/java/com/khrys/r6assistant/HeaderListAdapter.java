@@ -116,7 +116,7 @@ public class HeaderListAdapter extends RecyclerView.Adapter<HeaderListAdapter.My
     public long getHeaderId(int position)
     {
         /*        Compte
-                Assault : 16
+                Assault : 18
                 Pistols : 16
                 LMG : 5
                 SMG : 4
@@ -127,30 +127,30 @@ public class HeaderListAdapter extends RecyclerView.Adapter<HeaderListAdapter.My
          */
         if(isWeapon())
         {
-            if(position<16){
+            if(position<18){
                 return 0;
-            }else if(position<32){
-                return 16;
-            }else if(position<37){
-                return 32;
-            }else if(position<41){
-                return 37;
-            }else if(position<46){
-                return 41;
-            }else if(position<61){
-                return 46;
-            }else if(position<77){
-                return 61;
+            }else if(position<34){
+                return 18;
+            }else if(position<39){
+                return 34;
+            }else if(position<43){
+                return 39;
+            }else if(position<48){
+                return 43;
+            }else if(position<63){
+                return 48;
+            }else if(position<79){
+                return 63;
             }else{
-                return 77;
+                return 79;
             }
         }
         else
         {
-            if(position<18){
+            if(position<20){
                 return 0;
-            }else if(position<36){
-                return 18;
+            }else if(position<38){
+                return 20;
             }else {
                 return 0;
             }
@@ -171,27 +171,27 @@ public class HeaderListAdapter extends RecyclerView.Adapter<HeaderListAdapter.My
         int txtId = 0;
         if(isWeapon())
         {
-            if(position<16){
+            if(position<18){
                 txtId = R.string.assault;
-            }else if(position<32){
+            }else if(position<34){
                 txtId = R.string.pistol;
-            }else if(position<37){
+            }else if(position<39){
                 txtId = R.string.lightmachine;
-            }else if(position<41){
+            }else if(position<43){
                 txtId = R.string.machinepistol;
-            }else if(position<46){
+            }else if(position<48){
                 txtId = R.string.marksmanrifle;
-            }else if(position<61){
+            }else if(position<63){
                 txtId = R.string.shotgun;
-            }else if(position<77){
+            }else if(position<79){
                 txtId = R.string.submachinegun;
             }
         }
         else
         {
-            if(position<18){
+            if(position<20){
                 txtId = R.string.attackers;
-            }else if(position<36){
+            }else if(position<38){
                 txtId = R.string.defenders;
             }
         }
