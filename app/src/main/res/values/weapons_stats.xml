@@ -6,6 +6,7 @@
         <item>sledge</item>
         <item />
         <item />
+        <item />
 
         <item>30</item><item>670</item><item>27</item>
 
@@ -26,6 +27,7 @@
 
     <string-array name="g_ar33">
         <item>thatcher</item>
+        <item />
         <item />
         <item />
         <item />
@@ -52,6 +54,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>780</item><item>27</item>
 
@@ -72,6 +75,7 @@
 
     <string-array name="g_r4_c">
         <item>ash</item>
+        <item />
         <item />
         <item />
         <item />
@@ -98,6 +102,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>670</item><item>27</item>
 
@@ -118,6 +123,7 @@
 
     <string-array name="g_f2">
         <item>twitch</item>
+        <item />
         <item />
         <item />
         <item />
@@ -144,6 +150,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>850</item><item>23</item>
 
@@ -164,6 +171,7 @@
 
     <string-array name="g_aug">
         <item>iq</item>
+        <item />
         <item />
         <item />
         <item />
@@ -190,6 +198,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>690</item><item>20</item>
 
@@ -210,6 +219,7 @@
 
     <string-array name="g_416_c_carbine">
         <item>jager</item>
+        <item />
         <item />
         <item />
         <item />
@@ -236,6 +246,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>837</item><item>20</item>
 
@@ -256,6 +267,7 @@
 
     <string-array name="g_mk17_cqb">
         <item>blackbeard</item>
+        <item />
         <item />
         <item />
         <item />
@@ -282,6 +294,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>650</item><item>28</item>
 
@@ -302,6 +315,7 @@
 
     <string-array name="g_type_89">
         <item>hibana</item>
+        <item />
         <item />
         <item />
         <item />
@@ -328,6 +342,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>800</item><item>20</item>
 
@@ -351,6 +366,7 @@
         <item>thatcher</item>
         <item>smoke</item>
         <item>mute</item>
+        <item />
 
         <item>15</item><item>420</item><item>8</item>
 
@@ -374,6 +390,7 @@
         <item>thermite</item>
         <item>castle</item>
         <item>pulse</item>
+        <item />
 
         <item>20</item><item>400</item><item>18</item>
 
@@ -397,6 +414,7 @@
         <item>thermite</item>
         <item>castle</item>
         <item>pulse</item>
+        <item />
 
         <item>7</item><item>360</item><item>15</item>
 
@@ -420,6 +438,7 @@
         <item>montagne</item>
         <item>doc</item>
         <item>rook</item>
+        <item />
 
         <item>16</item><item>360</item><item>20</item>
 
@@ -443,6 +462,7 @@
         <item>montagne</item>
         <item>doc</item>
         <item>rook</item>
+        <item>lion</item>
 
         <item>6</item><item>360</item><item>15</item>
 
@@ -466,6 +486,7 @@
         <item>fuze</item>
         <item>kapkan</item>
         <item>tachanka</item>
+        <item>finka</item>
 
         <item>18</item><item>360</item><item>18</item>
 
@@ -489,6 +510,7 @@
         <item>fuze</item>
         <item>kapkan</item>
         <item>tachanka</item>
+        <item>finka</item>
 
         <item>8</item><item>420</item><item>5</item>
 
@@ -512,6 +534,7 @@
         <item>iq</item>
         <item>jager</item>
         <item>bandit</item>
+        <item />
 
         <item>15</item><item>420</item><item>8</item>
 
@@ -533,6 +556,7 @@
     <string-array name="g_mk1">
         <item>buck</item>
         <item>frost</item>
+        <item />
         <item />
         <item />
 
@@ -558,6 +582,7 @@
         <item>valkyrie</item>
         <item />
         <item />
+        <item />
 
         <item>7</item><item>270</item><item>18</item>
 
@@ -578,6 +603,7 @@
 
     <string-array name="g_prb92">
         <item>capitao</item>
+        <item />
         <item />
         <item />
         <item />
@@ -604,6 +630,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>15</item><item>375</item><item>3</item>
 
@@ -625,6 +652,7 @@
     <string-array name="g_p229">
         <item>hibana</item>
         <item>echo</item>
+        <item />
         <item />
         <item />
 
@@ -650,6 +678,7 @@
         <item>mira</item>
         <item />
         <item />
+        <item />
 
         <item>12</item><item>375</item><item />
 
@@ -670,6 +699,7 @@
 
     <string-array name="g_6p41">
         <item>fuze</item>
+        <item>finka</item>
         <item />
         <item />
         <item />
@@ -696,6 +726,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>50</item><item>850</item><item>16</item>
 
@@ -716,6 +747,7 @@
 
     <string-array name="g_m249">
         <item>capitao</item>
+        <item />
         <item />
         <item />
         <item />
@@ -742,6 +774,7 @@
         <item>sledge</item>
         <item />
         <item />
+        <item />
 
         <item>16</item><item>1270</item><item>15</item>
 
@@ -765,6 +798,7 @@
         <item>echo</item>
         <item />
         <item />
+        <item />
 
         <item>25</item><item>1100</item><item>15</item>
 
@@ -785,6 +819,7 @@
 
     <string-array name="g_417">
         <item>twitch</item>
+        <item>lion</item>
         <item />
         <item />
         <item />
@@ -811,6 +846,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>10</item><item>220</item><item>15</item>
         
@@ -831,6 +867,7 @@
 
     <string-array name="g_camrs">
         <item>buck</item>
+        <item />
         <item />
         <item />
         <item />
@@ -857,6 +894,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>20</item><item>300</item><item>35</item>
 
@@ -880,6 +918,7 @@
         <item>thatcher</item>
         <item>smoke</item>
         <item>mute</item>
+        <item />
 
         <item>7</item><item>100</item><item>8</item>
 
@@ -903,6 +942,7 @@
         <item>castle</item>
         <item>pulse</item>
         <item />
+        <item />
 
         <item>8</item><item>170</item><item>8</item>
 
@@ -925,6 +965,7 @@
         <item>twitch</item>
         <item>doc</item>
         <item>rook</item>
+        <item>lion</item>
         <item />
 
         <item>7</item><item>100</item><item>8</item>
@@ -947,6 +988,7 @@
     <string-array name="g_sasg_12">
         <item>kapkan</item>
         <item>tachanka</item>
+        <item>finka</item>
         <item />
         <item />
 
@@ -972,6 +1014,7 @@
         <item>bandit</item>
         <item />
         <item />
+        <item />
 
         <item>7</item><item>120</item><item>8</item>
 
@@ -992,6 +1035,7 @@
 
     <string-array name="g_super_90">
         <item>frost</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1018,6 +1062,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>7</item><item>140</item><item>8</item>
 
@@ -1038,6 +1083,7 @@
 
     <string-array name="g_spas_15">
         <item>caveira</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1064,6 +1110,7 @@
         <item>echo</item>
         <item />
         <item />
+        <item />
 
         <item>7</item><item>85</item><item>8</item>
 
@@ -1085,6 +1132,7 @@
     <string-array name="g_ita12l">
         <item>jackal</item>
         <item>mira</item>
+        <item />
         <item />
         <item />
 
@@ -1110,6 +1158,7 @@
         <item>mira</item>
         <item />
         <item />
+        <item />
 
         <item>5</item><item>95</item><item>8</item>
 
@@ -1130,6 +1179,7 @@
 
     <string-array name="g_fmg_9">
         <item>smoke</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1156,6 +1206,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>800</item><item>15</item>
 
@@ -1177,6 +1228,7 @@
     <string-array name="g_ump45">
         <item>castle</item>
         <item>pulse</item>
+        <item />
         <item />
         <item />
 
@@ -1202,6 +1254,7 @@
         <item>rook</item>
         <item />
         <item />
+        <item />
 
         <item>30</item><item>800</item><item>18</item>
 
@@ -1223,6 +1276,7 @@
     <string-array name="g_p90">
         <item>doc</item>
         <item>rook</item>
+        <item>lion</item>
         <item />
         <item />
 
@@ -1248,6 +1302,7 @@
         <item>tachanka</item>
         <item />
         <item />
+        <item />
 
         <item>30</item><item>750</item><item>15</item>
 
@@ -1268,6 +1323,7 @@
 
     <string-array name="g_mp7">
         <item>bandit</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1294,6 +1350,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>34</item><item>575</item><item>15</item>
 
@@ -1314,6 +1371,7 @@
 
     <string-array name="g_mpx">
         <item>valkyrie</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1340,6 +1398,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>550</item><item>20</item>
 
@@ -1360,6 +1419,7 @@
 
     <string-array name="g_mp5sd">
         <item>echo</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1386,6 +1446,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>50</item><item>800</item><item>28</item>
 
@@ -1406,6 +1467,7 @@
 
     <string-array name="g_vector">
         <item>mira</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1432,6 +1494,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>900</item><item>20</item>
 
@@ -1452,6 +1515,7 @@
 
     <string-array name="g_six12">
         <item>ying</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1478,6 +1542,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>6</item><item>0</item><item>0</item>
 
@@ -1497,6 +1562,7 @@
 
     <string-array name="g_t_95_lsw">
         <item>ying</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1523,6 +1589,7 @@
         <item>lesion</item>
         <item />
         <item />
+        <item />
 
         <item>10</item><item>0</item><item>15</item>
 
@@ -1542,6 +1609,7 @@
 
     <string-array name="g_scorpion_evo_3_a1">
         <item>ela</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1568,6 +1636,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>10</item><item>0</item><item>0</item>
 
@@ -1588,6 +1657,7 @@
 
     <string-array name="g_rg15">
         <item>ela</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1613,6 +1683,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>720</item><item>0</item>
 
@@ -1632,6 +1703,7 @@
 
     <string-array name="g_mk_14_ebr">
         <item>dokkaebi</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1657,6 +1729,7 @@
         <item>vigil</item>
         <item />
         <item />
+        <item />
 
         <item>26</item><item>1000</item><item>0</item>
 
@@ -1679,6 +1752,7 @@
         <item>vigil</item>
         <item />
         <item />
+        <item />
 
         <item>32</item><item>1270</item><item>0</item>
 
@@ -1698,6 +1772,7 @@
 
     <string-array name="g_lmg_e">
         <item>zofia</item>
+        <item />
         <item />
         <item />
         <item />
@@ -1723,6 +1798,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>730</item><item>0</item>
 
@@ -1743,6 +1819,7 @@
     <string-array name="g_bosg_12_2">
         <item>dokkaebi</item>
         <item>vigil</item>
+        <item />
         <item />
         <item />
 
@@ -1767,6 +1844,7 @@
         <item />
         <item />
         <item />
+        <item />
 
         <item>30</item><item>780</item><item>25</item>
 
@@ -1786,6 +1864,7 @@
 
     <string-array name="g_spear">
         <item>lion</item>
+        <item />
         <item />
         <item />
         <item />

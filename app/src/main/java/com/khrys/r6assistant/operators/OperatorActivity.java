@@ -105,10 +105,8 @@ public class OperatorActivity extends AppCompatActivity
         String operatorConvert = operator.replace('ä', 'a');
         operatorConvert = operatorConvert.replace('ã', 'a');
 
-        try
-        {
             LoadData dataLoader = new LoadData();
-            JSONObject operatorInfo = dataLoader.loadData(getApplicationContext(), dataLoader.RES_OPERATORS_INFOS).getJSONObject("operator_"+String.valueOf(position));
+            //JSONObject operatorInfo = dataLoader.loadData(getApplicationContext(), dataLoader.RES_OPERATORS_INFOS).getJSONObject("operator_"+String.valueOf(position));
 
             TypedArray opArray = getResources().obtainTypedArray(getResources().getIdentifier(operatorConvert, "array", getApplicationContext().getPackageName()));
 
@@ -316,11 +314,6 @@ public class OperatorActivity extends AppCompatActivity
             titleUniqueGadget.setText(titleGadgetString);
             imgUniqueGadget.setImageResource(imgUnGadget);
             txtUniqueGadget.setText(txtUnGadget);
-        }
-        catch (JSONException e)
-        {
-            e.printStackTrace();
-        }
     }
 
     String txtToIdImg(String txtToEdit)

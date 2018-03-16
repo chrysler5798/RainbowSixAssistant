@@ -80,6 +80,14 @@
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
                     android:contentDescription="@string/op_4"/>
+
+                <ImageView
+                    android:id="@+id/imgAgent5"
+                    android:layout_width="0dp"
+                    android:layout_height="60dp"
+                    android:layout_weight="1"
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/op_4"/>
             </LinearLayout>
 
             <LinearLayout

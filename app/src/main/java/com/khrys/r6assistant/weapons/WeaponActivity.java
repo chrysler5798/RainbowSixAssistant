@@ -45,19 +45,20 @@ public class WeaponActivity extends AppCompatActivity
         }
 
         //Header
-        TextView txtNomArme = (TextView) findViewById(R.id.txtNomArme);
-        ImageView imgViewArme = (ImageView) findViewById(R.id.imgArme);
+        TextView txtNomArme = findViewById(R.id.txtNomArme);
+        ImageView imgViewArme = findViewById(R.id.imgArme);
 
         //Operators image
-        ImageView imgViewOp1 = (ImageView) findViewById(R.id.imgAgent1);
-        ImageView imgViewOp2 = (ImageView) findViewById(R.id.imgAgent2);
-        ImageView imgViewOp3 = (ImageView) findViewById(R.id.imgAgent3);
-        ImageView imgViewOp4 = (ImageView) findViewById(R.id.imgAgent4);
+        ImageView imgViewOp1 = findViewById(R.id.imgAgent1);
+        ImageView imgViewOp2 = findViewById(R.id.imgAgent2);
+        ImageView imgViewOp3 = findViewById(R.id.imgAgent3);
+        ImageView imgViewOp4 = findViewById(R.id.imgAgent4);
+        ImageView imgViewOp5 = findViewById(R.id.imgAgent5);
 
         //Basic informations
-        TextView txtViewAmmo = (TextView) findViewById(R.id.txtAmmo);
-        TextView txtViewFirerate = (TextView) findViewById(R.id.txtFirerate);
-        TextView txtViewDamagefall = (TextView) findViewById(R.id.txtDamagefalloff);
+        TextView txtViewAmmo = findViewById(R.id.txtAmmo);
+        TextView txtViewFirerate = findViewById(R.id.txtFirerate);
+        TextView txtViewDamagefall = findViewById(R.id.txtDamagefalloff);
 
         /*
             ************
@@ -65,41 +66,41 @@ public class WeaponActivity extends AppCompatActivity
         */
 
         //Rook Amor
-        Switch switchRookArmor = (Switch) findViewById(R.id.switchRookarmor);
-        imgRookArmor = (ImageView) findViewById(R.id.imgRookarmor);
+        Switch switchRookArmor = findViewById(R.id.switchRookarmor);
+        imgRookArmor = findViewById(R.id.imgRookarmor);
 
         //Armor image
-        imgArmor1 = (ImageView) findViewById(R.id.imgArmor1);
-        imgArmor2 = (ImageView) findViewById(R.id.imgArmor2);
-        imgArmor3 = (ImageView) findViewById(R.id.imgArmor3);
+        imgArmor1 = findViewById(R.id.imgArmor1);
+        imgArmor2 = findViewById(R.id.imgArmor2);
+        imgArmor3 = findViewById(R.id.imgArmor3);
 
         //Armor text
-        txtArmorL1 = (TextView) findViewById(R.id.txtArmorL1);
-        txtArmorB1 = (TextView) findViewById(R.id.txtArmorB1);
-        txtArmorL2 = (TextView) findViewById(R.id.txtArmorL2);
-        txtArmorB2 = (TextView) findViewById(R.id.txtArmorB2);
-        txtArmorL3 = (TextView) findViewById(R.id.txtArmorL3);
-        txtArmorB3 = (TextView) findViewById(R.id.txtArmorB3);
+        txtArmorL1 = findViewById(R.id.txtArmorL1);
+        txtArmorB1 = findViewById(R.id.txtArmorB1);
+        txtArmorL2 = findViewById(R.id.txtArmorL2);
+        txtArmorB2 = findViewById(R.id.txtArmorB2);
+        txtArmorL3 = findViewById(R.id.txtArmorL3);
+        txtArmorB3 = findViewById(R.id.txtArmorB3);
 
         //Barrel Layouts
-        layoutBarrel1 = (LinearLayout) findViewById(R.id.layoutBarrel1);
-        layoutBarrel2 = (LinearLayout) findViewById(R.id.layoutBarrel2);
-        layoutBarrel3 = (LinearLayout) findViewById(R.id.layoutBarrel3);
-        layoutBarrel4 = (LinearLayout) findViewById(R.id.layoutBarrel4);
-        layoutBarrel5 = (LinearLayout) findViewById(R.id.layoutBarrel5);
+        layoutBarrel1 = findViewById(R.id.layoutBarrel1);
+        layoutBarrel2 = findViewById(R.id.layoutBarrel2);
+        layoutBarrel3 = findViewById(R.id.layoutBarrel3);
+        layoutBarrel4 = findViewById(R.id.layoutBarrel4);
+        layoutBarrel5 = findViewById(R.id.layoutBarrel5);
 
         //Barrel infos
-        ImageView imgBarrel1 = (ImageView) findViewById(R.id.imgBarrel1);
-        ImageView imgBarrel2 = (ImageView) findViewById(R.id.imgBarrel2);
-        ImageView imgBarrel3 = (ImageView) findViewById(R.id.imgBarrel3);
-        ImageView imgBarrel4 = (ImageView) findViewById(R.id.imgBarrel4);
-        ImageView imgBarrel5 = (ImageView) findViewById(R.id.imgBarrel5);
+        ImageView imgBarrel1 = findViewById(R.id.imgBarrel1);
+        ImageView imgBarrel2 = findViewById(R.id.imgBarrel2);
+        ImageView imgBarrel3 = findViewById(R.id.imgBarrel3);
+        ImageView imgBarrel4 = findViewById(R.id.imgBarrel4);
+        ImageView imgBarrel5 = findViewById(R.id.imgBarrel5);
 
-        TextView txtBarrel1 = (TextView) findViewById(R.id.txtBarrel1);
-        TextView txtBarrel2 = (TextView) findViewById(R.id.txtBarrel2);
-        TextView txtBarrel3 = (TextView) findViewById(R.id.txtBarrel3);
-        TextView txtBarrel4 = (TextView) findViewById(R.id.txtBarrel4);
-        TextView txtBarrel5 = (TextView) findViewById(R.id.txtBarrel5);
+        TextView txtBarrel1 = findViewById(R.id.txtBarrel1);
+        TextView txtBarrel2 = findViewById(R.id.txtBarrel2);
+        TextView txtBarrel3 = findViewById(R.id.txtBarrel3);
+        TextView txtBarrel4 = findViewById(R.id.txtBarrel4);
+        TextView txtBarrel5 = findViewById(R.id.txtBarrel5);
 
         /*
             ************
@@ -124,38 +125,39 @@ public class WeaponActivity extends AppCompatActivity
         setupAgent(1,imgViewOp2);
         setupAgent(2,imgViewOp3);
         setupAgent(3,imgViewOp4);
+        setupAgent(4,imgViewOp5);
 
-        if(statsWeapon[4].equals("0"))
+        if(statsWeapon[5].equals("0"))
         {
             txtViewAmmo.setText("-");
         }
         else
         {
-            txtViewAmmo.setText(String.valueOf(statsWeapon[4]));
+            txtViewAmmo.setText(String.valueOf(statsWeapon[5]));
         }
 
-        if(statsWeapon[5].equals("0"))
+        if(statsWeapon[6].equals("0"))
         {
             txtViewFirerate.setText("-");
         }
         else
         {
-            txtViewFirerate.setText(String.valueOf(statsWeapon[5]));
+            txtViewFirerate.setText(String.valueOf(statsWeapon[6]));
         }
 
-        if(String.valueOf(statsWeapon[6]).equals(""))
+        if(String.valueOf(statsWeapon[7]).equals(""))
         {
             txtViewDamagefall.setText("-");
         }
         else
         {
-            String txtDamage = statsWeapon[6]+"m";
+            String txtDamage = statsWeapon[7]+"m";
             txtViewDamagefall.setText(txtDamage);
         }
 
         switchTextArmor(0);
 
-        if(statsWeapon[13].equals("0"))
+        if(statsWeapon[14].equals("0"))
         {
             switchRookArmor.setVisibility(View.INVISIBLE);
             imgRookArmor.setVisibility(View.INVISIBLE);
@@ -193,32 +195,32 @@ public class WeaponActivity extends AppCompatActivity
             }
         });
 
-        setupBarrel(19, layoutBarrel1, imgBarrel1, txtBarrel1);
-        setupBarrel(20, layoutBarrel2, imgBarrel2, txtBarrel2);
-        setupBarrel(21, layoutBarrel3, imgBarrel3, txtBarrel3);
-        setupBarrel(22, layoutBarrel4, imgBarrel4, txtBarrel4);
-        setupBarrel(23, layoutBarrel5, imgBarrel5, txtBarrel5);
+        setupBarrel(20, layoutBarrel1, imgBarrel1, txtBarrel1);
+        setupBarrel(21, layoutBarrel2, imgBarrel2, txtBarrel2);
+        setupBarrel(22, layoutBarrel3, imgBarrel3, txtBarrel3);
+        setupBarrel(23, layoutBarrel4, imgBarrel4, txtBarrel4);
+        setupBarrel(24, layoutBarrel5, imgBarrel5, txtBarrel5);
     }
 
     void switchTextArmor(int type)
     {
         if(type == 0)
         {
-            txtArmorL1.setText(String.valueOf(statsWeapon[7]));
-            txtArmorB1.setText(String.valueOf(statsWeapon[8]));
-            txtArmorL2.setText(String.valueOf(statsWeapon[9]));
-            txtArmorB2.setText(String.valueOf(statsWeapon[10]));
-            txtArmorL3.setText(String.valueOf(statsWeapon[11]));
-            txtArmorB3.setText(String.valueOf(statsWeapon[12]));
+            txtArmorL1.setText(String.valueOf(statsWeapon[8]));
+            txtArmorB1.setText(String.valueOf(statsWeapon[9]));
+            txtArmorL2.setText(String.valueOf(statsWeapon[10]));
+            txtArmorB2.setText(String.valueOf(statsWeapon[11]));
+            txtArmorL3.setText(String.valueOf(statsWeapon[12]));
+            txtArmorB3.setText(String.valueOf(statsWeapon[13]));
         }
         else
         {
-            txtArmorL1.setText(String.valueOf(statsWeapon[13]));
-            txtArmorB1.setText(String.valueOf(statsWeapon[14]));
-            txtArmorL2.setText(String.valueOf(statsWeapon[15]));
-            txtArmorB2.setText(String.valueOf(statsWeapon[16]));
-            txtArmorL3.setText(String.valueOf(statsWeapon[17]));
-            txtArmorB3.setText(String.valueOf(statsWeapon[18]));
+            txtArmorL1.setText(String.valueOf(statsWeapon[14]));
+            txtArmorB1.setText(String.valueOf(statsWeapon[15]));
+            txtArmorL2.setText(String.valueOf(statsWeapon[16]));
+            txtArmorB2.setText(String.valueOf(statsWeapon[17]));
+            txtArmorL3.setText(String.valueOf(statsWeapon[18]));
+            txtArmorB3.setText(String.valueOf(statsWeapon[19]));
         }
     }
 
