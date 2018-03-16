@@ -219,7 +219,7 @@
         <item>pmm</item>
         <item>gsh-18</item>
         <item>2</item><item>2</item>
-        <item>2</item><item>barbed</item>
+        <item>2</item><item>impact</item>
         <item>1</item><item>nitro</item>
         <item>5</item>
     </string-array>
@@ -289,7 +289,7 @@
         <item>1</item>
         <item>0</item>
         <item>p12</item>
-        <item>1</item><item>3</item>
+        <item>2</item><item>2</item>
         <item>2</item><item>smoke</item>
         <item>3</item><item>breach</item>
         <item>5</item>
@@ -686,7 +686,7 @@
         <item>rg15</item>
         <item>3</item><item>1</item>
         <item>2</item><item>barbed</item>
-        <item>2</item><item>impact</item>
+        <item>1</item><item>shield</item>
         <item>3</item>
     </string-array>
 
@@ -739,7 +739,7 @@
         <item>fr</item><item>GIGN</item>
         <item>5</item>
         <item>3</item>
-        <item>spear</item>
+        <item>v308</item>
         <item>417</item>
         <item>sg-cqb</item>
         <item>lfp586</item>
@@ -755,7 +755,7 @@
         <item>ru</item><item>Spetsnaz</item>
         <item>5</item>
         <item>3</item>
-        <item>v308</item>
+        <item>spear</item>
         <item>6p41</item>
         <item>sasg-12</item>
         <item>pmm</item>
