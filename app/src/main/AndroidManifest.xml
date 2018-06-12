@@ -132,5 +132,10 @@
             android:name=".chat.PlayerActivity"
             android:configChanges="orientation"
             android:screenOrientation="portrait"/>
+
+        <activity
+            android:name=".MapPlanDevActivity"
+            android:configChanges="orientation"
+            android:screenOrientation="portrait"/>
     </application>
 </manifest>

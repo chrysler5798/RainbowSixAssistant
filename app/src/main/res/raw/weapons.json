@@ -1,6 +1,15 @@
 {
+    "weapons_list": [
+        "l85a2","ar33","g36c","r4_c","556xi","f2","ak_12","aug","552_commando","416_c_carbine","c8_sfw","mk17_cqb","para_308","type_89","c7e","m762","v308","spear",
+        "p226_mk25","5_7_usg","m45_meusoc","p9","lfp586","gsh_18","pmm","p12","mk1","d_50","prb92","luison","p229","usp40","q_929","rg15","keratos_357","bailiff_410",
+        "6p41","g8a1","m249","t_95_lsw","lmg_e","alda_5_56",
+        "smg_11","bearing_9","c75","smg_12",
+        "417","ots_03","camrs","sr_25","mk_14_ebr",
+        "m590a1","m1014","sg_cqb","sasg_12","m870","super_90","spas_12","spas_15","supernova","ita12l","ita12s","six12","six12_sd","f0_12","bosg_12_2","acs12",
+        "fmg_9","mp5k","ump45","mp5","p90","9x19vsn","mp7","9mm_c1","mpx","m12","mp5sd","pdw9","vector_45_acp","t_5_smg","scorpion_evo_3_a1","k1a","mx4_storm"
+    ],
     "weapons": {
-        "weapon_0": {
+        "l85a2": {
             "name": "l85a2",
             "operators": [16,17],
             "ammo": 30,
@@ -14,7 +23,7 @@
             "damage_armor_2_rook": [24,33],
             "damage_armor_3_rook": [18,28]
         },
-        "weapon_1": {
+        "ar33": {
             "name": "ar33",
             "operators": [16],
             "ammo": 25,
@@ -28,7 +37,7 @@
             "damage_armor_2_rook": [23,31],
             "damage_armor_3_rook": [17,27]
         },
-        "weapon_2": {
+        "g36c": {
             "name": "g36c",
             "operators": [13],
             "ammo": 30,
@@ -42,7 +51,7 @@
             "damage_armor_2_rook": [21,28],
             "damage_armor_3_rook": [15,24]
         },
-        "weapon_3": {
+        "r4_c": {
             "name": "R4-C",
             "operators": [13],
             "ammo": 30,
@@ -56,7 +65,7 @@
             "damage_armor_2_rook": [22,30],
             "damage_armor_3_rook": [16,26]
         },
-        "weapon_4": {
+        "556xi": {
             "name": "556xi",
             "operators": [12],
             "ammo": 30,
@@ -70,7 +79,7 @@
             "damage_armor_2_rook": [25,34],
             "damage_armor_3_rook": [18,29]
         },
-        "weapon_5": {
+        "f2": {
             "name": "f2",
             "operators": [10],
             "ammo": 30,
@@ -84,7 +93,7 @@
             "damage_armor_2_rook": [21,29],
             "damage_armor_3_rook": [16,25]
         },
-        "weapon_6": {
+        "ak_12": {
             "name": "AK-12",
             "operators": [3],
             "ammo": 30,
@@ -98,7 +107,7 @@
             "damage_armor_2_rook": [24,32],
             "damage_armor_3_rook": [18,28]
         },
-        "weapon_7": {
+        "aug": {
             "name": "AUG",
             "operators": [4],
             "ammo": 30,
@@ -112,7 +121,7 @@
             "damage_armor_2_rook": [22,30],
             "damage_armor_3_rook": [16,26]
         },
-        "weapon_8": {
+        "552_commando": {
             "name": "552 Commando",
             "operators": [4],
             "ammo": 30,
@@ -126,8 +135,8 @@
             "damage_armor_2_rook": [26,35],
             "damage_armor_3_rook": [19,30]
         },
-        "weapon_9": {
-            "name": "416-C Carabine",
+        "416_c_carbine": {
+            "name": "416-C Carbine",
             "operators": [7],
             "ammo": 30,
             "firerate": 740,
@@ -140,7 +149,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_10": {
+        "c8_sfw": {
             "name": "C8-SFW",
             "operators": [21],
             "ammo": 30,
@@ -154,7 +163,7 @@
             "damage_armor_2_rook": [21,28],
             "damage_armor_3_rook": [15,24]
         },
-        "weapon_11": {
+        "mk17_cqb": {
             "name": "Mk17 CQB",
             "operators": [23],
             "ammo": 20,
@@ -168,7 +177,7 @@
             "damage_armor_2_rook": [22,30],
             "damage_armor_3_rook": [16,26]
         },
-        "weapon_12": {
+        "para_308": {
             "name": "PARA-308",
             "operators": [24],
             "ammo": 30,
@@ -182,7 +191,7 @@
             "damage_armor_2_rook": [23,31],
             "damage_armor_3_rook": [16,26]
         },
-        "weapon_13": {
+        "type_89": {
             "name": "Type 89",
             "operators": [27],
             "ammo": 20,
@@ -196,7 +205,7 @@
             "damage_armor_2_rook": [22,30],
             "damage_armor_3_rook": [16,26]
         },
-        "weapon_14": {
+        "c7e": {
             "name": "C7E",
             "operators": [29],
             "ammo": 30,
@@ -210,7 +219,49 @@
             "damage_armor_2_rook": [24,34],
             "damage_armor_3_rook": [18,28]
         },
-        "weapon_15": {
+        "m762": {
+            "name": "m762",
+            "operators": [29],
+            "ammo": 30,
+            "firerate": 800,
+            "falloff": 20,
+            "barrel": [0,1,3,2],
+            "damage_armor_1": [34,46],
+            "damage_armor_2": [30,41],
+            "damage_armor_3": [23,36],
+            "damage_armor_1_rook": [28,39],
+            "damage_armor_2_rook": [24,34],
+            "damage_armor_3_rook": [18,28]
+        },
+        "v308": {
+            "name": "v308",
+            "operators": [29],
+            "ammo": 30,
+            "firerate": 800,
+            "falloff": 20,
+            "barrel": [0,1,3,2],
+            "damage_armor_1": [34,46],
+            "damage_armor_2": [30,41],
+            "damage_armor_3": [23,36],
+            "damage_armor_1_rook": [28,39],
+            "damage_armor_2_rook": [24,34],
+            "damage_armor_3_rook": [18,28]
+        },
+        "spear": {
+            "name": "spear",
+            "operators": [29],
+            "ammo": 30,
+            "firerate": 800,
+            "falloff": 20,
+            "barrel": [0,1,3,2],
+            "damage_armor_1": [34,46],
+            "damage_armor_2": [30,41],
+            "damage_armor_3": [23,36],
+            "damage_armor_1_rook": [28,39],
+            "damage_armor_2_rook": [24,34],
+            "damage_armor_3_rook": [18,28]
+        },
+        "p226_mk25": {
             "name": "P226 Mk25",
             "operators": [17,16,18,19],
             "ammo": 15,
@@ -224,7 +275,7 @@
             "damage_armor_2_rook": [29,39],
             "damage_armor_3_rook": [22,34]
         },
-        "weapon_16": {
+        "5_7_usg": {
             "name": "5.7 USG",
             "operators": [13,12,14,15],
             "ammo": 20,
@@ -238,7 +289,7 @@
             "damage_armor_2_rook": [14,19],
             "damage_armor_3_rook": [10,17]
         },
-        "weapon_17": {
+        "m45_meusoc": {
             "name": "M45 MEUSOC",
             "operators": [13,12,14,15],
             "ammo": 7,
@@ -252,7 +303,7 @@
             "damage_armor_2_rook": [26,35],
             "damage_armor_3_rook": [19,30]
         },
-        "weapon_18": {
+        "p9": {
             "name": "P9",
             "operators": [10,11,9,8],
             "ammo": 16,
@@ -266,7 +317,7 @@
             "damage_armor_2_rook": [16,22],
             "damage_armor_3_rook": [12,19]
         },
-        "weapon_19": {
+        "lfp586": {
             "name": "LFP586",
             "operators": [10,11,9,8],
             "ammo": 6,
@@ -280,7 +331,7 @@
             "damage_armor_2_rook": [42,56],
             "damage_armor_3_rook": [31,48]
         },
-        "weapon_20": {
+        "gsh_18": {
             "name": "GSH 18",
             "operators": [2,3,0,1],
             "ammo": 18,
@@ -294,7 +345,7 @@
             "damage_armor_2_rook": [17,24],
             "damage_armor_3_rook": [13,22]
         },
-        "weapon_21": {
+        "pmm": {
             "name": "PMM",
             "operators": [2,3,0,1],
             "ammo": 8,
@@ -308,7 +359,7 @@
             "damage_armor_2_rook": [35,46],
             "damage_armor_3_rook": [26,40]
         },
-        "weapon_22": {
+        "p12": {
             "name": "P12",
             "operators": [5,4,7,6],
             "ammo": 15,
@@ -322,7 +373,7 @@
             "damage_armor_2_rook": [24,32],
             "damage_armor_3_rook": [17,27]
         },
-        "weapon_23": {
+        "mk1": {
             "name": "Mk1",
             "operators": [21,20],
             "ammo": 13,
@@ -336,7 +387,7 @@
             "damage_armor_2_rook": [24,32],
             "damage_armor_3_rook": [18,28]
         },
-        "weapon_24": {
+        "d_50": {
             "name": "D-50",
             "operators": [23,22],
             "ammo": 7,
@@ -350,7 +401,7 @@
             "damage_armor_2_rook": [37,50],
             "damage_armor_3_rook": [27,43]
         },
-        "weapon_25": {
+        "prb92": {
             "name": "PRB92",
             "operators": [24],
             "ammo": 15,
@@ -364,7 +415,7 @@
             "damage_armor_2_rook": [21,29],
             "damage_armor_3_rook": [16,25]
         },
-        "weapon_26": {
+        "luison": {
             "name": "Luison",
             "operators": [25],
             "ammo": 15,
@@ -378,7 +429,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_27": {
+        "p229": {
             "name": "P229",
             "operators": [27,26],
             "ammo": 12,
@@ -392,7 +443,7 @@
             "damage_armor_2_rook": [27,37],
             "damage_armor_3_rook": [21,32]
         },
-        "weapon_28": {
+        "usp40": {
             "name": "USP40",
             "operators": [29,28],
             "ammo": 12,
@@ -406,7 +457,7 @@
             "damage_armor_2_rook": [24,32],
             "damage_armor_3_rook": [14,28]
         },
-        "weapon_29": {
+        "6p41": {
             "name": "6P41",
             "operators": [3],
             "ammo": 100,
@@ -420,7 +471,7 @@
             "damage_armor_2_rook": [27,35],
             "damage_armor_3_rook": [20,31]
         },
-        "weapon_30": {
+        "g8a1": {
             "name": "G8A1",
             "operators": [4],
             "ammo": 50,
@@ -434,7 +485,7 @@
             "damage_armor_2_rook": [20,27],
             "damage_armor_3_rook": [14,23]
         },
-        "weapon_31": {
+        "m249": {
             "name": "M249",
             "operators": [24],
             "ammo": 100,
@@ -448,7 +499,7 @@
             "damage_armor_2_rook": [18,24],
             "damage_armor_3_rook": [13,21]
         },
-        "weapon_32": {
+        "smg_11": {
             "name": "SMG-11",
             "operators": [18,17],
             "ammo": 16,
@@ -462,7 +513,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_33": {
+        "bearing_9": {
             "name": "BEARING-9",
             "operators": [27,26],
             "ammo": 25,
@@ -476,7 +527,35 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_34": {
+        "c75": {
+            "name": "c75",
+            "operators": [27,26],
+            "ammo": 25,
+            "firerate": 1100,
+            "falloff": 15,
+            "barrel": [0,1,3],
+            "damage_armor_1": [24,32],
+            "damage_armor_2": [21,28],
+            "damage_armor_3": [16,25],
+            "damage_armor_1_rook": [0,0],
+            "damage_armor_2_rook": [0,0],
+            "damage_armor_3_rook": [0,0]
+        },
+        "smg_12": {
+            "name": "smg 12",
+            "operators": [27,26],
+            "ammo": 25,
+            "firerate": 1100,
+            "falloff": 15,
+            "barrel": [0,1,3],
+            "damage_armor_1": [24,32],
+            "damage_armor_2": [21,28],
+            "damage_armor_3": [16,25],
+            "damage_armor_1_rook": [0,0],
+            "damage_armor_2_rook": [0,0],
+            "damage_armor_3_rook": [0,0]
+        },
+        "417": {
             "name": "417",
             "operators": [10],
             "ammo": 10,
@@ -490,7 +569,7 @@
             "damage_armor_2_rook": [35,48],
             "damage_armor_3_rook": [26,42]
         },
-        "weapon_35": {
+        "ots_03": {
             "name": "OTs-03",
             "operators": [2],
             "ammo": 10,
@@ -504,7 +583,7 @@
             "damage_armor_2_rook": [46,61],
             "damage_armor_3_rook": [34,54]
         },
-        "weapon_36": {
+        "camrs": {
             "name": "CAMRS",
             "operators": [21],
             "ammo": 20,
@@ -518,7 +597,7 @@
             "damage_armor_2_rook": [36,50],
             "damage_armor_3_rook": [27,43]
         },
-        "weapon_37": {
+        "sr_25": {
             "name": "SR-25",
             "operators": [21],
             "ammo": 20,
@@ -532,7 +611,21 @@
             "damage_armor_2_rook": [36,50],
             "damage_armor_3_rook": [27,43]
         },
-        "weapon_38": {
+        "mk_14_ebr": {
+            "name": "mk 14 ebr",
+            "operators": [21],
+            "ammo": 20,
+            "firerate": 570,
+            "falloff": 30,
+            "barrel": [2,1,0,3],
+            "damage_armor_1": [51,68],
+            "damage_armor_2": [45,61],
+            "damage_armor_3": [35,54],
+            "damage_armor_1_rook": [43,57],
+            "damage_armor_2_rook": [36,50],
+            "damage_armor_3_rook": [27,43]
+        },
+        "m590a1": {
             "name": "M590A1",
             "operators": [17,16,18,19],
             "ammo": 7,
@@ -546,7 +639,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_39": {
+        "m1014": {
             "name": "M1014",
             "operators": [12,14,15],
             "ammo": 8,
@@ -560,7 +653,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_": {
+        "sg_cqb": {
             "name": "SG-CQB",
             "operators": [10,9,8],
             "ammo": 7,
@@ -574,7 +667,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_41": {
+        "sasg_12": {
             "name": "SASG-12",
             "operators": [0,1],
             "ammo": 10,
@@ -588,7 +681,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_42": {
+        "m870": {
             "name": "M870",
             "operators": [7,6],
             "ammo": 7,
@@ -602,7 +695,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_43": {
+        "super_90": {
             "name": "Super 90",
             "operators": [20],
             "ammo": 8,
@@ -616,7 +709,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_44": {
+        "spas_12": {
             "name": "SPAS-12",
             "operators": [22],
             "ammo": 7,
@@ -630,7 +723,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_45": {
+        "spas_15": {
             "name": "SPAS-15",
             "operators": [25],
             "ammo": 6,
@@ -644,7 +737,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_46": {
+        "supernova": {
             "name": "SuperNova",
             "operators": [27,26],
             "ammo": 7,
@@ -658,7 +751,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_47": {
+        "ita12l": {
             "name": "ITA12L",
             "operators": [29,28],
             "ammo": 8,
@@ -672,7 +765,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_48": {
+        "ita12s": {
             "name": "ITA12S",
             "operators": [29,28],
             "ammo": 5,
@@ -686,7 +779,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_49": {
+        "fmg_9": {
             "name": "FMG-9",
             "operators": [18],
             "ammo": 30,
@@ -700,7 +793,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_50": {
+        "mp5k": {
             "name": "MP5K",
             "operators": [19],
             "ammo": 30,
@@ -714,7 +807,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_51": {
+        "ump45": {
             "name": "UMP45",
             "operators": [14,15],
             "ammo": 25,
@@ -728,7 +821,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_52": {
+        "mp5": {
             "name": "MP5",
             "operators": [9,8],
             "ammo": 30,
@@ -742,7 +835,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_53": {
+        "p90": {
             "name": "P90",
             "operators": [9,8],
             "ammo": 50,
@@ -756,7 +849,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_54": {
+        "9x19vsn": {
             "name": "9x19VSN",
             "operators": [0,1],
             "ammo": 30,
@@ -770,7 +863,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_55": {
+        "mp7": {
             "name": "MP7",
             "operators": [6],
             "ammo": 30,
@@ -784,7 +877,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_56": {
+        "9mm_c1": {
             "name": "9mm C1",
             "operators": [20],
             "ammo": 34,
@@ -798,7 +891,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_57": {
+        "mpx": {
             "name": "MPX",
             "operators": [22],
             "ammo": 30,
@@ -812,7 +905,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_58": {
+        "m12": {
             "name": "M12",
             "operators": [25],
             "ammo": 30,
@@ -826,7 +919,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_59": {
+        "mp5sd": {
             "name": "MP5SD",
             "operators": [26],
             "ammo": 30,
@@ -840,7 +933,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_60": {
+        "pdw9": {
             "name": "PDW9",
             "operators": [29],
             "ammo": 50,
@@ -854,8 +947,8 @@
             "damage_armor_2_rook": [17,24],
             "damage_armor_3_rook": [12,20]
         },
-        "weapon_61": {
-            "name": "Vector .45 ACP",
+        "vector_45_acp": {
+            "name": "Vector 45 ACP",
             "operators": [28],
             "ammo": 25,
             "firerate": 1200,
@@ -868,7 +961,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_62": {
+        "t_5_smg": {
             "name": "T-5 SMG",
             "operators": [31],
             "ammo": 30,
@@ -882,7 +975,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_63": {
+        "six12": {
             "name": "SIX12",
             "operators": [30],
             "ammo": 6,
@@ -896,7 +989,7 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_64": {
+        "six12_sd": {
             "name": "SIX12 SD",
             "operators": [31],
             "ammo": 6,
@@ -910,7 +1003,35 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_65": {
+        "f0_12": {
+            "name": "f0 12",
+            "operators": [31],
+            "ammo": 6,
+            "firerate": 0,
+            "falloff": 0,
+            "barrel": [],
+            "damage_armor_1": [0,0],
+            "damage_armor_2": [0,0],
+            "damage_armor_3": [0,0],
+            "damage_armor_1_rook": [0,0],
+            "damage_armor_2_rook": [0,0],
+            "damage_armor_3_rook": [0,0]
+        },
+        "bosg_12_2": {
+            "name": "bosg 12 2",
+            "operators": [31],
+            "ammo": 6,
+            "firerate": 0,
+            "falloff": 0,
+            "barrel": [],
+            "damage_armor_1": [0,0],
+            "damage_armor_2": [0,0],
+            "damage_armor_3": [0,0],
+            "damage_armor_1_rook": [0,0],
+            "damage_armor_2_rook": [0,0],
+            "damage_armor_3_rook": [0,0]
+        },
+        "t_95_lsw": {
             "name": "T-95 LSW",
             "operators": [30],
             "ammo": 80,
@@ -924,7 +1045,21 @@
             "damage_armor_2_rook": [18,24],
             "damage_armor_3_rook": [13,21]
         },
-        "weapon_66": {
+        "lmg_e": {
+            "name": "lmg e",
+            "operators": [30],
+            "ammo": 80,
+            "firerate": 650,
+            "falloff": 30,
+            "barrel": [2,1,0,3],
+            "damage_armor_1": [25,34],
+            "damage_armor_2": [22,30],
+            "damage_armor_3": [17,27],
+            "damage_armor_1_rook": [21,27],
+            "damage_armor_2_rook": [18,24],
+            "damage_armor_3_rook": [13,21]
+        },
+        "q_929": {
             "name": "Q-929",
             "operators": [30],
             "ammo": 80,
@@ -938,7 +1073,7 @@
             "damage_armor_2_rook": [18,24],
             "damage_armor_3_rook": [13,21]
         },
-        "weapon_67": {
+        "scorpion_evo_3_a1": {
             "name": "Scorpion EVO 3 A1",
             "operators": [32],
             "ammo": 50,
@@ -952,7 +1087,21 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_68": {
+        "k1a": {
+            "name": "k1a",
+            "operators": [32],
+            "ammo": 50,
+            "firerate": 1080,
+            "falloff": 20,
+            "barrel": [2,1,0,3],
+            "damage_armor_1": [21,28],
+            "damage_armor_2": [18,25],
+            "damage_armor_3": [14,22],
+            "damage_armor_1_rook": [0,0],
+            "damage_armor_2_rook": [0,0],
+            "damage_armor_3_rook": [0,0]
+        },
+        "fo_12": {
             "name": "FO-12",
             "operators": [32],
             "ammo": 10,
@@ -966,8 +1115,78 @@
             "damage_armor_2_rook": [0,0],
             "damage_armor_3_rook": [0,0]
         },
-        "weapon_69": {
+        "rg15": {
             "name": "RG15",
+            "operators": [32],
+            "ammo": 15,
+            "firerate": 0,
+            "falloff": 15,
+            "barrel": [2,3],
+            "damage_armor_1": [28,38],
+            "damage_armor_2": [25,34],
+            "damage_armor_3": [19,30],
+            "damage_armor_1_rook": [24,32],
+            "damage_armor_2_rook": [21,28],
+            "damage_armor_3_rook": [16,25]
+        },
+        "keratos_357": {
+            "name": "keratos_357",
+            "operators": [32],
+            "ammo": 15,
+            "firerate": 0,
+            "falloff": 15,
+            "barrel": [2,3],
+            "damage_armor_1": [28,38],
+            "damage_armor_2": [25,34],
+            "damage_armor_3": [19,30],
+            "damage_armor_1_rook": [24,32],
+            "damage_armor_2_rook": [21,28],
+            "damage_armor_3_rook": [16,25]
+        },
+        "bailiff_410": {
+            "name": "bailiff_410",
+            "operators": [32],
+            "ammo": 15,
+            "firerate": 0,
+            "falloff": 15,
+            "barrel": [2,3],
+            "damage_armor_1": [28,38],
+            "damage_armor_2": [25,34],
+            "damage_armor_3": [19,30],
+            "damage_armor_1_rook": [24,32],
+            "damage_armor_2_rook": [21,28],
+            "damage_armor_3_rook": [16,25]
+        },
+        "alda_5_56": {
+            "name": "alda_5_56",
+            "operators": [32],
+            "ammo": 15,
+            "firerate": 0,
+            "falloff": 15,
+            "barrel": [2,3],
+            "damage_armor_1": [28,38],
+            "damage_armor_2": [25,34],
+            "damage_armor_3": [19,30],
+            "damage_armor_1_rook": [24,32],
+            "damage_armor_2_rook": [21,28],
+            "damage_armor_3_rook": [16,25]
+        },
+        "acs12": {
+            "name": "acs12",
+            "operators": [32],
+            "ammo": 15,
+            "firerate": 0,
+            "falloff": 15,
+            "barrel": [2,3],
+            "damage_armor_1": [28,38],
+            "damage_armor_2": [25,34],
+            "damage_armor_3": [19,30],
+            "damage_armor_1_rook": [24,32],
+            "damage_armor_2_rook": [21,28],
+            "damage_armor_3_rook": [16,25]
+        },
+        "mx4_storm": {
+            "name": "mx4_storm",
             "operators": [32],
             "ammo": 15,
             "firerate": 0,

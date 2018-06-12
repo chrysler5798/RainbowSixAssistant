@@ -6,7 +6,6 @@ package com.khrys.r6assistant.operators;
  * Info : 05/31/2017[00:00 PM]
 */
 
-import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -15,10 +14,11 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.khrys.r6assistant.HeaderListAdapter;
+import com.khrys.r6assistant.weapons.WeaponsHeaderListAdapter;
 import com.khrys.r6assistant.R;
 import com.khrys.r6assistant.data.LoadData;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -48,27 +48,43 @@ public class OperatorFragment extends Fragment
         mLayout = new LinearLayoutManager(getContext());
         mRecycler.setLayoutManager(mLayout);
 
-        ArrayList<Integer> weaponsimg = new ArrayList<>();
-        ArrayList<String> weaponstxt = new ArrayList<>();
+        ArrayList<Operator> operatorsAtk = new ArrayList<>();
+        ArrayList<Operator> operatorsDef = new ArrayList<>();
 
-        TypedArray tableOps = getResources().obtainTypedArray(R.array.operatorsAtkDef);
-
-        for (int i = 0; i < tableOps.length(); i++)
+        try
         {
-            String actual = tableOps.getString(i);
-            String img = "o_" + actual;
-            img = img.replace('ä','a');
-            img = img.replace('ã','a');
+            LoadData loadData = new LoadData();
+            JSONObject operatorsJSON = loadData.loadData(getContext(), loadData.RES_OPERATORS);
+            JSONArray operatorsList = operatorsJSON.getJSONArray("operators");
+            JSONObject operatorsData = operatorsJSON.getJSONObject("operators_data");
 
-            int imgid = getResources().getIdentifier(img, "drawable", view.getContext().getPackageName());
+            for (int i = 0; i < operatorsList.length(); i++)
+            {
+                String operatorId = operatorsList.getString(i);
+                JSONObject operator = operatorsData.getJSONObject(operatorId);
 
-            weaponsimg.add(imgid);
-            weaponstxt.add(actual);
+                int imgid = getResources().getIdentifier("o_" + operatorId, "drawable", view.getContext().getPackageName());
+                Operator operatorForList = new Operator(operatorId, imgid, operator.getString("name"));
+
+                if(operator.getInt("side") == 1)
+                {
+                    operatorsAtk.add(operatorForList);
+                }
+                else
+                {
+                    operatorsDef.add(operatorForList);
+                }
+            }
+        }
+        catch (JSONException e)
+        {
+            e.printStackTrace();
         }
 
-        tableOps.recycle();
+        ArrayList<Operator> finalOperators = new ArrayList<>(operatorsAtk);
+        finalOperators.addAll(operatorsDef);
 
-        HeaderListAdapter mAdapter = new HeaderListAdapter(weaponsimg,weaponstxt);
+        OperatorHeaderListAdapter mAdapter = new OperatorHeaderListAdapter(finalOperators);
         mRecycler.setAdapter(mAdapter);
         mRecycler.addItemDecoration(new StickyHeaderDecoration(mAdapter));
     }

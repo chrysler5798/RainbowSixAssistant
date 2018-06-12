@@ -2,6 +2,7 @@ package com.khrys.r6assistant;
 
 import android.content.res.Configuration;
 import android.os.Bundle;
+import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -24,8 +25,6 @@ public class MapActivity extends AppCompatActivity
 {
     int type = 1;
 
-    String map;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -33,25 +32,26 @@ public class MapActivity extends AppCompatActivity
 
         setContentView(R.layout.activity_map);
 
-        android.support.v7.app.ActionBar actionBar = getSupportActionBar();
+        ActionBar actionBar = getSupportActionBar();
         if (actionBar != null)
         {
             actionBar.setDisplayHomeAsUpEnabled(true);
         }
 
-        map = getIntent().getStringExtra("nommap");
-        int mapID = getIntent().getIntExtra("pos", 0);
+        Map map = (Map) getIntent().getSerializableExtra("map");
+        String mapId = map.getMapId();
+        String mapName = map.getMapName();
 
         ArrayList<Integer> pics = new ArrayList<>();
         ArrayList<Integer> poscam = new ArrayList<>();
 
         LoadData dataLoader = new LoadData();
-        JSONObject mapsData = new LoadData().loadData(this, dataLoader.RES_MAPS);
+        JSONObject mapsData = dataLoader.loadData(this, dataLoader.RES_MAPS);
 
         int nbCamera = 0;
         try
         {
-            nbCamera = mapsData.getJSONObject(String.valueOf(mapID)).getInt("cameras");
+            nbCamera = mapsData.getJSONObject("maps_data").getJSONObject(mapId).getInt("cameras");
         }
         catch (JSONException e)
         {
@@ -60,7 +60,8 @@ public class MapActivity extends AppCompatActivity
 
         for(int i = 0; i < nbCamera; i++)
         {
-            String id = "cam_"+mapID+"_"+i;
+            String id = "cam_" + mapId + "_" + i;
+
             int intName = getResources().getIdentifier(id, "string", getApplicationContext().getPackageName());
             int intPic = getResources().getIdentifier(id, "drawable", getApplicationContext().getPackageName());
 
@@ -68,19 +69,20 @@ public class MapActivity extends AppCompatActivity
             pics.add(intPic);
         }
 
-        TextView txtNbCam = (TextView) findViewById(R.id.textViewNbCam);
-        RecyclerView rv = (RecyclerView) findViewById(R.id.recyclerViewMap);
+        TextView txtNbCam = findViewById(R.id.textViewNbCam);
+        RecyclerView rv = findViewById(R.id.recyclerViewMap);
 
         LinearLayoutManager LayoutM;
 
-        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE){
+        if(getResources().getConfiguration().orientation == Configuration.ORIENTATION_LANDSCAPE)
+        {
             LayoutM = new LinearLayoutManager(MapActivity.this, LinearLayoutManager.HORIZONTAL, false);
-            String txtTitle = String.format(getResources().getString(R.string.app_name)+" - %s",map);
+            String txtTitle = String.format(getResources().getString(R.string.app_name)+" - %s", mapName);
             setTitle(txtTitle);
         } else {
             LayoutM = new LinearLayoutManager(MapActivity.this);
-            TextView txtMap = (TextView) findViewById(R.id.textViewMapName);
-            txtMap.setText(map);
+            TextView txtMap = findViewById(R.id.textViewMapName);
+            txtMap.setText(mapName);
         }
         rv.setAdapter(new ListAdapterMap(pics,poscam, type));
         rv.setLayoutManager(LayoutM);

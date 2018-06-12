@@ -13,10 +13,11 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.Switch;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.khrys.r6assistant.R;
 import com.khrys.r6assistant.operators.OperatorActivity;
+
+import java.util.Locale;
 
 /*
  * Created by Chrysler on 3/10/2017.
@@ -48,7 +49,7 @@ public class WeaponActivity extends AppCompatActivity
         TextView txtNomArme = findViewById(R.id.txtNomArme);
         ImageView imgViewArme = findViewById(R.id.imgArme);
 
-        //Operators image
+        //Operator image
         ImageView imgViewOp1 = findViewById(R.id.imgAgent1);
         ImageView imgViewOp2 = findViewById(R.id.imgAgent2);
         ImageView imgViewOp3 = findViewById(R.id.imgAgent3);
@@ -111,6 +112,8 @@ public class WeaponActivity extends AppCompatActivity
         String imgArmeId = "g_"+armeId;
         imgArmeId = imgArmeId.replace('-','_');
         imgArmeId = imgArmeId.replace(' ','_');
+        imgArmeId = imgArmeId.replace('.','_');
+        imgArmeId = imgArmeId.toLowerCase(Locale.ENGLISH);
 
         int resID = getResources().getIdentifier(imgArmeId, "drawable", getPackageName());
 
@@ -251,7 +254,7 @@ public class WeaponActivity extends AppCompatActivity
 
             String finaltxt = String.valueOf(statsWeapon[type]);
             int txtId = getResources().getIdentifier(finaltxt, "string", getPackageName());
-            txtV.setText(getResources().getString(txtId).toUpperCase());
+            txtV.setText(getResources().getString(txtId).toUpperCase(Locale.ENGLISH));
 
             String txt = String.valueOf(statsWeapon[type]);
             String bar = "gb_"+txt;

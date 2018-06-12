@@ -102,13 +102,10 @@ public class OperatorActivity extends AppCompatActivity
         ArrayList<String> nameScdWeapon = new ArrayList<>();
         ArrayList<Integer> picsScdWeapon = new ArrayList<>();
 
-        String operatorConvert = operator.replace('ä', 'a');
-        operatorConvert = operatorConvert.replace('ã', 'a');
-
             LoadData dataLoader = new LoadData();
             //JSONObject operatorInfo = dataLoader.loadData(getApplicationContext(), dataLoader.RES_OPERATORS_INFOS).getJSONObject("operator_"+String.valueOf(position));
 
-            TypedArray opArray = getResources().obtainTypedArray(getResources().getIdentifier(operatorConvert, "array", getApplicationContext().getPackageName()));
+            TypedArray opArray = getResources().obtainTypedArray(getResources().getIdentifier(operator, "array", getApplicationContext().getPackageName()));
 
             String sideOp = opArray.getString(0);
             //int sideOp = operatorInfo.getInt("side");
@@ -151,7 +148,7 @@ public class OperatorActivity extends AppCompatActivity
 
             //Setup name and icon
             //
-            int iconRess = getResources().getIdentifier("o_"+operatorConvert, "drawable", getApplicationContext().getPackageName());
+            int iconRess = getResources().getIdentifier("o_"+operator, "drawable", getApplicationContext().getPackageName());
             imgIcon.setImageResource(iconRess);
 
             txtName.setText(operator);
@@ -215,7 +212,7 @@ public class OperatorActivity extends AppCompatActivity
 
 
             //Setup image operator
-            int imageOp = getResources().getIdentifier("oi_"+operatorConvert, "drawable", getApplicationContext().getPackageName());
+            int imageOp = getResources().getIdentifier("oi_"+operator, "drawable", getApplicationContext().getPackageName());
             imgOp.setImageResource(imageOp);
 
 
@@ -297,9 +294,9 @@ public class OperatorActivity extends AppCompatActivity
             //Setup unique gadget
             //
 
-            String idGadget = "ga_"+operatorConvert;
-            String idTitleGadget = "ugat_"+operatorConvert;
-            String idDescGadget = "uga_"+operatorConvert;
+            String idGadget = "ga_"+operator;
+            String idTitleGadget = "ugat_"+operator;
+            String idDescGadget = "uga_"+operator;
 
             int titleUnGadget = getResources().getIdentifier(idTitleGadget, "string", getPackageName());
             int imgUnGadget = getResources().getIdentifier(idGadget, "drawable", getPackageName());

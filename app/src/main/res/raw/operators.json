@@ -1,156 +1,526 @@
 {
-  "operators": {
-    "0": {
-      "name": "kapkan",
-      "side": 0
+  "operators": [
+    "kapkan",
+    "tachanka",
+    "glaz",
+    "fuze",
+    "iq",
+    "blitz",
+    "bandit",
+    "jager",
+    "rook",
+    "doc",
+    "twitch",
+    "montagne",
+    "thermite",
+    "ash",
+    "castle",
+    "pulse",
+    "thatcher",
+    "sledge",
+    "smoke",
+    "mute",
+    "frost",
+    "buck",
+    "valkyrie",
+    "blackbeard",
+    "capitao",
+    "caveira",
+    "echo",
+    "hibana",
+    "mira",
+    "jackal",
+    "ying",
+    "lesion",
+    "ela",
+    "zofia",
+    "dokkaebi",
+    "vigil",
+    "finka",
+    "lion",
+    "maestro",
+    "alibi"
+  ],
+  "operators_data": {
+    "kapkan": {
+      "name": "Kapkan",
+      "side": 0,
+      "army": "spetsnaz",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [5,7],
+      "gadgets_nb": [2,1],
+      "gadget_unique_nb": 5
     },
-    "1": {
-      "name": "tachanka",
-      "side": 0
+    "tachanka": {
+      "name": "Tachanka",
+      "side": 0,
+      "army": "spetsnaz",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 1,
+      "armor": 3,
+      "gadgets": [5,6],
+      "gadgets_nb": [2,1],
+      "gadget_unique_nb": 0
     },
-    "2": {
-      "name": "glaz",
-      "side": 1
+    "glaz": {
+      "name": "Glaz",
+      "side": 1,
+      "army": "spetsnaz",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [2,4],
+      "gadgets_nb": [2,1],
+      "gadget_unique_nb": 0
     },
-    "3": {
-      "name": "fuze",
-      "side": 1
+    "fuze": {
+      "name": "Fuze",
+      "side": 1,
+      "army": "spetsnaz",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 1,
+      "armor": 3,
+      "gadgets": [0,2],
+      "gadgets_nb": [3,2],
+      "gadget_unique_nb": 3
     },
-    "4": {
-      "name": "iq",
-      "side": 1
+    "iq": {
+      "name": "IQ",
+      "side": 1,
+      "army": "gsg9",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [0,1],
+      "gadgets_nb": [3,2],
+      "gadget_unique_nb": 0
     },
-    "5": {
-      "name": "blitz",
-      "side": 1
+    "blitz": {
+      "name": "Blitz",
+      "side": 1,
+      "army": "gsg9",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 1,
+      "armor": 3,
+      "gadgets": [2,0],
+      "gadgets_nb": [2,3],
+      "gadget_unique_nb": 5
     },
-    "6": {
-      "name": "bandit",
-      "side": 0
+    "bandit": {
+      "name": "Bandit",
+      "side": 0,
+      "army": "gsg9",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [5,7],
+      "gadgets_nb": [3,1],
+      "gadget_unique_nb": 4
     },
-    "7": {
-      "name": "jäger",
-      "side": 0
+    "jager": {
+      "name": "Jäger",
+      "side": 0,
+      "army": "gsg9",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [6,5],
+      "gadgets_nb": [1,2],
+      "gadget_unique_nb": 3
     },
-    "8": {
-      "name": "rook",
-      "side": 0
+    "rook": {
+      "name": "Rook",
+      "side": 0,
+      "army": "gign",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 1,
+      "armor": 3,
+      "gadgets": [6,8],
+      "gadgets_nb": [1,2],
+      "gadget_unique_nb": 1
     },
-    "9": {
-      "name": "doc",
-      "side": 0
+    "doc": {
+      "name": "Doc",
+      "side": 0,
+      "army": "gign",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 1,
+      "armor": 3,
+      "gadgets": [6,5],
+      "gadgets_nb": [1,2],
+      "gadget_unique_nb": 1
     },
-    "10": {
-      "name": "twitch",
-      "side": 1
+    "twitch": {
+      "name": "Twitch",
+      "side": 1,
+      "army": "gign",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [4,0],
+      "gadgets_nb": [1,3],
+      "gadget_unique_nb": 2
     },
-    "11": {
-      "name": "montagne",
-      "side": 1
+    "montagne": {
+      "name": "Montagne",
+      "side": 1,
+      "army": "gign",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 1,
+      "armor": 3,
+      "gadgets": [3,2],
+      "gadgets_nb": [3,2],
+      "gadget_unique_nb": 0
     },
-    "12": {
-      "name": "thermite",
-      "side": 1
+    "thermite": {
+      "name": "Thermite",
+      "side": 1,
+      "army": "swat",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [4,3],
+      "gadgets_nb": [1,3],
+      "gadget_unique_nb": 2
     },
-    "13": {
-      "name": "ash",
-      "side": 1
+    "ash": {
+      "name": "Ash",
+      "side": 1,
+      "army": "swat",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [0,3],
+      "gadgets_nb": [3,3],
+      "gadget_unique_nb": 2
     },
-    "14": {
-      "name": "castle",
-      "side": 0
+    "castle": {
+      "name": "Castle",
+      "side": 0,
+      "army": "swat",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [6,8],
+      "gadgets_nb": [1,2],
+      "gadget_unique_nb": 3
     },
-    "15": {
-      "name": "pulse",
-      "side": 0
+    "pulse": {
+      "name": "Pulse",
+      "side": 0,
+      "army": "swat",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [5,7],
+      "gadgets_nb": [2,1],
+      "gadget_unique_nb": 0
     },
-    "16": {
-      "name": "thatcher",
-      "side": 1
+    "thatcher": {
+      "name": "Thatcher",
+      "side": 1,
+      "army": "sas",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [0,4],
+      "gadgets_nb": [3,1],
+      "gadget_unique_nb": 3
     },
-    "17": {
-      "name": "sledge",
-      "side": 1
+    "sledge": {
+      "name": "Sledge",
+      "side": 1,
+      "army": "sas",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [1,3],
+      "gadgets_nb": [3,2],
+      "gadget_unique_nb": 0
     },
-    "18": {
-      "name": "smoke",
-      "side": 0
+    "smoke": {
+      "name": "Smoke",
+      "side": 0,
+      "army": "sas",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [5,8],
+      "gadgets_nb": [2,2],
+      "gadget_unique_nb": 3
     },
-    "19": {
-      "name": "mute",
-      "side": 0
+    "mute": {
+      "name": "Mute",
+      "side": 0,
+      "army": "sas",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [7,6],
+      "gadgets_nb": [1,1],
+      "gadget_unique_nb": 4
     },
-    "20": {
-      "name": "frost",
-      "side": 0
+    "frost": {
+      "name": "Frost",
+      "side": 0,
+      "army": "jtf2",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [6,5],
+      "gadgets_nb": [1,2],
+      "gadget_unique_nb": 3
     },
-    "21": {
-      "name": "buck",
-      "side": 1
+    "buck": {
+      "name": "Buck",
+      "side": 1,
+      "army": "jtf2",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [3,1],
+      "gadgets_nb": [3,2],
+      "gadget_unique_nb": 0
     },
-    "22": {
-      "name": "valkyrie",
-      "side": 0
+    "valkyrie": {
+      "name": "Valkyrie",
+      "side": 0,
+      "army": "navy_seal",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [6,7],
+      "gadgets_nb": [1,1],
+      "gadget_unique_nb": 3
     },
-    "23": {
-      "name": "blackbeard",
-      "side": 1
+    "blackbeard": {
+      "name": "Blackbeard",
+      "side": 1,
+      "army": "navy_seal",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [0,3],
+      "gadgets_nb": [3,3],
+      "gadget_unique_nb": 2
     },
-    "24": {
-      "name": "cãpitao",
-      "side": 1
+    "capitao": {
+      "name": "Cãpitao",
+      "side": 1,
+      "army": "bope",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [4,3],
+      "gadgets_nb": [1,3],
+      "gadget_unique_nb": 4
     },
-    "25": {
-      "name": "caveira",
-      "side": 0
+    "caveira": {
+      "name": "Caveira",
+      "side": 0,
+      "army": "bope",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [8,5],
+      "gadgets_nb": [2,2],
+      "gadget_unique_nb": 2
     },
-    "26": {
-      "name": "echo",
-      "side": 0
+    "echo": {
+      "name": "Echo",
+      "side": 0,
+      "army": "s_a_t",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 1,
+      "armor": 3,
+      "gadgets": [5,6],
+      "gadgets_nb": [2,1],
+      "gadget_unique_nb": 1
     },
-    "27": {
-      "name": "hibana",
-      "side": 1
+    "hibana": {
+      "name": "Hibana",
+      "side": 1,
+      "army": "s_a_t",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [3,4],
+      "gadgets_nb": [3,1],
+      "gadget_unique_nb": 3
     },
-    "28": {
-      "name": "mira",
-      "side": 0
+    "mira": {
+      "name": "Mira",
+      "side": 0,
+      "army": "g_e_o",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 1,
+      "armor": 3,
+      "gadgets": [6,7],
+      "gadgets_nb": [1,1],
+      "gadget_unique_nb": 2
     },
-    "29": {
-      "name": "jackal",
-      "side": 1
+    "jackal": {
+      "name": "Jackal",
+      "side": 1,
+      "army": "g_e_o",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [0,2],
+      "gadgets_nb": [3,2],
+      "gadget_unique_nb": 3
     },
-    "30": {
-      "name": "ying",
-      "side": 1
+    "ying": {
+      "name": "Ying",
+      "side": 1,
+      "army": "sdu",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [0,2],
+      "gadgets_nb": [3,2],
+      "gadget_unique_nb": 3
     },
-    "31": {
-      "name": "lesion",
-      "side": 0
+    "lesion": {
+      "name": "Lesion",
+      "side": 0,
+      "army": "sdu",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [8,6],
+      "gadgets_nb": [2,1],
+      "gadget_unique_nb": 7
     },
-    "32": {
-      "name": "ela",
-      "side": 0
+    "ela": {
+      "name": "Ela",
+      "side": 0,
+      "army": "grom",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [5,8],
+      "gadgets_nb": [2,2],
+      "gadget_unique_nb": 3
     },
-    "33": {
-      "name": "zofia",
-      "side": 1
+    "zofia": {
+      "name": "Zofia",
+      "side": 1,
+      "army": "grom",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [0,4],
+      "gadgets_nb": [3,1],
+      "gadget_unique_nb": 4
     },
-    "34": {
-      "name": "dokkaebi",
-      "side": 1
+    "dokkaebi": {
+      "name": "Dokkaebi",
+      "side": 1,
+      "army": "707th",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 2,
+      "armor": 2,
+      "gadgets": [2,4],
+      "gadgets_nb": [2,1],
+      "gadget_unique_nb": 2
     },
-    "35": {
-      "name": "vigil",
-      "side": 0
+    "vigil": {
+      "name": "Vigil",
+      "side": 0,
+      "army": "707th",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [5,8],
+      "gadgets_nb": [2,2],
+      "gadget_unique_nb": 0
     },
-    "36": {
-      "name": "lion",
-      "side": 1
+    "finka": {
+      "name": "Finka",
+      "side": 1,
+      "army": "spetsnaz",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [5,8],
+      "gadgets_nb": [2,2],
+      "gadget_unique_nb": 0
     },
-    "37": {
-      "name": "finka",
-      "side": 1
+    "lion": {
+      "name": "Lion",
+      "side": 1,
+      "army": "gign",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [5,8],
+      "gadgets_nb": [2,2],
+      "gadget_unique_nb": 0
+    },
+    "maestro": {
+      "name": "Maestro",
+      "side": 0,
+      "army": "GIS",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [5,8],
+      "gadgets_nb": [2,2],
+      "gadget_unique_nb": 0
+    },
+    "alibi": {
+      "name": "Alibi",
+      "side": 0,
+      "army": "GIS",
+      "weapons_primary": [0,1],
+      "weapons_secondary": [0,1],
+      "speed": 3,
+      "armor": 1,
+      "gadgets": [5,8],
+      "gadgets_nb": [2,2],
+      "gadget_unique_nb": 0
     }
   }
 }

@@ -7,16 +7,14 @@ import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.AsyncTask;
 import android.support.v7.widget.RecyclerView;
-import android.util.Pair;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.ImageView;
 import android.widget.TextView;
-import android.widget.Toast;
 
-import java.util.List;
+import java.util.ArrayList;
 
 
 /*
@@ -28,9 +26,9 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
 {
 
         private int requesttype;
-        private List<Pair<Integer, Integer>> maps;
+        private ArrayList<Map> maps;
 
-        ListAdapterMapMenu (int request, List<Pair<Integer, Integer>> maps)
+        ListAdapterMapMenu (int request, ArrayList<Map> maps)
         {
             requesttype = request;
             this.maps = maps;
@@ -53,17 +51,15 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
         @Override
         public void onBindViewHolder(MyViewHolder holder, int position)
         {
-            Pair<Integer, Integer> pair = maps.get(position);
-            holder.display(pair);
+            Map map = maps.get(position);
+            holder.display(map);
         }
 
         class MyViewHolder extends RecyclerView.ViewHolder
         {
-
             private final TextView name;
             private final ImageView image;
             private final Context context;
-
 
              MyViewHolder(final View itemView)
              {
@@ -104,14 +100,13 @@ class ListAdapterMapMenu extends RecyclerView.Adapter<ListAdapterMapMenu.MyViewH
             void startIntentWithInput(Class newclass)
             {
                 Intent intent = new Intent(context, newclass);
-                intent.putExtra("nommap",name.getText().toString());
-                intent.putExtra("pos", getAdapterPosition());
+                intent.putExtra("map", maps.get(getAdapterPosition()));
                 context.startActivity(intent);
             }
 
-            void display(Pair<Integer, Integer> pair) {
-                name.setText(pair.first);
-                new SetImage(pair.second, image, context).execute();
+            void display(Map map) {
+                name.setText(map.getMapNameId());
+                new SetImage(map.getMapImgId(), image, context).execute();
             }
         }
 

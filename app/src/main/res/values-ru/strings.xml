@@ -350,7 +350,7 @@
     <string name="takemap">Выбрать карту</string>
 
     <!--MAPS INFO-->
-    <string name="map_name_0">Банк</string>
+    <string name="map_name_bank">Банк</string>
         <string name="cam_0_0">(1Э) Холл</string>
         <string name="cam_0_1">(1Э) Коридор</string>
         <string name="cam_0_2">(2Э) Лестница</string>
@@ -359,7 +359,7 @@
         <string name="cam_0_5">(СНАРУЖИ) Проезд в Гараж</string>
         <string name="cam_0_6">(СНАРУЖИ) Переулок</string>
 
-    <string name="map_name_1">Шале</string>
+    <string name="map_name_chalet">Шале</string>
         <string name="cam_1_0">(2Э) Спальня Коридор</string>
         <string name="cam_1_1">(2Э) Камин Коридор</string>
         <string name="cam_1_2">(1Э) Библиотека Лестница</string>
@@ -367,7 +367,7 @@
         <string name="cam_1_4">(СНАРУЖИ) Двор</string>
         <string name="cam_1_5">(СНАРУЖИ) Задний Двор</string>
 
-    <string name="map_name_2">Клуб</string>
+    <string name="map_name_clubhouse">Клуб</string>
         <string name="cam_2_0">(2Э) Спальня Коридор</string>
         <string name="cam_2_1">(1Э) Бар</string>
         <string name="cam_2_2">(1Э) Гараж</string>
@@ -376,7 +376,7 @@
         <string name="cam_2_5">(СНАРУЖИ) Арт-зона</string>
         <string name="cam_2_6">(СНАРУЖИ) Будки</string>
 
-    <string name="map_name_3">Консульство</string>
+    <string name="map_name_consulate">Консульство</string>
         <string name="cam_3_0">(2Э) Приемная Консула</string>
         <string name="cam_3_1">(1Э) Главная Лестница</string>
         <string name="cam_3_2">(1Э) Отдел Виз</string>
@@ -386,7 +386,7 @@
         <string name="cam_3_6">(СНАРУЖИ) Аллея</string>
         <string name="cam_3_7">(СНАРУЖИ) Въезд в Гараж</string>
 
-    <string name="map_name_4">База Херефорд</string>
+    <string name="map_name_hereford">База Херефорд</string>
         <string name="cam_4_0">(СНАРУЖИ) Крыша</string>
         <string name="cam_4_1">(2Э) Коридор</string>
         <string name="cam_4_2">(1Э) Коридор 1</string>
@@ -394,7 +394,7 @@
         <string name="cam_4_4">(СНАРУЖИ) Стрельбище</string>
         <string name="cam_4_5">(СНАРУЖИ) Подъемник</string>
 
-    <string name="map_name_5">Дом</string>
+    <string name="map_name_house">Дом</string>
         <string name="cam_5_0">(СНАРУЖИ) Козырек Крыльца</string>
         <string name="cam_5_1">(1Э) Кухня</string>
         <string name="cam_5_2">(П) Тренажёрная</string>
@@ -402,7 +402,7 @@
         <string name="cam_5_4">(СНАРУЖИ) Передний Двор</string>
         <string name="cam_5_5">(СНАРУЖИ) Сад</string>
 
-    <string name="map_name_6">Кафе "Достоевский"</string>
+    <string name="map_name_kafedostoyevsky">Кафе "Достоевский"</string>
         <string name="cam_6_0">(3Э) Коктейльный Зал</string>
         <string name="cam_6_1">(2Э) Читальный Зал</string>
         <string name="cam_6_2">(1Э) Холодильник Коридор</string>
@@ -410,7 +410,7 @@
         <string name="cam_6_4">(СНАРУЖИ) Западная Центральная Улица</string>
         <string name="cam_6_5">(СНАРУЖИ) Аллея</string>
 
-    <string name="map_name_7">Канал</string>
+    <string name="map_name_kanal">Канал</string>
         <string name="cam_7_0">(Д-3Э) Диспетчерская Коридор</string>
         <string name="cam_7_1">(Д-2Э) Комната Карт Коридор</string>
         <string name="cam_7_2">(БО-2Э) Берег. Охрана Коридор</string>
@@ -419,7 +419,7 @@
         <string name="cam_7_5">(СНАРУЖИ) Ворота Шлюза</string>
         <string name="cam_7_6">(СНАРУЖИ) Стройплощадка</string>
 
-    <string name="map_name_8">Орегон</string>
+    <string name="map_name_oregon">Орегон</string>
         <string name="cam_8_0">(2Э) Оружейная Коридор</string>
         <string name="cam_8_1">(1Э) Холл</string>
         <string name="cam_8_2">(1Э) Столовая Коридор</string>
@@ -428,14 +428,14 @@
         <string name="cam_8_5">(СНАРУЖИ) Парковка</string>
         <string name="cam_8_6">(СНАРУЖИ) Стройплощадка</string>
 
-    <string name="map_name_9">Борт Номер Один</string>
+    <string name="map_name_plane">Борт Номер Один</string>
         <string name="cam_9_0">(3Э) Экипаж</string>
         <string name="cam_9_1">(2Э) Передний Коридор</string>
         <string name="cam_9_2">(2Э) Пресс-центр А</string>
         <string name="cam_9_3">(1Э) Багажный Отсек</string>
         <string name="cam_9_4">(1Э) Грузовой Отсек</string>
 
-    <string name="map_name_10">Яхта</string>
+    <string name="map_name_yacht">Яхта</string>
         <string name="cam_10_0">(4Э) Верт. Площадка</string>
         <string name="cam_10_1">(3Э) Спальня Коридор</string>
         <string name="cam_10_2">(3Э) Зал</string>
@@ -445,7 +445,7 @@
         <string name="cam_10_6">(СНАРУЖИ) Палуба, Передняя Часть</string>
         <string name="cam_10_7">(СНАРУЖИ) Гидромассажная Ванна</string>
 
-    <string name="map_name_11">Граница</string>
+    <string name="map_name_border">Граница</string>
         <string name="cam_11_0">(2Э) Восточная Лестница</string>
         <string name="cam_11_1">(2Э) Главный Коридор</string>
         <string name="cam_11_2">(1Э) Главный Холл</string>
@@ -454,7 +454,7 @@
         <string name="cam_11_5">(СНАРУЖИ) Авария</string>
         <string name="cam_11_6">(СНАРУЖИ) Парковка Переулок</string>
 
-    <string name="map_name_12">Фавела</string>
+    <string name="map_name_favela">Фавела</string>
         <string name="cam_12_0">(3Э) Задняя Лестница</string>
         <string name="cam_12_1">(3Э) Главная Лестница</string>
         <string name="cam_12_2">(1Э) Постирочная</string>
@@ -463,7 +463,7 @@
         <string name="cam_12_5">(СНАРУЖИ) Улица</string>
         <string name="cam_12_6">(СНАРУЖИ) Переулок</string>
 
-    <string name="map_name_13">Небоскреб</string>
+    <string name="map_name_skyscraper">Небоскреб</string>
         <string name="cam_13_0">(2Э) Коридор</string>
         <string name="cam_13_1">(1Э) Ресторан</string>
         <string name="cam_13_2">(2Э) Дом - Лестница</string>
@@ -472,7 +472,7 @@
         <string name="cam_13_5">(СНАРУЖИ) Сад - Восток</string>
         <string name="cam_13_6">(СНАРУЖИ) Вентиляция</string>
 
-    <string name="map_name_14">Ун. Бартлет</string>
+    <string name="map_name_barlett">Ун. Бартлет</string>
         <string name="cam_14_0">(2Э) Коридор</string>
         <string name="cam_14_1">(2Э) Открытый Коридор</string>
         <string name="cam_14_2">(1Э) Зал с Арками</string>
@@ -481,7 +481,7 @@
         <string name="cam_14_5">(СНАРУЖИ) Главные Ворота</string>
         <string name="cam_14_6">(СНАРУЖИ) Парковка</string>
 
-    <string name="map_name_15">Побережье</string>
+    <string name="map_name_coastline">Побережье</string>
         <string name="cam_15_0">(1Э) Коридор</string>
         <string name="cam_15_1">(1Э) Главный Холл</string>
         <string name="cam_15_2">(2Э) Аквариум</string>
@@ -490,7 +490,7 @@
         <string name="cam_15_5">(СНАРУЖИ) Развалины</string>
         <string name="cam_15_6">(СНАРУЖИ) Развалины</string>
 
-    <string name="map_name_16">Theme park</string>
+    <string name="map_name_themepark">Theme park</string>
         <string name="cam_16_0">(1F) Gallery</string>
         <string name="cam_16_1">(2F) Haunted Stairs</string>
         <string name="cam_16_2">(1F) Joint Corridor</string>
@@ -500,7 +500,7 @@
         <string name="cam_16_6">(EXT) Service Entrance</string>
         <string name="cam_16_7">(EXT) Guest Info</string>
 
-    <string name="map_name_17">Tower</string>
+    <string name="map_name_tower">Tower</string>
         <string name="cam_17_0">(2F) Gallery Main</string>
         <string name="cam_17_1">(2F) Exhibit Hallway</string>
         <string name="cam_17_2">(2F) Company Reception</string>
@@ -524,7 +524,7 @@
     <string name="f_3">(4Э)</string>
 
     <!--FLOORS ERROR PHRASE-->
-    <string name="planerror">Планы не доступны на этой карте!</string>
+    <string name="plan_error">Планы не доступны на этой карте!</string>
     <string name="error_floor_below">Этажей ниже больше нет!</string>
     <string name="error_floor_above">Этажей выше больше нет!</string>
 

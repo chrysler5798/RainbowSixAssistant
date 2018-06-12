@@ -350,7 +350,7 @@
     <string name="takemap">Izaberi mapu</string>
 
     <!--MAPS INFO-->
-    <string name="map_name_0">Banka</string>
+    <string name="map_name_bank">Banka</string>
         <string name="cam_0_0">(1S) Lobi</string>
         <string name="cam_0_1">(1S) Hodnik Kancelarije</string>
         <string name="cam_0_2">(2S) Krovno stepenište</string>
@@ -359,7 +359,7 @@
         <string name="cam_0_5">(IZL) Rampa Garaže</string>
         <string name="cam_0_6">(IZL) Uličica</string>
 
-    <string name="map_name_1">Koliba</string>
+    <string name="map_name_chalet">Koliba</string>
         <string name="cam_1_0">(2S) Hodnik Spavaće sobe</string>
         <string name="cam_1_1">(2S) Hodnik Kamina</string>
         <string name="cam_1_2">(1S) Stepenice Biblioteke</string>
@@ -367,7 +367,7 @@
         <string name="cam_1_4">(IZL) Dvorište</string>
         <string name="cam_1_5">(IZL) Dvorište iza kuće</string>
 
-    <string name="map_name_2">Kućni Klub</string>
+    <string name="map_name_clubhouse">Kućni Klub</string>
         <string name="cam_2_0">(2S) Hodnik Spavaće sobe</string>
         <string name="cam_2_1">(1S) Bar</string>
         <string name="cam_2_2">(1S) Garaža</string>
@@ -376,7 +376,7 @@
         <string name="cam_2_5">(IZL) Područje sa Grafitima</string>
         <string name="cam_2_6">(IZL) Štenara</string>
 
-    <string name="map_name_3">Konzulat</string>
+    <string name="map_name_consulate">Konzulat</string>
         <string name="cam_3_0">(2S) Recepcija konzulata</string>
         <string name="cam_3_1">(1S) Glavne Stepenice</string>
         <string name="cam_3_2">(1S) Kancelarija za Vizu</string>
@@ -386,7 +386,7 @@
         <string name="cam_3_6">(IZL) Prednja Uličica</string>
         <string name="cam_3_7">(IZL) Garažni put</string>
 
-    <string name="map_name_4">Hereford Baza</string>
+    <string name="map_name_hereford">Hereford Baza</string>
     <string name="cam_4_0">(IZL) Krov</string>
     <string name="cam_4_1">(2S) Hodnik</string>
     <string name="cam_4_2">(1S) Hodnik 1</string>
@@ -394,7 +394,7 @@
     <string name="cam_4_4">(IZL) Streljana</string>
     <string name="cam_4_5">(IZL) Područje viljuškara</string>
 
-    <string name="map_name_5">Kuća</string>
+    <string name="map_name_house">Kuća</string>
         <string name="cam_5_0">(IZL) Prednji Trem</string>
         <string name="cam_5_1">(1S) Kuhinja</string>
         <string name="cam_5_2">(P) Soba za Rekreaciju</string>
@@ -402,7 +402,7 @@
         <string name="cam_5_4">(IZL) Dvorište</string>
         <string name="cam_5_5">(IZL) Bašta</string>
 
-    <string name="map_name_6">Kafe Dostoyevsky</string>
+    <string name="map_name_kafedostoyevsky">Kafe Dostoyevsky</string>
         <string name="cam_6_0">(3S) Čekaonica sa Koktelima</string>
         <string name="cam_6_1">(2S) Soba za Čitanje</string>
         <string name="cam_6_2">(1S) Hodnik Hladne Sobe</string>
@@ -410,7 +410,7 @@
         <string name="cam_6_4">(IZL) Zapadna Glavna Ulica</string>
         <string name="cam_6_5">(IZL) Uličica Parka</string>
 
-    <string name="map_name_7">Kanal</string>
+    <string name="map_name_kanal">Kanal</string>
         <string name="cam_7_0">(CC3S) Hodnik Kontrolne Sobe</string>
         <string name="cam_7_1">(CC2S) Kancelarija sa Mapama</string>
         <string name="cam_7_2">(CG2S) Hodnik Obalne Straže</string>
@@ -419,7 +419,7 @@
         <string name="cam_7_5">(IZL) Kapija</string>
         <string name="cam_7_6">(IZL) Gradilište</string>
 
-    <string name="map_name_8">Oregon</string>
+    <string name="map_name_oregon">Oregon</string>
         <string name="cam_8_0">(2S) Hodnik za oružja</string>
         <string name="cam_8_1">(1S) Lobi</string>
         <string name="cam_8_2">(1S) Hodnik Trpeze</string>
@@ -428,14 +428,14 @@
         <string name="cam_8_5">(IZL) Parking</string>
         <string name="cam_8_6">(IZL) Gradilište</string>
 
-    <string name="map_name_9">Predsednički avion</string>
+    <string name="map_name_plane">Predsednički avion</string>
         <string name="cam_9_0">(3S) Osoblje kabine</string>
         <string name="cam_9_1">(2S) Prednji Hodnik</string>
         <string name="cam_9_2">(2S) Sekcija za Novinare A</string>
         <string name="cam_9_3">(1S) Sekcija Prtljaga</string>
         <string name="cam_9_4">(1S) Sekcija Tereta</string>
 
-    <string name="map_name_10">Jahta</string>
+    <string name="map_name_yacht">Jahta</string>
         <string name="cam_10_0">(4S) Helipad Ulaz</string>
         <string name="cam_10_1">(3S) Hodnik Spavaće sobe</string>
         <string name="cam_10_2">(3S) Čekaonica</string>
@@ -445,7 +445,7 @@
         <string name="cam_10_6">(IZL) Prednja Paluba</string>
         <string name="cam_10_7">(IZL) Spa Paluba</string>
 
-    <string name="map_name_11">Granica</string>
+    <string name="map_name_border">Granica</string>
         <string name="cam_11_0">(2S) Istočne Stepenice</string>
         <string name="cam_11_1">(2S) Glavni Hodnik</string>
         <string name="cam_11_2">(1S) Glavni Lobi</string>
@@ -454,7 +454,7 @@
         <string name="cam_11_5">(IZL) Mesto Sudara</string>
         <string name="cam_11_6">(IZL) Uličica Parkinga</string>
 
-    <string name="map_name_12">Favela</string>
+    <string name="map_name_favela">Favela</string>
         <string name="cam_12_0">(3S) Zadnje Stepenice</string>
         <string name="cam_12_1">(3S) Glavne Stepenice</string>
         <string name="cam_12_2">(1S) Soba za Pranje veša</string>
@@ -463,7 +463,7 @@
         <string name="cam_12_5">(IZL) Ulica</string>
         <string name="cam_12_6">(IZL) Uličica</string>
 
-    <string name="map_name_13">Oblakoder</string>
+    <string name="map_name_skyscraper">Oblakoder</string>
         <string name="cam_13_0">(2S) Hodnik</string>
         <string name="cam_13_1">(1S) Restoran</string>
         <string name="cam_13_2">(2S) Kućne stepenice</string>
@@ -472,7 +472,7 @@
         <string name="cam_13_5">(IZL) Istočna bašta</string>
         <string name="cam_13_6">(IZL) Ventilacija</string>
 
-    <string name="map_name_14">Bartlett U.</string>
+    <string name="map_name_barlett">Bartlett U.</string>
         <string name="cam_14_0">(2S) Hodnik Kompasa</string>
         <string name="cam_14_1">(2S) Vidik Hodnika</string>
         <string name="cam_14_2">(1S) Zakrivljena Dvorana</string>
@@ -481,7 +481,7 @@
         <string name="cam_14_5">(IZL) Glavna kapija</string>
         <string name="cam_14_6">(IZL) Parking</string>
 
-    <string name="map_name_15">Obala</string>
+    <string name="map_name_coastline">Obala</string>
         <string name="cam_15_0">(1S) Hodnik</string>
         <string name="cam_15_1">(1S) Glavni Lobi</string>
         <string name="cam_15_2">(2S) Akvarijum</string>
@@ -490,7 +490,7 @@
         <string name="cam_15_5">(IZL) Ruševine</string>
         <string name="cam_15_6">(IZL) Ruševine</string>
 
-    <string name="map_name_16">Zabavni park</string>
+    <string name="map_name_themepark">Zabavni park</string>
         <string name="cam_16_0">(1S) Galerija</string>
         <string name="cam_16_1">(2S) Uklete Stepenice</string>
         <string name="cam_16_2">(1S) Spojeni Hodnik</string>
@@ -500,7 +500,7 @@
         <string name="cam_16_6">(IZL) Službeni ulaz</string>
         <string name="cam_16_7">(IZL) Informacije za Goste</string>
 
-    <string name="map_name_17">Kula</string>
+    <string name="map_name_tower">Kula</string>
         <string name="cam_17_0">(2S) Glavna Galerija</string>
         <string name="cam_17_1">(2S) Hodnik za izložbu</string>
         <string name="cam_17_2">(2S) Recepcija Kompanije</string>
@@ -524,7 +524,7 @@
     <string name="f_3">4. Sprat</string>
 
     <!--FLOORS ERROR PHRASE-->
-    <string name="planerror">Planovi još nisu dostupni za ovu mapu !</string>
+    <string name="plan_error">Planovi još nisu dostupni za ovu mapu !</string>
     <string name="error_floor_below">Ne postoji sprat iznad !</string>
     <string name="error_floor_above">Ne postoji sprat ispod !</string>
 

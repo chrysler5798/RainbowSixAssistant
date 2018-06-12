@@ -5,15 +5,14 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Pair;
 import android.view.MenuItem;
 
 import com.khrys.r6assistant.data.LoadData;
 
-import org.json.JSONObject;
+import org.json.JSONArray;
+import org.json.JSONException;
 
 import java.util.ArrayList;
-import java.util.List;
 
 /*
  * Created by Chrysler on 11/27/2016.
@@ -22,7 +21,6 @@ import java.util.List;
 
 public class MapMenuActivity extends AppCompatActivity
 {
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -39,22 +37,27 @@ public class MapMenuActivity extends AppCompatActivity
         int requesttype = getIntent().getIntExtra("request",0);
         GridLayoutManager gridLayout = new GridLayoutManager(MapMenuActivity.this, 2);
         RecyclerView rv = findViewById(R.id.recyclerView);
+
+        ArrayList<Map> maps = new ArrayList<>();
         LoadData dataLoader = new LoadData();
-        JSONObject mapsData = new LoadData().loadData(this, dataLoader.RES_MAPS);
-        int mapsNumber = mapsData.length();
-        //new LoadData().loadDataFromRes(this, R.raw.maps).getJSONObject("maps").getJSONObject("0").get("name")
-
-        List<Pair<Integer, Integer>> maps = new ArrayList<>();
-
-        for(int i = 0; i < mapsNumber; i++)
+        try
         {
-            String stringMapName = "map_name_"+i;
-            String drawMapName   = "thum_map_"+i;
+            JSONArray mapsList = dataLoader.loadData(this, dataLoader.RES_MAPS).getJSONArray("maps");
+            for(int i = 0; i < mapsList.length(); i++)
+            {
+                String mapId = mapsList.getString(i);
+                String stringMapName = "map_name_" + mapId;
+                String drawMapName   = "map_img_" + mapId;
 
-            int idName = getResources().getIdentifier(stringMapName, "string", getApplicationContext().getPackageName());
-            int idDraw = getResources().getIdentifier(drawMapName, "drawable", getApplicationContext().getPackageName());
+                int idName = getResources().getIdentifier(stringMapName, "string", getApplicationContext().getPackageName());
+                int idImg = getResources().getIdentifier(drawMapName, "drawable", getApplicationContext().getPackageName());
 
-            maps.add(i, Pair.create(idName,idDraw));
+                maps.add(new Map(mapId, getString(idName), idName, idImg));
+            }
+        }
+        catch (JSONException e)
+        {
+            e.printStackTrace();
         }
 
         rv.setHasFixedSize(true);

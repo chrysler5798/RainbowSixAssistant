@@ -13,8 +13,12 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.ViewGroup;
 
-import com.khrys.r6assistant.HeaderListAdapter;
 import com.khrys.r6assistant.R;
+import com.khrys.r6assistant.data.LoadData;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -43,16 +47,29 @@ public class WeaponsFragment extends Fragment
         mLayout = new LinearLayoutManager(getContext());
         mRecycler.setLayoutManager(mLayout);
 
-        ArrayList<Integer> weaponsimg = new ArrayList<>();
-        ArrayList<String> weaponstxt = new ArrayList<>();
+        ArrayList<Weapon> weapons = new ArrayList<>();
 
-        String tableArme[] = {"l85a2","ar33","g36c","r4-c","556xi","f2","ak-12","aug","552 commando","416-c carbine","c8-sfw","mk17 cqb","para 308","type 89","c7e","m762","v308","spear",
-                              "p226 mk 25","57 usg","m45 meusoc","p9","lfp586","gsh-18","pmm","p12","mk1","d-50","prb92","luison","p229","usp40","q-929","rg15",
-                              "6p41","g8a1","m249","t-95 lsw","lmg-e",
-                              "smg-11","bearing-9","c75","smg-12",
-                              "417","ots-03","camrs","sr-25","mk 14 ebr",
-                              "m590a1","m1014","sg-cqb","sasg-12","m870","super 90","spas-12","spas-15","supernova","ita12l","ita12s","six12","six12 sd","f0-12","bosg 12 2",
-                              "fmg-9","mp5k","ump45","mp5","p90","9x19vsn","mp7","c1","mpx","m12","mp5sd","pdw9","vector","t-5 smg","scorpion evo 3 a1","k1a"};
+        try
+        {
+            LoadData loadData = new LoadData();
+            JSONObject operatorsJSON = loadData.loadData(getContext(), loadData.RES_WEAPONS);
+            JSONArray weaponsList = operatorsJSON.getJSONArray("weapons_list");
+            JSONObject weaponsData = operatorsJSON.getJSONObject("weapons");
+
+            for (int i = 0; i < weaponsList.length(); i++)
+            {
+                String weaponId = weaponsList.getString(i);
+                JSONObject weapon = weaponsData.getJSONObject(weaponId);
+
+                int imgid = getResources().getIdentifier("g_" + weaponId, "drawable", view.getContext().getPackageName());
+
+                weapons.add(new Weapon(imgid, weapon.getString("name")));
+            }
+        }
+        catch (JSONException e)
+        {
+            e.printStackTrace();
+        }
 
 /*        Compte
             Assault : 16
@@ -64,19 +81,8 @@ public class WeaponsFragment extends Fragment
             Submachine : 16
             TOTAL : 77
  */
-        for (String aTableArme : tableArme)
-        {
-            String img = "g_" + aTableArme;
-            img = img.replace(' ', '_');
-            img = img.replace('-', '_');
 
-            int imgid = getResources().getIdentifier(img, "drawable", view.getContext().getPackageName());
-
-            weaponsimg.add(imgid);
-            weaponstxt.add(aTableArme);
-        }
-
-        HeaderListAdapter mAdapter = new HeaderListAdapter(weaponsimg,weaponstxt);
+        WeaponsHeaderListAdapter mAdapter = new WeaponsHeaderListAdapter(weapons);
         mRecycler.setAdapter(mAdapter);
         mRecycler.addItemDecoration(new StickyHeaderDecoration(mAdapter));
     }

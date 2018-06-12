@@ -29,8 +29,8 @@
     <string name="msgsoon">Funzione in arrivo !</string>
 
     <!--UPDATE APP-->
-    <string name="update_title">An update is available !</string>
-    <string name="update_text">You are using an older version of R6 Assistant, do you want to update it ?</string>
+    <string name="update_title">È disponibile un aggiornamento!</string>
+    <string name="update_text">Stai usando una versione obsoleta di R6 Assistant, desideri aggiornarla ?</string>
 
     <!--RATE APP POPUP-->
     <string name="ratetitle">Recensisci R6 Assistant</string>
@@ -39,11 +39,11 @@
 
     <!--WEAPONS STATS-->
     <string name="beta_msg">This is a BETA !\nIt means it could miss things.\nCheck out the Help button on the top-right corner</string>
-    <string name="byoperator">By operators</string>
-    <string name="byweapons">By weapons</string>
-    <string name="legs">legs</string>
-    <string name="body">body</string>
-    <string name="rookarmor">Rook Armor</string>
+    <string name="byoperator">Per operatori</string>
+    <string name="byweapons">Per armi</string>
+    <string name="legs">Gambe</string>
+    <string name="body">Corpo</string>
+    <string name="rookarmor">Corazza di Rook</string>
 
     <!--WEAPONS STATS CLASS-->
     <string name="assault">Fucile d\'assalto</string>
@@ -63,30 +63,30 @@
 
     <!--WEAPON STATS HELP-->
     <string name="help_title">Weapon Stats \n BETA</string>
-    <string name="help_ammo">This is the number of ammo in a loader.</string>
-    <string name="help_firerate">This is the Fire rate, it\'s the frequency at which a specific weapon can fire or launch its projectiles</string>
-    <string name="help_damagefalloff">This is the Damage Falloff, it\'s the range where you start doing less damage</string>
-    <string name="help_armor">Damage against an operator with 1, 2 or 3 of armor</string>
-    <string name="help_armor_rook">Damage against an operator with 1, 2 or 3 of armor equipped with a rook armor</string>
-    <string name="help_barrel">At the bottom of stats page, you can see the ranking of barrels. \nThe first is the one which had the most reliable spray to control.\n Anyways it\'s up to you and your playstyle.</string>
+    <string name="help_ammo">Questo è il numero di colpi in un caricatore.</string>
+    <string name="help_firerate">Questo è il Rateo di fuoco, è la frequenza con cui una specifica arma può sparare o lanciare i proprio proiettili</string>
+    <string name="help_damagefalloff">Questa è la Cadenza, è la distanza dove inizi ad incidere un danno minore</string>
+    <string name="help_armor">Danno nei confronti di un operatore con 1, 2 o 3 di armatura</string>
+    <string name="help_armor_rook">Danno nei confronti di un operatore con 1, 2 o 3 di armatura equipaggiato con la corazza di Rook</string>
+    <string name="help_barrel">Nella parte bassa della pagina delle statistiche, puoi vedere la classifica delle canne. \nLa prima equivale a quella che consente il miglior controllo del rinculo. Ciò nonostante, dipende dal tuo stile di gioco.</string>
 
     <!--WEAPON STATS CREDIT-->
-    <string name="stats_credit_1">Thanks a lot to Sergio for the sheet of stats ! Without him, nothing would have been possible. \nCLICK HERE to see his Youtube Channel</string>
-    <string name="stats_credit_2">Thanks a lot to VarsityGaming as well, for its videos about attachment ! \nCLICK HERE to see his Youtube Channel</string>
+    <string name="stats_credit_1">Grazie tante a Sergio per i dati delle statistiche! Senza di lui, niente sarebbe stato possibile. \nCLICCA QUI per vedere il suo Canale Youtube</string>
+    <string name="stats_credit_2">Grazie tante anche a VarsityGaming, per i suoi video sugli accessori! \nCLICCA QUI per vedere il suo Canale Youtube</string>
 
     <!--OPERATORS MENU-->
-    <string name="bycountries">By countries</string>
+    <string name="bycountries">Per nazionalità</string>
     <string name="attackers">Assalitori</string>
     <string name="defenders">Difensori</string>
 
     <!--OPERATORS-->
     <string name="attacker">Assalitore</string>
     <string name="defender">Difensore</string>
-    <string name="armor_light">Light</string>
-    <string name="armor_heavy">Heavy</string>
-    <string name="speed_slow">Slow</string>
-    <string name="speed_fast">Fast</string>
-    <string name="medium">Medium</string>
+    <string name="armor_light">Leggero</string>
+    <string name="armor_heavy">Pesante</string>
+    <string name="speed_slow">Lento</string>
+    <string name="speed_fast">Veloce</string>
+    <string name="medium">Medio</string>
 
     <!--OPERATORS TITLE-->
     <string name="speed">Velocità</string>
@@ -350,7 +350,7 @@
     <string name="takemap">Scegli una mappa</string>
 
     <!--MAPS INFO-->
-    <string name="map_name_0">Banca</string>
+    <string name="map_name_bank">Banca</string>
         <string name="cam_0_0">(PT) Atrio</string>
         <string name="cam_0_1">(PT) Corridoio uffici</string>
         <string name="cam_0_2">(1ºP) Scala lucernario</string>
@@ -359,7 +359,7 @@
         <string name="cam_0_5">(ESTERNO) Rampa garage</string>
         <string name="cam_0_6">(ESTERNO) Vicolo (retro)</string>
 
-    <string name="map_name_1">Chalet</string>
+    <string name="map_name_chalet">Chalet</string>
         <string name="cam_1_0">(1ºP) Corridoio camere da letto</string>
         <string name="cam_1_1">(1ºP) Corridoio camino</string>
         <string name="cam_1_2">(PT) Scala biblioteca</string>
@@ -367,7 +367,7 @@
         <string name="cam_1_4">(ESTERNO) Cortile</string>
         <string name="cam_1_5">(ESTERNO) Cortile (retro)</string>
 
-    <string name="map_name_2">Club House</string>
+    <string name="map_name_clubhouse">Club House</string>
         <string name="cam_2_0">(1ºP) Corridoio camere da letto</string>
         <string name="cam_2_1">(PT) Bar</string>
         <string name="cam_2_2">(PT) Garage</string>
@@ -376,7 +376,7 @@
         <string name="cam_2_5">(ESTERNO) Zona Graffiti</string>
         <string name="cam_2_6">(ESTERNO) Canile</string>
 
-    <string name="map_name_3">Consolato</string>
+    <string name="map_name_consulate">Consolato</string>
         <string name="cam_3_0">(1ºP) Front desk console</string>
         <string name="cam_3_1">(PT) Scala principale</string>
         <string name="cam_3_2">(PT) Ufficio visti</string>
@@ -386,7 +386,7 @@
         <string name="cam_3_6">(ESTERNO) Vicolo</string>
         <string name="cam_3_7">(ESTERNO) Vialetto Garage</string>
 
-    <string name="map_name_4">Basi di Hereford</string>
+    <string name="map_name_hereford">Basi di Hereford</string>
         <string name="cam_4_0">(ESTERNO) Tetto</string>
         <string name="cam_4_1">(1ºP) Corridoio</string>
         <string name="cam_4_2">(PT) Corridoio 1</string>
@@ -394,7 +394,7 @@
         <string name="cam_4_4">(ESTERNO) Poligono di tiro Accesso est</string>
         <string name="cam_4_5">(ESTERNO) Zona carrelli elevatori</string>
 
-    <string name="map_name_5">Casa</string>
+    <string name="map_name_house">Casa</string>
         <string name="cam_5_0">(1ºP) Corridoio superiore</string>
         <string name="cam_5_1">(PT) Cucina</string>
         <string name="cam_5_2">(S) Palestra</string>
@@ -402,7 +402,7 @@
         <string name="cam_5_4">(ESTERNO) Cortile</string>
         <string name="cam_5_5">(ESTERNO) Giardino</string>
 
-    <string name="map_name_6">Café Dostoevskij</string>
+    <string name="map_name_kafedostoyevsky">Café Dostoevskij</string>
         <string name="cam_6_0">(2ºP) Lounge cocktail</string>
         <string name="cam_6_1">(1ºP) Corridoio sala lettura</string>
         <string name="cam_6_2">(PT) Corr. cella frigorifera</string>
@@ -410,7 +410,7 @@
         <string name="cam_6_4">(ESTERNO) Strada principale ovest</string>
         <string name="cam_6_5">(ESTERNO) Parcheggio (vicolo)</string>
 
-    <string name="map_name_7">Kanal</string>
+    <string name="map_name_kanal">Kanal</string>
         <string name="cam_7_0">(CC 2ºP) Sala comandi corridoio</string>
         <string name="cam_7_1">(CC 1ºP) Corridoio ufficio mappe</string>
         <string name="cam_7_2">(GC 1ºP) Corridoio Guardia costiera</string>
@@ -419,7 +419,7 @@
         <string name="cam_7_5">(ESTERNO) Chiusa</string>
         <string name="cam_7_6">(ESTERNO) Cantiere edile</string>
 
-    <string name="map_name_8">Oregon</string>
+    <string name="map_name_oregon">Oregon</string>
         <string name="cam_8_0">(1ºP) Corridoio armeria</string>
         <string name="cam_8_1">(PT) Atrio</string>
         <string name="cam_8_2">(PT) Corridoio refettorio</string>
@@ -428,14 +428,14 @@
         <string name="cam_8_5">(ESTERNO) Parcheggio</string>
         <string name="cam_8_6">(ESTERNO) Cantiere edile</string>
 
-    <string name="map_name_9">Aereo Presidenziale</string>
+    <string name="map_name_plane">Aereo Presidenziale</string>
         <string name="cam_9_0">(3ºP) Equipaggio</string>
         <string name="cam_9_1">(1ºP) Corridoio anteriore</string>
         <string name="cam_9_2">(2ºP) Settore stampa A</string>
         <string name="cam_9_3">(1ºP) Stiva bagagli</string>
         <string name="cam_9_4">(1ºP) Stiva</string>
 
-    <string name="map_name_10">Yacht</string>
+    <string name="map_name_yacht">Yacht</string>
         <string name="cam_10_0">(4ºP) Ingresso eliscalo</string>
         <string name="cam_10_1">(3ºP) Corridoio camera da letto</string>
         <string name="cam_10_2">(3ºP) Salotto</string>
@@ -445,7 +445,7 @@
         <string name="cam_10_6">(ESTERNO) Ponte di prua</string>
         <string name="cam_10_7">(ESTERNO) Ponte idromassaggio</string>
 
-    <string name="map_name_11">Confine</string>
+    <string name="map_name_border">Confine</string>
         <string name="cam_11_0">(1ºP) Scala est</string>
         <string name="cam_11_1">(1ºP) Corridoio principale</string>
         <string name="cam_11_2">(PT) Atrio principale</string>
@@ -454,7 +454,7 @@
         <string name="cam_11_5">(ESTERNO) Luogo incidente</string>
         <string name="cam_11_6">(ESTERNO) Parcheggio (vicolo)</string>
 
-    <string name="map_name_12">Favelas</string>
+    <string name="map_name_favela">Favelas</string>
         <string name="cam_12_0">(2ºP) Scala posteriore</string>
         <string name="cam_12_1">(2ºP) Scala principale</string>
         <string name="cam_12_2">(PT) Lavanderia</string>
@@ -463,7 +463,7 @@
         <string name="cam_12_5">(ESTERNO) Strada</string>
         <string name="cam_12_6">(ESTERNO) Vicolo (retro)</string>
 
-    <string name="map_name_13">Grattacielo</string>
+    <string name="map_name_skyscraper">Grattacielo</string>
         <string name="cam_13_0">(1ºP) Corridoio</string>
         <string name="cam_13_1">(PT) Ristorante</string>
         <string name="cam_13_2">(1ºP) Scala casa</string>
@@ -472,7 +472,7 @@
         <string name="cam_13_5">(ESTERNO) Giardino est</string>
         <string name="cam_13_6">(ESTERNO) Unità ventilazione</string>
 
-    <string name="map_name_14">Bartlett U.</string>
+    <string name="map_name_barlett">Bartlett U.</string>
         <string name="cam_14_0">(1ºP) Corridoio</string>
         <string name="cam_14_1">(1ºP) Corridoio aperto</string>
         <string name="cam_14_2">(PT) Sala con archi</string>
@@ -481,7 +481,7 @@
         <string name="cam_14_5">(ESTERNO) Cancello principale</string>
         <string name="cam_14_6">(ESTERNO) Parcheggio</string>
 
-    <string name="map_name_15">Costa</string>
+    <string name="map_name_coastline">Costa</string>
         <string name="cam_15_0">(PT) Corridoio</string>
         <string name="cam_15_1">(PT) Atrio principale</string>
         <string name="cam_15_2">(1ºP) Acquario</string>
@@ -490,7 +490,7 @@
         <string name="cam_15_5">(ESTERNO) Rovine</string>
         <string name="cam_15_6">(ESTERNO) Rovine</string>
 
-    <string name="map_name_16">Parco divertimenti</string>
+    <string name="map_name_themepark">Parco divertimenti</string>
         <string name="cam_16_0">(PT) Galleria</string>
         <string name="cam_16_1">(1ºP) Scale c. stregata</string>
         <string name="cam_16_2">(PT) Corridoio comune</string>
@@ -500,7 +500,7 @@
         <string name="cam_16_6">(ESTERNO) Ingresso di servizio</string>
         <string name="cam_16_7">(ESTERNO) Punto informazioni</string>
 
-    <string name="map_name_17">Torre</string>
+    <string name="map_name_tower">Torre</string>
         <string name="cam_17_0">(1ºP) Galleria principale</string>
         <string name="cam_17_1">(1ºP) Corridoio esposizioni</string>
         <string name="cam_17_2">(1ºP) Reception della società</string>
@@ -524,7 +524,7 @@
     <string name="f_3">4. Piano</string>
 
     <!--FLOORS ERROR PHRASE-->
-    <string name="planerror">I piani per questa mappa non sono disponibili !</string>
+    <string name="plan_error">I piani per questa mappa non sono disponibili !</string>
     <string name="error_floor_below">Nessun piano inferiore !</string>
     <string name="error_floor_above">Nessun piano superiore !</string>
 

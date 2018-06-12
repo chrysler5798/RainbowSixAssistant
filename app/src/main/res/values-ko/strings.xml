@@ -350,7 +350,7 @@
     <string name="takemap">맵을 선택하세요</string>
 
     <!--MAPS INFO-->
-    <string name="map_name_0">은행</string>
+    <string name="map_name_bank">은행</string>
         <string name="cam_0_0">1층 로비</string>
         <string name="cam_0_1">1층 사무실 복도</string>
         <string name="cam_0_2">2층 채광 계단</string>
@@ -359,7 +359,7 @@
         <string name="cam_0_5">외부 차고 경사로</string>
         <string name="cam_0_6">외부 뒷골목</string>
 
-    <string name="map_name_1">별장</string>
+    <string name="map_name_chalet">별장</string>
         <string name="cam_1_0">2층 침실 복도</string>
         <string name="cam_1_1">2층 벽난로 복도</string>
         <string name="cam_1_2">1층 서재 복도</string>
@@ -367,7 +367,7 @@
         <string name="cam_1_4">외부 앞마당</string>
         <string name="cam_1_5">외부 뒷마당</string>
 
-    <string name="map_name_2">클럽 하우스</string>
+    <string name="map_name_clubhouse">클럽 하우스</string>
         <string name="cam_2_0">2층 침실 복도</string>
         <string name="cam_2_1">1층 바</string>
         <string name="cam_2_2">1층 차고</string>
@@ -376,7 +376,7 @@
         <string name="cam_2_5">외부 그래피티 구역</string>
         <string name="cam_2_6">외부 사육장</string>
 
-    <string name="map_name_3">영사관</string>
+    <string name="map_name_consulate">영사관</string>
         <string name="cam_3_0">2층 영사관 접수처</string>
         <string name="cam_3_1">1층 중앙 계단</string>
         <string name="cam_3_2">1층 비자 사무실</string>
@@ -386,7 +386,7 @@
         <string name="cam_3_6">외부 정면 골목</string>
         <string name="cam_3_7">외부 차고 진입로</string>
 
-    <string name="map_name_4">헤리퍼드 기지</string>
+    <string name="map_name_hereford">헤리퍼드 기지</string>
         <string name="cam_4_0">외부 옥상</string>
         <string name="cam_4_1">2층 통로</string>
         <string name="cam_4_2">1층 통로 1</string>
@@ -394,7 +394,7 @@
         <string name="cam_4_4">외부 사격장</string>
         <string name="cam_4_5">외부 지게차 구역</string>
 
-    <string name="map_name_5">저택</string>
+    <string name="map_name_house">저택</string>
         <string name="cam_5_0">외부 정문 현관 위</string>
         <string name="cam_5_1">1층 주방</string>
         <string name="cam_5_2">지하 체력 단련실</string>
@@ -402,7 +402,7 @@
         <string name="cam_5_4">외부 앞마당</string>
         <string name="cam_5_5">외부 정원</string>
 
-    <string name="map_name_6">도스토예프스키 카페</string>
+    <string name="map_name_kafedostoyevsky">도스토예프스키 카페</string>
         <string name="cam_6_0">3층 칵테일 라운지</string>
         <string name="cam_6_1">2층 독서실</string>
         <string name="cam_6_2">1층 냉장실 통로</string>
@@ -410,7 +410,7 @@
         <string name="cam_6_4">외부 서쪽 대로</string>
         <string name="cam_6_5">외부 공원 골목</string>
 
-    <string name="map_name_7">운하</string>
+    <string name="map_name_kanal">운하</string>
         <string name="cam_7_0">통제소3층 통제실 복도</string>
         <string name="cam_7_1">통제소2층 지도 사무실 복도</string>
         <string name="cam_7_2">해경2층 해안 경비대 복도</string>
@@ -419,7 +419,7 @@
         <string name="cam_7_5">외부 수문</string>
         <string name="cam_7_6">외부 건설 현장</string>
 
-    <string name="map_name_8">오리건</string>
+    <string name="map_name_oregon">오리건</string>
         <string name="cam_8_0">2층 무기고 복도</string>
         <string name="cam_8_1">1층 로비</string>
         <string name="cam_8_2">1층 식당 통로</string>
@@ -428,14 +428,14 @@
         <string name="cam_8_5">외부 주차장</string>
         <string name="cam_8_6">외부 건설 현장</string>
 
-    <string name="map_name_9">대통령 전용기</string>
+    <string name="map_name_plane">대통령 전용기</string>
         <string name="cam_9_0">3층 승무원실</string>
         <string name="cam_9_1">2층 앞쪽 통로</string>
         <string name="cam_9_2">2층 기자석 A</string>
         <string name="cam_9_3">1층 수화물 적재실</string>
         <string name="cam_9_4">1층 화물 적재실</string>
 
-    <string name="map_name_10">요트</string>
+    <string name="map_name_yacht">요트</string>
         <string name="cam_10_0">4F 헬기장 입구</string>
         <string name="cam_10_1">3층 화장길 복도</string>
         <string name="cam_10_2">3층 라운지</string>
@@ -445,7 +445,7 @@
         <string name="cam_10_6">외부 전방 갑판</string>
         <string name="cam_10_7">외부 스파 갑판</string>
 
-    <string name="map_name_11">국경</string>
+    <string name="map_name_border">국경</string>
         <string name="cam_11_0">2층 동쪽 계단</string>
         <string name="cam_11_1">2층 메인 통로</string>
         <string name="cam_11_2">1층 메인 로비</string>
@@ -454,7 +454,7 @@
         <string name="cam_11_5">외부 사고 현장</string>
         <string name="cam_11_6">외부 주차장 입구</string>
 
-    <string name="map_name_12">빈민가</string>
+    <string name="map_name_favela">빈민가</string>
         <string name="cam_12_0">3층 뒤쪽 계단</string>
         <string name="cam_12_1">3층 중앙 계단</string>
         <string name="cam_12_2">1층 세탁실</string>
@@ -463,7 +463,7 @@
         <string name="cam_12_5">외부 도로</string>
         <string name="cam_12_6">외부 뒷골목</string>
 
-    <string name="map_name_13">마천루</string>
+    <string name="map_name_skyscraper">마천루</string>
         <string name="cam_13_0">2층 볻도</string>
         <string name="cam_13_1">1층 식당</string>
         <string name="cam_13_2">2층 집 계단</string>
@@ -472,7 +472,7 @@
         <string name="cam_13_5">외부 동쪽 정원</string>
         <string name="cam_13_6">외부 환풍기</string>
 
-    <string name="map_name_14">바틀렛 대학교</string>
+    <string name="map_name_barlett">바틀렛 대학교</string>
         <string name="cam_14_0">2층 나침반 복도</string>
         <string name="cam_14_1">2층 조망 복도</string>
         <string name="cam_14_2">1층 아치 홀</string>
@@ -481,7 +481,7 @@
         <string name="cam_14_5">외부 정문</string>
         <string name="cam_14_6">외부 주차장</string>
 
-    <string name="map_name_15">해안선</string>
+    <string name="map_name_coastline">해안선</string>
         <string name="cam_15_0">1층 복도</string>
         <string name="cam_15_1">1층 메인 로비</string>
         <string name="cam_15_2">2층 수족관</string>
@@ -490,7 +490,7 @@
         <string name="cam_15_5">외부 잔해</string>
         <string name="cam_15_6">외부 잔해</string>
 
-    <string name="map_name_16">테마 파크</string>
+    <string name="map_name_themepark">테마 파크</string>
         <string name="cam_16_0">1층 갤러리</string>
         <string name="cam_16_1">2층 유령의 집 계단</string>
         <string name="cam_16_2">1층 공동 통로</string>
@@ -500,7 +500,7 @@
         <string name="cam_16_6">외부 직원 출입구</string>
         <string name="cam_16_7">외부 손님 안내소</string>
 
-    <string name="map_name_17">타워</string>
+    <string name="map_name_tower">타워</string>
         <string name="cam_17_0">2층 주 갤러리</string>
         <string name="cam_17_1">2층 전시관 복도</string>
         <string name="cam_17_2">2층 회사 접수처</string>
@@ -524,7 +524,7 @@
     <string name="f_3">4층</string>
 
     <!--FLOORS ERROR PHRASE-->
-    <string name="planerror">이 맵의 전략은 아직 준비되지 않았습니다!</string>
+    <string name="plan_error">이 맵의 전략은 아직 준비되지 않았습니다!</string>
     <string name="error_floor_below">밑엔 더 이상 층이 없습니다!</string>
     <string name="error_floor_above">위엔 더 이상 층이 없습니다!</string>
 

@@ -85,7 +85,7 @@ public class CountryFragment extends Fragment
 
                 int resID = getResources().getIdentifier(imgArmeId, "drawable", view.getContext().getPackageName());
 
-                childList.add(new Operator(resID, operators));
+                childList.add(new Operator(operators, resID, operators));
             }
             country.setChildObjectList(childList);
             parentObjects.add(country);

@@ -350,7 +350,7 @@
     <string name="takemap">Sélectionne une carte</string>
 
     <!--MAPS INFO-->
-    <string name="map_name_0">Banque</string>
+    <string name="map_name_bank">Banque</string>
         <string name="cam_0_0">(RDC) Entrée</string>
         <string name="cam_0_1">(RDC) Couloir du bureau</string>
         <string name="cam_0_2">(1ER) Cage d\'escalier éclairée</string>
@@ -359,7 +359,7 @@
         <string name="cam_0_5">(EXT) Rampe du garage</string>
         <string name="cam_0_6">(EXT) Ruelle</string>
 
-    <string name="map_name_1">Chalet</string>
+    <string name="map_name_chalet">Chalet</string>
         <string name="cam_1_0">(1ER) Couloir de la chambre</string>
         <string name="cam_1_1">(1ER) Couloir avec cheminée</string>
         <string name="cam_1_2">(RDC) Escalier de la biblio</string>
@@ -367,7 +367,7 @@
         <string name="cam_1_4">(EXT) Jardin devant la maison</string>
         <string name="cam_1_5">(EXT) Jardin de derrière</string>
 
-    <string name="map_name_2">Club House</string>
+    <string name="map_name_clubhouse">Club House</string>
         <string name="cam_2_0">(1ER) Couloir de la chambre</string>
         <string name="cam_2_1">(RDC) Bar</string>
         <string name="cam_2_2">(RDC) Garage</string>
@@ -376,7 +376,7 @@
         <string name="cam_2_5">(EXT) Zone de graffitis</string>
         <string name="cam_2_6">(EXT) Chenils</string>
 
-    <string name="map_name_3">Consulat</string>
+    <string name="map_name_consulate">Consulat</string>
         <string name="cam_3_0">(1ER) Accueil du consul</string>
         <string name="cam_3_1">(RDC) Escalier principal</string>
         <string name="cam_3_2">(RDC) Bureau des visas</string>
@@ -386,7 +386,7 @@
         <string name="cam_3_6">(EXT) Allée de devant</string>
         <string name="cam_3_7">(EXT) Allée du garage</string>
 
-    <string name="map_name_4">Base d\'Hereford</string>
+    <string name="map_name_hereford">Base d\'Hereford</string>
         <string name="cam_4_0">(EXT) Toit</string>
         <string name="cam_4_1">(1ER) Couloir</string>
         <string name="cam_4_2">(RDC) Couloir RDC</string>
@@ -394,7 +394,7 @@
         <string name="cam_4_5">(EXT) Zone chariots élévateurs</string>
         <string name="cam_4_4">(EXT) Stand de Tir</string>
 
-    <string name="map_name_5">Maison</string>
+    <string name="map_name_house">Maison</string>
         <string name="cam_5_0">(1F) Couloir du haut</string>
         <string name="cam_5_1">(RDC) Cuisine</string>
         <string name="cam_5_2">(SS) Salle de sport</string>
@@ -402,7 +402,7 @@
         <string name="cam_5_4">(EXT) Jardin devant maison</string>
         <string name="cam_5_5">(EXT) Jardin</string>
 
-    <string name="map_name_6">Café Dostojewski</string>
+    <string name="map_name_kafedostoyevsky">Café Dostojewski</string>
         <string name="cam_6_0">(2E) Bar à cocktails</string>
         <string name="cam_6_1">(1ER) Couloir salle de lecture</string>
         <string name="cam_6_2">(RDC) Couloir chambre froide</string>
@@ -410,7 +410,7 @@
         <string name="cam_6_4">(EXT) Rue principale</string>
         <string name="cam_6_5">(EXT) Allée du parc</string>
 
-    <string name="map_name_7">Canal</string>
+    <string name="map_name_kanal">Canal</string>
         <string name="cam_7_0">(2E CC) Couloir salle de contrôle</string>
         <string name="cam_7_1">(1ER CC) Couloir salle des cartes</string>
         <string name="cam_7_2">(1ER GC) Couloir garde-côte</string>
@@ -419,7 +419,7 @@
         <string name="cam_7_5">(EXT) Ecluse</string>
         <string name="cam_7_6">(EXT) Chantier</string>
 
-    <string name="map_name_8">Oregon</string>
+    <string name="map_name_oregon">Oregon</string>
         <string name="cam_8_0">(1ER) Couloir de l\'armurerie</string>
         <string name="cam_8_1">(RDC) Entrée</string>
         <string name="cam_8_2">(RDC) Couloir de la cantine</string>
@@ -428,14 +428,14 @@
         <string name="cam_8_5">(EXT) Parking</string>
         <string name="cam_8_6">(EXT) Chantier</string>
 
-    <string name="map_name_9">Avion Présidentiel</string>
+    <string name="map_name_plane">Avion Présidentiel</string>
         <string name="cam_9_0">(2E) Equipage cabine</string>
         <string name="cam_9_1">(1ER) Couloir avant</string>
         <string name="cam_9_3">(RDC) Soute à bagages</string>
         <string name="cam_9_2">(1ER) Section presse A</string>
         <string name="cam_9_4">(RDC) Soute</string>
 
-    <string name="map_name_10">Yatch</string>
+    <string name="map_name_yacht">Yatch</string>
         <string name="cam_10_0">(3E) Entrée de l\'hélistation</string>
         <string name="cam_10_1">(2E) Couloir de la chambre</string>
         <string name="cam_10_2">(2E) Salon</string>
@@ -445,7 +445,7 @@
         <string name="cam_10_6">(EXT) Pont avant</string>
         <string name="cam_10_7">(EXT) Pont du spa</string>
 
-    <string name="map_name_11">Frontière</string>
+    <string name="map_name_border">Frontière</string>
         <string name="cam_11_0">(1ER) Escalier est</string>
         <string name="cam_11_1">(1ER) Couloir principal</string>
         <string name="cam_11_2">(RDC) Entrée</string>
@@ -454,7 +454,7 @@
         <string name="cam_11_5">(EXT) Lieu d\'accident</string>
         <string name="cam_11_6">(EXT) Allée du parking</string>
 
-    <string name="map_name_12">Favela</string>
+    <string name="map_name_favela">Favela</string>
         <string name="cam_12_0">(2E) Escalier de service</string>
         <string name="cam_12_1">(2E) Escalier principal</string>
         <string name="cam_12_2">(RDC) Buanderie</string>
@@ -463,7 +463,7 @@
         <string name="cam_12_5">(EXT) Rue</string>
         <string name="cam_12_6">(EXT) Ruelle</string>
 
-    <string name="map_name_13">Gratte-ciel</string>
+    <string name="map_name_skyscraper">Gratte-ciel</string>
         <string name="cam_13_0">(1ER) Couloir</string>
         <string name="cam_13_2">(1ER) Escalier de la maison</string>
         <string name="cam_13_1">(RDC) Restaurant</string>
@@ -472,7 +472,7 @@
         <string name="cam_13_5">(EXT) Jardin Est</string>
         <string name="cam_13_6">(EXT) Unités de ventilation</string>
 
-    <string name="map_name_14">Bartlett U.</string>
+    <string name="map_name_barlett">Bartlett U.</string>
         <string name="cam_14_0">(1ER) Couloir de la boussole</string>
         <string name="cam_14_1">(1ER) Couloir dégagé</string>
         <string name="cam_14_2">(RDC) Passage voûté</string>
@@ -481,7 +481,7 @@
         <string name="cam_14_5">(EXT) Porte principale</string>
         <string name="cam_14_6">(EXT) Parking</string>
 
-    <string name="map_name_15">Littoral</string>
+    <string name="map_name_coastline">Littoral</string>
         <string name="cam_15_0">(RDC) Couloir</string>
         <string name="cam_15_1">(RDC) Hall principal</string>
         <string name="cam_15_2">(1ER) Aquarium</string>
@@ -490,7 +490,7 @@
         <string name="cam_15_5">(EXT) Ruines</string>
         <string name="cam_15_6">(EXT) Ruines</string>
 
-    <string name="map_name_16">Parc d\'attractions</string>
+    <string name="map_name_themepark">Parc d\'attractions</string>
         <string name="cam_16_0">(RDC) Galerie</string>
         <string name="cam_16_1">(1ER) Escalier Hanté</string>
         <string name="cam_16_2">(RDC) Couloir commun</string>
@@ -500,7 +500,7 @@
         <string name="cam_16_6">(EXT) Entrée de service</string>
         <string name="cam_16_7">(EXT) Point info visiteurs</string>
 
-    <string name="map_name_17">Tour</string>
+    <string name="map_name_tower">Tour</string>
         <string name="cam_17_0">(1ER) Galerie principale</string>
         <string name="cam_17_1">(1ER) Couloir exposition</string>
         <string name="cam_17_2">(1ER) Réception société</string>
@@ -524,7 +524,7 @@
     <string name="f_3">3eme etage</string>
 
     <!--FLOORS ERROR PHRASE-->
-    <string name="planerror">Les plans ne sont pas encore disponible sur cette carte !</string>
+    <string name="plan_error">Les plans ne sont pas encore disponible sur cette carte !</string>
     <string name="error_floor_below">Il n\'y a pas d\'étage en dessous !</string>
     <string name="error_floor_above">Il n\'y a pas d\'étage au dessus !</string>
 

@@ -1,69 +1,74 @@
 {
   "armies": {
-    "0": {
+    "spetsnaz": {
       "name": "Spetsnaz",
       "country": "ru",
-      "operators": [0,1,2,3]
+      "operators": ["kapkan","tachanka","glaz","fuze", "finka"]
     },
-    "1": {
+    "gsg9": {
       "name": "GSG9",
       "country": "de",
-      "operators": [4,5,6,7]
+      "operators": ["iq","blitz","bandit","jager"]
     },
-    "2": {
+    "gign": {
       "name": "GIGN",
       "country": "fr",
-      "operators": [8,9,10,11]
+      "operators": ["rook","doc","twitch","montagne", "lion"]
     },
-    "3": {
+    "swat": {
       "name": "SWAT",
       "country": "us",
-      "operators": [12,13,14,15]
+      "operators": ["thermite","ash","castle","pulse"]
     },
-    "4": {
+    "sas": {
       "name": "SAS",
       "country": "uk",
-      "operators": [16,17,18,19]
+      "operators": ["thatcher","sledge","smoke","mute"]
     },
-    "5": {
+    "jtf2": {
       "name": "JTF2",
       "country": "ca",
-      "operators": [20,21]
+      "operators": ["frost","buck"]
     },
-    "6": {
+    "navy_seal": {
       "name": "Navy SEAL",
       "country": "us",
-      "operators": [22,23]
+      "operators": ["valkyrie","blackbeard"]
     },
-    "7": {
+    "bope": {
       "name": "BOPE",
       "country": "br",
-      "operators": [24,25]
+      "operators": ["capitao","caveira"]
     },
-    "8": {
+    "s_a_t": {
       "name": "S.A.T.",
       "country": "jp",
-      "operators": [26,27]
+      "operators": ["echo","hibana"]
     },
-    "9": {
+    "g_e_o": {
       "name": "G.E.O.",
       "country": "es",
-      "operators": [28,29]
+      "operators": ["mira","jackal"]
     },
-    "10": {
+    "sdu": {
       "name": "SDU",
       "country": "hk",
-      "operators": [30,31]
+      "operators": ["ying","lesion"]
     },
-    "11": {
+    "grom": {
       "name": "GROM",
       "country": "pl",
-      "operators": [32,33]
+      "operators": ["ela","zofia"]
     },
-    "12": {
+    "707th": {
       "name": "707th",
       "country": "kr",
-      "operators": [34,35]
+      "operators": ["dokkaebi","vigil"]
+    },
+    "gis": {
+      "name": "GIS",
+      "country": "it",
+      "operators": ["thatcher","sledge"]
     }
   }
 }

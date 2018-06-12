@@ -30,9 +30,9 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
 
     ImageButton buttonValkyrie,buttonBandit,buttonMute,buttonJager,buttonKapkan, refreshBut;
 
-    int type = 2, gadgetV, gadgetB, gadgetM, gadgetJ, gadgetK, mapID;
+    int type = 2, gadgetV, gadgetB, gadgetM, gadgetJ, gadgetK;
 
-    String map;
+    String mapId;
 
     RecyclerView rv;
 
@@ -44,7 +44,8 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
     ArrayList<Integer> poscam = new ArrayList<>();
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
+    protected void onCreate(Bundle savedInstanceState)
+    {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_twitchmap);
 
@@ -55,8 +56,9 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
 
         context = getApplicationContext();
 
-        map = getIntent().getStringExtra("nommap");
-        mapID = getIntent().getIntExtra("pos", 0);
+        Map map = (Map) getIntent().getSerializableExtra("map");
+        mapId = map.getMapId();
+        String mapName = map.getMapName();
 
         recyclerSetup();
 
@@ -110,7 +112,7 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
         buttonValkyrie.setOnClickListener(this);
         buttonKapkan.setOnClickListener(this);
 
-        txtMap.setText(map);
+        txtMap.setText(mapName);
 
     }
 
@@ -144,7 +146,7 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
 
         try
         {
-            nbCamera = mapsData.getJSONObject(String.valueOf(mapID)).getInt("cameras");
+            nbCamera = mapsData.getJSONObject("maps_data").getJSONObject(mapId).getInt("cameras");
         }
         catch (JSONException e)
         {
@@ -153,7 +155,7 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
 
         for(int i = 0; i < nbCamera; i++)
         {
-            String id = "cam_"+mapID+"_"+i;
+            String id = "cam_" + mapId + "_"+i;
             int intName = getResources().getIdentifier(id, "string", getApplicationContext().getPackageName());
             int intPic = getResources().getIdentifier(id, "drawable", getApplicationContext().getPackageName());
 

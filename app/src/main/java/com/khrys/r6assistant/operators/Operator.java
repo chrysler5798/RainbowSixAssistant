@@ -7,25 +7,18 @@ package com.khrys.r6assistant.operators;
 
 public class Operator
 {
-    private int id;
+    private String id;
     private int idImg;
     private String txtNom;
 
-    Operator(int id, int idImg, String txtNom)
+    Operator(String id, int idImg, String txtNom)
     {
         this.id = id;
         this.idImg = idImg;
         this.txtNom = txtNom;
     }
 
-    Operator(int idImg, String txtNom)
-    {
-        this.id = id;
-        this.idImg = idImg;
-        this.txtNom = txtNom;
-    }
-
-    public int getId()
+    public String getId()
     {
         return id;
     }

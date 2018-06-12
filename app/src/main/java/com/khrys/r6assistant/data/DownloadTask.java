@@ -58,7 +58,7 @@ public class DownloadTask extends AsyncTask<String, String, String>
             // download the file
             InputStream input = new BufferedInputStream(url.openStream(),8192);
 
-            //context.getFilesDir()+"/operators.json"
+            //context.getFilesDir()+"/_operators.jsonn"
             OutputStream output = new FileOutputStream(pathToData);
 
             byte data[] = new byte[1024];

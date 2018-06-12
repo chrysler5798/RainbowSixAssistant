@@ -22,8 +22,8 @@ public class LoadData
 {
     public final String RES_VERSION = "version";
     public final String RES_MAPS = "maps";
+    //public final String RES_OPERATORS = "_operators";
     public final String RES_OPERATORS = "operators";
-    public final String RES_OPERATORS_INFOS = "operators_infos";
     public final String RES_ARMIES = "armies";
     public final String RES_WEAPONS = "weapons";
 
@@ -41,19 +41,19 @@ public class LoadData
 
     void checkForUpdate(InputStream inputStreamInternal, InputStream inputStreamRes)
     {
-        JSONObject versionFileInternal = loadJSON(inputStreamInternal, "version");
-        JSONObject versionFileRes = loadJSON(inputStreamRes, "version");
+//        JSONObject versionFileInternal = loadJsonFile(inputStreamInternal, "version");
+//        JSONObject versionFileRes = loadJsonFile(inputStreamRes, "version");
     }
 
-    public JSONObject loadData(Context context, String dataName)
+    public JSONObject loadData(Context context, String fileName)
     {
-        String pathToInternalFile = context.getFilesDir()+"/"+dataName+".json";
+        String pathToInternalFile = context.getFilesDir()+"/"+fileName+".json";
         File internalDataFile = new File(pathToInternalFile);
         if(internalDataFile.exists())
         {
             try
             {
-                return loadJSON(new FileInputStream(internalDataFile), dataName);
+                return loadJSON(new FileInputStream(internalDataFile));
             }
             catch (FileNotFoundException e)
             {
@@ -63,12 +63,12 @@ public class LoadData
         }
         else
         {
-            int res = context.getResources().getIdentifier(dataName, "raw", context.getPackageName());
-            return loadJSON(context.getResources().openRawResource(res), dataName);
+            int res = context.getResources().getIdentifier(fileName, "raw", context.getPackageName());
+            return loadJSON(context.getResources().openRawResource(res));
         }
     }
 
-    JSONObject loadJSON(InputStream is, String mainObject)
+    JSONObject loadJSON(InputStream is)
     {
         try
         {
@@ -76,11 +76,10 @@ public class LoadData
             byte[] buffer = new byte[size];
 
             is.read(buffer);
-
             is.close();
 
             String json = new String(buffer, "UTF-8");
-            return new JSONObject(json).getJSONObject(mainObject);
+            return new JSONObject(json);
         }
         catch (IOException ex)
         {

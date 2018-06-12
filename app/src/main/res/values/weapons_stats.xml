@@ -361,7 +361,7 @@
     </string-array>
 
 
-    <string-array name="g_p226_mk_25">
+    <string-array name="g_p226_mk25">
         <item>sledge</item>
         <item>thatcher</item>
         <item>smoke</item>
@@ -385,7 +385,7 @@
     </string-array>
 
 
-    <string-array name="g_57_usg">
+    <string-array name="g_5_7_usg">
         <item>ash</item>
         <item>thermite</item>
         <item>castle</item>
@@ -1345,7 +1345,7 @@
     </string-array>
 
 
-    <string-array name="g_c1">
+    <string-array name="g_9mm_c1">
         <item>frost</item>
         <item />
         <item />
@@ -1465,7 +1465,7 @@
     </string-array>
 
 
-    <string-array name="g_vector">
+    <string-array name="g_vector_45_acp">
         <item>mira</item>
         <item />
         <item />
@@ -1882,6 +1882,121 @@
         <item>muzzle_brake</item>
         <item>compensator</item>
         <item>suppressor</item>
+        <item />
+    </string-array>
+
+    <string-array name="g_mx4_storm">
+        <item>alibi</item>
+        <item />
+        <item />
+        <item />
+        <item />
+
+        <item>30</item><item>950</item><item>0</item>
+
+        <item>0</item><item>26</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+
+        <item>flash_hider</item>
+        <item>muzzle_brake</item>
+        <item>compensator</item>
+        <item>suppressor</item>
+        <item>extended_barrel</item>
+    </string-array>
+
+    <string-array name="g_acs12">
+        <item>maestro</item>
+        <item>alibi</item>
+        <item />
+        <item />
+        <item />
+
+        <item>30</item><item>300</item><item>0</item>
+
+        <item>0</item><item>27</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+    </string-array>
+
+    <string-array name="g_bailiff_410">
+        <item>maestro</item>
+        <item>alibi</item>
+        <item />
+        <item />
+        <item />
+
+        <item>5</item><item>550</item><item>0</item>
+
+        <item>0</item><item>78</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+
+        <item />
+        <item />
+        <item />
+        <item />
+        <item />
+    </string-array>
+
+    <string-array name="g_keratos_357">
+        <item>maestro</item>
+        <item>alibi</item>
+        <item />
+        <item />
+        <item />
+
+        <item>6</item><item>550</item><item>0</item>
+
+        <item>0</item><item>78</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+
+        <item>muzzle_brake</item>
+        <item />
+        <item />
+        <item />
+        <item />
+    </string-array>
+
+    <string-array name="g_alda_5_56">
+        <item>maestro</item>
+        <item />
+        <item />
+        <item />
+        <item />
+
+        <item>80</item><item>900</item><item>0</item>
+
+        <item>0</item><item>35</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+        <item>0</item><item>0</item>
+
+        <item>flash_hider</item>
+        <item />
+        <item />
+        <item />
         <item />
     </string-array>
 </resources>

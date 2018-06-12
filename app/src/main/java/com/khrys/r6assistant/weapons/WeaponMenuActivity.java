@@ -34,7 +34,7 @@ public class WeaponMenuActivity extends AppCompatActivity
 
         FragmentPagerItemAdapter adapter = new FragmentPagerItemAdapter(
                 getSupportFragmentManager(), FragmentPagerItems.with(this)
-                .add(R.string.byoperator, OperatorsFragment.class)
+                .add(R.string.byoperator, OperatorFragment.class)
                 .add(R.string.byweapons, WeaponsFragment.class)
                 .create());
 

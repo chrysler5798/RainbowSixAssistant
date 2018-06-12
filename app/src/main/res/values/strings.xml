@@ -106,6 +106,7 @@
     <string name="gad_stun">Stun grenades</string>
     <string name="gad_impact">Impact grenades</string>
     <string name="gad_claymore">Claymore</string>
+    <string name="gad_camera">Bulletproof camera</string>
 
     <!--OPERATORS UNIQUE GADGET DESCRIPTION-->
     <string name="ugat_ash">M120 CREM</string>
@@ -221,6 +222,12 @@
 
     <string name="ugat_finka">ADRENAL SURGE</string>
     <string name="uga_finka">The nanobots give the team a brief gain in HP and revives allies in a DBNO state.</string>
+
+    <string name="ugat_maestro">Evil Eye</string>
+    <string name="uga_maestro">A remote controlled bulletproof camera armed with a high-energy laser.</string>
+
+    <string name="ugat_alibi">Prisma</string>
+    <string name="uga_alibi">Deploys holograms of Alibi and tags hostile when fired upon.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Create</string>
@@ -350,164 +357,174 @@
     <string name="takemap">Select a map</string>
 
     <!--MAPS INFO-->
-    <string name="map_name_0">Bank</string>
-        <string name="cam_0_0">(1F) Lobby</string>
-        <string name="cam_0_1">(1F) Office Hallway</string>
-        <string name="cam_0_2">(2F) Skylight stairwell</string>
-        <string name="cam_0_3">(B) Vault Lobby</string>
-        <string name="cam_0_4">(EXT) Plaza</string>
-        <string name="cam_0_5">(EXT) Garage Ramp</string>
-        <string name="cam_0_6">(EXT) Back Alley</string>
+    <string name="map_name_bank">Bank</string>
+        <string name="cam_bank_0">(1F) Lobby</string>
+        <string name="cam_bank_1">(1F) Office Hallway</string>
+        <string name="cam_bank_2">(2F) Skylight stairwell</string>
+        <string name="cam_bank_3">(B) Vault Lobby</string>
+        <string name="cam_bank_4">(EXT) Plaza</string>
+        <string name="cam_bank_5">(EXT) Garage Ramp</string>
+        <string name="cam_bank_6">(EXT) Back Alley</string>
 
-    <string name="map_name_1">Chalet</string>
-        <string name="cam_1_0">(2F) Bedroom Hallway</string>
-        <string name="cam_1_1">(2F) Fireplace Hallway</string>
-        <string name="cam_1_2">(1F) Library Stairs</string>
-        <string name="cam_1_3">(B) Snowmobile Garage</string>
-        <string name="cam_1_4">(EXT) Frontyard</string>
-        <string name="cam_1_5">(EXT) Backyard</string>
+    <string name="map_name_chalet">Chalet</string>
+        <string name="cam_chalet_0">(2F) Bedroom Hallway</string>
+        <string name="cam_chalet_1">(2F) Fireplace Hallway</string>
+        <string name="cam_chalet_2">(1F) Library Stairs</string>
+        <string name="cam_chalet_3">(B) Snowmobile Garage</string>
+        <string name="cam_chalet_4">(EXT) Frontyard</string>
+        <string name="cam_chalet_5">(EXT) Backyard</string>
 
-    <string name="map_name_2">Club House</string>
-        <string name="cam_2_0">(2F) Bedroom Hallway</string>
-        <string name="cam_2_1">(1F) Bar</string>
-        <string name="cam_2_2">(1F) Garage</string>
-        <string name="cam_2_3">(B) Basement Hallway</string>
-        <string name="cam_2_4">(EXT) VIP Parking</string>
-        <string name="cam_2_5">(EXT) Graffiti Area</string>
-        <string name="cam_2_6">(EXT) Kennels</string>
+    <string name="map_name_clubhouse">Club House</string>
+        <string name="cam_clubhouse_0">(2F) Bedroom Hallway</string>
+        <string name="cam_clubhouse_1">(1F) Bar</string>
+        <string name="cam_clubhouse_2">(1F) Garage</string>
+        <string name="cam_clubhouse_3">(B) Basement Hallway</string>
+        <string name="cam_clubhouse_4">(EXT) VIP Parking</string>
+        <string name="cam_clubhouse_5">(EXT) Graffiti Area</string>
+        <string name="cam_clubhouse_6">(EXT) Kennels</string>
 
-    <string name="map_name_3">Consulate</string>
-        <string name="cam_3_0">(2F) Consul Front Desk</string>
-        <string name="cam_3_1">(1F) Main Stairs</string>
-        <string name="cam_3_2">(1F) Visa Office</string>
-        <string name="cam_3_3">(EXT) Front Door</string>
-        <string name="cam_3_4">(B) Locker Hallway</string>
-        <string name="cam_3_5">(B) Garage</string>
-        <string name="cam_3_6">(EXT) Front Alley</string>
-        <string name="cam_3_7">(EXT) Garage Way</string>
+    <string name="map_name_consulate">Consulate</string>
+        <string name="cam_consulate_0">(2F) Consul Front Desk</string>
+        <string name="cam_consulate_1">(1F) Main Stairs</string>
+        <string name="cam_consulate_2">(1F) Visa Office</string>
+        <string name="cam_consulate_3">(EXT) Front Door</string>
+        <string name="cam_consulate_4">(B) Locker Hallway</string>
+        <string name="cam_consulate_5">(B) Garage</string>
+        <string name="cam_consulate_6">(EXT) Front Alley</string>
+        <string name="cam_consulate_7">(EXT) Garage Way</string>
 
-    <string name="map_name_4">Hereford Base</string>
-        <string name="cam_4_0">(EXT) Roof Top</string>
-        <string name="cam_4_1">(2F) Corridor</string>
-        <string name="cam_4_2">(1F) Corridor 1</string>
-        <string name="cam_4_3">(B) Lockers</string>
-        <string name="cam_4_4">(EXT) Shooting Range</string>
-        <string name="cam_4_5">(EXT) Forklift Area</string>
+    <string name="map_name_hereford">Hereford Base</string>
+        <string name="cam_hereford_0">(EXT) Roof Top</string>
+        <string name="cam_hereford_1">(2F) Corridor</string>
+        <string name="cam_hereford_2">(1F) Corridor 1</string>
+        <string name="cam_hereford_3">(B) Lockers</string>
+        <string name="cam_hereford_4">(EXT) Shooting Range</string>
+        <string name="cam_hereford_5">(EXT) Forklift Area</string>
 
-    <string name="map_name_5">House</string>
-        <string name="cam_5_0">(2F) Upper hallway</string>
-        <string name="cam_5_1">(1F) Kitchen</string>
-        <string name="cam_5_2">(B) Training Room</string>
-        <string name="cam_5_3">(B) Garage</string>
-        <string name="cam_5_4">(EXT) Frontyard</string>
-        <string name="cam_5_5">(EXT) Garden</string>
+    <string name="map_name_house">House</string>
+        <string name="cam_house_0">(2F) Upper hallway</string>
+        <string name="cam_house_1">(1F) Kitchen</string>
+        <string name="cam_house_2">(B) Training Room</string>
+        <string name="cam_house_3">(B) Garage</string>
+        <string name="cam_house_4">(EXT) Frontyard</string>
+        <string name="cam_house_5">(EXT) Garden</string>
 
-    <string name="map_name_6">Kafe Dostoyevsky</string>
-        <string name="cam_6_0">(3F) Cocktail Lounge</string>
-        <string name="cam_6_1">(2F) Reading Room</string>
-        <string name="cam_6_2">(1F) Cold Room Corridor</string>
-        <string name="cam_6_3">(1F) Bakery</string>
-        <string name="cam_6_4">(EXT) West Main Street</string>
-        <string name="cam_6_5">(EXT) Park Alley</string>
+    <string name="map_name_kafedostoyevsky">Kafe Dostoyevsky</string>
+        <string name="cam_kafedostoyevsky_0">(3F) Cocktail Lounge</string>
+        <string name="cam_kafedostoyevsky_1">(2F) Reading Room</string>
+        <string name="cam_kafedostoyevsky_2">(1F) Cold Room Corridor</string>
+        <string name="cam_kafedostoyevsky_3">(1F) Bakery</string>
+        <string name="cam_kafedostoyevsky_4">(EXT) West Main Street</string>
+        <string name="cam_kafedostoyevsky_5">(EXT) Park Alley</string>
 
-    <string name="map_name_7">Kanal</string>
-        <string name="cam_7_0">(CC3F) Control Room Hallway</string>
-        <string name="cam_7_1">(CC2F) Maps Office Hallway</string>
-        <string name="cam_7_2">(CG2F) Coast Guard Hallway</string>
-        <string name="cam_7_3">(CG1F) Boat Supplies Hallway</string>
-        <string name="cam_7_4">(EXT) Front Lawn</string>
-        <string name="cam_7_5">(EXT) Lockgate</string>
-        <string name="cam_7_6">(EXT) Construction Site</string>
+    <string name="map_name_kanal">Kanal</string>
+        <string name="cam_kanal_0">(CC3F) Control Room Hallway</string>
+        <string name="cam_kanal_1">(CC2F) Maps Office Hallway</string>
+        <string name="cam_kanal_2">(CG2F) Coast Guard Hallway</string>
+        <string name="cam_kanal_3">(CG1F) Boat Supplies Hallway</string>
+        <string name="cam_kanal_4">(EXT) Front Lawn</string>
+        <string name="cam_kanal_5">(EXT) Lockgate</string>
+        <string name="cam_kanal_6">(EXT) Construction Site</string>
 
-    <string name="map_name_8">Oregon</string>
-        <string name="cam_8_0">(2F) Armory Corridor</string>
-        <string name="cam_8_1">(1F) Lobby</string>
-        <string name="cam_8_2">(1F) Dinning Hall Corridor</string>
-        <string name="cam_8_3">(1F) Rear Stage</string>
-        <string name="cam_8_4">(EXT) Junkyard</string>
-        <string name="cam_8_5">(EXT) Parking</string>
-        <string name="cam_8_6">(EXT) Construction Site</string>
+    <string name="map_name_oregon">Oregon</string>
+        <string name="cam_oregon_0">(2F) Armory Corridor</string>
+        <string name="cam_oregon_1">(1F) Lobby</string>
+        <string name="cam_oregon_2">(1F) Dinning Hall Corridor</string>
+        <string name="cam_oregon_3">(1F) Rear Stage</string>
+        <string name="cam_oregon_4">(EXT) Junkyard</string>
+        <string name="cam_oregon_5">(EXT) Parking</string>
+        <string name="cam_oregon_6">(EXT) Construction Site</string>
 
-    <string name="map_name_9">Presidential Plane</string>
-        <string name="cam_9_0">(3F) Cabin Staff</string>
-        <string name="cam_9_1">(2F) Front Hallway</string>
-        <string name="cam_9_2">(2F) Press Section A</string>
-        <string name="cam_9_3">(1F) Luggage Hold</string>
-        <string name="cam_9_4">(1F) Cargo Hold</string>
+    <string name="map_name_plane">Presidential Plane</string>
+        <string name="cam_plane_0">(3F) Cabin Staff</string>
+        <string name="cam_plane_1">(2F) Front Hallway</string>
+        <string name="cam_plane_2">(2F) Press Section A</string>
+        <string name="cam_plane_3">(1F) Luggage Hold</string>
+        <string name="cam_plane_4">(1F) Cargo Hold</string>
 
-    <string name="map_name_10">Yacht</string>
-        <string name="cam_10_0">(4F) Helipad Entrance</string>
-        <string name="cam_10_1">(3F) Bedroom Hallway</string>
-        <string name="cam_10_2">(3F) Lounge</string>
-        <string name="cam_10_3">(2F) Front Stairs</string>
-        <string name="cam_10_4">(2F) Back Stairs</string>
-        <string name="cam_10_5">(1F) Engine Hallway</string>
-        <string name="cam_10_6">(EXT) Front Deck</string>
-        <string name="cam_10_7">(EXT) Spa Deck</string>
+    <string name="map_name_yacht">Yacht</string>
+        <string name="cam_yacht_0">(4F) Helipad Entrance</string>
+        <string name="cam_yacht_1">(3F) Bedroom Hallway</string>
+        <string name="cam_yacht_2">(3F) Lounge</string>
+        <string name="cam_yacht_3">(2F) Front Stairs</string>
+        <string name="cam_yacht_4">(2F) Back Stairs</string>
+        <string name="cam_yacht_5">(1F) Engine Hallway</string>
+        <string name="cam_yacht_6">(EXT) Front Deck</string>
+        <string name="cam_yacht_7">(EXT) Spa Deck</string>
 
-    <string name="map_name_11">Border</string>
-        <string name="cam_11_0">(2F) East Stairs</string>
-        <string name="cam_11_1">(2F) Main Hallway</string>
-        <string name="cam_11_2">(1F) Main Lobby</string>
-        <string name="cam_11_3">(1F) Exit Hallway</string>
-        <string name="cam_11_4">(EXT) Parking Lot Ent.</string>
-        <string name="cam_11_5">(EXT) Crash Scene</string>
-        <string name="cam_11_6">(EXT) Parking Lot Alley</string>
+    <string name="map_name_border">Border</string>
+        <string name="cam_border_0">(2F) East Stairs</string>
+        <string name="cam_border_1">(2F) Main Hallway</string>
+        <string name="cam_border_2">(1F) Main Lobby</string>
+        <string name="cam_border_3">(1F) Exit Hallway</string>
+        <string name="cam_border_4">(EXT) Parking Lot Ent.</string>
+        <string name="cam_border_5">(EXT) Crash Scene</string>
+        <string name="cam_border_6">(EXT) Parking Lot Alley</string>
 
-    <string name="map_name_12">Favela</string>
-        <string name="cam_12_0">(3F) Back Stairs</string>
-        <string name="cam_12_1">(3F) Main Stairs</string>
-        <string name="cam_12_2">(1F) Laundry Room</string>
-        <string name="cam_12_3">(1F) Stair Hall</string>
-        <string name="cam_12_4">(EXT) School Alley</string>
-        <string name="cam_12_5">(EXT) Street</string>
-        <string name="cam_12_6">(EXT) Back Alley</string>
+    <string name="map_name_favela">Favela</string>
+        <string name="cam_favela_0">(3F) Back Stairs</string>
+        <string name="cam_favela_1">(3F) Main Stairs</string>
+        <string name="cam_favela_2">(1F) Laundry Room</string>
+        <string name="cam_favela_3">(1F) Stair Hall</string>
+        <string name="cam_favela_4">(EXT) School Alley</string>
+        <string name="cam_favela_5">(EXT) Street</string>
+        <string name="cam_favela_6">(EXT) Back Alley</string>
 
-    <string name="map_name_13">Skyscraper</string>
-        <string name="cam_13_0">(2F) Hallway</string>
-        <string name="cam_13_1">(1F) Restaurant</string>
-        <string name="cam_13_2">(2F) House stairs</string>
-        <string name="cam_13_3">(1F) House lobby</string>
-        <string name="cam_13_4">(EXT) West garden</string>
-        <string name="cam_13_5">(EXT) East garden</string>
-        <string name="cam_13_6">(EXT) Ventilation units</string>
+    <string name="map_name_skyscraper">Skyscraper</string>
+        <string name="cam_skyscraper_0">(2F) Hallway</string>
+        <string name="cam_skyscraper_1">(1F) Restaurant</string>
+        <string name="cam_skyscraper_2">(2F) House stairs</string>
+        <string name="cam_skyscraper_3">(1F) House lobby</string>
+        <string name="cam_skyscraper_4">(EXT) West garden</string>
+        <string name="cam_skyscraper_5">(EXT) East garden</string>
+        <string name="cam_skyscraper_6">(EXT) Ventilation units</string>
 
-    <string name="map_name_14">Bartlett U.</string>
-        <string name="cam_14_0">(2F) Compass Hallway</string>
-        <string name="cam_14_1">(2F) Vista Hallway</string>
-        <string name="cam_14_2">(1F) Archway Hall</string>
-        <string name="cam_14_3">(1F) Lobby</string>
-        <string name="cam_14_4">(1F) Dining Room</string>
-        <string name="cam_14_5">(EXT) Main Gate</string>
-        <string name="cam_14_6">(EXT) Parking</string>
+    <string name="map_name_barlett">Bartlett U.</string>
+        <string name="cam_barlett_0">(2F) Compass Hallway</string>
+        <string name="cam_barlett_1">(2F) Vista Hallway</string>
+        <string name="cam_barlett_2">(1F) Archway Hall</string>
+        <string name="cam_barlett_3">(1F) Lobby</string>
+        <string name="cam_barlett_4">(1F) Dining Room</string>
+        <string name="cam_barlett_5">(EXT) Main Gate</string>
+        <string name="cam_barlett_6">(EXT) Parking</string>
 
-    <string name="map_name_15">Coastline</string>
-        <string name="cam_15_0">(1F) Hallway</string>
-        <string name="cam_15_1">(1F) Main Lobby</string>
-        <string name="cam_15_2">(2F) Aquarium</string>
-        <string name="cam_15_3">(2F) Hallway</string>
-        <string name="cam_15_4">(EXT) Garage Roof</string>
-        <string name="cam_15_5">(EXT) Ruins</string>
-        <string name="cam_15_6">(EXT) Ruins</string>
+    <string name="map_name_coastline">Coastline</string>
+        <string name="cam_coastline_0">(1F) Hallway</string>
+        <string name="cam_coastline_1">(1F) Main Lobby</string>
+        <string name="cam_coastline_2">(2F) Aquarium</string>
+        <string name="cam_coastline_3">(2F) Hallway</string>
+        <string name="cam_coastline_4">(EXT) Garage Roof</string>
+        <string name="cam_coastline_5">(EXT) Ruins</string>
+        <string name="cam_coastline_6">(EXT) Ruins</string>
 
-    <string name="map_name_16">Theme park</string>
-        <string name="cam_16_0">(1F) Gallery</string>
-        <string name="cam_16_1">(2F) Haunted Stairs</string>
-        <string name="cam_16_2">(1F) Joint Corridor</string>
-        <string name="cam_16_3">(2F) Upper Arcarde</string>
-        <string name="cam_16_4">(2F) Rail Platform</string>
-        <string name="cam_16_5">(EXT) Teacups</string>
-        <string name="cam_16_6">(EXT) Service Entrance</string>
-        <string name="cam_16_7">(EXT) Guest Info</string>
+    <string name="map_name_themepark">Theme park</string>
+        <string name="cam_themepark_0">(1F) Gallery</string>
+        <string name="cam_themepark_1">(2F) Haunted Stairs</string>
+        <string name="cam_themepark_2">(1F) Joint Corridor</string>
+        <string name="cam_themepark_3">(2F) Upper Arcarde</string>
+        <string name="cam_themepark_4">(2F) Rail Platform</string>
+        <string name="cam_themepark_5">(EXT) Teacups</string>
+        <string name="cam_themepark_6">(EXT) Service Entrance</string>
+        <string name="cam_themepark_7">(EXT) Guest Info</string>
 
-    <string name="map_name_17">Tower</string>
-        <string name="cam_17_0">(2F) Gallery Main</string>
-        <string name="cam_17_1">(2F) Exhibit Hallway</string>
-        <string name="cam_17_2">(2F) Company Reception</string>
-        <string name="cam_17_3">(1F) Traditional Hall</string>
-        <string name="cam_17_4">(1F) West Balcony</string>
-        <string name="cam_17_5">(2F) Center Atrium</string>
-        <string name="cam_17_6">(1F) Fountain</string>
+    <string name="map_name_tower">Tower</string>
+        <string name="cam_tower_0">(2F) Gallery Main</string>
+        <string name="cam_tower_1">(2F) Exhibit Hallway</string>
+        <string name="cam_tower_2">(2F) Company Reception</string>
+        <string name="cam_tower_3">(1F) Traditional Hall</string>
+        <string name="cam_tower_4">(1F) West Balcony</string>
+        <string name="cam_tower_5">(2F) Center Atrium</string>
+        <string name="cam_tower_6">(1F) Fountain</string>
+
+    <string name="map_name_villa">Villa</string>
+        <string name="cam_villa_0">(2F) Astronomy room</string>
+        <string name="cam_villa_1">(2F) Classical Hall</string>
+        <string name="cam_villa_2">(1F) Back Hallway</string>
+        <string name="cam_villa_3">(1F) Main Entrance</string>
+        <string name="cam_villa_4">(B) Arch Hallway</string>
+        <string name="cam_villa_5">(EXT) Stable Yard</string>
+        <string name="cam_villa_6">(EXT) Ruins</string>
+        <string name="cam_villa_7">(EXT) Driveway</string>
 
     <string name="destroyPhrase">%d</string>
     <string name="cameraPhrase">%d cameras</string>
@@ -515,6 +532,505 @@
     <string name="cameraPhrase2_2">%d cameras remaining</string>
     <string name="cameraAllDestroyed">All cameras destroyed</string>
     <string name="destroyed">X</string>
+
+    <!--MAPS POSITIONS-->
+
+    <!--Multiple maps pos-->
+    <string name="map_pos_main_stairs">Main stairs</string>
+    <string name="map_pos_lobby_stairs">Lobby stairs</string>
+    <string name="map_pos_library">Library</string>
+    <string name="map_pos_main_entrance">Main entrance</string>
+    <string name="map_pos_terrace">Terrace</string>
+    <string name="map_pos_basement_hallway">Basement Hallway</string>
+    <string name="map_pos_central">Central</string>
+    <string name="map_pos_garage">Garage</string>
+    <string name="map_pos_lobby">Lobby</string>
+    <string name="map_pos_lounge">Lounge</string>
+    <string name="map_pos_bar">Bar</string>
+    <string name="map_pos_kitchen">Kitchen</string>
+    <string name="map_pos_bath">Bath</string>
+    <string name="map_pos_bathroom">Bathroom</string>
+    <string name="map_pos_cctv_room">CCTV Room</string>
+    <string name="map_pos_storage_room">Storage room</string>
+    <string name="map_pos_archives">Archives</string>
+    <string name="map_pos_service_stairs">Service stairs</string>
+    <string name="map_pos_waiting">Waiting</string>
+    <string name="map_pos_exit_stairs">Exit stairs</string>
+    <string name="map_pos_lockers">Lockers</string>
+    <string name="map_pos_side">Side</string>
+    <string name="map_pos_master">Master</string>
+    <string name="map_pos_office">Office</string>
+    <string name="map_pos_storage">Storage</string>
+    <string name="map_pos_gym">Gym</string>
+    <string name="map_pos_dining">Dining</string>
+    <string name="map_pos_front_porch">Front porch</string>
+    <string name="map_pos_kids">Kids</string>
+    <string name="map_pos_workshop">Workshop</string>
+    <string name="map_pos_main_corridor">Main corridor</string>
+    <string name="map_pos_front_stairs">Front stairs</string>
+    <string name="map_pos_bar_stairs">Bar stairs</string>
+    <string name="map_pos_back_stairs">Back stairs</string>
+    <string name="map_pos_quay_construction">Quay construction</string>
+    <string name="map_pos_security">Security</string>
+    <string name="map_pos_cafeteria">Cafeteria</string>
+    <string name="map_pos_middle">Middle</string>
+    <string name="map_pos_road">Road</string>
+    <string name="map_pos_coast_guard">Coast guard</string>
+    <string name="map_pos_server_room">Server room</string>
+    <string name="map_pos_corridor">Corridor</string>
+    <string name="map_pos_closet">Closet</string>
+    <string name="map_pos_tower">Tower</string>
+    <string name="map_pos_showers">Showers</string>
+    <string name="map_pos_armory">Armory</string>
+    <string name="map_pos_dorm_stairs">Dorm stairs</string>
+    <string name="map_pos_meeting">Meeting</string>
+    <string name="map_pos_executive">Executive</string>
+    <string name="map_pos_pantry">Pantry</string>
+    <string name="map_pos_radio">Radio</string>
+    <string name="map_pos_supply">Supply</string>
+    <string name="map_pos_exit">Exit</string>
+    <string name="map_pos_rear_deck">Rear deck</string>
+    <string name="map_pos_rear">Rear</string>
+    <string name="map_pos_deck">Deck</string>
+    <string name="map_pos_bedroom">Bedroom</string>
+    <string name="map_pos_ladder">Ladder</string>
+    <string name="map_pos_hallway">Hallway</string>
+    <string name="map_pos_entrance">Entrance</string>
+    <string name="map_pos_helipad">Helipad</string>
+    <string name="map_pos_cockpit">Cockpit</string>
+    <string name="map_pos_jail">Jail</string>
+    <string name="map_pos_tellers">Tellers</string>
+    <string name="map_pos_east_stairs">East stairs</string>
+    <string name="map_pos_main_hallway">Main hallway</string>
+    <string name="map_pos_break">Break</string>
+    <string name="map_pos_west_balcony">West balcony</string>
+    <string name="map_pos_laundry">Laundry</string>
+    <string name="map_pos_vault">Vault</string>
+    <string name="map_pos_football">Football</string>
+    <string name="map_pos_pitch">Pitch</string>
+    <string name="map_pos_access_alley">Access alley</string>
+    <string name="map_pos_back_alley">Back alley</string>
+    <string name="map_pos_courtyard">Courtyard</string>
+    <string name="map_pos_street">Street</string>
+    <string name="map_pos_roof">Roof</string>
+    <string name="map_pos_west">West</string>
+    <string name="map_pos_tree">Tree</string>
+    <string name="map_pos_balcony">Balcony</string>
+    <string name="map_pos_north">North</string>
+    <string name="map_pos_gazebo">Gazebo</string>
+    <string name="map_pos_east">East</string>
+    <string name="map_pos_sand">Sand</string>
+    <string name="map_pos_ventilation">Ventilation</string>
+    <string name="map_pos_house">House</string>
+    <string name="map_pos_reading">Reading</string>
+    <string name="map_pos_central_hallway">Central hallway</string>
+    <string name="map_pos_trophy">Trophy</string>
+    <string name="map_pos_main_lobby">Main lobby</string>
+    <string name="map_pos_north_stairs">North stairs</string>
+    <string name="map_pos_south_stairs">South stairs</string>
+    <string name="map_pos_south">South</string>
+    <string name="map_pos_teacups">Teacups</string>
+    <string name="map_pos_village">Village</string>
+    <string name="map_pos_sweet_shop">Sweet shop</string>
+    <string name="map_pos_guest">Guest</string>
+    <string name="map_pos_info">Info</string>
+    <string name="map_pos_palms">Palms</string>
+    <string name="map_pos_haunted">Haunted</string>
+    <string name="map_pos_haunted_entrance">Haunted entrance</string>
+    <string name="map_pos_robot_circuit">Robot circuit</string>
+    <string name="map_pos_bumper">Bumper</string>
+    <string name="map_pos_cars">Cars</string>
+    <string name="map_pos_service">Service</string>
+    <string name="map_pos_entry">Entry</string>
+    <string name="map_pos_toilet">Toilet</string>
+    <string name="map_pos_locker">Locker</string>
+    <string name="map_pos_cafe">Cafe</string>
+    <string name="map_pos_haunted_stairs">Haunted stairs</string>
+    <string name="map_pos_control">Control</string>
+    <string name="map_pos_fountain">Fountain</string>
+    <string name="map_pos_elevator">Elevator</string>
+    <string name="map_pos_bar_hallway">Bar hallway</string>
+    <string name="map_pos_restaurant">Restaurant</string>
+    <string name="map_pos_offices">Offices</string>
+    <string name="map_pos_ceo_office">CEO Office</string>
+    <string name="map_pos_office_hallway">Office hallway</string>
+    <string name="map_pos_west_atrium">West atrium</string>
+    <string name="map_pos_east_atrium">East atrium</string>
+    <string name="map_pos_west_stairs">West stairs</string>
+    <string name="map_pos_room">Room</string>
+    <string name="map_pos_main">Main</string>
+    <string name="map_pos_stairs">Stairs</string>
+    <string name="map_pos_admin">Admin</string>
+    <string name="map_pos_trading">Trading</string>
+    <string name="map_pos_conference">Conference</string>
+
+    <!--Bank - floor -1-->
+    <!--<string name="map_pos_vault">Vault</string>-->
+    <!--<string name="map_pos_entrance">entrance</string>-->
+    <string name="map_pos_vault_lobby">Vault lobby</string>
+    <string name="map_pos_gold">Gold</string>
+    <string name="map_pos_sewer_tunnel">Sewer tunnel</string>
+    <string name="map_pos_server_stairs">Server stairs</string>
+    <string name="map_pos_secure">Secure</string>
+    <string name="map_pos_cctv">CCTV</string>
+    <!--Bank - floor 0-->
+    <string name="map_pos_loan_office">Loan office</string>
+    <string name="map_pos_atm">ATM</string>
+    <string name="map_pos_open_area">Open area</string>
+    <string name="map_pos_admin_office">Admin office</string>
+    <string name="map_pos_staff_area">Staff area</string>
+    <string name="map_pos_stairwell">Stairwell</string>
+    <string name="map_pos_skylight">Skylight</string>
+    <!--Bank - floor 1-->
+    <string name="map_pos_conference_room">Conference room</string>
+    <string name="map_pos_staff_hallway">Staff hallway</string>
+    <string name="map_pos_trading_room">Trading room</string>
+    <string name="map_pos_skylight_balcony">Skylight balcony</string>
+    <string name="map_pos_executive_hallway">Executive hallway</string>
+
+    <!--Chalet floor -1-->
+    <string name="map_pos_snowmobile_corridor">Snowmobile corridor</string>
+    <string name="map_pos_snowmobile">Snowmobile</string>
+    <string name="map_pos_wine_cellar">Wine cellar</string>
+    <string name="map_pos_main_garage">Main garage</string>
+    <string name="map_pos_stock">Stock</string>
+    <!--Chalet floor 0-->
+    <string name="map_pos_west_entrance">West entrance</string>
+    <string name="map_pos_gaming">Gaming</string>
+    <string name="map_pos_great">Great</string>
+    <string name="map_pos_dinning">Dinning</string>
+    <!--Chalet floor 1-->
+    <string name="map_pos_library_hallway">Library hallway</string>
+    <string name="map_pos_library_entrance">Library entrance</string>
+    <string name="map_pos_fireplace">Fireplace</string>
+    <string name="map_pos_bedroom_hallway">Bedroom hallway</string>
+    <string name="map_pos_office_balcony">Office balcony</string>
+    <!--Chalet outside-->
+    <string name="map_pos_helipad_trail">Helipad trail</string>
+    <string name="map_pos_frontyard">Frontyard</string>
+    <string name="map_pos_snowmobiles">Snowmobiles</string>
+    <string name="map_pos_campfire">Campfire</string>
+    <string name="map_pos_woods">Woods</string>
+    <string name="map_pos_backyard">Backyard</string>
+    <string name="map_pos_cliffside">Cliffside</string>
+
+    <!--Clubhouse floor -1-->
+    <string name="map_pos_container">Container</string>
+    <string name="map_pos_escape_tunnel">Escape tunnel</string>
+    <string name="map_pos_memorial">Memorial</string>
+    <string name="map_pos_church">Church</string>
+    <string name="map_pos_arsenal">Arsenal</string>
+    <string name="map_pos_utility">Utility</string>
+    <string name="map_pos_oil">Oil</string>
+    <string name="map_pos_pit">Pit</string>
+    <!--Clubhouse floor 0-->
+    <string name="map_pos_junk">Junk</string>
+    <string name="map_pos_strip_club">Strip club</string>
+    <string name="map_pos_changing_rooms">Changing rooms</string>
+    <string name="map_pos_western_hallway">Western hallway</string>
+    <string name="map_pos_eastern_stairs">Eastern stairs</string>
+    <string name="map_pos_meat">Meat</string>
+    <string name="map_pos_stock_room">Stock room</string>
+    <!--Clubhouse floor 1-->
+    <string name="map_pos_gym_hallway">Gym hallway</string>
+    <string name="map_pos_logistics">Logistics</string>
+    <string name="map_pos_cash">Cash</string>
+    <string name="map_pos_eastern">Eastern</string>
+
+    <!--Consulate floor -1-->
+    <string name="map_pos_basement_corridor">Basement corridor</string>
+    <string name="map_pos_electric">Electric</string>
+    <string name="map_pos_archives_corridor">Archives corridor</string>
+    <!--Consulate floor 0-->
+    <string name="map_pos_press_room">Press room</string>
+    <string name="map_pos_exit_corridor">Exit corridor</string>
+    <string name="map_pos_public">Public</string>
+    <string name="map_pos_antechamber">Antechamber</string>
+    <string name="map_pos_front_door">Front door</string>
+    <string name="map_pos_corridor_tellers">Corridor tellers</string>
+    <string name="map_pos_visa">Visa</string>
+    <!--Consulate floor 1-->
+    <string name="map_pos_restroom">Restroom</string>
+    <string name="map_pos_consul">Consul</string>
+    <string name="map_pos_front">Front</string>
+    <string name="map_pos_cabinet">Cabinet</string>
+    <string name="map_pos_consul_office">Consul office</string>
+    <string name="map_pos_copy">Copy</string>
+    <string name="map_pos_administration">Administration</string>
+
+    <!--Hereford floor -1-->
+    <string name="map_pos_area">Area</string>
+    <string name="map_pos_briefing">Briefing</string>
+    <string name="map_pos_basement_entrance">Basement entrance</string>
+    <!--Hereford floor 0-->
+    <string name="map_pos_garage_hallway">Garage hallway</string>
+    <string name="map_pos_tv">TV</string>
+    <string name="map_pos_piano">Piano</string>
+
+    <!--Hereford floor 2-->
+    <string name="map_pos_mat">Mat</string>
+    <string name="map_pos_last_corridor">Last corridor</string>
+    <string name="map_pos_dummy">Dummy</string>
+    <string name="map_pos_depot">Depot</string>
+
+    <!--House floor -1-->
+    <string name="map_pos_basement">Basement</string>
+    <!--House floor 0-->
+    <string name="map_pos_living">Living</string>
+    <string name="map_pos_back_entrance">Back entrance</string>
+    <string name="map_pos_back_porch">Back porch</string>
+    <!--House floor 1-->
+    <string name="map_pos_upper">Upper</string>
+    <string name="map_pos_walk_in">Walk-in</string>
+    <string name="map_pos_master_bedroom">Master bedroom</string>
+
+    <!--Kafe floor 0-->
+    <string name="map_pos_bakery">Bakery</string>
+    <string name="map_pos_bakery_kitchen">Bakery kitchen</string>
+    <string name="map_pos_prep">Prep</string>
+    <string name="map_pos_grill">Grill</string>
+    <string name="map_pos_pickup">Pickup</string>
+    <string name="map_pos_coldroom_corridor">Coldroom corridor</string>
+    <string name="map_pos_cafe_entrance">Cafe entrance</string>
+    <string name="map_pos_cold">Cold</string>
+    <string name="map_pos_section">Section</string>
+    <!--Kafe floor 1-->
+    <string name="map_pos_museum_ent">Museum entrance</string>
+    <string name="map_pos_mining">Mining</string>
+    <string name="map_pos_train">Train</string>
+    <string name="map_pos_pillar_dinning_room">Pillar dinning room</string>
+    <string name="map_pos_fireplace_hall">Fireplace hall</string>
+    <!--Kafe floor 2-->
+    <string name="map_pos_cigar">Cigar</string>
+    <string name="map_pos_shop">Shop</string>
+    <string name="map_pos_cigar_lounge">Cigar lounge</string>
+    <string name="map_pos_bar_back">Bar back</string>
+    <string name="map_pos_store">Store</string>
+    <string name="map_pos_wash">Wash</string>
+    <string name="map_pos_cigar_corridor">Cigar corridor</string>
+    <string name="map_pos_cocktail">Cocktail</string>
+
+    <!--Kanal floor -1-->
+    <string name="map_pos_boat">Boat</string>
+    <string name="map_pos_supplies">Supplies</string>
+    <string name="map_pos_pipes">Pipes</string>
+    <string name="map_pos_boat_hallway">Boat hallway</string>
+    <string name="map_pos_locker_room">Locker room</string>
+    <string name="map_pos_loading">Loading</string>
+    <string name="map_pos_dock">Dock</string>
+    <string name="map_pos_machine">Machine</string>
+    <!--Kanal floor 0-->
+    <string name="map_pos_dock_stairs">Dock stairs</string>
+    <string name="map_pos_coast_guard_hallway">Coast guard hallway</string>
+    <string name="map_pos_bridge">Bridge</string>
+    <string name="map_pos_video">Video</string>
+    <string name="map_pos_model">Model</string>
+    <string name="map_pos_maps">Maps</string>
+    <string name="map_pos_plants_hallway">Plants hallway</string>
+    <string name="map_pos_parking_entrance">Parking entrance</string>
+    <string name="map_pos_parking_alley">Parking alley</string>
+    <!--Kanal floor 1-->
+    <string name="map_pos_brick">Brick</string>
+    <string name="map_pos_connector">Connector</string>
+    <string name="map_pos_server_hallway">Server hallway</string>
+
+    <!--Oregon floor -1-->
+    <string name="map_pos_boiler">Boiler</string>
+    <string name="map_pos_electrical">Electrical</string>
+    <string name="map_pos_supply_room">Supply room</string>
+    <string name="map_pos_laundry_stairs">Laundry stairs</string>
+    <string name="map_pos_bunker">Bunker</string>
+    <string name="map_pos_tunnel">Tunnel</string>
+    <!--Oregon floor 0-->
+    <string name="map_pos_dining_hall">Dining hall</string>
+    <string name="map_pos_classroom">Classroom</string>
+    <string name="map_pos_meeting_hall">Meeting hall</string>
+    <string name="map_pos_rear_stage">Rear stage</string>
+    <!--Oregon floor 1-->
+    <string name="map_pos_office_storage">Office storage</string>
+    <string name="map_pos_kids_room">Kids room</string>
+    <string name="map_pos_dorm_main_hall">Dorm main hall</string>
+    <string name="map_pos_small_dorms">Small dorms</string>
+    <string name="map_pos_attic">Attic</string>
+    <string name="map_pos_watch">Watch</string>
+    <string name="map_pos_watch_tower">Watch tower</string>
+
+    <!--Plane floor 0-->
+    <string name="map_pos_cargo">Cargo</string>
+    <string name="map_pos_cargo_hold">Cargo hold</string>
+    <string name="map_pos_luggage">Luggage</string>
+    <string name="map_pos_hold">Hold</string>
+    <string name="map_pos_first_aid">First aid</string>
+    <string name="map_pos_tech">Tech</string>
+    <string name="map_pos_cargo_front">Cargo front</string>
+    <!--Plane floor 1-->
+    <string name="map_pos_press">Press</string>
+    <string name="map_pos_section_b">Section B</string>
+    <string name="map_pos_section_a">Section A</string>
+    <string name="map_pos_staff_section">Staff section</string>
+    <string name="map_pos_front_hallway">Front hallway</string>
+    <!--Plane floor 2-->
+    <string name="map_pos_server_room_b">Server room B</string>
+    <string name="map_pos_server_room_a">Server room A</string>
+
+    <!--Yacht floor -1-->
+    <string name="map_pos_back">Back</string>
+    <string name="map_pos_engine">Engine</string>
+    <string name="map_pos_engine_hallway">Engine hallway</string>
+    <string name="map_pos_aklark_room">Aklark room</string>
+    <!--Yacht floor 0-->
+    <string name="map_pos_kitchen_hallway">Kitchen hallway</string>
+    <string name="map_pos_kitchen_stairs">Kitchen stairs</string>
+    <string name="map_pos_cafeteria_hallway">Cafeteria hallway</string>
+    <string name="map_pos_doc">Doc</string>
+    <string name="map_pos_aklark">Aklark</string>
+    <string name="map_pos_anchor_sub">Anchor sub</string>
+    <!--Yacht floor 1-->
+    <string name="map_pos_spa">Spa</string>
+    <string name="map_pos_globe">Globe</string>
+    <string name="map_pos_west_desk">West desk</string>
+    <string name="map_pos_east_desk">East desk</string>
+    <string name="map_pos_casino_hallway">Casino hallway</string>
+    <string name="map_pos_casino">Casino</string>
+    <string name="map_pos_poker">Poker</string>
+    <!--Yacht floor 2-->
+    <string name="map_pos_east_balcony">East balcony</string>
+
+    <!--Border floor 0-->
+    <string name="map_pos_west_road">West road</string>
+    <string name="map_pos_vehicle">Vehicle</string>
+    <string name="map_pos_crash">Crash</string>
+    <string name="map_pos_parking">Parking</string>
+    <string name="map_pos_sidewalk">Sidewalk</string>
+    <string name="map_pos_east_alley">East alley</string>
+    <string name="map_pos_vent">Vent</string>
+    <string name="map_pos_inspection">Inspection</string>
+    <string name="map_pos_pass_check">Pass check</string>
+    <string name="map_pos_rest">Rest</string>
+    <string name="map_pos_pass">Pass</string>
+    <string name="map_pos_check">Check</string>
+    <string name="map_pos_work">Work</string>
+    <!--Border floor 1-->
+    <string name="map_pos_armory_lockers">Armory lockers</string>
+    <string name="map_pos_break_room">Break room</string>
+    <string name="map_pos_desk">Desk</string>
+    <string name="map_pos_north_balcony">North balcony</string>
+
+    <!--Favela floor 0-->
+    <string name="map_pos_main_apps">Main apps</string>
+    <string name="map_pos_apps">Apps</string>
+    <!--Favela floor 1-->
+    <string name="map_pos_grow">Grow</string>
+    <string name="map_pos_foot_bed">Foot bed</string>
+    <string name="map_pos_meth">Meth</string>
+    <string name="map_pos_lab">Lab</string>
+    <string name="map_pos_foot_apps">Foot apps</string>
+    <string name="map_pos_aunt_bed">Aunt bed</string>
+    <string name="map_pos_kid_room">Kid room</string>
+    <!--Favela floor 2-->
+    <string name="map_pos_pack_room">Pack room</string>
+
+    <!--Skyscrapper floor 1-->
+    <string name="map_pos_bbq">BBQ</string>
+    <string name="map_pos_reception">Reception</string>
+    <string name="map_pos_delivery">Delivery</string>
+    <string name="map_pos_second">Second</string>
+    <!--Skyscrapper floor 2-->
+    <string name="map_pos_backstairs">Backstairs</string>
+    <string name="map_pos_karaoke">Karaoke</string>
+    <string name="map_pos_tea">Tea</string>
+    <string name="map_pos_geisha">Geisha</string>
+    <string name="map_pos_taiko">Taiko</string>
+    <string name="map_pos_dragon">Dragon</string>
+    <string name="map_pos_vip">VIP</string>
+    <string name="map_pos_statue">Statue</string>
+
+    <!--Barlett floor 0-->
+    <string name="map_pos_lower">Lower</string>
+    <string name="map_pos_archway">Archway</string>
+    <string name="map_pos_hall">Hall</string>
+    <string name="map_pos_coat_room">Coat room</string>
+    <string name="map_pos_service_room">Service room</string>
+    <string name="map_pos_piano_room">Piano room</string>
+    <!--Barlett floor 1-->
+    <string name="map_pos_upper_library">Upper library</string>
+    <string name="map_pos_class">Class</string>
+    <string name="map_pos_vista_hallway">Vista hallway</string>
+    <string name="map_pos_compass">Compass</string>
+    <string name="map_pos_main_office">Main office</string>
+    <string name="map_pos_museum">Museum</string>
+    <string name="map_pos_trophy_room">Trophy room</string>
+
+    <!--Coastline floor 0-->
+    <string name="map_pos_pool">Pool</string>
+    <string name="map_pos_sunrise">Sunrise</string>
+    <string name="map_pos_blue_bar">Blue bar</string>
+    <string name="map_pos_sun">Sun</string>
+    <string name="map_pos_toilets">Toilets</string>
+    <!--Coastline floor 1-->
+    <string name="map_pos_hookah">Hookah</string>
+    <string name="map_pos_billiards">Billiards</string>
+    <string name="map_pos_aquarium">Aquarium</string>
+    <string name="map_pos_south_hallway">South hallway</string>
+    <string name="map_pos_vip_lounge">VIP Lounge</string>
+    <string name="map_pos_of_fame">of fame</string>
+    <string name="map_pos_penthouse">Penthouse</string>
+    <string name="map_pos_theater">Theater</string>
+    <!--Coastline floor 2-->
+    <string name="map_pos_rooftop">Rooftop</string>
+
+    <!--Themepark floor 0-->
+    <string name="map_pos_drug">Drug</string>
+    <string name="map_pos_drug_lab">Drug lab</string>
+    <string name="map_pos_execution">Execution</string>
+    <string name="map_pos_joint_corridor">Joint corridor</string>
+    <string name="map_pos_arcade">Arcade</string>
+    <string name="map_pos_barrel">Barrel</string>
+    <string name="map_pos_service_corridor">Service corridor</string>
+    <string name="map_pos_coffin">Coffin</string>
+    <string name="map_pos_fuel">Fuel</string>
+    <string name="map_pos_gargoyle">Gargoyle</string>
+    <string name="map_pos_crypt">Crypt</string>
+    <string name="map_pos_prop">Prop</string>
+    <string name="map_pos_gallery">Gallery</string>
+    <!--Themepark floor 1-->
+    <string name="map_pos_cafe_terrace">Cafe terrace</string>
+    <string name="map_pos_arcade_stairs">Arcade stairs</string>
+    <string name="map_pos_day">Day</string>
+    <string name="map_pos_care">Care</string>
+    <string name="map_pos_bunk">Bunk</string>
+    <string name="map_pos_cafe_corridor">Cafe corridor</string>
+    <string name="map_pos_rail">Rail</string>
+    <string name="map_pos_platform">Platform</string>
+    <string name="map_pos_lift_car">Lift car</string>
+    <string name="map_pos_stash">Stash</string>
+    <string name="map_pos_rail_corridor">Rail corridor</string>
+    <string name="map_pos_initiation">Initiation</string>
+    <string name="map_pos_south_exit">South exit</string>
+
+    <!--Tower floor 0-->
+    <string name="map_pos_main_reception">Main reception</string>
+    <string name="map_pos_bird_room">Bird room</string>
+    <string name="map_pos_restaurant_hallway">Restaurant hallway</string>
+    <string name="map_pos_bonsai">Bonsai</string>
+    <string name="map_pos_traditional_hall">Traditional hall</string>
+    <string name="map_pos_tea_room">Tea room</string>
+    <string name="map_pos_center_hallway">Center hallway</string>
+    <string name="map_pos_east_stars">East stars</string>
+    <string name="map_pos_game_room">Game room</string>
+    <string name="map_pos_observatory">Observatory</string>
+    <string name="map_pos_game">Game</string>
+    <!--Tower floor 1-->
+    <string name="map_pos_center_atrium">Center atrium</string>
+    <string name="map_pos_gift_shop">Gift shop</string>
+    <string name="map_pos_lantern">Lantern</string>
+    <string name="map_pos_gallery_annex">Gallery annex</string>
+    <string name="map_pos_gallery_main">Gallery main</string>
+    <string name="map_pos_server">Server</string>
+    <string name="map_pos_exhibit">Exhibit</string>
+    <string name="map_pos_exhibit_hallway">Exhibit hallway</string>
+    <string name="map_pos_media_center">Media center</string>
+    <string name="map_pos_info_booth">Info booth</string>
 
     <!--FLOORS OF MAP PLAN-->
     <string name="f_base">Basement</string>
@@ -524,7 +1040,7 @@
     <string name="f_3">4th Floor</string>
 
     <!--FLOORS ERROR PHRASE-->
-    <string name="planerror">Plans are not available yet on this map !</string>
+    <string name="plan_error">Plans are not available yet on this map !</string>
     <string name="error_floor_below">There is no floor below !</string>
     <string name="error_floor_above">There is no floor above !</string>
 

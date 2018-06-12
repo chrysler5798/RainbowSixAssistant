@@ -128,9 +128,11 @@
         <item>GROM</item>
         <item>kr</item>
         <item>707th</item>
+        <item>it</item>
+        <item>GIS</item>
     </string-array>
 
-    <!--Armies with their operators-->
+    <!--Armies with their _operators-->
     <string-array name="spetsnaz">
         <item>kapkan</item>
         <item>tachanka</item>
@@ -206,6 +208,11 @@
     <string-array name="m707th">
         <item>dokkaebi</item>
         <item>vigil</item>
+    </string-array>
+
+    <string-array name="gis">
+        <item>maestro</item>
+        <item>alibi</item>
     </string-array>
 
     <!--Operators info-->
@@ -350,7 +357,7 @@
         <item>lfp586</item>
         <item>p9</item>
         <item>1</item><item>3</item>
-        <item>1</item><item>shield</item>
+        <item>1</item><item>camera</item>
         <item>2</item><item>barbed</item>
         <item>3</item>
     </string-array>
@@ -392,7 +399,7 @@
         <item>m1014</item>
         <item>556xi</item>
         <item>m45 meusoc</item>
-        <item>57 usg</item>
+        <item>5 7 usg</item>
         <item>2</item><item>2</item>
         <item>1</item><item>claymore</item>
         <item>3</item><item>stun</item>
@@ -407,7 +414,7 @@
         <item>m1014</item>
         <item>ump45</item>
         <item>m45 meusoc</item>
-        <item>57 usg</item>
+        <item>5 7 usg</item>
         <item>3</item><item>1</item>
         <item>2</item><item>barbed</item>
         <item>1</item><item>nitro</item>
@@ -422,9 +429,9 @@
         <item>m1014</item>
         <item>ump45</item>
         <item>m45 meusoc</item>
-        <item>57 usg</item>
+        <item>5 7 usg</item>
         <item>2</item><item>2</item>
-        <item>1</item><item>shield</item>
+        <item>1</item><item>camera</item>
         <item>2</item><item>impact</item>
         <item>3</item>
     </string-array>
@@ -437,7 +444,7 @@
         <item>g36c</item>
         <item>r4-c</item>
         <item>m45 meusoc</item>
-        <item>57 usg</item>
+        <item>5 7 usg</item>
         <item>3</item><item>1</item>
         <item>3</item><item>breach</item>
         <item>3</item><item>stun</item>
@@ -452,7 +459,7 @@
         <item>ar33</item>
         <item>l85a2</item>
         <item>m590a1</item>
-        <item>p226 mk 25</item>
+        <item>p226 mk25</item>
         <item>2</item><item>2</item>
         <item>3</item><item>breach</item>
         <item>1</item><item>claymore</item>
@@ -466,7 +473,7 @@
         <item>2</item>
         <item>fmg-9</item>
         <item>m590a1</item>
-        <item>p226 mk 25</item>
+        <item>p226 mk25</item>
         <item>smg-11</item>
         <item>2</item><item>2</item>
         <item>2</item><item>barbed</item>
@@ -481,7 +488,7 @@
         <item>2</item>
         <item>l85a2</item>
         <item>m590a1</item>
-        <item>p226 mk 25</item>
+        <item>p226 mk25</item>
         <item>smg-11</item>
         <item>2</item><item>2</item>
         <item>2</item><item>frag</item>
@@ -496,10 +503,10 @@
         <item>2</item>
         <item>mp5k</item>
         <item>m590a1</item>
-        <item>p226 mk 25</item>
+        <item>p226 mk25</item>
         <item>2</item><item>2</item>
         <item>1</item><item>nitro</item>
-        <item>1</item><item>shield</item>
+        <item>1</item><item>camera</item>
         <item>4</item>
     </string-array>
 
@@ -508,11 +515,11 @@
         <item>ca</item><item>JTF2</item>
         <item>3</item>
         <item>2</item>
-        <item>c1</item>
+        <item>9mm_c1</item>
         <item>super 90</item>
         <item>mk1</item>
         <item>2</item><item>2</item>
-        <item>1</item><item>shield</item>
+        <item>1</item><item>camera</item>
         <item>2</item><item>barbed</item>
         <item>3</item>
     </string-array>
@@ -583,7 +590,7 @@
         <item>luison</item>
         <item>3</item><item>1</item>
         <item>2</item><item>impact</item>
-        <item>2</item><item>barbed</item>
+        <item>1</item><item>camera</item>
         <item>0</item>
     </string-array>
 
@@ -599,7 +606,7 @@
         <item>1</item><item>3</item>
         <item>2</item><item>barbed</item>
         <item>1</item><item>shield</item>
-        <item>1</item>
+        <item>2</item>
     </string-array>
 
     <string-array name="hibana">
@@ -622,7 +629,7 @@
         <item>es</item><item>G.E.O.</item>
         <item>4</item>
         <item>2</item>
-        <item>vector</item>
+        <item>vector_45_acp</item>
         <item>ita12l</item>
         <item>usp40</item>
         <item>ita12s</item>
@@ -729,7 +736,7 @@
         <item>c75</item>
         <item>smg-12</item>
         <item>3</item><item>1</item>
-        <item>2</item><item>barbed</item>
+        <item>1</item><item>camera</item>
         <item>2</item><item>impact</item>
         <item>0</item>
     </string-array>
@@ -764,5 +771,35 @@
         <item>3</item><item>breach</item>
         <item>3</item><item>stun</item>
         <item>0</item>
+    </string-array>
+
+    <string-array name="maestro">
+        <item>def</item>
+        <item>it</item><item>GIS</item>
+        <item>4</item>
+        <item>2</item>
+        <item>alda_5_56</item>
+        <item>acs12</item>
+        <item>keratos_357</item>
+        <item>bailiff_410</item>
+        <item>1</item><item>3</item>
+        <item>2</item><item>barbed</item>
+        <item>1</item><item>shield</item>
+        <item>2</item>
+    </string-array>
+
+    <string-array name="alibi">
+        <item>def</item>
+        <item>it</item><item>GIS</item>
+        <item>4</item>
+        <item>2</item>
+        <item>mx4_storm</item>
+        <item>acs12</item>
+        <item>keratos_357</item>
+        <item>bailiff_410</item>
+        <item>3</item><item>1</item>
+        <item>2</item><item>impact</item>
+        <item>1</item><item>shield</item>
+        <item>3</item>
     </string-array>
 </resources>
