@@ -123,7 +123,7 @@
       "speed": 3,
       "armor": 1,
       "gadgets": [5,7],
-      "gadgets_nb": [3,1],
+      "gadgets_nb": [2,1],
       "gadget_unique_nb": 4
     },
     "jager": {
