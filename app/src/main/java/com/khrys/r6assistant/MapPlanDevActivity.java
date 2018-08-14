@@ -16,7 +16,6 @@ import android.graphics.Paint;
 import android.graphics.Rect;
 import android.graphics.Typeface;
 import android.os.AsyncTask;
-import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.v7.app.ActionBar;
@@ -38,10 +37,8 @@ import org.json.JSONObject;
 
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.IOException;
-import java.io.OutputStreamWriter;
 import java.util.ArrayList;
 
 import uk.co.senab.photoview.PhotoViewAttacher;
@@ -361,10 +358,10 @@ public class MapPlanDevActivity extends AppCompatActivity
             JSONObject mapsData;
             try
             {
-                mapsData = dataLoader.loadData(this, dataLoader.RES_MAPS).getJSONObject("maps_data").getJSONObject(mapId);
+                mapsData = dataLoader.loadData(this, dataLoader.RES_MAPS).getJSONObject(mapId);
                 minFloor = Integer.parseInt(String.valueOf(mapsData.getInt("minfloor")));
                 maxFloor = Integer.parseInt(String.valueOf(mapsData.getInt("maxfloor")));
-                mapPositions = loadPositions().getJSONObject("maps_data").getJSONObject(mapId).getJSONObject("positions");
+                mapPositions = loadPositions().getJSONObject(mapId).getJSONObject("positions");
             }
             catch (JSONException e)
             {
@@ -389,8 +386,15 @@ public class MapPlanDevActivity extends AppCompatActivity
 
         JSONObject loadPositions()
         {
-            LoadData dataLoader = new LoadData();
-            return dataLoader.loadData(this, dataLoader.RES_MAPS);
+            try
+            {
+                LoadData dataLoader = new LoadData();
+                return dataLoader.loadData(this, dataLoader.RES_MAPS);
+            } catch (JSONException e)
+            {
+                e.printStackTrace();
+            }
+            return null;
         }
 
         JSONObject loadPosFromFile()
@@ -422,54 +426,52 @@ public class MapPlanDevActivity extends AppCompatActivity
 
         void savePositions(JSONObject position, int currentPos)
         {
-            try
-            {
-                JSONObject mapsData;
-                if(folder.exists() && file.exists())
-                {
-                    mapsData = loadPosFromFile();
-                }
-                else
-                {
-                    folder.mkdir();
-                    file.createNewFile();
-                    LoadData dataLoader = new LoadData();
-                    mapsData = dataLoader.loadData(this, dataLoader.RES_MAPS);
-                }
-
-                FileOutputStream fileOutput = new FileOutputStream(file);
-                OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutput);
-
-                JSONObject mapsInfos = mapsData.getJSONObject("maps_data");
-                JSONObject mapInfos = mapsInfos.getJSONObject(mapId);
-                JSONObject mapPosFloor = mapInfos.getJSONObject("positions");
-                JSONArray mapPos = mapPosFloor.getJSONArray(String.valueOf(currentfloorImg));
-
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
-                {
-                    mapPos.remove(currentPos);
-                }
-
-                mapPos.put(position);
-
-                JSONObject newPosObj = mapsData.put("maps_data", mapsInfos).put(mapId, mapInfos).put("positions", mapPos);
-
-                outputStreamWriter.write(newPosObj.toString(1));
-
-                outputStreamWriter.flush();
-                fileOutput.getFD().sync();
-                outputStreamWriter.close();
-
-                //mapPositions = loadPositions().getJSONObject("maps_data").getJSONObject(mapId).getJSONObject("positions");
-            }
-            catch (IOException e)
-            {
-                e.printStackTrace();
-            }
-            catch (JSONException e)
-            {
-                e.printStackTrace();
-            }
+//            try
+//            {
+//                JSONObject mapsData;
+//                if(folder.exists() && file.exists())
+//                {
+//                    mapsData = loadPosFromFile();
+//                }
+//                else
+//                {
+//                    folder.mkdir();
+//                    file.createNewFile();
+//                    LoadData dataLoader = new LoadData();
+//                    mapsData = dataLoader.loadData(this, dataLoader.RES_MAPS);
+//                }
+//
+//                FileOutputStream fileOutput = new FileOutputStream(file);
+//                OutputStreamWriter outputStreamWriter = new OutputStreamWriter(fileOutput);
+//
+//                JSONObject mapData = mapsData.getJSONObject(mapId);
+//                JSONArray mapPosFloor = mapData.getJSONObject("positions").getJSONArray(String.valueOf(currentfloorImg));
+//
+//                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT)
+//                {
+//                    mapPosFloor.remove(currentPos);
+//                }
+//
+//                mapPosFloor.put(position);
+//
+//                JSONObject newPosObj = mapsData.put("maps_data", mapsInfos).put(mapId, mapData).put("positions", mapPos);
+//
+//                outputStreamWriter.write(newPosObj.toString(1));
+//
+//                outputStreamWriter.flush();
+//                fileOutput.getFD().sync();
+//                outputStreamWriter.close();
+//
+//                //mapPositions = loadPositions().getJSONObject("maps_data").getJSONObject(mapId).getJSONObject("positions");
+//            }
+//            catch (IOException e)
+//            {
+//                e.printStackTrace();
+//            }
+//            catch (JSONException e)
+//            {
+//                e.printStackTrace();
+//            }
         }
 
         void SetTextAndImg()

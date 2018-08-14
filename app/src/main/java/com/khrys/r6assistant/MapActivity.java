@@ -46,12 +46,12 @@ public class MapActivity extends AppCompatActivity
         ArrayList<Integer> poscam = new ArrayList<>();
 
         LoadData dataLoader = new LoadData();
-        JSONObject mapsData = dataLoader.loadData(this, dataLoader.RES_MAPS);
 
         int nbCamera = 0;
         try
         {
-            nbCamera = mapsData.getJSONObject("maps_data").getJSONObject(mapId).getInt("cameras");
+            JSONObject mapsData = dataLoader.loadData(this, dataLoader.RES_MAPS);
+            nbCamera = mapsData.getJSONObject(mapId).getInt("cameras");
         }
         catch (JSONException e)
         {

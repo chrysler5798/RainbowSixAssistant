@@ -15,6 +15,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import com.khrys.r6assistant.R;
+import com.khrys.r6assistant.weapons.Weapon;
 import com.khrys.r6assistant.weapons.WeaponActivity;
 
 import java.util.ArrayList;
@@ -22,14 +23,11 @@ import java.util.ArrayList;
 class WeaponsListAdapter extends RecyclerView.Adapter<WeaponsListAdapter.MyViewHolder>
 {
 
-    private ArrayList<String> txtWeap;
-    private ArrayList<Integer> imgWeap;
+    private ArrayList<Weapon> weapons;
 
-    WeaponsListAdapter(ArrayList<String> txtWeap, ArrayList<Integer> imgWeap)
+    WeaponsListAdapter(ArrayList<Weapon> weapons)
     {
-        super();
-        this.txtWeap = txtWeap;
-        this.imgWeap = imgWeap;
+        this.weapons = weapons;
     }
 
     @Override
@@ -42,16 +40,14 @@ class WeaponsListAdapter extends RecyclerView.Adapter<WeaponsListAdapter.MyViewH
     @Override
     public void onBindViewHolder(WeaponsListAdapter.MyViewHolder holder, int position)
     {
-        String txtW = txtWeap.get(position);
-        Integer imgW = imgWeap.get(position);
-
-        holder.display(txtW, imgW);
+        holder.txtV.setText(weapons.get(position).getName());
+        holder.imgV.setImageResource(weapons.get(position).getImageId());
     }
 
     @Override
     public int getItemCount()
     {
-        return txtWeap.size();
+        return weapons.size();
     }
 
     class MyViewHolder extends RecyclerView.ViewHolder
@@ -59,28 +55,24 @@ class WeaponsListAdapter extends RecyclerView.Adapter<WeaponsListAdapter.MyViewH
 
         TextView txtV = (TextView) itemView.findViewById(R.id.textVarme);
         ImageView imgV = (ImageView) itemView.findViewById(R.id.imageVarme);
+        Context context;
 
         MyViewHolder(final View itemView)
         {
             super(itemView);
+
+            this.context = itemView.getContext();
 
             itemView.setOnClickListener(new View.OnClickListener()
             {
                 @Override
                 public void onClick(View view)
                 {
-                    Context context = itemView.getContext();
                     Intent newWeapon = new Intent(context, WeaponActivity.class);
-                    newWeapon.putExtra("arme", txtV.getText().toString());
+                    newWeapon.putExtra("weaponId", weapons.get(getAdapterPosition()).getId());
                     context.startActivity(newWeapon);
                 }
             });
-        }
-
-        void display(String txt, Integer img)
-        {
-            txtV.setText(txt);
-            imgV.setImageResource(img);
         }
     }
 }

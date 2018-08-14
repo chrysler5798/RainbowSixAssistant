@@ -1,29 +1,36 @@
 package com.khrys.r6assistant.weapons;
 
 /*
- * Created by Chrysler on 3/16/2017.
- * <p>
- * RainbowSixAssistant
+ * Created by Khrys.
+ *
+ * App : RainbowSixAssistant
+ * Info : 3/16/2017 []
 */
 
 public class Weapon
 {
-    private int idImg;
-    private String txtNom;
+    private int imageId;
+    private String id, name;
 
-    public Weapon(int idImg, String txtNom)
+    public Weapon(String id, int imageId, String name)
     {
-        this.idImg = idImg;
-        this.txtNom = txtNom;
+        this.id = id;
+        this.imageId = imageId;
+        this.name = name;
     }
 
-    int getImg()
+    public String getId()
     {
-        return idImg;
+        return id;
     }
 
-    String getNom()
+    public int getImageId()
     {
-        return txtNom;
+        return imageId;
+    }
+
+    public String getName()
+    {
+        return name;
     }
 }

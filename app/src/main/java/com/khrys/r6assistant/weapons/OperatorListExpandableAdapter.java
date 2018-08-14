@@ -17,13 +17,14 @@ import com.khrys.r6assistant.R;
 import java.util.List;
 
 /*
- * Created by Chrysler on 3/16/2017.
- * RainbowSixAssistant
+ * Created by Khrys.
+ *
+ * App : RainbowSixAssistant
+ * Info : 3/16/2017 []
 */
 
 class OperatorListExpandableAdapter extends ExpandableRecyclerAdapter<OperatorViewHolder, WeaponViewHolder>
 {
-
     private LayoutInflater mInflater;
     OperatorListExpandableAdapter(Context context, List<ParentObject> parentItemList)
     {
@@ -56,9 +57,22 @@ class OperatorListExpandableAdapter extends ExpandableRecyclerAdapter<OperatorVi
     @Override
     public void onBindChildViewHolder(WeaponViewHolder weaponViewHolder, int i, Object o)
     {
-        Weapon weapons = (Weapon) o;
-        weaponViewHolder.imgArme.setImageResource(weapons.getImg());
-        weaponViewHolder.nomArme.setText(weapons.getNom());
+        final Weapon weapon = (Weapon) o;
+
+        weaponViewHolder.imgArme.setImageResource(weapon.getImageId());
+        weaponViewHolder.nomArme.setText(weapon.getName());
+
+        weaponViewHolder.itemView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Context context = view.getContext();
+                Intent newWeapon = new Intent(context, WeaponActivity.class);
+                newWeapon.putExtra("weaponId", weapon.getId());
+                context.startActivity(newWeapon);
+            }
+        });
     }
 }
 
@@ -79,24 +93,13 @@ class OperatorViewHolder extends ParentViewHolder
 
 class WeaponViewHolder extends ChildViewHolder
 {
-
     ImageView imgArme;
     TextView nomArme;
 
-    WeaponViewHolder(final View itemView) {
+    WeaponViewHolder(View itemView) {
         super(itemView);
 
         imgArme = itemView.findViewById(R.id.imageVarme);
         nomArme = itemView.findViewById(R.id.textVarme);
-
-        itemView.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Context context = itemView.getContext();
-                Intent newWeapon = new Intent(context, WeaponActivity.class);
-                newWeapon.putExtra("arme", nomArme.getText().toString());
-                context.startActivity(newWeapon);
-            }
-        });
     }
 }

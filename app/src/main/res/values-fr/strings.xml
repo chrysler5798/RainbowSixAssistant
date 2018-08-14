@@ -31,6 +31,15 @@
     <!--UPDATE APP-->
     <string name="update_title">Une mise à jour est disponible !</string>
     <string name="update_text">Vous utilisez une ancienne version de R6 Assistant, voulez-vous mettre à jour ?</string>
+    <string name="update_data_text">Il y a une nouvelle mise à jour pour :</string>
+    <string name="update">Mettre à jour</string>
+    <string name="update_data_armies">Armées</string>
+    <string name="update_data_maps">Cartes</string>
+    <string name="update_data_operators">Opérateurs</string>
+    <string name="update_data_weapons">Armes</string>
+    <string name="update_launching">Lancement de la mise à jour…</string>
+    <string name="update_updating_x">Mise à jour des %s …</string>
+    <string name="update_data_done">Mise à jour terminée !</string>
 
     <!--RATE APP POPUP-->
     <string name="ratetitle">Noter R6 Assistant</string>
@@ -307,7 +316,7 @@
 
     <!--ABOUT-->
     <string name="labelabout">R6 Assistant - A propos</string>
-    <string name="abouttxt1">Cette application a été créée par Khrys, un simple joueur de Rainbow Six Siege. L\'application est Open Source et n\'est pas affiliée à Ubisoft.\n\nQuelconques retours, rapport de bug, suggestion sont grandement appréciées. En tant qu\'appli Open Source vous pouvez accéder au code complet sur GitHub en cliquant sur l\'image juste en dessous.\n\nKhrys, développeur et joueur.</string>
+    <string name="abouttxt1">Cette application a été créée par Khrys, un simple joueur de Rainbow Six Siege. L\'application est Open Source et n\'est pas affiliée à Ubisoft.\n\nQuelconques retours, rapport de bug et suggestion sont grandement appréciés. En tant qu\'application Open Source vous pouvez accéder au code complet sur GitHub en cliquant sur l\'image juste en dessous.\n\nKhrys, développeur et joueur.</string>
 
     <!--SUPPORT-->
     <string name="labelsupport">R6 Assistant - Me supporter</string>

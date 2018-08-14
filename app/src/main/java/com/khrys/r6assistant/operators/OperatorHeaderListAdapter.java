@@ -23,11 +23,13 @@ import ca.barrenechea.widget.recyclerview.decoration.StickyHeaderAdapter;
 public class OperatorHeaderListAdapter extends RecyclerView.Adapter<OperatorHeaderListAdapter.MyViewHolder> implements StickyHeaderAdapter<OperatorHeaderListAdapter.HeaderHolder>
 {
     private ArrayList<Operator> operators;
+    private int operatorsAtkCount;
     private LayoutInflater inflater;
 
-    public OperatorHeaderListAdapter(ArrayList<Operator> operators)
+    OperatorHeaderListAdapter(ArrayList<Operator> operators, int operatorsAtkCount)
     {
         this.operators = operators;
+        this.operatorsAtkCount = operatorsAtkCount;
     }
 
     @Override
@@ -47,8 +49,8 @@ public class OperatorHeaderListAdapter extends RecyclerView.Adapter<OperatorHead
     @Override
     public void onBindViewHolder(OperatorHeaderListAdapter.MyViewHolder holder, int position)
     {
-        Integer imgdata = operators.get(position).getImg();
-        String txtdata = operators.get(position).getNom();
+        Integer imgdata = operators.get(position).getImageId();
+        String txtdata = operators.get(position).getName();
         holder.display(imgdata,txtdata);
     }
 
@@ -71,8 +73,7 @@ public class OperatorHeaderListAdapter extends RecyclerView.Adapter<OperatorHead
                 public void onClick(View view)
                 {
                     Intent newAct = new Intent(context, OperatorActivity.class);
-                    newAct.putExtra("position", getAdapterPosition());
-                    newAct.putExtra("operator", operators.get(getAdapterPosition()).getId());
+                    newAct.putExtra("operatorId", operators.get(getAdapterPosition()).getId());
                     context.startActivity(newAct);
 
                 }
@@ -89,13 +90,12 @@ public class OperatorHeaderListAdapter extends RecyclerView.Adapter<OperatorHead
     @Override
     public long getHeaderId(int position)
     {
-        if(position<20){
+        if(position < operatorsAtkCount)
             return 0;
-        }else if(position<40){
-            return 20;
-        }else {
+        else if(position < getItemCount())
+            return operatorsAtkCount;
+        else
             return 0;
-        }
     }
 
     @Override
@@ -109,11 +109,12 @@ public class OperatorHeaderListAdapter extends RecyclerView.Adapter<OperatorHead
     public void onBindHeaderViewHolder(HeaderHolder viewholder, int position)
     {
         int txtId = 0;
-        if(position<20){
+        if(position < operatorsAtkCount)
             txtId = R.string.attackers;
-        }else if(position<40){
+        else if(position < getItemCount())
             txtId = R.string.defenders;
-        }
+
+
         viewholder.header.setText(txtId);
     }
 

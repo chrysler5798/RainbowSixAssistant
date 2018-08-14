@@ -104,7 +104,7 @@ public class MapPlanActivity extends AppCompatActivity
         JSONObject mapsData;
         try
         {
-            mapsData = dataLoader.loadData(this, dataLoader.RES_MAPS).getJSONObject("maps_data").getJSONObject(mapId);
+            mapsData = dataLoader.loadData(this, dataLoader.RES_MAPS).getJSONObject(mapId);
             minFloor = Integer.parseInt(String.valueOf(mapsData.getInt("minfloor")));
             maxFloor = Integer.parseInt(String.valueOf(mapsData.getInt("maxfloor")));
             mapPositions = mapsData.getJSONObject("positions");
@@ -346,7 +346,11 @@ public class MapPlanActivity extends AppCompatActivity
         protected void onPostExecute(Bitmap result)
         {
             imageView.setImageBitmap(result);
-            mAttacher.update();
+
+            if(type == 0)
+            {
+                mAttacher.update();
+            }
         }
     }
 

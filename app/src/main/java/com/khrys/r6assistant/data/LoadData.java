@@ -6,9 +6,9 @@ package com.khrys.r6assistant.data;
  * Info : 12/2/2017 [10:56 AM]
 */
 
-import android.app.Activity;
 import android.content.Context;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
@@ -20,40 +20,34 @@ import java.io.InputStream;
 
 public class LoadData
 {
-    public final String RES_VERSION = "version";
     public final String RES_MAPS = "maps";
-    //public final String RES_OPERATORS = "_operators";
     public final String RES_OPERATORS = "operators";
     public final String RES_ARMIES = "armies";
     public final String RES_WEAPONS = "weapons";
 
-    public final String URL_VERSION = "https://goo.gl/SRkxW7";
-    public final String URL_MAPS = "https://goo.gl/zDbmmK";
-    public final String URL_OPERATORS = "";
-    public final String URL_OPERATORS_INFOS = "";
-    public final String URL_ARMIES = "";
-    public final String URL_WEAPONS = "";
+    public final String URL_VERSION = "https://www.dropbox.com/s/i9fvzjpg6hlupla/version.json?dl=1";
 
-    public void launchCheckForUpdate(Activity activity)
+    public JSONArray loadList(Context context, String dataName) throws JSONException
     {
-        new DownloadTask(activity, RES_VERSION, true).execute(URL_VERSION);
+        return loadData(context, dataName, false).getJSONArray(dataName);
     }
 
-    void checkForUpdate(InputStream inputStreamInternal, InputStream inputStreamRes)
+    public JSONObject loadData(Context context, String dataName) throws JSONException
     {
-//        JSONObject versionFileInternal = loadJsonFile(inputStreamInternal, "version");
-//        JSONObject versionFileRes = loadJsonFile(inputStreamRes, "version");
+        return loadData(context, dataName, true);
     }
 
-    public JSONObject loadData(Context context, String fileName)
+    public JSONObject loadData(Context context, String dataName, boolean getData) throws JSONException
     {
-        String pathToInternalFile = context.getFilesDir()+"/"+fileName+".json";
+        JSONObject result;
+        String pathToInternalFile = context.getFilesDir()+ File.separator + dataName +".json";
         File internalDataFile = new File(pathToInternalFile);
-        if(internalDataFile.exists())
+
+        if(internalDataFile.exists() && internalDataFile.length() > 0 && internalDataFile.canRead())
         {
             try
             {
-                return loadJSON(new FileInputStream(internalDataFile));
+                result = loadJSON(new FileInputStream(internalDataFile));
             }
             catch (FileNotFoundException e)
             {
@@ -63,12 +57,17 @@ public class LoadData
         }
         else
         {
-            int res = context.getResources().getIdentifier(fileName, "raw", context.getPackageName());
-            return loadJSON(context.getResources().openRawResource(res));
+            int res = context.getResources().getIdentifier(dataName, "raw", context.getPackageName());
+            result = loadJSON(context.getResources().openRawResource(res));
         }
+
+        if(getData)
+            result = result.getJSONObject(dataName + "_data");
+
+        return result;
     }
 
-    JSONObject loadJSON(InputStream is)
+    private JSONObject loadJSON(InputStream is)
     {
         try
         {

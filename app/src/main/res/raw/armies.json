@@ -1,5 +1,21 @@
 {
-  "armies": {
+  "armies": [
+    "spetsnaz",
+    "gsg9",
+    "gign",
+    "swat",
+    "sas",
+    "jtf2",
+    "navy_seal",
+    "bope",
+    "s_a_t",
+    "g_e_o",
+    "sdu",
+    "grom",
+    "707th",
+    "gis"
+  ],
+  "armies_data": {
     "spetsnaz": {
       "name": "Spetsnaz",
       "country": "ru",
@@ -22,7 +38,7 @@
     },
     "sas": {
       "name": "SAS",
-      "country": "uk",
+      "country": "gb",
       "operators": ["thatcher","sledge","smoke","mute"]
     },
     "jtf2": {
@@ -68,7 +84,7 @@
     "gis": {
       "name": "GIS",
       "country": "it",
-      "operators": ["thatcher","sledge"]
+      "operators": ["maestro","alibi"]
     }
   }
 }

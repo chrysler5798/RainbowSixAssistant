@@ -31,6 +31,15 @@
     <!--UPDATE APP-->
     <string name="update_title">An update is available !</string>
     <string name="update_text">You are using an older version of R6 Assistant, do you want to update it ?</string>
+    <string name="update_data_text">There is a new data update for :</string>
+    <string name="update">Update</string>
+    <string name="update_data_armies">Armies</string>
+    <string name="update_data_maps">Maps</string>
+    <string name="update_data_operators">Operators</string>
+    <string name="update_data_weapons">Weapons</string>
+    <string name="update_launching">Launching update…</string>
+    <string name="update_updating_x">Updating %s …</string>
+    <string name="update_data_done">Data update done !</string>
 
     <!--RATE APP POPUP-->
     <string name="ratetitle">Avalie R6 Assistant</string>

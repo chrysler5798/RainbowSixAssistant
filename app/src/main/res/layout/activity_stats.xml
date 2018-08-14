@@ -53,9 +53,10 @@
                     android:id="@+id/imgAgent1"
                     android:layout_width="0dp"
                     android:layout_height="60dp"
-                    android:adjustViewBounds="true"
                     android:layout_weight="1"
-                    android:contentDescription="@string/op_1" />
+                    android:adjustViewBounds="true"
+                    android:contentDescription="@string/op_1"
+                    android:visibility="gone"/>
 
                 <ImageView
                     android:id="@+id/imgAgent2"
@@ -63,7 +64,8 @@
                     android:layout_height="60dp"
                     android:adjustViewBounds="true"
                     android:layout_weight="1"
-                    android:contentDescription="@string/op_2"/>
+                    android:contentDescription="@string/op_2"
+                    android:visibility="gone"/>
 
                 <ImageView
                     android:id="@+id/imgAgent3"
@@ -71,7 +73,8 @@
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    android:contentDescription="@string/op_3"/>
+                    android:contentDescription="@string/op_3"
+                    android:visibility="gone"/>
 
                 <ImageView
                     android:id="@+id/imgAgent4"
@@ -79,7 +82,8 @@
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    android:contentDescription="@string/op_4"/>
+                    android:contentDescription="@string/op_4"
+                    android:visibility="gone"/>
 
                 <ImageView
                     android:id="@+id/imgAgent5"
@@ -87,7 +91,8 @@
                     android:layout_height="60dp"
                     android:layout_weight="1"
                     android:adjustViewBounds="true"
-                    android:contentDescription="@string/op_4"/>
+                    android:contentDescription="@string/op_4"
+                    android:visibility="gone"/>
             </LinearLayout>
 
             <LinearLayout
@@ -322,7 +327,8 @@
                 android:layout_marginTop="30dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/txtVrank1"
@@ -364,7 +370,8 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/txtVrank2"
@@ -407,7 +414,8 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/txtVrank3"
@@ -450,7 +458,8 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/txtVrank4"
@@ -493,7 +502,8 @@
                 android:layout_margin="10dp"
                 android:layout_weight="1"
                 android:background="@color/colorPrimary"
-                android:orientation="horizontal">
+                android:orientation="horizontal"
+                android:visibility="gone">
 
                 <TextView
                     android:id="@+id/txtVrank5"

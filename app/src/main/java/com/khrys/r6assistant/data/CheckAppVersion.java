@@ -23,6 +23,7 @@ import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.lang.ref.WeakReference;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -30,11 +31,11 @@ import java.net.URL;
 public class CheckAppVersion extends AsyncTask<String, Void, String>
 {
     private final String URL_VERSION_TXT = "http://louis-jeancolin.fr/r6assistant/version/version.php";
-    private Context context;
+    private WeakReference<Context> weakContext;
 
     public CheckAppVersion(Context context)
     {
-        this.context = context;
+        weakContext = new WeakReference<>(context);
     }
 
     @Override
@@ -83,6 +84,9 @@ public class CheckAppVersion extends AsyncTask<String, Void, String>
     @Override
     protected void onPostExecute(String result)
     {
+        Context context = weakContext.get();
+
+        boolean needUpdate = false;
         int actualVersionCode = 0;
         int onlineVersionCode = 0;
 
@@ -104,6 +108,8 @@ public class CheckAppVersion extends AsyncTask<String, Void, String>
         {
             if(actualVersionCode < onlineVersionCode)
             {
+                needUpdate = true;
+
                 AlertDialog.Builder dialogNeedUpdateBuilder = new AlertDialog.Builder(context, R.style.MyAlertDialogStyle);
                 dialogNeedUpdateBuilder.setTitle(R.string.update_title);
                 dialogNeedUpdateBuilder.setMessage(R.string.update_text);
@@ -113,6 +119,7 @@ public class CheckAppVersion extends AsyncTask<String, Void, String>
                     @Override
                     public void onClick(DialogInterface dialogInterface, int i)
                     {
+                        Context context = weakContext.get();
                         Uri uri = Uri.parse("market://details?id=" + context.getPackageName());
                         Intent openPlayStore = new Intent(Intent.ACTION_VIEW, uri);
                         try
@@ -129,6 +136,11 @@ public class CheckAppVersion extends AsyncTask<String, Void, String>
                 AlertDialog dialogNeedUpdate = dialogNeedUpdateBuilder.create();
                 dialogNeedUpdate.show();
             }
+        }
+
+        if(!needUpdate)
+        {
+            new CheckDataVersion(weakContext.get()).execute();
         }
     }
 }

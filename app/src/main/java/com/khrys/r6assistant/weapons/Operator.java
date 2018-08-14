@@ -5,21 +5,23 @@ import com.bignerdranch.expandablerecyclerview.Model.ParentObject;
 import java.util.List;
 
 /*
- * Created by Chrysler on 3/16/2017.
- * <p>
- * RainbowSixAssistant
+ * Created by Khrys.
+ *
+ * App : RainbowSixAssistant
+ * Info : 3/16/2017 []
 */
 
 public class Operator implements ParentObject
 {
     private List<Object> mChildrenList;
-    private String name;
+    private String id, name;
     private int image;
 
-    public Operator(String name, int image)
+    public Operator(String id, String name, int image)
     {
-        setName(name);
-        setImage(image);
+        this.id = id;
+        this.name = name;
+        this.image = image;
     }
 
     @Override
@@ -32,8 +34,13 @@ public class Operator implements ParentObject
         mChildrenList = list;
     }
 
-    public void setName(String title) {
-        this.name = title;
+    public String getId()
+    {
+        return id;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getName() {

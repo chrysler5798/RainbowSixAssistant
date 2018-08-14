@@ -3,10 +3,9 @@ package com.khrys.r6assistant.operators;
  * Created by Khrys.
  *
  * App : RainbowSixAssistant
- * Info : 05/31/2017[00:00 PM]
+ * Info : 05/31/2017 [00:00 PM]
 */
 
-import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.LinearLayoutManager;
@@ -17,10 +16,13 @@ import android.view.ViewGroup;
 
 import com.bignerdranch.expandablerecyclerview.Model.ParentObject;
 import com.khrys.r6assistant.R;
+import com.khrys.r6assistant.data.LoadData;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
 
 public class CountryFragment extends Fragment
 {
@@ -36,7 +38,7 @@ public class CountryFragment extends Fragment
         super.onViewCreated(view, savedInstanceState);
         RecyclerView recyclerView = view.findViewById(R.id.WeaponsRecycler);
 
-        CountryListExpandableAdapter mOperatorsListExpandableAdapter = new CountryListExpandableAdapter(getContext(), generateOperatorsList(view));
+        CountryListExpandableAdapter mOperatorsListExpandableAdapter = new CountryListExpandableAdapter(getContext(), generateOperatorsList());
         mOperatorsListExpandableAdapter.setCustomParentAnimationViewId(R.id.parent_list_item_expand_arrow);
         mOperatorsListExpandableAdapter.setParentClickableViewAnimationDefaultDuration();
         mOperatorsListExpandableAdapter.setParentAndIconExpandOnClick(true);
@@ -45,51 +47,50 @@ public class CountryFragment extends Fragment
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 
-    private ArrayList<ParentObject> generateOperatorsList(View view)
+    private ArrayList<ParentObject> generateOperatorsList()
     {
-        List<Country> countriesList = new ArrayList<>();
-
-        TypedArray tableCtries = getResources().obtainTypedArray(R.array.countriesArmy);
-        for (int i = 1; i < tableCtries.length(); i += 2) {
-            String ct = tableCtries.getString(i);
-            String img = "flag_" + tableCtries.getString(i - 1);
-
-            int imgid = getResources().getIdentifier(img, "drawable", view.getContext().getPackageName());
-
-            countriesList.add(new Country(ct, imgid));
-        }
-        tableCtries.recycle();
-
         ArrayList<ParentObject> parentObjects = new ArrayList<>();
 
-        for (Country country : countriesList)
+        try
         {
-            String ct = country.getName();
-            ct = ct.replace(' ', '_');
-            ct = ct.replace('.', '_');
-            ct = ct.toLowerCase(Locale.ENGLISH);
-            if(ct.equals("707th"))
+            LoadData loadData = new LoadData();
+            JSONArray armiesList = loadData.loadList(getContext(), loadData.RES_ARMIES);
+
+            JSONObject armiesData    = loadData.loadData(getContext(), loadData.RES_ARMIES);
+            JSONObject operatorsData = loadData.loadData(getContext(), loadData.RES_OPERATORS);
+
+            for (int i = 0; i < armiesList.length(); i++)
             {
-                ct = "m707th";
+                String armyId = armiesList.getString(i);
+
+                JSONObject armyData = armiesData.getJSONObject(armyId);
+                JSONArray armyOperators = armyData.getJSONArray("operators");
+
+                String armyCountry =armyData.getString("country");
+                int armyCountryImageId = getResources().getIdentifier("flag_" + armyCountry, "drawable", getContext().getPackageName());
+
+
+                ArrayList<Object> childList = new ArrayList<>();
+                for (int j = 0; j < armyOperators.length(); j++)
+                {
+                    String operatorId = armyOperators.getString(j);
+                    JSONObject operatorData = operatorsData.getJSONObject(operatorId);
+
+                    int operatorImageId = getResources().getIdentifier("o_" + operatorId, "drawable", getContext().getPackageName());
+
+                    childList.add(new Operator(operatorId, operatorImageId, operatorData.getString("name")));
+                }
+
+                Army army = new Army(armyData.getString("name"), armyCountryImageId);
+                army.setChildObjectList(childList);
+                parentObjects.add(army);
             }
-            int arrayId = getResources().getIdentifier(ct, "array", view.getContext().getPackageName());
-            String[] ctOp = getResources().getStringArray(arrayId);
-
-            ArrayList<Object> childList = new ArrayList<>();
-
-            for (String operators : ctOp)
-            {
-                String imgArmeId = "o_" + operators;
-                imgArmeId = imgArmeId.replace('ä','a');
-                imgArmeId = imgArmeId.replace('ã','a');
-
-                int resID = getResources().getIdentifier(imgArmeId, "drawable", view.getContext().getPackageName());
-
-                childList.add(new Operator(operators, resID, operators));
-            }
-            country.setChildObjectList(childList);
-            parentObjects.add(country);
         }
+        catch (JSONException e)
+        {
+            e.printStackTrace();
+        }
+
         return parentObjects;
     }
 }

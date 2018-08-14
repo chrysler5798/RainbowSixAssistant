@@ -1,24 +1,25 @@
 package com.khrys.r6assistant.operators;
 /*
- * Created by Louis on 31/05/2017.
- * 
- * R6Assistant
+ * Created by Khrys.
+ *
+ * App : RainbowSixAssistant
+ * Info : 05/31/2017 []
 */
 
 import com.bignerdranch.expandablerecyclerview.Model.ParentObject;
 
 import java.util.List;
 
-public class Country implements ParentObject
+public class Army implements ParentObject
 {
     private List<Object> mChildrenList;
     private String name;
-    private int image;
+    private int imageId;
 
-    Country(String name, int image)
+    Army(String name, int imageId)
     {
-        setName(name);
-        setImage(image);
+        this.name = name;
+        this.imageId = imageId;
     }
 
     @Override
@@ -31,19 +32,11 @@ public class Country implements ParentObject
         mChildrenList = list;
     }
 
-    public void setName(String title) {
-        this.name = title;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setImage(int image) {
-        this.image = image;
-    }
-
     public int getImage() {
-        return image;
+        return imageId;
     }
 }

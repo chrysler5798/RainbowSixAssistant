@@ -26,6 +26,7 @@ import com.khrys.r6assistant.weapons.WeaponMenuActivity;
 public class MainActivity extends AppCompatActivity
 {
     int meuflotroll = 0;
+    boolean isConnectedToNetwork = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -45,10 +46,14 @@ public class MainActivity extends AppCompatActivity
         ImageButton buttonset = findViewById(R.id.buttonSettings);
 
         ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        if(activeNetworkInfo != null && activeNetworkInfo.isConnected())
+        if(connectivityManager.getActiveNetworkInfo() != null)
         {
-            new CheckAppVersion(MainActivity.this).execute();
+            isConnectedToNetwork = connectivityManager.getActiveNetworkInfo().isConnected();
+        }
+
+        if(isConnectedToNetwork)
+        {
+            new CheckAppVersion(this).execute();
         }
 
         buttonweapon.setOnClickListener(new View.OnClickListener()
@@ -109,7 +114,7 @@ public class MainActivity extends AppCompatActivity
 //                String jsonString = writer.toString();
 //                Log.e("TEST", jsonString);
 
-                //new DownloadTask(MainActivity.this, "test").execute(new LoadData().URL_TEST);
+                //new DataUpdateTask(MainActivity.this, "test").execute(new LoadData().URL_TEST);
                 //new LoadData().loadDataFromInternal(getApplicationContext(), "test");
                // new LoadData().loadDataFromRes(getApplicationContext(), R.raw.weapons);
 

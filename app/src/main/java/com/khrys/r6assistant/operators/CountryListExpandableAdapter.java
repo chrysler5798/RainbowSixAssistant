@@ -48,7 +48,7 @@ class CountryListExpandableAdapter extends ExpandableRecyclerAdapter<OperatorsVi
     @Override
     public void onBindParentViewHolder(OperatorsViewHolder operatorsViewHolder, int i, Object c)
     {
-        Country countries = (Country) c;
+        Army countries = (Army) c;
         operatorsViewHolder.mCrimeTitleTextView.setText(countries.getName());
         operatorsViewHolder.imageView.setImageResource(countries.getImage());
     }
@@ -56,16 +56,27 @@ class CountryListExpandableAdapter extends ExpandableRecyclerAdapter<OperatorsVi
     @Override
     public void onBindChildViewHolder(WeaponsViewHolder weaponsViewHolder, int i, Object c)
     {
-        Operator operator = (Operator) c;
-        weaponsViewHolder.imgOperator.setImageResource(operator.getImg());
+        final Operator operator = (Operator) c;
+
+        weaponsViewHolder.imgOperator.setImageResource(operator.getImageId());
         weaponsViewHolder.imgOperator.setPadding(20,20,20,20);
-        weaponsViewHolder.nomOperator.setText(operator.getNom());
+        weaponsViewHolder.nomOperator.setText(operator.getName());
+        weaponsViewHolder.itemView.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                Context context = view.getContext();
+                Intent newOperator = new Intent(context, OperatorActivity.class);
+                newOperator.putExtra("operatorId", operator.getId());
+                context.startActivity(newOperator);
+            }
+        });
     }
 }
 
 class OperatorsViewHolder extends ParentViewHolder
 {
-
     ImageView imageView;
     TextView mCrimeTitleTextView;
 
@@ -80,7 +91,6 @@ class OperatorsViewHolder extends ParentViewHolder
 
 class WeaponsViewHolder extends ChildViewHolder
 {
-
     ImageView imgOperator;
     TextView nomOperator;
 
@@ -90,17 +100,5 @@ class WeaponsViewHolder extends ChildViewHolder
 
         imgOperator = itemView.findViewById(R.id.imageVarme);
         nomOperator = itemView.findViewById(R.id.textVarme);
-
-        itemView.setOnClickListener(new View.OnClickListener()
-        {
-            @Override
-            public void onClick(View view)
-            {
-                Context context = view.getContext();
-                Intent newOperator = new Intent(context, OperatorActivity.class);
-                newOperator.putExtra("operator", nomOperator.getText().toString());
-                context.startActivity(newOperator);
-            }
-        });
     }
 }

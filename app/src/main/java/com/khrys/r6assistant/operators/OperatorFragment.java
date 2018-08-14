@@ -3,7 +3,7 @@ package com.khrys.r6assistant.operators;
  * Created by Khrys.
  *
  * App : RainbowSixAssistant
- * Info : 05/31/2017[00:00 PM]
+ * Info : 05/31/2017 [00:00 PM]
 */
 
 import android.os.Bundle;
@@ -14,7 +14,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-import com.khrys.r6assistant.weapons.WeaponsHeaderListAdapter;
 import com.khrys.r6assistant.R;
 import com.khrys.r6assistant.data.LoadData;
 
@@ -54,9 +53,8 @@ public class OperatorFragment extends Fragment
         try
         {
             LoadData loadData = new LoadData();
-            JSONObject operatorsJSON = loadData.loadData(getContext(), loadData.RES_OPERATORS);
-            JSONArray operatorsList = operatorsJSON.getJSONArray("operators");
-            JSONObject operatorsData = operatorsJSON.getJSONObject("operators_data");
+            JSONArray operatorsList = loadData.loadList(getContext(), loadData.RES_OPERATORS);
+            JSONObject operatorsData = loadData.loadData(getContext(), loadData.RES_OPERATORS);
 
             for (int i = 0; i < operatorsList.length(); i++)
             {
@@ -84,7 +82,7 @@ public class OperatorFragment extends Fragment
         ArrayList<Operator> finalOperators = new ArrayList<>(operatorsAtk);
         finalOperators.addAll(operatorsDef);
 
-        OperatorHeaderListAdapter mAdapter = new OperatorHeaderListAdapter(finalOperators);
+        OperatorHeaderListAdapter mAdapter = new OperatorHeaderListAdapter(finalOperators, operatorsAtk.size());
         mRecycler.setAdapter(mAdapter);
         mRecycler.addItemDecoration(new StickyHeaderDecoration(mAdapter));
     }

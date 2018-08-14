@@ -42,7 +42,7 @@ public class MapMenuActivity extends AppCompatActivity
         LoadData dataLoader = new LoadData();
         try
         {
-            JSONArray mapsList = dataLoader.loadData(this, dataLoader.RES_MAPS).getJSONArray("maps");
+            JSONArray mapsList = dataLoader.loadList(this, dataLoader.RES_MAPS);
             for(int i = 0; i < mapsList.length(); i++)
             {
                 String mapId = mapsList.getString(i);

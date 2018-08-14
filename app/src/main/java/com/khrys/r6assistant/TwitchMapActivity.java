@@ -13,7 +13,6 @@ import android.widget.TextView;
 import com.khrys.r6assistant.data.LoadData;
 
 import org.json.JSONException;
-import org.json.JSONObject;
 
 import java.util.ArrayList;
 
@@ -139,14 +138,12 @@ public class TwitchMapActivity extends Activity implements View.OnClickListener,
 
     void recyclerSetup()
     {
-        LoadData dataLoader = new LoadData();
-        JSONObject mapsData = dataLoader.loadData(this, dataLoader.RES_MAPS);
-
         int nbCamera = 0;
 
         try
         {
-            nbCamera = mapsData.getJSONObject("maps_data").getJSONObject(mapId).getInt("cameras");
+            LoadData dataLoader = new LoadData();
+            nbCamera = dataLoader.loadData(this, dataLoader.RES_MAPS).getJSONObject(mapId).getInt("cameras");
         }
         catch (JSONException e)
         {

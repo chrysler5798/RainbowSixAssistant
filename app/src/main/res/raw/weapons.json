@@ -1,1203 +1,1105 @@
 {
-    "weapons_list": [
+    "weapons": [
         "l85a2","ar33","g36c","r4_c","556xi","f2","ak_12","aug","552_commando","416_c_carbine","c8_sfw","mk17_cqb","para_308","type_89","c7e","m762","v308","spear",
         "p226_mk25","5_7_usg","m45_meusoc","p9","lfp586","gsh_18","pmm","p12","mk1","d_50","prb92","luison","p229","usp40","q_929","rg15","keratos_357","bailiff_410",
         "6p41","g8a1","m249","t_95_lsw","lmg_e","alda_5_56",
         "smg_11","bearing_9","c75","smg_12",
         "417","ots_03","camrs","sr_25","mk_14_ebr",
-        "m590a1","m1014","sg_cqb","sasg_12","m870","super_90","spas_12","spas_15","supernova","ita12l","ita12s","six12","six12_sd","f0_12","bosg_12_2","acs12",
+        "m590a1","m1014","sg_cqb","sasg_12","m870","super_90","spas_12","spas_15","supernova","ita12l","ita12s","six12","six12_sd","fo_12","bosg_12_2","acs12",
         "fmg_9","mp5k","ump45","mp5","p90","9x19vsn","mp7","9mm_c1","mpx","m12","mp5sd","pdw9","vector_45_acp","t_5_smg","scorpion_evo_3_a1","k1a","mx4_storm"
     ],
-    "weapons": {
+    "weapons_data": {
         "l85a2": {
-            "name": "l85a2",
-            "operators": [16,17],
+            "name": "L85A2",
+            "operators": ["sledge","thatcher"],
             "ammo": 30,
             "firerate": 670,
             "falloff": 27,
-            "barrel": [0,1,2,3],
-            "damage_armor_1": [33,45],
-            "damage_armor_2": [30,40],
-            "damage_armor_3": [23,36],
-            "damage_armor_1_rook": [28,38],
-            "damage_armor_2_rook": [24,33],
-            "damage_armor_3_rook": [18,28]
+            "barrels": ["compensator","flash_hider","muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[33,45], "rook":[28,38]},
+                "armor_2":{"default":[30,40], "rook":[24,33]},
+                "armor_3":{"default":[23,36], "rook":[18,28]}
+            }
         },
         "ar33": {
-            "name": "ar33",
-            "operators": [16],
+            "name": "AR33",
+            "operators": ["thatcher"],
             "ammo": 25,
             "firerate": 749,
             "falloff": 15,
-            "barrel": [3,0,1,2],
-            "damage_armor_1": [31,42],
-            "damage_armor_2": [24,38],
-            "damage_armor_3": [21,33],
-            "damage_armor_1_rook": [26,35],
-            "damage_armor_2_rook": [23,31],
-            "damage_armor_3_rook": [17,27]
+            "barrels": ["suppressor","compensator","flash_hider","muzzle_brake"],
+            "damage": {
+                "armor_1":{"default":[31,42], "rook":[26,35]},
+                "armor_2":{"default":[24,38], "rook":[23,31]},
+                "armor_3":{"default":[21,33], "rook":[17,27]}
+            }
         },
         "g36c": {
-            "name": "g36c",
-            "operators": [13],
+            "name": "G36C",
+            "operators": ["ash"],
             "ammo": 30,
             "firerate": 780,
             "falloff": 27,
-            "barrel": [0,3,2,1],
-            "damage_armor_1": [28,38],
-            "damage_armor_2": [25,34],
-            "damage_armor_3": [19,30],
-            "damage_armor_1_rook": [23,31],
-            "damage_armor_2_rook": [21,28],
-            "damage_armor_3_rook": [15,24]
+            "barrels": ["compensator","suppressor","muzzle_brake","flash_hider"],
+            "damage": {
+                "armor_1":{"default":[28,38], "rook":[23,31]},
+                "armor_2":{"default":[25,34], "rook":[21,28]},
+                "armor_3":{"default":[19,30], "rook":[15,24]}
+            }
         },
         "r4_c": {
             "name": "R4-C",
-            "operators": [13],
+            "operators": ["ash"],
             "ammo": 30,
             "firerate": 860,
             "falloff": 20,
-            "barrel": [0,3,1,2],
-            "damage_armor_1": [30,41],
-            "damage_armor_2": [27,37],
-            "damage_armor_3": [21,33],
-            "damage_armor_1_rook": [26,35],
-            "damage_armor_2_rook": [22,30],
-            "damage_armor_3_rook": [16,26]
+            "barrels": ["compensator","suppressor","flash_hider","muzzle_brake"],
+            "damage": {
+                "armor_1":{"default":[30,41], "rook":[26,35]},
+                "armor_2":{"default":[27,37], "rook":[22,30]},
+                "armor_3":{"default":[21,33], "rook":[16,26]}
+            }
         },
         "556xi": {
-            "name": "556xi",
-            "operators": [12],
+            "name": "556XI",
+            "operators": ["thermite"],
             "ammo": 30,
             "firerate": 670,
             "falloff": 27,
-            "barrel": [0,2,3,1],
-            "damage_armor_1": [33,45],
-            "damage_armor_2": [30,40],
-            "damage_armor_3": [23,36],
-            "damage_armor_1_rook": [29,39],
-            "damage_armor_2_rook": [25,34],
-            "damage_armor_3_rook": [18,29]
+            "barrels": ["compensator","muzzle_brake","suppressor","flash_hider"],
+            "damage": {
+                "armor_1":{"default":[33,45], "rook":[29,39]},
+                "armor_2":{"default":[30,40], "rook":[25,34]},
+                "armor_3":{"default":[23,36], "rook":[18,29]}
+            }
         },
         "f2": {
-            "name": "f2",
-            "operators": [10],
+            "name": "F2",
+            "operators": ["twitch"],
             "ammo": 30,
             "firerate": 980,
             "falloff": 20,
-            "barrel": [1,2,0,3],
-            "damage_armor_1": [29,39],
-            "damage_armor_2": [26,35],
-            "damage_armor_3": [20,31],
-            "damage_armor_1_rook": [24,33],
-            "damage_armor_2_rook": [21,29],
-            "damage_armor_3_rook": [16,25]
+            "barrels": ["flash_hider","muzzle_brake","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[29,39], "rook":[24,33]},
+                "armor_2":{"default":[26,35], "rook":[21,29]},
+                "armor_3":{"default":[20,31], "rook":[16,25]}
+            }
         },
         "ak_12": {
             "name": "AK-12",
-            "operators": [3],
+            "operators": ["fuze"],
             "ammo": 30,
             "firerate": 850,
             "falloff": 23,
-            "barrel": [0,1,2,3],
-            "damage_armor_1": [33,44],
-            "damage_armor_2": [29,39],
-            "damage_armor_3": [22,35],
-            "damage_armor_1_rook": [27,37],
-            "damage_armor_2_rook": [24,32],
-            "damage_armor_3_rook": [18,28]
+            "barrels": ["compensator","flash_hider","muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[33,44], "rook":[27,37]},
+                "armor_2":{"default":[29,39], "rook":[24,32]},
+                "armor_3":{"default":[22,35], "rook":[18,28]}
+            }
         },
         "aug": {
-            "name": "AUG",
-            "operators": [4],
+            "name": "AUG A2",
+            "operators": ["iq"],
             "ammo": 30,
             "firerate": 720,
             "falloff": 25,
-            "barrel": [0,1,3],
-            "damage_armor_1": [30,41],
-            "damage_armor_2": [27,37],
-            "damage_armor_3": [21,33],
-            "damage_armor_1_rook": [26,35],
-            "damage_armor_2_rook": [22,30],
-            "damage_armor_3_rook": [16,26]
+            "barrels": ["compensator","flash_hider","suppressor"],
+            "damage": {
+                "armor_1":{"default":[30,41], "rook":[26,35]},
+                "armor_2":{"default":[27,37], "rook":[22,30]},
+                "armor_3":{"default":[21,33], "rook":[16,26]}
+            }
         },
         "552_commando": {
-            "name": "552 Commando",
-            "operators": [4],
+            "name": "552 COMMANDO",
+            "operators": ["iq"],
             "ammo": 30,
             "firerate": 690,
             "falloff": 20,
-            "barrel": [1,0,3,2],
-            "damage_armor_1": [35,47],
-            "damage_armor_2": [27,42],
-            "damage_armor_3": [24,37],
-            "damage_armor_1_rook": [29,39],
-            "damage_armor_2_rook": [26,35],
-            "damage_armor_3_rook": [19,30]
+            "barrels": ["flash_hider","compensator","suppressor","muzzle_brake"],
+            "damage": {
+                "armor_1":{"default":[35,47], "rook":[29,39]},
+                "armor_2":{"default":[27,42], "rook":[26,35]},
+                "armor_3":{"default":[24,37], "rook":[19,30]}
+            }
         },
         "416_c_carbine": {
-            "name": "416-C Carbine",
-            "operators": [7],
+            "name": "416-C CARBINE",
+            "operators": ["jager"],
             "ammo": 30,
             "firerate": 740,
             "falloff": 20,
-            "barrel": [0,1,2,3,4],
-            "damage_armor_1": [31,42],
-            "damage_armor_2": [28,38],
-            "damage_armor_3": [21,33],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["compensator","flash_hider","muzzle_brake","suppressor","extended_barrel"],
+            "damage": {
+                "armor_1":{"default":[31,42]},
+                "armor_2":{"default":[28,38]},
+                "armor_3":{"default":[21,33]}
+            }
         },
         "c8_sfw": {
             "name": "C8-SFW",
-            "operators": [21],
+            "operators": ["buck"],
             "ammo": 30,
             "firerate": 837,
             "falloff": 20,
-            "barrel": [2,0,1,3],
-            "damage_armor_1": [28,38],
-            "damage_armor_2": [25,34],
-            "damage_armor_3": [19,30],
-            "damage_armor_1_rook": [24,32],
-            "damage_armor_2_rook": [21,28],
-            "damage_armor_3_rook": [15,24]
+            "barrels": ["muzzle_brake","compensator","flash_hider","suppressor"],
+            "damage": {
+                "armor_1":{"default":[28,38], "rook":[24,32]},
+                "armor_2":{"default":[25,34], "rook":[21,28]},
+                "armor_3":{"default":[19,30], "rook":[15,24]}
+            }
         },
         "mk17_cqb": {
-            "name": "Mk17 CQB",
-            "operators": [23],
+            "name": "MK17 CQB",
+            "operators": ["blackbeard"],
             "ammo": 20,
             "firerate": 585,
             "falloff": 21,
-            "barrel": [1,2,0,3],
-            "damage_armor_1": [30,41],
-            "damage_armor_2": [27,37],
-            "damage_armor_3": [21,33],
-            "damage_armor_1_rook": [24,32],
-            "damage_armor_2_rook": [22,30],
-            "damage_armor_3_rook": [16,26]
+            "barrels": ["flash_hider","muzzle_brake","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[30,41], "rook":[24,32]},
+                "armor_2":{"default":[27,37], "rook":[22,30]},
+                "armor_3":{"default":[21,33], "rook":[16,26]}
+            }
         },
         "para_308": {
             "name": "PARA-308",
-            "operators": [24],
+            "operators": ["capitao"],
             "ammo": 30,
             "firerate": 650,
             "falloff": 28,
-            "barrel": [0,1,3,2],
-            "damage_armor_1": [31,42],
-            "damage_armor_2": [28,38],
-            "damage_armor_3": [21,33],
-            "damage_armor_1_rook": [26,35],
-            "damage_armor_2_rook": [23,31],
-            "damage_armor_3_rook": [16,26]
+            "barrels": ["compensator","flash_hider","suppressor","muzzle_brake"],
+            "damage": {
+                "armor_1":{"default":[31,42], "rook":[26,35]},
+                "armor_2":{"default":[28,38], "rook":[23,31]},
+                "armor_3":{"default":[21,33], "rook":[16,26]}
+            }
         },
         "type_89": {
-            "name": "Type 89",
-            "operators": [27],
+            "name": "TYPE-89",
+            "operators": ["hibana"],
             "ammo": 20,
             "firerate": 850,
             "falloff": 20,
-            "barrel": [0,3,1,2],
-            "damage_armor_1": [30,41],
-            "damage_armor_2": [27,37],
-            "damage_armor_3": [21,33],
-            "damage_armor_1_rook": [25,34],
-            "damage_armor_2_rook": [22,30],
-            "damage_armor_3_rook": [16,26]
+            "barrels": ["compensator","suppressor","flash_hider","muzzle_brake"],
+            "damage": {
+                "armor_1":{"default":[30,41], "rook":[25,34]},
+                "armor_2":{"default":[27,37], "rook":[22,30]},
+                "armor_3":{"default":[21,33], "rook":[16,26]}
+            }
         },
         "c7e": {
             "name": "C7E",
-            "operators": [29],
+            "operators": ["jackal"],
             "ammo": 30,
             "firerate": 800,
             "falloff": 20,
-            "barrel": [0,1,3,2],
-            "damage_armor_1": [34,46],
-            "damage_armor_2": [30,41],
-            "damage_armor_3": [23,36],
-            "damage_armor_1_rook": [28,39],
-            "damage_armor_2_rook": [24,34],
-            "damage_armor_3_rook": [18,28]
+            "barrels": ["compensator","flash_hider","suppressor","muzzle_brake"],
+            "damage": {
+                "armor_1":{"default":[34,46], "rook":[28,39]},
+                "armor_2":{"default":[30,41], "rook":[24,34]},
+                "armor_3":{"default":[23,36], "rook":[18,28]}
+            }
         },
         "m762": {
-            "name": "m762",
-            "operators": [29],
+            "name": "M762",
+            "operators": ["zofia"],
             "ammo": 30,
             "firerate": 800,
             "falloff": 20,
-            "barrel": [0,1,3,2],
-            "damage_armor_1": [34,46],
-            "damage_armor_2": [30,41],
-            "damage_armor_3": [23,36],
-            "damage_armor_1_rook": [28,39],
-            "damage_armor_2_rook": [24,34],
-            "damage_armor_3_rook": [18,28]
+            "barrels": ["compensator","flash_hider","suppressor","muzzle_brake"],
+            "damage": {
+                "armor_1":{"default":[34,46], "rook":[28,39]},
+                "armor_2":{"default":[30,41], "rook":[24,34]},
+                "armor_3":{"default":[23,36], "rook":[18,28]}
+            }
         },
         "v308": {
-            "name": "v308",
-            "operators": [29],
+            "name": "V308",
+            "operators": ["lion"],
             "ammo": 30,
             "firerate": 800,
             "falloff": 20,
-            "barrel": [0,1,3,2],
-            "damage_armor_1": [34,46],
-            "damage_armor_2": [30,41],
-            "damage_armor_3": [23,36],
-            "damage_armor_1_rook": [28,39],
-            "damage_armor_2_rook": [24,34],
-            "damage_armor_3_rook": [18,28]
+            "barrels": ["compensator","flash_hider","suppressor","muzzle_brake"],
+            "damage": {
+                "armor_1":{"default":[34,46], "rook":[28,39]},
+                "armor_2":{"default":[30,41], "rook":[24,34]},
+                "armor_3":{"default":[23,36], "rook":[18,28]}
+            }
         },
         "spear": {
-            "name": "spear",
-            "operators": [29],
+            "name": "SPEAR .308",
+            "operators": ["finka"],
             "ammo": 30,
             "firerate": 800,
             "falloff": 20,
-            "barrel": [0,1,3,2],
-            "damage_armor_1": [34,46],
-            "damage_armor_2": [30,41],
-            "damage_armor_3": [23,36],
-            "damage_armor_1_rook": [28,39],
-            "damage_armor_2_rook": [24,34],
-            "damage_armor_3_rook": [18,28]
+            "barrels": ["compensator","flash_hider","suppressor","muzzle_brake"],
+            "damage": {
+                "armor_1":{"default":[34,46], "rook":[28,39]},
+                "armor_2":{"default":[30,41], "rook":[24,34]},
+                "armor_3":{"default":[23,36], "rook":[18,28]}
+            }
         },
         "p226_mk25": {
-            "name": "P226 Mk25",
-            "operators": [17,16,18,19],
+            "name": "P226 MK 25",
+            "operators": ["thatcher","sledge","smoke","mute"],
             "ammo": 15,
             "firerate": 420,
             "falloff": 8,
-            "barrel": [2,3],
-            "damage_armor_1": [39,53],
-            "damage_armor_2": [35,47],
-            "damage_armor_3": [27,42],
-            "damage_armor_1_rook": [33,45],
-            "damage_armor_2_rook": [29,39],
-            "damage_armor_3_rook": [22,34]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[39,53], "rook":[33,45]},
+                "armor_2":{"default":[35,47], "rook":[29,39]},
+                "armor_3":{"default":[27,42], "rook":[22,34]}
+            }
         },
         "5_7_usg": {
             "name": "5.7 USG",
-            "operators": [13,12,14,15],
+            "operators": ["ash","thermite","castle","pulse"],
             "ammo": 20,
             "firerate": 400,
             "falloff": 18,
-            "barrel": [2,3],
-            "damage_armor_1": [19,26],
-            "damage_armor_2": [17,23],
-            "damage_armor_3": [13,21],
-            "damage_armor_1_rook": [16,22],
-            "damage_armor_2_rook": [14,19],
-            "damage_armor_3_rook": [10,17]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[19,26], "rook":[16,22]},
+                "armor_2":{"default":[17,23], "rook":[14,19]},
+                "armor_3":{"default":[13,21], "rook":[10,17]}
+            }
         },
         "m45_meusoc": {
             "name": "M45 MEUSOC",
-            "operators": [13,12,14,15],
+            "operators": ["ash","thermite","castle","pulse"],
             "ammo": 7,
             "firerate": 360,
             "falloff": 15,
-            "barrel": [2,3],
-            "damage_armor_1": [35,47],
-            "damage_armor_2": [31,42],
-            "damage_armor_3": [24,37],
-            "damage_armor_1_rook": [30,40],
-            "damage_armor_2_rook": [26,35],
-            "damage_armor_3_rook": [19,30]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[35,47], "rook":[30,40]},
+                "armor_2":{"default":[31,42], "rook":[26,35]},
+                "armor_3":{"default":[24,37], "rook":[19,30]}
+            }
         },
         "p9": {
             "name": "P9",
-            "operators": [10,11,9,8],
+            "operators": ["twitch","montagne","rook","doc","lion"],
             "ammo": 16,
             "firerate": 360,
             "falloff": 20,
-            "barrel": [2,3],
-            "damage_armor_1": [22,30],
-            "damage_armor_2": [20,27],
-            "damage_armor_3": [15,24],
-            "damage_armor_1_rook": [18,25],
-            "damage_armor_2_rook": [16,22],
-            "damage_armor_3_rook": [12,19]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[22,30], "rook":[18,25]},
+                "armor_2":{"default":[20,27], "rook":[16,22]},
+                "armor_3":{"default":[15,24], "rook":[12,19]}
+            }
         },
         "lfp586": {
             "name": "LFP586",
-            "operators": [10,11,9,8],
+            "operators": ["twitch","montagne","rook","doc","lion"],
             "ammo": 6,
             "firerate": 360,
             "falloff": 15,
-            "barrel": [],
-            "damage_armor_1": [67,76],
-            "damage_armor_2": [51,68],
-            "damage_armor_3": [39,60],
-            "damage_armor_1_rook": [48,64],
-            "damage_armor_2_rook": [42,56],
-            "damage_armor_3_rook": [31,48]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[67,76], "rook":[48,64]},
+                "armor_2":{"default":[51,68], "rook":[42,56]},
+                "armor_3":{"default":[39,60], "rook":[31,48]}
+            }
         },
         "gsh_18": {
-            "name": "GSH 18",
-            "operators": [2,3,0,1],
+            "name": "GSH-18",
+            "operators": ["kapkan","tachanka","glaz","fuze", "finka"],
             "ammo": 18,
             "firerate": 360,
             "falloff": 18,
-            "barrel": [2,0,3],
-            "damage_armor_1": [24,33],
-            "damage_armor_2": [21,29],
-            "damage_armor_3": [16,26],
-            "damage_armor_1_rook": [20,28],
-            "damage_armor_2_rook": [17,24],
-            "damage_armor_3_rook": [13,22]
+            "barrels": ["muzzle_brake","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[24,33], "rook":[20,28]},
+                "armor_2":{"default":[21,29], "rook":[17,24]},
+                "armor_3":{"default":[16,26], "rook":[13,22]}
+            }
         },
         "pmm": {
             "name": "PMM",
-            "operators": [2,3,0,1],
+            "operators": ["kapkan","tachanka","glaz","fuze", "finka"],
             "ammo": 8,
             "firerate": 420,
             "falloff": 5,
-            "barrel": [2,3],
-            "damage_armor_1": [47,63],
-            "damage_armor_2": [42,56],
-            "damage_armor_3": [32,50],
-            "damage_armor_1_rook": [40,54],
-            "damage_armor_2_rook": [35,46],
-            "damage_armor_3_rook": [26,40]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[47,63], "rook":[40,54]},
+                "armor_2":{"default":[42,56], "rook":[35,46]},
+                "armor_3":{"default":[32,50], "rook":[26,40]}
+            }
         },
         "p12": {
             "name": "P12",
-            "operators": [5,4,7,6],
+            "operators": ["blitz","iq","jager","bandit"],
             "ammo": 15,
             "firerate": 420,
             "falloff": 8,
-            "barrel": [2,3],
-            "damage_armor_1": [32,43],
-            "damage_armor_2": [29,39],
-            "damage_armor_3": [22,34],
-            "damage_armor_1_rook": [27,36],
-            "damage_armor_2_rook": [24,32],
-            "damage_armor_3_rook": [17,27]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[32,43], "rook":[27,36]},
+                "armor_2":{"default":[29,39], "rook":[24,32]},
+                "armor_3":{"default":[22,34], "rook":[17,27]}
+            }
         },
         "mk1": {
-            "name": "Mk1",
-            "operators": [21,20],
+            "name": "MK1 9mm",
+            "operators": ["buck","frost"],
             "ammo": 13,
             "firerate": 360,
             "falloff": 25,
-            "barrel": [2,3],
-            "damage_armor_1": [32,43],
-            "damage_armor_2": [29,39],
-            "damage_armor_3": [22,34],
-            "damage_armor_1_rook": [27,37],
-            "damage_armor_2_rook": [24,32],
-            "damage_armor_3_rook": [18,28]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[32,43], "rook":[27,37]},
+                "armor_2":{"default":[29,39], "rook":[24,32]},
+                "armor_3":{"default":[22,34], "rook":[18,28]}
+            }
         },
         "d_50": {
             "name": "D-50",
-            "operators": [23,22],
+            "operators": ["blackbeard","valkyrie"],
             "ammo": 7,
             "firerate": 270,
             "falloff": 18,
-            "barrel": [],
-            "damage_armor_1": [51,68],
-            "damage_armor_2": [45,61],
-            "damage_armor_3": [35,54],
-            "damage_armor_1_rook": [42,57],
-            "damage_armor_2_rook": [37,50],
-            "damage_armor_3_rook": [27,43]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[51,68], "rook":[42,57]},
+                "armor_2":{"default":[45,61], "rook":[37,50]},
+                "armor_3":{"default":[35,54], "rook":[27,43]}
+            }
         },
         "prb92": {
             "name": "PRB92",
-            "operators": [24],
+            "operators": ["capitao"],
             "ammo": 15,
             "firerate": 375,
             "falloff": 18,
-            "barrel": [2,3],
-            "damage_armor_1": [29,39],
-            "damage_armor_2": [26,35],
-            "damage_armor_3": [20,31],
-            "damage_armor_1_rook": [24,33],
-            "damage_armor_2_rook": [21,29],
-            "damage_armor_3_rook": [16,25]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[29,39], "rook":[24,33]},
+                "armor_2":{"default":[26,35], "rook":[21,29]},
+                "armor_3":{"default":[20,31], "rook":[16,25]}
+            }
         },
         "luison": {
-            "name": "Luison",
-            "operators": [25],
+            "name": "LUISON",
+            "operators": ["caveira"],
             "ammo": 15,
             "firerate": 375,
             "falloff": 3,
-            "barrel": [],
-            "damage_armor_1": [66,99],
-            "damage_armor_2": [66,89],
-            "damage_armor_3": [50,78],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[66,99]},
+                "armor_2":{"default":[66,89]},
+                "armor_3":{"default":[50,78]}
+            }
         },
         "p229": {
             "name": "P229",
-            "operators": [27,26],
+            "operators": ["echo","hibana"],
             "ammo": 12,
             "firerate": 375,
             "falloff": 10,
-            "barrel": [2,3],
-            "damage_armor_1": [37,50],
-            "damage_armor_2": [33,45],
-            "damage_armor_3": [25,39],
-            "damage_armor_1_rook": [31,43],
-            "damage_armor_2_rook": [27,37],
-            "damage_armor_3_rook": [21,32]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[37,50], "rook":[31,43]},
+                "armor_2":{"default":[33,45], "rook":[27,37]},
+                "armor_3":{"default":[25,39], "rook":[21,32]}
+            }
         },
         "usp40": {
             "name": "USP40",
-            "operators": [29,28],
+            "operators": ["mira","jackal"],
             "ammo": 12,
             "firerate": 375,
             "falloff": 0,
-            "barrel": [2,3],
-            "damage_armor_1": [32,43],
-            "damage_armor_2": [29,39],
-            "damage_armor_3": [22,34],
-            "damage_armor_1_rook": [27,37],
-            "damage_armor_2_rook": [24,32],
-            "damage_armor_3_rook": [14,28]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[32,43], "rook":[27,37]},
+                "armor_2":{"default":[29,39], "rook":[24,32]},
+                "armor_3":{"default":[22,34], "rook":[14,28]}
+            }
         },
         "6p41": {
             "name": "6P41",
-            "operators": [3],
+            "operators": ["fuze","finka"],
             "ammo": 100,
             "firerate": 680,
             "falloff": 8,
-            "barrel": [3,1],
-            "damage_armor_1": [36,49],
-            "damage_armor_2": [33,44],
-            "damage_armor_3": [25,39],
-            "damage_armor_1_rook": [30,40],
-            "damage_armor_2_rook": [27,35],
-            "damage_armor_3_rook": [20,31]
+            "barrels": ["suppressor","flash_hider"],
+            "damage": {
+                "armor_1":{"default":[36,49], "rook":[30,40]},
+                "armor_2":{"default":[33,44], "rook":[27,35]},
+                "armor_3":{"default":[25,39], "rook":[20,31]}
+            }
         },
         "g8a1": {
             "name": "G8A1",
-            "operators": [4],
+            "operators": ["iq"],
             "ammo": 50,
             "firerate": 850,
             "falloff": 16,
-            "barrel": [0,1,3],
-            "damage_armor_1": [27,37],
-            "damage_armor_2": [24,33],
-            "damage_armor_3": [18,29],
-            "damage_armor_1_rook": [23,31],
-            "damage_armor_2_rook": [20,27],
-            "damage_armor_3_rook": [14,23]
+            "barrels": ["compensator","flash_hider","suppressor"],
+            "damage": {
+                "armor_1":{"default":[27,37], "rook":[23,31]},
+                "armor_2":{"default":[24,33], "rook":[20,27]},
+                "armor_3":{"default":[18,29], "rook":[14,23]}
+            }
         },
         "m249": {
             "name": "M249",
-            "operators": [24],
+            "operators": ["capitao"],
             "ammo": 100,
             "firerate": 650,
             "falloff": 10,
-            "barrel": [0,1],
-            "damage_armor_1": [24,33],
-            "damage_armor_2": [20,29],
-            "damage_armor_3": [16,26],
-            "damage_armor_1_rook": [20,27],
-            "damage_armor_2_rook": [18,24],
-            "damage_armor_3_rook": [13,21]
+            "barrels": ["compensator","flash_hider"],
+            "damage": {
+                "armor_1":{"default":[24,33], "rook":[20,27]},
+                "armor_2":{"default":[20,29], "rook":[18,24]},
+                "armor_3":{"default":[16,26], "rook":[13,21]}
+            }
         },
         "smg_11": {
             "name": "SMG-11",
-            "operators": [18,17],
+            "operators": ["smoke","sledge"],
             "ammo": 16,
             "firerate": 1270,
             "falloff": 15,
-            "barrel": [0,4,1,3],
-            "damage_armor_1": [24,32],
-            "damage_armor_2": [21,28],
-            "damage_armor_3": [16,25],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["compensator","extended_barrel","flash_hider","suppressor"],
+            "damage": {
+                "armor_1":{"default":[24,32]},
+                "armor_2":{"default":[21,28]},
+                "armor_3":{"default":[16,25]}
+            }
         },
         "bearing_9": {
-            "name": "BEARING-9",
-            "operators": [27,26],
+            "name": "BEARING 9",
+            "operators": ["echo","hibana"],
             "ammo": 25,
             "firerate": 1100,
             "falloff": 15,
-            "barrel": [0,1,3],
-            "damage_armor_1": [24,32],
-            "damage_armor_2": [21,28],
-            "damage_armor_3": [16,25],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["compensator","flash_hider","suppressor"],
+            "damage": {
+                "armor_1":{"default":[24,32]},
+                "armor_2":{"default":[21,28]},
+                "armor_3":{"default":[16,25]}
+            }
         },
         "c75": {
-            "name": "c75",
-            "operators": [27,26],
+            "name": "C75 Auto",
+            "operators": ["dokkaebi","vigil"],
             "ammo": 25,
             "firerate": 1100,
             "falloff": 15,
-            "barrel": [0,1,3],
-            "damage_armor_1": [24,32],
-            "damage_armor_2": [21,28],
-            "damage_armor_3": [16,25],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["compensator","flash_hider","suppressor"],
+            "damage": {
+                "armor_1":{"default":[24,32]},
+                "armor_2":{"default":[21,28]},
+                "armor_3":{"default":[16,25]}
+            }
         },
         "smg_12": {
-            "name": "smg 12",
-            "operators": [27,26],
+            "name": "SMG-12",
+            "operators": ["dokkaebi","vigil"],
             "ammo": 25,
             "firerate": 1100,
             "falloff": 15,
-            "barrel": [0,1,3],
-            "damage_armor_1": [24,32],
-            "damage_armor_2": [21,28],
-            "damage_armor_3": [16,25],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["compensator","flash_hider","suppressor"],
+            "damage": {
+                "armor_1":{"default":[24,32]},
+                "armor_2":{"default":[21,28]},
+                "armor_3":{"default":[16,25]}
+            }
         },
         "417": {
             "name": "417",
-            "operators": [10],
+            "operators": ["twitch","lion"],
             "ammo": 10,
             "firerate": 660,
             "falloff": 30,
-            "barrel": [2,1,0,3],
-            "damage_armor_1": [49,66],
-            "damage_armor_2": [44,59],
-            "damage_armor_3": [33,52],
-            "damage_armor_1_rook": [41,55],
-            "damage_armor_2_rook": [35,48],
-            "damage_armor_3_rook": [26,42]
+            "barrels": ["muzzle_brake","flash_hider","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[49,66], "rook":[41,55]},
+                "armor_2":{"default":[44,59], "rook":[35,48]},
+                "armor_3":{"default":[33,52], "rook":[26,42]}
+            }
         },
         "ots_03": {
             "name": "OTs-03",
-            "operators": [2],
+            "operators": ["glaz"],
             "ammo": 10,
             "firerate": 220,
             "falloff": 15,
-            "barrel": [2,1,3],
-            "damage_armor_1": [60,85],
-            "damage_armor_2": [54,72],
-            "damage_armor_3": [40,63],
-            "damage_armor_1_rook": [51,61],
-            "damage_armor_2_rook": [46,61],
-            "damage_armor_3_rook": [34,54]
+            "barrels": ["muzzle_brake","flash_hider","suppressor"],
+            "damage": {
+                "armor_1":{"default":[60,85], "rook":[51,61]},
+                "armor_2":{"default":[54,72], "rook":[46,61]},
+                "armor_3":{"default":[40,63], "rook":[34,54]}
+            }
         },
         "camrs": {
             "name": "CAMRS",
-            "operators": [21],
+            "operators": ["buck"],
             "ammo": 20,
             "firerate": 570,
             "falloff": 30,
-            "barrel": [2,1,0,3],
-            "damage_armor_1": [51,68],
-            "damage_armor_2": [45,61],
-            "damage_armor_3": [35,54],
-            "damage_armor_1_rook": [43,57],
-            "damage_armor_2_rook": [36,50],
-            "damage_armor_3_rook": [27,43]
+            "barrels": ["muzzle_brake","flash_hider","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[51,68], "rook":[43,57]},
+                "armor_2":{"default":[45,61], "rook":[36,50]},
+                "armor_3":{"default":[35,54], "rook":[27,43]}
+            }
         },
         "sr_25": {
             "name": "SR-25",
-            "operators": [21],
+            "operators": ["blackbeard"],
             "ammo": 20,
             "firerate": 570,
             "falloff": 30,
-            "barrel": [2,1,0,3],
-            "damage_armor_1": [51,68],
-            "damage_armor_2": [45,61],
-            "damage_armor_3": [35,54],
-            "damage_armor_1_rook": [43,57],
-            "damage_armor_2_rook": [36,50],
-            "damage_armor_3_rook": [27,43]
+            "barrels": ["muzzle_brake","flash_hider","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[51,68], "rook":[43,57]},
+                "armor_2":{"default":[45,61], "rook":[36,50]},
+                "armor_3":{"default":[35,54], "rook":[27,43]}
+            }
         },
         "mk_14_ebr": {
-            "name": "mk 14 ebr",
-            "operators": [21],
+            "name": "Mk 14 EBR",
+            "operators": ["dokkaebi"],
             "ammo": 20,
             "firerate": 570,
             "falloff": 30,
-            "barrel": [2,1,0,3],
-            "damage_armor_1": [51,68],
-            "damage_armor_2": [45,61],
-            "damage_armor_3": [35,54],
-            "damage_armor_1_rook": [43,57],
-            "damage_armor_2_rook": [36,50],
-            "damage_armor_3_rook": [27,43]
+            "barrels": ["muzzle_brake","flash_hider","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[51,68], "rook":[43,57]},
+                "armor_2":{"default":[45,61], "rook":[36,50]},
+                "armor_3":{"default":[35,54], "rook":[27,43]}
+            }
         },
         "m590a1": {
             "name": "M590A1",
-            "operators": [17,16,18,19],
+            "operators": ["thatcher","sledge","smoke","mute"],
             "ammo": 7,
             "firerate": 100,
             "falloff": 8,
-            "barrel": [],
-            "damage_armor_1": [34,34],
-            "damage_armor_2": [22,22],
-            "damage_armor_3": [14,14],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[34,34]},
+                "armor_2":{"default":[22,22]},
+                "armor_3":{"default":[14,14]}
+            }
         },
         "m1014": {
             "name": "M1014",
-            "operators": [12,14,15],
+            "operators": ["thermite","castle","pulse"],
             "ammo": 8,
             "firerate": 170,
             "falloff": 8,
-            "barrel": [],
-            "damage_armor_1": [36,36],
-            "damage_armor_2": [24,24],
-            "damage_armor_3": [22,22],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[36,36]},
+                "armor_2":{"default":[24,24]},
+                "armor_3":{"default":[22,22]}
+            }
         },
         "sg_cqb": {
             "name": "SG-CQB",
-            "operators": [10,9,8],
+            "operators": ["twitch","rook","doc","lion"],
             "ammo": 7,
             "firerate": 100,
             "falloff": 8,
-            "barrel": [],
-            "damage_armor_1": [32,32],
-            "damage_armor_2": [22,22],
-            "damage_armor_3": [21,21],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[32,32]},
+                "armor_2":{"default":[22,22]},
+                "armor_3":{"default":[21,21]}
+            }
         },
         "sasg_12": {
             "name": "SASG-12",
-            "operators": [0,1],
+            "operators": ["kapkan","tachanka","finka"],
             "ammo": 10,
             "firerate": 240,
             "falloff": 8,
-            "barrel": [3],
-            "damage_armor_1": [19,19],
-            "damage_armor_2": [17,17],
-            "damage_armor_3": [14,14],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["suppressor"],
+            "damage": {
+                "armor_1":{"default":[19,19]},
+                "armor_2":{"default":[17,17]},
+                "armor_3":{"default":[14,14]}
+            }
         },
         "m870": {
             "name": "M870",
-            "operators": [7,6],
+            "operators": ["bandit","jager"],
             "ammo": 7,
             "firerate": 120,
             "falloff": 8,
-            "barrel": [],
-            "damage_armor_1": [31,31],
-            "damage_armor_2": [21,21],
-            "damage_armor_3": [18,18],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[31,31]},
+                "armor_2":{"default":[21,21]},
+                "armor_3":{"default":[18,18]}
+            }
         },
         "super_90": {
-            "name": "Super 90",
-            "operators": [20],
+            "name": "SUPER 90",
+            "operators": ["frost"],
             "ammo": 8,
             "firerate": 150,
             "falloff": 8,
-            "barrel": [],
-            "damage_armor_1": [36,36],
-            "damage_armor_2": [31,31],
-            "damage_armor_3": [22,22],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[36,36]},
+                "armor_2":{"default":[31,31]},
+                "armor_3":{"default":[22,22]}
+            }
         },
         "spas_12": {
             "name": "SPAS-12",
-            "operators": [22],
+            "operators": ["valkyrie"],
             "ammo": 7,
             "firerate": 140,
             "falloff": 8,
-            "barrel": [],
-            "damage_armor_1": [32,32],
-            "damage_armor_2": [28,28],
-            "damage_armor_3": [20,20],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[32,32]},
+                "armor_2":{"default":[28,28]},
+                "armor_3":{"default":[20,20]}
+            }
         },
         "spas_15": {
             "name": "SPAS-15",
-            "operators": [25],
+            "operators": ["caveira"],
             "ammo": 6,
             "firerate": 240,
             "falloff": 8,
-            "barrel": [],
-            "damage_armor_1": [28,14],
-            "damage_armor_2": [18,10],
-            "damage_armor_3": [10,8],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[28,14]},
+                "armor_2":{"default":[18,10]},
+                "armor_3":{"default":[10,8]}
+            }
         },
         "supernova": {
-            "name": "SuperNova",
-            "operators": [27,26],
+            "name": "SUPERNOVA",
+            "operators": ["echo","hibana"],
             "ammo": 7,
             "firerate": 85,
             "falloff": 8,
-            "barrel": [],
-            "damage_armor_1": [32,16],
-            "damage_armor_2": [22,11],
-            "damage_armor_3": [12,6],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[32,16]},
+                "armor_2":{"default":[22,11]},
+                "armor_3":{"default":[12,6]}
+            }
         },
         "ita12l": {
             "name": "ITA12L",
-            "operators": [29,28],
+            "operators": ["mira","jackal"],
             "ammo": 8,
             "firerate": 95,
             "falloff": 8,
-            "barrel": [],
-            "damage_armor_1": [23,47],
-            "damage_armor_2": [18,37],
-            "damage_armor_3": [13,27],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[23,47]},
+                "armor_2":{"default":[18,37]},
+                "armor_3":{"default":[13,27]}
+            }
         },
         "ita12s": {
             "name": "ITA12S",
-            "operators": [29,28],
+            "operators": ["mira","jackal"],
             "ammo": 5,
             "firerate": 95,
             "falloff": 8,
-            "barrel": [],
-            "damage_armor_1": [33,66],
-            "damage_armor_2": [28,56],
-            "damage_armor_3": [23,46],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[33,66]},
+                "armor_2":{"default":[28,56]},
+                "armor_3":{"default":[23,46]}
+            }
         },
         "fmg_9": {
             "name": "FMG-9",
-            "operators": [18],
+            "operators": ["smoke"],
             "ammo": 30,
             "firerate": 800,
             "falloff": 17,
-            "barrel": [1,3,2],
-            "damage_armor_1": [21,28],
-            "damage_armor_2": [18,25],
-            "damage_armor_3": [14,22],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["flash_hider","suppressor","muzzle_brake"],
+            "damage": {
+                "armor_1":{"default":[21,28]},
+                "armor_2":{"default":[18,25]},
+                "armor_3":{"default":[14,22]}
+            }
         },
         "mp5k": {
             "name": "MP5K",
-            "operators": [19],
+            "operators": ["mute"],
             "ammo": 30,
             "firerate": 800,
             "falloff": 15,
-            "barrel": [0,1,2,3],
-            "damage_armor_1": [21,29],
-            "damage_armor_2": [19,26],
-            "damage_armor_3": [14,23],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["compensator","flash_hider","muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[21,29]},
+                "armor_2":{"default":[19,26]},
+                "armor_3":{"default":[14,23]}
+            }
         },
         "ump45": {
             "name": "UMP45",
-            "operators": [14,15],
+            "operators": ["castle","pulse"],
             "ammo": 25,
             "firerate": 600,
             "falloff": 15,
-            "barrel": [1,0,4,2,3],
-            "damage_armor_1": [28,38],
-            "damage_armor_2": [25,34],
-            "damage_armor_3": [19,30],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["flash_hider","compensator","extended_barrel","muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[28,38]},
+                "armor_2":{"default":[25,34]},
+                "armor_3":{"default":[19,30]}
+            }
         },
         "mp5": {
             "name": "MP5",
-            "operators": [9,8],
+            "operators": ["rook","doc"],
             "ammo": 30,
             "firerate": 800,
             "falloff": 18,
-            "barrel": [1,3,2],
-            "damage_armor_1": [21,28],
-            "damage_armor_2": [17,25],
-            "damage_armor_3": [14,22],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["flash_hider","suppressor","muzzle_brake"],
+            "damage": {
+                "armor_1":{"default":[21,28]},
+                "armor_2":{"default":[17,25]},
+                "armor_3":{"default":[14,22]}
+            }
         },
         "p90": {
             "name": "P90",
-            "operators": [9,8],
+            "operators": ["rook","doc"],
             "ammo": 50,
             "firerate": 970,
             "falloff": 18,
-            "barrel": [1,2,3,4],
-            "damage_armor_1": [15,20],
-            "damage_armor_2": [13,18],
-            "damage_armor_3": [10,16],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["flash_hider","muzzle_brake","suppressor","extended_barrel"],
+            "damage": {
+                "armor_1":{"default":[15,20]},
+                "armor_2":{"default":[13,18]},
+                "armor_3":{"default":[10,16]}
+            }
         },
         "9x19vsn": {
             "name": "9x19VSN",
-            "operators": [0,1],
+            "operators": ["kapkan","tachanka"],
             "ammo": 30,
             "firerate": 750,
             "falloff": 15,
-            "barrel": [0,1,2,3],
-            "damage_armor_1": [25,34],
-            "damage_armor_2": [22,30],
-            "damage_armor_3": [17,27],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["compensator","flash_hider","muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[25,34]},
+                "armor_2":{"default":[22,30]},
+                "armor_3":{"default":[17,27]}
+            }
         },
         "mp7": {
             "name": "MP7",
-            "operators": [6],
+            "operators": ["bandit"],
             "ammo": 30,
             "firerate": 900,
             "falloff": 10,
-            "barrel": [0,1,2,3],
-            "damage_armor_1": [25,34],
-            "damage_armor_2": [22,30],
-            "damage_armor_3": [17,27],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["compensator","flash_hider","muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[25,34]},
+                "armor_2":{"default":[22,30]},
+                "armor_3":{"default":[17,27]}
+            }
         },
         "9mm_c1": {
             "name": "9mm C1",
-            "operators": [20],
+            "operators": ["frost"],
             "ammo": 34,
             "firerate": 575,
             "falloff": 15,
-            "barrel": [4,3],
-            "damage_armor_1": [31,42],
-            "damage_armor_2": [32,38],
-            "damage_armor_3": [21,33],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["extended_barrel","suppressor"],
+            "damage": {
+                "armor_1":{"default":[31,42]},
+                "armor_2":{"default":[32,38]},
+                "armor_3":{"default":[21,33]}
+            }
         },
         "mpx": {
             "name": "MPX",
-            "operators": [22],
+            "operators": ["valkyrie"],
             "ammo": 30,
             "firerate": 830,
             "falloff": 23,
-            "barrel": [2,1,0,3],
-            "damage_armor_1": [17,23],
-            "damage_armor_2": [15,21],
-            "damage_armor_3": [11,18],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["muzzle_brake","flash_hider","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[17,23]},
+                "armor_2":{"default":[15,21]},
+                "armor_3":{"default":[11,18]}
+            }
         },
         "m12": {
             "name": "M12",
-            "operators": [25],
+            "operators": ["caveira"],
             "ammo": 30,
             "firerate": 550,
             "falloff": 20,
-            "barrel": [4,3,2,1],
-            "damage_armor_1": [27,36],
-            "damage_armor_2": [24,32],
-            "damage_armor_3": [18,28],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["extended_barrel","suppressor","muzzle_brake","flash_hider"],
+            "damage": {
+                "armor_1":{"default":[27,36]},
+                "armor_2":{"default":[24,32]},
+                "armor_3":{"default":[18,28]}
+            }
         },
         "mp5sd": {
             "name": "MP5SD",
-            "operators": [26],
+            "operators": ["echo"],
             "ammo": 30,
             "firerate": 800,
             "falloff": 10,
-            "barrel": [],
-            "damage_armor_1": [17,23],
-            "damage_armor_2": [15,21],
-            "damage_armor_3": [11,18],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[17,23]},
+                "armor_2":{"default":[15,21]},
+                "armor_3":{"default":[11,18]}
+            }
         },
         "pdw9": {
             "name": "PDW9",
-            "operators": [29],
+            "operators": ["jackal"],
             "ammo": 50,
             "firerate": 800,
             "falloff": 28,
-            "barrel": [0,1,3,2],
-            "damage_armor_1": [24,33],
-            "damage_armor_2": [21,29],
-            "damage_armor_3": [16,26],
-            "damage_armor_1_rook": [20,28],
-            "damage_armor_2_rook": [17,24],
-            "damage_armor_3_rook": [12,20]
+            "barrels": ["compensator","flash_hider","suppressor","muzzle_brake"],
+            "damage": {
+                "armor_1":{"default":[24,33], "rook":[20,28]},
+                "armor_2":{"default":[21,29], "rook":[17,24]},
+                "armor_3":{"default":[16,26], "rook":[12,20]}
+            }
         },
         "vector_45_acp": {
-            "name": "Vector 45 ACP",
-            "operators": [28],
+            "name": "Vector .45 ACP",
+            "operators": ["mira"],
             "ammo": 25,
             "firerate": 1200,
             "falloff": 5,
-            "barrel": [0,3,2,1],
-            "damage_armor_1": [17,23],
-            "damage_armor_2": [15,21],
-            "damage_armor_3": [11,18],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["compensator","suppressor","muzzle_brake","flash_hider"],
+            "damage": {
+                "armor_1":{"default":[17,23]},
+                "armor_2":{"default":[15,21]},
+                "armor_3":{"default":[11,18]}
+            }
         },
         "t_5_smg": {
             "name": "T-5 SMG",
-            "operators": [31],
+            "operators": ["lesion"],
             "ammo": 30,
             "firerate": 900,
             "falloff": 20,
-            "barrel": [2,1,0,3],
-            "damage_armor_1": [22,30],
-            "damage_armor_2": [20,27],
-            "damage_armor_3": [15,24],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["muzzle_brake","flash_hider","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[22,30]},
+                "armor_2":{"default":[20,27]},
+                "armor_3":{"default":[15,24]}
+            }
         },
         "six12": {
             "name": "SIX12",
-            "operators": [30],
+            "operators": ["ying"],
             "ammo": 6,
             "firerate": 0,
             "falloff": 0,
-            "barrel": [],
-            "damage_armor_1": [0,0],
-            "damage_armor_2": [0,0],
-            "damage_armor_3": [0,0],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[0,0]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
         },
         "six12_sd": {
             "name": "SIX12 SD",
-            "operators": [31],
+            "operators": ["lesion"],
             "ammo": 6,
             "firerate": 0,
             "falloff": 0,
-            "barrel": [],
-            "damage_armor_1": [0,0],
-            "damage_armor_2": [0,0],
-            "damage_armor_3": [0,0],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
-        },
-        "f0_12": {
-            "name": "f0 12",
-            "operators": [31],
-            "ammo": 6,
-            "firerate": 0,
-            "falloff": 0,
-            "barrel": [],
-            "damage_armor_1": [0,0],
-            "damage_armor_2": [0,0],
-            "damage_armor_3": [0,0],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[0,0]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
         },
         "bosg_12_2": {
-            "name": "bosg 12 2",
-            "operators": [31],
+            "name": "BOSG.12.2",
+            "operators": ["dokkaebi","vigil"],
             "ammo": 6,
             "firerate": 0,
             "falloff": 0,
-            "barrel": [],
-            "damage_armor_1": [0,0],
-            "damage_armor_2": [0,0],
-            "damage_armor_3": [0,0],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": [],
+            "damage": {
+                "armor_1":{"default":[0,0]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
         },
         "t_95_lsw": {
             "name": "T-95 LSW",
-            "operators": [30],
+            "operators": ["ying"],
             "ammo": 80,
             "firerate": 650,
             "falloff": 30,
-            "barrel": [2,1,0,3],
-            "damage_armor_1": [25,34],
-            "damage_armor_2": [22,30],
-            "damage_armor_3": [17,27],
-            "damage_armor_1_rook": [21,27],
-            "damage_armor_2_rook": [18,24],
-            "damage_armor_3_rook": [13,21]
+            "barrels": ["muzzle_brake","flash_hider","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[25,34], "rook":[21,27]},
+                "armor_2":{"default":[22,30], "rook":[18,24]},
+                "armor_3":{"default":[17,27], "rook":[13,21]}
+            }
         },
         "lmg_e": {
-            "name": "lmg e",
-            "operators": [30],
+            "name": "LMG-E",
+            "operators": ["zofia"],
             "ammo": 80,
             "firerate": 650,
             "falloff": 30,
-            "barrel": [2,1,0,3],
-            "damage_armor_1": [25,34],
-            "damage_armor_2": [22,30],
-            "damage_armor_3": [17,27],
-            "damage_armor_1_rook": [21,27],
-            "damage_armor_2_rook": [18,24],
-            "damage_armor_3_rook": [13,21]
+            "barrels": ["muzzle_brake","flash_hider","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[25,34], "rook":[21,27]},
+                "armor_2":{"default":[22,30], "rook":[18,24]},
+                "armor_3":{"default":[17,27], "rook":[13,21]}
+            }
         },
         "q_929": {
             "name": "Q-929",
-            "operators": [30],
+            "operators": ["ying","lesion"],
             "ammo": 80,
             "firerate": 650,
             "falloff": 30,
-            "barrel": [2,1,0,3],
-            "damage_armor_1": [25,34],
-            "damage_armor_2": [22,30],
-            "damage_armor_3": [17,27],
-            "damage_armor_1_rook": [21,27],
-            "damage_armor_2_rook": [18,24],
-            "damage_armor_3_rook": [13,21]
+            "barrels": ["muzzle_brake","flash_hider","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[25,34], "rook":[21,27]},
+                "armor_2":{"default":[22,30], "rook":[18,24]},
+                "armor_3":{"default":[17,27], "rook":[13,21]}
+            }
         },
         "scorpion_evo_3_a1": {
-            "name": "Scorpion EVO 3 A1",
-            "operators": [32],
+            "name": "SCORPION EVO 3 A1",
+            "operators": ["ela"],
             "ammo": 50,
             "firerate": 1080,
             "falloff": 20,
-            "barrel": [2,1,0,3],
-            "damage_armor_1": [21,28],
-            "damage_armor_2": [18,25],
-            "damage_armor_3": [14,22],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["muzzle_brake","flash_hider","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[21,28]},
+                "armor_2":{"default":[18,25]},
+                "armor_3":{"default":[14,22]}
+            }
         },
         "k1a": {
-            "name": "k1a",
-            "operators": [32],
+            "name": "K1A",
+            "operators": ["vigil"],
             "ammo": 50,
             "firerate": 1080,
             "falloff": 20,
-            "barrel": [2,1,0,3],
-            "damage_armor_1": [21,28],
-            "damage_armor_2": [18,25],
-            "damage_armor_3": [14,22],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["muzzle_brake","flash_hider","compensator","suppressor"],
+            "damage": {
+                "armor_1":{"default":[21,28]},
+                "armor_2":{"default":[18,25]},
+                "armor_3":{"default":[14,22]}
+            }
         },
         "fo_12": {
             "name": "FO-12",
-            "operators": [32],
+            "operators": ["ela"],
             "ammo": 10,
             "firerate": 0,
             "falloff": 0,
-            "barrel": [4,3],
-            "damage_armor_1": [0,0],
-            "damage_armor_2": [0,0],
-            "damage_armor_3": [0,0],
-            "damage_armor_1_rook": [0,0],
-            "damage_armor_2_rook": [0,0],
-            "damage_armor_3_rook": [0,0]
+            "barrels": ["extended_barrel","suppressor"],
+            "damage": {
+                "armor_1":{"default":[0,0]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
         },
         "rg15": {
             "name": "RG15",
-            "operators": [32],
+            "operators": ["ela","zofia",""],
             "ammo": 15,
             "firerate": 0,
             "falloff": 15,
-            "barrel": [2,3],
-            "damage_armor_1": [28,38],
-            "damage_armor_2": [25,34],
-            "damage_armor_3": [19,30],
-            "damage_armor_1_rook": [24,32],
-            "damage_armor_2_rook": [21,28],
-            "damage_armor_3_rook": [16,25]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[0,0]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
         },
         "keratos_357": {
-            "name": "keratos_357",
-            "operators": [32],
+            "name": "KERATOS .357",
+            "operators": ["maestro","alibi"],
             "ammo": 15,
             "firerate": 0,
             "falloff": 15,
-            "barrel": [2,3],
-            "damage_armor_1": [28,38],
-            "damage_armor_2": [25,34],
-            "damage_armor_3": [19,30],
-            "damage_armor_1_rook": [24,32],
-            "damage_armor_2_rook": [21,28],
-            "damage_armor_3_rook": [16,25]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[0,0]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
         },
         "bailiff_410": {
-            "name": "bailiff_410",
-            "operators": [32],
+            "name": "Bailiff 410",
+            "operators": ["maestro","alibi"],
             "ammo": 15,
             "firerate": 0,
             "falloff": 15,
-            "barrel": [2,3],
-            "damage_armor_1": [28,38],
-            "damage_armor_2": [25,34],
-            "damage_armor_3": [19,30],
-            "damage_armor_1_rook": [24,32],
-            "damage_armor_2_rook": [21,28],
-            "damage_armor_3_rook": [16,25]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[0,0]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
         },
         "alda_5_56": {
-            "name": "alda_5_56",
-            "operators": [32],
+            "name": "ALDA 5.56",
+            "operators": ["maestro"],
             "ammo": 15,
             "firerate": 0,
             "falloff": 15,
-            "barrel": [2,3],
-            "damage_armor_1": [28,38],
-            "damage_armor_2": [25,34],
-            "damage_armor_3": [19,30],
-            "damage_armor_1_rook": [24,32],
-            "damage_armor_2_rook": [21,28],
-            "damage_armor_3_rook": [16,25]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[0,0]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
         },
         "acs12": {
-            "name": "acs12",
-            "operators": [32],
+            "name": "ACS12",
+            "operators": ["maestro","alibi"],
             "ammo": 15,
             "firerate": 0,
             "falloff": 15,
-            "barrel": [2,3],
-            "damage_armor_1": [28,38],
-            "damage_armor_2": [25,34],
-            "damage_armor_3": [19,30],
-            "damage_armor_1_rook": [24,32],
-            "damage_armor_2_rook": [21,28],
-            "damage_armor_3_rook": [16,25]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[0,0]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
         },
         "mx4_storm": {
-            "name": "mx4_storm",
-            "operators": [32],
+            "name": "Mx4 Storm",
+            "operators": ["alibi"],
             "ammo": 15,
             "firerate": 0,
             "falloff": 15,
-            "barrel": [2,3],
-            "damage_armor_1": [28,38],
-            "damage_armor_2": [25,34],
-            "damage_armor_3": [19,30],
-            "damage_armor_1_rook": [24,32],
-            "damage_armor_2_rook": [21,28],
-            "damage_armor_3_rook": [16,25]
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[0,0]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
         }
     }
 }

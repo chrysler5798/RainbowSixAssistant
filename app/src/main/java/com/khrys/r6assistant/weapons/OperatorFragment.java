@@ -9,7 +9,6 @@ import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.util.Log;
 import android.view.View;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
@@ -24,8 +23,6 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Locale;
 
 public class OperatorFragment extends Fragment
 {
@@ -45,7 +42,7 @@ public class OperatorFragment extends Fragment
 
         Context mContext = getContext();
 
-        OperatorListExpandableAdapter mOperatorsListExpandableAdapter = new OperatorListExpandableAdapter(mContext, generateOperatorsList(mContext));
+        OperatorListExpandableAdapter mOperatorsListExpandableAdapter = new OperatorListExpandableAdapter(mContext, generateOperatorsList());
         mOperatorsListExpandableAdapter.setCustomParentAnimationViewId(R.id.parent_list_item_expand_arrow);
         mOperatorsListExpandableAdapter.setParentClickableViewAnimationDefaultDuration();
         mOperatorsListExpandableAdapter.setParentAndIconExpandOnClick(true);
@@ -54,25 +51,43 @@ public class OperatorFragment extends Fragment
         recyclerView.setLayoutManager(new LinearLayoutManager(mContext));
     }
 
-    private ArrayList<ParentObject> generateOperatorsList(Context context)
+    private ArrayList<ParentObject> generateOperatorsList()
     {
-        List<Operator> operators = new ArrayList<>();
+        ArrayList<ParentObject> parentObjects = new ArrayList<>();
 
         try
         {
             LoadData loadData = new LoadData();
-            JSONObject operatorsJSON = loadData.loadData(getContext(), loadData.RES_OPERATORS);
-            JSONArray operatorsList = operatorsJSON.getJSONArray("operators");
-            JSONObject operatorsData = operatorsJSON.getJSONObject("operators_data");
+            JSONArray operatorsList = loadData.loadList(getContext(), loadData.RES_OPERATORS);
+
+            JSONObject operatorsData = loadData.loadData(getContext(), loadData.RES_OPERATORS);
+            JSONObject weaponsData   = loadData.loadData(getContext(), loadData.RES_WEAPONS);
 
             for (int i = 0; i < operatorsList.length(); i++)
             {
                 String operatorId = operatorsList.getString(i);
-                JSONObject operator = operatorsData.getJSONObject(operatorId);
+                JSONObject operatorData = operatorsData.getJSONObject(operatorId);
 
-                int imgid = getResources().getIdentifier("o_" + operatorId, "drawable", context.getPackageName());
+                int operatorImageId = getResources().getIdentifier("o_" + operatorId, "drawable", getContext().getPackageName());
 
-                operators.add(new Operator(operator.getString("name"), imgid));
+                JSONArray operatorWeaponsPrimary = operatorData.getJSONArray("weapons_primary");
+                JSONArray operatorWeaponsSecondary = operatorData.getJSONArray("weapons_secondary");
+
+                ArrayList<Object> childList = new ArrayList<>();
+                for (int j = 0; j < operatorWeaponsPrimary.length(); j++)
+                {
+                    childList.add(generateWeaponObj(weaponsData, operatorWeaponsPrimary.getString(j)));
+                }
+
+                for (int j = 0; j < operatorWeaponsSecondary.length(); j++)
+                {
+                    childList.add(generateWeaponObj(weaponsData, operatorWeaponsSecondary.getString(j)));
+                }
+
+                Operator operator = new Operator(operatorId, operatorData.getString("name"), operatorImageId);
+                operator.setChildObjectList(childList);
+
+                parentObjects.add(operator);
             }
         }
         catch (JSONException e)
@@ -80,34 +95,14 @@ public class OperatorFragment extends Fragment
             e.printStackTrace();
         }
 
-        ArrayList<ParentObject> parentObjects = new ArrayList<>();
-        for (Operator operator : operators)
-        {
-            String op = operator.getName().toLowerCase(Locale.ENGLISH);
-            op = op.replace('ä','a');
-            op = op.replace('ã','a');
-            int arrayId = getResources().getIdentifier(op, "array", getContext().getPackageName());
-            Log.i("GETSTRINGARRAY", "[" + op + "]");
-            String[] opWeapon = getResources().getStringArray(arrayId);
-            int endWeapons = Integer.parseInt(opWeapon[3])+5;
-
-            ArrayList<Object> childList = new ArrayList<>();
-
-            for (int j = 5; j < endWeapons; j++)
-            {
-                String arme = opWeapon[j];
-
-                String imgArmeId = "g_" + arme;
-                imgArmeId = imgArmeId.replace('-', '_');
-                imgArmeId = imgArmeId.replace(' ', '_');
-
-                int resID = getResources().getIdentifier(imgArmeId, "drawable", getContext().getPackageName());
-
-                childList.add(new Weapon(resID, arme));
-            }
-            operator.setChildObjectList(childList);
-            parentObjects.add(operator);
-        }
         return parentObjects;
+    }
+
+    private Weapon generateWeaponObj(JSONObject weaponsData, String weaponId) throws JSONException
+    {
+        String weaponName = weaponsData.getJSONObject(weaponId).getString("name");
+        int weaponImageId = getResources().getIdentifier("g_" + weaponId, "drawable", getContext().getPackageName());
+
+        return new Weapon(weaponId, weaponImageId, weaponName);
     }
 }

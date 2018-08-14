@@ -25,7 +25,7 @@ public class WeaponsHeaderListAdapter extends RecyclerView.Adapter<WeaponsHeader
     private ArrayList<Weapon> weapons;
     private LayoutInflater inflater;
 
-    public WeaponsHeaderListAdapter(ArrayList<Weapon> weapons)
+    WeaponsHeaderListAdapter(ArrayList<Weapon> weapons)
     {
         this.weapons = weapons;
     }
@@ -47,8 +47,8 @@ public class WeaponsHeaderListAdapter extends RecyclerView.Adapter<WeaponsHeader
     @Override
     public void onBindViewHolder(WeaponsHeaderListAdapter.MyViewHolder holder, int position)
     {
-        Integer imgdata = weapons.get(position).getImg();
-        String txtdata = weapons.get(position).getNom();
+        Integer imgdata = weapons.get(position).getImageId();
+        String txtdata = weapons.get(position).getName();
         holder.display(imgdata,txtdata);
     }
 
@@ -71,7 +71,7 @@ public class WeaponsHeaderListAdapter extends RecyclerView.Adapter<WeaponsHeader
                 public void onClick(View view)
                 {
                     Intent newAct = new Intent(context, WeaponActivity.class);
-                    newAct.putExtra("arme", textV.getText().toString());
+                    newAct.putExtra("weaponId", weapons.get(getAdapterPosition()).getId());
                     context.startActivity(newAct);
                 }
             });

@@ -7,7 +7,6 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
@@ -15,13 +14,18 @@ import android.widget.Switch;
 import android.widget.TextView;
 
 import com.khrys.r6assistant.R;
+import com.khrys.r6assistant.data.LoadData;
 import com.khrys.r6assistant.operators.OperatorActivity;
 
-import java.util.Locale;
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
 
 /*
- * Created by Chrysler on 3/10/2017.
- * RainbowSixAssistant
+ * Created by Khrys.
+ *
+ * App : RainbowSixAssistant
+ * Info : 3/10/2017 []
 */
 
 public class WeaponActivity extends AppCompatActivity
@@ -29,8 +33,7 @@ public class WeaponActivity extends AppCompatActivity
 
     ImageView imgRookArmor, imgArmor1, imgArmor2, imgArmor3;
     TextView txtArmorL1,txtArmorB1,txtArmorL2, txtArmorB2, txtArmorL3, txtArmorB3;
-    String[] statsWeapon;
-    LinearLayout layoutBarrel1,layoutBarrel2,layoutBarrel3,layoutBarrel4,layoutBarrel5;
+    JSONObject weaponDamage;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -49,22 +52,10 @@ public class WeaponActivity extends AppCompatActivity
         TextView txtNomArme = findViewById(R.id.txtNomArme);
         ImageView imgViewArme = findViewById(R.id.imgArme);
 
-        //Operator image
-        ImageView imgViewOp1 = findViewById(R.id.imgAgent1);
-        ImageView imgViewOp2 = findViewById(R.id.imgAgent2);
-        ImageView imgViewOp3 = findViewById(R.id.imgAgent3);
-        ImageView imgViewOp4 = findViewById(R.id.imgAgent4);
-        ImageView imgViewOp5 = findViewById(R.id.imgAgent5);
-
         //Basic informations
         TextView txtViewAmmo = findViewById(R.id.txtAmmo);
         TextView txtViewFirerate = findViewById(R.id.txtFirerate);
         TextView txtViewDamagefall = findViewById(R.id.txtDamagefalloff);
-
-        /*
-            ************
-            Damage stats
-        */
 
         //Rook Amor
         Switch switchRookArmor = findViewById(R.id.switchRookarmor);
@@ -83,187 +74,124 @@ public class WeaponActivity extends AppCompatActivity
         txtArmorL3 = findViewById(R.id.txtArmorL3);
         txtArmorB3 = findViewById(R.id.txtArmorB3);
 
-        //Barrel Layouts
-        layoutBarrel1 = findViewById(R.id.layoutBarrel1);
-        layoutBarrel2 = findViewById(R.id.layoutBarrel2);
-        layoutBarrel3 = findViewById(R.id.layoutBarrel3);
-        layoutBarrel4 = findViewById(R.id.layoutBarrel4);
-        layoutBarrel5 = findViewById(R.id.layoutBarrel5);
+        String weaponId = getIntent().getStringExtra("weaponId");
 
-        //Barrel infos
-        ImageView imgBarrel1 = findViewById(R.id.imgBarrel1);
-        ImageView imgBarrel2 = findViewById(R.id.imgBarrel2);
-        ImageView imgBarrel3 = findViewById(R.id.imgBarrel3);
-        ImageView imgBarrel4 = findViewById(R.id.imgBarrel4);
-        ImageView imgBarrel5 = findViewById(R.id.imgBarrel5);
-
-        TextView txtBarrel1 = findViewById(R.id.txtBarrel1);
-        TextView txtBarrel2 = findViewById(R.id.txtBarrel2);
-        TextView txtBarrel3 = findViewById(R.id.txtBarrel3);
-        TextView txtBarrel4 = findViewById(R.id.txtBarrel4);
-        TextView txtBarrel5 = findViewById(R.id.txtBarrel5);
-
-        /*
-            ************
-        */
-
-        String armeId = getIntent().getStringExtra("arme");
-
-        String imgArmeId = "g_"+armeId;
-        imgArmeId = imgArmeId.replace('-','_');
-        imgArmeId = imgArmeId.replace(' ','_');
-        imgArmeId = imgArmeId.replace('.','_');
-        imgArmeId = imgArmeId.toLowerCase(Locale.ENGLISH);
-
-        int resID = getResources().getIdentifier(imgArmeId, "drawable", getPackageName());
-
-        imgViewArme.setImageResource(resID);
-        txtNomArme.setText(armeId);
-
-
-        int arrayId = getResources().getIdentifier(imgArmeId, "array", getApplicationContext().getPackageName());
-        statsWeapon = getResources().getStringArray(arrayId);
-
-        setupAgent(0,imgViewOp1);
-        setupAgent(1,imgViewOp2);
-        setupAgent(2,imgViewOp3);
-        setupAgent(3,imgViewOp4);
-        setupAgent(4,imgViewOp5);
-
-        if(statsWeapon[5].equals("0"))
+        try
         {
-            txtViewAmmo.setText("-");
-        }
-        else
-        {
-            txtViewAmmo.setText(String.valueOf(statsWeapon[5]));
-        }
+            LoadData loadData = new LoadData();
+            JSONObject weaponData = loadData.loadData(getApplicationContext(), loadData.RES_WEAPONS).getJSONObject(weaponId);
 
-        if(statsWeapon[6].equals("0"))
-        {
-            txtViewFirerate.setText("-");
-        }
-        else
-        {
-            txtViewFirerate.setText(String.valueOf(statsWeapon[6]));
-        }
+            int weaponImageId = getResources().getIdentifier("g_" + weaponId, "drawable", getPackageName());
 
-        if(String.valueOf(statsWeapon[7]).equals(""))
-        {
-            txtViewDamagefall.setText("-");
-        }
-        else
-        {
-            String txtDamage = statsWeapon[7]+"m";
-            txtViewDamagefall.setText(txtDamage);
-        }
+            JSONArray weaponOperators = weaponData.getJSONArray("operators");
 
-        switchTextArmor(0);
+            int weaponAmmo     = weaponData.getInt("ammo");
+            int weaponFirerate = weaponData.getInt("firerate");
+            int weaponFalloff  = weaponData.getInt("falloff");
 
-        if(statsWeapon[14].equals("0"))
-        {
-            switchRookArmor.setVisibility(View.INVISIBLE);
-            imgRookArmor.setVisibility(View.INVISIBLE);
-        }
+            JSONArray weaponBarrels = weaponData.getJSONArray("barrels");
 
-        switchRookArmor.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
-        {
-            @Override
-            public void onCheckedChanged(CompoundButton compoundButton, boolean b)
+            weaponDamage = weaponData.getJSONObject("damage");
+
+            imgViewArme.setImageResource(weaponImageId);
+            txtNomArme.setText(weaponData.getString("name"));
+
+            for(int i = 0; i < weaponOperators.length(); i++)
             {
+                String operatorId = weaponOperators.getString(i);
 
-                int drawRook, draw1, draw2, draw3;
-                if(b)
-                {
-                    drawRook = R.drawable.o_rook;
-                    draw1 = R.drawable.armor_rook_light;
-                    draw2 = R.drawable.armor_rook_medium;
-                    draw3 = R.drawable.armor_rook_strong;
-                    switchTextArmor(1);
-                }
-                else
-                {
-                    drawRook = R.drawable.o_rook_bw;
-                    draw1 = R.drawable.ostat_armor_1;
-                    draw2 = R.drawable.ostat_armor_2;
-                    draw3 = R.drawable.ostat_armor_3;
-                    switchTextArmor(0);
-                }
+                String imgViewId = "imgAgent" + (i + 1);
 
-                imgRookArmor.setImageResource(drawRook);
-                imgArmor1.setImageResource(draw1);
-                imgArmor2.setImageResource(draw2);
-                imgArmor3.setImageResource(draw3);
+                ImageView operatorImageView = findViewById(getResources().getIdentifier(imgViewId, "id", getPackageName()));
+                int operatorImageId = getResources().getIdentifier("o_" + operatorId, "drawable", getPackageName());
 
+                operatorImageView.setImageResource(operatorImageId);
+                operatorImageView.setOnClickListener(new OnClickOperator(operatorId));
+                operatorImageView.setVisibility(View.VISIBLE);
             }
-        });
 
-        setupBarrel(20, layoutBarrel1, imgBarrel1, txtBarrel1);
-        setupBarrel(21, layoutBarrel2, imgBarrel2, txtBarrel2);
-        setupBarrel(22, layoutBarrel3, imgBarrel3, txtBarrel3);
-        setupBarrel(23, layoutBarrel4, imgBarrel4, txtBarrel4);
-        setupBarrel(24, layoutBarrel5, imgBarrel5, txtBarrel5);
+            txtViewAmmo.setText(getStringFromDataInt(weaponAmmo));
+            txtViewFirerate.setText(getStringFromDataInt(weaponFirerate));
+
+            String weaponFalloffString = getStringFromDataInt(weaponFalloff) + "m";
+            txtViewDamagefall.setText(weaponFalloffString);
+
+            for(int i = 0; i < weaponBarrels.length(); i++)
+            {
+                String barrelId = weaponBarrels.getString(i);
+
+                String intForId = String.valueOf(i + 1);
+                LinearLayout barrelLayout = findViewById(getResources().getIdentifier("layoutBarrel" + intForId, "id", getPackageName()));
+                ImageView barrelImageView = findViewById(getResources().getIdentifier("imgBarrel" + intForId, "id", getPackageName()));
+                TextView barrelTextView = findViewById(getResources().getIdentifier("txtBarrel" + intForId, "id", getPackageName()));
+
+                int barrelNameId = getResources().getIdentifier(barrelId, "string", getPackageName());
+                int barrelImageId = getResources().getIdentifier("gb_" + barrelId, "drawable", getPackageName());
+
+                barrelTextView.setText(getResources().getString(barrelNameId));
+                barrelImageView.setImageResource(barrelImageId);
+
+                barrelLayout.setVisibility(View.VISIBLE);
+            }
+
+            setDamageData(false);
+
+            if(!weaponDamage.getJSONObject("armor_1").has("rook"))
+            {
+                switchRookArmor.setVisibility(View.INVISIBLE);
+                imgRookArmor.setVisibility(View.INVISIBLE);
+            }
+
+            switchRookArmor.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener()
+            {
+                @Override
+                public void onCheckedChanged(CompoundButton compoundButton, boolean checked)
+                {
+                    int drawRook = checked ? R.drawable.o_rook            : R.drawable.o_rook_bw;
+                    int draw1    = checked ? R.drawable.armor_rook_light  : R.drawable.ostat_armor_1;
+                    int draw2    = checked ? R.drawable.armor_rook_medium : R.drawable.ostat_armor_2;
+                    int draw3    = checked ? R.drawable.armor_rook_strong : R.drawable.ostat_armor_3;
+
+                    imgRookArmor.setImageResource(drawRook);
+                    imgArmor1.setImageResource(draw1);
+                    imgArmor2.setImageResource(draw2);
+                    imgArmor3.setImageResource(draw3);
+
+                    setDamageData(checked);
+                }
+            });
+        }
+        catch (JSONException e)
+        {
+            e.printStackTrace();
+        }
     }
 
-    void switchTextArmor(int type)
+    String getStringFromDataInt(int dataInt)
     {
-        if(type == 0)
-        {
-            txtArmorL1.setText(String.valueOf(statsWeapon[8]));
-            txtArmorB1.setText(String.valueOf(statsWeapon[9]));
-            txtArmorL2.setText(String.valueOf(statsWeapon[10]));
-            txtArmorB2.setText(String.valueOf(statsWeapon[11]));
-            txtArmorL3.setText(String.valueOf(statsWeapon[12]));
-            txtArmorB3.setText(String.valueOf(statsWeapon[13]));
-        }
-        else
-        {
-            txtArmorL1.setText(String.valueOf(statsWeapon[14]));
-            txtArmorB1.setText(String.valueOf(statsWeapon[15]));
-            txtArmorL2.setText(String.valueOf(statsWeapon[16]));
-            txtArmorB2.setText(String.valueOf(statsWeapon[17]));
-            txtArmorL3.setText(String.valueOf(statsWeapon[18]));
-            txtArmorB3.setText(String.valueOf(statsWeapon[19]));
-        }
+        return dataInt > 0 ? String.valueOf(dataInt) : "-";
     }
 
-    void setupAgent(int type, ImageView imgV)
+    void setDamageData(boolean withRook)
     {
-        if(!statsWeapon[type].equals(""))
+        try
         {
-            String opeB = String.valueOf(statsWeapon[type]);
-            String op = "o_"+opeB;
-            int imgid = getResources().getIdentifier(op, "drawable", getPackageName());
-            imgV.setImageResource(imgid);
-            imgV.setOnClickListener(new clickImgOperator(opeB));
-        }
-        else
-        {
-            LinearLayout.LayoutParams params = (LinearLayout.LayoutParams)
-            imgV.getLayoutParams();
-            params.weight = 0.0f;
-            imgV.setLayoutParams(params);
-            imgV.getLayoutParams().width= ViewGroup.LayoutParams.WRAP_CONTENT;
-        }
-    }
+            String damageType = withRook ? "rook" : "default";
 
-    void setupBarrel(int type, LinearLayout layoutV, ImageView imgV, TextView txtV)
-    {
-        if(!statsWeapon[type].equals(""))
-        {
+            JSONArray damageArmor1 = weaponDamage.getJSONObject("armor_1").getJSONArray(damageType);
+            JSONArray damageArmor2 = weaponDamage.getJSONObject("armor_2").getJSONArray(damageType);
+            JSONArray damageArmor3 = weaponDamage.getJSONObject("armor_3").getJSONArray(damageType);
 
-            String finaltxt = String.valueOf(statsWeapon[type]);
-            int txtId = getResources().getIdentifier(finaltxt, "string", getPackageName());
-            txtV.setText(getResources().getString(txtId).toUpperCase(Locale.ENGLISH));
-
-            String txt = String.valueOf(statsWeapon[type]);
-            String bar = "gb_"+txt;
-            int imgid = getResources().getIdentifier(bar, "drawable", getPackageName());
-            imgV.setImageResource(imgid);
+            txtArmorL1.setText(String.valueOf(damageArmor1.get(0)));
+            txtArmorB1.setText(String.valueOf(damageArmor1.get(1)));
+            txtArmorL2.setText(String.valueOf(damageArmor2.get(0)));
+            txtArmorB2.setText(String.valueOf(damageArmor2.get(1)));
+            txtArmorL3.setText(String.valueOf(damageArmor3.get(0)));
+            txtArmorB3.setText(String.valueOf(damageArmor3.get(1)));
         }
-        else
+        catch (JSONException e)
         {
-            layoutV.setVisibility(View.GONE);
+            e.printStackTrace();
         }
     }
 
@@ -293,14 +221,14 @@ public class WeaponActivity extends AppCompatActivity
         }
     }
 
-    private class clickImgOperator implements View.OnClickListener
+    private class OnClickOperator implements View.OnClickListener
     {
-        String operator = "";
+        String operatorId;
 
-        clickImgOperator(String operator)
+        OnClickOperator(String operatorId)
         {
             super();
-            this.operator = operator;
+            this.operatorId = operatorId;
         }
 
         @Override
@@ -308,7 +236,7 @@ public class WeaponActivity extends AppCompatActivity
         {
             Context context = view.getContext();
             Intent newOperator = new Intent(context, OperatorActivity.class);
-            newOperator.putExtra("operator", operator);
+            newOperator.putExtra("operatorId", operatorId);
             context.startActivity(newOperator);
         }
     }

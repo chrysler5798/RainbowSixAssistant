@@ -1,11 +1,11 @@
 package com.khrys.r6assistant.operators;
 /*
- * Created by Louis on 31/05/2017.
- * 
- * R6Assistant
+ * Created by Khrys.
+ *
+ * App : RainbowSixAssistant
+ * Info : 05/31/2017 []
 */
 
-import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
@@ -18,18 +18,16 @@ import android.widget.TextView;
 
 import com.khrys.r6assistant.R;
 import com.khrys.r6assistant.data.LoadData;
+import com.khrys.r6assistant.weapons.Weapon;
 
+import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-@SuppressWarnings("ResourceType")
 public class OperatorActivity extends AppCompatActivity
 {
-    String operator;
-    int position;
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -42,8 +40,7 @@ public class OperatorActivity extends AppCompatActivity
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
-        operator = getIntent().getStringExtra("operator");
-        position = getIntent().getIntExtra("position", 0);
+        String operatorId = getIntent().getStringExtra("operatorId");
 
         //ScrollView
         ScrollView scroll = findViewById(R.id.globalScroll);
@@ -96,96 +93,85 @@ public class OperatorActivity extends AppCompatActivity
         ImageView imgUniqueGadget =  findViewById(R.id.imageUniqueGadget);
         TextView txtUniqueGadget =  findViewById(R.id.textUniqueGadget);
 
-        ArrayList<String> namePrimWeapon = new ArrayList<>();
-        ArrayList<Integer> picsPrimWeapon = new ArrayList<>();
+        ArrayList<Weapon> operatorWeaponsPrimaryList = new ArrayList<>();
+        ArrayList<Weapon> operatorWeaponsSecondaryList = new ArrayList<>();
 
-        ArrayList<String> nameScdWeapon = new ArrayList<>();
-        ArrayList<Integer> picsScdWeapon = new ArrayList<>();
+        LoadData dataLoader = new LoadData();
+        try
+        {
+            JSONObject operatorData = dataLoader.loadData(getApplicationContext(), dataLoader.RES_OPERATORS).getJSONObject(operatorId);
+            JSONObject armiesData = dataLoader.loadData(getApplicationContext(), dataLoader.RES_ARMIES);
+            JSONObject weaponsData = dataLoader.loadData(getApplicationContext(), dataLoader.RES_WEAPONS);
 
-            LoadData dataLoader = new LoadData();
-            //JSONObject operatorInfo = dataLoader.loadData(getApplicationContext(), dataLoader.RES_OPERATORS_INFOS).getJSONObject("operator_"+String.valueOf(position));
+            String operatorName = operatorData.getString("name");
+            int operatorSide = operatorData.getInt("side");
 
-            TypedArray opArray = getResources().obtainTypedArray(getResources().getIdentifier(operator, "array", getApplicationContext().getPackageName()));
+            String operatorArmyId = operatorData.getString("army");
+            JSONObject operatorArmy = armiesData.getJSONObject(operatorArmyId);
+            String operatorArmyName = operatorArmy.getString("name");
+            String operatorArmyCountry = operatorArmy.getString("country");
 
-            String sideOp = opArray.getString(0);
-            //int sideOp = operatorInfo.getInt("side");
-            String flagOp = opArray.getString(1);
-            String armyOp = opArray.getString(2);
+            JSONArray operatorWeaponsPrimary = operatorData.getJSONArray("weapons_primary");
+            JSONArray operatorWeaponsSecondary = operatorData.getJSONArray("weapons_secondary");
 
-            int numberWeapons = opArray.getInt(3, 0) + 5;
-            int numberScd = opArray.getInt(4, 0) + 5;
-            int numberSpeed = opArray.getInt(numberWeapons, 0);
-            int numberArmor = opArray.getInt(numberWeapons+ 1, 0);
-//            int speedOp = operatorInfo.getInt("speed");
-//            int armorOp = operatorInfo.getInt("armor");
+            int operatorSpeed = operatorData.getInt("speed");
+            int operatorArmor = operatorData.getInt("armor");
 
-            String numberGadget1 = opArray.getString(numberWeapons + 2);
-            String nameGadget1 = opArray.getString(numberWeapons + 3);
+            JSONArray operatorGadgets = operatorData.getJSONArray("gadgets");
+            JSONArray operatorNbGadgets = operatorData.getJSONArray("gadgets_nb");
 
-            String numberGadget2 = opArray.getString(numberWeapons + 4);
-            String nameGadget2 = opArray.getString(numberWeapons + 5);
+            int operatorUniqueGadgetNb = operatorData.getInt("gadget_unique_nb");
 
-            int numberUniqueGadget = opArray.getInt(numberWeapons + 6, 0);
-
-            for (int i = 5; i < numberScd; i++)
+            for (int i = 0; i < operatorWeaponsPrimary.length(); i++)
             {
-                String weapon = opArray.getString(i);
-                namePrimWeapon.add(weapon);
+                String weaponId = operatorWeaponsPrimary.getString(i);
+                String weaponName = weaponsData.getJSONObject(weaponId).getString("name");
 
-                picsPrimWeapon.add(getResources().getIdentifier(txtToIdImg(weapon), "drawable", getApplicationContext().getPackageName()));
+                int weaponImageId = getResources().getIdentifier("g_" + weaponId, "drawable", getPackageName());
+
+                operatorWeaponsPrimaryList.add(new Weapon(weaponId, weaponImageId, weaponName));
             }
 
-            for (int i = numberScd; i < numberWeapons; i++)
+            for (int i = 0; i < operatorWeaponsSecondary.length(); i++)
             {
-                String weapon = opArray.getString(i);
-                nameScdWeapon.add(weapon);
+                String weaponId = operatorWeaponsSecondary.getString(i);
+                String weaponName = weaponsData.getJSONObject(weaponId).getString("name");
 
-                picsScdWeapon.add(getResources().getIdentifier(txtToIdImg(weapon), "drawable", getApplicationContext().getPackageName()));
+                int weaponImageId = getResources().getIdentifier("g_" + weaponId, "drawable", getPackageName());
+
+                operatorWeaponsSecondaryList.add(new Weapon(weaponId, weaponImageId, weaponName));
             }
-
-            opArray.recycle();
-
 
             //Setup name and icon
             //
-            int iconRess = getResources().getIdentifier("o_"+operator, "drawable", getApplicationContext().getPackageName());
-            imgIcon.setImageResource(iconRess);
+            txtName.setText(operatorName);
 
-            txtName.setText(operator);
+            int operatorIconImageId = getResources().getIdentifier("o_" + operatorId, "drawable", getPackageName());
+            imgIcon.setImageResource(operatorIconImageId);
 
 
             //Setup side
             //
-            int sideTxtId = 0;
+            int operatorSideName = (operatorSide == 1) ? R.string.attacker : R.string.defender;
+            int operatorSideIconId = getResources().getIdentifier("op_side_" + operatorSide, "drawable", getPackageName());
 
-            if(sideOp.equals("def"))
-            {
-                sideTxtId = R.string.defender;
-            }
-            else if(sideOp.equals("atk"))
-            {
-                sideTxtId = R.string.attacker;
-            }
-
-            int iconSide = getResources().getIdentifier("op_side_"+sideOp, "drawable", getApplicationContext().getPackageName());
-
-            txtSide.setText(sideTxtId);
-            imgSide.setImageResource(iconSide);
+            txtSide.setText(operatorSideName);
+            imgSide.setImageResource(operatorSideIconId);
 
 
             //Setup flag and army
             //
-            int iconFlag = getResources().getIdentifier("flag_"+flagOp, "drawable", getApplicationContext().getPackageName());
+            int operatorArmyFlagId = getResources().getIdentifier("flag_" + operatorArmyCountry, "drawable", getPackageName());
 
-            txtArmy.setText(armyOp);
-            imgFlag.setImageResource(iconFlag);
+            txtArmy.setText(operatorArmyName);
+            imgFlag.setImageResource(operatorArmyFlagId);
 
 
             //Setup armor
             //
-            int armorTxt, armorImg;
+            int armorTxt = 0, armorImg = 0;
 
-            switch (numberArmor)
+            switch (operatorArmor)
             {
                 case 1:
                     armorTxt = R.string.armor_light;
@@ -201,26 +187,22 @@ public class OperatorActivity extends AppCompatActivity
                     armorTxt = R.string.armor_heavy;
                     armorImg = R.drawable.ostat_armor_3;
                     break;
-
-                default:
-                    armorTxt = 0;
-                    armorImg = 0;
             }
 
-           txtArmor.setText(armorTxt);
-           imgArmor.setImageResource(armorImg);
+            txtArmor.setText(armorTxt);
+            imgArmor.setImageResource(armorImg);
 
 
             //Setup image operator
-            int imageOp = getResources().getIdentifier("oi_"+operator, "drawable", getApplicationContext().getPackageName());
-            imgOp.setImageResource(imageOp);
+            int operatorImageId = getResources().getIdentifier("oi_" + operatorId, "drawable", getPackageName());
+            imgOp.setImageResource(operatorImageId);
 
 
             //Setup speed
             //
-            int speedTxt, speedImg;
+            int speedTxt = 0, speedImg = 0;
 
-            switch (numberSpeed)
+            switch (operatorSpeed)
             {
                 case 1:
                     speedTxt = R.string.speed_slow;
@@ -236,10 +218,6 @@ public class OperatorActivity extends AppCompatActivity
                     speedTxt = R.string.speed_fast;
                     speedImg = R.drawable.ostat_speed_3;
                     break;
-
-                default:
-                    speedTxt = 0;
-                    speedImg = 0;
             }
 
             txtSpeed.setText(speedTxt);
@@ -248,9 +226,9 @@ public class OperatorActivity extends AppCompatActivity
 
             //Setup weapons
             //
-            if(!namePrimWeapon.isEmpty())
+            if(operatorWeaponsPrimaryList.size() > 0)
             {
-                rvPrim.setAdapter(new WeaponsListAdapter(namePrimWeapon, picsPrimWeapon));
+                rvPrim.setAdapter(new WeaponsListAdapter(operatorWeaponsPrimaryList));
                 rvPrim.setLayoutManager(new LinearLayoutManager(this));
             }
             else
@@ -259,9 +237,9 @@ public class OperatorActivity extends AppCompatActivity
                 txtPrimary.setVisibility(View.GONE);
             }
 
-            if(!nameScdWeapon.isEmpty())
+            if(operatorWeaponsSecondaryList.size() > 0)
             {
-                rvScd.setAdapter(new WeaponsListAdapter(nameScdWeapon, picsScdWeapon));
+                rvScd.setAdapter(new WeaponsListAdapter(operatorWeaponsSecondaryList));
                 rvScd.setLayoutManager(new LinearLayoutManager(this));
             }
             else
@@ -273,54 +251,51 @@ public class OperatorActivity extends AppCompatActivity
 
             //Setup gadget
             //
-            String idGadget1 = "gad_"+nameGadget1;
-            String idGadget2 = "gad_"+nameGadget2;
+            String operatorGadget1Id = "gad_" + operatorGadgets.getString(0);
+            String operatorGadget2Id = "gad_" + operatorGadgets.getString(1);
 
-            int imgeGadget1 = getResources().getIdentifier(idGadget1, "drawable", getPackageName());
-            int imageGadget2 = getResources().getIdentifier(idGadget2, "drawable", getPackageName());
+            int operatorGadget1Number = operatorNbGadgets.getInt(0);
+            int operatorGadget2Number = operatorNbGadgets.getInt(1);
 
-            int textGadget1 = getResources().getIdentifier(idGadget1, "string", getPackageName());
-            int textGadget2 = getResources().getIdentifier(idGadget2, "string", getPackageName());
+            int operatorGadget1ImageId = getResources().getIdentifier(operatorGadget1Id, "drawable", getPackageName());
+            int operatorGadget2ImageId = getResources().getIdentifier(operatorGadget2Id, "drawable", getPackageName());
 
-            txtNumGadget1.setText(numberGadget1);
-            txtNameGadget1.setText(getString(textGadget1));
+            int operatorGadget1NameId = getResources().getIdentifier(operatorGadget1Id, "string", getPackageName());
+            int operatorGadget2NameId = getResources().getIdentifier(operatorGadget2Id, "string", getPackageName());
 
-            txtNumGadget2.setText(numberGadget2);
-            txtNameGadget2.setText(getString(textGadget2));
+            txtNumGadget1.setText(String.valueOf(operatorGadget1Number));
+            txtNameGadget1.setText(getString(operatorGadget1NameId));
 
-            imgGadget1.setImageResource(imgeGadget1);
-            imgGadget2.setImageResource(imageGadget2);
+            txtNumGadget2.setText(String.valueOf(operatorGadget2Number));
+            txtNameGadget2.setText(getString(operatorGadget2NameId));
+
+            imgGadget1.setImageResource(operatorGadget1ImageId);
+            imgGadget2.setImageResource(operatorGadget2ImageId);
 
             //Setup unique gadget
             //
-
-            String idGadget = "ga_"+operator;
-            String idTitleGadget = "ugat_"+operator;
-            String idDescGadget = "uga_"+operator;
-
-            int titleUnGadget = getResources().getIdentifier(idTitleGadget, "string", getPackageName());
-            int imgUnGadget = getResources().getIdentifier(idGadget, "drawable", getPackageName());
-            int txtUnGadget = getResources().getIdentifier(idDescGadget, "string", getPackageName());
-
-            String titleGadgetString = getString(titleUnGadget);
-            if(numberUniqueGadget != 0)
+            if(operatorUniqueGadgetNb > 0)
             {
-                titleGadgetString += " x"+numberUniqueGadget;
+            }
+            int operatorUniqueGadgetNameId = getResources().getIdentifier("ugat_" + operatorId, "string", getPackageName());
+            int operatorUniqueGadgetDescId = getResources().getIdentifier("uga_" + operatorId, "string", getPackageName());
+            int operatorUniqueGadgetImageId = getResources().getIdentifier("ga_" + operatorId, "drawable", getPackageName());
+
+            String operatorUniqueGadgetName = getString(operatorUniqueGadgetNameId);
+            if(operatorUniqueGadgetNb > 0)
+            {
+                operatorUniqueGadgetName += " x" + operatorUniqueGadgetNb;
             }
 
-            titleUniqueGadget.setText(titleGadgetString);
-            imgUniqueGadget.setImageResource(imgUnGadget);
-            txtUniqueGadget.setText(txtUnGadget);
+            titleUniqueGadget.setText(operatorUniqueGadgetName);
+            imgUniqueGadget.setImageResource(operatorUniqueGadgetImageId);
+            txtUniqueGadget.setText(operatorUniqueGadgetDescId);
+        }
+        catch (JSONException e)
+        {
+            e.printStackTrace();
+        }
     }
-
-    String txtToIdImg(String txtToEdit)
-    {
-        String imgId = "g_"+txtToEdit;
-        imgId = imgId.replace(' ', '_');
-        imgId = imgId.replace('-', '_');
-        return imgId;
-    }
-
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item)

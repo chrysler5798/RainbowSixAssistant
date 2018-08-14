@@ -1,21 +1,22 @@
 package com.khrys.r6assistant.operators;
 /*
- * Created by Louis on 31/05/2017.
- * 
- * R6Assistant
+ * Created by Khrys.
+ *
+ * App : RainbowSixAssistant
+ * Info : 05/31/2017 []
 */
 
 public class Operator
 {
     private String id;
-    private int idImg;
-    private String txtNom;
+    private int imageId;
+    private String name;
 
-    Operator(String id, int idImg, String txtNom)
+    Operator(String id, int imageId, String name)
     {
         this.id = id;
-        this.idImg = idImg;
-        this.txtNom = txtNom;
+        this.imageId = imageId;
+        this.name = name;
     }
 
     public String getId()
@@ -23,13 +24,13 @@ public class Operator
         return id;
     }
 
-    public int getImg()
+    public int getImageId()
     {
-        return idImg;
+        return imageId;
     }
 
-    public String getNom()
+    public String getName()
     {
-        return txtNom;
+        return name;
     }
 }

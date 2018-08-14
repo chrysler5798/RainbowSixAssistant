@@ -52,18 +52,17 @@ public class WeaponsFragment extends Fragment
         try
         {
             LoadData loadData = new LoadData();
-            JSONObject operatorsJSON = loadData.loadData(getContext(), loadData.RES_WEAPONS);
-            JSONArray weaponsList = operatorsJSON.getJSONArray("weapons_list");
-            JSONObject weaponsData = operatorsJSON.getJSONObject("weapons");
+            JSONArray weaponsList = loadData.loadList(getContext(), loadData.RES_WEAPONS);
+            JSONObject weaponsData = loadData.loadData(getContext(), loadData.RES_WEAPONS);
 
             for (int i = 0; i < weaponsList.length(); i++)
             {
                 String weaponId = weaponsList.getString(i);
                 JSONObject weapon = weaponsData.getJSONObject(weaponId);
 
-                int imgid = getResources().getIdentifier("g_" + weaponId, "drawable", view.getContext().getPackageName());
+                int imgId = getResources().getIdentifier("g_" + weaponId, "drawable", view.getContext().getPackageName());
 
-                weapons.add(new Weapon(imgid, weapon.getString("name")));
+                weapons.add(new Weapon(weaponId, imgId, weapon.getString("name")));
             }
         }
         catch (JSONException e)
