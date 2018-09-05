@@ -21,6 +21,8 @@ import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 import ca.barrenechea.widget.recyclerview.decoration.StickyHeaderDecoration;
 
@@ -47,8 +49,8 @@ public class WeaponsFragment extends Fragment
         mLayout = new LinearLayoutManager(getContext());
         mRecycler.setLayoutManager(mLayout);
 
-        ArrayList<Weapon> weapons = new ArrayList<>();
-
+        Map<String, ArrayList<Weapon>> weaponsMap = new HashMap<>();
+        Map<String, Integer> weaponsTypeCount = new HashMap<>();
         try
         {
             LoadData loadData = new LoadData();
@@ -58,11 +60,29 @@ public class WeaponsFragment extends Fragment
             for (int i = 0; i < weaponsList.length(); i++)
             {
                 String weaponId = weaponsList.getString(i);
-                JSONObject weapon = weaponsData.getJSONObject(weaponId);
+                JSONObject weaponJson = weaponsData.getJSONObject(weaponId);
 
                 int imgId = getResources().getIdentifier("g_" + weaponId, "drawable", view.getContext().getPackageName());
 
-                weapons.add(new Weapon(weaponId, imgId, weapon.getString("name")));
+                Weapon weapon = new Weapon(weaponId, imgId, weaponJson.getString("name"));
+                String weaponType = weaponJson.getString("type");
+
+                if(weaponsMap.containsKey(weaponType))
+                {
+                    weaponsMap.get(weaponType).add(weapon);
+
+                    Integer count = weaponsTypeCount.get(weaponType);
+                    count++;
+                    weaponsTypeCount.put(weaponType, count);
+                }
+                else
+                {
+                    ArrayList<Weapon> weaponsType = new ArrayList<>();
+                    weaponsType.add(weapon);
+
+                    weaponsMap.put(weaponType, weaponsType);
+                    weaponsTypeCount.put(weaponType, 1);
+                }
             }
         }
         catch (JSONException e)
@@ -70,20 +90,14 @@ public class WeaponsFragment extends Fragment
             e.printStackTrace();
         }
 
-/*        Compte
-            Assault : 16
-            Pistols : 16
-            LMG : 5
-            SMG : 4
-            Sniper : 5
-            Shotgun : 15
-            Submachine : 16
-            TOTAL : 77
- */
+        ArrayList<Weapon> weapons = new ArrayList<>();
+        for(ArrayList<Weapon> weaponsType : weaponsMap.values())
+        {
+            weapons.addAll(weaponsType);
+        }
 
-        WeaponsHeaderListAdapter mAdapter = new WeaponsHeaderListAdapter(weapons);
+        WeaponsHeaderListAdapter mAdapter = new WeaponsHeaderListAdapter(weapons, weaponsTypeCount);
         mRecycler.setAdapter(mAdapter);
         mRecycler.addItemDecoration(new StickyHeaderDecoration(mAdapter));
     }
-
 }

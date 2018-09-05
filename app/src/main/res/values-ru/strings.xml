@@ -55,13 +55,13 @@
     <string name="rookarmor">Броня Rook\'а</string>
 
     <!--WEAPONS STATS CLASS-->
-    <string name="assault">Штурмовые Винтовки</string>
-    <string name="pistol">Пистолеты</string>
-    <string name="lightmachine">Легкие Пулемёты</string>
-    <string name="machinepistol">Автоматические Пистолеты</string>
-    <string name="marksmanrifle">Снайперские Винтовки</string>
-    <string name="shotgun">Дробовики</string>
-    <string name="submachinegun">Пистолеты-Пулемёты</string>
+    <string name="weapontype_assault_rifle">Штурмовые Винтовки</string>
+    <string name="weapontype_assault_handgun">Пистолеты</string>
+    <string name="weapontype_light_machine_gun">Легкие Пулемёты</string>
+    <string name="weapontype_machine_pistol">Автоматические Пистолеты</string>
+    <string name="weapontype_marksman_rifle">Снайперские Винтовки</string>
+    <string name="weapontype_shotgun">Дробовики</string>
+    <string name="weapontype_submachinegun">Пистолеты-Пулемёты</string>
 
     <!--WEAPONS BARRELS-->
     <string name="compensator">Надульник</string>
@@ -230,6 +230,12 @@
 
     <string name="ugat_finka">ADRENAL SURGE</string>
     <string name="uga_finka">The nanobots give the team a brief gain in HP and revives allies in a DBNO state.</string>
+
+    <string name="ugat_maverick">Breaching Torch</string>
+    <string name="uga_maverick">Blowtorch capable of burning holes reinforced walls at an almost inaudible level.</string>
+
+    <string name="ugat_clash">CCE Shield</string>
+    <string name="uga_clash">Extendable electro shield capable of slowing down enemies, causing damage over time.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Create</string>

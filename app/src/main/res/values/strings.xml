@@ -55,13 +55,13 @@
     <string name="rookarmor">Rook Armor</string>
 
     <!--WEAPONS STATS CLASS-->
-    <string name="assault">Assault Rifle</string>
-    <string name="pistol">Pistols</string>
-    <string name="lightmachine">Light Machine Gun</string>
-    <string name="machinepistol">Machine Pistol</string>
-    <string name="marksmanrifle">Marksman Rifle</string>
-    <string name="shotgun">Shotgun</string>
-    <string name="submachinegun">Submachine Gun</string>
+    <string name="weapontype_assault_rifle">Assault Rifle</string>
+    <string name="weapontype_handgun">Handgun</string>
+    <string name="weapontype_light_machine_gun">Light Machine Gun</string>
+    <string name="weapontype_machine_pistol">Machine Pistol</string>
+    <string name="weapontype_marksman_rifle">Marksman Rifle</string>
+    <string name="weapontype_shotgun">Shotgun</string>
+    <string name="weapontype_submachine_gun">Submachine Gun</string>
 
     <!--WEAPONS BARRELS-->
     <string name="compensator">Compensator</string>
@@ -237,6 +237,12 @@
 
     <string name="ugat_alibi">Prisma</string>
     <string name="uga_alibi">Deploys holograms of Alibi and tags hostile when fired upon.</string>
+
+    <string name="ugat_maverick">Breaching Torch</string>
+    <string name="uga_maverick">Blowtorch capable of burning holes reinforced walls at an almost inaudible level.</string>
+
+    <string name="ugat_clash">CCE Shield</string>
+    <string name="uga_clash">Extendable electro shield capable of slowing down enemies, causing damage over time.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Create</string>

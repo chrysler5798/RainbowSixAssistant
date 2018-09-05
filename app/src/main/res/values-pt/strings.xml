@@ -55,13 +55,13 @@
     <string name="rookarmor">Rook Armor</string>
 
     <!--WEAPONS STATS CLASS-->
-    <string name="assault">Rifle de Assalto</string>
-    <string name="pistol">Arma Curta</string>
-    <string name="lightmachine">Metralhadora Leve</string>
-    <string name="machinepistol">Pistola-Metralhadora</string>
-    <string name="marksmanrifle">Rifle Atirador de Elite</string>
-    <string name="shotgun">Espingarda</string>
-    <string name="submachinegun">Submetralhadora</string>
+    <string name="weapontype_assault_rifle">Rifle de Assalto</string>
+    <string name="weapontype_assault_handgun">Arma Curta</string>
+    <string name="weapontype_light_machine_gun">Metralhadora Leve</string>
+    <string name="weapontype_machine_pistol">Pistola-Metralhadora</string>
+    <string name="weapontype_marksman_rifle">Rifle Atirador de Elite</string>
+    <string name="weapontype_shotgun">Espingarda</string>
+    <string name="weapontype_submachinegun">Submetralhadora</string>
 
     <!--WEAPONS BARRELS-->
     <string name="compensator">Compensador</string>
@@ -230,6 +230,12 @@
 
     <string name="ugat_finka">PICO DE ADRENALINA</string>
     <string name="uga_finka">Os nanorrobôs dão um breve genho de energia à equipe e reanimam temporariamente os aliados feridos em estado crítico (DBNO).</string>
+
+    <string name="ugat_maverick">Breaching Torch</string>
+    <string name="uga_maverick">Blowtorch capable of burning holes reinforced walls at an almost inaudible level.</string>
+
+    <string name="ugat_clash">CCE Shield</string>
+    <string name="uga_clash">Extendable electro shield capable of slowing down enemies, causing damage over time.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Create</string>

@@ -55,13 +55,13 @@
     <string name="rookarmor">穿著裝甲板</string>
 
     <!--WEAPONS STATS CLASS-->
-    <string name="assault">突擊步槍</string>
-    <string name="pistol">手槍</string>
-    <string name="lightmachine">輕機槍</string>
-    <string name="machinepistol">自動手槍</string>
-    <string name="marksmanrifle">射手步槍</string>
-    <string name="shotgun">霰彈槍</string>
-    <string name="submachinegun">衝鋒槍</string>
+    <string name="weapontype_assault_rifle">突擊步槍</string>
+    <string name="weapontype_assault_handgun">手槍</string>
+    <string name="weapontype_light_machine_gun">輕機槍</string>
+    <string name="weapontype_machine_pistol">自動手槍</string>
+    <string name="weapontype_marksman_rifle">射手步槍</string>
+    <string name="weapontype_shotgun">霰彈槍</string>
+    <string name="weapontype_submachinegun">衝鋒槍</string>
 
     <!--WEAPONS BARRELS-->
     <string name="compensator">補償器</string>
@@ -230,6 +230,12 @@
 
     <string name="ugat_finka">ADRENAL SURGE</string>
     <string name="uga_finka">The nanobots give the team a brief gain in HP and revives allies in a DBNO state.</string>
+
+    <string name="ugat_maverick">Breaching Torch</string>
+    <string name="uga_maverick">Blowtorch capable of burning holes reinforced walls at an almost inaudible level.</string>
+
+    <string name="ugat_clash">CCE Shield</string>
+    <string name="uga_clash">Extendable electro shield capable of slowing down enemies, causing damage over time.</string>
 
     <!--ONLINE-->
     <string name="create_txt">創建</string>

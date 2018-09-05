@@ -141,34 +141,41 @@ public class CheckDataVersion extends AsyncTask<String, String, JSONObject>
 
     private String getLocalVersion(Context context)
     {
-        String versionPath = context.getFilesDir() + File.separator + "version.json";
-        File versionFile = new File(versionPath);
-
-        if(versionFile.exists() && versionFile.length() > 0 && versionFile.canRead())
+        try
         {
-            try
+            String versionPath = context.getFilesDir() + File.separator + "version.json";
+            File versionFile = new File(versionPath);
+
+            if(versionFile.exists() && versionFile.length() > 0 && versionFile.canRead())
             {
-                return readInputStream(new FileInputStream(versionFile));
+                try
+                {
+                    return readInputStream(new FileInputStream(versionFile));
+                }
+                catch (FileNotFoundException e)
+                {
+                    e.printStackTrace();
+                }
+                catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
             }
-            catch (FileNotFoundException e)
+            else
             {
-                e.printStackTrace();
-            }
-            catch (IOException e)
-            {
-                e.printStackTrace();
+                try
+                {
+                    return readInputStream(context.getResources().openRawResource(R.raw.version));
+                }
+                catch (IOException e)
+                {
+                    e.printStackTrace();
+                }
             }
         }
-        else
+        catch (NullPointerException e)
         {
-            try
-            {
-                return readInputStream(context.getResources().openRawResource(R.raw.version));
-            }
-            catch (IOException e)
-            {
-                e.printStackTrace();
-            }
+            e.printStackTrace();
         }
 
         return null;

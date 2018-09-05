@@ -13,7 +13,8 @@
     "sdu",
     "grom",
     "707th",
-    "gis"
+    "gis",
+    "gsutr"
   ],
   "armies_data": {
     "spetsnaz": {
@@ -85,6 +86,11 @@
       "name": "GIS",
       "country": "it",
       "operators": ["maestro","alibi"]
+    },
+    "gsutr": {
+      "name": "GSUTR",
+      "country": "world",
+      "operators": ["maverick","clash"]
     }
   }
 }

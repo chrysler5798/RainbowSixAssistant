@@ -55,13 +55,13 @@
     <string name="rookarmor">Rook Pancir</string>
 
     <!--WEAPONS STATS CLASS-->
-    <string name="assault">Jurišna puška</string>
-    <string name="pistol">Pištolji</string>
-    <string name="lightmachine">Lagani mitraljez</string>
-    <string name="machinepistol">Mašinski Pištolj</string>
-    <string name="marksmanrifle">Snajperi</string>
-    <string name="shotgun">Sačmara</string>
-    <string name="submachinegun">Mašinka</string>
+    <string name="weapontype_assault_rifle">Jurišna puška</string>
+    <string name="weapontype_assault_handgun">Pištolji</string>
+    <string name="weapontype_light_machine_gun">Lagani mitraljez</string>
+    <string name="weapontype_machine_pistol">Mašinski Pištolj</string>
+    <string name="weapontype_marksman_rifle">Snajperi</string>
+    <string name="weapontype_shotgun">Sačmara</string>
+    <string name="weapontype_submachinegun">Mašinka</string>
 
     <!--WEAPONS BARRELS-->
     <string name="compensator">Kompenzator</string>
@@ -230,6 +230,12 @@
 
     <string name="ugat_finka">ADRENAL SURGE</string>
     <string name="uga_finka">The nanobots give the team a brief gain in HP and revives allies in a DBNO state.</string>
+
+    <string name="ugat_maverick">Breaching Torch</string>
+    <string name="uga_maverick">Blowtorch capable of burning holes reinforced walls at an almost inaudible level.</string>
+
+    <string name="ugat_clash">CCE Shield</string>
+    <string name="uga_clash">Extendable electro shield capable of slowing down enemies, causing damage over time.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Napravi</string>

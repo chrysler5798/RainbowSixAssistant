@@ -55,13 +55,13 @@
     <string name="rookarmor">룩 방탄판</string>
 
     <!--WEAPONS STATS CLASS-->
-    <string name="assault">돌격소총</string>
-    <string name="pistol">권총</string>
-    <string name="lightmachine">경기관총</string>
-    <string name="machinepistol">기관권총</string>
-    <string name="marksmanrifle">지정사수소총</string>
-    <string name="shotgun">산탄총</string>
-    <string name="submachinegun">기관단총</string>
+    <string name="weapontype_assault_rifle">돌격소총</string>
+    <string name="weapontype_assault_handgun">권총</string>
+    <string name="weapontype_light_machine_gun">경기관총</string>
+    <string name="weapontype_machine_pistol">기관권총</string>
+    <string name="weapontype_marksman_rifle">지정사수소총</string>
+    <string name="weapontype_shotgun">산탄총</string>
+    <string name="weapontype_submachinegun">기관단총</string>
 
     <!--WEAPONS BARRELS-->
     <string name="compensator">컴펜세이터</string>
@@ -230,6 +230,12 @@
 
     <string name="ugat_finka">ADRENAL SURGE</string>
     <string name="uga_finka">The nanobots give the team a brief gain in HP and revives allies in a DBNO state.</string>
+
+    <string name="ugat_maverick">Breaching Torch</string>
+    <string name="uga_maverick">Blowtorch capable of burning holes reinforced walls at an almost inaudible level.</string>
+
+    <string name="ugat_clash">CCE Shield</string>
+    <string name="uga_clash">Extendable electro shield capable of slowing down enemies, causing damage over time.</string>
 
     <!--ONLINE-->
     <string name="create_txt">만들기</string>

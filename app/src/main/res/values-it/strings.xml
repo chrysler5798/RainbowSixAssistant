@@ -55,13 +55,13 @@
     <string name="rookarmor">Corazza di Rook</string>
 
     <!--WEAPONS STATS CLASS-->
-    <string name="assault">Fucile d\'assalto</string>
-    <string name="pistol">Pistola</string>
-    <string name="lightmachine">Mitragliatrice</string>
-    <string name="machinepistol">Pistola mitragliatrice</string>
-    <string name="marksmanrifle">Fucile di precisione</string>
-    <string name="shotgun">Shotgun</string>
-    <string name="submachinegun">Mitraglietta</string>
+    <string name="weapontype_assault_rifle">Fucile d\'assalto</string>
+    <string name="weapontype_assault_handgun">Pistola</string>
+    <string name="weapontype_light_machine_gun">Mitragliatrice</string>
+    <string name="weapontype_machine_pistol">Pistola mitragliatrice</string>
+    <string name="weapontype_marksman_rifle">Fucile di precisione</string>
+    <string name="weapontype_shotgun">Shotgun</string>
+    <string name="weapontype_submachinegun">Mitraglietta</string>
 
     <!--WEAPONS BARRELS-->
     <string name="compensator">Compensatore</string>
@@ -230,6 +230,12 @@
 
     <string name="ugat_finka">BOTTA DI ADRENALINA</string>
     <string name="uga_finka">Le nanomacchine conferiscono alla squadra un momentaneo aumento di salute e rianima gli alleati.</string>
+
+    <string name="ugat_maverick">Breaching Torch</string>
+    <string name="uga_maverick">Blowtorch capable of burning holes reinforced walls at an almost inaudible level.</string>
+
+    <string name="ugat_clash">CCE Shield</string>
+    <string name="uga_clash">Extendable electro shield capable of slowing down enemies, causing damage over time.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Create</string>

@@ -61,7 +61,7 @@ public class LoadData
             result = loadJSON(context.getResources().openRawResource(res));
         }
 
-        if(getData)
+        if(getData && result != null)
             result = result.getJSONObject(dataName + "_data");
 
         return result;

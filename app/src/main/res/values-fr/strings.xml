@@ -55,13 +55,13 @@
     <string name="rookarmor">Armure Rook</string>
 
     <!--WEAPONS STATS CLASS-->
-    <string name="assault">Fusil d\'assaut</string>
-    <string name="pistol">Pistolet</string>
-    <string name="lightmachine">Fusil-mitrailleur</string>
-    <string name="machinepistol">Pistolet-mitrailleur</string>
-    <string name="marksmanrifle">Fusil Sniper</string>
-    <string name="shotgun">Fusil à pompe</string>
-    <string name="submachinegun">Mitraillette</string>
+    <string name="weapontype_assault_rifle">Fusil d\'assaut</string>
+    <string name="weapontype_assault_handgun">Pistolet</string>
+    <string name="weapontype_light_machine_gun">Fusil-mitrailleur</string>
+    <string name="weapontype_machine_pistol">Pistolet-mitrailleur</string>
+    <string name="weapontype_marksman_rifle">Fusil Sniper</string>
+    <string name="weapontype_shotgun">Fusil à pompe</string>
+    <string name="weapontype_submachinegun">Mitraillette</string>
 
     <!--WEAPONS BARRELS-->
     <string name="compensator">Compensateur</string>
@@ -230,6 +230,12 @@
 
     <string name="ugat_finka">SHOOT D\'ADRÉNALINE</string>
     <string name="uga_finka">Les nanobots offrent un bonus de santé temporaire à l\'équipe et raniment les alliés blessés.</string>
+
+    <string name="ugat_maverick">Breaching Torch</string>
+    <string name="uga_maverick">Blowtorch capable of burning holes reinforced walls at an almost inaudible level.</string>
+
+    <string name="ugat_clash">CCE Shield</string>
+    <string name="uga_clash">Extendable electro shield capable of slowing down enemies, causing damage over time.</string>
 
     <!--ONLINE-->
     <string name="create_txt">Créer</string>

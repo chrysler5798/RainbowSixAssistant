@@ -274,9 +274,6 @@ public class OperatorActivity extends AppCompatActivity
 
             //Setup unique gadget
             //
-            if(operatorUniqueGadgetNb > 0)
-            {
-            }
             int operatorUniqueGadgetNameId = getResources().getIdentifier("ugat_" + operatorId, "string", getPackageName());
             int operatorUniqueGadgetDescId = getResources().getIdentifier("uga_" + operatorId, "string", getPackageName());
             int operatorUniqueGadgetImageId = getResources().getIdentifier("ga_" + operatorId, "drawable", getPackageName());

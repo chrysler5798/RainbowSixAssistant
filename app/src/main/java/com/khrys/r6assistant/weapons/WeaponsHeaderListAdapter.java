@@ -17,17 +17,20 @@ import android.widget.TextView;
 import com.khrys.r6assistant.R;
 
 import java.util.ArrayList;
+import java.util.Map;
 
 import ca.barrenechea.widget.recyclerview.decoration.StickyHeaderAdapter;
 
 public class WeaponsHeaderListAdapter extends RecyclerView.Adapter<WeaponsHeaderListAdapter.MyViewHolder> implements StickyHeaderAdapter<WeaponsHeaderListAdapter.HeaderHolder>
 {
     private ArrayList<Weapon> weapons;
+    private Map<String, Integer> weaponsCount;
     private LayoutInflater inflater;
 
-    WeaponsHeaderListAdapter(ArrayList<Weapon> weapons)
+    WeaponsHeaderListAdapter(ArrayList<Weapon> weapons, Map<String, Integer> weaponsCount)
     {
         this.weapons = weapons;
+        this.weaponsCount = weaponsCount;
     }
 
     @Override
@@ -87,33 +90,19 @@ public class WeaponsHeaderListAdapter extends RecyclerView.Adapter<WeaponsHeader
     @Override
     public long getHeaderId(int position)
     {
-        /*        Compte
-                Assault : 18
-                Pistols : 18
-                LMG : 6
-                SMG : 4
-                Sniper : 5
-                Shotgun : 16
-                Submachine : 17
-                TOTAL : 84
-         */
-        if(position<18){
-            return 0;
-        }else if(position<36){
-            return 18;
-        }else if(position<42){
-            return 36;
-        }else if(position<46){
-            return 42;
-        }else if(position<51){
-            return 46;
-        }else if(position<67){
-            return 51;
-        }else if(position<84){
-            return 67;
-        }else{
-            return 84;
+        Integer lastCount = 0;
+        Integer weaponTypeCount = 0;
+        for (Map.Entry<String, Integer> entry : weaponsCount.entrySet())
+        {
+            weaponTypeCount += entry.getValue();
+            if(position < weaponTypeCount) {
+                return lastCount;
+            }
+
+            lastCount = weaponTypeCount;
         }
+
+        return 0;
     }
 
     @Override
@@ -126,23 +115,19 @@ public class WeaponsHeaderListAdapter extends RecyclerView.Adapter<WeaponsHeader
     @Override
     public void onBindHeaderViewHolder(HeaderHolder viewholder, int position)
     {
-        int txtId = 0;
-        if(position<18){
-            txtId = R.string.assault;
-        }else if(position<34){
-            txtId = R.string.pistol;
-        }else if(position<39){
-            txtId = R.string.lightmachine;
-        }else if(position<43){
-            txtId = R.string.machinepistol;
-        }else if(position<48){
-            txtId = R.string.marksmanrifle;
-        }else if(position<63){
-            txtId = R.string.shotgun;
-        }else if(position<79){
-            txtId = R.string.submachinegun;
+        Context viewHolderContext = viewholder.header.getContext();
+        Integer weaponTypeCount = 0;
+        for (Map.Entry<String, Integer> entry : weaponsCount.entrySet())
+        {
+            String weaponType = entry.getKey();
+            weaponTypeCount += entry.getValue();
+
+            if(position < weaponTypeCount) {
+                int weaponTypeStrIdentifier = viewHolderContext.getResources().getIdentifier("weapontype_" + weaponType, "string", viewHolderContext.getPackageName());
+                viewholder.header.setText(viewHolderContext.getString(weaponTypeStrIdentifier));
+                break;
+            }
         }
-        viewholder.header.setText(txtId);
     }
 
     class HeaderHolder extends RecyclerView.ViewHolder

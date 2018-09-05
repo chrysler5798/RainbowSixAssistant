@@ -103,6 +103,10 @@ public class CheckAppVersion extends AsyncTask<String, Void, String>
         {
             e.printStackTrace();
         }
+        catch(NullPointerException e)
+        {
+            e.printStackTrace();
+        }
 
         if(actualVersionCode != 0 && onlineVersionCode != 0)
         {

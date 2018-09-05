@@ -177,16 +177,6 @@ public class MainActivity extends AppCompatActivity
         startActivity(new Intent(MainActivity.this, classToGo));
     }
 
-    private void checkForDataUpdate()
-    {
-        ConnectivityManager connectivityManager = (ConnectivityManager) getSystemService(Context.CONNECTIVITY_SERVICE);
-        NetworkInfo activeNetworkInfo = connectivityManager.getActiveNetworkInfo();
-        if(activeNetworkInfo != null && activeNetworkInfo.isConnected())
-        {
-
-        }
-    }
-
     private class MenuCLickListener implements View.OnClickListener
     {
         int type;

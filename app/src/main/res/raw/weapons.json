@@ -1,16 +1,19 @@
 {
     "weapons": [
-        "l85a2","ar33","g36c","r4_c","556xi","f2","ak_12","aug","552_commando","416_c_carbine","c8_sfw","mk17_cqb","para_308","type_89","c7e","m762","v308","spear",
-        "p226_mk25","5_7_usg","m45_meusoc","p9","lfp586","gsh_18","pmm","p12","mk1","d_50","prb92","luison","p229","usp40","q_929","rg15","keratos_357","bailiff_410",
-        "6p41","g8a1","m249","t_95_lsw","lmg_e","alda_5_56",
-        "smg_11","bearing_9","c75","smg_12",
-        "417","ots_03","camrs","sr_25","mk_14_ebr",
-        "m590a1","m1014","sg_cqb","sasg_12","m870","super_90","spas_12","spas_15","supernova","ita12l","ita12s","six12","six12_sd","fo_12","bosg_12_2","acs12",
-        "fmg_9","mp5k","ump45","mp5","p90","9x19vsn","mp7","9mm_c1","mpx","m12","mp5sd","pdw9","vector_45_acp","t_5_smg","scorpion_evo_3_a1","k1a","mx4_storm"
+        "l85a2","ar33","g36c","r4_c","556xi","f2","ak_12","aug","552_commando","416_c_carbine",
+        "c8_sfw","mk17_cqb","para_308","type_89","c7e","m762","v308","spear","ar_15_50","m4",
+        "p226_mk25","5_7_usg","m45_meusoc","p9","lfp586","gsh_18","pmm","p12","mk1","d_50","prb92",
+        "luison","p229","usp40","q_929","rg15","keratos_357","bailiff_410","1911_tacops","p_10c",
+        "6p41","g8a1","m249","t_95_lsw","lmg_e","alda_5_56","smg_11","bearing_9","c75","smg_12",
+        "spsmg9","417","ots_03","camrs","sr_25","mk_14_ebr","m590a1","m1014","sg_cqb","sasg_12",
+        "m870","super_90","spas_12","spas_15","supernova","ita12l","ita12s","six12","six12_sd",
+        "fo_12","bosg_12_2","acs12","fmg_9","mp5k","ump45","mp5","p90","9x19vsn","mp7","9mm_c1",
+        "mpx","m12","mp5sd","pdw9","vector_45_acp","t_5_smg","scorpion_evo_3_a1","k1a","mx4_storm"
     ],
     "weapons_data": {
         "l85a2": {
             "name": "L85A2",
+            "type": "assault_rifle",
             "operators": ["sledge","thatcher"],
             "ammo": 30,
             "firerate": 670,
@@ -24,6 +27,7 @@
         },
         "ar33": {
             "name": "AR33",
+            "type": "assault_rifle",
             "operators": ["thatcher"],
             "ammo": 25,
             "firerate": 749,
@@ -37,6 +41,7 @@
         },
         "g36c": {
             "name": "G36C",
+            "type": "assault_rifle",
             "operators": ["ash"],
             "ammo": 30,
             "firerate": 780,
@@ -50,6 +55,7 @@
         },
         "r4_c": {
             "name": "R4-C",
+            "type": "assault_rifle",
             "operators": ["ash"],
             "ammo": 30,
             "firerate": 860,
@@ -63,6 +69,7 @@
         },
         "556xi": {
             "name": "556XI",
+            "type": "assault_rifle",
             "operators": ["thermite"],
             "ammo": 30,
             "firerate": 670,
@@ -76,6 +83,7 @@
         },
         "f2": {
             "name": "F2",
+            "type": "assault_rifle",
             "operators": ["twitch"],
             "ammo": 30,
             "firerate": 980,
@@ -89,6 +97,7 @@
         },
         "ak_12": {
             "name": "AK-12",
+            "type": "assault_rifle",
             "operators": ["fuze"],
             "ammo": 30,
             "firerate": 850,
@@ -102,6 +111,7 @@
         },
         "aug": {
             "name": "AUG A2",
+            "type": "assault_rifle",
             "operators": ["iq"],
             "ammo": 30,
             "firerate": 720,
@@ -115,6 +125,7 @@
         },
         "552_commando": {
             "name": "552 COMMANDO",
+            "type": "assault_rifle",
             "operators": ["iq"],
             "ammo": 30,
             "firerate": 690,
@@ -128,6 +139,7 @@
         },
         "416_c_carbine": {
             "name": "416-C CARBINE",
+            "type": "assault_rifle",
             "operators": ["jager"],
             "ammo": 30,
             "firerate": 740,
@@ -141,6 +153,7 @@
         },
         "c8_sfw": {
             "name": "C8-SFW",
+            "type": "assault_rifle",
             "operators": ["buck"],
             "ammo": 30,
             "firerate": 837,
@@ -154,6 +167,7 @@
         },
         "mk17_cqb": {
             "name": "MK17 CQB",
+            "type": "assault_rifle",
             "operators": ["blackbeard"],
             "ammo": 20,
             "firerate": 585,
@@ -167,6 +181,7 @@
         },
         "para_308": {
             "name": "PARA-308",
+            "type": "assault_rifle",
             "operators": ["capitao"],
             "ammo": 30,
             "firerate": 650,
@@ -180,6 +195,7 @@
         },
         "type_89": {
             "name": "TYPE-89",
+            "type": "assault_rifle",
             "operators": ["hibana"],
             "ammo": 20,
             "firerate": 850,
@@ -193,6 +209,7 @@
         },
         "c7e": {
             "name": "C7E",
+            "type": "assault_rifle",
             "operators": ["jackal"],
             "ammo": 30,
             "firerate": 800,
@@ -206,6 +223,7 @@
         },
         "m762": {
             "name": "M762",
+            "type": "assault_rifle",
             "operators": ["zofia"],
             "ammo": 30,
             "firerate": 800,
@@ -219,9 +237,10 @@
         },
         "v308": {
             "name": "V308",
+            "type": "assault_rifle",
             "operators": ["lion"],
-            "ammo": 30,
-            "firerate": 800,
+            "ammo": 50,
+            "firerate": 700,
             "falloff": 20,
             "barrels": ["compensator","flash_hider","suppressor","muzzle_brake"],
             "damage": {
@@ -232,6 +251,7 @@
         },
         "spear": {
             "name": "SPEAR .308",
+            "type": "assault_rifle",
             "operators": ["finka"],
             "ammo": 30,
             "firerate": 800,
@@ -245,6 +265,7 @@
         },
         "p226_mk25": {
             "name": "P226 MK 25",
+            "type": "handgun",
             "operators": ["thatcher","sledge","smoke","mute"],
             "ammo": 15,
             "firerate": 420,
@@ -258,6 +279,7 @@
         },
         "5_7_usg": {
             "name": "5.7 USG",
+            "type": "handgun",
             "operators": ["ash","thermite","castle","pulse"],
             "ammo": 20,
             "firerate": 400,
@@ -271,6 +293,7 @@
         },
         "m45_meusoc": {
             "name": "M45 MEUSOC",
+            "type": "handgun",
             "operators": ["ash","thermite","castle","pulse"],
             "ammo": 7,
             "firerate": 360,
@@ -284,6 +307,7 @@
         },
         "p9": {
             "name": "P9",
+            "type": "handgun",
             "operators": ["twitch","montagne","rook","doc","lion"],
             "ammo": 16,
             "firerate": 360,
@@ -297,6 +321,7 @@
         },
         "lfp586": {
             "name": "LFP586",
+            "type": "handgun",
             "operators": ["twitch","montagne","rook","doc","lion"],
             "ammo": 6,
             "firerate": 360,
@@ -310,6 +335,7 @@
         },
         "gsh_18": {
             "name": "GSH-18",
+            "type": "handgun",
             "operators": ["kapkan","tachanka","glaz","fuze", "finka"],
             "ammo": 18,
             "firerate": 360,
@@ -323,6 +349,7 @@
         },
         "pmm": {
             "name": "PMM",
+            "type": "handgun",
             "operators": ["kapkan","tachanka","glaz","fuze", "finka"],
             "ammo": 8,
             "firerate": 420,
@@ -336,6 +363,7 @@
         },
         "p12": {
             "name": "P12",
+            "type": "handgun",
             "operators": ["blitz","iq","jager","bandit"],
             "ammo": 15,
             "firerate": 420,
@@ -349,6 +377,7 @@
         },
         "mk1": {
             "name": "MK1 9mm",
+            "type": "handgun",
             "operators": ["buck","frost"],
             "ammo": 13,
             "firerate": 360,
@@ -362,6 +391,7 @@
         },
         "d_50": {
             "name": "D-50",
+            "type": "handgun",
             "operators": ["blackbeard","valkyrie"],
             "ammo": 7,
             "firerate": 270,
@@ -375,6 +405,7 @@
         },
         "prb92": {
             "name": "PRB92",
+            "type": "handgun",
             "operators": ["capitao"],
             "ammo": 15,
             "firerate": 375,
@@ -388,6 +419,7 @@
         },
         "luison": {
             "name": "LUISON",
+            "type": "handgun",
             "operators": ["caveira"],
             "ammo": 15,
             "firerate": 375,
@@ -401,6 +433,7 @@
         },
         "p229": {
             "name": "P229",
+            "type": "handgun",
             "operators": ["echo","hibana"],
             "ammo": 12,
             "firerate": 375,
@@ -414,6 +447,7 @@
         },
         "usp40": {
             "name": "USP40",
+            "type": "handgun",
             "operators": ["mira","jackal"],
             "ammo": 12,
             "firerate": 375,
@@ -427,6 +461,7 @@
         },
         "6p41": {
             "name": "6P41",
+            "type": "light_machine_gun",
             "operators": ["fuze","finka"],
             "ammo": 100,
             "firerate": 680,
@@ -440,6 +475,7 @@
         },
         "g8a1": {
             "name": "G8A1",
+            "type": "light_machine_gun",
             "operators": ["iq"],
             "ammo": 50,
             "firerate": 850,
@@ -453,6 +489,7 @@
         },
         "m249": {
             "name": "M249",
+            "type": "light_machine_gun",
             "operators": ["capitao"],
             "ammo": 100,
             "firerate": 650,
@@ -466,6 +503,7 @@
         },
         "smg_11": {
             "name": "SMG-11",
+            "type": "machine_pistol",
             "operators": ["smoke","sledge"],
             "ammo": 16,
             "firerate": 1270,
@@ -479,6 +517,7 @@
         },
         "bearing_9": {
             "name": "BEARING 9",
+            "type": "machine_pistol",
             "operators": ["echo","hibana"],
             "ammo": 25,
             "firerate": 1100,
@@ -492,6 +531,7 @@
         },
         "c75": {
             "name": "C75 Auto",
+            "type": "machine_pistol",
             "operators": ["dokkaebi","vigil"],
             "ammo": 25,
             "firerate": 1100,
@@ -505,6 +545,7 @@
         },
         "smg_12": {
             "name": "SMG-12",
+            "type": "machine_pistol",
             "operators": ["dokkaebi","vigil"],
             "ammo": 25,
             "firerate": 1100,
@@ -518,6 +559,7 @@
         },
         "417": {
             "name": "417",
+            "type": "marksman_rifle",
             "operators": ["twitch","lion"],
             "ammo": 10,
             "firerate": 660,
@@ -531,6 +573,7 @@
         },
         "ots_03": {
             "name": "OTs-03",
+            "type": "marksman_rifle",
             "operators": ["glaz"],
             "ammo": 10,
             "firerate": 220,
@@ -544,6 +587,7 @@
         },
         "camrs": {
             "name": "CAMRS",
+            "type": "marksman_rifle",
             "operators": ["buck"],
             "ammo": 20,
             "firerate": 570,
@@ -557,6 +601,7 @@
         },
         "sr_25": {
             "name": "SR-25",
+            "type": "marksman_rifle",
             "operators": ["blackbeard"],
             "ammo": 20,
             "firerate": 570,
@@ -570,6 +615,7 @@
         },
         "mk_14_ebr": {
             "name": "Mk 14 EBR",
+            "type": "marksman_rifle",
             "operators": ["dokkaebi"],
             "ammo": 20,
             "firerate": 570,
@@ -583,6 +629,7 @@
         },
         "m590a1": {
             "name": "M590A1",
+            "type": "shotgun",
             "operators": ["thatcher","sledge","smoke","mute"],
             "ammo": 7,
             "firerate": 100,
@@ -596,6 +643,7 @@
         },
         "m1014": {
             "name": "M1014",
+            "type": "shotgun",
             "operators": ["thermite","castle","pulse"],
             "ammo": 8,
             "firerate": 170,
@@ -609,6 +657,7 @@
         },
         "sg_cqb": {
             "name": "SG-CQB",
+            "type": "shotgun",
             "operators": ["twitch","rook","doc","lion"],
             "ammo": 7,
             "firerate": 100,
@@ -622,6 +671,7 @@
         },
         "sasg_12": {
             "name": "SASG-12",
+            "type": "shotgun",
             "operators": ["kapkan","tachanka","finka"],
             "ammo": 10,
             "firerate": 240,
@@ -635,6 +685,7 @@
         },
         "m870": {
             "name": "M870",
+            "type": "shotgun",
             "operators": ["bandit","jager"],
             "ammo": 7,
             "firerate": 120,
@@ -648,6 +699,7 @@
         },
         "super_90": {
             "name": "SUPER 90",
+            "type": "shotgun",
             "operators": ["frost"],
             "ammo": 8,
             "firerate": 150,
@@ -661,6 +713,7 @@
         },
         "spas_12": {
             "name": "SPAS-12",
+            "type": "shotgun",
             "operators": ["valkyrie"],
             "ammo": 7,
             "firerate": 140,
@@ -674,6 +727,7 @@
         },
         "spas_15": {
             "name": "SPAS-15",
+            "type": "shotgun",
             "operators": ["caveira"],
             "ammo": 6,
             "firerate": 240,
@@ -687,6 +741,7 @@
         },
         "supernova": {
             "name": "SUPERNOVA",
+            "type": "shotgun",
             "operators": ["echo","hibana"],
             "ammo": 7,
             "firerate": 85,
@@ -700,6 +755,7 @@
         },
         "ita12l": {
             "name": "ITA12L",
+            "type": "shotgun",
             "operators": ["mira","jackal"],
             "ammo": 8,
             "firerate": 95,
@@ -713,6 +769,7 @@
         },
         "ita12s": {
             "name": "ITA12S",
+            "type": "shotgun",
             "operators": ["mira","jackal"],
             "ammo": 5,
             "firerate": 95,
@@ -726,6 +783,7 @@
         },
         "fmg_9": {
             "name": "FMG-9",
+            "type": "submachine_gun",
             "operators": ["smoke"],
             "ammo": 30,
             "firerate": 800,
@@ -739,6 +797,7 @@
         },
         "mp5k": {
             "name": "MP5K",
+            "type": "submachine_gun",
             "operators": ["mute"],
             "ammo": 30,
             "firerate": 800,
@@ -752,6 +811,7 @@
         },
         "ump45": {
             "name": "UMP45",
+            "type": "submachine_gun",
             "operators": ["castle","pulse"],
             "ammo": 25,
             "firerate": 600,
@@ -765,6 +825,7 @@
         },
         "mp5": {
             "name": "MP5",
+            "type": "submachine_gun",
             "operators": ["rook","doc"],
             "ammo": 30,
             "firerate": 800,
@@ -778,6 +839,7 @@
         },
         "p90": {
             "name": "P90",
+            "type": "submachine_gun",
             "operators": ["rook","doc"],
             "ammo": 50,
             "firerate": 970,
@@ -791,6 +853,7 @@
         },
         "9x19vsn": {
             "name": "9x19VSN",
+            "type": "submachine_gun",
             "operators": ["kapkan","tachanka"],
             "ammo": 30,
             "firerate": 750,
@@ -804,6 +867,7 @@
         },
         "mp7": {
             "name": "MP7",
+            "type": "submachine_gun",
             "operators": ["bandit"],
             "ammo": 30,
             "firerate": 900,
@@ -817,6 +881,7 @@
         },
         "9mm_c1": {
             "name": "9mm C1",
+            "type": "submachine_gun",
             "operators": ["frost"],
             "ammo": 34,
             "firerate": 575,
@@ -830,6 +895,7 @@
         },
         "mpx": {
             "name": "MPX",
+            "type": "submachine_gun",
             "operators": ["valkyrie"],
             "ammo": 30,
             "firerate": 830,
@@ -843,6 +909,7 @@
         },
         "m12": {
             "name": "M12",
+            "type": "submachine_gun",
             "operators": ["caveira"],
             "ammo": 30,
             "firerate": 550,
@@ -856,6 +923,7 @@
         },
         "mp5sd": {
             "name": "MP5SD",
+            "type": "submachine_gun",
             "operators": ["echo"],
             "ammo": 30,
             "firerate": 800,
@@ -869,6 +937,7 @@
         },
         "pdw9": {
             "name": "PDW9",
+            "type": "submachine_gun",
             "operators": ["jackal"],
             "ammo": 50,
             "firerate": 800,
@@ -882,6 +951,7 @@
         },
         "vector_45_acp": {
             "name": "Vector .45 ACP",
+            "type": "submachine_gun",
             "operators": ["mira"],
             "ammo": 25,
             "firerate": 1200,
@@ -895,6 +965,7 @@
         },
         "t_5_smg": {
             "name": "T-5 SMG",
+            "type": "submachine_gun",
             "operators": ["lesion"],
             "ammo": 30,
             "firerate": 900,
@@ -908,6 +979,7 @@
         },
         "six12": {
             "name": "SIX12",
+            "type": "shotgun",
             "operators": ["ying"],
             "ammo": 6,
             "firerate": 0,
@@ -921,6 +993,7 @@
         },
         "six12_sd": {
             "name": "SIX12 SD",
+            "type": "shotgun",
             "operators": ["lesion"],
             "ammo": 6,
             "firerate": 0,
@@ -934,8 +1007,9 @@
         },
         "bosg_12_2": {
             "name": "BOSG.12.2",
+            "type": "shotgun",
             "operators": ["dokkaebi","vigil"],
-            "ammo": 6,
+            "ammo": 2,
             "firerate": 0,
             "falloff": 0,
             "barrels": [],
@@ -947,6 +1021,7 @@
         },
         "t_95_lsw": {
             "name": "T-95 LSW",
+            "type": "light_machine_gun",
             "operators": ["ying"],
             "ammo": 80,
             "firerate": 650,
@@ -960,6 +1035,7 @@
         },
         "lmg_e": {
             "name": "LMG-E",
+            "type": "light_machine_gun",
             "operators": ["zofia"],
             "ammo": 80,
             "firerate": 650,
@@ -973,6 +1049,7 @@
         },
         "q_929": {
             "name": "Q-929",
+            "type": "handgun",
             "operators": ["ying","lesion"],
             "ammo": 80,
             "firerate": 650,
@@ -986,6 +1063,7 @@
         },
         "scorpion_evo_3_a1": {
             "name": "SCORPION EVO 3 A1",
+            "type": "submachine_gun",
             "operators": ["ela"],
             "ammo": 50,
             "firerate": 1080,
@@ -999,6 +1077,7 @@
         },
         "k1a": {
             "name": "K1A",
+            "type": "submachine_gun",
             "operators": ["vigil"],
             "ammo": 50,
             "firerate": 1080,
@@ -1012,6 +1091,7 @@
         },
         "fo_12": {
             "name": "FO-12",
+            "type": "shotgun",
             "operators": ["ela"],
             "ammo": 10,
             "firerate": 0,
@@ -1025,7 +1105,8 @@
         },
         "rg15": {
             "name": "RG15",
-            "operators": ["ela","zofia",""],
+            "type": "handgun",
+            "operators": ["ela","zofia"],
             "ammo": 15,
             "firerate": 0,
             "falloff": 15,
@@ -1038,6 +1119,7 @@
         },
         "keratos_357": {
             "name": "KERATOS .357",
+            "type": "handgun",
             "operators": ["maestro","alibi"],
             "ammo": 15,
             "firerate": 0,
@@ -1051,6 +1133,7 @@
         },
         "bailiff_410": {
             "name": "Bailiff 410",
+            "type": "handgun",
             "operators": ["maestro","alibi"],
             "ammo": 15,
             "firerate": 0,
@@ -1064,6 +1147,7 @@
         },
         "alda_5_56": {
             "name": "ALDA 5.56",
+            "type": "light_machine_gun",
             "operators": ["maestro"],
             "ammo": 15,
             "firerate": 0,
@@ -1077,6 +1161,7 @@
         },
         "acs12": {
             "name": "ACS12",
+            "type": "shotgun",
             "operators": ["maestro","alibi"],
             "ammo": 15,
             "firerate": 0,
@@ -1090,6 +1175,7 @@
         },
         "mx4_storm": {
             "name": "Mx4 Storm",
+            "type": "submachine_gun",
             "operators": ["alibi"],
             "ammo": 15,
             "firerate": 0,
@@ -1097,6 +1183,76 @@
             "barrels": ["muzzle_brake","suppressor"],
             "damage": {
                 "armor_1":{"default":[0,0]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
+        },
+        "ar_15_50": {
+            "name": "AR-15.50",
+            "type": "assault_rifle",
+            "operators": ["maverick"],
+            "ammo": 10,
+            "firerate": 0,
+            "falloff": 0,
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[0,62]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
+        },
+        "m4": {
+            "name": "M4",
+            "type": "assault_rifle",
+            "operators": ["maverick"],
+            "ammo": 30,
+            "firerate": 750,
+            "falloff": 0,
+            "barrels": ["muzzle_brake","flash_hider","compensator","extended_barrel","suppressor"],
+            "damage": {
+                "armor_1":{"default":[0,44]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
+        },
+        "1911_tacops": {
+            "name": "1911 TACOPS",
+            "type": "handgun",
+            "operators": ["maverick"],
+            "ammo": 8,
+            "firerate": 0,
+            "falloff": 0,
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[0,55]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
+        },
+        "p_10c": {
+            "name": "P-10C",
+            "type": "handgun",
+            "operators": ["clash"],
+            "ammo": 15,
+            "firerate": 0,
+            "falloff": 0,
+            "barrels": ["muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[0,40]},
+                "armor_2":{"default":[0,0]},
+                "armor_3":{"default":[0,0]}
+            }
+        },
+        "spsmg9": {
+            "name": "SPSMG9",
+            "type": "machine_pistol",
+            "operators": ["clash"],
+            "ammo": 20,
+            "firerate": 980,
+            "falloff": 0,
+            "barrels": ["flash_hider","muzzle_brake","suppressor"],
+            "damage": {
+                "armor_1":{"default":[0,30]},
                 "armor_2":{"default":[0,0]},
                 "armor_3":{"default":[0,0]}
             }

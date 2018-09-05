@@ -7,9 +7,9 @@
   ],
   "version_data": {
     "maps": 1,
-    "operators": 1,
-    "armies": 1,
-    "weapons": 1
+    "operators": 2,
+    "armies": 2,
+    "weapons": 2
   },
   "version_links": {
     "maps":      "https://www.dropbox.com/s/5narswvi6z6p9nb/maps.json?dl=1",
